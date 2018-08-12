@@ -7,6 +7,9 @@
     "email": "daniel@shceufler.io",
     "url": "daniel.scheufler.io"
   },
+  "scripts": {
+    "start": "hexo server"
+  },
   "hexo": {
     "version": "3.7.1"
   },
