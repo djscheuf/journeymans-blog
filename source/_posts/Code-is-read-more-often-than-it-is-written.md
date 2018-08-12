@@ -7,7 +7,6 @@ tags:
   - software
   - user-experience
 category: 
-  - principles
   - perspective
 ---
 
