@@ -1,0 +1,35 @@
+---
+title: To build a better performance review
+tags:
+  - business
+  - communication
+  - learning
+  - meetings
+  - performance
+  - principles
+  - research
+  - resources
+  - review
+url: 1391.html
+id: 1391
+categories:
+  - Perspective
+  - Work Projects
+date: 2017-01-24 16:56:18
+---
+
+It’s that time of year again, Performance review season! In reality, most managers did this last month or earlier. The employees usually find out a bit later. This passive relationship employees had with their performance reviews always bugged me. So this year I decided to do something about it. I hadn’t made up my mind until the day of. I realized that I would miss out on valuable insight, since I had only started about six months earlier. For an hour before the meeting, I scoured the internet for resource, and I compiled a list of questions. I don’t have the links anymore, but I am certain with few Google searches you can find a good number of lists. A good place to start might be “performance review questions”. The core three I found in some sources address the basics of a performance review: **What went well? What should I not do anymore? What should I start doing?** The strength of these three is that they are easy to remember, and the cover a lot of ground. So if you're short of time, just remember to ask: _What actions to Continue/ Stop/ Start?_ Nice and simple. But, these questions also fall short, since they aren’t specific. Moreover they don’t always produce actionable answers. For a review 'actionable' is the most important attribute. You have to be able to act on it. So I sifted through a few more lists and found several very useful additions. **What actions can I take to deliver more value?** – This questions can deliver in spades. It allows the manager to point to specific things that you can do. As a result you can point to them later, and ask for feedback. In my case, it provided the foundation for future questions, and started a useful conversation. **What are your goals for me next year? /What do you want my priorities to be next year?** These questions are good to ask earlier on, as it frames the rest of the discussion on actions. Once you have agreed on the goals or priorities, it becomes easier to see actions that can be taken to meet them. **What new knowledge/skill do you think I may need to develop this year?** To me this question feels like a natural extension of the ‘Start’ subset. Especially in software, new skills or knowledge are nearly always needed. In my case, since it followed the priorities question, it didn’t provide a great deal more information. Some of the goals already implied the answer to this question. For example, if the goal was ‘drafting a schema for Mongo to handle X kind of data’, I will need MongoDB basics. As well as any information I can find on MongoDB or non-relational schemas. **How do you think the business is going to change in the future?/What challenges do we face?** This question provides perspective. And it can fill in missing answers for the previous question. Further, it may encourage your manager to think of you filling the role of meeting that challenge, which is always good! In my case, I got some perspective on the larger motions within the company that I wasn’t aware of. **What can I do to improve my rating in ___ next year?** For a rating where your performance isn’t where you want it this is a good question. It encourages you and your manager to point to concrete items which you can improve as well as the expected improvements. In my case, there wasn’t enough information to offer a correction. This was due to the duration of my employment rather than to lack of interaction between myself and my manager. **What can I do to make you more successful?** This is the single biggest impact question that I found! It allowed me to mention some areas where I thought I could help my manager, since he’s a busy fellow. It got him thinking. Almost immediately he thought of a task that he could hand-off. Not only would it help him, it would be beneficial for me to experience as well. Through this question I was able to set myself up as a true ally of my manager. Now all that is left is for me is to do my best on the new task, in short, to be faithful in the small things. **What career opportunity do you see for someone with my background?** This question is more sensitive. Specifically, your manager may need to be careful with phrasing. They will want to avoid coming across as a promise of a position in the future. My manager and I were able to work around this, by changing the context of the question. Instead I asked for some of his insight. What might be useful places to expand my skills? What areas of software that I might enjoy based on our work experience together, and personality? From this new question, I received several valuable insights, and suggestions. For those who have been with their employers longer this may be a safer question. For those who are fresh, I would definitely suggest the alternative version. Along these same lines, I avoided this next question: **What could I do to give myself the best opportunity to move onto the next level in the organization?** I am certain similar concerns would grip a manager with this question. I also feel it is more appropriate to ask about particular positions. It is definitely a question for someone intending to stay with an organization for the long-haul. And last but not least, my favorite question: **What is the most difficult thing about doing performance reviews?** This question broke the tension in the meeting pretty fast. It also allowed my manager to voice some of his thoughts on the review process. It helped me to understand the rating better, and to be better prepared for next year’s review. After reviewing my notes, I plan to keep questions 1, 2, 3, 5, 6, 9 (especially), and 12. I am reviewing the value of questions 4, 7, 8, and 10; and I plan to drop the 11th question. For convenience, I’ve included the numeric, ordered, list below.
+
+1.   What actions should I continue?
+2.  What actions should I stop?
+3.  What actions should I start?
+4.  What actions can I take to deliver more value?
+5.  What are your goals for me next year? /What do you want my priorities to be next year?
+6.  What new knowledge/skill do you think I may need to develop this year?
+7.  How do you think the business is going to change in the future?/What challenges do we face?
+8.  What can I do to improve my rating in ___ next year?
+9.  What can I do to make you more successful?
+10.  What career opportunity do you see for someone with my background?
+    *   Alternatively: What might be useful places to expand my skills? What areas of software that I might enjoy based on our work experience together, and personality?
+11.  What could I do to give myself the best opportunity to move onto the next level in the organization?
+12.  What is the most difficult thing about doing performance reviews?
