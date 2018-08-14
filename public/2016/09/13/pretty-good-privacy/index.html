@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <!-- <link rel="shortcut icon" href="/img/ironman-draw.png"> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+            Pretty Good Privacy - Journeyman&#39;s Travels
+                
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/09/13/pretty-good-privacy/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/beantech.min.css">
+
+            <!-- Pygments Highlight CSS -->
+            <link rel="stylesheet" href="/css/highlight.css">
+
+                <link rel="stylesheet" href="/css/widget.css">
+
+                    <link rel="stylesheet" href="/css/rocket.css">
+
+                        <link rel="stylesheet" href="/css/signature.css">
+
+                            <link rel="stylesheet" href="/css/toc.css">
+
+                                <!-- Custom Fonts -->
+                                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+                                <!-- Hux change font-awesome CDN to qiniu -->
+                                <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                                <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+                                <!-- ga & ba script hoook -->
+                                <script></script>
+</head>
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                            
+                              <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                            
+                              <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                            
+                              <a class="tag" href="/tags/#recent work" title="recent work">recent work</a>
+                            
+                              <a class="tag" href="/tags/#algorithms" title="algorithms">algorithms</a>
+                            
+                              <a class="tag" href="/tags/#encryption" title="encryption">encryption</a>
+                            
+                              <a class="tag" href="/tags/#infrastructure" title="infrastructure">infrastructure</a>
+                            
+                              <a class="tag" href="/tags/#interprocess comminitation" title="interprocess comminitation">interprocess comminitation</a>
+                            
+                              <a class="tag" href="/tags/#protection" title="protection">protection</a>
+                            
+                              <a class="tag" href="/tags/#security" title="security">security</a>
+                            
+                        </div>
+                        <h1>Pretty Good Privacy</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-09-13
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="https://danieljscheufler.files.wordpress.com/2016/08/computer-1294045_960_720.png" alt="computer-1294045_960_720"> Shortly after starting with my new company, I began work on a back-end infrastructure project. To be specific, I am working on an inter-process-communication (hereafter IPC) layer. As the project developed, we realized the need to protect our data in transit. This is because we are working with Protect Health Information (hereafter PHI). It would be a disaster if the data became compromised. So to combat this, we are encrypting the data before it is send through the IPC layer. There are many fine encryption schemes available, but many are difficult to implement. Moreover, it is not enough to just encrypt the data. One cannot continue to use the same key for all applications without risk. Enough messages using the same key, and enough time mean someone could learn it. They would then be free to read all our messages and the possible PHI contained within. Our brilliant architect suggested that we use <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" rel="noopener">Pretty Good Privacy</a> or PGP for short. It is an easy to implement encryption scheme that combines many desirable features. PGP uses a new random key for each message to encrypt the outbound data. This key is itself encrypted by a known private key, and is sent along with the encrypted message. Since the key is random every time, it is difficult to guess the private key. As a result, one cannot decrypt the public key, thus the message is reasonably safe. To help explain this, I have crafted a simple example in python code, using a <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank" rel="noopener">Vigenere Cipher</a>. You can find the entire example project on my GitHub Repo, <a href="https://github.com/djscheuf/ProgamingPractice/blob/Playground/Playground/Cryptography/PGP/example.py" target="_blank" rel="noopener">here</a>. But the core of the example is as follows:</p>
+<p>def encodePGP(self,plainMsg):
+# generate random key</p>
+<p>randKey = self._generateRandomKey()
+print(&quot;&gt; Internal Random Key: &quot;+randKey)</p>
+<p># encrypt input with ^
+cryptographer = Crypto()
+encryptedMsg = cryptographer.encode(randKey,plainMsg)</p>
+<p># encrypt random key with priv.
+key pubKey = cryptographer.encode(self.privateKey,randKey)</p>
+<p>#return concat encrypted key and input
+return pubKey + &quot;_&quot;+encryptedMsg</p>
+<p>For those who prefer, a visual representation of this is available on the Wikipedia page for PGP. The algorithm is as I stated before:</p>
+<ol>
+<li>Generate a Random Key for the message</li>
+<li>Encrypt the message with the Random key</li>
+<li>Encrypt the Random Key with the Private Key, to form the public key</li>
+<li>Concatenate the Encrypted Message and Public Key</li>
+</ol>
+<p>The code for Decoding is as follows:</p>
+<p>def decodePGP(self,concatMsg):
+#parse encrypted pub key, encrypted message
+parsed = concatMsg.split(&quot;_&quot;)
+pubKey = parsed[0]
+encryptedMsg = parsed[1]</p>
+<p># decrypt rand key with priv. key
+cryptographer = Crypto()
+randKey = cryptographer.decode(self.privateKey, pubKey)</p>
+<p># decrypt message with rand key
+decryptedMsg = cryptographer.decode(randKey,encryptedMsg)</p>
+<p>#return message
+return decryptedMsg</p>
+<p>In plain terms the decryption steps are:</p>
+<ol>
+<li>Parse the input message to get the Public Key and the Encrypted Message</li>
+<li>Decrypt the Public key with the Private key, to form the original Random Key</li>
+<li>Use the Random Key to Decrypt the Encrypted Message</li>
+</ol>
+<p>Ridiculously simple right?! However, this method can be rendered vulnerable by using a weak encryption method, such as the Vigenere Cipher, as I have. Though,it should be clear that a PGP-Vigenere is stronger that Vigenere alone. As you can see, with a strong encryption method, PGP adds a significant increase in security. The cost is that it increases the complexity in a limited fashion. Naturally, I will be adding this to my tool kit for future projects! I hope this explanation and example has been helpful. But I admit the diagram on Wikipedia provides a good outline of the PGP scheme. For anyone interested, you can download the example and the Vigenere Cipher implementation <a href="https://github.com/djscheuf/ProgamingPractice/tree/Playground/Playground/Cryptography/PGP" target="_blank" rel="noopener">here</a>.</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/09/20/journeymans-digest-03/" data-toggle="tooltip" data-placement="top" title="Journeyman's Digest 03">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/09/06/journeymans-digest-02/" data-toggle="tooltip" data-placement="top" title="Journeyman's Digest 02">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                        
+                          <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                        
+                          <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                        
+                          <a class="tag" href="/tags/#recent work" title="recent work">recent work</a>
+                        
+                          <a class="tag" href="/tags/#algorithms" title="algorithms">algorithms</a>
+                        
+                          <a class="tag" href="/tags/#encryption" title="encryption">encryption</a>
+                        
+                          <a class="tag" href="/tags/#infrastructure" title="infrastructure">infrastructure</a>
+                        
+                          <a class="tag" href="/tags/#interprocess comminitation" title="interprocess comminitation">interprocess comminitation</a>
+                        
+                          <a class="tag" href="/tags/#protection" title="protection">protection</a>
+                        
+                          <a class="tag" href="/tags/#security" title="security">security</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

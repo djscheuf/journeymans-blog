@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <!-- <link rel="shortcut icon" href="/img/ironman-draw.png"> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+            Journeyman&#39;s Digest 04 - Journeyman&#39;s Travels
+                
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/10/04/journeymans-digest-04/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/beantech.min.css">
+
+            <!-- Pygments Highlight CSS -->
+            <link rel="stylesheet" href="/css/highlight.css">
+
+                <link rel="stylesheet" href="/css/widget.css">
+
+                    <link rel="stylesheet" href="/css/rocket.css">
+
+                        <link rel="stylesheet" href="/css/signature.css">
+
+                            <link rel="stylesheet" href="/css/toc.css">
+
+                                <!-- Custom Fonts -->
+                                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+                                <!-- Hux change font-awesome CDN to qiniu -->
+                                <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                                <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+                                <!-- ga & ba script hoook -->
+                                <script></script>
+</head>
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#development" title="development">development</a>
+                            
+                              <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                            
+                              <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                            
+                              <a class="tag" href="/tags/#Software Development" title="Software Development">Software Development</a>
+                            
+                              <a class="tag" href="/tags/#news" title="news">news</a>
+                            
+                        </div>
+                        <h1>Journeyman&#39;s Digest 04</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-10-04
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h6><span id="issue-04">Issue 04</span></h6>
+<h2><span id="this-issues-highlight">This Issue's Highlight</span></h2>
+<p><strong><a href="https://backchannel.com/forget-comcast-heres-the-diy-approach-to-internet-access-ef1e37bc09e1#.9uldu8hbl" target="_blank" rel="noopener">A DIY approach to internet</a></strong> - So everyone knows that the ISPs don't provide the best of services. So, one gent in Spain got fed up with waiting for them to run internet to his house, so he did it himself, by modifying commercially available equipment. After a while, his neighbors asked him to do the same for them, and he set up a small network. This network grew. And now he has an organization helping him to roll this out over more of the country, and helping him negotiate more service based deals with providers. These new providers instead offer tech-support, installations, an maintenance, rather than owning the wire or the data going through. It is a new and interesting model. I wonder if it will ever be able to come to the US. <strong><a href="http://urbanconfessional.org/blog/howtodisagree" target="_blank" rel="noopener">On How to disagree</a></strong> - The author discusses a rather contentious issue, namely abortion, but decides to take a different approach. He may disagree, but he realizes that the only way to help anyone towards your opinion, is to treat them with respect, and understand that we all have stories. This article made me pause. No matter if you agree with his stance or disagree, the suggestion for how to disagree in a more constructive way is powerful!</p>
+<h2><span id="the-goods">The Goods</span></h2>
+<p><strong><a href="http://techblog.netflix.com/2016/08/vizceral-open-source.html" target="_blank" rel="noopener">Netflix's open-source Traffic intuition tool</a></strong> - So Netflix, has updated it's open source traffic-intuition tool. This tool is apparently responsible for balancing the load of the Netflix servers, and keeping data speeds at reasonable levels. For those of us in Tech, it is an interesting topic, and this project might hold some insights. <strong><a href="https://techcrunch.com/2016/08/02/china-has-actually-built-that-elevated-bus-that-travels-above-car-traffic/" target="_blank" rel="noopener">China builds a traffic straddling bus!</a></strong> - So that futuristic idea of a bus that simply rides over traffic? Yeah, a company in China actually built it, and did a test.</p>
+<p><strong><a href="http://shanghaiist.com/2016/08/05/straddling_bus_scam.php" target="_blank" rel="noopener">... but maybe it isn't as impressive as originally thought.</a></strong> - Don't get your hopes up too much though. Apparently, the city official's didn't even know the test was happening. Further, as one might expect for an initial test, the traffic conditions were carefully controlled, and the test course was not very long. However the most concerning news, is that the bus only supports traffic up to 10 feet off the road... the city's limit is 20 feet, which might mean that the bus cannot remain street legal, and still dodge the larger trucks.</p>
+<p>**<a href="http://www.consciouscapitalism.typepad.com/conscious-capitalism/2009/10/summary-of-thinking-in-systems-by-donella-meadows.html" target="_blank" rel="noopener">Thinking in systems, a summary</a> **- The author of this post, provides his summary of several systems he has found useful for thought. I found it an interesting compilation, and thought you all might find something useful in it as well. <strong><a href="http://themacro.com/articles/2016/08/product-development-cycle-fundamentals/" target="_blank" rel="noopener">Product Development Cycle Fundamentals</a></strong> - As the title suggests, it is a discussion of the fundamental of the cycle of product development. For anyone familiar with Agile, these will be familiar, but I particularly appreciate the authors remarks on the need for a measurement of success. I have experience attempts at development without such markers. These were difficult to say the least. <strong><a href="https://medium.com/anymail-finder-blog/using-an-api-to-build-a-1-500-month-business-in-4-months-6573350291f#.dy1mppk09" target="_blank" rel="noopener">How to start a 1500USD business using a public API in 4 months</a></strong> - Another article from a small-business entrepreneur. This time, the authors discussion revolve around finding the niche for the business, as well as learning to adjust to the inconsistent stream of income. Over all, I found it an informative read.</p>
+<h3><span id="this-issues-curiosity">This Issue's Curiosity</span></h3>
+<p><strong><a href="http://arstechnica.com/cars/2016/08/meet-some-of-the-startups-trying-to-take-the-pain-out-of-buying-a-new-car/" target="_blank" rel="noopener">Some start-ups trying to take the pain out of car buying</a></strong> - So someone finally decided to try to make a better car-buying experience. Anyone whose bought a used car knows the pain and the toil that goes into finally getting the car out of the dealer's lot. This article discusses two companies, with two slightly different approaches, who are trying to make that process less arduous and frustrating. **<a href="http://yournewswire.com/mysterious-tweet-sparks-fears-edward-snowden-is-missing-or-dead/" target="_blank" rel="noopener">Fears that Snowden may be dead</a> **- By now, anyone who follows the tech-related news closely, should have heard of this. Snowden's twitter account posted what looked like a hexadecimal cryptographic key. This spurred speculation that it is the key for archives he has shared with various news sources, and that if the key was shared, it might mean his detention or death. The news of this is troubling in my opinion. But I found the discussions surrounding the event interesting.</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/10/11/mit-is-asking-how-should-self-driving-cars-behave/" data-toggle="tooltip" data-placement="top" title="A Master-Class in Survey Design: MIT's Self-Driving Car Survey">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/09/20/journeymans-digest-03/" data-toggle="tooltip" data-placement="top" title="Journeyman's Digest 03">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#development" title="development">development</a>
+                        
+                          <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                        
+                          <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                        
+                          <a class="tag" href="/tags/#Software Development" title="Software Development">Software Development</a>
+                        
+                          <a class="tag" href="/tags/#news" title="news">news</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

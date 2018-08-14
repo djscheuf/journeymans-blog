@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <!-- <link rel="shortcut icon" href="/img/ironman-draw.png"> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+            Innovation Fridays - Learn C# - Journeyman&#39;s Travels
+                
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/05/26/innovation-fridays-learn-c/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/beantech.min.css">
+
+            <!-- Pygments Highlight CSS -->
+            <link rel="stylesheet" href="/css/highlight.css">
+
+                <link rel="stylesheet" href="/css/widget.css">
+
+                    <link rel="stylesheet" href="/css/rocket.css">
+
+                        <link rel="stylesheet" href="/css/signature.css">
+
+                            <link rel="stylesheet" href="/css/toc.css">
+
+                                <!-- Custom Fonts -->
+                                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+                                <!-- Hux change font-awesome CDN to qiniu -->
+                                <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                                <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+                                <!-- ga & ba script hoook -->
+                                <script></script>
+</head>
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                            
+                              <a class="tag" href="/tags/#c++" title="c++">c++</a>
+                            
+                              <a class="tag" href="/tags/#csharp" title="csharp">csharp</a>
+                            
+                              <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                            
+                              <a class="tag" href="/tags/#git" title="git">git</a>
+                            
+                              <a class="tag" href="/tags/#github" title="github">github</a>
+                            
+                              <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                            
+                              <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                            
+                              <a class="tag" href="/tags/#innovation" title="innovation">innovation</a>
+                            
+                              <a class="tag" href="/tags/#gitkracken" title="gitkracken">gitkracken</a>
+                            
+                              <a class="tag" href="/tags/#Visual Studios" title="Visual Studios">Visual Studios</a>
+                            
+                              <a class="tag" href="/tags/#workshop" title="workshop">workshop</a>
+                            
+                        </div>
+                        <h1>Innovation Fridays - Learn C#</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-05-26
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="https://danieljscheufler.files.wordpress.com/2016/05/2p4i.png" alt="2p4i">Internally, my company has experienced a push to get <em>'Innovation Fridays'</em> started up again. Every month developers are given a 4 hour period to pursue various projects or learning. For this block of time, the Automated Test Scripting team, ATS for short had been interested in learning how to write and use C#. Given my familiarity with the Team, and my knowledge of the language, they asked if I would be willing to lead a workshop on it. Naturally I couldn't refuse such a request from friends, and moreover, I knew this would be a chance to strengthen my core on C#. As everyone knows, to teach something is to learn it far better than when you first were taught. I figured that my workshop plan, while good, had some chinks in its armor and that it might also make interesting reading. So for the purpose of getting some additional insight and for the freedom of information I decided to post a series on my plans and activities relating to the workshop. So if you think of anything, please feel free to make suggestions in the comments. Now before I start, I want to express that I have a good deal of experience in running workshops on a variety of topics, including some rather technical ones. I somehow got into doing this when I was in high school, wherein I would help teach Tae Kwon Do to kindergartens, while working on my black-belt and after. Further, while in College I was blessed with an A in Calculus-based Physics, and so was asked by an enrichment program to lead a Physics workshop, which I did every semester for perhaps 3 years or so, until I graduated. I very much enjoyed the work, and was blessed with some help paying for school by it. Among the most enjoyable was creating questions and problems for the students to work on, especially in Mechanical Physics. However I found that for the majority, the workshop was not totally ideal, since it must keep pace with the class. And sadly, many students could not keep up with the class in the first place. This is perhaps the single biggest obstacle that I am working to overcome with my present workshop plan. Overall, I am planning to follow the recommendations made by Josh Kaufman in his 20 Hours TED talk, which I have mentioned <a href="https://mysource.ihs.com/blogs/JourneymanBlog/2016/04/14/how-to-learn-any-skill-in-20-hours" target="_blank" rel="noopener">before</a>. Naturally I think the four steps are very well suited for learning C#, so my workshops will generally be focused on one or perhaps at most two of these steps at a time.With any luck, I will run these for the next 6 months or so, and have our learning concluded by that time. However for the first workshop which occurred last Friday, most of our time was spent on step 2, or Learning Enough to Self-Correct, and on deciding on project infrastructure. For this discussion I will talk more about the project infrastructure, and perhaps will elaborate more on the learning portion at a later time. Now, getting back to the obstacle I mentioned earlier. Everyone on the ATS team is at different levels of skill, which means each will need a different levels of instruction and will be able to accomplish different amounts in the same time. So to support the needs of the high-performing team members, while maintaining the approach-ability for those who need more guidance, I elected to pursue Project based learning as the workshop model. On this topic, I put the team size and project type to a vote. It was decided that, for the most part, everyone would pursue their own project. As a result we have 6 teams, for 7 people. As to the projects they are covering, those are somewhat less varied as there are 4 different projects at the moment. They are as follows:</p>
+<ol>
+<li>A Sudoku Game application</li>
+<li>A Music Player</li>
+<li>A Rich-Text-Format Text Editor</li>
+<li>An internal Installation tool for our Company's Software</li>
+</ol>
+<p>Of course, you can see that each of these will have different technical challenges, but also each has some elements of similarity. For instance many of these will need File Access, and each will need some component of UI. As a result these projects cover a breadth of topics making them good candidates for learning C#, while still maintaining some common ground for group discussions. To make things easier on myself, I have had all the teams setup the following organization for their projects, so that we can work with others more easily. Every Team project will have at least 4 separate Code Projects( the place where code is dropped in Visual Studios Solutions). These are the Infrastructure, the UI layer, and the test associated with both. By separating the Infrastructure from the UI, I am hoping to provide the necessary grounds for following better design principles. Of course with how small these projects will be, It may feel somewhat silly to have all this extra separation. But since the purpose of this workshop is not simply to write the Project and get it done, but is instead to learn how to write C# well, I think it is a fair trade-off. If we are going to be working so that our project structures are similar, it would make sense to ensure we are all using the same tools. And sadly, since most of our participants are using personal laptops, they don't have easy access to the Company WiFi, or the source-control servers, which means we needed another place to store our code. This way the projects could be shared between teams when the time came. For this I have selected Github, as I am familiar with it due to personal side projects, and because it would be free to access for all involved. All I would have to do would be to add the ATS team as contributors to the selected Repo. <img src="https://danieljscheufler.files.wordpress.com/2016/05/gitkraken-social-icon.jpg" alt="gitkraken-social-icon">For those of you who are also familiar with Github, you should recognize that git is very Command Line heavy without a GUI. So to make the transition easier for the team, I had them all download <a href="https://www.gitkraken.com/" target="_blank" rel="noopener">GitKraken</a>, which is my preferred GUI for Github. So far, this has seemed to make the process much easier. But I will know more when we next met about a month from now. Lastly, no code project would be complete without an IDE. And for this we turned to Microsoft Visual Studios community edition. We have a mix of 2013 and 2015, since that is what the team members were able to find. I am hoping that this will not cause problems later on when the projects are viewed by other teams, but we shall cross that bridge when we come to it. So during our first meeting, we covered all of the project set-up minutia, and some of the basic principles that I am hoping to pass on. I will share this in my next Innovation Friday post. These will likely include the various links that I used and other references that I find to be very useful! In the meantime, I would love to hear any suggestions or ideas you have! After all, I only had my experience and my gut to go on, and I am certain I might have overlooked some great opportunities! * - The C# logo was created by <a href="http://devstickers.com/csharp" target="_blank" rel="noopener">DevStickers</a> * - The GitKraken Logo was borrowed from the GitKraken website.</p>
+<h6><span id="edits">//Edits//</span></h6>
+<h6><span id="11jun2016-spell-checking-and-minor-grammarreadability-refactor">11JUN2016 - Spell-checking and Minor Grammar/Readability refactor</span></h6>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/06/02/learn-c-principles-i/" data-toggle="tooltip" data-placement="top" title="Learn C# - Principles I">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/05/19/development-tool-atom/" data-toggle="tooltip" data-placement="top" title="Development Tool: Atom">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                        
+                          <a class="tag" href="/tags/#c++" title="c++">c++</a>
+                        
+                          <a class="tag" href="/tags/#csharp" title="csharp">csharp</a>
+                        
+                          <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                        
+                          <a class="tag" href="/tags/#git" title="git">git</a>
+                        
+                          <a class="tag" href="/tags/#github" title="github">github</a>
+                        
+                          <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                        
+                          <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                        
+                          <a class="tag" href="/tags/#innovation" title="innovation">innovation</a>
+                        
+                          <a class="tag" href="/tags/#gitkracken" title="gitkracken">gitkracken</a>
+                        
+                          <a class="tag" href="/tags/#Visual Studios" title="Visual Studios">Visual Studios</a>
+                        
+                          <a class="tag" href="/tags/#workshop" title="workshop">workshop</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

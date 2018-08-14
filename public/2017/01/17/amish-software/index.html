@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <!-- <link rel="shortcut icon" href="/img/ironman-draw.png"> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+            Amish Software - Journeyman&#39;s Travels
+                
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2017/01/17/amish-software/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/beantech.min.css">
+
+            <!-- Pygments Highlight CSS -->
+            <link rel="stylesheet" href="/css/highlight.css">
+
+                <link rel="stylesheet" href="/css/widget.css">
+
+                    <link rel="stylesheet" href="/css/rocket.css">
+
+                        <link rel="stylesheet" href="/css/signature.css">
+
+                            <link rel="stylesheet" href="/css/toc.css">
+
+                                <!-- Custom Fonts -->
+                                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+                                <!-- Hux change font-awesome CDN to qiniu -->
+                                <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                                <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+                                <!-- ga & ba script hoook -->
+                                <script></script>
+</head>
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#AGILE" title="AGILE">AGILE</a>
+                            
+                              <a class="tag" href="/tags/#Agile Methodology" title="Agile Methodology">Agile Methodology</a>
+                            
+                              <a class="tag" href="/tags/#development" title="development">development</a>
+                            
+                              <a class="tag" href="/tags/#agility" title="agility">agility</a>
+                            
+                              <a class="tag" href="/tags/#business" title="business">business</a>
+                            
+                        </div>
+                        <h1>Amish Software</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2017-01-17
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><a href="https://danieljscheufler.wordpress.com/2017/01/10/resuscitating-the-dread-word-agile/" target="_blank" rel="noopener">Last week</a>, I spoke about ‘Resuscitating the dread word ‘Agile’ ‘. The core of that post was that Business does ‘Agile’ wrong. Business misunderstands what it is buying when it pursues the ‘Agile’ practices. Business thinks it is buying a software product. But what agile provides is usually strategic information about customer desires. These ideas continued to boil in my brain when another thought hit me. The software Industry is still very young. We’ve only been making software since we had computers. By contrast, we’ve been making furniture much, much longer. Like since we’ve had agriculture… As a result, we haven’t had time to discover suitable manufacturing patterns. That being said, many businesses are seeking these patterns from other industries, for example furniture or automobile manufacturing. Software Businesses have been searching for ways to apply the old practices in an effort to get a handle on this new beast. From what I’ve seen, read, or heard, there are a handful of predominant patterns. Today I want to talk about two archetypes that I have experienced. The first pattern follows my previous post. It is the Business ‘Agile’ way of development. We get short, controlled, well-measured, impotent steps. We know when we’ll finish, because we can measure the man-hours it will take to produce the rest of the pieces. Like knowing how many steps are left in the process on a factory line. Each man has a task he must do on the item, and then he hands it off to another person. Sure someone might be working on a wheel, and another on the engine. But he needs to finish polishing the mirror. Then later they can put all those things together and out rolls a new Model T. For those who have experienced this style of work, it can be draining or down-right degrading to your spirit. You become the cog in a machine that produces standard measurable quality. There is little for you to be proud of, nor any part of the work that could be held aloft as the epitome of excellence. To put it bluntly, these practiced vulgarize the creative work of software engineers. It encourages management to think of the developer as expendable and replaceable. Note, I am not arguing for indispensability of the engineer. Instead I would argue for recognition of individual value and contribution. In contrast, I have worked for a shop where developers behave more like craftsmen. The best allusion that comes to mind is a weathered carpenter sanding a table, or assembling a barn with time-tested methods. He rests easy knows that his creation will stand for generations. To be completely honest, I think of the Amish Barns I’ve seen up north. Specifically their construction techniques that required no nails. The developers at this shop naturally wore many hats, from testing to deployment. But when you spoke to them, you could tell they were pleased with their work. Discussions were lively, and issues were rather easy to resolve, even across larger systems. As you can guess, this shop was much smaller in scale. It was also lead up by two seasoned Software Engineers. So, the two styles are Factory-line, or Craftsmen. Speaking from experience, I by far prefer the craftsmen shop. The culture of the office was freer, but maintained a strong discipline. Not only that, the output of the office was a higher quality too. That is not to say that high-quality code did not emerge from the Factory-line. Merely that producing such quality was more difficult and less common in the factory-line shop. With these two types in mind, I realized that the differenced weren’t merely in style of management, but ran much deeper. The first difference I found was in the language that each shop favored. The Craftsmen shop favored a recent edition of C++. The Factory-line shop favored C# for new development. The language differences were just the surface, but they are a good touch-point for the pattern of differences. One shop favored older, well-worn and stable libraries. The other favored newer, less stable and generally more finicky libraries. And when I realized that, I saw that the problem was also with us, the software developers. Perhaps it is a reaction to Business ‘Agile’, or perhaps its just a part of the culture. We scrambled for the ‘new technology’ that will ‘solve all the old problems better, faster, easier’. Of course, after a time, experience teaches that this can never be the case. But on the whole, the software development community leans towards neophilia. With the rapid change in our tools, it appears we may also be drifting towards less proficiency with these tools. And that is when it hit me. It’s not only business that does agile wrong. We do it too. In fact, we might even be pursuing software development the wrong way. In the rush to find the new, to get the business people off our back, we haven’t had time to look around for another option. At least, those of us who work for business majors haven’t. Perhaps companies founded by software developers can still get it. Or maybe it’s a size thing. So as I see it we’ve two predominant patterns. First, we have the factory, with its pre-cut particle board. And its pieces precariously held together with glue and the prayers of the innocent. AS one alternative, we’ve the Amish carpenter, crafting his table, or drawers. Using well known and well-worn tools handed down to him by his father. The factory furniture might be ready sooner. It might be cheaper too. But the table so finely crafted, will stand the test of time. Such quality comes at a cost. The question before us is: Is quality worth the cost? The question isn’t just about price. It is also about practice. What are we willing to give up to gain quality? Are we willing to work with older, more stable technology? I know that when I started in the work-force, I would usually sneer job postings that listed ancient or arcane languages on them. I am beginning to reconsider my stance. What do we want to be? Factory cogs, or Amish carpenters? Or perhaps is there another way?</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2017/01/24/to-build-a-better-performance-review/" data-toggle="tooltip" data-placement="top" title="To build a better performance review">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2017/01/10/resuscitating-the-dread-word-agile/" data-toggle="tooltip" data-placement="top" title="Resuscitating the dread word 'Agile'">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                        
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#AGILE" title="AGILE">AGILE</a>
+                        
+                          <a class="tag" href="/tags/#Agile Methodology" title="Agile Methodology">Agile Methodology</a>
+                        
+                          <a class="tag" href="/tags/#development" title="development">development</a>
+                        
+                          <a class="tag" href="/tags/#agility" title="agility">agility</a>
+                        
+                          <a class="tag" href="/tags/#business" title="business">business</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

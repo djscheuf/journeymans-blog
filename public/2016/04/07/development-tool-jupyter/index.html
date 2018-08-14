@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <!-- <link rel="shortcut icon" href="/img/ironman-draw.png"> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+            Development Tool: Jupyter - Journeyman&#39;s Travels
+                
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/04/07/development-tool-jupyter/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/beantech.min.css">
+
+            <!-- Pygments Highlight CSS -->
+            <link rel="stylesheet" href="/css/highlight.css">
+
+                <link rel="stylesheet" href="/css/widget.css">
+
+                    <link rel="stylesheet" href="/css/rocket.css">
+
+                        <link rel="stylesheet" href="/css/signature.css">
+
+                            <link rel="stylesheet" href="/css/toc.css">
+
+                                <!-- Custom Fonts -->
+                                <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+                                <!-- Hux change font-awesome CDN to qiniu -->
+                                <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+                                <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+                                <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                                <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+                                <!-- ga & ba script hoook -->
+                                <script></script>
+</head>
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#development" title="development">development</a>
+                            
+                              <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                            
+                              <a class="tag" href="/tags/#IDE" title="IDE">IDE</a>
+                            
+                              <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                            
+                              <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                            
+                              <a class="tag" href="/tags/#development environment" title="development environment">development environment</a>
+                            
+                              <a class="tag" href="/tags/#jupyter" title="jupyter">jupyter</a>
+                            
+                              <a class="tag" href="/tags/#prototype" title="prototype">prototype</a>
+                            
+                        </div>
+                        <h1>Development Tool: Jupyter</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-04-07
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>Recently, one of my colleaguespresented a prototype of a new feature that my team was going to implement. To be certain the new feature was fascinating both for its algorithmic complexity, and its significance to our users. However, I was admittedly more caught by the tool he had used to develop and present the prototype. With this tool he was able to set-up a development environment, test data, and was able to demonstrate live, working code for us with ease! This tool was <a href="http://jupyter.org/" target="_blank" rel="noopener">Jupyter</a>. [caption id=&quot;&quot; align=&quot;alignright&quot; width=&quot;240&quot;]<img src="http://blog.jupyter.org/content/images/2015/02/jupyter-sq-text.png" alt=""> *Jupyter Logo[/caption] I can best describe Jupyer as a web-hosted development and testing environment. The Jupyter application is installed on a server which can then expose multiple notebooks wherein the development can be done. More specifically, these notebooks are where the demonstration data is housed, and the presentation are run. Moreover, each notebook can be hooked up to a different compiler/interpreter to allow development to proceed in multiple languages! This is profoundly useful, because it allows a prototype to be developed in the easiest language to program in, without having to pay for the overhead of a presentation layer! Thus demonstrating a feature to the PM/PO becomes much easier! Furthermore, when you are presenting to the developers, they can make adjustments to the code which you are presenting and they can witness the change's effects in real-time! A Jupyter notebook's structure is very similar, if not identical, to that of a <a href="https://www.wolfram.com/mathematica/" target="_blank" rel="noopener">Mathematica</a> Notebook. In Mathematica, the user creates a notebook, and enters an equation , or series of equations into an entry. Then the computation is carried out for that entry, and the user can proceed to use the results in the next entry. This includes plotting as well as some algorithmic analysis, which is especially useful for complex physics simulations. In Jupyter, the user enters a series of functions, function calls, or classes into an entry, which can then be employed for later use by future entries. One can execute an algorithm in one step, and plot it in the next, or go on to use the results of the algorithm in another step. Each entry's results are calculated based only on the present conditions, so changes to entry 1 might affect entry 5's results, if entry 5 used entry 1's results to calculate. But as a benefit, if a mistake was made in entry N, one need only correct that entry, and then re-run the calculations for the entries which follow. Both Mathematica and Jupyter share this behavior. In a corporate setting Jupyter would excel in several use cases, including the PM/PO and the developer Demonstration. In a non-co-located, or even in a co-located environment, a Jupyter notebook could be set-up to allow many users to interact with prototypes in real-time, allowing developers to review the functioning of the prototype while they might be developing the code in a different location or language. Alternatively, It could be used to allow the PM to visualize what a new feature's output will look like given some sample data, without having to ask the developers to run the simulation! This would allow the PM to quickly sort through the accuracy of the algorithm. In this case, a QA could also use the notebook to actively investigate a customer reported error in the algorithm, so long as they have the important data and access to an updated algorithm. This way the QA would not need the entire user project, and all the sensitive information that might contain, which could make reproducing bugs much easier! Finally, as was the case with my colleagues work, Jupyter can be used as a rapid-prototyping environment. Since the language compiler/interpreter are set with the notebook, and the presentation layer is already handled, the developer is much more free to pursue the real interest, the product algorithm. Since the language is not locked by previous work, the developer would be free to choose whatever language they felt would best suit the project. They could feasibly borrow data from other projects, or even simply generate it within the notebook! Overall, Jupyter looks to be a very effective tool for sharing the development of algorithms, or other possible calculation intensive features in an accessible way with multiple parties within the organization. It provides a usable interface to both developers and non-developers alike, in an approachable fashion. It provides the ability to modify the experimental data to give the users a more detailed understanding of the prototype. And finally, if it were used to hold the existing algorithms, then it might also allow the PM's to simulate the program sufficiently to trace bugs related to the customer data, or to the company's algorithm rather than wasting significant time in the back-and-forth as developers seek to understand the meaning behind the data, and why a particular output is wrong. For those interested in knowing more, you can find Jupyter at <a href="http://jupyter.org/" target="_blank" rel="noopener">jupyter.org</a>! Thank you for your time, and I hope that you find this tool to be useful in your endeavors! * The image shown is the Jupyter logo found on the <a href="http://jupyter.org/" target="_blank" rel="noopener">jupyter.org</a> home page.</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/04/14/software-dev-games-for-your-children/" data-toggle="tooltip" data-placement="top" title="Games for the children of Software Developers">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#development" title="development">development</a>
+                        
+                          <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                        
+                          <a class="tag" href="/tags/#IDE" title="IDE">IDE</a>
+                        
+                          <a class="tag" href="/tags/#tool" title="tool">tool</a>
+                        
+                          <a class="tag" href="/tags/#tools" title="tools">tools</a>
+                        
+                          <a class="tag" href="/tags/#development environment" title="development environment">development environment</a>
+                        
+                          <a class="tag" href="/tags/#jupyter" title="jupyter">jupyter</a>
+                        
+                          <a class="tag" href="/tags/#prototype" title="prototype">prototype</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
