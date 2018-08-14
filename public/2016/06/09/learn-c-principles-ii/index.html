@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Learn C# - Principles II - Journeyman&#39;s Travels
+        
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/06/09/learn-c-principles-ii/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                              <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                            
+                              <a class="tag" href="/tags/#software" title="software">software</a>
+                            
+                              <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                            
+                              <a class="tag" href="/tags/#c++" title="c++">c++</a>
+                            
+                              <a class="tag" href="/tags/#csharp" title="csharp">csharp</a>
+                            
+                              <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                            
+                              <a class="tag" href="/tags/#workshop" title="workshop">workshop</a>
+                            
+                              <a class="tag" href="/tags/#tim peters" title="tim peters">tim peters</a>
+                            
+                              <a class="tag" href="/tags/#zen" title="zen">zen</a>
+                            
+                        </div>
+                        <h1>Learn C# - Principles II</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-06-09
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><img src="https://danieljscheufler.files.wordpress.com/2016/05/2p4i.png" alt="2p4i">Last week, I posted the first part of my Learn C# principles discussion. There I covered those principles which I believe would be less subjective and more widely held. This week, I am delving into some more personal principles which I find have improved my code greatly. However, to begin our discussion this week, I will speak on a concept that I believe many will again agree on. One thing that almost every new programmer should know is that many problems that they will encounter have already been solved. Of course , as with any system with multiple solutions, some are better than others. The best of these have been codified into a series of <a href="http://http//c2.com/cgi/wiki?DesignPatternsBook" target="_blank" rel="noopener">Design Patterns</a> produced by the &quot;<a href="http://http//c2.com/cgi/wiki?GangOfFour" target="_blank" rel="noopener">Gang of Four</a>&quot;. To be completely honest, I wished that I had found out about these far earlier than I did as they would have saved me a lot of frustration in creating some of these patterns for myself. But patterns like the Adapter, or the Facade I find myself using quite frequently. But more importantly they changed how I look at the problems that I am trying to solve. I spend more time thinking of the responsibilities, than of the methods. As a result I have gotten better about following the Single Responsibility Principle, mentioned last week. In general, I believe that most developers would agree that these patterns are helpful, though some are more esoteric than others. Now seeing as I am instructing the C# course, I thought it would be best to reveal any potential hidden biases I have so that the students at least have a hope of separating what I personally believe to be good, from what is generally held to be good. This is most likely an over-abundance of caution but I truly wish to do right by those who have sought my instruction on the subject. The first place where I recognized that I might be slightly biases was in my experience with Python. Python is a wonderful language to pick-up and a very powerful, albeit not particularly performant. But while I was learning to speak Python, I came across a peculiar text which espoused some principles for software development that I hold to this day. The text is called the <a href="https://www.python.org/doc/humor/#the-zen-of-python" target="_blank" rel="noopener">Zen of Python</a>, and goes like this:</p>
+<p>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than right now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+-Tim Peters</p>
+<p>Admittedly this may require some additional explanation. I have found that it is easiest to look at in terms of paired ideas. For example, take lines 2 through 7, which cover such pairs as Explicit/Implicit, Simple/Complex, and Sparse/Dense. All of these are talking about how our code ought to read. Referring back to the text, it is better to Explicitly state what a function does, than to execute implicitly. This is idea of explicit effects is not merely held for python but can also be heard as have no &quot;side-effects&quot;. That is one possible interpretation of this line. But what makes the line so powerful is that it embodies the principle rather than the specific case. Another instance where the principle applied is repeated within the text itself: <em>&quot;Errors should never pass silently. Unless explicitly silenced.&quot;</em> So, as I have attempted to express there are a couple of larger principles explained nicely here with more specific guidelines towards their implementation. The easiest to see is that a developer ought to be expressive in their code, this theme runs throughout the poem. The second theme is that a developer ought to be pragmatic, which is somewhat shown in Practicality beats Purity, and in &quot;Never is often better than right now.&quot; It is another way of showing YAGNI, or <em>&quot;you aren't gonna need it&quot;.</em> These two are often held in a delicate tension, on one hand there is the pragmatic solution: Sparse is better than dense; but this is contrasted immediately with the Expressive side, Readability Counts. Python has been gifted with some humorous supporters throughout the years, including Time Peters, who wrote the Zen. I have found the kernels of truth laid underneath the clever words in several instances of quips about Python. I would heartily encourage every developer to read through them and make their own judgement. But if I can I would draw attention one other Python quip, which I find very humorous and also truthful. This quip is called &quot;<a href="https://www.python.org/doc/humor/#python-vs-perl-according-to-yoda" target="_blank" rel="noopener">Python vs. Perl according to Yoda</a>&quot; and it goes something like this:</p>
+<p>Subject: Python versus Perl: A humorous look</p>
+<p>From: larry (funkster@midwinter.com)</p>
+<p>Date: 10 Jul 1999 01:45:07 -0700</p>
+<p>This has been percolating in the back of my mind for a while.</p>
+<p>It's a scene from _The Empire Strikes Back_ reinterpreted to serve</p>
+<p>a valuable moral lesson for aspiring programmers.</p>
+<p>--</p>
+<p>EXTERIOR: DAGOBAH -- DAY</p>
+<p>With Yoda strapped to his back, Luke climbs up one of</p>
+<p>the many thick vines that grow in the swamp until he</p>
+<p>reaches the Dagobah statistics lab. Panting heavily, he</p>
+<p>continues his exercises -- grepping, installing new</p>
+<p>packages, logging in as root, and writing replacements for</p>
+<p>two-year-old shell scripts in Python.</p>
+<p>YODA: Code! Yes. A programmer's strength flows from code</p>
+<p>maintainability. But beware of Perl. Terse syntax... more</p>
+<p>than one way to do it... default variables. The dark side</p>
+<p>of code maintainability are they. Easily they flow, quick</p>
+<p>to join you when code you write. If once you start down the</p>
+<p>dark path, forever will it dominate your destiny, consume</p>
+<p>you it will.</p>
+<p>LUKE: Is Perl better than Python?</p>
+<p>YODA: No... no... no. Quicker, easier, more seductive.</p>
+<p>LUKE: But how will I know why Python is better than Perl?</p>
+<p>YODA: You will know. When your code you try to read six months</p>
+<p>from now.</p>
+<p>To get to the meat of it, Perl, which came before Python, encouraged some bad programming habits, like default variables and others which made it difficult to understand the code. Referring back to the Zen, it was not very expressive, since the syntax is terse.Additionally the &quot;true path&quot; of execution is difficult to determine since one cannot know how code will execute without some significant additional context, like the default variable values. And sadly, as Yoda describes, if a programmer falls into these traps in the early stage of a project, it becomes much more difficult to come back, if not completely impossible. To cap all this, the script offers a humorous test to determine whether or not you are following good patterns. If you can read your code in six months and know what you were trying to do, then perhaps you have done well. This sits along a similar vein with the Zen's &quot;If the implementation is easy to explain...&quot;. And I find it gratifying to find the self-consistency of the Python supporters in this. I am happy for both examples in order to see the many facets of the delicate balance between expressive and pragmatic code. This concludes the principles which I attempt to adhere to in my coding, and the ones which I will be utilizing in the workshop.As I had said before, I am trying to teach the principles first to help the future coding and learning to become easier. Looking back, I realize that some of this desire to teach principles first comes from some bad experiences that I had during my early college development days. As Yoda says, &quot;If once you start down the dark path, forever will it dominate your destiny...&quot; . I am hoping to same the participants this agony, and frustration. This basically covers the ideals that I hold for my software development and my general understanding of them. As always I thank you for your time, and hope that you learned something! Let me know in the comments! * - The C# logo was created by <a href="http://devstickers.com/csharp" target="_blank" rel="noopener">DevStickers</a></p>
+<h6><span id="edits">//Edits//</span></h6>
+<h6><span id="11jun2016-spellchecking-and-minor-grammarreadability-refactor">11JUN2016 - SpellChecking and Minor Grammar/Readability Refactor</span></h6>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/06/16/defensive-programming/" data-toggle="tooltip" data-placement="top" title="Defensive Programming">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/06/02/learn-c-principles-i/" data-toggle="tooltip" data-placement="top" title="Learn C# - Principles I">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                          <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                        
+                          <a class="tag" href="/tags/#software" title="software">software</a>
+                        
+                          <a class="tag" href="/tags/#software dev" title="software dev">software dev</a>
+                        
+                          <a class="tag" href="/tags/#c++" title="c++">c++</a>
+                        
+                          <a class="tag" href="/tags/#csharp" title="csharp">csharp</a>
+                        
+                          <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                        
+                          <a class="tag" href="/tags/#workshop" title="workshop">workshop</a>
+                        
+                          <a class="tag" href="/tags/#tim peters" title="tim peters">tim peters</a>
+                        
+                          <a class="tag" href="/tags/#zen" title="zen">zen</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

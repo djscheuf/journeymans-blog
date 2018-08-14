@@ -4,6 +4,7 @@ url: 2.html
 id: 2
 comments: false
 date: 2016-03-31 21:39:46
+header-img: "img/header_img/about-bg.png"
 ---
 
 ## WORK EXPERIENCE

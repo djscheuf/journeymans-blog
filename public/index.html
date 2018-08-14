@@ -1,319 +1,1236 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<html lang="en">
 
-  
-  <title>A Journeyman&#39;s Travels</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="The blog of a jouerneyman software engineer.">
-<meta name="keywords" content="software, engineer, journeyman, scheufler,">
-<meta property="og:type" content="website">
-<meta property="og:title" content="A Journeyman&#39;s Travels">
-<meta property="og:url" content="daniel.scheufler.io/index.html">
-<meta property="og:site_name" content="A Journeyman&#39;s Travels">
-<meta property="og:description" content="The blog of a jouerneyman software engineer.">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A Journeyman&#39;s Travels">
-<meta name="twitter:description" content="The blog of a jouerneyman software engineer.">
-  
-    <link rel="alternate" href="/atom.xml" title="A Journeyman&#39;s Travels" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Journeyman&#39;s Travels
+        
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">A Journeyman&#39;s Travels</a>
-      </h1>
-      
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/header_img/home-bg-2-dark.png') 
+            /*config*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="site-heading">
+                        <h1>A Journeyman&#39;s Travels</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading"></span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="daniel.scheufler.io"></form>
-      </div>
-    </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-Software-Engineers-are-actually-Creatives" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/14/Software-Engineers-are-actually-Creatives/" class="article-date">
-  <time datetime="2017-03-14T20:30:00.000Z" itemprop="datePublished">2017-03-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/perspective/">perspective</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/14/Software-Engineers-are-actually-Creatives/">Software Engineers are actually &#39;Creatives&#39;</a>
-    </h1>
-  
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Have you seen the <a href="https://github.audio/" target="_blank" rel="noopener">Project audio for Github</a>? Or the plethora of esoteric languages like <a href="https://esolangs.org/wiki/Piet" target="_blank" rel="noopener">Piet</a> or <a href="https://esolangs.org/wiki/Fish" target="_blank" rel="noopener">&gt;&lt;&gt;</a> (pronounced: fish)? Recently I had a ‘coding challenge’ for fun at work. The challenge was to print a poem in a language we didn’t already know. In that time I’ve picked up four such languages, which got me thinking. We, developers, enjoy some of this artsy kind of stuff. Sure it’s not your typical artwork, except for Piet. But it is very creative at heart. Then the light-bulb lit up, Software Developers are members of the ‘Creatives’ community.</p>
-<p>To be clearer, ‘Creatives’ is the group of designers, and artists who contribute to projects in more media-centric ways. For example, the icons, the color scheme, or the marketing campaigns and slogans all fit the bill. Software Engineers are usually inclined to disdain the ‘Creatives’. This is because it is harder to measure what creatives actually do. But I suspect there are some lessons we can learn, if we would open our eyes.</p>
-<p>Generally, one manages ‘Creatives’ in a particular way. The method enables the creative freedom. It also establishes the safe environment needed to ‘try something new’. This allows them to bring their brilliance to any given project. This environment makes sense for the product they deliver. If a creative team does not feel safe, very few ideas appear, leading to lack of success. Of course, such an environment is difficult to setup and very easy to tear down. One cruel word, or breach of trust and the system comes toppling down.</p>
-<p>In contrast, many software development teams are more hierarchical in their style. Additionally, there tend to be more men than women. As a result, software teams tend to favor codified leadership. We like increased authority rather than community, at least in traditional corporations. Most design ‘discussions’ are arguments in fancy dress. And sometimes this can work well, since engineers usually like to debate. But we should consider adopting some strategies from the ‘creatives’ side.</p>
-<p>A safe environment with respectful discussion rather than debate could be desirable. This environment would allow us to foster new and brilliant solutions. In order for this to work, software developers would have to realize they are ‘creatives’ too. We would have to change our ‘comfortable’ behavior to allow for a better team environment. This, of course, comes down to culture, but also to maturity. We must be mature enough to admit we might have missed something. And we must be mature enough to want the best ideas, rather than our own.</p>
-<p>At a manager’s level, if Software engineers are creative, then we ought to manage them differently. Dictating the chapter and verse of a solution you want is unproductive. It limits the benefit you can gain from your brilliant engineers. Instead, we need to challenge them. Provide them a problem and your rough idea of a solution and then encourage improvement upon it. Don’t dictate your needs as you would to your digital assistant. Rather begin a discussion about the best way forward. Before committing to deadlines, allow for ideas to circulate and then commit. Who knows, maybe we can learn something from those crazy ‘creatives’ in the east wing after all?</p>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
 
-      
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-    <footer class="article-footer">
-      <a data-url="daniel.scheufler.io/2017/03/14/Software-Engineers-are-actually-Creatives/" data-id="cjkq8sokl000epoe6g8c6yy7j" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/creative/">creative</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/esoteric/">esoteric</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leadership/">leadership</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/management/">management</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Dungeons-and-Dragons-and-Leadership-Training" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/" class="article-date">
-  <time datetime="2017-02-07T21:30:00.000Z" itemprop="datePublished">2017-02-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/perspective/">perspective</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/">Dungeons and Dragons and Leadership Training?</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>‘Roll Initiative!’ – A common call to arms in Dungeons and Dragons. I will freely admit; I still play on occasion with some of my college buddies. But this week during some quiet reflection a strange idea dawned on me. You could use DnD to practice a different forms of leadership.</p>
-<p>Now of course, pretending to be someone else is part and parcel for role-playing in general. But I specifically thought in terms of business. If you do a quick search for Software Development managers, you can find a variety of ideas on the topic. These include books like <a href="https://www.amazon.com/Peopleware-Productive-Projects-Teams-Second/dp/0932633439" target="_blank" rel="noopener">Peopleware</a>. There are also in-depth discussions on topics such as ‘Sovereign Software Development’[<a href="https://top.fse.guru/the-civilized-alternative-to-agile-tribalism-4c60d01428c0#.3m4tg0ivh" target="_blank" rel="noopener">here</a> and <a href="https://medium.com/@bryanedds/an-unexpected-inquisition-c4776bdedbb8#.ayu1jea40" target="_blank" rel="noopener">here</a>]. Nearly all mention the short-comings of management practices. Nearly all offer various ways around it. One weakness that I’ve found mentioned a handful of times is the way in which a manager leads their team.</p>
-<p>In a standard manager-employee relationship, the manager has authority through their title. This authority allows them to direct employees. This template can be made more complex with additional layers, or by cross-reporting to different people; all of which serve to confuse the issue and can lead to other troubles. Other models exist and the community likes discussing them. Many follow the pattern of servant leadership. Here the manager governs not by title-given authority. Instead managers govern by consensus, or by authority awarded them by the people they serve. Both of these increase the autonomy of the developers relative to their managers.</p>
-<p>But that very idea can be daunting and even frightening to a manager used to the traditional role. And this is where DnD comes in. I’ve seen several situations in which a player’s out-of-game personality bleeds into their character. It can be quite a trick to wholly separate your thoughts from your characters. But in this case, that blurred line could be useful. If a manager encountered a mock-leadership situation, they could practice their methods. DnD offers an excellent environment for this activity.</p>
-<p>To take a personal example, I wind up being the de facto leader in my player group. Generally, I will suggest an idea for our group, and ask for input. And usually the group says, ‘Sounds good.’ And that is that. Lately, I’ve been worried that I am unintentionally killing their creativity by proposing my own solution rapidly after being presented the challenge. I plan to try ask for input first this time. I can then propose my ideas as a modification to the ideas. I will try this next game and see if the results are more enjoyable for all of us.</p>
-<p>By taking a bit of the real-world within me into the game I can see how I could take a bit of the game back into the real world. Just because it is a game, doesn’t mean the lessons we learn in it are inapplicable to our work in the real world. Perhaps it’s time to roll some dice?</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="daniel.scheufler.io/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/" data-id="cjkq8sokk000dpoe6kn4e4y59" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/games/">games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leadership/">leadership</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/management/">management</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/practice/">practice</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/training/">training</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Code-is-read-more-often-than-it-is-written" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/12/27/Code-is-read-more-often-than-it-is-written/" class="article-date">
-  <time datetime="2016-12-27T21:30:00.000Z" itemprop="datePublished">2016-12-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/perspective/">perspective</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/27/Code-is-read-more-often-than-it-is-written/">Code is read more often than it is written</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>At first glance, this would seem an obvious statement. And it is in a way. When Python language creator Guido Van Rossum created Python, he did so with this thought in mind. As a result, the culture of Python is partly molded around <em>“readability counts”</em>.</p>
-<p>The more I thought that statement, the more I realized the marvel it held. <em>‘Code is read more often than it is written’</em>. If asked to choose between reading and writing, I would have said the same. And yet I realized now, that much of the code I have read, and some of the code I have written does not show this. I wondered, why did my behavior, and that of my peers, not match what I knew to be true? If we believed that code was read more often, they why is so much of our code so hard to read?</p>
-<p>At the core, our behavior remains unchanged because this quote is only an observation. There is not imperative contained in it. Without the means of an imperative, the observation cannot turn into an action. Instead the reader would need to derive <em>‘Code ought to be easily read’</em> from <em>‘Code is read more often than it is written’</em>. I trust most would be equal to the task, given a basic desire to optimize.</p>
-<p>When I first discovered this, I did not pay it nearly enough attention. I went blithely on my way. Some time later, during the quiet of a vacation, the thought came storming back. I was left dumbfounded. How could I have not seen it earlier? I realize now, it was because I had not given my self enough time to think. With the lighter load during vacation, I was able to think, and so naturally the thought came.</p>
-<p>This moment of serendipity also encouraged other considerations. Specifically, what other imperatives had I missed with casual observations? I quickly realized this is dark territory. It would be difficult to turn every observation into a possible imperative. Worse still, these observations might be biases, leading to bad imperatives. Or they might be too weak to lead to a meaningful imperative.</p>
-<p>In all cases, the question remains, what have I missed? I believe, especially in software, that we are caught in a rush to develop, to implement, and to finish. As a result, we do not give ourselves time to ask, <em>‘Is this the best way?’</em> Business demands that we move with purpose, and that is a reasonable demand. But for the best results, we need time to consider if we go in a way that will deliver us to the goal we seek. I will continue to look for miss-able observations may turn out to change everything.</p>
-<p>Addendum:</p>
-<p>While drafting this article, two other examples of <em>‘observation leading to imperative’</em> appeared. The first was fictional, from <strong>Foundation and Earth</strong> by Isaac Asimov. In the book, the protagonist remarks with surprise at the neural interface to a computer. Instead of being an over-the-head affair, it was through the hands. His realization was that humans sense and interact with the world through their hands. I may revisit this in a later branch of this discussion on design.</p>
-<p>The second example, sprouted from the first, specifically interaction and design. Recently the IoT movement has brought integration to our homes. In particular, the voice-interaction, such as Amazon’s Echo or Google Now. I observed that these devices extended a natural principle: <em>‘Humans use their voice to make their wishes known.’</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="daniel.scheufler.io/2016/12/27/Code-is-read-more-often-than-it-is-written/" data-id="cjkq8sok30000poe6y1trrq63" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/principles/">principles</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/user-experience/">user-experience</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/perspective/">perspective</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/creative/">creative</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/esoteric/">esoteric</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/games/">games</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/leadership/">leadership</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/management/">management</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/practice/">practice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/principles/">principles</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/training/">training</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/user-experience/">user-experience</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/creative/" style="font-size: 10px;">creative</a> <a href="/tags/esoteric/" style="font-size: 10px;">esoteric</a> <a href="/tags/games/" style="font-size: 10px;">games</a> <a href="/tags/leadership/" style="font-size: 20px;">leadership</a> <a href="/tags/management/" style="font-size: 20px;">management</a> <a href="/tags/practice/" style="font-size: 10px;">practice</a> <a href="/tags/principles/" style="font-size: 10px;">principles</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/software/" style="font-size: 20px;">software</a> <a href="/tags/training/" style="font-size: 10px;">training</a> <a href="/tags/user-experience/" style="font-size: 10px;">user-experience</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/03/14/Software-Engineers-are-actually-Creatives/">Software Engineers are actually &#39;Creatives&#39;</a>
-          </li>
-        
-          <li>
-            <a href="/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/">Dungeons and Dragons and Leadership Training?</a>
-          </li>
-        
-          <li>
-            <a href="/2016/12/27/Code-is-read-more-often-than-it-is-written/">Code is read more often than it is written</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Daniel Scheufler<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+    <!-- /.container -->
 </nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/">
+        <h2 class="post-title">
+            TIL... How to test a window-redirect using Mocks
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            I was testing an action, which upon completion needed to redirect the user to a new page. Normally, in javascript you can redirect using :
+window.location = &quot;newPath&quot;;
+But that's hard to ......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-06-26
+        </p>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/">
+        <h2 class="post-title">
+            TIL... How to run a single suite of Tests in Jest
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            So I was writing unit tests for my reducers, but got frustrated with the slow process of running the full test suite when I was tweaking a single test. I though, there's got to be a better way! To ......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-06-19
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/">
+        <h2 class="post-title">
+            TIL... How to Resolve false-positive ESLint Errors
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            So a colleague of mine was struggling with our local build process. Every time he ran the npm command, which ran a webpack build, He'd get numerous errors for 'import/no-unresolved'. The associated......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-06-12
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/06/05/til-how-to-use-todictionary/">
+        <h2 class="post-title">
+            TIL... How to use ToDictionary
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            So I was creating a bulk action in a controller. I needed to map a list of Ids to a dictionary of said Ids and their respective results. My initial thought was to use ForEach, but there was a great......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-06-05
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/05/22/til-how-to-use-map-and-reduce/">
+        <h2 class="post-title">
+            TIL... How to use Map and Reduce
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            While working on a React app, I needed to translate a bit of Redux shape into one needed by an Api. Due to the normalization we imposed on the Redux state, I had to navigate to the desired informat......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-05-22
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/05/15/til-combine-reducers-also-splits-state/">
+        <h2 class="post-title">
+            TIL... Combine Reducers also splits state...
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            While starting work on a greenfield project, I was of course writing new reducers. This time, we were trying to follow a better paradigm as outlined here. As it happens I was writing the byId reduc......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-05-15
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/05/08/spring-2018-houston-techfest-slides/">
+        <h2 class="post-title">
+            Spring 2018 Houston TechFest - Slides
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            I am pleased to say that my presentation on May 5th at the Spring 2018 Houston TechFest went very well. Being my first conference presentation I was a bit nervous but I enjoyed the experience very ......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-05-08
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/">
+        <h2 class="post-title">
+            TIL... How to handle User input with a generic function
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            While writing a CRUD screen with validation in React, I found I was writing similar, if not the same state-altering functions for each input box. Some functions needed additional validation while o......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-05-01
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/04/24/til-how-to-delete-a-property-from-a-javascript-object/">
+        <h2 class="post-title">
+            TIL... How to delete a property from a javascript object
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            While working in a reducer, I found I needed to close/remove an entry from a dictionary. After a brief amount of digging I found that I did not have to write this functionality myself. The kind fol......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-04-24
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/04/17/til-how-to-reduce-npm-package-size/">
+        <h2 class="post-title">
+            TIL... How to reduce NPM package size
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            One of my colleagues was working on improving the load time for a heavy-lifting component in our React App. The component is packaged as an npm package so that it can be reused in other projects, b......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by Daniel Scheufler on
+            2018-04-17
+        </p>
+    
+
+</div>
+<hr>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+        <li class="next">
+            <a href="/page/2/">Older Posts &rarr;</a>
+        </li>
+    
+</ul>
 
 
-<script src="/js/script.js"></script>
 
+                <!-- 如果开启评论功能 -->
+                
+            </div>
 
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
 
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#python" title="python" rel="7">python</a>
+            
+        
+            
+            <a href="/tags/#principles" title="principles" rel="11">principles</a>
+            
+        
+            
+            <a href="/tags/#software" title="software" rel="27">software</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#games" title="games" rel="4">games</a>
+            
+        
+            
+            <a href="/tags/#leadership" title="leadership" rel="7">leadership</a>
+            
+        
+            
+            <a href="/tags/#management" title="management" rel="6">management</a>
+            
+        
+            
+            <a href="/tags/#practice" title="practice" rel="2">practice</a>
+            
+        
+            
+            <a href="/tags/#training" title="training" rel="3">training</a>
+            
+        
+            
+            <a href="/tags/#creative" title="creative" rel="2">creative</a>
+            
+        
+            
+            <a href="/tags/#esoteric" title="esoteric" rel="2">esoteric</a>
+            
+        
+            
+            <a href="/tags/#AGILE" title="AGILE" rel="3">AGILE</a>
+            
+        
+            
+            <a href="/tags/#Agile Methodology" title="Agile Methodology" rel="3">Agile Methodology</a>
+            
+        
+            
+            <a href="/tags/#development" title="development" rel="11">development</a>
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#software dev" title="software dev" rel="23">software dev</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#c++" title="c++" rel="8">c++</a>
+            
+        
+            
+            <a href="/tags/#csharp" title="csharp" rel="3">csharp</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#testing" title="testing" rel="2">testing</a>
+            
+        
+            
+            <a href="/tags/#competition" title="competition" rel="2">competition</a>
+            
+        
+            
+            <a href="/tags/#leader" title="leader" rel="3">leader</a>
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#agility" title="agility" rel="2">agility</a>
+            
+        
+            
+            <a href="/tags/#business" title="business" rel="11">business</a>
+            
+        
+            
+            <a href="/tags/#business meetings" title="business meetings" rel="3">business meetings</a>
+            
+        
+            
+            <a href="/tags/#communication" title="communication" rel="6">communication</a>
+            
+        
+            
+            <a href="/tags/#effective" title="effective" rel="2">effective</a>
+            
+        
+            
+            <a href="/tags/#effective communication" title="effective communication" rel="2">effective communication</a>
+            
+        
+            
+            <a href="/tags/#learning" title="learning" rel="20">learning</a>
+            
+        
+            
+            <a href="/tags/#meetings" title="meetings" rel="3">meetings</a>
+            
+        
+            
+            <a href="/tags/#resources" title="resources" rel="3">resources</a>
+            
+        
+            
+            <a href="/tags/#Software Development" title="Software Development" rel="9">Software Development</a>
+            
+        
+            
+            <a href="/tags/#User Experience" title="User Experience" rel="2">User Experience</a>
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#git" title="git" rel="2">git</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#github" title="github" rel="2">github</a>
+            
+        
+            
+            <a href="/tags/#IDE" title="IDE" rel="3">IDE</a>
+            
+        
+            
+            <a href="/tags/#tool" title="tool" rel="5">tool</a>
+            
+        
+            
+            <a href="/tags/#tools" title="tools" rel="5">tools</a>
+            
+        
+            
+            <a href="/tags/#development environment" title="development environment" rel="2">development environment</a>
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#performance" title="performance" rel="4">performance</a>
+            
+        
+            
+            <a href="/tags/#research" title="research" rel="2">research</a>
+            
+        
+            
+            <a href="/tags/#review" title="review" rel="2">review</a>
+            
+        
+            
+            <a href="/tags/#statistics" title="statistics" rel="2">statistics</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#visual communication" title="visual communication" rel="2">visual communication</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#innovation" title="innovation" rel="4">innovation</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#list" title="list" rel="2">list</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#programming" title="programming" rel="8">programming</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#TDD" title="TDD" rel="3">TDD</a>
+            
+        
+            
+            <a href="/tags/#test-driven development" title="test-driven development" rel="2">test-driven development</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#board game" title="board game" rel="2">board game</a>
+            
+        
+            
+            <a href="/tags/#board games" title="board games" rel="2">board games</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#workshop" title="workshop" rel="3">workshop</a>
+            
+        
+            
+            <a href="/tags/#news" title="news" rel="6">news</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#cpp" title="cpp" rel="3">cpp</a>
+            
+        
+            
+            <a href="/tags/#exposure control" title="exposure control" rel="3">exposure control</a>
+            
+        
+            
+            <a href="/tags/#feature control" title="feature control" rel="3">feature control</a>
+            
+        
+            
+            <a href="/tags/#features" title="features" rel="3">features</a>
+            
+        
+            
+            <a href="/tags/#legacy" title="legacy" rel="3">legacy</a>
+            
+        
+            
+            <a href="/tags/#legacy code" title="legacy code" rel="3">legacy code</a>
+            
+        
+            
+            <a href="/tags/#licensing" title="licensing" rel="2">licensing</a>
+            
+        
+            
+            <a href="/tags/#object oriented programming" title="object oriented programming" rel="2">object oriented programming</a>
+            
+        
+            
+            <a href="/tags/#OOP" title="OOP" rel="2">OOP</a>
+            
+        
+            
+            <a href="/tags/#recent work" title="recent work" rel="4">recent work</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#interview" title="interview" rel="2">interview</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#learn" title="learn" rel="4">learn</a>
+            
+        
+            
+            <a href="/tags/#til" title="til" rel="6">til</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#redux" title="redux" rel="5">redux</a>
+            
+        
+            
+            <a href="/tags/#history" title="history" rel="2">history</a>
+            
+        
+            
+        
+            
+            <a href="/tags/#react" title="react" rel="4">react</a>
+            
+        
+            
+            <a href="/tags/#react-router" title="react-router" rel="2">react-router</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#User Interface" title="User Interface" rel="2">User Interface</a>
+            
+        
+            
+            <a href="/tags/#redirect" title="redirect" rel="2">redirect</a>
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#npm" title="npm" rel="2">npm</a>
+            
+        
+            
+            <a href="/tags/#webpack" title="webpack" rel="2">webpack</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <a href="/tags/#jest" title="jest" rel="2">jest</a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+</section>
+
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+
+        
+            <img id = "avatar_pic" src="/img/better_me_sm.png" />
+        
+
+        
+            <p>To see with eyes unclouded...</p>
+        
+
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+            
+            
+
+            
+
+            
+
+            
+                <li>
+                    <a target="_blank"  href="https://github.com/djscheuf">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+            
+                <li>
+                    <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</section>
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/">TIL... How to test a window-redirect using Mocks</a>
+        </li>
+      
+        <li>
+          <a href="/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/">TIL... How to run a single suite of Tests in Jest</a>
+        </li>
+      
+        <li>
+          <a href="/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/">TIL... How to Resolve false-positive ESLint Errors</a>
+        </li>
+      
+        <li>
+          <a href="/2018/06/05/til-how-to-use-todictionary/">TIL... How to use ToDictionary</a>
+        </li>
+      
+        <li>
+          <a href="/2018/05/22/til-how-to-use-map-and-reduce/">TIL... How to use Map and Reduce</a>
+        </li>
+      
+    </ul>
   </div>
+
+        <hr>
+    
+        
+    <h5>ARCHIVES</h5>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">4</span></li></ul>
+    </div>
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
+
 </html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          A Master-Class in Survey Design: MIT&#39;s Self-Driving Car Survey - Journeyman&#39;s Travels
+        
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2016/10/11/mit-is-asking-how-should-self-driving-cars-behave/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#communication" title="communication">communication</a>
+                            
+                              <a class="tag" href="/tags/#statistics" title="statistics">statistics</a>
+                            
+                              <a class="tag" href="/tags/#visual communication" title="visual communication">visual communication</a>
+                            
+                              <a class="tag" href="/tags/#autonomous" title="autonomous">autonomous</a>
+                            
+                              <a class="tag" href="/tags/#autonomous vehicle" title="autonomous vehicle">autonomous vehicle</a>
+                            
+                              <a class="tag" href="/tags/#choice" title="choice">choice</a>
+                            
+                              <a class="tag" href="/tags/#mit" title="mit">mit</a>
+                            
+                              <a class="tag" href="/tags/#morality" title="morality">morality</a>
+                            
+                              <a class="tag" href="/tags/#morals" title="morals">morals</a>
+                            
+                              <a class="tag" href="/tags/#self-driving car" title="self-driving car">self-driving car</a>
+                            
+                              <a class="tag" href="/tags/#survey" title="survey">survey</a>
+                            
+                        </div>
+                        <h1>A Master-Class in Survey Design: MIT&#39;s Self-Driving Car Survey</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2016-10-11
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>The future is coming. The consumer space-flight is possible within our life-times. And the self-driving car is fast approaching. No! Really!! It's brakes are out!!! Or at least that's the situation that MIT wants your input on. They recently posted a survey on the topic. They want to know what decision a self-driving car should make if that kind of thing happens.  Don't worry it's nice and short, so feel free to take it and come back. You can find the survey <a href="http://moralmachine.mit.edu/" target="_blank" rel="noopener">here</a>. For an amateur student of philosophy, it was an enjoyable exercise. MIT presents a variety of scenarios wherein only a subset of the group can be saved. In fact is a new face on a classic problem. The original formulation, to the best of my knowledge, is called the <a href="https://en.wikipedia.org/wiki/Trolley_problem" target="_blank" rel="noopener">Trolley Problem</a>. In short, a trolley or train is on a track before a switch. You are next to the lever that changes which track the train will proceed down. But no matter which track you choose someone will die. Variations occur on how many people you can save. Some variations even change the type of people. But  all are there to bring you face-to-face with your personal ethical values. Stepping back to the approachable, MIT has posed this question in a way which is easier to approach. I commend them for it! By now you have already taken their survey, and should recognize the snap shot below. If you haven't taken the survey yet, you can take it <a href="http://moralmachine.mit.edu/" target="_blank" rel="noopener">here</a>. <img src="https://mytrendingstories.com/media/photologue/photos/mts_moralMachine.jpg" alt="">You will notice that MIT has presented the problem in visual terms. In the first place this allows the information to be processed more readily by more people. Which is great, especially for a survey where statistical significance is important! The more people who can take your survey the better. Going back to the presentation, I will remark on the clever visual language that MIT has employed. They describe gender, health, social standing with understandable patterns. They can even express a persons habits (to a limited degree) with these patterns! Moreover, it is clear what the choice is. Those affected marked by icons. And the choice of the vehicle is also made clear, in a simple representation. Having taken the time to review it more , I  am impressed! Well done, MIT. Moving to their results page, I must again praise their work. The visual style is consistent with the rest of the survey, as well as informative. They also show you where your preference is, relative to other takers. This provides easy to understand information, without complicating the graphs! As one might expect, the results may not map one-to-one with your ethical beliefs. Of course, such a short survey cannot capture the full breadth of a persons beliefs. Several scenarios mix several criteria together. As a result some of the data may appear to show an incorrect conclusion. This has more to do with the limited set provided to the taker. Despite this minor short-coming, the MIT survey has some solid scenarios! On the whole, they do a good job teasing our the taker's preferences. To remove the last vestiges of misleading data, I think MIT would need at most 5 more scenarios. But they have done a great job as is, while keeping the survey to a manageable length.   <em>Title image is public domain, found <a href="https://pixabay.com/en/tram-trolley-traffic-urban-night-711792/" target="_blank" rel="noopener">here</a>.</em></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2016/10/13/enable-multi-channel-communication-in-your-next-meeting/" data-toggle="tooltip" data-placement="top" title="Enable Multi-channel communication in your next meeting!">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2016/10/04/journeymans-digest-04/" data-toggle="tooltip" data-placement="top" title="Journeyman's Digest 04">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#communication" title="communication">communication</a>
+                        
+                          <a class="tag" href="/tags/#statistics" title="statistics">statistics</a>
+                        
+                          <a class="tag" href="/tags/#visual communication" title="visual communication">visual communication</a>
+                        
+                          <a class="tag" href="/tags/#autonomous" title="autonomous">autonomous</a>
+                        
+                          <a class="tag" href="/tags/#autonomous vehicle" title="autonomous vehicle">autonomous vehicle</a>
+                        
+                          <a class="tag" href="/tags/#choice" title="choice">choice</a>
+                        
+                          <a class="tag" href="/tags/#mit" title="mit">mit</a>
+                        
+                          <a class="tag" href="/tags/#morality" title="morality">morality</a>
+                        
+                          <a class="tag" href="/tags/#morals" title="morals">morals</a>
+                        
+                          <a class="tag" href="/tags/#self-driving car" title="self-driving car">self-driving car</a>
+                        
+                          <a class="tag" href="/tags/#survey" title="survey">survey</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

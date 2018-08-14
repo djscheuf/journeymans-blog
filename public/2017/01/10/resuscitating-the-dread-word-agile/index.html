@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Resuscitating the dread word &#39;Agile&#39; - Journeyman&#39;s Travels
+        
+    </title>
+
+    <link rel="canonical" href="daniel.scheufler.io/2017/01/10/resuscitating-the-dread-word-agile/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+    #signature{
+        background-image: url('/img/signature/BeanTechSign-white.png');
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                            
+                              <a class="tag" href="/tags/#AGILE" title="AGILE">AGILE</a>
+                            
+                              <a class="tag" href="/tags/#Agile Methodology" title="Agile Methodology">Agile Methodology</a>
+                            
+                              <a class="tag" href="/tags/#agility" title="agility">agility</a>
+                            
+                              <a class="tag" href="/tags/#business" title="business">business</a>
+                            
+                              <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                            
+                        </div>
+                        <h1>Resuscitating the dread word &#39;Agile&#39;</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by Daniel Scheufler on
+                            2017-01-10
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">A Journeyman&#39;s Travels</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/resume/">Resume</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p>As 2016 drew to a close, there were numerous articles covering the state of the software development community. [For example <a href="https://dorinlazar.ro/the-sorry-state-of-the-programming-world-as-of-the-end-of-2016-ad/" target="_blank" rel="noopener">here</a>, and <a href="https://medium.com/@bryanedds/living-in-the-age-of-software-fuckery-8859f81ca877#.lybao9xtx" target="_blank" rel="noopener">here</a>] In several cases, the authors pointed out the sorry state of 'Agile'. In fact, this trend of developers hating ‘Agile’ has been growing for quite some time. Reading those articles prompted some self-reflection. Obviously, Business management does ‘Agile’ differently. It is a set of prescribed practices, since that is what they understand. And of course robbed of its vigor, this ‘Agile’ is less effective. But we, software developers, do it wrong sometimes as well. We may have bought into the wrong ideas. As I wrestled with myself over Agile, a larger picture began to emerge. When I entered the workforce, I joined a company that did <a href="https://pragdave.me/blog/2014/03/04/time-to-kill-agile/" target="_blank" rel="noopener">‘Agile’</a>. As I learned more about the original principles of the practice I became a supporter. Note I say <em>original principles</em>. The more of a supporter I became, the more I realized my company did not quite get Agile right. We have the form, but lacked the true substance of it. Now, it wasn’t all bad, there were pockets of true agility here and there, but en masse, we missed it. As a result I started to burn out. I had only been working for half a year when I began to tire. The discontinuity between what we professed, and what we actually did was a heavy burden. So far, so normal as disillusioned developers go. Now, my company did provide a good opportunity for discussion. Specifically, they supported a developer’s book club. And of course ‘Agile’ methodologies would be the topic of discussion from time to time. But when I would bring up some place where I saw the company missing the goal of agility, the observation was generally dismissed. There were a few who did heard and would later come and discuss with me. They usually would come to offer their own observations to help me see what I had missed. Each of these kind souls all had a common trait, they were willing to look at failure for what it was. They didn’t deny its occurrence, and they always looked for some nugget to learn from. From those leaders, I learned a great deal. I would return to them and seek advice during the rest of my time at the company. In my opinion, they understood the true core of agility, despite being unable to practice it because of organizational constraints. With the advice of these leaders in my ear, I searched. And as I searched I realized that we, as software developers, need to branch out more. To find insight not just from our insular community, but also from the world at large. After all we are humans, and the world has been analyzing humans for centuries! During one such exploratory expedition, I found <a href="http://www.artofmanliness.com/2014/09/15/ooda-loop/" target="_blank" rel="noopener">the OODA loop</a>. As described, the loop is this:</p>
+<p>Observe : Review your facts and information</p>
+<p>Orient : Is something off? How so? Frame your thoughts and discussion</p>
+<p>Decide : Based on your thoughts, and your facts, what should you do? Make it a small step.</p>
+<p>Act : Act out your decision.</p>
+<p><em>Repeat</em> : Repeat process ad nauseum, until you have reached your goal/destination</p>
+<p>To any supporter of the principles of agile software development, these steps ought to look familiar. It is the same core of iteration with small steps. The very same principle found outside of software development for the same purpose: reach your goal faster. But here is where Business influenced the ‘Agile’ practice in a negative sense. Review the loop. It never mentioned the idea that all actions must lead <em>directly</em> to your goal. In fact it appears to assume that some steps won’t be optimal. Just like the original principles for agile software development. But in a business context, such a step can prove costly. If you make a step that doesn’t lead to results, then for a business the cost of the step is lost. So naturally business would want to avoid lossy steps and ensure that they take just the right ones. So we end up with strong Project/Product Managers, and non-autonomous engineers. And from a Business stance, this is excellent. It is safe, and much more certain. And explaining it to any higher-up is infinitely easier. It is also stagnant, and impotent, and ineffective. By the very act of achieving safety, the methodology loses its potency. The principles for agile software development imply, expect, and I would go so far as to say requires, risk. The original agile allows, and expects some of the steps to be imperfect. In fact, the first step is supposed to be just a guess. But it is time-boxed so that we can learn from it while the ideas are still fresh in our mind! If we don’t risk anything in a step, how can we gain anything? In agile, there are not ‘unsuccessful’ steps. That is not blind optimizing or and new-age BS. Instead it is a deep understanding of what we are buying with each step. With each step, we either are buying customer approval for the developed feature. Or we are buying knowledge of our customers. And this isn’t just any knowledge we are buying. It is a personal and contextualized knowledge that our customer provides back to us. We pay to learn in small, highly contextualized, ‘as close to the real thing as possible’ bits of knowledge. But before I move on, there is one other detail in which Business Agile, and original agile differ. In the original, we do not assume we know what the customer wants. We expect to find it though experimentation and missteps. We start with inaccuracy, and move towards accuracy. In Business Agile, the Product and Project Manager ‘know’ what the customer wants. We start with accuracy and have nowhere further to go. The Iteration is simple and convenient block of man-hours. It allows them to estimation the time it will take to complete the feature we <em>‘know’</em> the customer wants. It would seem to me that Business has forgotten a value we had given to us in childhood. After all, don’t we spend nearly the first two decades of our lives in learning? In trading time for knowledge? Hasn’t our society decided that it is of value to ensure everyone has some common understanding? I think Business has fallen into its current state of ‘Agile’ because it misunderstands what it is buying. It is not buying software, at least not directly. The original agile aims to provide strategic knowledge. What if we shifted our thinking about agile? Instead of purchasing a static product, we are acquiring and applying strategic knowledge. We could reinvigorate the practices that have been robbed of their efficacy.</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2017/01/17/amish-software/" data-toggle="tooltip" data-placement="top" title="Amish Software">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/2017/01/03/better-tools-or-better-skills/" data-toggle="tooltip" data-placement="top" title="Better tools, or Better skills?">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#principles" title="principles">principles</a>
+                        
+                          <a class="tag" href="/tags/#AGILE" title="AGILE">AGILE</a>
+                        
+                          <a class="tag" href="/tags/#Agile Methodology" title="Agile Methodology">Agile Methodology</a>
+                        
+                          <a class="tag" href="/tags/#agility" title="agility">agility</a>
+                        
+                          <a class="tag" href="/tags/#business" title="business">business</a>
+                        
+                          <a class="tag" href="/tags/#learning" title="learning">learning</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/djscheuf">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://www.linkedin.com/in/danielscheufler">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Daniel Scheufler 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("daniel.scheufler.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="daniel.scheufler.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
