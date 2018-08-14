@@ -2,6 +2,27 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
+        <loc>daniel.scheufler.io/tags/creative/</loc>
+        <lastmod>2018-08-12T02:29:52.438Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/esoteric/</loc>
+        <lastmod>2018-08-12T02:29:52.438Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/practice/</loc>
+        <lastmod>2018-08-12T02:37:50.171Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>daniel.scheufler.io/tags/user-experience/</loc>
         <lastmod>2018-08-12T02:42:17.637Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -506,28 +527,7 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/practice/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/training/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/creative/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/esoteric/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -654,13 +654,6 @@
 
     <url>
         <loc>daniel.scheufler.io/tags/review/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/game/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
