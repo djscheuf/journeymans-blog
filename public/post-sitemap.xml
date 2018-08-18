@@ -7,15 +7,15 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <loc>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</loc>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</loc>
+        <loc>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</loc>
         <lastmod>2018-08-14T01:09:10.530Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

@@ -66,50 +66,63 @@
 	<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 <style type="text/css">
-    header.intro-header{
-        
-            background-image: url('')
+    header.intro-header {
+        background-image: url('/img/post_img/code_wall.jpg')
             /*post*/
-        
+            
     }
-    
-    #signature{
-        background-image: url('/img/signature/BeanTechSign-white.png');
-    }
+
     
 </style>
 
-<header class="intro-header" >
+<header class="intro-header">
     <!-- Signature -->
     <div id="signature">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                    <div class="post-heading">
-                        <div class="tags">
-                            
-                              <a class="tag" href="/tags/#redirect" title="redirect">redirect</a>
-                            
-                              <a class="tag" href="/tags/#jest" title="jest">jest</a>
-                            
-                              <a class="tag" href="/tags/#location" title="location">location</a>
-                            
-                              <a class="tag" href="/tags/#mocking" title="mocking">mocking</a>
-                            
-                              <a class="tag" href="/tags/#mocks" title="mocks">mocks</a>
-                            
-                              <a class="tag" href="/tags/#window" title="window">window</a>
-                            
+                    
+                        <div class="post-heading">
+                            <div class="tags">
+                                
+                                    <a class="tag" href="/tags/#redirect" title="redirect">
+                                        redirect
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#jest" title="jest">
+                                        jest
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#location" title="location">
+                                        location
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#mocking" title="mocking">
+                                        mocking
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#mocks" title="mocks">
+                                        mocks
+                                    </a>
+                                    
+                                    <a class="tag" href="/tags/#window" title="window">
+                                        window
+                                    </a>
+                                    
+                            </div>
+                            <h1>
+                                TIL... How to test a window-redirect using Mocks
+                            </h1>
+                            <h2 class="subheading">
+                                
+                            </h2>
+                            <span class="meta">
+                                Posted by
+                                Daniel Scheufler on
+                                    2018-06-26
+                            </span>
                         </div>
-                        <h1>TIL... How to test a window-redirect using Mocks</h1>
-                        <h2 class="subheading"></h2>
-                        <span class="meta">
-                            Posted by Daniel Scheufler on
-                            2018-06-26
-                        </span>
-                    </div>
-                
+                        
 
 
                 </div>
@@ -117,7 +130,6 @@
         </div>
     </div>
 </header>
-
 	
     <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -217,9 +229,9 @@
                 post-container">
 
                 <p>I was testing an action, which upon completion needed to redirect the user to a new page. Normally, in javascript you can redirect using :</p>
-<p>window.location = &quot;newPath&quot;;</p>
+<p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location = <span class="string">"newPath"</span>;</span><br></pre></td></tr></table></figure></p>
 <p>But that's hard to test for. Thankfully there is a better way:</p>
-<p>window.location.assign(&quot;newPath&quot;);</p>
+<p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location.assign(<span class="string">"newPath"</span>);</span><br></pre></td></tr></table></figure></p>
 <p>You can then mock the assign function and test for that call! My thanks to the creators of jest for that <a href="https://github.com/facebook/jest/issues/890" target="_blank" rel="noopener">insight</a>!</p>
 
                 

@@ -1199,20 +1199,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/redirect/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/jest/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/test-suite/</loc>
         <lastmod>2018-08-14T01:09:10.530Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -1227,29 +1213,43 @@
     </url>
 
     <url>
+        <loc>daniel.scheufler.io/tags/redirect/</loc>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/jest/</loc>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>daniel.scheufler.io/tags/location/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/mocking/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/mocks/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/window/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
