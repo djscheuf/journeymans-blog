@@ -73,7 +73,9 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: beantech
+# theme: beantech
+# theme: landscape
+theme: Daily
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -89,27 +91,19 @@ description: ""
 keyword: ""
 header-img: img/header_img/home-bg-2-dark.png
 
-# SNS settings
-# RSS: false
-github_username: djscheuf
-linkedin_username: danielscheufler
+# Social Links
+social:
+  github: https://github.com/djscheuf
+  mail: mailto:daniel@scheufler.io
+  linkedin: https://www.linkedin.com/in/danielscheufler/
 
-# Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "To see with eyes unclouded..."
-sidebar-avatar: img/better_me_sm.png # use absolute URL, seeing it's used in both `/` and `/about/`
-widgets:
-  - featured-tags
-  - short-about
-  - recent-posts
-  - archive
-  # - category
+# Navigation Bar
+nav:
+  Home: .
+  Archive: archives
+  About: about
+  Resume: resume
 
-# widget behavior
-## Archive
-archive_type: "monthly"
-show_count: true
-
-## Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+widget:
+  title: 
+  content: 
