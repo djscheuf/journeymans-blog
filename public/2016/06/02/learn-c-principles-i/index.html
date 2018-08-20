@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Learn C# - Principles I"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Learn C# - Principles I - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Learn C# - Principles I
+            
+          </h1>
+          <p class="posted-on">
+          2016-06-02
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/principles/" rel="tag">
+                  principles
+                </a>
+              
+                <a href="/tags/software/" rel="tag">
+                  software
+                </a>
+              
+                <a href="/tags/software dev/" rel="tag">
+                  software dev
+                </a>
+              
+                <a href="/tags/c++/" rel="tag">
+                  c++
+                </a>
+              
+                <a href="/tags/csharp/" rel="tag">
+                  csharp
+                </a>
+              
+                <a href="/tags/learning/" rel="tag">
+                  learning
+                </a>
+              
+                <a href="/tags/TDD/" rel="tag">
+                  TDD
+                </a>
+              
+                <a href="/tags/test-driven development/" rel="tag">
+                  test-driven development
+                </a>
+              
+                <a href="/tags/workshop/" rel="tag">
+                  workshop
+                </a>
+              
+                <a href="/tags/SOLID/" rel="tag">
+                  SOLID
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p><img src="https://danieljscheufler.files.wordpress.com/2016/05/2p4i.png" alt="2p4i">Last week, I began introducing the Learn C# Workshop that I was asked to lead by the ATS* Team for our Innovation Fridays. In this post, I had planned to share all of the principles which I espoused to the group during our first meeting. However upon drafting this post out, I realized that I have a tendency to be long-winded. So to avoid putting too much information into a single post, I am splitting the Principles into two parts. In this part, I will discuss why I am starting the workshop with principles rather than basic Object Oriented Programming examples. Then I will move on to specific principles, most of which my employer also expresses appreciation of. My next post, will cover my intention to use some of the Gang of Four Design Patterns, and will also cover some expressions of good software development principles which I believe are more personal, and not necessarily held by my employer in general. I thank you for your patience, and will now get on with explaining myself. Let us start with why I am so focused on principles! It is my strong belief that, when learning, it is wise to start with guiding principles. Naturally, the student will not understand the full application of these principles at the beginning, but by laying them out at the beginning, and then re-visiting them during the course of learning, the students will begin to understand the connections. As a result of this belief, I chose to start my C# workshop on good software development principles. I chiefly did this to help the group not &quot;develop itself into a hole&quot;, but also to make it easier for them to understand the proper use of the language as they develop. My goal has always been that the participants would leave not with a &quot;duct-tape solution&quot; but with a more polished understanding and grasp, so that if and when they begin working on real C# projects they would be able to understand and manipulate the code with ease, rather than grinding their teeth in frustration while they try to &quot;just get the system to work&quot;. In this approach, my principles for development and for the course are the same. I choose to Start with the End in Mind,hereafter SEM. To simply begin a journey quickly, is not so good. It is far better to move in the direction of your journey's end from the beginning rather than discovering later you have set out in the wrong way, and must retrace your steps. Even if your beginning is a little delayed, it is still wiser to move only once, rather than twice when an error was made. I find that tied to this idea is the process of <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener">Test Driven Development</a>, hereafter TDD. Admittedly, everyone that I know, who has tried this method, attests to its difficulty. Even I have had trouble with it. However I know that it is also one of the best applications of SEM in software development. TDD is the process whereby one first writes a failing Unit Test, and then the code to make it pass. And then cycles back to write another failing Unit Test. This is intended to be a rapid cycling. The preceived difficulty is usually due to most people's tendency to think of solving a problem from the top down. We often feel that instead of a fast loop that the loop is slow. But what we lose in mental comfort, we gain in design. In TDD, one is forced to think about how one will test that their function worked from the beginning. This has many benefits, from avoiding unnecessary methods, and simplified designs, to encouraging the developer to separate responsibilities more finely and into more testable chunks. So even though TDD is difficult, I believe it is worth the trade-off. Further for beginners, TDD will force them to think about what effects they want a function to have, and how to verify that before they become lost in a tangled mess of code. The next principle that I am choosing to espouse is <a href="https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29" target="_blank" rel="noopener">SOLID</a>. It also so happens that my company generally supports SOLID, though it has not been evenly applied to all our software. I have found that within SOLID that there are really three principles that most improve one's design if followed. These are the S,I and D components. S stands for the Single Responsibility Principle, which succinctly put, means that one and only one potential change in the software's specifications should change a given class* [taken from Wikipedia]. This would means that a class' responsibility should be fairly specific. For example, a Controller ought not be changed when the UI color changes, or even the UI color scheme. Now as silly as this might sound, I have written software that did not adhere to this principle and it was very difficult to maintain, much less to work with. I have found that in general that where the Single Responsibility Principle is not followed, spaghetti code abounds. The I stands for the Interface Segregation Principle, and again borrowing from Wikipedia's synopsis, it implies that &quot;Many client-specific interfaces are better than one general purpose interface&quot;. This principle is heavily tied, in practice, to D, which stands for the Dependency Injection Principle, or DIP for short. DIP suggests that one ought to inject the dependencies of a component into it, rather that providing the component the ability to create concrete instances of it. For an example, following DIP, a FileFormater, would be injected not only with the data to format for writing, but also with the Access to the File System, rather than just creating that access itself. Practically speaking, applying these two principles allows for software to be resilient to changes outside its scope, and it improves its test-ability. If a class depends on Interfaces rather than concrete instances, it is easier to test, and if the was some responsibility is handled changes, but not the interface, then the class in question does not need to change! In the instance of our FileFormatter example, if the File System Access is provided by an IFileSystem interface, the FileFormatter needn't care if the FileSystem writes a directly to a binary dump file, or a .txt with ASCII formatting, or if it translated every input character, in format, into Mandarin Chinese. Just as long as the Interface is implemented, providing the necessary functionality, the FileFormatter could be left alone, while the FileSystem Layer can change without concern for the FileFormatter, and vice versa. Now to tie these principles to back to TDD, there are several ways to provide Mock implementations of Interfaces. As a result, depending on Interfaces allows use to test at a much deeper level. And for objects that might be more difficult to wield, either for being very large, or difficult to instantiate, or because it touches the system environment, like our FileSystem example. By separating our functionality, we can test components independent of their implementation. Naturally this reduction of real components, means that our tests are less susceptible to the oddities of a particular class. Further, only the tests on a given class change with that class. If we do not rely on Interfaces, then when a given class changes, the tests for itself, and any class that depend on it might also need to be updated. I believe that developers generally refer to this as tight coupling, which highly undesirable. So, I hope that this post has helped to explain my rational on Principles as a starting point, as well as some of the more common Principles which I hold to be true. Overall I feel this covers a bit more that half of truly good software development. Next week, it is my plan to cover the remainder, including some principles which more uniquely my own. So what do you think of this post length? Do you feel I went into enough depth, or perhaps that I should have posted the whole set? Please let me know in the comments! Thank you for your time, and until next we meet, be blessed! *ATS = Automated Test Scripting * Paraphrased from Wikipedia, which phrased it very well. * - The C# logo was created by <a href="http://devstickers.com/csharp" target="_blank" rel="noopener">DevStickers</a></p>
+<h6><span id="edits">//Edits//</span></h6>
+<h6><span id="11jun2016-spell-checking-and-minor-grammar-readability-refactor">11JUN2016 - Spell-checking and Minor Grammar, Readability Refactor</span></h6>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/06/09/learn-c-principles-ii/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/05/26/innovation-fridays-learn-c/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

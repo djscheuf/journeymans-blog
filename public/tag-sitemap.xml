@@ -2,34 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>daniel.scheufler.io/tags/creative/</loc>
-        <lastmod>2018-08-12T02:29:52.438Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/esoteric/</loc>
-        <lastmod>2018-08-12T02:29:52.438Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/practice/</loc>
-        <lastmod>2018-08-12T02:37:50.171Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/user-experience/</loc>
-        <lastmod>2018-08-12T02:42:17.637Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/jupyter/</loc>
         <lastmod>2018-08-14T01:09:10.517Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -499,41 +471,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/python/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/games/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/leadership/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/management/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/training/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/AGILE/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -751,20 +688,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/principles/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/software/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/development/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -773,13 +696,6 @@
 
     <url>
         <loc>daniel.scheufler.io/tags/software-dev/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/learning/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -856,20 +772,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/learn/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/til/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/web/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -891,126 +793,7 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/history/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/raygun/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/react/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/react-router/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/telemetry/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/database/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/debug/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/nhibernate/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/query/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/sql/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/javascript/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/lodash/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/omit/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/crud/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/generic/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/User-Interface/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/spa/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/bundle/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -1038,218 +821,435 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/clean-code/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/functional/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/map-reduce/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/c/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/list/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/interview/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/talk/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/techfest/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/whiteboard/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/whiteboarding/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/npm/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/webpack/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/cli/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/cmd/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/cmd-line/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/eslint/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/file-casing/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/no-unresolved/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/linq/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/todictionary/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/testing/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/tags/TDD/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/tags/redux/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-20T00:46:08.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/test-suite/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-20T00:46:08.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/unit-test/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <lastmod>2018-08-20T00:46:08.804Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/redirect/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/jest/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/location/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/mocking/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/mocks/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/tags/window/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/c/</loc>
+        <lastmod>2018-08-20T00:49:49.200Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/list/</loc>
+        <lastmod>2018-08-20T00:49:49.200Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/linq/</loc>
+        <lastmod>2018-08-20T00:49:49.200Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/todictionary/</loc>
+        <lastmod>2018-08-20T00:49:49.200Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/clean-code/</loc>
+        <lastmod>2018-08-20T00:52:29.924Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/functional/</loc>
+        <lastmod>2018-08-20T00:52:29.924Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/map-reduce/</loc>
+        <lastmod>2018-08-20T00:52:29.924Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/cli/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/cmd/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/cmd-line/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/eslint/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/file-casing/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/no-unresolved/</loc>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/testing/</loc>
+        <lastmod>2018-08-20T00:58:53.331Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/interview/</loc>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/talk/</loc>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/techfest/</loc>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/whiteboard/</loc>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/whiteboarding/</loc>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/crud/</loc>
+        <lastmod>2018-08-20T01:01:58.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/generic/</loc>
+        <lastmod>2018-08-20T01:01:58.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/User-Interface/</loc>
+        <lastmod>2018-08-20T01:01:58.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/redux/</loc>
+        <lastmod>2018-08-20T01:02:52.629Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/javascript/</loc>
+        <lastmod>2018-08-20T01:02:52.629Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/lodash/</loc>
+        <lastmod>2018-08-20T01:02:52.629Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/omit/</loc>
+        <lastmod>2018-08-20T01:02:52.629Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/bundle/</loc>
+        <lastmod>2018-08-20T01:03:59.108Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/npm/</loc>
+        <lastmod>2018-08-20T01:03:59.108Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/webpack/</loc>
+        <lastmod>2018-08-20T01:03:59.108Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/python/</loc>
+        <lastmod>2018-08-20T01:07:24.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/principles/</loc>
+        <lastmod>2018-08-20T01:07:24.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/user-experience/</loc>
+        <lastmod>2018-08-20T01:07:24.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/software/</loc>
+        <lastmod>2018-08-20T01:09:23.183Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/creative/</loc>
+        <lastmod>2018-08-20T01:09:23.183Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/esoteric/</loc>
+        <lastmod>2018-08-20T01:09:23.183Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/learning/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/learn/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/til/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/database/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/debug/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/nhibernate/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/query/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/sql/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/history/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/raygun/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/react/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/react-router/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/telemetry/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/games/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/leadership/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/management/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/practice/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/training/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

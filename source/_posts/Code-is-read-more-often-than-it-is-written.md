@@ -8,6 +8,8 @@ tags:
   - user-experience
 category: 
   - perspective
+photos:
+  - img/post_img/code_wall.jpg
 ---
 
 At first glance, this would seem an obvious statement. And it is in a way. When Python language creator Guido Van Rossum created Python, he did so with this thought in mind. As a result, the culture of Python is partly molded around _“readability counts”_.

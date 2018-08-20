@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="How to increase Team Velocity by 50% III"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>How to increase Team Velocity by 50% III - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            How to increase Team Velocity by 50% III
+            
+          </h1>
+          <p class="posted-on">
+          2016-11-15
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p><img src="https://danieljscheufler.files.wordpress.com/2016/09/sport-1014015_960_720.jpg" alt="sport-1014015_960_720">Last time, I discussed the development process and some of the end results of a automated test-generation system. I have mentioned from the beginning that it enabled my team to increase our velocity by 50%. Today, I will discuss how long it took for us to realized that increase. I will also talk about some further improvements that allowed us to reach that level. As mentioned in the <a href="https://danieljscheufler.wordpress.com/2016/11/08/how-to-increase-team-velocity-by-50-ii/" target="_blank" rel="noopener">last post</a>, we were able to achieve a 50% increase in our delivered story points per iteration. To be sure, this increase did not happen overnight. It took roughly 3 iterations before we learned how to use the system most effectively. It took an two more iteration before we reached our new plateau. As we used the system we began to realize several weaknesses in it. The clearest of these was the systems rapid rate of decay. If we got even a little lazy, the system magnified that laziness. And we would then have to spend much more time just to fix it.  Sort of like cleaning one's room. Some mess attracts more mess. But if you'd just put the laundry away you wouldn't spend a couple hours extra on the weekends just to clear it away. In a similar fashion we had to adopt better habits to keep our system pristine and operating. As a team we had to adopt better habits, one of which I mentioned before. We adopted the practice of having our requirements discussions with the Database open. We then kept it up to date with the conversation. Now in theory, this fixation with cleanliness would only need to be maintained during active development of the data model. Once the data model development was completed, the Test generation system would not longer be as necessary. Presuming the system runs for the last time on a completely specified data model, and that all models correctly meet their criteria, the auto-generation system would be effectively retired.  While its final output would be kept for posterity. However, I was transferred to another team before such an even occurred, and so cannot speak from experience. But before I left the team, I actually returned to school for my last semester. I then returned to work with the team again, this time as a full-hire. When I returned, the team had expanded on the auto-generated tests. They had added new types of tests and were beginning to have trouble maintaining my original t4 architecture. This was the first improvement that I made to the system when I returned. My original design had become cluttered and bloated. This was due to intense aggregation of the test implementation and the generation-decision logic. So as any good programmer would, I created layers of abstraction. I created a hierarchy of t4 files. Since you can refer to functions created in other t4, I organized the test implementation logic in one file and the test generation logic in another for each test category. Some categories were particularly large and so I split their logic out into yet more. At most, I believe the nesting was 3 deep. But by adding this abstraction, all further extension of the generation system were greatly eased. Additionally, while abstracting the tests, I discovered several generation errors, and corrected them. Further improving the test coverage of the system. While the reorganization was taking place, one of my colleagues was making another improvement. At the time, the generation system produced something like 5000 tests. However, they used a network database. As a result, running all the tests would take 2 hours or so. My colleague created a script that was run before the test-suite executed. It would create a seed copy of the database on the SQL server running on the local machine. As a result, the execution time went from 2 hours to around 16 minutes! Again, this was not am improvement I made. But it did greatly increase our efficiency and so I feel it is imperative to mention it here. After finishing the re-organization of the system, and improving our execution speed, I happened on an interesting idea. I realized that we could apply the same concept to test another aspect of our code. At the time, I was tasked with writing some tests that would confirm that our triggers were working as expected after a schema upgrade. I realized we could use a similar system to test the proper creation of Table, Keys, Triggers, and restrictions of the database itself. Most of us agreed that testing this through the entity was cumbersome and unnecessary. The trigger executed after the entity was saved, and thus testing it would require a second read cycle, which is slow while using the entity. So instead we decided to use SQL queries directly. It was at this stage that the idea struck me. I offered it to our team lead, and she again supported the idea. And this time, having learned several lessons from the last time, I was able to whip out a working system for the desired test in an iteration. Over the following iterations, I expanded the trigger test to several other tables. I added both structural and key verification tests, which eased many of our worries regarding the schema upgrade process. At this point,I was transferred to another team. I saw the successful extension of the system, so I am unable to comment on the value it added to the team in the long run. I will leave off with just three points. First, If you are willing to put in a little extra effort, you can buy time for your team to pay down technical debt. This is done by investing in strong meaningful tests. These tests, if properly written, will pay dividends whenever the system is changed. And the system is always changing. Secondly, All test systems require maintenance. A test is only as valuable as the code that it verifies, and if that code changes, the test may also need to change. When the business function a test covers is no longer valid, the test should be removed. It is like weeding a garden (_if the peonies in the garden could turn into dandelions spontaneously). _ Finally, A quick excursions into a new way of doing things, can pay off in many ways. It can invigorate the team, especially if the system is time or labor saving! Everyone likes to work less! The new way can stimulate new ideas, as it did with the trigger tests. And of course if the time-savings do pan out, your team can achieve even more in the same period of time! I hope my discussion has provided some food for thought, and that perhaps you too will consider a little automation of your own! Feel free to PM me if you are curious about any system details that I did not mention.</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/11/22/enter-bullet-journal/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/11/08/how-to-increase-team-velocity-by-50-ii/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

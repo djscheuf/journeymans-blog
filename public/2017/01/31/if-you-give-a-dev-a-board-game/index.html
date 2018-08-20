@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="If you give a Dev a board game..."/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>If you give a Dev a board game... - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            If you give a Dev a board game...
+            
+          </h1>
+          <p class="posted-on">
+          2017-01-31
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/python/" rel="tag">
+                  python
+                </a>
+              
+                <a href="/tags/software/" rel="tag">
+                  software
+                </a>
+              
+                <a href="/tags/games/" rel="tag">
+                  games
+                </a>
+              
+                <a href="/tags/development/" rel="tag">
+                  development
+                </a>
+              
+                <a href="/tags/performance/" rel="tag">
+                  performance
+                </a>
+              
+                <a href="/tags/programming/" rel="tag">
+                  programming
+                </a>
+              
+                <a href="/tags/board game/" rel="tag">
+                  board game
+                </a>
+              
+                <a href="/tags/board games/" rel="tag">
+                  board games
+                </a>
+              
+                <a href="/tags/code/" rel="tag">
+                  code
+                </a>
+              
+                <a href="/tags/personal projects/" rel="tag">
+                  personal projects
+                </a>
+              
+                <a href="/tags/simulate/" rel="tag">
+                  simulate
+                </a>
+              
+                <a href="/tags/simulation/" rel="tag">
+                  simulation
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p>From my first lecture on C, I have been tinkering with side projects. I've done projects purely for exploration and entertainment, like a text-based adventure games. More recently I've done utility projects like a script to correct <a href="https://en.wikipedia.org/wiki/Quicken_Interchange_Format" target="_blank" rel="noopener">QIF</a> formatted text. Recently I took on a project of a larger scope.</p>
+<p>A while back,I read an <a href="https://boardgamegeek.com/thread/1301080/complete-simulation-machi-koro-strategies" target="_blank" rel="noopener">article about a simulation of Machikoro</a>. It is a ‘city-building game’, with rules that are easy to translate to code. In particular, the idea of using the simulator to ‘evolve’ an optimal strategy for the game captivated me. This was applying Machine-learning to a board game. I figured 'I could do that', and got to work. I encountered many distractions and set-backs, including a new baby. But this month I am pleased to admit that I have hit a milestone.</p>
+<p>To support the ‘evolution’ aspect, I had to be able to run thousands of simulations in a reasonable amount of time. And after a bit over a month of concerted effort, I made it. I took my code from being a collection of classes to a library and simulator able to run 1000 games in 15 seconds.</p>
+<p>I started back in December with classes to represent the deck of cards, a strategy for play, and a player state. The first step after this was to create a basic <em>AI*</em> to act upon the player state, and a given strategy. Borrowing from the article I had found, I decided to make the strategy more static. The decision logic reduced to constant decisions like 'always yes', or 'always the cheapest available'. Then the <em>AI</em> only needed to use the <em>Strategy</em> to answer queries from the <em>Game</em>.</p>
+<h6><span id="note-i-am-capitalizing-and-italicizing-class-names-for-ease-of-identification">*Note: I am capitalizing and <em>italicizing</em> Class names for ease of identification.</span></h6>
+<p>After the simplified <em>AI</em> was complete, I got to work on the <em>Game</em>, which would simulate a single game. I decided that I wanted to use <a href="https://github.com/djscheuf/FluentPyTestAPI" target="_blank" rel="noopener">fluent APIs</a> to instantiate a <em>Game</em>. I spend a good chunk of time to get these write, but it helped to make the main routine clearer. While I developed the <em>Game</em>, I decided to abstract the mechanisms of the game. This allowed me to separate the calculations from the sequence in which they are applied. I extracted the <em>Engine</em> to handle things like calculating which <em>AI</em> if any has won, or how much money this <em>AI</em> gets with this dice roll. Meanwhile the <em>Game</em> can manage whose turn it is, and who rolls the dice.</p>
+<p>Testing both the <em>Game</em> and the <em>Engine</em> were somewhat arduous, but it was time well spent. I caught numerous bugs, and infinite loops before I ever ran a full simulation. Thankfully the <em>Deck</em>, <em>State</em>, and <em>AI</em> were all similarly tested. But I do wish that I had adhered more tightly to <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener">TDD</a>. Instead I was very eager to getting the core functionality working.</p>
+<p>Once these pieces were in place, I initiated my <a href="https://datasift.github.io/gitflow/IntroducingGitFlow.html" target="_blank" rel="noopener">GitFlow</a>, branching Master, Dev, and a new Feature. After pushing version 1.0 to Git, I started work on a new Feature, multi-game simulation! And while I tinkered with a Simulator, I realized that my fluent APIs had a bug. So I went back to Dev, and produced a <a href="https://en.wikipedia.org/wiki/Hotfix" target="_blank" rel="noopener">Hotfix</a>, which was merged into Master. From there I re-based the Feature, and continued my work.</p>
+<p>With the <em>Simulator</em>, I needed to initialize a <em>Game</em>, but also to be able to run it N times, without interference from the previous rounds. So I had a two-pronged approach, I would accumulate the results of each game, and I would allow a <em>Game</em> to be reset. Learning from my forebears, I was sure to include randomization of the first-player when I reset. This removed the skewing of First-move advantage from my results. With the core <em>Game</em> working and fluently initialized, I was able to simple inject it into a <em>Simulator</em> to run.</p>
+<p>The original simulator was able to run 1000 games in around 80 seconds. This performance is alright, but my personal dev box has 8 cores and the <em>Simulator</em> was maxing out just one. So to improve performance , I began to look into Python multi-threading. I found two similar flavors of concurrent operations in Python.</p>
+<p>I elected to try <a href="https://docs.python.org/3/library/asyncio-task.html" target="_blank" rel="noopener">Tasks</a> first, as it seemed similar to Microsoft’s Task Parallel Library. Sadly I was not quite right about that. The <em>BatchSimulator</em>’s performance was terrible. For some reason it never used multiple cores. The original time for the <em>BatchSimulator</em> was 150 seconds for 1000 games. While it is likely this was user error, it was enough to discourage me from pursuing Tasks further.</p>
+<p>So I turned to <a href="https://docs.python.org/3/library/concurrent.futures.html" target="_blank" rel="noopener">concurrents</a>. And with concurrents, I had much better luck. In this case I spawned some sub-processes. I created the <em>Coordinator</em> to provide each fork with its own copy of the given <em>Game</em>, and an assigned number of games to run. Then each fork created its own <em>Simulator</em>, and ran the given number of games. Once each <em>Simulator</em> completed, the <em>Coordinator</em> would accumulate the results. After all the forks completed, the coordinator calculates the final statistics. This provides an overall winner. To make this easier, I extracted the <em>SimulationResults</em> class. I then added public methods for merging and calculations. By leveraging sub-processes, and existing code, the <em>Coordinator</em> was able to run at least 1000 games in ~16 seconds. Now I say at least, because the <em>Coordinator</em> divides the games evenly among the sub-processes. So to ensure that at least 1000 games are run, it must round up on the division of games per sub-process. But having more data is never a bad thing.</p>
+<p>I was able to push and close this Feature recently, and I am very pleased with the progress. I went from single game simulation to rather performant 1000 game simulation in a month. I now have something to show for my ideas and my work. This milestone leaves me at a good break point. I can either continue working on the simulator to pursue the machine-learning angle. Or I can change focus and return to this project later. At the moment, I don’t know what direction I will turn. But I wanted to take a step back and look at what I have accomplished, and share my ‘geeking out’ a bit.</p>
+<p>If anyone is interested in the source, you can find it <a href="https://github.com/djscheuf/Machikoro-Simulator" target="_blank" rel="noopener">here</a>.</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2017/01/24/to-build-a-better-performance-review/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

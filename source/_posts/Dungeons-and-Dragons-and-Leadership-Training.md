@@ -9,6 +9,8 @@ tags:
   - training
 category:
   - perspective
+photos:
+  - img/post_img/dice.jpg
 ---
 
 'Roll Initiative!’ – A common call to arms in Dungeons and Dragons. I will freely admit; I still play on occasion with some of my college buddies. But this week during some quiet reflection a strange idea dawned on me. You could use DnD to practice a different forms of leadership.

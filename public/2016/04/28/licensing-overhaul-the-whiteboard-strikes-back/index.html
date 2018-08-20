@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Licensing Overhaul - The Whiteboard Strikes Back"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Licensing Overhaul - The Whiteboard Strikes Back - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Licensing Overhaul - The Whiteboard Strikes Back
+            
+          </h1>
+          <p class="posted-on">
+          2016-04-28
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/software/" rel="tag">
+                  software
+                </a>
+              
+                <a href="/tags/development/" rel="tag">
+                  development
+                </a>
+              
+                <a href="/tags/software dev/" rel="tag">
+                  software dev
+                </a>
+              
+                <a href="/tags/c++/" rel="tag">
+                  c++
+                </a>
+              
+                <a href="/tags/programming/" rel="tag">
+                  programming
+                </a>
+              
+                <a href="/tags/cpp/" rel="tag">
+                  cpp
+                </a>
+              
+                <a href="/tags/exposure control/" rel="tag">
+                  exposure control
+                </a>
+              
+                <a href="/tags/feature control/" rel="tag">
+                  feature control
+                </a>
+              
+                <a href="/tags/features/" rel="tag">
+                  features
+                </a>
+              
+                <a href="/tags/legacy/" rel="tag">
+                  legacy
+                </a>
+              
+                <a href="/tags/legacy code/" rel="tag">
+                  legacy code
+                </a>
+              
+                <a href="/tags/licensing/" rel="tag">
+                  licensing
+                </a>
+              
+                <a href="/tags/object oriented programming/" rel="tag">
+                  object oriented programming
+                </a>
+              
+                <a href="/tags/OOP/" rel="tag">
+                  OOP
+                </a>
+              
+                <a href="/tags/recent work/" rel="tag">
+                  recent work
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p><img src="https://danieljscheufler.files.wordpress.com/2016/04/contract-sign-538x218.jpg" alt="contract-sign-538x218"> In case you missed it, you can see Part 1 of the series here: <a href="https://danieljscheufler.wordpress.com/2016/04/21/licensing-overhaul-introduction/" target="_blank" rel="noopener">Part 1 - A New Challenge</a> Last week, I introduced my second biggest work project to date. Shortly after re-vamping the License structure, my PM decided he also wanted to change what some of the licenses allowed the user to do. Upon digging into the code, I discovered a tangled web of multiple checks and confusion. I thought there was no way I could finish in 10 weeks. Thankfully my estimates were in correct, and some solid design work saved the day! Today, I will discuss the design aspects of my new implementation. Starting out, I knew this project would be not only big and rather difficult but that it would also be a catastrophe later if I did not do it well. Even so I was surprised by just how ornery the project got before the end. To be certain, I knew at the outset that I wanted my design to be better and if possible to be more Object-Oriented that the previous implementations had been. However I had very little idea what that meant at the time. As I progressed through the project some goals did eventually become apparent. I am listing them here, in the hopes that I might learn to generate these design goals earlier in the project going forward.</p>
+<ul>
+<li>I wanted my design to provide an explanatory interface to the user. I wanted it to be clear from looking at a simple call what permission was desired.</li>
+<li>I wanted permissions presented to be general enough that only a few would be needed, and that these would be clear in their intent.</li>
+<li>I wanted to ensure that any code written in this phase was stable enough that it wouldn't change should any new scope be added. To be more specific, if the covered permissions or the data types that were covered ever increased I wanted the present code to remain unchanged, both in syntax and in outcome.</li>
+<li>I wanted my code to be segregated enough that if ever the original License Manager need be replaced, it would be done with a minimal effort to update the new code base, and without disturbing the Permission request calls listed above.</li>
+<li>Lastly, I wanted my new code to be easy for anyone who came after to learn and to use, so as to reduce the multiple versions of the same License check that were seen in previous implementations.</li>
+</ul>
+<p>Again, I admit that these goals were not all so verbose when I started the project, but I did set out with something very like this in mind as I began to design my solution. During the first few weeks of the project, I spend a great deal of time sifting through the code, concentrating on the Main UI area, and on the areas which my PM had mentioned he wanted to change. I made note of the patterns, and anti-patterns that I found throughout, and used these to inform my design choices. While sorting through all of that information, I also spend a lot of time at a whiteboard drafting, and redrafting the objects and responsibilities that I wanted to manage, in order to solve the problem.Overall a great deal of attention as spend on their interfaces. The picture below shows the resulting system that I developed, as drawn on a whiteboard. <img src="https://danieljscheufler.files.wordpress.com/2016/04/20160307_090229.jpg?w=680" alt="20160307_090229.jpg"> The workhorse of my solution was the Mediator, which was responsible for routing the Permission Request from any end point through the licenses that the system currently had checked out, and provide a Boolean response to either allow the request or to deny it. To facilitate its work, it is injected with the License Manager, which is used to determine what Licenses, if any, are presently checked out for the system, and then it called on the Factory. The Factory, per its namesake, would create License Objects prepared to answer the Request queries being routed to them by the Mediator. All of this architecture was created to support the abstraction of the idea of a Permission, that is an allowed action on a particular data type. A License in this sense, is composed by the series of Data types and their allowed actions under that License.  The Connection between Data Type and Action Type are represented by the Object Type object. Now, some of the more seasoned developers reading this will probably be shaking their head at this name, but I assure you there was a good reason for it. In the first place, the code base I had to work with had another meaning for the term 'data type' and as a result the only other suitable term that myself, and an English major could conjure up that meant something similar to our intention was 'object'. Getting back on topic, there are several classes where a 1 to N relationship is specified. In laymen's terms, this means that it is possible for multiple of the 'N' type objects to housed under the '1' type object. This is a oversimplification, it will suffice for the moment. The reason there are several 1 to N relationships is because I wanted to abstract the responsibility for know whether or not a particular action was allowed, while simultaneously providing a simple and easy to use interface for such a query. What I ended up creating is best show by the &quot;call-stack-like&quot; write up shown in the picture below: <img src="https://danieljscheufler.files.wordpress.com/2016/04/20160307_090423.jpg" alt="20160307_090423.jpg"> As I mentioned earlier, the Mediator would route the query to the Licenses which were checked out at the time. So each license is asked whether or not it supports the requested action. To determine this, each License will in turn find the matching Object type of the query, if it has one, and will further route the request. The ObjectType then response based on whether or not it has permission for that action. Since the number of licenses is unknown, some additional check are needed. For example, it makes sense to just skip the checks if no licenses are checked out, since there would be no response. However if multiple licenses are present, then some rationalizing needs to be done on their multiple responses. Thankfully, the PM decided that it was sufficient to allow the action if at least one of the Licenses that was checked out allowed it. That is really all the more complex it got. After the appropriate associations were made to the various license. This basically concludes the design portions, and data types, it was a simple matter of tracking down what code I needed to change and how. Admittedly, that process took nearly a month, and would have been a disaster had it not been for some stellar QA help. But overall, I was able to finish the vast majority of the code in about 6 weeks, and the QAs were able to catch up and feel secure in their approval around 8 weeks. Naturally being nearly a month ahead of schedule made the PM very happy! So this week we covered the goals of my new design, the general responsibility of the software objects that I used to create the new system, as well as the Request routing hierarchy. Come back next week, when I'll be discussing the concrete benefits of the new design, as well as some of the draw backs. Thanks as always for your time! <a href="https://danieljscheufler.wordpress.com/2016/05/05/licensing-overhaul-return-of-the-designer/" target="_blank" rel="noopener">Part 3</a> - Return of the Designer</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/05/05/licensing-overhaul-return-of-the-designer/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/04/21/licensing-overhaul-introduction/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

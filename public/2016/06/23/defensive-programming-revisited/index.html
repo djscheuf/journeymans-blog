@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Defensive Programming Revisited"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Defensive Programming Revisited - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Defensive Programming Revisited
+            
+          </h1>
+          <p class="posted-on">
+          2016-06-23
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p><strong><img src="https://danieljscheufler.files.wordpress.com/2016/06/2a2e745500000578-3147721-image-a-26_1435866577601.jpg" alt="2a2e745500000578-3147721-image-a-26_1435866577601"></strong> <strong>A few weeks ago, I wrote a post on Defensive Programming. In it I recalled a recent work project that had benefited from the practice. Today, I want to bring in additional insights that I have since found. I believe they will help broaden the conversation.</strong> <strong>I found an article recently listed on my feed from LinkedIn. You can read the article</strong> <a href="https://blog.cloudpassage.com/2016/03/02/build-your-network-like-a-submarine-rsa-2016/" target="_blank" rel="noopener"><strong>here</strong></a><strong>. The article discussed system design, and focused on defense against hacking. In summary, the recommendation was to build our systems like we do a submarine. A submarine contains water-tight compartments sealed from one another by bulkheads. This way is any part of the submarine is breached, one can seal the affected parts.  I did some light research on Wikipedia to verify my understanding. It is truly impressive the amount of engineering that goes into these machines. Perhaps the most striking feature is the physical embodiment of the</strong> <strong><em>&quot;Ruthless Calculus of War&quot;</em></strong><strong>. Specifically looking at the Pressure Hull section of the Wikipedia article, it is clear that these devices are built to take a hit. You can find the wikipedia article</strong> <a href="https://en.wikipedia.org/wiki/Submarine#Hull" target="_blank" rel="noopener"><strong>here</strong></a><strong>.</strong> <strong>While the author discussed defending network systems against attack, I thought about my employer's legacy code project. We have many components separated into many libraries. And the interfaces in the software are often convoluted at best. Moreover, I have seen little protections or compartmentalization where it might be prudent. For an example, I will use the same project which initiated my first discussion. A new feature would crash without explanation in certain conditions. While most of us thought about why the crash was happening, One of our front end developers was smart enough to put the call to our interop into a try-catch block. With this in place, any exception thrown from the algorithm was caught. This way the exception details are shown to the user. Instead of hypothesizing about the problem we could simply know.</strong> <strong>But, the more important effect was the clean separation between the front and back ends. This neat compartmentalization means that failure in the algorithm don't result in a crash. In the same way that a breach doesn't sink the sub. While reviewing this article I realized that we need to change our thinking for this practice to work. We need to think less about protecting ourselves from every possible failure. We need to think more about how to survive that failure. Perhaps it seems fatalistic to try to just survive the inevitable failure. But the truth of the matter is we cannot and will not anticipate every condition. As a result it may be wiser to invest our effort in equal parts between anticipation and containment.</strong> <strong>Looking back, I realized that containment should not be applied just to Interop components. A wise developer would see that we ought to apply compartmentalization to any file system access as well. In fact, I recently fixed a Customer Defect in my employer's main C# application related to a corrupts of their settings file. The solution was of course to protect the application for corrupt files, without crashing. While talking about this to one of the lead Devs on the project, we realized that service calls should be protected similarly. For example, when the C# project calls into the legacy code, we ought to protect the C# project against the legacy code failures, and vice versa when the legacy code calls into the C# project. ** <strong>The more I mull this idea over, the more I realize about it. As in the first example, it was a wise use of our Development time. And it improved our debugging efficiency! Furthermore, this construction follows the testing pattern of:</strong> <strong><em>Fail Loud, Fail Fast, and Fail Safely!</em></strong></strong>, which I generally try to adhere to. The 'Fail Safely' part is often forgotten though, as the other examples have shown. In some cases is it also difficult to implement. But with the revelations of the article and my recent examples, I hope to be more consistent in my use of this principle. With any luck,it has become a little clearer.** <strong>So, looking again at the many parts of our legacy code, I wonder if it would be wise or viable to add the try-catch bulkheads. These simple steps would save our users from the dark and murky depths of unknown failures. What do you think? Please share your thoughts in the comments below!</strong> <strong>* Image borrowed from</strong> <a href="http://www.dailymail.co.uk/sciencetech/article-3147721/Saab-unveils-superstealth-ghost-submarine-says-virtually-invisible-enemies-allows-divers-silently-enter-exit.html" target="_blank" rel="noopener"><strong>DailyMail.com</strong></a></p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/08/02/an-update/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/06/16/defensive-programming/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

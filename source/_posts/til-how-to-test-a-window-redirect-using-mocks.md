@@ -10,7 +10,8 @@ tags:
 categories:
   - TodayILearned
 date: 2018-06-26 15:30:59
-header-img: "img/post_img/code_wall.jpg"
+photos:
+  - img/post_img/library.jpg
 ---
 
 I was testing an action, which upon completion needed to redirect the user to a new page. Normally, in javascript you can redirect using :

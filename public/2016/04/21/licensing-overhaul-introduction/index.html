@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Licensing Overhaul - A New Challenge"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Licensing Overhaul - A New Challenge - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Licensing Overhaul - A New Challenge
+            
+          </h1>
+          <p class="posted-on">
+          2016-04-21
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/software/" rel="tag">
+                  software
+                </a>
+              
+                <a href="/tags/development/" rel="tag">
+                  development
+                </a>
+              
+                <a href="/tags/software dev/" rel="tag">
+                  software dev
+                </a>
+              
+                <a href="/tags/c++/" rel="tag">
+                  c++
+                </a>
+              
+                <a href="/tags/programming/" rel="tag">
+                  programming
+                </a>
+              
+                <a href="/tags/cpp/" rel="tag">
+                  cpp
+                </a>
+              
+                <a href="/tags/exposure control/" rel="tag">
+                  exposure control
+                </a>
+              
+                <a href="/tags/feature control/" rel="tag">
+                  feature control
+                </a>
+              
+                <a href="/tags/features/" rel="tag">
+                  features
+                </a>
+              
+                <a href="/tags/legacy/" rel="tag">
+                  legacy
+                </a>
+              
+                <a href="/tags/legacy code/" rel="tag">
+                  legacy code
+                </a>
+              
+                <a href="/tags/licensing/" rel="tag">
+                  licensing
+                </a>
+              
+                <a href="/tags/object oriented programming/" rel="tag">
+                  object oriented programming
+                </a>
+              
+                <a href="/tags/OOP/" rel="tag">
+                  OOP
+                </a>
+              
+                <a href="/tags/recent work/" rel="tag">
+                  recent work
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p><img src="https://danieljscheufler.files.wordpress.com/2016/04/contract-sign-538x218.jpg" alt="contract-sign-538x218">   Anyone who knows commercial software knows the dreaded self-mutilation that is software licensing. From the developer point of view, having the application turn off parts of itself always seemed a little silly to me. But from the business standpoint, it is not only necessary but it is of the utmost importance to generate revenue and to protect your product. Additionally, Licensing is one of those things that touches everything in the application at least at some level. As a result it can be terrible if you get it wrong, and worse when you have to make changes to it. For my second stint on a legacy code team, this was the exact task they assigned to me. Honestly, when we started I didn't think there was any way I could get it done in the 10 weeks I had to do it in. To help get you some idea of what I was dealing with, I will start by sharing what I found out about our previous system. Now to start off, you should know, this code base is in C++. Furthermore, it bears the scares of a transition from C into C++ and from functional programming to Object Oriented Programming. In laymen's terms that means that this code base is older than I am. A lot older. To be certain this code has seen some years, but the fact that it has stuck around this long is a testament to its impressive library of functionality. After all, no one keeps code that doesn't do something useful. Getting back on point though, the previous manner of managing Licenses reflects the code's age as well, though perhaps less favorably. In previous generations of this product License were sold per feature area, rather than as a bundle. The result was that many areas of the applications, and especially the central UI area, are thoroughly riddled with checks for multiple of these Feature Licenses. Admittedly, the LicenseManager object does a good job of executing its apparent job description. The trouble is that since the a particular function might be available in multiple Feature Licenses, it can be difficult to tell, from the back-side of the UI, what the program is trying to protect from the user. For the work I did on this system, the proliferation of multiple License checks was especially troubling. You see, recently my company had reorganized the Licenses which they sell, resulting in some confusion between the old and new Licenses in the code. For simplicity I will call them License A, License B, License C ( which is really a combination of A and B) and License D. My product manager wanted to allow the users under License B to see data which had been created in the same project by users under License A. Further he wanted them not to be able to modify this data, or to be able to import or export it. Given the current system and confusion, this was a very tall order! As I have mentioned above, the previous system required the UI area to make a number of checks for several different Feature Licenses before determining whether a particular function was allowed to the user or not. Naturally, this resulted in several complex logical expressions in an attempt to determine whether or not the user was allowed to take a particular action. <img src="https://danieljscheufler.files.wordpress.com/2016/04/archaeology-clipart-confusion.png" alt="archaeology-clipart-confusion">For example, in order to determine if a user is allowed to load a given data type from the database, the data manager would first query the License Manager for Feature Licenses X, Y, and Z. Then if the user had X or Y, but not Z they would be allowed to proceed to loading. If they have Feature X they loaded a particular subset of the data, and if they have Feature Y they loaded a different one. Admittedly this is a simple case, but imagine if this kind of check was made in several different areas of the code. The same check written by different developers at different times for slightly different reasons. The natural differences between coding styles would prevent one from simply searching through the code base for all similar checks. Furthermore, there is no clear place in the code to determine what a particular Feature License would allow or disallow. This is even further compounded when the new Licenses do not directly match up with a set of Features, and under the hood  they are really just re-skinning  some of the bigger Feature Licenses. But that is enough of my belly-aching! After sifting through the old implementation, and some whiteboard work, I was able to develop a better design. Please check back next week, when I'll explain how I made it easier to make the license checks, easier to tell what a license allows and doesn't, and how I was able to avoid replacing the entire licensing system! <a href="https://danieljscheufler.wordpress.com/2016/04/28/licensing-overhaul-the-whiteboard-strikes-back/" target="_blank" rel="noopener">Part 2</a> - The Whiteboard Strikes Back! <a href="https://danieljscheufler.wordpress.com/2016/05/05/licensing-overhaul-return-of-the-designer/" target="_blank" rel="noopener">Part 3</a> - Return of the Designer</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/04/28/licensing-overhaul-the-whiteboard-strikes-back/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/04/14/software-dev-games-for-your-children/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

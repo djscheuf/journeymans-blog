@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Development Tool: Jupyter"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Development Tool: Jupyter - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Development Tool: Jupyter
+            
+          </h1>
+          <p class="posted-on">
+          2016-04-07
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/python/" rel="tag">
+                  python
+                </a>
+              
+                <a href="/tags/software/" rel="tag">
+                  software
+                </a>
+              
+                <a href="/tags/development/" rel="tag">
+                  development
+                </a>
+              
+                <a href="/tags/software dev/" rel="tag">
+                  software dev
+                </a>
+              
+                <a href="/tags/IDE/" rel="tag">
+                  IDE
+                </a>
+              
+                <a href="/tags/tool/" rel="tag">
+                  tool
+                </a>
+              
+                <a href="/tags/tools/" rel="tag">
+                  tools
+                </a>
+              
+                <a href="/tags/development environment/" rel="tag">
+                  development environment
+                </a>
+              
+                <a href="/tags/jupyter/" rel="tag">
+                  jupyter
+                </a>
+              
+                <a href="/tags/prototype/" rel="tag">
+                  prototype
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p>Recently, one of my colleaguespresented a prototype of a new feature that my team was going to implement. To be certain the new feature was fascinating both for its algorithmic complexity, and its significance to our users. However, I was admittedly more caught by the tool he had used to develop and present the prototype. With this tool he was able to set-up a development environment, test data, and was able to demonstrate live, working code for us with ease! This tool was <a href="http://jupyter.org/" target="_blank" rel="noopener">Jupyter</a>. [caption id=&quot;&quot; align=&quot;alignright&quot; width=&quot;240&quot;]<img src="http://blog.jupyter.org/content/images/2015/02/jupyter-sq-text.png" alt=""> *Jupyter Logo[/caption] I can best describe Jupyer as a web-hosted development and testing environment. The Jupyter application is installed on a server which can then expose multiple notebooks wherein the development can be done. More specifically, these notebooks are where the demonstration data is housed, and the presentation are run. Moreover, each notebook can be hooked up to a different compiler/interpreter to allow development to proceed in multiple languages! This is profoundly useful, because it allows a prototype to be developed in the easiest language to program in, without having to pay for the overhead of a presentation layer! Thus demonstrating a feature to the PM/PO becomes much easier! Furthermore, when you are presenting to the developers, they can make adjustments to the code which you are presenting and they can witness the change's effects in real-time! A Jupyter notebook's structure is very similar, if not identical, to that of a <a href="https://www.wolfram.com/mathematica/" target="_blank" rel="noopener">Mathematica</a> Notebook. In Mathematica, the user creates a notebook, and enters an equation , or series of equations into an entry. Then the computation is carried out for that entry, and the user can proceed to use the results in the next entry. This includes plotting as well as some algorithmic analysis, which is especially useful for complex physics simulations. In Jupyter, the user enters a series of functions, function calls, or classes into an entry, which can then be employed for later use by future entries. One can execute an algorithm in one step, and plot it in the next, or go on to use the results of the algorithm in another step. Each entry's results are calculated based only on the present conditions, so changes to entry 1 might affect entry 5's results, if entry 5 used entry 1's results to calculate. But as a benefit, if a mistake was made in entry N, one need only correct that entry, and then re-run the calculations for the entries which follow. Both Mathematica and Jupyter share this behavior. In a corporate setting Jupyter would excel in several use cases, including the PM/PO and the developer Demonstration. In a non-co-located, or even in a co-located environment, a Jupyter notebook could be set-up to allow many users to interact with prototypes in real-time, allowing developers to review the functioning of the prototype while they might be developing the code in a different location or language. Alternatively, It could be used to allow the PM to visualize what a new feature's output will look like given some sample data, without having to ask the developers to run the simulation! This would allow the PM to quickly sort through the accuracy of the algorithm. In this case, a QA could also use the notebook to actively investigate a customer reported error in the algorithm, so long as they have the important data and access to an updated algorithm. This way the QA would not need the entire user project, and all the sensitive information that might contain, which could make reproducing bugs much easier! Finally, as was the case with my colleagues work, Jupyter can be used as a rapid-prototyping environment. Since the language compiler/interpreter are set with the notebook, and the presentation layer is already handled, the developer is much more free to pursue the real interest, the product algorithm. Since the language is not locked by previous work, the developer would be free to choose whatever language they felt would best suit the project. They could feasibly borrow data from other projects, or even simply generate it within the notebook! Overall, Jupyter looks to be a very effective tool for sharing the development of algorithms, or other possible calculation intensive features in an accessible way with multiple parties within the organization. It provides a usable interface to both developers and non-developers alike, in an approachable fashion. It provides the ability to modify the experimental data to give the users a more detailed understanding of the prototype. And finally, if it were used to hold the existing algorithms, then it might also allow the PM's to simulate the program sufficiently to trace bugs related to the customer data, or to the company's algorithm rather than wasting significant time in the back-and-forth as developers seek to understand the meaning behind the data, and why a particular output is wrong. For those interested in knowing more, you can find Jupyter at <a href="http://jupyter.org/" target="_blank" rel="noopener">jupyter.org</a>! Thank you for your time, and I hope that you find this tool to be useful in your endeavors! * The image shown is the Jupyter logo found on the <a href="http://jupyter.org/" target="_blank" rel="noopener">jupyter.org</a> home page.</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2016/04/14/software-dev-games-for-your-children/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>A Blog by <a href="/about">Daniel Scheufler</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>

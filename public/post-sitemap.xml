@@ -7,16 +7,106 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</loc>
-        <lastmod>2018-08-18T20:30:51.412Z</lastmod>
+        <loc>daniel.scheufler.io/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/</loc>
+        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/dice.jpg</image:loc>
+
+        </image:image>
 
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</loc>
-        <lastmod>2018-08-14T01:09:10.530Z</lastmod>
+        <loc>daniel.scheufler.io/2018/04/10/til-how-to-add-raygun-to-a-react-app/</loc>
+        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/retro_raygun.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/03/13/til-how-to-debug-nhibernate-queries/</loc>
+        <lastmod>2018-08-20T01:10:19.042Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/database_search.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2017/03/14/Software-Engineers-are-actually-Creatives/</loc>
+        <lastmod>2018-08-20T01:09:23.183Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/piet.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/12/27/Code-is-read-more-often-than-it-is-written/</loc>
+        <lastmod>2018-08-20T01:07:24.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/code_wall.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/04/17/til-how-to-reduce-npm-package-size/</loc>
+        <lastmod>2018-08-20T01:03:59.108Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/hands.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/04/24/til-how-to-delete-a-property-from-a-javascript-object/</loc>
+        <lastmod>2018-08-20T01:02:52.629Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/code_wall.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</loc>
+        <lastmod>2018-08-20T01:01:58.135Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +114,21 @@
 
     <url>
         <loc>daniel.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
+        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/houstontechfest.jpeg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</loc>
+        <lastmod>2018-08-20T00:58:53.331Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,17 +136,71 @@
 
     <url>
         <loc>daniel.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
+        <lastmod>2018-08-20T00:54:34.515Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/clipart_confusion.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</loc>
+        <lastmod>2018-08-20T00:52:29.924Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/knowledge_base.jpg</image:loc>
+
+        </image:image>
 
     </url>
 
     <url>
         <loc>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/</loc>
-        <lastmod>2018-08-14T01:09:10.529Z</lastmod>
+        <lastmod>2018-08-20T00:49:49.200Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/c_sharp.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</loc>
+        <lastmod>2018-08-20T00:46:56.253Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/library.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</loc>
+        <lastmod>2018-08-20T00:46:08.804Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>daniel.scheufler.io/img/post_img/code_wall.jpg</image:loc>
+
+        </image:image>
 
     </url>
 
@@ -79,46 +237,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2018/04/10/til-how-to-add-raygun-to-a-react-app/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2018/03/13/til-how-to-debug-nhibernate-queries/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2018/04/24/til-how-to-delete-a-property-from-a-javascript-object/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2018/04/03/til-how-to-manually-redirect-within-react-router/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -127,23 +245,7 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2018/04/17/til-how-to-reduce-npm-package-size/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2018/03/06/til-how-to-spoof-my-domain/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -465,30 +567,6 @@
     <url>
         <loc>daniel.scheufler.io/2016/04/14/software-dev-games-for-your-children/</loc>
         <lastmod>2018-08-14T01:09:10.517Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/12/27/Code-is-read-more-often-than-it-is-written/</loc>
-        <lastmod>2018-08-12T02:42:17.637Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/</loc>
-        <lastmod>2018-08-12T02:37:50.171Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2017/03/14/Software-Engineers-are-actually-Creatives/</loc>
-        <lastmod>2018-08-12T02:29:52.438Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

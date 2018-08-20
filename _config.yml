@@ -100,10 +100,11 @@ social:
 # Navigation Bar
 nav:
   Home: .
-  Archive: archives
+  Featured: featured
   About: about
-  Resume: resume
+  Archive: archives
+  
 
 widget:
-  title: 
-  content: 
+  title: A Journeyman's Travels
+  content: <span>Blog by <a href="/about">Daniel Scheufler</a></span>

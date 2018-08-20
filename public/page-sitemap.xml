@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>daniel.scheufler.io/featured/</loc>
+        <lastmod>2018-08-20T01:21:38.027Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>daniel.scheufler.io/404.html</loc>
         <lastmod>2018-08-19T19:37:18.145Z</lastmod>
         <changefreq>weekly</changefreq>
