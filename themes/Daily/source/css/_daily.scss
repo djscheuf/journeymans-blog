@@ -284,19 +284,20 @@ Content
 }
 .content-area {
   padding-top: $header-height;
+  background: $ivory;
 }
 .error404 .content-area,
 .page .content-area {
   padding-top: 120px;
 }
 .odd {
-  background: $off-white-darker;
+  background: $ivory-darker;
   position: relative;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc
 }
 .even {
-  background: $off-white;
+  background: $ivory;
   position: relative;
 }
 .container {
@@ -430,7 +431,7 @@ Footer
   font-size: 0.750em;
   z-index: 2;
   position: relative;
-  background: $off-white;
+  background: $ivory;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   padding-top: 50px;
@@ -490,6 +491,7 @@ Footer
   }
 }
 .site-info {
+  background: $ivory;
   text-align: center;
   font-size: 0.750em;
   padding-bottom: 20px;
