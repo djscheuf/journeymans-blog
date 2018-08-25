@@ -13,7 +13,7 @@ timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: daniel.scheufler.io
+url: blog.scheufler.io
 root: /
 permalink: :year/:month/:day/:title/
 ? permalink_defaults
@@ -87,9 +87,6 @@ deploy:
 # Site settings
 SEOTitle: Journeyman's Travels
 email: daniel@shceufler.io
-description: ""
-keyword: ""
-header-img: img/header_img/home-bg-2-dark.png
 
 # Social Links
 social:
@@ -108,3 +105,10 @@ nav:
 widget:
   title: A Journeyman's Travels
   content: <span>Blog by <a href="/about">Daniel Scheufler</a></span>
+
+# Visual Config
+# avatar: img/better_me_sm.png
+# banner_small: images/banner-small.png
+# banner_large: img/header_img/home-bg-2-dark.png
+logo: /img/logo/star_catcher_mountains.png
+favicon: /img/logo/star_catcher_mountainsx96.png

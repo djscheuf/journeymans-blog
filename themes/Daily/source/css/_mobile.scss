@@ -18,9 +18,9 @@
       top: $header-height;
       padding: 15px 0 15px 30px;
       width: 100%;
-      background: #efefef;
+      background: $off-white;
       border-bottom: 1px solid $grey-border;
-      box-shadow: 0 2px 3px #dfdfdf;
+      box-shadow: 0 2px 3px $off-white-darker;
       z-index: 9999;
       ul {
         li {

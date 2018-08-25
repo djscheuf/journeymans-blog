@@ -8,6 +8,8 @@
   - Temp content added
 * Verify Search
 * Site Logo
+  - Created SCM Logo using Noun Project Basis
+  - Adjusted Themes to suit
 
 ## Content Work:
 * Resume Page
