@@ -6,7 +6,7 @@ tags:
 category:
   - announcements
 photos:
-  - img/post_img/houstontchfest.jpeg
+  - img/post_img/houstontechfest.jpeg
 ---
 
 The kind organizers of Houston TechFest recently announced the speakers. I am pleased report I am among their number! I am stoked for the event, and will be presenting on the following:
