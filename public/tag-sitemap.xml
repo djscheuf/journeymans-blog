@@ -471,20 +471,6 @@
     </url>
 
     <url>
-        <loc>blog.scheufler.io/tags/AGILE/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/tags/Agile-Methodology/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>blog.scheufler.io/tags/competition/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -507,20 +493,6 @@
 
     <url>
         <loc>blog.scheufler.io/tags/trust/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/tags/agility/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/tags/business/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -683,13 +655,6 @@
     <url>
         <loc>blog.scheufler.io/tags/challenge/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/tags/development/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1094,22 +1059,8 @@
     </url>
 
     <url>
-        <loc>blog.scheufler.io/tags/principles/</loc>
-        <lastmod>2018-08-20T01:07:24.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>blog.scheufler.io/tags/user-experience/</loc>
         <lastmod>2018-08-20T01:07:24.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/tags/software/</loc>
-        <lastmod>2018-08-20T01:09:23.183Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -1250,6 +1201,69 @@
     <url>
         <loc>blog.scheufler.io/tags/training/</loc>
         <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/principles/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/software/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/AGILE/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/Agile-Methodology/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/development/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/agility/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/business/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/side-projects/</loc>
+        <lastmod>2018-09-03T22:01:07.716Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/tags/talks/</loc>
+        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

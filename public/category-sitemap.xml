@@ -91,13 +91,6 @@
     </url>
 
     <url>
-        <loc>blog.scheufler.io/categories/Perspective/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>blog.scheufler.io/categories/Software-Development/Work-Projects/</loc>
         <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -128,6 +121,27 @@
     <url>
         <loc>blog.scheufler.io/categories/perspective/</loc>
         <lastmod>2018-08-20T01:12:42.995Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/categories/Perspective/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/categories/software/</loc>
+        <lastmod>2018-09-03T22:01:07.716Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/categories/announcements/</loc>
+        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

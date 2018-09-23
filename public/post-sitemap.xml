@@ -7,6 +7,42 @@
     </url>
 
     <url>
+        <loc>blog.scheufler.io/2018/09/04/techfest-fall-2018/</loc>
+        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>blog.scheufler.io/img/post_img/houstontechfest.jpeg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/2018/09/05/new-horizons/</loc>
+        <lastmod>2018-09-03T22:01:07.716Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>blog.scheufler.io/img/post_img/knowledge_base.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>blog.scheufler.io/2017/01/17/amish-software/</loc>
+        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>blog.scheufler.io/2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/</loc>
         <lastmod>2018-08-20T01:12:42.995Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -254,14 +290,6 @@
 
     <url>
         <loc>blog.scheufler.io/2017/02/21/a-chance-encounter-leadership-on-a-competition-show/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>blog.scheufler.io/2017/01/17/amish-software/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

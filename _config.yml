@@ -84,6 +84,11 @@ deploy:
 
 #Custom Setting Start
 
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 10
+
 # Site settings
 SEOTitle: Journeyman's Travels
 email: daniel@shceufler.io
@@ -104,7 +109,7 @@ nav:
 
 widget:
   title: A Journeyman's Travels
-  content: <span>Blog by <a href="/about">Daniel Scheufler</a></span>
+  content: <span>Blog by <a href="/about">Daniel Scheufler</a>. <a href="/rss2.xml">RSS Feed</a></span>
 
 # Visual Config
 # avatar: img/better_me_sm.png
