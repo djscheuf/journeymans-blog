@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>blog.scheufler.io</loc>
+        <loc>daniel.scheufler.io</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
     
     <url>
-        <loc>blog.scheufler.io/featured/</loc>
+        <loc>daniel.scheufler.io/featured/</loc>
         <lastmod>2018-08-20T01:21:38.027Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.scheufler.io/404.html</loc>
+        <loc>daniel.scheufler.io/404.html</loc>
         <lastmod>2018-08-19T19:37:18.145Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.scheufler.io/about/</loc>
+        <loc>daniel.scheufler.io/about/</loc>
         <lastmod>2018-08-14T02:07:26.477Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>blog.scheufler.io/resume/</loc>
+        <loc>daniel.scheufler.io/resume/</loc>
         <lastmod>2018-08-14T01:37:07.670Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

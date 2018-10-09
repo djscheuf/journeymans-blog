@@ -13,7 +13,7 @@ timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: blog.scheufler.io
+url: daniel.scheufler.io
 root: /
 permalink: :year/:month/:day/:title/
 ? permalink_defaults
@@ -92,6 +92,7 @@ feed:
 # Site settings
 SEOTitle: Journeyman's Travels
 email: daniel@shceufler.io
+google_analytics: UA-86343000-1
 
 # Social Links
 social:

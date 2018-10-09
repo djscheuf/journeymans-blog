@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>blog.scheufler.io/post-sitemap.xml</loc>
+        <loc>daniel.scheufler.io/post-sitemap.xml</loc>
         <lastmod>2018-09-03T22:19:30.405Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>blog.scheufler.io/page-sitemap.xml</loc>
+        <loc>daniel.scheufler.io/page-sitemap.xml</loc>
         <lastmod>2018-08-20T01:21:38.027Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>blog.scheufler.io/category-sitemap.xml</loc>
+        <loc>daniel.scheufler.io/category-sitemap.xml</loc>
         <lastmod>2018-08-14T01:09:10.518Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>blog.scheufler.io/tag-sitemap.xml</loc>
+        <loc>daniel.scheufler.io/tag-sitemap.xml</loc>
         <lastmod>2018-08-14T01:09:10.517Z</lastmod>
     </sitemap>
 

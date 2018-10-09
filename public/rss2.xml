@@ -4,7 +4,7 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>A Journeyman&#39;s Travels</title>
-    <link>blog.scheufler.io/</link>
+    <link>daniel.scheufler.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
@@ -13,8 +13,8 @@
     
     <item>
       <title>New Horizons</title>
-      <link>blog.scheufler.io/2018/09/05/new-horizons/</link>
-      <guid>blog.scheufler.io/2018/09/05/new-horizons/</guid>
+      <link>daniel.scheufler.io/2018/09/05/new-horizons/</link>
+      <guid>daniel.scheufler.io/2018/09/05/new-horizons/</guid>
       <pubDate>Wed, 05 Sep 2018 20:30:00 GMT</pubDate>
       <description>
       
@@ -27,13 +27,13 @@
       
       <content:encoded><![CDATA[<p>I am pleased to announce the completion of a recent side-project. This side-project is also the reason for my hiatus over the last few months. I have been looking for a new blogging platform.I sought finer control of the site, and the satisfaction that comes with doing-it-yourself.</p><p>I found this happy medium in a static site generator called <a href="hexo.io">Hexo</a>. It took some time to find a generator I was comfortable with. Then it took time to actually transition my blog. And finally it took time to sort out hosting. All in all, I spent about a week actually doing code stuff. I spent the rest either researching generators, or finding <a href="netlify.com">the right host</a>.</p><p>To my delight, I have enough material to populate a blog series. If the topic interests you, I invite you to my new blog site: <a href="daniel.scheufler.io">daniel.scheufler.io</a> for the rest of the series.</p><p>Until then, I would like to leave you with this blessing, in case we are here parting ways: 'May the road rise up to meet you.May the wind be always at your back.May the sun shine wamr upon your face;the rain fall soft upon your fieldsand until we meet again,may God hold you in the palm of His hand. '</p><ul><li>Old Irish Blessing</li></ul>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/09/05/new-horizons/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/09/05/new-horizons/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TechFest Fall 2018</title>
-      <link>blog.scheufler.io/2018/09/04/techfest-fall-2018/</link>
-      <guid>blog.scheufler.io/2018/09/04/techfest-fall-2018/</guid>
+      <link>daniel.scheufler.io/2018/09/04/techfest-fall-2018/</link>
+      <guid>daniel.scheufler.io/2018/09/04/techfest-fall-2018/</guid>
       <pubDate>Tue, 04 Sep 2018 20:30:00 GMT</pubDate>
       <description>
       
@@ -46,13 +46,13 @@
       
       <content:encoded><![CDATA[<p>The kind organizers of Houston TechFest recently announced the speakers. I am pleased report I am among their number! I am stoked for the event, and will be presenting on the following:</p><ol><li>Designing and Running Effective Meetings</li></ol><ul><li>Do meeting at your company drag on and on and on... ? Do you wish they'd get to the point already? Have you ever had to have a meeting after the meeting to make the real decisions? What if there was a way to fix this broken process? What if we could make meetings effective again? Come learn some guiding principles to help make your meetings more effective, and not just the ones you lead! Tips include how to organize your meeting, how to help ensure decisions are made, and suggestions for follow-ups to communicate the decisions, so they don't die in the meeting!</li></ul><ol start="2"><li>Web UI Testing? Yes, You can! - Co-presenting with <a href="lassala.net">Claudio Lassala</a></li></ol><ul><li>Those back-end guys really seem bought into this TDD idea. What with their interface mocking and SOLID design principles. But is such a thing even possible in the Front-End? Besides everyone knows UI tests are painfully slow!</li></ul><p>Guess what ?! Not only can TDD be used in the Front-End, it will improve your designs, just like it does in the back-end. What's more is you can do with without having to write laboriously slow UI tests! Come learn how to improve the design of your React Components and Redux Store using TDD Best practices, and see why mocking is even easier in Javascript than it is in C#!</p><ol start="3"><li>Demystifying the Whiteboard Interview</li></ol><ul><li>Its no secret that Whiteboard interviews are widely panned by the industry. Just as well known is that you will inevitably have to face one every-time you interview. But why? There must be some pattern or principle that can be learned to make the process less unpleasant, right? Indeed there is! Come learn some simple steps and tool you can use to improve your next whiteboarding interview!</li></ul><p>Looking forward to seeing you all there! More information on the conference is available at their <a href="http://www.houstontechfest.com/" target="_blank" rel="noopener">website</a>. And don't forget to <a href="https://www.eventbrite.com/e/houston-techfest-2018-tickets-47835956634" target="_blank" rel="noopener">pre-register</a>!</p><p>P.S. If you haven't seen Claudio speak, I highly recommend attending one of his User Group presentations! Plus his <a href="lassala.net">blog</a> has some great stuff too!</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/09/04/techfest-fall-2018/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/09/04/techfest-fall-2018/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to test a window-redirect using Mocks</title>
-      <link>blog.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</link>
-      <guid>blog.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</guid>
+      <link>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</link>
+      <guid>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/</guid>
       <pubDate>Tue, 26 Jun 2018 20:30:59 GMT</pubDate>
       <description>
       
@@ -65,13 +65,13 @@
       
       <content:encoded><![CDATA[<p>I was testing an action, which upon completion needed to redirect the user to a new page. Normally, in javascript you can redirect using :</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location = <span class="string">"newPath"</span>;</span><br></pre></td></tr></table></figure></p><p>But that's hard to test for. Thankfully there is a better way:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.location.assign(<span class="string">"newPath"</span>);</span><br></pre></td></tr></table></figure></p><p>You can then mock the assign function and test for that call! My thanks to the creators of jest for that <a href="https://github.com/facebook/jest/issues/890" target="_blank" rel="noopener">insight</a>!</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/06/26/til-how-to-test-a-window-redirect-using-mocks/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to run a single suite of Tests in Jest</title>
-      <link>blog.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</link>
-      <guid>blog.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</guid>
+      <link>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</link>
+      <guid>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/</guid>
       <pubDate>Tue, 19 Jun 2018 20:30:24 GMT</pubDate>
       <description>
       
@@ -84,13 +84,13 @@
       
       <content:encoded><![CDATA[<p>So I was writing unit tests for my reducers, but got frustrated with the slow process of running the full test suite when I was tweaking a single test. I though, there's got to be a better way! To the Internet! And TaDa, there was! Once you install Jest globablly, you can run a simple command to select the suite or suites you want to run:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jest --runInBand <span class="string">"&#123;matchString&#125;"</span></span><br></pre></td></tr></table></figure></p><p>This command will run any <em>file</em> whose name matches the given string. So if you wanted to run all the tests associated with the SuchAndSuchModule. You could use:</p><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jest --runInBand <span class="string">"SuchAndSuch*"</span></span><br></pre></td></tr></table></figure></p><p>My thanks to be brilliant folks who answer stack-overflow questions! You can find the answer I did [here](http://uch a need. Here's a rough example:)</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/06/19/til-how-to-run-a-single-suite-of-tests-in-jest/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to Resolve false-positive ESLint Errors</title>
-      <link>blog.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/</link>
-      <guid>blog.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/</guid>
+      <link>daniel.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/</link>
+      <guid>daniel.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/</guid>
       <pubDate>Tue, 12 Jun 2018 20:30:29 GMT</pubDate>
       <description>
       
@@ -103,13 +103,13 @@
       
       <content:encoded><![CDATA[<p>So a colleague of mine was struggling with our local build process. Every time he ran the npm command, which ran a webpack build, He'd get numerous errors for <em>'import/no-unresolved'.</em> The associated message would complain that the file casing did not match the underlying file system. As it turns out, the warning was technically correct. When we checked his command line, we found that the interface reported the folder name with a lowercase. To be clear the folder, as it existed in the file system, was capitalized. So we spun up a new CLI, and tried it with a capitalized version of the folder. Lo and behold, it worked perfectly. Be sure to check your CLI, when a command returns with very odd errors.</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to use ToDictionary</title>
-      <link>blog.scheufler.io/2018/06/05/til-how-to-use-todictionary/</link>
-      <guid>blog.scheufler.io/2018/06/05/til-how-to-use-todictionary/</guid>
+      <link>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/</link>
+      <guid>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/</guid>
       <pubDate>Tue, 05 Jun 2018 20:30:04 GMT</pubDate>
       <description>
       
@@ -122,13 +122,13 @@
       
       <content:encoded><![CDATA[<p>So I was creating a bulk action in a controller. I needed to map a list of Ids to a dictionary of said Ids and their respective results. My initial thought was to use ForEach, but there was a great deal of unnecessary boiler-plate code involved. There had to be a better way. And of course there was. Naturally the ToDictionary function was invented by brilliant minds in anticipation of such a need. Here's a rough example:</p><p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listOfId.ToDictionary(key=&gt; key, <span class="keyword">value</span> =&gt; MethodtoGetValue(<span class="keyword">value</span>,otherParams));</span><br></pre></td></tr></table></figure></p><p>Note that the key, and the value both come from the entry in the List, and are used to create the resulting key-value pair. Meaning that you could create a Key and a Value from functions that use the list entry as an input.</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/06/05/til-how-to-use-todictionary/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to use Map and Reduce</title>
-      <link>blog.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</link>
-      <guid>blog.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</guid>
+      <link>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</link>
+      <guid>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</guid>
       <pubDate>Tue, 22 May 2018 20:00:44 GMT</pubDate>
       <description>
       
@@ -141,13 +141,13 @@
       
       <content:encoded><![CDATA[<p>While working on a React app, I needed to translate a bit of Redux shape into one needed by an Api. Due to the normalization we imposed on the Redux state, I had to navigate to the desired information through a couple of lists. These entities each had a list of ids of children, and I needed the grand-children of a given entity.</p><p>Instead of manually composing this list, I found map and reduce were far better suited to the task, as you might imagine. In order to get the list of grandchildren, I first mapped the list of children ids to a list of lists of grand-child ids. These lists were accessed through the children.</p><p>Then I took the list of lists and reduced it , effectively merging it into a single, long list of all grandchildren. Helpful hint, always include an initial value for the list. It helps avoid bugs when inputs are empty.</p><p>Finally I mapped the list of grand-child ids to the grandchildren themselves. As an experiment I did try to manually iterate through the lists without Map and reduce, and found that those three lines replaced something like 12-15 lines. Further, the 12-15 line code was... obtuse at best. Got to love it when succinct code is also easier to understand.</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... Combine Reducers also splits state...</title>
-      <link>blog.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</link>
-      <guid>blog.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</guid>
+      <link>daniel.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</link>
+      <guid>daniel.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/</guid>
       <pubDate>Tue, 15 May 2018 20:00:18 GMT</pubDate>
       <description>
       
@@ -160,13 +160,13 @@
       
       <content:encoded><![CDATA[<p>While starting work on a greenfield project, I was of course writing new reducers. This time, we were trying to follow a better paradigm as outlined <a href="https://redux.js.org/recipes/structuring-reducers/normalizing-state-shape" target="_blank" rel="noopener">here</a>. As it happens I was writing the byId reducer for an action when I learned a wonderful, simplifying fact. As you know Reducers take current state and an action, returning a modified state. But what is the state handed to the function? As it turns out, CombineReducers, also splits out the relevant part of state for the given reducers. For example, take the following Redux State:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">root: &#123;</span><br><span class="line">  entities: &#123;</span><br><span class="line">    item: &#123;</span><br><span class="line">      byId:&#123;&#125;,</span><br><span class="line">      allIds:[]</span><br><span class="line">    &#125;,</span><br><span class="line">    thing: &#123;&#125;,</span><br><span class="line">    box: &#123;&#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  uiState:&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>If you compose root from an entities and uiState reducer, then the entities reducer gets only the entities part of state. Going deeper you can similarly compose the entities reducer from item, thing and box. The item reducer will only get the item part of state, and will not see anything related to thing or box. As a result of this behavior, you can write very simple reducers. And of course it is super easy to write tests for reducers composed in this manner.</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/05/15/til-combine-reducers-also-splits-state/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Spring 2018 Houston TechFest - Slides</title>
-      <link>blog.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/</link>
-      <guid>blog.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/</guid>
+      <link>daniel.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/</link>
+      <guid>daniel.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/</guid>
       <pubDate>Tue, 08 May 2018 20:30:07 GMT</pubDate>
       <description>
       
@@ -179,13 +179,13 @@
       
       <content:encoded><![CDATA[<p>I am pleased to say that my presentation on May 5th at the Spring 2018 Houston TechFest went very well. Being my first conference presentation I was a bit nervous but I enjoyed the experience very much. For those who kindly attended my session <em>'Demystifying the Whiteboard Interview'</em>, I thank you. As promised, I have uploaded the slides <a href="https://drive.google.com/open?id=1LV0l4YklGICI3ZD7oJWgqx3ebyGiEcg4" target="_blank" rel="noopener">here</a>. If you would kindly leave a rating at <a href="http://spkr8.com/t/75481" target="_blank" rel="noopener">SpeakerRate</a>, I would be most appreciative. I look forward to seeing you all at the Fall Houston TechFest!</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/#disqus_thread</comments>
     </item>
     
     <item>
       <title>TIL... How to handle User input with a generic function</title>
-      <link>blog.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</link>
-      <guid>blog.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</guid>
+      <link>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</link>
+      <guid>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</guid>
       <pubDate>Tue, 01 May 2018 20:00:06 GMT</pubDate>
       <description>
       
@@ -198,7 +198,7 @@
       
       <content:encoded><![CDATA[<p>While writing a CRUD screen with validation in React, I found I was writing similar, if not the same state-altering functions for each input box. Some functions needed additional validation while others did not. After discussing some team-members, the suggestion was made to use the following:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">handleUserInput(e) &#123;</span><br><span class="line"> <span class="keyword">const</span> name = e.target.name;</span><br><span class="line"> <span class="keyword">const</span> value = e.target.value;</span><br><span class="line"> <span class="keyword">this</span>.setState(&#123; [name]: value &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>Paired with code like this for the inputs:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;TextInput</span><br><span class="line"> id=<span class="string">"saleName"</span></span><br><span class="line"> name=<span class="string">"saleName"</span></span><br><span class="line"> placeholder=&#123;<span class="string">''</span>&#125;</span><br><span class="line"> value=&#123;<span class="keyword">this</span>.state.saleName&#125;</span><br><span class="line"> onChange=&#123;<span class="keyword">this</span>.handleUserInput&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure></p><p>Then just set the name property on the tag to the same property name in state.</p>]]></content:encoded>
       
-      <comments>blog.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/#disqus_thread</comments>
+      <comments>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/#disqus_thread</comments>
     </item>
     
   </channel>

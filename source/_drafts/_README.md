@@ -20,4 +20,6 @@
    - Conversion
    - First Theme, repairs
    - Second Theme and Peace
+   - Analytics
+    - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
 * NPM audit fix?
