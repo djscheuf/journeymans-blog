@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 03 Sep 2018 22:01:07 GMT</pubDate>
+    <pubDate>Sun, 14 Oct 2018 02:01:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Migrating to Hexo - Discovery</title>
+      <link>daniel.scheufler.io/2018/10/13/hexo-discovery/</link>
+      <guid>daniel.scheufler.io/2018/10/13/hexo-discovery/</guid>
+      <pubDate>Sun, 14 Oct 2018 01:25:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;As promised, I have finally started my series on my Migration to Hexo. Over the next few weeks, I will expound on my journey from Wordpre
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>As promised, I have finally started my series on my Migration to Hexo. Over the next few weeks, I will expound on my journey from Wordpress,  through several alternative blogging platforms. And, of course, landing on Hexo. Today, Discovery: <em>'How I finally found Hexo'.</em></p><p>I started my blogging career on Wordpress. I realized some of the content I had written to share on my then-employer's internal social network would be of interest. Wordpress was free, and allowed me to set-up a basic blog with little hassle. Aside from self-censuring my own posts to avoid divulging anything I thought my then-employer would prefer remain closed, I had an easy time of it.</p><p>I began by sharing tidbits about my work, my experiences, and on occasion sharing articles I found. As time went one, I began to rely on my blog as something of a <em>living resume</em>.</p><p>With that re-interpretation I felt the need for a more professional appearance. I searched for a long while for an appropriate theme. I struggled to find something I was comfortable with. I wrote software, but I wasn't yet comfortable enough to support my own style-sheet.</p><p>I will admit I struggled here. I couldn't find the features I wanted in the themes I was able to use. Moreover, around this same time Wordpress started to change. These changes were not wholly bad. There were some notable improvements in the Web interface. But something about the company's approach changed and began to make me uneasy.</p><p>So I looked for other blogging platforms. This lasted several <em>years</em>, and would spike with activity as I discovered alternatives. First, I discovered <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>, which is also a static-site generator. But at the time my web experience was very limited. I was unable to get even the basics working, despite their tutorials. So much for phase one.</p><p>Phase Two was a bit more productive. I discovered <a href="https://ghost.org/" target="_blank" rel="noopener">ghost</a>. I first found it as an add-in for <a href="https://oasis.sandstorm.io/" target="_blank" rel="noopener">Sandstorm</a>. At the time I was looking into self-hosting everything I could. I was  <em>a little paranoid</em>.  While I am still intrigued by the idea of self-hosting, I never tried that version of Ghost as it was out-of-date.</p><p>It wasn't until 2017 that a colleague introduced me to <a href="https://www.heroku.com/" target="_blank" rel="noopener">Heroku</a>. Heroku is a very developer-friendly Cloud App Hosting service, with an excellent free-teir! And guess what It comes with a Ghost-button, which all but removed the cost of set-up, and it ran a current version! After playing around with some other projects, written wholly on NodeJs, I gave Ghost a try.</p><p>I have to admit their <a href="https://blog.ghost.org/desktop/" target="_blank" rel="noopener">desktop editor</a> is very slick! I was even able to hook it up to my Heroku instance. But I wasn't able to completely host on Heroku.</p><p>Heroku's free tier is excellent and offers a great deal of flexibility for a fledgling Web-App. It even supports a PostgreSQL database for persistence. Ghost did not use Postgre and needed a paid persistence layer. Without it, such things as custom themes, and many other features would  not work. Moreover, as I researched, I found it would be nigh impossible to import my Wordpress posts into Ghost. In order for Ghost to get the data, I would need to stand-up an independent instance of my Blog running in an environment that both it and Ghost shared. So much for phase 2.</p><p>A few months after Ghost fell out of the running I happened upon <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>. My current client relies on React, and I've become much more familiar with both NodeJS and web development in general. And so it was that I was searching for a static site generator that supported Markdown, and would run on NodeJs. If I was going to do my own support, I needed to be comfortable with the system enough to control it and to debug it! Hexo came up in one such search. So began Phase 3.</p><p>After trying it out at home, and seeing how easy it was to stand-up the site, and add posts I was hooked! But several hurdles remained. First I needed to pull in my old posts. And I'll explain how I executed that feat next week.</p>]]></content:encoded>
+      
+      <comments>daniel.scheufler.io/2018/10/13/hexo-discovery/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>New Horizons</title>
@@ -180,25 +199,6 @@
       <content:encoded><![CDATA[<p>I am pleased to say that my presentation on May 5th at the Spring 2018 Houston TechFest went very well. Being my first conference presentation I was a bit nervous but I enjoyed the experience very much. For those who kindly attended my session <em>'Demystifying the Whiteboard Interview'</em>, I thank you. As promised, I have uploaded the slides <a href="https://drive.google.com/open?id=1LV0l4YklGICI3ZD7oJWgqx3ebyGiEcg4" target="_blank" rel="noopener">here</a>. If you would kindly leave a rating at <a href="http://spkr8.com/t/75481" target="_blank" rel="noopener">SpeakerRate</a>, I would be most appreciative. I look forward to seeing you all at the Fall Houston TechFest!</p>]]></content:encoded>
       
       <comments>daniel.scheufler.io/2018/05/08/spring-2018-houston-techfest-slides/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>TIL... How to handle User input with a generic function</title>
-      <link>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</link>
-      <guid>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/</guid>
-      <pubDate>Tue, 01 May 2018 20:00:06 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;While writing a CRUD screen with validation in React, I found I was writing similar, if not the same state-altering functions for each in
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>While writing a CRUD screen with validation in React, I found I was writing similar, if not the same state-altering functions for each input box. Some functions needed additional validation while others did not. After discussing some team-members, the suggestion was made to use the following:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">handleUserInput(e) &#123;</span><br><span class="line"> <span class="keyword">const</span> name = e.target.name;</span><br><span class="line"> <span class="keyword">const</span> value = e.target.value;</span><br><span class="line"> <span class="keyword">this</span>.setState(&#123; [name]: value &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>Paired with code like this for the inputs:</p><p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;TextInput</span><br><span class="line"> id=<span class="string">"saleName"</span></span><br><span class="line"> name=<span class="string">"saleName"</span></span><br><span class="line"> placeholder=&#123;<span class="string">''</span>&#125;</span><br><span class="line"> value=&#123;<span class="keyword">this</span>.state.saleName&#125;</span><br><span class="line"> onChange=&#123;<span class="keyword">this</span>.handleUserInput&#125;</span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure></p><p>Then just set the name property on the tag to the same property name in state.</p>]]></content:encoded>
-      
-      <comments>daniel.scheufler.io/2018/05/01/til-how-to-handle-user-input-with-a-generic-function/#disqus_thread</comments>
     </item>
     
   </channel>

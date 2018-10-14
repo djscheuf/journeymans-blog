@@ -16,7 +16,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="New Horizons"/>
+      <meta property="og:title" content="Migrating to Hexo - Discovery"/>
   
   <!--Open Graph Description-->
   
@@ -33,7 +33,7 @@
 
   <!-- Title -->
   
-  <title>New Horizons - A Journeyman&#39;s Travels</title>
+  <title>Migrating to Hexo - Discovery - A Journeyman&#39;s Travels</title>
 
 
   <link rel="shortcut icon" href="/img/logo/star_catcher_mountainsx96.png">
@@ -129,11 +129,11 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            New Horizons
+            Migrating to Hexo - Discovery
             
           </h1>
           <p class="posted-on">
-          2018-09-05
+          2018-10-13
           </p>
           <div class="tags-links">
             
@@ -142,25 +142,31 @@
                   side-projects
                 </a>
               
+                <a href="/tags/blog/" rel="tag">
+                  blog
+                </a>
+              
+                <a href="/tags/hexo/" rel="tag">
+                  hexo
+                </a>
+              
             
           </div>
         </div>
         <!-- Post Main Content -->
         <div class="entry-content has_line_number">
-          <p>I am pleased to announce the completion of a recent side-project. This side-project is also the reason for my hiatus over the last few months. I have been looking for a new blogging platform.
-I sought finer control of the site, and the satisfaction that comes with doing-it-yourself.</p>
-<p>I found this happy medium in a static site generator called <a href="hexo.io">Hexo</a>. It took some time to find a generator I was comfortable with. Then it took time to actually transition my blog. And finally it took time to sort out hosting. All in all, I spent about a week actually doing code stuff. I spent the rest either researching generators, or finding <a href="netlify.com">the right host</a>.</p>
-<p>To my delight, I have enough material to populate a blog series. If the topic interests you, I invite you to my new blog site: <a href="daniel.scheufler.io">daniel.scheufler.io</a> for the rest of the series.</p>
-<p>Until then, I would like to leave you with this blessing, in case we are here parting ways: '
-May the road rise up to meet you.
-May the wind be always at your back.
-May the sun shine wamr upon your face;
-the rain fall soft upon your fields
-and until we meet again,
-may God hold you in the palm of His hand. '</p>
-<ul>
-<li>Old Irish Blessing</li>
-</ul>
+          <p>As promised, I have finally started my series on my Migration to Hexo. Over the next few weeks, I will expound on my journey from Wordpress,  through several alternative blogging platforms. And, of course, landing on Hexo. Today, Discovery: <em>'How I finally found Hexo'.</em></p>
+<p>I started my blogging career on Wordpress. I realized some of the content I had written to share on my then-employer's internal social network would be of interest. Wordpress was free, and allowed me to set-up a basic blog with little hassle. Aside from self-censuring my own posts to avoid divulging anything I thought my then-employer would prefer remain closed, I had an easy time of it.</p>
+<p>I began by sharing tidbits about my work, my experiences, and on occasion sharing articles I found. As time went one, I began to rely on my blog as something of a <em>living resume</em>.</p>
+<p>With that re-interpretation I felt the need for a more professional appearance. I searched for a long while for an appropriate theme. I struggled to find something I was comfortable with. I wrote software, but I wasn't yet comfortable enough to support my own style-sheet.</p>
+<p>I will admit I struggled here. I couldn't find the features I wanted in the themes I was able to use. Moreover, around this same time Wordpress started to change. These changes were not wholly bad. There were some notable improvements in the Web interface. But something about the company's approach changed and began to make me uneasy.</p>
+<p>So I looked for other blogging platforms. This lasted several <em>years</em>, and would spike with activity as I discovered alternatives. First, I discovered <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>, which is also a static-site generator. But at the time my web experience was very limited. I was unable to get even the basics working, despite their tutorials. So much for phase one.</p>
+<p>Phase Two was a bit more productive. I discovered <a href="https://ghost.org/" target="_blank" rel="noopener">ghost</a>. I first found it as an add-in for <a href="https://oasis.sandstorm.io/" target="_blank" rel="noopener">Sandstorm</a>. At the time I was looking into self-hosting everything I could. I was  <em>a little paranoid</em>.  While I am still intrigued by the idea of self-hosting, I never tried that version of Ghost as it was out-of-date.</p>
+<p>It wasn't until 2017 that a colleague introduced me to <a href="https://www.heroku.com/" target="_blank" rel="noopener">Heroku</a>. Heroku is a very developer-friendly Cloud App Hosting service, with an excellent free-teir! And guess what It comes with a Ghost-button, which all but removed the cost of set-up, and it ran a current version! After playing around with some other projects, written wholly on NodeJs, I gave Ghost a try.</p>
+<p>I have to admit their <a href="https://blog.ghost.org/desktop/" target="_blank" rel="noopener">desktop editor</a> is very slick! I was even able to hook it up to my Heroku instance. But I wasn't able to completely host on Heroku.</p>
+<p>Heroku's free tier is excellent and offers a great deal of flexibility for a fledgling Web-App. It even supports a PostgreSQL database for persistence. Ghost did not use Postgre and needed a paid persistence layer. Without it, such things as custom themes, and many other features would  not work. Moreover, as I researched, I found it would be nigh impossible to import my Wordpress posts into Ghost. In order for Ghost to get the data, I would need to stand-up an independent instance of my Blog running in an environment that both it and Ghost shared. So much for phase 2.</p>
+<p>A few months after Ghost fell out of the running I happened upon <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>. My current client relies on React, and I've become much more familiar with both NodeJS and web development in general. And so it was that I was searching for a static site generator that supported Markdown, and would run on NodeJs. If I was going to do my own support, I needed to be comfortable with the system enough to control it and to debug it! Hexo came up in one such search. So began Phase 3.</p>
+<p>After trying it out at home, and seeing how easy it was to stand-up the site, and add posts I was hooked! But several hurdles remained. First I needed to pull in my old posts. And I'll explain how I executed that feat next week.</p>
 
         </div>
       </article>
@@ -179,13 +185,9 @@ may God hold you in the palm of His hand. '</p>
     <!-- Pre or Next -->
     <div class="nav-links">
       
-        <div class="nav-previous">
-          <a href="/2018/10/13/hexo-discovery/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
-        </div>
-      
       
         <div class="nav-next">
-          <a href="/2018/09/04/techfest-fall-2018/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+          <a href="/2018/09/05/new-horizons/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
         </div>
       
     </div>

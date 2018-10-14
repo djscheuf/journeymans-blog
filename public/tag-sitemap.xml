@@ -1255,15 +1255,29 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/side-projects/</loc>
-        <lastmod>2018-09-03T22:01:07.716Z</lastmod>
+        <loc>daniel.scheufler.io/tags/talks/</loc>
+        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/tags/talks/</loc>
-        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
+        <loc>daniel.scheufler.io/tags/side-projects/</loc>
+        <lastmod>2018-10-14T02:01:41.659Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/blog/</loc>
+        <lastmod>2018-10-14T02:01:41.659Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/tags/hexo/</loc>
+        <lastmod>2018-10-14T02:01:41.659Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
