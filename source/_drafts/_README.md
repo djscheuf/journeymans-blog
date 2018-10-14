@@ -16,10 +16,11 @@
   - Removed from Nav
 * About Page
 * Hexo Conversion Posts
-   - Discovery
-   - Conversion
-   - First Theme, repairs
-   - Second Theme and Peace
-   - Analytics
-    - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
+    - [X] Discovery
+    - [ ] Conversion
+    - [ ] First Theme, repairs
+    - [ ] Second Theme and Peace
+    - [ ] Analytics
+        - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
+    - [ ] Build a Living Resume
 * NPM audit fix?

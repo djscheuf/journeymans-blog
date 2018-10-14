@@ -1,10 +1,12 @@
 ---
 title: Migrating to Hexo
-date: 2016-12-27 15:30:00
+date: 2018-08-13 15:30:00
 tags:
   - side-projects
+  - blog
+  - hexo
 category:
-  - software
+  - side-projects
 ---
 
 I did a thing! I migrated to Hexo SSG :D
