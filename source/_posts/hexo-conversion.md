@@ -9,7 +9,7 @@ category:
   - side-projects
 ---
 
-Last week, I explained [how I found Hexo](https://daniel.scheufler.io/2018/10/14/hexo-discovery/). This week I'll explain how easy it was to convert my original Wordpress blog over to Hexo.
+Last week, I explained [how I found Hexo](/2018/10/14/hexo-discovery/). This week I'll explain how easy it was to convert my original Wordpress blog over to Hexo.
 
 Now that I had settled on a site engine, I had to get my content into it. After all, leaving any content on the original site would force me to support both going forward. Being a developer, supporting two platforms didn't sound like fun. So I opted for the 'lazier' route, so migrating all my content. 
 

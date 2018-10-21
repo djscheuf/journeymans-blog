@@ -24,3 +24,8 @@
         - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
     - [ ] Build a Living Resume
 * NPM audit fix?
+
+## Bug Fixes:
+[X] Inter-post Links back to Wordpress
+[ ] Link to images on Wordpress
+    - Search: 'https://danieljscheufler.files.wordpress.com'
