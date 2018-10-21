@@ -21,24 +21,24 @@ categories:
 date: 2016-09-13 15:00:32
 ---
 
-![computer-1294045_960_720](https://danieljscheufler.files.wordpress.com/2016/08/computer-1294045_960_720.png) Shortly after starting with my new company, I began work on a back-end infrastructure project. To be specific, I am working on an inter-process-communication (hereafter IPC) layer. As the project developed, we realized the need to protect our data in transit. This is because we are working with Protect Health Information (hereafter PHI). It would be a disaster if the data became compromised. So to combat this, we are encrypting the data before it is send through the IPC layer. There are many fine encryption schemes available, but many are difficult to implement. Moreover, it is not enough to just encrypt the data. One cannot continue to use the same key for all applications without risk. Enough messages using the same key, and enough time mean someone could learn it. They would then be free to read all our messages and the possible PHI contained within. Our brilliant architect suggested that we use [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) or PGP for short. It is an easy to implement encryption scheme that combines many desirable features. PGP uses a new random key for each message to encrypt the outbound data. This key is itself encrypted by a known private key, and is sent along with the encrypted message. Since the key is random every time, it is difficult to guess the private key. As a result, one cannot decrypt the public key, thus the message is reasonably safe. To help explain this, I have crafted a simple example in python code, using a [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). You can find the entire example project on my GitHub Repo, [here](https://github.com/djscheuf/ProgamingPractice/blob/Playground/Playground/Cryptography/PGP/example.py). But the core of the example is as follows:
-
+![Bits and Bytes Lock](/img/post_img/crypto_lock.png) Shortly after starting with my new company, I began work on a back-end infrastructure project. To be specific, I am working on an inter-process-communication (hereafter IPC) layer. As the project developed, we realized the need to protect our data in transit. This is because we are working with Protect Health Information (hereafter PHI). It would be a disaster if the data became compromised. So to combat this, we are encrypting the data before it is send through the IPC layer. There are many fine encryption schemes available, but many are difficult to implement. Moreover, it is not enough to just encrypt the data. One cannot continue to use the same key for all applications without risk. Enough messages using the same key, and enough time mean someone could learn it. They would then be free to read all our messages and the possible PHI contained within. Our brilliant architect suggested that we use [Pretty Good Privacy](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) or PGP for short. It is an easy to implement encryption scheme that combines many desirable features. PGP uses a new random key for each message to encrypt the outbound data. This key is itself encrypted by a known private key, and is sent along with the encrypted message. Since the key is random every time, it is difficult to guess the private key. As a result, one cannot decrypt the public key, thus the message is reasonably safe. To help explain this, I have crafted a simple example in python code, using a [Vigenere Cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher). You can find the entire example project on my GitHub Repo, [here](https://github.com/djscheuf/ProgamingPractice/blob/Playground/Playground/Cryptography/PGP/example.py). But the core of the example is as follows:
+```python
 def encodePGP(self,plainMsg): 
-\# generate random key 
+# generate random key 
 
 randKey = self._generateRandomKey() 
 print("> Internal Random Key: "+randKey) 
 
-\# encrypt input with ^ 
+# encrypt input with ^ 
 cryptographer = Crypto() 
 encryptedMsg = cryptographer.encode(randKey,plainMsg) 
 
-\# encrypt random key with priv. 
+# encrypt random key with priv. 
 key pubKey = cryptographer.encode(self.privateKey,randKey) 
 
 #return concat encrypted key and input 
 return pubKey + "_"+encryptedMsg
-
+```
 For those who prefer, a visual representation of this is available on the Wikipedia page for PGP. The algorithm is as I stated before:
 
 1.  Generate a Random Key for the message
@@ -47,23 +47,23 @@ For those who prefer, a visual representation of this is available on the Wikipe
 4.  Concatenate the Encrypted Message and Public Key
 
 The code for Decoding is as follows:
-
+```python
 def decodePGP(self,concatMsg): 
 #parse encrypted pub key, encrypted message 
 parsed = concatMsg.split("_") 
-pubKey = parsed\[0\] 
-encryptedMsg = parsed\[1\] 
+pubKey = parsed[0] 
+encryptedMsg = parsed[1] 
 
-\# decrypt rand key with priv. key 
+# decrypt rand key with priv. key 
 cryptographer = Crypto() 
 randKey = cryptographer.decode(self.privateKey, pubKey)
  
-\# decrypt message with rand key 
+# decrypt message with rand key 
 decryptedMsg = cryptographer.decode(randKey,encryptedMsg) 
 
 #return message 
 return decryptedMsg
-
+```
 In plain terms the decryption steps are:
 
 1.  Parse the input message to get the Public Key and the Encrypted Message
