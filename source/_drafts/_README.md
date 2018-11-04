@@ -37,7 +37,7 @@
     - search: 'pixabay.com'
 [ ] Uncategorized Posts:{
     -search 'uncategorized'
-[ ] I have no comments: 'Let me know in the comments! '
+[X] I have no comments: 'Let me know in the comments! '
     - Search 'in the comments'
 [ ] Reset http to https?
 
