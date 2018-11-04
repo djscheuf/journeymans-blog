@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="Daniel Scheufler">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Migrating to Hexo - Conversion"/>
+  
+  <!--Open Graph Description-->
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="A Journeyman&#39;s Travels"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Migrating to Hexo - Conversion - A Journeyman&#39;s Travels</title>
+
+
+  <link rel="shortcut icon" href="/img/logo/star_catcher_mountainsx96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="/img/logo/star_catcher_mountains.png" alt="A Journeyman's Travels" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  Home
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/featured">
+                
+                  Featured
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  About
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  Archive
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Migrating to Hexo - Conversion
+            
+          </h1>
+          <p class="posted-on">
+          2018-10-21
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/side-projects/" rel="tag">
+                  side-projects
+                </a>
+              
+                <a href="/tags/blog/" rel="tag">
+                  blog
+                </a>
+              
+                <a href="/tags/hexo/" rel="tag">
+                  hexo
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content has_line_number">
+          <p>Last week, I explained <a href="/2018/10/14/hexo-discovery/">how I found Hexo</a>. This week I'll explain how easy it was to convert my original Wordpress blog over to Hexo.</p>
+<p>Now that I had settled on a site engine, I had to get my content into it. After all, leaving any content on the original site would force me to support both going forward. Being a developer, supporting two platforms didn't sound like fun. So I opted for the 'lazier' route, so migrating all my content.</p>
+<p>A quick search for 'Wordpress to Hexo' will yield a plug-in, <a href="https://hexo.io/docs/migration.html" target="_blank" rel="noopener">hexo-migrator-wordpress</a>. May God bless whoever wrote this wonderful little tool! Not only is it well supported with documentation. It even provides instructions for how to get your data out of Wordpress!</p>
+<p>Now here, I do wish to thank Wordpress for continuing to provide this option. It was as easy as downloading an xml document with all my posts and most of my tags. So, thank you Wordpress Devs. Your kindness was noticed and appreciated!</p>
+<p>Once I had my file, I ran a simple command:
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate wordpress &lt;source&gt;</span><br></pre></td></tr></table></figure></p>
+<p>This command took a few second to run, and produced several outputs. First, it converted my posts into individual markdown files. Additionally, the pages I had created under the Wordpress site turned into folders, and supporting index.md files. While the conversion was not perfect, the process was mostly painless.</p>
+<p>Certain things did not come over with the automatic conversion, like header images. Further all inter-post links continue to point to Wordpress. As of this posting, I still need to hunt down those links and correct them.</p>
+<p>But the images were easy to fix. I was able to download them from Wordpress and host them within the site. After that it was a simple matter of adding a link to the image in the front-matter of the posts.</p>
+<p>Admittedly, I have only added the header images to some of the posts. The process is somewhat tedious, even on themes which support such it. Which segues nicely into next week's topic: Themes. I plan to discuss the first theme I used, and the various 'tweaks' I made while learning the ins-and-outs of the system.</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">Comments</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+        <div class="nav-previous">
+          <a href="/2018/11/04/hexo-first-theme/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2018/10/13/hexo-discovery/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">A Journeyman&#39;s Travels</h1>
+        <div class="custom-widget-content">
+          
+          <span>Blog by <a href="/about">Daniel Scheufler</a>. <a href="/rss2.xml">RSS Feed</a></span>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/djscheuf" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:daniel@scheufler.io" class="icon icon-mail" target="_blank">mail</a>
+            
+              <a href="https://www.linkedin.com/in/danielscheufler/" class="icon icon-linkedin" target="_blank">linkedin</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>A Journeyman's Travels &copy; 2018</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+<!-- google_analytics start -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86343000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- google_analytics end -->
+
+
+
+</body>
+
+</html>

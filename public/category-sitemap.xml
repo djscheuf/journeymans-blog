@@ -7,57 +7,8 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Innovation-Fridays/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Innovation-Fridays/Software-Development/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Uncategorized/</loc>
-        <lastmod>2018-08-14T01:09:10.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/categories/Journeyman-s-Digest/</loc>
         <lastmod>2018-08-14T01:09:10.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/Software-Development/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/Software-Development/Work-Projects/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Software-Development/tools/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -70,29 +21,8 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Perspective/Software-Development/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/categories/Perspective/Work-Projects/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Software-Development/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Software-Development/Work-Projects/</loc>
-        <lastmod>2018-08-14T01:09:10.528Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -126,13 +56,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Perspective/</loc>
-        <lastmod>2018-09-03T21:59:54.927Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/categories/software/</loc>
         <lastmod>2018-09-03T22:01:07.716Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -147,8 +70,85 @@
     </url>
 
     <url>
+        <loc>daniel.scheufler.io/categories/Perspective/</loc>
+        <lastmod>2018-10-21T21:05:48.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Perspective/Software-Development/</loc>
+        <lastmod>2018-10-21T21:05:48.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/tools/</loc>
+        <lastmod>2018-10-21T21:05:50.130Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Automation/</loc>
+        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Automation/Software-Development/</loc>
+        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Automation/Software-Development/Work-Projects/</loc>
+        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/Work-Projects/</loc>
+        <lastmod>2018-10-21T21:27:20.748Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Uncategorized/</loc>
+        <lastmod>2018-11-04T22:25:11.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Innovation-Fridays/</loc>
+        <lastmod>2018-11-04T22:25:43.585Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Innovation-Fridays/Software-Development/</loc>
+        <lastmod>2018-11-04T22:25:43.585Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/</loc>
+        <lastmod>2018-11-04T22:25:54.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>daniel.scheufler.io/categories/side-projects/</loc>
-        <lastmod>2018-10-14T02:01:41.659Z</lastmod>
+        <lastmod>2018-11-04T22:59:30.476Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -11,6 +11,9 @@
   - Created SCM Logo using Noun Project Basis
   - Adjusted Themes to suit
 
+## Features:
+[ ] Return to Top Link a la [BeanTech](http://beantech.org/)
+
 ## Content Work:
 * Resume Page
   - Removed from Nav
@@ -18,8 +21,8 @@
 * Hexo Conversion Posts
     - [X] Discovery
     - [X] Conversion
-    - [ ] First Theme, repairs
-    - [ ] Second Theme and Peace
+    - [X] First Theme, repairs, Second Theme, and Peace
+    - [ ] Hosting
     - [ ] Analytics
         - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
     - [ ] Build a Living Resume
@@ -35,7 +38,7 @@
     - search for things like '#', return, def, var or , '()'
 [ ] Pixaby doesn't allow hotlinks:
     - search: 'pixabay.com'
-[ ] Uncategorized Posts:{
+[ ] Uncategorized Posts: 
     -search 'uncategorized'
 [X] I have no comments: 'Let me know in the comments! '
     - Search 'in the comments'

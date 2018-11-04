@@ -16,7 +16,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="Pretty Good Privacy"/>
+      <meta property="og:title" content="Pretty Good Encryption"/>
   
   <!--Open Graph Description-->
   
@@ -33,7 +33,7 @@
 
   <!-- Title -->
   
-  <title>Pretty Good Privacy - A Journeyman&#39;s Travels</title>
+  <title>Pretty Good Encryption - A Journeyman&#39;s Travels</title>
 
 
   <link rel="shortcut icon" href="/img/logo/star_catcher_mountainsx96.png">
@@ -129,7 +129,7 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            Pretty Good Privacy
+            Pretty Good Encryption
             
           </h1>
           <p class="posted-on">
@@ -191,18 +191,11 @@
         </div>
         <!-- Post Main Content -->
         <div class="entry-content has_line_number">
-          <p><img src="https://danieljscheufler.files.wordpress.com/2016/08/computer-1294045_960_720.png" alt="computer-1294045_960_720"> Shortly after starting with my new company, I began work on a back-end infrastructure project. To be specific, I am working on an inter-process-communication (hereafter IPC) layer. As the project developed, we realized the need to protect our data in transit. This is because we are working with Protect Health Information (hereafter PHI). It would be a disaster if the data became compromised. So to combat this, we are encrypting the data before it is send through the IPC layer. There are many fine encryption schemes available, but many are difficult to implement. Moreover, it is not enough to just encrypt the data. One cannot continue to use the same key for all applications without risk. Enough messages using the same key, and enough time mean someone could learn it. They would then be free to read all our messages and the possible PHI contained within. Our brilliant architect suggested that we use <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" rel="noopener">Pretty Good Privacy</a> or PGP for short. It is an easy to implement encryption scheme that combines many desirable features. PGP uses a new random key for each message to encrypt the outbound data. This key is itself encrypted by a known private key, and is sent along with the encrypted message. Since the key is random every time, it is difficult to guess the private key. As a result, one cannot decrypt the public key, thus the message is reasonably safe. To help explain this, I have crafted a simple example in python code, using a <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank" rel="noopener">Vigenere Cipher</a>. You can find the entire example project on my GitHub Repo, <a href="https://github.com/djscheuf/ProgamingPractice/blob/Playground/Playground/Cryptography/PGP/example.py" target="_blank" rel="noopener">here</a>. But the core of the example is as follows:</p>
-<p>def encodePGP(self,plainMsg):
-# generate random key</p>
-<p>randKey = self._generateRandomKey()
-print(&quot;&gt; Internal Random Key: &quot;+randKey)</p>
-<p># encrypt input with ^
-cryptographer = Crypto()
-encryptedMsg = cryptographer.encode(randKey,plainMsg)</p>
-<p># encrypt random key with priv.
-key pubKey = cryptographer.encode(self.privateKey,randKey)</p>
-<p>#return concat encrypted key and input
-return pubKey + &quot;_&quot;+encryptedMsg</p>
+          <p><img src="/img/post_img/crypto_lock.png" alt="Bits and Bytes Lock">
+<em>(Edit: 2018/10/21 - It has come to my attention that this encryption scheme does not conform to PGP proper. As such, please consider this 'Pretty Good Encryption' rather than PGP. This post has been updated to accomodate the new terminology.)</em></p>
+<p>Shortly after starting with my new company, I began work on a back-end infrastructure project. To be specific, I am working on an inter-process-communication (hereafter IPC) layer. As the project developed, we realized the need to protect our data in transit. This is because we are working with Protect Health Information (hereafter PHI). It would be a disaster if the data became compromised. So to combat this, we are encrypting the data before it is send through the IPC layer. There are many fine encryption schemes available, but many are difficult to implement. Moreover, it is not enough to just encrypt the data. One cannot continue to use the same key for all applications without risk. Enough messages using the same key, and enough time mean someone could learn it. They would then be free to read all our messages and the possible PHI contained within. Our brilliant architect suggested that we use <a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" rel="noopener">Pretty Good Encryption</a> or PGE for short.</p>
+<p>It is an easy to implement encryption scheme that combines many desirable features. PGP uses a new random key for each message to encrypt the outbound data. This key is itself encrypted by a known private key, and is sent along with the encrypted message. Since the key is random every time, it is difficult to guess the private key. As a result, one cannot decrypt the public key, thus the message is reasonably safe. To help explain this, I have crafted a simple example in python code, using a <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank" rel="noopener">Vigenere Cipher</a>. You can find the entire example project on my GitHub Repo, <a href="https://github.com/djscheuf/ProgamingPractice/blob/Playground/Playground/Cryptography/PGP/example.py" target="_blank" rel="noopener">here</a>. But the core of the example is as follows:
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">encodePGE</span><span class="params">(self,plainMsg)</span>:</span> </span><br><span class="line"><span class="comment"># generate random key </span></span><br><span class="line"></span><br><span class="line">randKey = self._generateRandomKey() </span><br><span class="line">print(<span class="string">"&gt; Internal Random Key: "</span>+randKey) </span><br><span class="line"></span><br><span class="line"><span class="comment"># encrypt input with ^ </span></span><br><span class="line">cryptographer = Crypto() </span><br><span class="line">encryptedMsg = cryptographer.encode(randKey,plainMsg) </span><br><span class="line"></span><br><span class="line"><span class="comment"># encrypt random key with priv. </span></span><br><span class="line">key pubKey = cryptographer.encode(self.privateKey,randKey) </span><br><span class="line"></span><br><span class="line"><span class="comment">#return concat encrypted key and input </span></span><br><span class="line"><span class="keyword">return</span> pubKey + <span class="string">"_"</span>+encryptedMsg</span><br></pre></td></tr></table></figure></p>
 <p>For those who prefer, a visual representation of this is available on the Wikipedia page for PGP. The algorithm is as I stated before:</p>
 <ol>
 <li>Generate a Random Key for the message</li>
@@ -210,26 +203,15 @@ return pubKey + &quot;_&quot;+encryptedMsg</p>
 <li>Encrypt the Random Key with the Private Key, to form the public key</li>
 <li>Concatenate the Encrypted Message and Public Key</li>
 </ol>
-<p>The code for Decoding is as follows:</p>
-<p>def decodePGP(self,concatMsg):
-#parse encrypted pub key, encrypted message
-parsed = concatMsg.split(&quot;_&quot;)
-pubKey = parsed[0]
-encryptedMsg = parsed[1]</p>
-<p># decrypt rand key with priv. key
-cryptographer = Crypto()
-randKey = cryptographer.decode(self.privateKey, pubKey)</p>
-<p># decrypt message with rand key
-decryptedMsg = cryptographer.decode(randKey,encryptedMsg)</p>
-<p>#return message
-return decryptedMsg</p>
+<p>The code for Decoding is as follows:
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decodePGE</span><span class="params">(self,concatMsg)</span>:</span> </span><br><span class="line"><span class="comment">#parse encrypted pub key, encrypted message </span></span><br><span class="line">parsed = concatMsg.split(<span class="string">"_"</span>) </span><br><span class="line">pubKey = parsed[<span class="number">0</span>] </span><br><span class="line">encryptedMsg = parsed[<span class="number">1</span>] </span><br><span class="line"></span><br><span class="line"><span class="comment"># decrypt rand key with priv. key </span></span><br><span class="line">cryptographer = Crypto() </span><br><span class="line">randKey = cryptographer.decode(self.privateKey, pubKey)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># decrypt message with rand key </span></span><br><span class="line">decryptedMsg = cryptographer.decode(randKey,encryptedMsg) </span><br><span class="line"></span><br><span class="line"><span class="comment">#return message </span></span><br><span class="line"><span class="keyword">return</span> decryptedMsg</span><br></pre></td></tr></table></figure></p>
 <p>In plain terms the decryption steps are:</p>
 <ol>
 <li>Parse the input message to get the Public Key and the Encrypted Message</li>
 <li>Decrypt the Public key with the Private key, to form the original Random Key</li>
 <li>Use the Random Key to Decrypt the Encrypted Message</li>
 </ol>
-<p>Ridiculously simple right?! However, this method can be rendered vulnerable by using a weak encryption method, such as the Vigenere Cipher, as I have. Though,it should be clear that a PGP-Vigenere is stronger that Vigenere alone. As you can see, with a strong encryption method, PGP adds a significant increase in security. The cost is that it increases the complexity in a limited fashion. Naturally, I will be adding this to my tool kit for future projects! I hope this explanation and example has been helpful. But I admit the diagram on Wikipedia provides a good outline of the PGP scheme. For anyone interested, you can download the example and the Vigenere Cipher implementation <a href="https://github.com/djscheuf/ProgamingPractice/tree/Playground/Playground/Cryptography/PGP" target="_blank" rel="noopener">here</a>.</p>
+<p>Ridiculously simple right?! However, this method can be rendered vulnerable by using a weak encryption method, such as the Vigenere Cipher, as I have. Though,it should be clear that a PGP-Vigenere is stronger that Vigenere alone. As you can see, with a strong encryption method, PGP adds a significant increase in security. The cost is that it increases the complexity in a limited fashion. Naturally, I will be adding this to my tool kit for future projects! I hope this explanation and example has been helpful. But I admit the diagram on Wikipedia provides a good outline of the PGE scheme. For anyone interested, you can download the example and the Vigenere Cipher implementation <a href="https://github.com/djscheuf/ProgamingPractice/tree/Playground/Playground/Cryptography/PGP" target="_blank" rel="noopener">here</a>.</p>
 
         </div>
       </article>

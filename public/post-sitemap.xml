@@ -7,6 +7,142 @@
     </url>
 
     <url>
+        <loc>daniel.scheufler.io/2018/11/04/hexo-first-theme/</loc>
+        <lastmod>2018-11-04T22:59:30.476Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/04/14/software-dev-games-for-your-children/</loc>
+        <lastmod>2018-11-04T22:25:54.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/06/09/learn-c-principles-ii/</loc>
+        <lastmod>2018-11-04T22:25:43.585Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/06/02/learn-c-principles-i/</loc>
+        <lastmod>2018-11-04T22:25:33.353Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/05/26/innovation-fridays-learn-c/</loc>
+        <lastmod>2018-11-04T22:25:19.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/05/12/how-to-learn-any-skill-in-20-hours/</loc>
+        <lastmod>2018-11-04T22:25:11.030Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/06/16/defensive-programming/</loc>
+        <lastmod>2018-11-04T22:25:04.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/06/23/defensive-programming-revisited/</loc>
+        <lastmod>2018-11-04T22:24:56.875Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/09/13/pretty-good-encryption/</loc>
+        <lastmod>2018-10-21T21:27:20.748Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/04/28/licensing-overhaul-the-whiteboard-strikes-back/</loc>
+        <lastmod>2018-10-21T21:19:39.053Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/05/05/licensing-overhaul-return-of-the-designer/</loc>
+        <lastmod>2018-10-21T21:15:27.545Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/11/15/how-to-increase-team-velocity-by-50-iii/</loc>
+        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/05/19/development-tool-atom/</loc>
+        <lastmod>2018-10-21T21:10:26.290Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/10/25/dev-tool-atom-revisited/</loc>
+        <lastmod>2018-10-21T21:05:50.130Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2018/10/21/hexo-conversion/</loc>
+        <lastmod>2018-10-21T21:05:48.233Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2017/04/11/for-the-love-of-the-user/</loc>
+        <lastmod>2018-10-21T21:05:48.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/2016/04/21/licensing-overhaul-introduction/</loc>
+        <lastmod>2018-10-21T21:04:20.356Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>daniel.scheufler.io/2018/10/13/hexo-discovery/</loc>
         <lastmod>2018-10-14T02:01:41.659Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -313,14 +449,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2017/04/11/for-the-love-of-the-user/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2017/02/14/having-no-fear-for-the-outcome-of-1000-battles/</loc>
         <lastmod>2018-08-14T01:09:10.527Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -401,14 +529,6 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2016/10/25/dev-tool-atom-revisited/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2016/12/06/whered-my-ux-go/</loc>
         <lastmod>2018-08-14T01:09:10.526Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -426,14 +546,6 @@
 
     <url>
         <loc>daniel.scheufler.io/2016/11/01/how-to-increase-team-velocity-by-50-i/</loc>
-        <lastmod>2018-08-14T01:09:10.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/11/15/how-to-increase-team-velocity-by-50-iii/</loc>
         <lastmod>2018-08-14T01:09:10.525Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -481,39 +593,7 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2016/09/13/pretty-good-privacy/</loc>
-        <lastmod>2018-08-14T01:09:10.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2016/08/02/an-update/</loc>
-        <lastmod>2018-08-14T01:09:10.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/06/23/defensive-programming-revisited/</loc>
-        <lastmod>2018-08-14T01:09:10.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/06/16/defensive-programming/</loc>
-        <lastmod>2018-08-14T01:09:10.524Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/05/19/development-tool-atom/</loc>
         <lastmod>2018-08-14T01:09:10.524Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -537,71 +617,7 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/2016/05/12/how-to-learn-any-skill-in-20-hours/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/05/26/innovation-fridays-learn-c/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/06/02/learn-c-principles-i/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/06/09/learn-c-principles-ii/</loc>
-        <lastmod>2018-08-14T01:09:10.518Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/2016/04/07/development-tool-jupyter/</loc>
-        <lastmod>2018-08-14T01:09:10.517Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/04/21/licensing-overhaul-introduction/</loc>
-        <lastmod>2018-08-14T01:09:10.517Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/05/05/licensing-overhaul-return-of-the-designer/</loc>
-        <lastmod>2018-08-14T01:09:10.517Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/04/28/licensing-overhaul-the-whiteboard-strikes-back/</loc>
-        <lastmod>2018-08-14T01:09:10.517Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/2016/04/14/software-dev-games-for-your-children/</loc>
         <lastmod>2018-08-14T01:09:10.517Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
