@@ -29,13 +29,15 @@
 [X] Inter-post Links back to Wordpress
 [X] Link to images on Wordpress (13x)
     - Search: 'https://danieljscheufler.files.wordpress.com'
-[ ] Link to IHS Internal Blog
+[X] Link to IHS Internal Blog
     - Search: 'mysource.ihs.com'
-[ ] Broken Code Snippets:
+[X] Broken Code Snippets:
     - search for things like '#', return, def, var or , '()'
 [ ] Pixaby doesn't allow hotlinks:
     - search: 'pixabay.com'
-[ ] Uncategorized Posts:
+[ ] Uncategorized Posts:{
     -search 'uncategorized'
 [ ] I have no comments: 'Let me know in the comments! '
     - Search 'in the comments'
+[ ] Reset http to https?
+
