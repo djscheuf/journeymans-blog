@@ -75,7 +75,8 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 # theme: beantech
 # theme: landscape
-theme: Daily
+# theme: Daily
+theme: DJS
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
