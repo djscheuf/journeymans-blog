@@ -1,0 +1,30 @@
+.blurb {
+  display: flex;
+  flex-direction: column;
+
+  .headline {
+    align-self: center;
+    .mugshot {
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+    }
+
+    .name {
+      text-align:center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .slug {
+      align-self: center;
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+
+  .blurb-desc {
+    align-self: center;
+   font-size: 16px;
+   max-width: 1000px;
+  }
+}
