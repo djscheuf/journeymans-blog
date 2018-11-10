@@ -7,6 +7,8 @@ tags:
   - hexo
 category:
   - side-projects
+photos:
+  - /img/post_img/hexo.png
 ---
 
 As promised, I have finally started my series on my Migration to Hexo. Over the next few weeks, I will expound on my journey from Wordpress,  through several alternative blogging platforms. And, of course, landing on Hexo. Today, Discovery: _'How I finally found Hexo'._

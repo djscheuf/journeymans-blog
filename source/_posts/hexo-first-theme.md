@@ -7,6 +7,8 @@ tags:
   - hexo
 category:
   - side-projects
+photos:
+  - /img/post_img/hexo.png
 ---
 
 Last post, I explained [how I converted my wordpress blog to Hexo](/2018/10/21/hexo-conversion/). This week I'll expound on the fun I had with my first theme.

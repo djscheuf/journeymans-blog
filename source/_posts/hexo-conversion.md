@@ -7,6 +7,8 @@ tags:
   - hexo
 category:
   - side-projects
+photos:
+  - /img/post_img/hexo.png
 ---
 
 Last week, I explained [how I found Hexo](/2018/10/14/hexo-discovery/). This week I'll explain how easy it was to convert my original Wordpress blog over to Hexo.
