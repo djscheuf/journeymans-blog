@@ -22,7 +22,7 @@
     - [X] Discovery
     - [X] Conversion
     - [X] First Theme, repairs, Second Theme, and Peace
-    - [ ] Hosting
+    - [X] Hosting
     - [ ] Analytics
         - https://www.codeblocq.com/2015/12/Add-Google-Analytics-to-your-hexo-blog/
     - [ ] Build a Living Resume
