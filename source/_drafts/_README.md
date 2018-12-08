@@ -36,7 +36,7 @@
     - Search: 'mysource.ihs.com'
 [X] Broken Code Snippets:
     - search for things like '#', return, def, var or , '()'
-[ ] Pixaby doesn't allow hotlinks:
+[X] Pixaby doesn't allow hotlinks:
     - search: 'pixabay.com'
 [ ] Uncategorized Posts: 
     -search 'uncategorized'
