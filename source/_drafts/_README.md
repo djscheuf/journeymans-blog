@@ -1,18 +1,24 @@
 # Statement of Work
 
-* Missing LinkedIn Social Svg
+* Added Missing LinkedIn Social Svg
 * Photo Previews on all Posts
   - Fixed Featured
   - Fixed latest 10
 * Widget content (Footer LEft)
   - Temp content added
 * Verify Search
+  - Removed from Footer
 * Site Logo
   - Created SCM Logo using Noun Project Basis
   - Adjusted Themes to suit
 
 ## Features:
+
+[ ] Guest Authors Archive with Blurb and crosslink
+[ ] Theme Update: Pic -> used in Snippet and as Front Img on post.
 [ ] Return to Top Link a la [BeanTech](http://beantech.org/)
+[ ] BlogRoll for other Improvers [Blogroll Plugin](https://github.com/huiwang/hexo-blogroll)
+[ ] AutoCategory [Plugin](https://github.com/xu-song/hexo-auto-category)
 
 ## Content Work:
 * Resume Page
