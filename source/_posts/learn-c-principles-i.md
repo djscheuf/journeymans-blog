@@ -14,8 +14,8 @@ tags:
 url: 414.html
 id: 414
 categories:
-  - Innovation Fridays
   - Software Development
+  - Side Projects
 date: 2016-06-02 15:00:28
 ---
 

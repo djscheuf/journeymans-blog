@@ -13,8 +13,8 @@ tags:
 url: 1391.html
 id: 1391
 categories:
-  - Perspective
-  - Work Projects
+  - Professional Development
+  - Leadership
 date: 2017-01-24 16:56:18
 ---
 

@@ -1,15 +1,17 @@
 ---
 title: When one teaches two learn
 categories:
-  - Software Development
+  - Professional Development
+  - Leadership
+  - Mentorship
 tags:
   - mentorship
   - redux
   - jest
   - tdd
-date: 2018-12-08 10:00:00
 photos:
   - img/post_img/knowledge_base.jpg
+date: 2018-12-08 10:00:00
 ---
 
 [Claudio](https://lassala.net/) and I gave a talk on WebUI testing last TechFest (_link pending_). While reflecting on it, I uncovered another valuable lesson I learned.

@@ -9,7 +9,8 @@ tags:
   - principles
   - software
 categories:
-  - Perspective
+  - Software Development
+  - agile
 date: 2017-01-17 16:00:53
 ---
 

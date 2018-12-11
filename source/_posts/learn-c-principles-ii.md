@@ -14,8 +14,8 @@ tags:
 url: 420.html
 id: 420
 categories:
-  - Innovation Fridays
   - Software Development
+  - Side Projects
 date: 2016-06-09 15:00:25
 ---
 

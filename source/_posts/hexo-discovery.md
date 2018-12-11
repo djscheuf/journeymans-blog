@@ -1,6 +1,5 @@
 ---
 title: Migrating to Hexo - Discovery
-date: 2018-10-13 20:25:00
 tags:
   - side-projects
   - blog
@@ -9,6 +8,10 @@ category:
   - side-projects
 photos:
   - /img/post_img/hexo.png
+categories:
+  - Personal Development
+  - Tools
+date: 2018-10-13 20:25:00
 ---
 
 As promised, I have finally started my series on my Migration to Hexo. Over the next few weeks, I will expound on my journey from Wordpress,  through several alternative blogging platforms. And, of course, landing on Hexo. Today, Discovery: _'How I finally found Hexo'._

@@ -10,8 +10,8 @@ tags:
 url: 1471.html
 id: 1471
 categories:
-  - Perspective
-  - Software Development
+  - Personal Development
+  - Tools
 date: 2017-03-28 16:30:21
 ---
 

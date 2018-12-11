@@ -1,7 +1,8 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  -ms-text-size-adjust: 100%;
+  background-color: #f3f2e3; }
 
 body {
   margin: 0; }
@@ -508,18 +509,21 @@ Content
   min-height: calc(100% - 274px); }
 
 .content-area {
-  padding-top: 70px; }
+  padding-top: 70px;
+  background: #fffff0; }
 
 .error404 .content-area,
 .page .content-area {
   padding-top: 120px; }
 
 .odd {
-  background: #f5f5f5;
-  position: relative; }
+  background: #fafaeb;
+  position: relative;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc; }
 
 .even {
-  background: white;
+  background: #fffff0;
   position: relative; }
 
 .container {
@@ -639,7 +643,7 @@ Footer
   font-size: 0.750em;
   z-index: 2;
   position: relative;
-  background: #fff;
+  background: #fffff0;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   padding-top: 50px;
@@ -693,10 +697,13 @@ Footer
     background-image: url("../images/mail.svg"); }
   .icon.icon-twitter {
     background-image: url("../images/twitter.svg"); }
+  .icon.icon-linkedin {
+    background-image: url("../images/linkedin.svg"); }
   .icon:hover {
     opacity: 0.7; }
 
 .site-info {
+  background: #fffff0;
   text-align: center;
   font-size: 0.750em;
   padding-bottom: 20px;
@@ -710,7 +717,7 @@ Footer
 
 .site-header {
   width: 100%;
-  background: #fff;
+  background: #fffff0;
   border-bottom: 1px solid #dcdcdc;
   z-index: 30;
   position: fixed;
@@ -1054,7 +1061,7 @@ pre {
     color: #7f8c8d; }
 
 #comment #ds-thread #ds-reset a.ds-like-thread-button {
-  background-color: #fff;
+  background-color: #fffff0;
   background-image: none; }
 
 #comment #ds-reset .ds-gradient-bg {
@@ -1062,6 +1069,28 @@ pre {
 
 #comment #ds-thread #ds-reset .ds-powered-by {
   display: none; }
+
+.blurb {
+  display: flex;
+  flex-direction: column; }
+  .blurb .headline {
+    align-self: center; }
+    .blurb .headline .mugshot {
+      display: block;
+      margin: 0 auto;
+      font-size: 12px; }
+    .blurb .headline .name {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px; }
+    .blurb .headline .slug {
+      align-self: center;
+      font-style: italic;
+      font-size: 14px; }
+  .blurb .blurb-desc {
+    align-self: center;
+    font-size: 16px;
+    max-width: 1000px; }
 
 @media screen and (max-width: 767px) {
   .logo a img {
@@ -1080,9 +1109,9 @@ pre {
       top: 70px;
       padding: 15px 0 15px 30px;
       width: 100%;
-      background: #efefef;
+      background: #fffff0;
       border-bottom: 1px solid #dcdcdc;
-      box-shadow: 0 2px 3px #dfdfdf;
+      box-shadow: 0 2px 3px #fafaeb;
       z-index: 9999; }
       .site-header .navbar ul li {
         width: 100%;

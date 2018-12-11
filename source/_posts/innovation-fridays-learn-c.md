@@ -17,8 +17,8 @@ tags:
 url: 399.html
 id: 399
 categories:
-  - Innovation Fridays
   - Software Development
+  - Side Projects
 date: 2016-05-26 15:00:12
 ---
 

@@ -6,11 +6,11 @@ tags:
   - map-reduce
   - redux
 categories:
-  - TodayILearned
-  - Work Projects
-date: 2018-05-22 15:00:44
+  - Software Development
+  - Lessons Learned
 photos:
   - img/post_img/knowledge_base.jpg
+date: 2018-05-22 15:00:44
 ---
 
 While working on a React app, I needed to translate a bit of Redux shape into one needed by an Api. Due to the normalization we imposed on the Redux state, I had to navigate to the desired information through a couple of lists. These entities each had a list of ids of children, and I needed the grand-children of a given entity. 

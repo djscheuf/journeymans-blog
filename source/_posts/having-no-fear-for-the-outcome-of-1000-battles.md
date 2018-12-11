@@ -14,7 +14,8 @@ tags:
 url: 1439.html
 id: 1439
 categories:
-  - Perspective
+  - Professional Development
+  - Leadership
 date: 2017-02-14 16:31:56
 ---
 

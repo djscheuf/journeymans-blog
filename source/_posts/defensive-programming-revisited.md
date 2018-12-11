@@ -3,7 +3,8 @@ title: Defensive Programming Revisited
 url: 453.html
 id: 453
 categories:
-  - Uncategorized
+  - Software Development
+  - Best Practices
 date: 2016-06-23 15:00:08
 tags:
 ---

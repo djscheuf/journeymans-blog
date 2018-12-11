@@ -10,8 +10,8 @@ tags:
 url: 1493.html
 id: 1493
 categories:
-  - TodayILearned
-  - Work Projects
+  - Software Development
+  - Lessons Learned
 date: 2018-03-06 16:00:17
 ---
 

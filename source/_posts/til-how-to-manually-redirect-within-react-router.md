@@ -11,8 +11,8 @@ tags:
 url: 1512.html
 id: 1512
 categories:
-  - TodayILearned
-  - Work Projects
+  - Software Development
+  - Lessons Learned
 date: 2018-04-03 15:00:49
 ---
 

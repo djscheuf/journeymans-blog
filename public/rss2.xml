@@ -8,8 +8,46 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 04 Nov 2018 22:59:30 GMT</pubDate>
+    <pubDate>Tue, 11 Dec 2018 15:34:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>When one teaches two learn</title>
+      <link>daniel.scheufler.io/2018/12/08/when-one-teaches-two-learn/</link>
+      <guid>daniel.scheufler.io/2018/12/08/when-one-teaches-two-learn/</guid>
+      <pubDate>Sat, 08 Dec 2018 16:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://lassala.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Claudio&lt;/a&gt; and I gave a talk on WebUI testing last TechFest (&lt;em&gt;link pend
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p><a href="https://lassala.net/" target="_blank" rel="noopener">Claudio</a> and I gave a talk on WebUI testing last TechFest (<em>link pending</em>). While reflecting on it, I uncovered another valuable lesson I learned.At the time, We had reached a point where only UI work remained.  So Claudio and I paired up.</p><p>At the time, I was going to be extending one of our existing Thunks. At the time, we inconsistent in testing our Thunks. Claudio's sense of good practice tingled. So he insisted we write tests for the existing thunk before we enhance it. At the time, I didn't know the best practices for testing javascript. Thus he and I set out to learn them.</p><p>We started by sculpting GWT cases for the code. This provided an opportunity for me to explain the functions of the existing Thunk. While teaching Claudio about some of the 'how' the framework worked, I learned more about it myself. For example, I gained a new respect for the synchronous nature of <code>dispatch()</code>. In particular, the impact of long running Thunks stood out.</p><p>During this same time Claudio was teaching me better test practices. We worked together to refine our techniques. Since then, we have continued to refine our technique. We've produced snippets for javascript testing to improve the ease and speed of test writing!</p><p>As I reflect on this experience, one phrase repeats itself in my mind: <em><strong>'When One teaches Two learn'</strong></em>. As I mentioned, my own understanding of Redux improved. By explaining its operations and how affected the Thunk to Claudio, I learned the framework at a deeper level.</p><p>When I discussed this observation with him, he shared a practice he had developed. He looks for someone to teach a concept to as soon as he learns it. For one thing, being so close to having learned it he remembers what it is like to not know. Moreover, he gains a deeper understanding through teaching it than he started with.</p><p>Having now experience this phenomena, teaching-after-learning is a most excellent practice! I plan to look for ways to share my knowledge with others. And I hope that this brief dialog encourages you likewise. <em>'Let us share the light of knowledge, as it will kindle our own flame to even greater incandescence!'</em></p>]]></content:encoded>
+      
+      <comments>daniel.scheufler.io/2018/12/08/when-one-teaches-two-learn/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Migrating to Hexo - Hosting</title>
+      <link>daniel.scheufler.io/2018/12/03/hexo-hosting/</link>
+      <guid>daniel.scheufler.io/2018/12/03/hexo-hosting/</guid>
+      <pubDate>Mon, 03 Dec 2018 15:30:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;Last post, I explained &lt;a href=&quot;/2018/11/04/hexo-first-theme/&quot;&gt;how I found and tweaked my first theme&lt;/a&gt;. This week I&#39;ll review how I fi
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Last post, I explained <a href="/2018/11/04/hexo-first-theme/">how I found and tweaked my first theme</a>. This week I'll review how I finally hosted my Hexo blog.</p><p>When I first started blogging, I relied on Wordpress to host my fledgling blog. This constrained me to using a Wordpress subdomain. There is nothing wrong with this, and it worked well for many years. But as I grew in skill, I recognized that having my own domain would prove useful.</p><p>B efore I converted to Hexo, I procured a domain from <a href="https://www.ionos.com/" target="_blank" rel="noopener">1&amp;1</a>, scheufler.io. I was able to buy the rights to the domain for a year for a reasonable price. And IO group felt appropriate for the somewhat technical nature of my posts. I was able to redirect to wordpress from my new domain. But  to keep the user on my domain, I'd have to find someone to run a server with my wordpress site on it.</p><p>Around this time, I had begun to play with Ghost on Heroku, who offers low-level hosting for free. They even have the ability to add pipelines through Git. I had a separate testing and production site. These  allowed me to develop and draft without showing incomplete work to the public.</p><p>But Heroku's free-tier service has a down-side. To offer this free service, they only spin up an instance for you when someone requests the page. As a result the average load time for the initial page for a Ghost blog that was asleep was enormous! A Hexo blog doesn't escape this issue either. But the initial page load is a touch faster given it is static content.</p><p>This got me looking for static content hosts. <a href="https://pages.github.com/" target="_blank" rel="noopener">GithubPages</a> came up near the top. But so did a host which I'd  not heard of before: <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>. Netlfiy and GithubPages offer nearly the same service. But Netlify caught my attention with the offer of going beyond static pages. And at the time, I had some interest in the extensiblility of my otherwise static site.</p><p>After I'd finally converted my blog, I set-up my Netlify account and gave it a test run. It was quite easy to setup! I was even able to preview the site before marking it ready for full-time. All I had to do was select the Repo from my Github account, give Netlify permission to access that content, and tell it to go.</p><p>That set me up under a Netlify subdomain. But Netlify had excellent instructions to modify the DNS registry. Now my domain would rout content from Netlify, while acting under the scheufler.io domain. After modifying the DNS entry on 1&amp;1, and waiting for a while, I was able to navigate to my blog as hosted by Netlify.</p><p>With my newly minted <a href="/">daniel.scheufler.io</a> Hexo blog, I began to review my content. Netlify had flagged a couple of things for my attention. They highlighted the lack of an SSL, and that I was serving insecure content from the site. They had an easy single click process to setup the SSL, which I immediately employed. They use <a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let's Encrypt</a>, which made the process both nigh painless and free.</p><p>For the insecure content, they did not flag the specific links. But with their warning, I was able to do a quick search through my file to find the offending links.</p><p>And with that, I had a static Hexo Blog, properly hosted under the scheufler.io domain, with a Let's Encrypt SSL. I've been very happy with this site. The increased control and ease of managing the site are also nice.  I hope this series has provided some food for thought. Or that is provides some tools you hadn't yet encountered.</p><p>As I round the last turn on this series, I plan to close with some minor clean-up activities I took. I'll cover adding Google Analytics, and how I'd added a small feature to the Theme. Until next time, Thanks for reading!</p>]]></content:encoded>
+      
+      <comments>daniel.scheufler.io/2018/12/03/hexo-hosting/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Migrating to Hexo - First Theme</title>
@@ -161,44 +199,6 @@
       <content:encoded><![CDATA[<p>So a colleague of mine was struggling with our local build process. Every time he ran the npm command, which ran a webpack build, He'd get numerous errors for <em>'import/no-unresolved'.</em> The associated message would complain that the file casing did not match the underlying file system. As it turns out, the warning was technically correct. When we checked his command line, we found that the interface reported the folder name with a lowercase. To be clear the folder, as it existed in the file system, was capitalized. So we spun up a new CLI, and tried it with a capitalized version of the folder. Lo and behold, it worked perfectly. Be sure to check your CLI, when a command returns with very odd errors.</p>]]></content:encoded>
       
       <comments>daniel.scheufler.io/2018/06/12/til-how-to-resolve-false-positive-eslint-errors/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>TIL... How to use ToDictionary</title>
-      <link>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/</link>
-      <guid>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/</guid>
-      <pubDate>Tue, 05 Jun 2018 20:30:04 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;So I was creating a bulk action in a controller. I needed to map a list of Ids to a dictionary of said Ids and their respective results. 
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>So I was creating a bulk action in a controller. I needed to map a list of Ids to a dictionary of said Ids and their respective results. My initial thought was to use ForEach, but there was a great deal of unnecessary boiler-plate code involved. There had to be a better way. And of course there was. Naturally the ToDictionary function was invented by brilliant minds in anticipation of such a need. Here's a rough example:</p><p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">listOfId.ToDictionary(key=&gt; key, <span class="keyword">value</span> =&gt; MethodtoGetValue(<span class="keyword">value</span>,otherParams));</span><br></pre></td></tr></table></figure></p><p>Note that the key, and the value both come from the entry in the List, and are used to create the resulting key-value pair. Meaning that you could create a Key and a Value from functions that use the list entry as an input.</p>]]></content:encoded>
-      
-      <comments>daniel.scheufler.io/2018/06/05/til-how-to-use-todictionary/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>TIL... How to use Map and Reduce</title>
-      <link>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</link>
-      <guid>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/</guid>
-      <pubDate>Tue, 22 May 2018 20:00:44 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;While working on a React app, I needed to translate a bit of Redux shape into one needed by an Api. Due to the normalization we imposed o
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>While working on a React app, I needed to translate a bit of Redux shape into one needed by an Api. Due to the normalization we imposed on the Redux state, I had to navigate to the desired information through a couple of lists. These entities each had a list of ids of children, and I needed the grand-children of a given entity.</p><p>Instead of manually composing this list, I found map and reduce were far better suited to the task, as you might imagine. In order to get the list of grandchildren, I first mapped the list of children ids to a list of lists of grand-child ids. These lists were accessed through the children.</p><p>Then I took the list of lists and reduced it , effectively merging it into a single, long list of all grandchildren. Helpful hint, always include an initial value for the list. It helps avoid bugs when inputs are empty.</p><p>Finally I mapped the list of grand-child ids to the grandchildren themselves. As an experiment I did try to manually iterate through the lists without Map and reduce, and found that those three lines replaced something like 12-15 lines. Further, the 12-15 line code was... obtuse at best. Got to love it when succinct code is also easier to understand.</p>]]></content:encoded>
-      
-      <comments>daniel.scheufler.io/2018/05/22/til-how-to-use-map-and-reduce/#disqus_thread</comments>
     </item>
     
   </channel>

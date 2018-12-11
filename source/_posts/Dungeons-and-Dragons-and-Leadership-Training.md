@@ -1,6 +1,5 @@
 ---
 title: Dungeons and Dragons and Leadership Training?
-date: 2017-02-07 15:30:00
 tags:
   - games
   - leadership
@@ -11,6 +10,10 @@ category:
   - perspective
 photos:
   - img/post_img/dice.jpg
+categories:
+  - Professional Development
+  - Leadership
+date: 2017-02-07 15:30:00
 ---
 
 'Roll Initiative!’ – A common call to arms in Dungeons and Dragons. I will freely admit; I still play on occasion with some of my college buddies. But this week during some quiet reflection a strange idea dawned on me. You could use DnD to practice a different forms of leadership.

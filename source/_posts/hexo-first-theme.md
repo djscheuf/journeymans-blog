@@ -1,6 +1,5 @@
 ---
 title: Migrating to Hexo - First Theme
-date: 2018-11-04 16:30:00
 tags:
   - side-projects
   - blog
@@ -9,6 +8,10 @@ category:
   - side-projects
 photos:
   - /img/post_img/hexo.png
+categories:
+  - Personal Development
+  - Tools
+date: 2018-11-04 16:30:00
 ---
 
 Last post, I explained [how I converted my wordpress blog to Hexo](/2018/10/21/hexo-conversion/). This week I'll expound on the fun I had with my first theme.

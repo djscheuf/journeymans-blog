@@ -7,12 +7,12 @@ tags:
   - management
   - software
   - software dev
-  - Software Development
   - training
 url: 1480.html
 id: 1480
 categories:
-  - Perspective
+  - Professional Development
+  - Communication
 date: 2017-04-04 16:30:31
 ---
 

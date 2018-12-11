@@ -13,7 +13,8 @@ tags:
 url: 1367.html
 id: 1367
 categories:
-  - Perspective
+  - Personal Development
+  - Skills
 date: 2017-01-03 17:15:10
 ---
 

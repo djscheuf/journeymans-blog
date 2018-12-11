@@ -1,6 +1,5 @@
 ---
 title: Migrating to Hexo - Conversion
-date: 2018-10-21 15:35:00
 tags:
   - side-projects
   - blog
@@ -9,6 +8,10 @@ category:
   - side-projects
 photos:
   - /img/post_img/hexo.png
+categories:
+  - Personal Development
+  - Tools
+date: 2018-10-21 15:35:00
 ---
 
 Last week, I explained [how I found Hexo](/2018/10/14/hexo-discovery/). This week I'll explain how easy it was to convert my original Wordpress blog over to Hexo.

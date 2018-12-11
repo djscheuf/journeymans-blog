@@ -14,16 +14,21 @@
 
 ## Features:
 
+
 [ ] Guest Authors Archive with Blurb and crosslink
 [ ] Theme Update: Pic -> used in Snippet and as Front Img on post.
 [ ] Return to Top Link a la [BeanTech](http://beantech.org/)
 [ ] BlogRoll for other Improvers [Blogroll Plugin](https://github.com/huiwang/hexo-blogroll)
-[ ] AutoCategory [Plugin](https://github.com/xu-song/hexo-auto-category)
+[-] AutoCategory [Plugin](https://github.com/xu-song/hexo-auto-category)
 
 ## Content Work:
 * Resume Page
   - Removed from Nav
-* About Page
+* About Page- Community
+  - Talks
+- Skills
+- Tools
+
 * Hexo Conversion Posts
     - [X] Discovery
     - [X] Conversion

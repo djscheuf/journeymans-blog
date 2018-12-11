@@ -14,9 +14,8 @@ tags:
 url: 1311.html
 id: 1311
 categories:
-  - Perspective
   - Software Development
-  - Work Projects
+  - Best Practices
 date: 2016-12-06 17:40:45
 ---
 

@@ -8,10 +8,11 @@ tags:
   - redirect
   - window
 categories:
-  - TodayILearned
-date: 2018-06-26 15:30:59
+  - Software Development
+  - Lessons Learned
 photos:
   - img/post_img/library.jpg
+date: 2018-06-26 15:30:59
 ---
 
 I was testing an action, which upon completion needed to redirect the user to a new page. Normally, in javascript you can redirect using :
