@@ -3,7 +3,8 @@ title: How to learn any skill in 20 hours
 url: 349.html
 id: 349
 categories:
-  - Uncategorized
+  - Personal Development
+  - Skills
 date: 2016-05-12 15:00:33
 tags:
 ---

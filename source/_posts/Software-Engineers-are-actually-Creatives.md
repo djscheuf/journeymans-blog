@@ -1,16 +1,19 @@
 ---
 title: Software Engineers are actually 'Creatives'
-date: 2017-03-14 15:30:00
 tags:
   - creative
   - leadership
   - management
   - software
   - esoteric
-category: 
+category:
   - perspective
-photos: 
+photos:
   - img/post_img/piet.jpg
+categories:
+  - Professional Development
+  - Communication
+date: 2017-03-14 15:30:00
 ---
 
 Have you seen the [Project audio for Github](https://github.audio/)? Or the plethora of esoteric languages like [Piet](https://esolangs.org/wiki/Piet) or [><>](https://esolangs.org/wiki/Fish) (pronounced: fish)? Recently I had a ‘coding challenge’ for fun at work. The challenge was to print a poem in a language we didn’t already know. In that time I’ve picked up four such languages, which got me thinking. We, developers, enjoy some of this artsy kind of stuff. Sure it’s not your typical artwork, except for Piet. But it is very creative at heart. Then the light-bulb lit up, Software Developers are members of the ‘Creatives’ community.

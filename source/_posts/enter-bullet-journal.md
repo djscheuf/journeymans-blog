@@ -14,7 +14,8 @@ tags:
 url: 1173.html
 id: 1173
 categories:
-  - Perspective
+  - Personal Development
+  - Tools
 date: 2016-11-22 15:00:05
 ---
 

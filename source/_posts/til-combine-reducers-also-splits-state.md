@@ -5,8 +5,8 @@ tags:
   - testing
   - til
 categories:
-  - TodayILearned
-  - Work Projects
+  - Software Development
+  - Lessons Learned
 date: 2018-05-15 15:00:18
 ---
 

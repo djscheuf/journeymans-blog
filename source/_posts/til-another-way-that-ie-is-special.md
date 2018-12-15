@@ -10,8 +10,8 @@ tags:
 url: 1500.html
 id: 1500
 categories:
-  - TodayILearned
-  - Work Projects
+  - Software Development
+  - Lessons Learned
 date: 2018-03-27 15:00:10
 ---
 

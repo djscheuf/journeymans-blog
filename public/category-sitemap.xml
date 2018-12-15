@@ -7,148 +7,127 @@
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Journeyman-s-Digest/</loc>
-        <lastmod>2018-08-14T01:09:10.525Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Perspective/Software-Development/Work-Projects/</loc>
-        <lastmod>2018-08-14T01:09:10.526Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Perspective/Work-Projects/</loc>
-        <lastmod>2018-08-14T01:09:10.527Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Talks/</loc>
-        <lastmod>2018-08-20T00:59:21.815Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/TodayILearned/</loc>
-        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/TodayILearned/Work-Projects/</loc>
-        <lastmod>2018-08-20T01:12:41.719Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/perspective/</loc>
-        <lastmod>2018-08-20T01:12:42.995Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/software/</loc>
-        <lastmod>2018-09-03T22:01:07.716Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/announcements/</loc>
-        <lastmod>2018-09-03T22:19:30.405Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Perspective/</loc>
-        <lastmod>2018-10-21T21:05:48.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Perspective/Software-Development/</loc>
-        <lastmod>2018-10-21T21:05:48.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Software-Development/tools/</loc>
-        <lastmod>2018-10-21T21:05:50.130Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/</loc>
-        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/Software-Development/</loc>
-        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>daniel.scheufler.io/categories/Automation/Software-Development/Work-Projects/</loc>
-        <lastmod>2018-10-21T21:11:16.581Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>daniel.scheufler.io/categories/Software-Development/Work-Projects/</loc>
-        <lastmod>2018-10-21T21:27:20.748Z</lastmod>
+        <lastmod>2018-12-11T15:33:36.629Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Uncategorized/</loc>
-        <lastmod>2018-11-04T22:25:11.030Z</lastmod>
+        <loc>daniel.scheufler.io/categories/Software-Development/Tools/</loc>
+        <lastmod>2018-12-11T15:33:45.353Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Innovation-Fridays/</loc>
-        <lastmod>2018-11-04T22:25:43.585Z</lastmod>
+        <loc>daniel.scheufler.io/categories/Software-Development/Testing/</loc>
+        <lastmod>2018-12-11T15:33:50.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/Innovation-Fridays/Software-Development/</loc>
-        <lastmod>2018-11-04T22:25:43.585Z</lastmod>
+        <loc>daniel.scheufler.io/categories/Software-Development/Side-Projects/</loc>
+        <lastmod>2018-12-11T15:33:55.727Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/Quality/</loc>
+        <lastmod>2018-12-11T15:34:03.765Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/Lessons-Learned/</loc>
+        <lastmod>2018-12-11T15:34:13.838Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Software-Development/Best-Practices/</loc>
+        <lastmod>2018-12-11T15:34:23.312Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>daniel.scheufler.io/categories/Software-Development/</loc>
-        <lastmod>2018-11-04T22:25:54.271Z</lastmod>
+        <lastmod>2018-12-11T15:34:30.055Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>daniel.scheufler.io/categories/side-projects/</loc>
-        <lastmod>2018-11-04T22:59:30.476Z</lastmod>
+        <loc>daniel.scheufler.io/categories/Software-Development/agile/</loc>
+        <lastmod>2018-12-11T15:34:30.055Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Professional-Development/Leadership/Mentorship/</loc>
+        <lastmod>2018-12-11T15:34:37.312Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Professional-Development/Leadership/</loc>
+        <lastmod>2018-12-11T15:34:42.413Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Professional-Development/</loc>
+        <lastmod>2018-12-11T15:34:48.778Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Professional-Development/Communication/</loc>
+        <lastmod>2018-12-11T15:34:48.778Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Personal-Development/Tools/</loc>
+        <lastmod>2018-12-11T15:35:11.193Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Personal-Development/Skills/</loc>
+        <lastmod>2018-12-11T15:35:18.334Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Personal-Development/</loc>
+        <lastmod>2018-12-11T15:35:25.062Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Personal-Development/Community/</loc>
+        <lastmod>2018-12-11T15:35:25.062Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>daniel.scheufler.io/categories/Personal-Development/Community/Talks/</loc>
+        <lastmod>2018-12-11T15:35:25.062Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

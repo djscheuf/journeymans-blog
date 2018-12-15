@@ -13,7 +13,8 @@ tags:
 url: 1071.html
 id: 1071
 categories:
-  - Perspective
+  - Personal Development
+  - Skills
 date: 2016-10-13 15:00:00
 ---
 

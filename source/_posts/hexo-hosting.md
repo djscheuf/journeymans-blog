@@ -1,6 +1,5 @@
 ---
 title: Migrating to Hexo - Hosting
-date: 2018-12-03 09:30:00
 tags:
   - side-projects
   - blog
@@ -9,6 +8,10 @@ category:
   - side-projects
 photos:
   - /img/post_img/hexo.png
+categories:
+  - Personal Development
+  - Tools
+date: 2018-12-03 09:30:00
 ---
 
 Last post, I explained [how I found and tweaked my first theme](/2018/11/04/hexo-first-theme/). This week I'll review how I finally hosted my Hexo blog.

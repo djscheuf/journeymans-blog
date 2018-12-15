@@ -10,8 +10,8 @@ tags:
 url: 1373.html
 id: 1373
 categories:
-  - Perspective
   - Software Development
+  - agile
 date: 2017-01-10 16:37:08
 ---
 

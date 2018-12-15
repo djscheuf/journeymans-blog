@@ -11,7 +11,8 @@ tags:
 url: 1330.html
 id: 1330
 categories:
-  - Perspective
+  - Professional Development
+  - Leadership
 date: 2016-12-13 16:28:10
 ---
 

@@ -6,8 +6,8 @@ tags:
   - react
   - User Interface
 categories:
-  - TodayILearned
-  - Work Projects
+  - Software Development
+  - Lessons Learned
 date: 2018-05-01 15:00:06
 ---
 

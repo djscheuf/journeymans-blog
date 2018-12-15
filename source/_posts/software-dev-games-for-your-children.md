@@ -14,7 +14,8 @@ tags:
 url: 65.html
 id: 65
 categories:
-  - Software Development
+  - Personal Development
+  - Tools
 date: 2016-04-14 15:30:38
 ---
 

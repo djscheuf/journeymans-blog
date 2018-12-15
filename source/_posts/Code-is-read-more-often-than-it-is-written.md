@@ -1,15 +1,18 @@
 ---
 title: Code is read more often than it is written
-date: 2016-12-27 15:30:00
 tags:
   - python
   - principles
   - software
   - user-experience
-category: 
+category:
   - perspective
 photos:
   - img/post_img/code_wall.jpg
+categories:
+  - Software Development
+  - Quality
+date: 2016-12-27 15:30:00
 ---
 
 At first glance, this would seem an obvious statement. And it is in a way. When Python language creator Guido Van Rossum created Python, he did so with this thought in mind. As a result, the culture of Python is partly molded around _“readability counts”_.

@@ -1,12 +1,13 @@
 ---
 title: New Horizons
-date: 2018-09-05 15:30:00
 tags:
-  - side-projects
-category:
-  - software
+  - hexo
 photos:
   - img/post_img/knowledge_base.jpg
+categories:
+  - Software Development
+  - Side Projects
+date: 2018-09-05 15:30:00
 ---
 
 

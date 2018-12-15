@@ -3,9 +3,8 @@ title: How to increase Team Velocity by 50% I
 url: 755.html
 id: 755
 categories:
-  - Automation
   - Software Development
-  - Work Projects
+  - Best Practices
 date: 2016-11-01 15:00:19
 tags:
 ---

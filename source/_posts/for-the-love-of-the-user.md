@@ -10,8 +10,8 @@ tags:
 url: 1484.html
 id: 1484
 categories:
-  - Perspective
   - Software Development
+  - Quality
 date: 2017-04-11 16:30:26
 ---
 

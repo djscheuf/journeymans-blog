@@ -1,10 +1,4 @@
 var appDaily = {
-  baiduSearch: function(words) {
-    var key = 'site:' + window.location.host + '%20' + words.replace(/\s/g, '%20');
-    var url = 'https://www.baidu.com/baidu?tn=baidu&ie=utf-8&word=';
-
-    window.open(url + key, '_blank');
-  },
   googleSearch: function(words) {
     var key = 'site:' + window.location.host + '%20' + words.replace(/\s/g, '%20');
     var url = 'https://www.google.com/search?q=';
@@ -14,11 +8,7 @@ var appDaily = {
   submitSearch: function(search_engines) {
     var $ipt = document.getElementById('homeSearchInput');
 
-    if (search_engines === 'baidu') {
-      this.baiduSearch($ipt.value.trim());
-    } else {
-      this.googleSearch($ipt.value.trim());
-    }
+    this.googleSearch($ipt.value.trim());
 
     return false;
   },

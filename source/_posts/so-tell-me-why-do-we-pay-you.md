@@ -11,8 +11,8 @@ tags:
 url: 1250.html
 id: 1250
 categories:
-  - Perspective
-  - Work Projects
+  - Professional Development
+  - Communication
 date: 2016-11-29 16:27:03
 ---
 
