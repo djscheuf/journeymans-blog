@@ -7,7 +7,7 @@ tags:
   - reflection
 categories:
   - Personal Development
- photos:
+photos:
   - img/post_img/knowledge_base.jpg
 date: 201-12-22 09:00:00
 ---
