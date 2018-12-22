@@ -20,7 +20,7 @@ But  In reviewing the goal, I realize I had a particular end in mind for  both g
 
 This  year, I learned some new models to help frame, discuss and describe  relationships. I have the tools to describe my goals better. But  moreover I begin to understand why I feared expressing my true goals.
 
-So  this year, I plan to write my goals stating my actual ambition. Even if  it is frighteningly beyond my current capabilities . To combat this, I  will be writing up sub-goals, with something akin to the SMART template.  I'll be listing out smaller deliverable to help bridge the gap between  the now and the future I am aiming for. The deliverable will usually be  per Quarter, with a Specific Target to 'succeed'.
+So  this year, I plan to write my goals stating my actual ambition. Even if  it is frighteningly beyond my current capabilities . To combat this, I  will be writing up sub-goals, with something akin to the [SMART template](https://en.wikipedia.org/wiki/SMART_criteria).  I'll be listing out smaller deliverable to help bridge the gap between  the now and the future I am aiming for. The deliverable will usually be  per Quarter, with a Specific Target to 'succeed'.
 
 These  Quarterly goals I can then review and allocate time specifically to  meet them. Last year, I had the goals written down and reviewed them  about 3 times including the review I did this week. I am hoping to keep  my activity more focused by having more frequent review.
 
