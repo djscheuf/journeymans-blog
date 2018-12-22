@@ -9,7 +9,7 @@ categories:
   - Personal Development
 photos:
   - img/post_img/knowledge_base.jpg
-date: 201-12-22 09:00:00
+date: 2018-12-22 09:00:00
 ---
 
 I took some time this week to review my resolutions/goals from last  year. I was trying to see what I could learn and what I could improve.  While I did succeed in all my goals, I learned a couple things that  might be useful if shared.
