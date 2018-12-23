@@ -6,8 +6,7 @@ tags:
   - management
   - practice
   - training
-category:
-  - perspective
+  - featured
 photos:
   - img/post_img/dice.jpg
 categories:

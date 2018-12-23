@@ -6,8 +6,7 @@ tags:
   - management
   - software
   - esoteric
-category:
-  - perspective
+  - featured
 photos:
   - img/post_img/piet.jpg
 categories:

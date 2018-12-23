@@ -13,8 +13,7 @@ tags:
   - software dev
   - tool
   - tools
-url: 614.html
-id: 614
+  - featured
 categories:
   - Software Development
   - Work Projects

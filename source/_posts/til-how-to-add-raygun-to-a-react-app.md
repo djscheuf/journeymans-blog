@@ -6,6 +6,7 @@ tags:
   - react
   - react-router
   - telemetry
+  - featured
 categories:
   - Software Development
   - Lessons Learned

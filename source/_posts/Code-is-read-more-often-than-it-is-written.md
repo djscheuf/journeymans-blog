@@ -5,8 +5,7 @@ tags:
   - principles
   - software
   - user-experience
-category:
-  - perspective
+  - featured
 photos:
   - img/post_img/code_wall.jpg
 categories:
