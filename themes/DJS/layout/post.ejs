@@ -1,3 +1,10 @@
+<%
+var isFullUrl = function(str) {
+  return /^(https:|http:|ftp:)?\/\//.test(str);
+};
+%>
+<% var photo = page["photos"].toString(); %>
+<% var thumbUrl = isFullUrl(photo) ? photo : url_for(photo) %>
 <div class="content-area">
   <div class="post">
     <!-- Post Content -->
@@ -5,6 +12,9 @@
       <article>
         <!-- Title date & tags -->
         <div class="post-header">
+          <div class="post-image">
+            <img src="<%- thumbUrl %>" />
+          </div>
           <h1 class="entry-title">
             <%- page.title || theme.default_post_title || "Untitled" %>
             <% if (page.subtitle && page.subtitle.length) { %>
@@ -29,12 +39,6 @@
           <%- page.content %>
         </div>
       </article>
-    </div>
-    <!-- Comments -->
-    <div class="container">
-      <%- partial('_partial/comment', {
-          shortname: config.disqus_shortname
-        }) %>
     </div>
     <!-- Pre or Next -->
     <div class="nav-links">
