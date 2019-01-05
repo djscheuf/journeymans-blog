@@ -16,10 +16,11 @@
 
 
 [ ] Guest Authors Archive with Blurb and crosslink
-[ ] Theme Update: Pic -> used in Snippet and as Front Img on post.
+[X] Theme Update: Pic -> used in Snippet and as Front Img on post.
 [ ] Return to Top Link a la [BeanTech](http://beantech.org/)
 [ ] BlogRoll for other Improvers [Blogroll Plugin](https://github.com/huiwang/hexo-blogroll)
 [-] AutoCategory [Plugin](https://github.com/xu-song/hexo-auto-category)
+[ ] Side-bar Navigation for Long posts a la [Encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)
 
 ## Content Work:
 * Resume Page
