@@ -25,4 +25,4 @@ What a about a  challenge you don't know how to face? First and foremost: Lead y
 
 You  can always lead yourself. And in fact you must! You needed be alone,  but you must not wait idly by. Feed yourself. Find a goal and begin to  march for it. Build your influence, by leading yourself. Act on the advice you might give a friend. Lead yourself with courage.
 
-*Credit to [Devlin Liles](https://www.linkedin.com/in/devlinliles/) for this idea, which I am quoting here.
+*Credit to [Devlin Liles](https://www.linkedin.com/in/devlinliles/) for this idea.
