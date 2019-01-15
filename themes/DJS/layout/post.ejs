@@ -3,8 +3,7 @@ var isFullUrl = function(str) {
   return /^(https:|http:|ftp:)?\/\//.test(str);
 };
 %>
-<% var photo = page["photos"].toString(); %>
-<% var thumbUrl = isFullUrl(photo) ? photo : url_for(photo) %>
+
 <div class="content-area">
   <div class="post">
     <!-- Post Content -->
@@ -12,9 +11,13 @@ var isFullUrl = function(str) {
       <article>
         <!-- Title date & tags -->
         <div class="post-header">
-          <div class="post-image">
-            <img src="<%- thumbUrl %>" />
-          </div>
+            <% if (page["photos"] && page["photos"].length > 0) { %>
+              <% var photo = page["photos"].toString(); %>
+              <% var thumbUrl = isFullUrl(photo) ? photo : url_for(photo) %>
+              <div class="post-image">
+                  <img src="<%- thumbUrl %>" />
+                </div>
+            <% } %>
           <h1 class="entry-title">
             <%- page.title || theme.default_post_title || "Untitled" %>
             <% if (page.subtitle && page.subtitle.length) { %>
