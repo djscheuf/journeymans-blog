@@ -1,17 +1,4 @@
-var appDaily = {
-  googleSearch: function(words) {
-    var key = 'site:' + window.location.host + '%20' + words.replace(/\s/g, '%20');
-    var url = 'https://www.google.com/search?q=';
-
-    window.open(url + key, '_blank');
-  },
-  submitSearch: function(search_engines) {
-    var $ipt = document.getElementById('homeSearchInput');
-
-    this.googleSearch($ipt.value.trim());
-
-    return false;
-  },
+var appDJS = {
   bindToggleButton: function() {
     var btn = document.querySelector('.menu-toggle');
     var nav = document.querySelector('.navbar');
@@ -28,4 +15,4 @@ var appDaily = {
   }
 };
 
-appDaily.bindToggleButton();
+appDJS.bindToggleButton();
