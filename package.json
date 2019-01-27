@@ -30,6 +30,7 @@
     "hexo-toc": "^1.0.8"
   },
   "devDependencies": {
+    "hexo-generator-seo-friendly-sitemap": "0.0.20",
     "hexo-migrator-wordpress": "^1.0.0"
   }
 }
