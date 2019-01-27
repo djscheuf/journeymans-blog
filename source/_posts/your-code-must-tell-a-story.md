@@ -10,7 +10,7 @@ tags:
   - geek-speak
   - jargon
   - measure
-date: 2019-01-29 09:00:00
+date: 2019-01-28 09:00:00
 photos: 
   - img/post_img/book.jpg
 ---
