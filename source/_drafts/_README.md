@@ -13,7 +13,8 @@
   - Adjusted Themes to suit
 
 ## Features:
-
+[ ] Conference/Talk Offerings per year, see Mark Reynolds Blog
+[ ] Host talks on the blog?
 
 [ ] Guest Authors Archive with Blurb and crosslink
 [X] Theme Update: Pic -> used in Snippet and as Front Img on post.
@@ -54,5 +55,5 @@
     -search 'uncategorized'
 [X] I have no comments: 'Let me know in the comments! '
     - Search 'in the comments'
-[ ] Reset http to https?
+[X] Reset http to https?
 
