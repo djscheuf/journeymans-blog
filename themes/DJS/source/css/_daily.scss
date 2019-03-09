@@ -481,7 +481,7 @@ Footer
   background-repeat: no-repeat;
   background-size: 100%;
   text-indent: -999em;
-  @each $social in github, weibo, mail, twitter, linkedin {
+  @each $social in github, weibo, mail, twitter, linkedin, rss {
     &.icon-#{$social} {
       background-image: url('../images/#{$social}.svg');
     }
