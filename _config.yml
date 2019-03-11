@@ -103,6 +103,7 @@ social:
   github: https://github.com/djscheuf
   mail: mailto:daniel@scheufler.io
   linkedin: https://www.linkedin.com/in/danielscheufler/
+  rss: /rss2.xml
 
 # Navigation Bar
 nav:
@@ -114,7 +115,7 @@ nav:
 
 widget:
   title: A Journeyman's Travels
-  content: <span>Blog by <a href="/about">Daniel Scheufler</a>. <a href="/rss2.xml">RSS Feed</a></span>
+  content: <span>Blog by <a href="/about">Daniel Scheufler</a>.</span>
 
 # Visual Config
 # avatar: img/better_me_sm.png
