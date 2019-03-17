@@ -37,6 +37,6 @@ Now, I want to share one more lesson I learned that Sunday. But It wasn't direct
 
 But in so doing, they took great care, setting me up to succeed. They built my confidence through the work week. They encouraged me to rest and spend time with loved-ones on Saturday. And then, only then, have they asked something difficult of me. I _know_ they realized that it would be hard, and I _know_ they planned it to be Sunday. Religious reasons aside, they put it on a day when I would not be at work. They put it on a day when they would encourage me to rest again. They put this challenge on a day when it would be _easiest_ to accomplish!
 
-4. An Excellent Example of  ['Setting others up to succeed'](./2019/01/12/setting-others-up-to-succeed/)
+4. An Excellent Example of  ['Setting others up to succeed'](/2019/01/12/setting-others-up-to-succeed/)
 
 To borrow their phrase, They intentionally designed their 'Intentionality' Challenge. So I wish to offer Kudos to the EntreLeadership team for a well-designed and instructive challenge series. I am eagerly awaiting their next: 'Influence'. Interested in joining the challenge? Go [here](https://is-tracking-link-api-prod.appspot.com/api/v1/click/6375256661950464/5251947050303488) for more information! 
