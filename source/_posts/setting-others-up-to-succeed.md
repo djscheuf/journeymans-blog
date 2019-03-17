@@ -35,4 +35,4 @@ Until then, I had no idea how profound a change I had triggered. I hadn't forced
 I knew I wanted to help my mentor enjoy his work again. And I knew my mentor was a bastion for the practice. So I started  by encouraging the team.
 
 I helped guide the them into fruitful territory to help solve both problems. I never had to mandate anything, nor could I have. I did not ever wield authority. I only suggested improvements. And I referred them to a wiser man than myself. 
-I have [mentioned influence in previous posts](/2019/01/05/lead-yourself/). I think this is an example of what it looks like. I want to encourage the reader in their good work. You can improve the world around you, if you can pick a [small next step](), and build on it.
+I have [mentioned influence in previous posts](/2019/01/05/lead-yourself/). I think this is an example of what it looks like. I want to encourage the reader in their good work. You can improve the world around you, if you can pick a [small next step](./2018/12/31/tiny-next-steps/), and build on it.
