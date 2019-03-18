@@ -6,6 +6,7 @@ For Future use and reference
     - Talks
   - Skills
   - Tools
+  - Lessons Learned
 * Professional Development
   - Communication
   - Leadership
