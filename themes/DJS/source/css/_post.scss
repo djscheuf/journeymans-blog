@@ -2,7 +2,7 @@
   padding-top: 70px;
   padding-bottom: 70px;
 
-  .post-image{
+  .post-image {
     // opacity: 0.8;
     justify-content: center;
     display: flex;
@@ -14,8 +14,10 @@
       color: #3a3a3a;
       text-transform: uppercase;
       letter-spacing: 0.2em;
-      font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
-      font-size: 0.750em;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+        "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
+        "sans-serif", "Microsoft YaHei";
+      font-size: 0.75em;
     }
     .meta-arraw {
       opacity: 0.8;
@@ -35,7 +37,9 @@
   }
 }
 .entry-content {
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
+    "sans-serif", "Microsoft YaHei";
   line-height: 1.7;
   word-wrap: break-word;
   ol,
@@ -66,5 +70,12 @@
   a:hover {
     color: #3769c9;
     opacity: 0.8;
+  }
+
+  table {
+    border: 1px solid black;
+    td {
+      text-align: center;
+    }
   }
 }
