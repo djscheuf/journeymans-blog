@@ -1,5 +1,5 @@
 ---
-title: Design your Day
+title: Design your Day... or at least your Commute
 categories:
   - Personal Development
   - Tools
