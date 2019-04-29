@@ -20,7 +20,7 @@ Now quite separately, I noticed a spot where I could help Improving improve it's
 
 To start, I spent time soliciting volunteers, and training the same. I collected some resources for them. And I asked if they'd be willing to spend about an hour a week helping another Improver. After the start-up phase, I have checked in with the volunteers regularly. I ensure they have what they need, and keeping an ear out for any ideas they might have.
 
-Contemplating this I realized two wondrous things! In the first place, I have started on my dream much __much__ earlier than I ever imagined I might! I am presently acting a manner to _Sbuild up Improving_ into the company I dreamed of. I admit: the degree is small, and I'm not building from the ground up. But the influence remains nonetheless.
+Contemplating this I realized two wondrous things! In the first place, I have started on my dream much __much__ earlier than I ever imagined I might! I am presently acting a manner to _build up Improving_ into the company I dreamed of. I admit: the degree is small, and I'm not building from the ground up. But the influence remains nonetheless.
 
 The second realization was far more profound and deeply humbling. I'm not actually doing the building. I have not been the one to complete the work which improves Improving. It is the volunteers. They are the builders, their actions build up Improving into a better company. And I could do nothing without them. My _'Connections Program'_ would be little more than an idea on paper were it not for the few who believed. They chose to spend their time in a manner that I asked them to.
 
