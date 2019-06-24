@@ -8,7 +8,7 @@ tags:
  - lessons-learned
  - training
  - coaching
-date: 2019-07-01 09:00:00
+date: 2019-06-24 09:00:00
 photos: 
  - img/post_img/mountain_aid.jpg
 ---
