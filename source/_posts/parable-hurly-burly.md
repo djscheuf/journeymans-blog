@@ -8,7 +8,7 @@ tags:
  - work
  - learning
  - preparation
-date: 2019-08-13 09:00:00
+date: 2019-08-19 09:00:00
 photos: 
  - img/post_img/tree_and_axe.jpg
 ---
