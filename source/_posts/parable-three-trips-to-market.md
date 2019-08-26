@@ -7,7 +7,7 @@ tags:
  - parable
  - planning
  - efficacy
-date: 2019-08-27 09:00:00
+date: 2019-08-26 09:00:00
 photos: 
  - img/post_img/pumpkins_galore.jpg
 ---
