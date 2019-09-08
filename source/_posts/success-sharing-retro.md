@@ -10,7 +10,7 @@ categories:
  - agile
 photos:
   - img/post_img/retro_success_sharing.jpg
-date: 2019-09-17 09:00:00
+date: 2019-09-09 09:00:00
 ---
 A few sprints ago, my team went through some transitions. We had  lost a member, about to lose another, were gaining a third. Oh! and our  Scrum Master was passing the baton to another, a trainee. As if that  wasn't complicated enough, there was one more wrinkle. Our Scrum Master  couldn't be present for his last Retro. Which so happened to be the  one we were going to use to demo our retro style to the trainee. 
 
