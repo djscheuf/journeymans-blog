@@ -35,6 +35,7 @@ WHERE
 
 The output of this query is a table with 3 columns: id, linkedId, row. The results might look like:
 |Id|LinkedId|Row|
+|----|----------|-----|
 |1|42|1|
 |1|37|2|
 |2|36|1|
