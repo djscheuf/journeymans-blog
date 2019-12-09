@@ -11,6 +11,7 @@ For Future use and reference
   - Communication
   - Leadership
     - Mentorship
+    - Coaching
 * Software Development
   - agile
   - Best Practices
