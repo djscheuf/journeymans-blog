@@ -19,4 +19,4 @@ After its successful debut in 2019, the conference is back in 2020, bigger and b
 
 Now the final roster hasn't been announced yet, but should be available in the next few days. If you'd like to see the kind of topics that were covered last year, you can check out the [schedule page from 2019](https://theagileshift.com/Archive/Houston/2019/schedule.html).
 
-Before you go, I want to let you know that [Early Bird pricing](https://www.eventbrite.com/e/agileshift-2020-tickets-86812794405) is still going one! But the last day for that is February 29th!
+Before you go, I want to let you know that [Early Bird pricing](https://www.eventbrite.com/e/agileshift-2020-tickets-86812794405) is still going on! But the last day for that is February 29th!
