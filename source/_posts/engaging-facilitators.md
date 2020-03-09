@@ -1,5 +1,5 @@
 ---
-title: Training Facilitators for the Retro en Masse
+title: Engaging Facilitators for the Retro en Masse
 categories:
  - Professional Development
  - Leadership
