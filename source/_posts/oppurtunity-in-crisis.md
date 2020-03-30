@@ -12,6 +12,8 @@ date: 2020-03-30 09:00:00
 photos: 
  - https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Chinese_word_for_crisis.svg/200px-Chinese_word_for_crisis.svg.png
 ---
+_The Chinese character for Crisis is often said to be made from the characters for Danger and Opportunity._
+
 I know it may be hard to rationalize all this unwelcome change as a gift, but hear me out. When your client or employer sent everyone to work from home, what happened to your commute? I usually spend one and a half to two hours commuting daily. My commute now usually involved picking my butt up from the kitchen table. I walk twenty feet, and put it in front of my desk in the office. At most that takes 5 minutes, if I get way-laid by my children in the process. But my commute is essentially gone. I got those 2 hours back in my discretionary pile!
 
 I don't know about you, but getting 2 hours of my life back each day definitely sounds like a gift to me! The trick is, are you intentionally spending it? I've mentioned before, that everyone gets a second at a time and has to spend that second before they get the next. Can't hold on to them to spend later. Personally, I've spent part of that hour getting some extra sleep and enjoying a nice breakfast with my wife. Normally I don't get to do that!  The other part, I spend taking walks and playing with my sons. One helps me not go stir-crazy, and the other I get to capitalize on the moment.
