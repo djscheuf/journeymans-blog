@@ -1,5 +1,5 @@
 ---
-title: Oppurtunity in Crisis
+title: Opportunity in Crisis
 categories:
  - Personal Development
  - Lessons Learned
