@@ -9,7 +9,7 @@ tags:
   - facilitation
 date: 2020-04-06 09:00:00
 photos:
-  - img/post_img/coffee.jpg
+  - img/post_img/trellis.jpg
 ---
 
 > This article assume some familiarity with the Liberating Structures discussed.
