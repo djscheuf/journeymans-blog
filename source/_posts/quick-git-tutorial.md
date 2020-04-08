@@ -1,13 +1,15 @@
 ---
-title: Quikc Git Tutorial
+title: Quick Git Tutorial
 categories:
-  - Personal Development
+  - Software Development
   - Tools
 tags:
-  - remote
-  - liberating-structures
-  - facilitation
+  - git
+  - source-control
+  - tutorial
 date: 2020-04-06 09:00:00
 photos:
   - img/post_img/trellis.jpg
 ---
+
+As part of the tutorial, this text was added.
