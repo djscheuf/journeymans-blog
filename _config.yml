@@ -108,6 +108,7 @@ social:
 # Navigation Bar
 nav:
   Home: .
+  Now: now
   Featured: featured
   About: about
   Archive: archives
