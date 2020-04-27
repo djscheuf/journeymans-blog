@@ -15,7 +15,7 @@ categories:
 date: 2017-02-07 15:30:00
 ---
 
-'Roll Initiative!’ – A common call to arms in Dungeons and Dragons. I will freely admit; I still play on occasion with some of my college buddies. But this week during some quiet reflection a strange idea dawned on me. You could use DnD to practice a different forms of leadership.
+'Roll Initiative!’ – A common call to arms in Dungeons and Dragons. I will freely admit; I still play on occasion with some of my college buddies. But this week during some quiet reflection a strange idea dawned on me. You could use DnD to practice a different form of leadership.
 
 Now of course, pretending to be someone else is part and parcel for role-playing in general. But I specifically thought in terms of business. If you do a quick search for Software Development managers, you can find a variety of ideas on the topic. These include books like [Peopleware](https://www.amazon.com/Peopleware-Productive-Projects-Teams-Second/dp/0932633439). There are also in-depth discussions on topics such as ‘Sovereign Software Development’[[here](https://top.fse.guru/the-civilized-alternative-to-agile-tribalism-4c60d01428c0#.3m4tg0ivh) and [here](https://medium.com/@bryanedds/an-unexpected-inquisition-c4776bdedbb8#.ayu1jea40)]. Nearly all mention the short-comings of management practices. Nearly all offer various ways around it. One weakness that I’ve found mentioned a handful of times is the way in which a manager leads their team.
 
