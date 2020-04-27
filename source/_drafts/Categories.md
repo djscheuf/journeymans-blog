@@ -15,6 +15,7 @@ For Future use and reference
     - Facilitation
 * Software Development
   - agile
+  - Architecture
   - Best Practices
   - Lessons Learned
   - Quality
