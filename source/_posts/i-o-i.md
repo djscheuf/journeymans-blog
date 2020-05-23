@@ -1,5 +1,5 @@
 ---
-title: I O I
+title: Input, Output, and Invest
 categories:
  - Personal Development
  - Tools
@@ -10,7 +10,7 @@ tags:
  - time-management
  - lead-yourself
 photos:
-  - img/post_img/ocean_thought.jpg
+  - img/post_img/money_and_time.jpg
 date: 2020-05-25 09:00:00
 ---
 
@@ -36,4 +36,4 @@ So the second week, I applied the same rule, but this time with 3 categories. An
 
 Since implementing this weekly practice, I've invested about 18 hours in total in the ways I know to be valuable to sustained excellence. I am more relaxed with my Output cadence. I am learning at a consistent pace again, no longer having book sit idle on the shelf for weeks. And I've got a new idea to try for my Evernote system, which is showing some promise. All this from applying a handful of concepts about time, budgeting, and a sense of urgency from the birth of a new child.
 
-I hope this series has offered you some new tools to consider, and perhaps even to use. For my part, I have had such success from the I O I practice that I am adopting it as a core habit. Having the category names and declaring the intent to spend track-able units in them has really improved my daily work. In a sense the interest is already starting to compound, wouldn't you say?
+I hope this series has offered you some new tools to consider, and perhaps even to use. For my part, I have had such success from the Input-Output-Invest, or I O I, practice that I am adopting it as a core habit. Having the category names and declaring the intent to spend track-able units in them has really improved my daily work. In a sense the interest is already starting to compound, wouldn't you say?
