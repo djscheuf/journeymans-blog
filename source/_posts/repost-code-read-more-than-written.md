@@ -14,11 +14,11 @@ photos:
  - img/post_img/code_wall.jpg
 ---
 
-Back in 2016, when I was a young programmer, I stumbled into Python. I still have some affection for the language, but I haven't gotten to use it beyond hobby projects yet. While I may have just stumbled on it, I stuck with it because the very nature of the language, it's syntax captivated me. There was a certain elegant simplicity which I hadn't witnessed before. And it was in such a mood that I read [PEP 8](https://www.python.org/dev/peps/pep-0008/), and Guido's insight struck home.
+Back in 2016, when I was a young programmer, I stumbled into Python. I still have some affection for the language, but I haven't gotten to use it beyond hobby projects yet. While I may have just stumbled on it, I stuck with it because the very nature of the language. It's syntax captivated me. There was a certain elegant simplicity which I hadn't witnessed before. And it was in such a mood that I read [PEP 8](https://www.python.org/dev/peps/pep-0008/), and Guido's insight struck home.
 
 Code is read more often than it is written.
 
-At the time I was on vacation, but I began furiously scribbling notes, which I eventually posted. My intent then, was to share my 'discoveries' with anyone who'd listen. The goal then, is the same as it is now: Give something of value to our community. While my personal situation might keep me from creating new content for a while, I still mean to give something of value. So I'll be re-posting my best content to continue to deliver value.
+At the time I was on vacation, but I began furiously scribbling notes, which I eventually posted. My intent then, was to share my 'discoveries' with anyone who'd listen. The goal then was the same as it is now: Give something of value to our community. While my personal situation might keep me from creating new content for a while, I still mean to give something of value. So I'll be re-posting my best content. Just reposting, of cource, isn't going to drive that value, but please stay tuned! I've expanded a bit on each of these posts as my experiences have deepened. Now, without further ado, 'Code is read more often than it is written'.
 
 ___
 
