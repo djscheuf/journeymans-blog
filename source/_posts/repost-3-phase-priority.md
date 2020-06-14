@@ -8,14 +8,14 @@ tags:
  - lists
  - priority
  - decisions
-date: 2020-06-08 09:00:00
+date: 2020-06-15 09:00:00
 photos: 
  - img/post_img/many_doors.jpg
 ---
 
-Last week, I explained that I would be reposting for this season because I couldn't generate new content at the necessary speed. I do not intent to waste this opportunity to create novel value. So with the material I have, I am assembling these reposts into something of a 'guided path'. My hope is share these tools or ideas with the reader in an order which encourages reflection and growth. As such I charted a path with these reposts starting firmly in the technical skills, focusing on ideas and techniques for improved work. The next step will be offering other avenues for career development. But that's enough about the future. 
+[Last week, I explained that I would be reposting for this season](/2020/06/09/repost-code-read-more-than-written/) because I couldn't generate new content at the necessary speed. I do not intent to waste this opportunity to create novel value. So with the material I have, I am assembling these reposts into something of a 'guided path'. My hope is share these tools or ideas with the reader in an order which encourages reflection and growth. As such I charted a path with these reposts starting firmly in the technical skills, focusing on ideas and techniques for improved work. The next step will be offering other avenues for career development. But that's enough about the future. 
 
-Let's jump back into the past a bit, just a little over a year. I shared a post on a novel means of choosing what to work on. Well, novel for me at least. While the example called for 3 axes of evaluation, I have since used this practice with only 2 driving axes. The resulting conversation with my wife left us both feeling heard, and confident that our new plan of action would get us the results we wanted. That instance revealed a novel characteristic about the tool, which I may post on later. But nothing substitutes for real experience. So without further ado, may I re-present '3 Phase Prioritization'.
+Let's jump back into the past a bit, just about one year in fact. I shared a post on a novel means of prioritizing what to work on. Well, novel for me at least. While the example called for 3 axes of evaluation, I have since used this practice with only 2 driving axes. The resulting conversation with my wife left us both feeling heard, and confident that our new plan of action would get us the results we wanted. That instance revealed a novel characteristic about the tool, which I may post on later. But nothing substitutes for real experience. So without further ado, may I re-present '3 Phase Prioritization'.
 ___
 
 
@@ -94,6 +94,6 @@ Naturally this breaks my recommendation from earlier. The result of such a step-
 
 ___
 
-P.S. I added an element of visualization to this activity the last time I used it in a small group. We had two regular rank columns and a boolean column. Since the group was somewhat new to the practice, I simplified. The rank columns had values 1 thru 5, with 5 being the most ____ . Each task then got ranked on it's value in both columns. 
+P.S. I added an element of visualization to this activity the last time I used it in a small group. We had two regular rank columns and a boolean column. Since the group was somewhat new to the practice, I simplified. The rank columns had values 1 thru 5, with 5 being the most X . Each task then got ranked on it's value in both columns. 
 
 Seeing an opportunity to improve the conversation, I created a regular Cartesian graph for the two rank columns, to plot where each of the tasks/ideas that we came up with belonged. That visually represented the tasks with the greatest probable ROI, allowing us to start the conversation there, and move around the graph to talk about tasks in a meaningful order. For each task, the first question in the discussion was whether it met the boolean criteria or not. If it didn't, we moved it to a separate pile for later discussion. I would strongly encourage you to try this visualization especially if your group is new to the practice!
