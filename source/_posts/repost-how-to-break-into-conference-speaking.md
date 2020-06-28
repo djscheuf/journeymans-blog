@@ -9,7 +9,7 @@ tags:
   - presentations
   - talks
   - repost
-date: 2020-06-30 09:00:00
+date: 2020-06-29 09:00:00
 photos:
   - img/post_img/empty_auditorium.jpg
 ---
