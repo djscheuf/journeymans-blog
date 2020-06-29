@@ -14,7 +14,7 @@ photos:
   - img/post_img/empty_auditorium.jpg
 ---
 
-How that you've had some practice [taking tiny steps to build big results](/2020/06/23/repost-tiny-next-steps), let's consider a career growth project that might leverage your new skills. One way I have grown my career in recent years requires one to be able to face a very common fear: Public Speaking. Having practices for a few years now, I can say it gets easier with practice. But when I was starting I leaned on a deep knowledge of my content. It was something of a security blanket.
+Now that you've had some practice [taking tiny steps to build big results](/2020/06/23/repost-tiny-next-steps), let's consider a career growth project that might leverage your new skills. One way I have grown my career in recent years requires one to be able to face a very common fear: Public Speaking. Having practices for a few years now, I can say it gets easier with practice. But when I was starting I leaned on a deep knowledge of my content. It was something of a security blanket.
 
 I still use this process today, but I don't have to rely on it as much. I've had several talks that existed first and foremost as a talk, rather than emerging gradually from blog-posts. Never the less, if you'd like to cultivate your influence, or hone your own thinking, I'd strongly encourage you to generate content. Write it down! The written word is easily spread, and the process of writing refines the author's thoughts. And as things go, a Blog post might be a tiny next step towards your next presentation. Be it to your team mates, to your boss, or to a crowd of strangers.
 
