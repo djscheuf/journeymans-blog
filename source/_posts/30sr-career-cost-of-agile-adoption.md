@@ -8,7 +8,7 @@ tags:
  - agile
  - journalling
  - leadership
-date: 2020-07-01 09:00:00
+date: 2020-06-30 09:00:00
 photos: 
  - img/post_img/office_politics.jpg
 ---
