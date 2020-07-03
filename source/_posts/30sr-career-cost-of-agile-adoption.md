@@ -8,12 +8,14 @@ tags:
   - agile
   - journalling
   - leadership
-date: 2020-07-02 09:00:00
+date: 2020-07-08 09:00:00
 photos:
   - img/post_img/office_politics.jpg
 ---
 
-I recently watched [the first talk](https://youtu.be/6_L_5pmGGS4) from [the virtual Agile Shift Conference](https://theagileshift.com/). I think I watched this at like 2AM, while rocking my newest child to sleep. But one of the ideas was clear, and tangible enough that even at that wee hour I was able to grasp it. I even applied it right then: the 30-second review.
+I recently watched [the first talk](https://youtu.be/6_L_5pmGGS4) from [the virtual Agile Shift Conference](https://theagileshift.com/). If you didn't know, the entire conference went virtual and concluded just last week. They've posted the videos, which I've found very informative! 
+
+Back on topic, I think I watched this talk at like 2AM, while rocking my newest child to sleep. But one of the ideas was clear, and tangible enough that even at that wee hour I was able to grasp it. I even applied it right then: the 30-second review.
 
 The 30-second review is what it sounds like. Take 30 seconds after you finished [consuming an input](/2020/05/25/i-o-i/), to jot down some notes. Your personal takeaways don't have to be big, just what stood out to you. [Derek Sivers does something similar with the books he reads](https://sivers.org/book). As a result, I thought sharing my 30-second reviews might be a quick way to benefit the community. We'll each pull something different out of a given talk, so here's mine.
 
