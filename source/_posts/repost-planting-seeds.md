@@ -9,7 +9,7 @@ tags:
   - training
   - coaching
   - repost
-date: 2020-07-18 09:00:00
+date: 2020-07-27 09:00:00
 photos:
   - img/post_img/seeds_in_hand.jpg
 ---
