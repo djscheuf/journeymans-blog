@@ -12,7 +12,7 @@ tags:
   - growth
   - stoic
   - repost
-date: 2019-03-11 09:00:00
+date: 2020-08-10 09:00:00
 photos:
   - https://www.frasesparaoface.com/wp-content/uploads/2014/07/change-your-perspective.jpg
 ---
@@ -39,4 +39,4 @@ Whether or not you believe as I do, this same pattern of thought can be adopted.
 
 ___
 
-Since I first chose to change how I talked about my challenges, I have found this same concept cropping up all over the place, and other thought leaders. The Stoics are perhaps the easiest group to point to, and I have found some of their writing useful in approaching life's challenges. They were a bunch of very sharp dudes! Recently I've been listening to an audio-book version of 'The Obstacle is the way'. One particularly potent idea I found in the book was this: 'That which blocks the way, becomes the way'. It is a choice of perspective, even more powerful than seeing 'problems' as 'challenges'. It is an invitation to employ all your creativity, and skills in conquering whatever life throws at you, but using the challenge as the means of overcoming. I am still learning to apply this, but it just shows how truly powerful your choice is. Engage with your thoughts, on your terms! And see what potential lies before you!
+Since I first chose to change how I talked about my challenges, I have found this same concept cropping up all over the place, and other thought leaders. The Stoics are perhaps the easiest group to point to, and I have found some of their writing useful in approaching life's challenges. They were a bunch of very sharp dudes! Recently I've been listening to an audio-book version of ['The Obstacle is the way'](https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358). One particularly potent idea I found in the book was this: 'That which blocks the way, becomes the way'. It is a choice of perspective, even more powerful than seeing 'problems' as 'challenges'. It is an invitation to employ all your creativity, and skills in conquering whatever life throws at you, but using the challenge as the means of overcoming. I am still learning to apply this, but it just shows how truly powerful your choice is. Engage with your thoughts, on your terms! And see what potential lies before you!
