@@ -1,5 +1,5 @@
 ---
-title: Things I learned from giving up my phone for 1 day
+title: Repost - Things I learned from giving up my phone for 1 day
 categories:
   - Personal Development
   - Lessons Learned
@@ -8,9 +8,20 @@ tags:
   - entreleadership
   - challenge
   - growth
-date: 2019-03-18 09:00:00
+  - repost
+date: 2020-08-17 09:00:00
 photos:
   - img/post_img/charging_phone.jpg
+---
+
+These last few months I revisited some past posts. I took the time to expanded on the lessons I had learned in the area since writing them. These visits took a guided path through growth areas I experience in the last couple years. I found that revisiting the posts helped me to articulate what I have learned since or by applying that lesson. I hope it has helped the reader as well.
+
+This will be the last revisit, and it builds off of [the introspection discussed last week](/2020/08/10/repost-how-do-you-engage-with-your-thoughts/). In our modern world, it is _really_ hard to get away, to just figure out how you feel. That little black box in your pocket provides you ready access to more content that you could consume in a lifetime, and it is just so enticing!
+
+I was first introduced to the concept of a 'phone-free' weekend by EntreLeadership ,during one of their 10 Day Challenges in 2018. It was weird, and uncomfortable.And it was wonderful, and it was quiet. I ran into the concept again as part of leadership training with Improving. This time the aim was to 'lose the electronic leash'. It was easier the second time, and similarly helpful.
+
+On both weekends, I found I had more time for the things that matters: my children, my wife, my home. I had more time to actually think. Finally subjected to quiet, my own thoughts can forth in a torrent. I had a number of ideas, and epiphanies while sitting thinking, without the enticement to watch videos online. If you've never tried one of these 'phone-free' weekends before, here's what I experience on my first one:
+
 ---
 
 I participated in EntreLeadership's _'12 Days of Intentionality'_ challenge for the last 2 weeks. The last task of that challenge is to share what I learned with some one. I've already done this on a personal basis, but I thought a blog post would be good as well.
@@ -40,3 +51,7 @@ But in so doing, they took great care, setting me up to succeed. They built my c
 4. An Excellent Example of ['Setting others up to succeed'](/2019/01/12/setting-others-up-to-succeed/)
 
 To borrow their phrase, They intentionally designed their 'Intentionality' Challenge. So I wish to offer Kudos to the EntreLeadership team for a well-designed and instructive challenge series. I am eagerly awaiting their next: 'Influence'. Interested in joining the challenge? Go [here](https://is-tracking-link-api-prod.appspot.com/api/v1/click/6375256661950464/5251947050303488) for more information!
+
+---
+
+Having said all this, I would strong encourage the reader to try it out! You don't realize how much noise there is in our life until we cut out some of the sources. Whether it's a crowded email inbox, or an enticing little black box, it's almost imperceptible until it's gone. In it's absence you'll find much of the time you thought you'd lost. Spend it wisely. Spend it with the people who matter. And don't forget to spend some on you too! Take some time, get in your own head. Figure out what's going on in there! And then, plan something better!
