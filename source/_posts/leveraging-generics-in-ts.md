@@ -5,6 +5,11 @@ photos:
 categories:
   - Software Development
   - agile
+tags:
+  - angular
+  - typescript
+  - generics
+  - investment
 date: 2020-09-07 09:00
 ---
 
