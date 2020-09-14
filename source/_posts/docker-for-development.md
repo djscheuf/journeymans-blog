@@ -1,7 +1,7 @@
 ---
 title: Docker for Development
 photos:
-  - img/post_img/docker_logo.png
+  - https://1000logos.net/wp-content/uploads/2017/07/Logo-Docker.jpg
 categories:
   - Software Development
   - Side Projects
