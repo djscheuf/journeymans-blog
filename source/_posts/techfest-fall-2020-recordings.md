@@ -34,7 +34,7 @@ Links:
 
 Example Retro Formats
 
-- [Retro on Motivators](/2019/05/20/encou-raging-ownership-in-your-retro/)
+- [Retro on Motivators](/2019/05/20/encouraging-ownership-in-your-retro/)
 - [Retro on Strengths Weaknesses and Fusions](/2019/01/19/strengths-weaknesses-fusions/)
 - More thoughts on the topic of [Retros](/tags/retrospective/)
 
