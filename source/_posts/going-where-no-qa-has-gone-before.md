@@ -5,11 +5,10 @@ tags:
   - behavior-driven development
   - development
   - quality
-  - software dev
   - TDD
   - test-driven development
-  - tool
   - tools
+  - testing
 url: 1489.html
 id: 1489
 categories:
@@ -18,7 +17,7 @@ categories:
 date: 2017-04-18 16:30:00
 ---
 
-As a developer having QA you can rely on is great! They are welcome friends helping us cultivate our precious software. But there are dark places which even a QA cannot shine a light. When your software has no interface, what can a QA do, but wish you luck? But what if there was a way for QAs to interact with otherwise UI-less software? Enter Cucumber, a tool that allows QA to shine a light in dark places. I rediscovered Cucumber, while researching test automation frameworks. Cucumber is a framework for Behavioral Driven Development. After experimenting for a time, I realized Cucumber opens a whole realm of possibilities. Cucumber encourages the expression of program actions in the human tongue. With a proper translation mechanism, Cucumber could act as a mediator between QA and the UI-less software.  Cucumber translates the human tongue into functions through the Gherkin language. For example, a tester would define a test case like this: 
+As a developer having QA you can rely on is great! They are welcome friends helping us cultivate our precious software. But there are dark places which even a QA cannot shine a light. When your software has no interface, what can a QA do, but wish you luck? But what if there was a way for QAs to interact with otherwise UI-less software? Enter Cucumber, a tool that allows QA to shine a light in dark places. I rediscovered Cucumber, while researching test automation frameworks. Cucumber is a framework for Behavioral Driven Development. After experimenting for a time, I realized Cucumber opens a whole realm of possibilities. Cucumber encourages the expression of program actions in the human tongue. With a proper translation mechanism, Cucumber could act as a mediator between QA and the UI-less software.  Cucumber translates the human tongue into functions through the Gherkin language. For example, a tester would define a test case like this:
 
 > _**Scenario: Messages are saved until the consumer arrives**_ _Given the queues are empty_ _And I publish a message to the queue with ‘SomeDetails’_ _When Alice subscribes to the queue_ _Then Alice should receive a message with ‘SomeDetails’_
 
