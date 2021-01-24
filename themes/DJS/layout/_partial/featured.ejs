@@ -12,14 +12,12 @@
 <div class="footer-widgets">
     <div class="row inside-wrapper">
         <div class="col-1-5">
-            <aside>
-                <h1 class="widget-title">Featured Articles</h1>
-            </aside>
+                <span><b>Featured Articles</b></span>
         </div>
         <% for(var i = 0; i < idxs.length; i++){ %>
             <div class="col-1-5">
                 <aside>
-                <h1 class="widget-title"><%= config.featured.articles[idxs[i]].title %></h1>
+                <p><a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank"><b><%= config.featured.articles[idxs[i]].title %></b></a></p>
                 <a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank"> Read More</a>
                 </aside>
             </div>
