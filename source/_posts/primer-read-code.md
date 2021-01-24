@@ -10,7 +10,7 @@ tags:
   - basics
 date: 2021-01-27 09:00:00
 photos:
-  - img/post_img/many_doors.jpg
+  - img/post_img/code_wall.jpg
 ---
 
 Early last year, my bother had an odd request for me. He's a Patent Lawyer and he wanted pointers on how to read source code for an application. Now any developer worth his salt would agree, that is a tall order. It takes a long while to develop the skill to read most programming languages, just like in early childhood it takes a few years to get the hang of reading a normal human language.
