@@ -1,9 +1,21 @@
 <!-- Featured-widgets -->
 <% if(config.featured && config.featured.active) { %>
-<% var idxs = [0,1,2]; %>
+<% 
+    var rand = function(){
+        return Math.floor(
+            Math.random()
+            * config.featured.articles.length
+        );
+    }
+    var idxs = [rand(), rand(), rand()];
+%>
 <div class="footer-widgets">
     <div class="row inside-wrapper">
-        <div class="col-1-5"></div>
+        <div class="col-1-5">
+            <aside>
+                <h1 class="widget-title">Featured Articles</h1>
+            </aside>
+        </div>
         <% for(var i = 0; i < idxs.length; i++){ %>
             <div class="col-1-5">
                 <aside>

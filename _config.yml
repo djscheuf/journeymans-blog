@@ -127,11 +127,20 @@ featured:
   active: true
   articles:
     - id: 0
-      title: Code is rend
-      link: /2021/01/13/upon-review/
+      title: Code is read more often than it is written
+      link: /2016/12/27/Code-is-read-more-often-than-it-is-written/
     - id: 1
-      title: Code is rend2
-      link: /2021/01/13/upon-review/
+      title: Models are not Reality
+      link: /2019/12/09/models-are-not-reality/
     - id: 2
-      title: Code is rend3
-      link: /2021/01/13/upon-review/
+      title: Mere Exposure
+      link: /2019/11/18/mere-exposure/
+    - id: 3
+      title: An Angular Preview Mode
+      link: /2020/01/06/angular-preview-mode/
+    - id: 4
+      title: Dungeons and Dragons and Leadership Training?
+      link: /2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/
+    - id: 5
+      title: Opportunity in Crisis
+      link: /2020/03/30/oppurtunity-in-crisis/
