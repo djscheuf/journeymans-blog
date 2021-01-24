@@ -7,7 +7,15 @@
             * config.featured.articles.length
         );
     }
-    var idxs = [rand(), rand(), rand()];
+
+    var idxs = [];
+    var temp = rand();
+    while(idxs.length < 3){
+        if(idxs.indexOf(temp) === -1){
+            idxs.push(temp);
+        }
+        temp = rand();
+    }
 %>
 <div class="footer-widgets">
     <div class="row inside-wrapper">
