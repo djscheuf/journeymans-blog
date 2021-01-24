@@ -1,0 +1,18 @@
+<!-- Featured-widgets -->
+<% if(config.featured && config.featured.active) { %>
+<% var idxs = [0,1,2]; %>
+<div class="footer-widgets">
+    <div class="row inside-wrapper">
+        <div class="col-1-5"></div>
+        <% for(var i = 0; i < idxs.length; i++){ %>
+            <div class="col-1-5">
+                <aside>
+                <h1 class="widget-title"><%= config.featured.articles[idxs[i]].title %></h1>
+                <a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank"> Read More</a>
+                </aside>
+            </div>
+          <% } %>
+        <div class="col-1-5"></div>
+    </div>
+  </div>
+<%}%>

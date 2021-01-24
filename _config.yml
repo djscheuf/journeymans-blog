@@ -4,7 +4,7 @@
 
 # Site
 title: A Journeyman's Travels
-? subtitle
+subtitle:
 # description: The blog of a journeyman software engineer.
 keywords: software, engineer, journeyman, scheufler, consultant
 author: Daniel Scheufler
@@ -16,7 +16,7 @@ timezone: America/Chicago
 url: https://daniel.scheufler.io
 root: /
 permalink: :year/:month/:day/:title/
-? permalink_defaults
+permalink_defaults:
 
 # Directory
 source_dir: source
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-? skip_render
+skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,7 +42,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  ? tab_replace
+  tab_replace:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -58,8 +58,8 @@ sitemap:
 
 # Category & Tag
 default_category: Software Development
-? category_map
-? tag_map
+category_map:
+tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -84,7 +84,6 @@ theme: DJS
 deploy:
   type: git
   repo: github.com/djscheuf/journeymans-blog
-
 
 #Custom Setting Start
 
@@ -112,7 +111,6 @@ nav:
   Featured: featured
   About: about
   Archive: archives
-  
 
 widget:
   title: A Journeyman's Travels
@@ -124,3 +122,16 @@ widget:
 # banner_large: img/header_img/home-bg-2-dark.png
 logo: /img/logo/star_catcher_mountains.png
 favicon: /img/logo/star_catcher_mountainsx96.png
+
+featured:
+  active: true
+  articles:
+    - id: 0
+      title: Code is rend
+      link: /2021/01/13/upon-review/
+    - id: 1
+      title: Code is rend2
+      link: /2021/01/13/upon-review/
+    - id: 2
+      title: Code is rend3
+      link: /2021/01/13/upon-review/
