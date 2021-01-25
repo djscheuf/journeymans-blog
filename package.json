@@ -11,7 +11,7 @@
     "start": "hexo server -p $PORT"
   },
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.7.1"
   },
   "dependencies": {
     "hexo": "^3.2.0",

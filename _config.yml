@@ -4,7 +4,7 @@
 
 # Site
 title: A Journeyman's Travels
-? subtitle
+subtitle:
 # description: The blog of a journeyman software engineer.
 keywords: software, engineer, journeyman, scheufler, consultant
 author: Daniel Scheufler
@@ -16,7 +16,7 @@ timezone: America/Chicago
 url: https://daniel.scheufler.io
 root: /
 permalink: :year/:month/:day/:title/
-? permalink_defaults
+permalink_defaults:
 
 # Directory
 source_dir: source
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-? skip_render
+skip_render:
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,7 +42,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  ? tab_replace
+  tab_replace:
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -58,8 +58,8 @@ sitemap:
 
 # Category & Tag
 default_category: Software Development
-? category_map
-? tag_map
+category_map:
+tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -85,7 +85,6 @@ deploy:
   type: git
   repo: github.com/djscheuf/journeymans-blog
 
-
 #Custom Setting Start
 
 feed:
@@ -109,10 +108,8 @@ social:
 nav:
   Home: .
   Now: now
-  Featured: featured
   About: about
   Archive: archives
-  
 
 widget:
   title: A Journeyman's Travels
@@ -124,3 +121,37 @@ widget:
 # banner_large: img/header_img/home-bg-2-dark.png
 logo: /img/logo/star_catcher_mountains.png
 favicon: /img/logo/star_catcher_mountainsx96.png
+
+featured:
+  active: true
+  articles:
+    - id: 0
+      title: Code is read more often than it is written
+      link: /2016/12/27/Code-is-read-more-often-than-it-is-written/
+    - id: 1
+      title: Models are not Reality
+      link: /2019/12/09/models-are-not-reality/
+    - id: 2
+      title: Mere Exposure
+      link: /2019/11/18/mere-exposure/
+    - id: 3
+      title: An Angular Preview Mode
+      link: /2020/01/06/angular-preview-mode/
+    - id: 4
+      title: Dungeons and Dragons and Leadership Training?
+      link: /2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/
+    - id: 5
+      title: Opportunity in Crisis
+      link: /2020/03/30/oppurtunity-in-crisis/
+    - id: 6
+      title: The 2 Minute Rule
+      link: /2020/02/17/two-minute-rule/
+    - id: 7
+      title: A Developer's Best Friend
+      link: /2019/02/11/a-developers-best-friend/
+    - id: 8
+      title: Models are not Reality
+      link: /2019/12/09/models-are-not-reality/
+    - id: 9
+      title: Just enough here to make something wonderful
+      link: /2020/01/13/just-enough-here-to-make-something/
