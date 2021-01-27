@@ -13,7 +13,7 @@ photos:
   - img/post_img/code_wall.jpg
 ---
 
-Early last year, my bother had an odd request for me. He's a Patent Lawyer and he wanted pointers on how to read source code for an application. Now any developer worth his salt would agree, that is a tall order. It takes a long while to develop the skill to read most programming languages, just like in early childhood it takes a few years to get the hang of reading a normal human language.
+Early last year, my brother had an odd request for me. He's a Patent Lawyer and he wanted pointers on how to read source code for an application. Now any developer worth his salt would agree, that is a tall order. It takes a long while to develop the skill to read most programming languages, just like in early childhood it takes a few years to get the hang of reading a normal human language.
 
 But it sounded like a fun challenge so I gave it a shot. Naturally I included some caveats, but the results are a good place to start. So I would like to share my Primer on 'How to Read Source Code' for a non-developer. But first, the caveats:
 
@@ -30,7 +30,7 @@ Often times Source code comes with comments. These are usually written in the de
 
 ### 1. Methods
 
-Methods encapsulate a set of instructions for the computer to execute. 'Calling' a method will cause the instructions to be executed. Methods may take some variable information which may change the affect of the instructions in the method. Information passed into a Method is called a parameter. These parameters may even change the behavior of the method. Method calling will appear something like this:
+[Methods](https://en.wikipedia.org/wiki/Method_(computer_programming)) encapsulate a set of instructions for the computer to execute. 'Calling' a method will cause the instructions to be executed. Methods may take some variable information which may change the affect of the instructions in the method. Information passed into a Method is called a parameter. These parameters may even change the behavior of the method. Method calling will appear something like this:
 
 ```csharp
 howManyThings = 3;
@@ -47,7 +47,7 @@ doThisRepeatedlyOnASmallerAndSmallerWindow(someList, startPosition, endPosition)
 }
 ```
 
-These are called recursive, and will make the above instruction very difficult to follow. Usually they are used on a large set of information and each time it is called the set of information considered is reduced.
+These are called [recursive](https://en.wikipedia.org/wiki/Recursion), and will make the above instruction very difficult to follow. Usually they are used on a large set of information and each time it is called the set of information considered is reduced.
 
 ### 2. Loops
 
