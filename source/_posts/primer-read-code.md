@@ -120,7 +120,7 @@ This structure can be loosely interpreted as a terse sentence, if written well. 
 
 ## Reading Instructions:
 
-With is knowledge of common patterns, you get a rudimentary grasp of what the source code instructions are telling the computer to do. There are numerous caveats and shortcomings in this list, but if you apply this knowledge along the following lines you can improve your understanding of the intent of the source code.
+With this knowledge of common patterns, you get a rudimentary grasp of what the source code instructions are telling the computer to do. There are numerous caveats and shortcomings in this list, but if you apply this knowledge along the following lines you can improve your understanding of the intent of the source code.
 
 1. Find the entry point of the application.
 
