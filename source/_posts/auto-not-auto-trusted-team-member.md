@@ -6,7 +6,7 @@ categories:
 tags:
  - automation
  - testing
- - quality assurance
+ - quality-assurance
  - software development
 date: 2021-07-19 09:00:00
 photos: 

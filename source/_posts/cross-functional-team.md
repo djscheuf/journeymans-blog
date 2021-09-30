@@ -15,7 +15,7 @@ photos:
 
 > Scrum Teams are cross-functional, meaning the members have all the skills necessary to create value each Sprint. They are also self-managing, meaning they internally decide who does what, when, and how. - The Scrum Guide
 
-Teams in Scrum are supposed to be cross-functional, and self-organizing. Consider a typical development team. There usually 4 or so big roles: Developer, Quality Assurance or Testing, and Business Analyst/Interface, and if you are lucky DevOps. Or if we want to boil away the titles:
+Teams in Scrum are supposed to be cross-functional, and self-organizing. Consider a typical development team. There usually 4 or so big roles: Developer, quality-assurance or Testing, and Business Analyst/Interface, and if you are lucky DevOps. Or if we want to boil away the titles:
 
 - Roles for Doing the Work,
 - Roles for Ensuring the Work is Well Done,
