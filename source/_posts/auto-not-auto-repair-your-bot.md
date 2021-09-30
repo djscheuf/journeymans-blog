@@ -6,8 +6,8 @@ categories:
 tags:
  - automation
  - testing
- - quality-assurance
- - software development
+ - quality
+ 
 date: 2021-09-28 09:00:00
 photos: 
  - img/post_img/auto_not_auto.jpg

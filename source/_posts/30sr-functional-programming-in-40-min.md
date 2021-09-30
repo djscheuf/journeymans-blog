@@ -5,7 +5,7 @@ categories:
   - Lessons Learned
 tags:
   - 30sec-review
-  - functional programming
+  - functional-programming
   - goto
 date: 2020-08-24 09:00:00
 photos:
