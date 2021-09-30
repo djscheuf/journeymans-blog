@@ -13,6 +13,9 @@ photos:
  - img/post_img/auto_not_auto.jpg
 ---
 
+> This post was part of a series I wrote for Improving and originally posted on the [Improving's Thoughts Page](https://improving.com/thoughts/automation-data).
+---
+
 In the quest to improve our confidence in our software, we have turned to automated testing frameworks. [We’ve built a team](https://improving.com/thoughts/to-automate-or-not-to-automate-getting-started). We set them to work on developing a supporting library, and conducting their first few tests. Our next milestones will bring a test that will likely need a babysitter into its first service as a value-added team member, where once it produced data, we will harness it to produce information.
 
 {Image or set of images showing just a Table of many numbers -> Check Mark / X}[Or perhaps something like https://unsplash.com/photos/JKUTrJ4vK00 or even https://pixabay.com/photos/chart-graph-finance-financial-data-2785902/]

@@ -13,6 +13,9 @@ photos:
  - img/post_img/auto_not_auto.jpg
 ---
 
+> This post was part of a series I wrote for Improving and originally posted on the [Improving's Thoughts Page](https://improving.com/thoughts/to-automate-or-not-to-automate-getting-started).
+---
+
 As projects grow, many reach a point of looking into automation. To Automate or not to Automate, that is the question. Due to its many benefits, most choose to start automating. But where do you start? Start with your goal. Pulling from [the previous discussion]( https://improving.com/thoughts/to-automate-or-not-to-automate), I propose that our goal in automating is to reduce the overall cost of increasing our confidence in a release of our software. But developing a new organizational capability takes time and resources. So our first task is to determine what resources we'll need. When starting a new automation effort, the project is bound to hit some snags. Simple things like how to share ownership of the automation code amongst a team of QAs can trip up infant efforts. Whether its version control, or debugging a broken script, many of the pitfalls you run into when starting an automation effort are just the mechanics of effective enterprise development. But guess what? You already have team members talented in those mechanics; your developers!
 
 Fundamentally, creating an automation system is all about programming. And it is programming which you really want your QAs to own at the end of the day. After all, you really don't want the same person who wrote a feature also testing it for you. So starting up an automation process is going to ask your QAs to operate in a new space. And if you' re asking your QA to operate in a programming space, why wouldn't you give him one of your best tutors? Your QA needs to learn to program in order to automate.

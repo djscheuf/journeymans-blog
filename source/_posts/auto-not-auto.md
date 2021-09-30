@@ -12,6 +12,9 @@ date: 2021-05-03 09:00:00
 photos: 
  - img/post_img/auto_not_auto.jpg
 ---
+
+> This post was part of a series I wrote for Improving and originally posted on the [Improving's Thoughts Page](https://improving.com/thoughts/automation-data).
+---
 # First Principles 
 
 The earliest science-fiction novels are littered with examples of machines which lift the load of work off the human back, providing increased ease and great rejoicing... until those same machines suddenly decide they'd like to be the ones in charge. Just like our fictional robot overlords, Automated Software Testing tools promise to increase our productivity. Tales abound of benign automated software testing systems turning on their keepers. And in the process, they bog entire projects down in the chaos. This gives rise to some very reasonable questions: Should I even automate my testing? I have everything I need right now with manual testing, so why take the risk? Automation is a broad subject. It promises many efficiencies and radical gains in productivity. But like Lean and agile before it, the industry is full of horror stories of Automation gone awry. So to answer whether you should automate your tests (hint: you should), we must look deeper. 

@@ -13,6 +13,9 @@ photos:
  - img/post_img/auto_not_auto.jpg
 ---
 
+> This post was part of a series I wrote for Improving and originally posted on the [Improving's Thoughts Page](https://improving.com/thoughts/automation-trust-changes-everything).
+---
+
 It is time. The rest of your team has heard so much about this new automation, and now it is time for them to meet their newest team member. And just like adopting a pet, it is also time for all the team members to start contributing to its upkeep. Naturally, the members of your MVP team will be chief stewards. They know the automation suite best. So, as you introduce new team members to it, they are a natural pick for the guide.
 
 {Pic of Jungle Guide; https://unsplash.com/photos/vGzmLshPjbc}
