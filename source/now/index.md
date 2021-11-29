@@ -1,7 +1,7 @@
 ---
 title: Now
 comments: false
-date: 2020-04-26 19:33:00
+date: 2021-11-24 11:00:00
 header-img: "img/header_img/about-bg.png"
 ---
 
@@ -9,24 +9,26 @@ header-img: "img/header_img/about-bg.png"
 
 ---
 
->Written 26 April 2020
+>Written 24 November 2021
 
-Having worked form home for the last few weeks, I decided to invest a little in improving my blog. A [Mentor of mine](https://lassala.net/now/) added a 'Now' page to [his own blog recently](https://lassala.net/2020/03/18/what-have-you-been-up-to/), and I kind of liked the idea, so here's mine.
+## Yearly Planning
+Rounding the bend on the last month of the year, I have spent the last couple weeks reviewing and pondering last year's planning mechanisms. Some worked, some didn't. So naturally I am planning to pivot. Last year's plan was mostly a bunch of I want to Do X, selected at the beginning of the year, lumped into categories. Good news is that those that mattered, got done, and earlier than usual in the year, thru Q1 and Q2. But I felt like I lost steam in Q3. So next year, I am pivotting away from a list of 'Do X' towards a set of 'Be Y-er' type goals, to serve as a decision making guide, so that each Quarter, I can select from those to make a discrete 'Do X' type improvement on. 
 
-Even though I've been working from home, I'm trying to keep active where I can. Whether through projects, playing with my sons, or just taking a walk. The later I try to do daily. I find getting away from my desk helps keep me calmer. When I get back, I nearly always find I am faster at my work, that it flows more easily.
+## Client Work
+I started the year with a different client than I am working with now. And I feel like I have just recently started getting my bearings at this client. It is a much wider reaching goal than previous, so it will serve as an excellent challenge and application of some of the skills I have and some I am still developing. Moreover, I am getting to work with a good team, lead by a User Group Leader I had met and worked with in years prior. (Hint: See NHDNUG). 
 
-Among the most meaningful projects I've undertaken during the quarantine was a sermon series on Prayer. I've been a leader in my church's youth group for a while. But when everyone suddenly had to stay home, my particular gifting became very useful. I usually the Tech guy, but I've been polishing my speaker skills for a couple years now. The series concluded last week, and several students told me it helped. I couldn't be more pleased!
+All in all, the role started as leading up Front End Development efforts across several times using React and Typescript. And has since morphed into stewarding overall Process Quality, taking a lead role in QA, Automation, Front End Dev, and even some efforts in the agile transformation. It has been great fun! Among the new things I am learning, I am getting exposure to the realm of Data Science and Engineering and gaining a new found respect for the fields. I look forward to more growth in the area in the future, especially as we being to operationalize some of the products!
 
-On the homefront, Ana and I have leveraged the time, and some recent windfalls to invest in the house. Mostly small touches, like getting a second box lamp to balance the Master Bedroom's decor. We're taking time to intentionally invest in our relationship, and in the spaces we share. I can't quite put it to words, but I can feel the impact as a tension relieved. Oh! We're expecting our third very soon! I'll be father to two sons and a daughter! I'm very excited!
+## Reading
+One of my goals for the year was to significantly increase my reading. And I have made good headway there. Both in pleasure and development reading I have success! Recently I have been reading:
+- [The Gifts of Imperfection](https://brenebrown.com/book/the-gifts-of-imperfection/) by Brene Brown
+- [Agile Conversations](https://agileconversations.com/) by Douglass Squirrel and Jeffrey Fredrick
 
-As for projects at home, I'm currently building a coffee table. While the function will be nice, this piece has special significance for me. Have you ever read ['Something from Nothing' by Pheobe Gilman](https://www.amazon.com/dp/1443119466?tag=duckduckgo-d-20&linkCode=osi&th=1&psc=1)? It's built from pieces of a project my mother built way back when! To top that, I was able to have my son help me finish it too! 
+The Gifts book was rather challenging emotionally, but provides some much needed framework and language for processing some of the frustrations I have experienced this year. As a result of my current reading, I have gained the language to have several deeper and more intimate conversations with my wife, as well as own some of my experiences more fully. I feel more whole, and less need to hide or perfect. It really is a relief.
 
-Speaking of investments, _(no, not the money kind!)_ I'm pleased to see several paying dividends recently. I mentioned I have been polishing my speaker skills, and I have an exciting opportuntity this week, to speak at an Improving Virtual Lunch and Learn. I'll be speaking on one of my favorite topics 'Effective Meetings'. I am eager to see how this round of improvements and tweaks play out. Given the season this talk is in, I've added several talking points on 'Being Human', which I hope will add to the personal effectiveness of those who apply the discussed tools.
+As for Agile Conversations, the book has been a BIG help to me. The core idea of the book is that most 'Agile Transformations' fail due to a lack of the organizational culture changing. You can paint on practices all day and hang any posters you want, but for an organization to change the people in it must change. The book highlights some fo the symptoms of surface level only changes, and offers numerous tools for self-reflection to help you improve the primary mechanism by which we can help people change: conversation. With my current client attempting such a transformation it has been incredibly helpful. Moreover, one of the ideas was so impactful to me that I am expandning on it for a Lunch and Learn coming soon!
 
-In a similar vein, I'm seeing returns on a set of bite-sized self-improvement exercises that I've assembled. I was inspired by the [10 Day Challenged by EntreLeadership](https://help.entreleadership.com/hc/en-us/sections/360003859151-Challenges). Synthesizing the Challenge format, as well as elements of my recent training with Improving, I created perhaps 5 different 'challenges'. I ran my first custom challenge back in December. But if I really want this tool grow and help the most people it can, I have to empower others to facilitate the challenges too. I spent time in February developing Facilitators guide to a couple. Just in time too!
+On the pleasure front, I have recently been enjoying entries from the Ember Wars by Richard Fox. I most recently chewed through his Terran Armor Corp series. So if you're interested in a SciFi Military Thriller, it might be up your alley.
 
-Given the season, I found a lot of people were in a kind of 'crisis' mode, worrying a lot about the future, while missing the opportunities in the day they were in. Trying to help, I decided to run the first draft of the Facilitator Guides with a couple willing Improvers. The first of those groups finished this week, with promising results. The second will be finishing at the end of next week, and I hope for similarly promising results. 
-
-This season has been full of learning experiences for me. Naturally, I am practicing on the Speaker front, and training up challenge facilitators has definitely honed my coaching skills. On the work front, my client team was reduced to two, leaving me the senior Improving on the project, and in the role of Engagement Manager. Without equivocation, this is a good opportunitiy for my career growth, and it is also a excellent challenge. 
-
-Around the same time, I was invited to the client's Architecture Review board. This too is opening new doors, and improving my understanding. Truth be told, I am learning a great deal from the others in that group, especially our brothers in operations. I have gained a new respect for [The Pheonix Project](https://www.amazon.com/dp/1942788290?tag=duckduckgo-d-20&linkCode=osi&th=1&psc=1), and I am grateful to be reading it again. Speaking of reading, I am also slowly chipping away at [Dare to Lead](https://www.amazon.com/Dare-Lead-Brave-Conversations-Hearts/dp/0399592520). The little I have read has been exceptionally timely, and very applicable. Definitely some God timing there. 
+## What's next?
+My goal at present is to bring the last month of 2021 to a smooth landing. I'm hoping to arm 2022Q1 planning more effectively based on my retrospectives for 2021. I'll be onboarding a new FrontEnd Developer for my client thru December and I am eager to get started. Finally I will be polishing [several talks for delivery in Early January, at THAT Conference!](/2021/11/22/that-conf-jan-2022/) Hope to see you there!
