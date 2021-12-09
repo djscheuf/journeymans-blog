@@ -8,7 +8,7 @@ tags:
  - leadership
 date: 2021-12-08 09:00:00
 photos: 
- - img/post_img/trail-markerhex.jpg
+ - img/post_img/trail-marker.jpg
 ---
 
 What is a 'team culture'? And why do some teams have a 'good' one while others have a 'bad' , even when they're in the same company!? What is it that make it so you can take most of the same people, stick them on a new team, and _not_ get the same team culture at the end!? How do we define that _'je ne se qua'_ that is the secret sauce for a good team culture?
