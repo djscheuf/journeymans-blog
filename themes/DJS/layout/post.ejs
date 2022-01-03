@@ -43,6 +43,20 @@ var isFullUrl = function(str) {
         </div>
       </article>
     </div>
+    <% if (page.comments !== undefined && page.comments) { %>
+      <section id="comments">
+        <div id="hyvor-talk-view"></div>
+        <script type="text/javascript">
+            var HYVOR_TALK_WEBSITE = '<%= config.hyvor_talk_id %>';
+            var HYVOR_TALK_CONFIG = {
+                url: '<%= page.permalink %>' || false,
+                id: '<%= page.path %>' || false,
+                authorEmail: 'daniel@scheufler.io'
+            }
+        </script>
+        <script type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+      </section>
+    <% } %>
     <!-- Pre or Next -->
     <div class="nav-links">
       <% if (page.prev) { %>
