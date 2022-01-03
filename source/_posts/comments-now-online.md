@@ -7,9 +7,9 @@ tags:
  - blog
  - dev-community
  - communication
-date: 2022-01-05 09:00:00
+date: 2022-01-03 09:00:00
 photos: 
- - img/post_img/many_doors.jpg
+ - img/post_img/discussion.jpg
 ---
 
 Late last year It came to my attention that there was some discussion around comments on my blog. More accurately, on the lack of said comments. When I moved my blog from [Wordpress][wordpress-site], over to a staticly generated [Hexo][first-hexo] blog, hosted by [Netlify][netlify], I did not implement a commenting system. The Wordpress site had only had a handful of comments. So I figured I'd delay adding the feature. [YAGNI][yagni], right? And I had some vague, mistaken, notions that if anybody _really_ wanted to comment on my blog or had some question, they'd use the [email link][email-me]. I know. I know. A somewhat silly, misguided expectation. But hey, I'm learning.
