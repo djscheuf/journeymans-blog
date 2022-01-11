@@ -29,7 +29,7 @@ So how does talking about how your weekend went have anything with productivity?
 
 If you want to nurture to trust the team can have in each other, help them to show who they are. Take those little opportunities to explore them as people. It could be in their hobbies, or the particular band they went to see in concert. The proverb goes 'Little and Often make much'. So help the team to build up to the grander levels of productivity. Make those consistent little investments in the connections and relationships. These will lay the foundation for the deeper trust that productivity will require.
 
-Take the time to turn towards your team mates. Recognize those flickers of real passion in their being. Don't forget that you can create those bids yourself intentionally! Invest incrementally in a stronger team. Oh! And of course, don't forget the value of doing this at home too!.
+Take the time to turn towards your team mates. Recognize those flickers of real passion in their being. Show genuine interest in their hoddies and in them. Don't forget that you can create those bids yourself intentionally! Toss out a couple bids about your own hobbies and interests too. Invest incrementally in a stronger team. Oh! And of course, don't forget the value of doing this at home too!.
 
 [emotional-bids]: https://www.gottman.com/blog/an-introduction-to-emotional-bids-and-trust/
 [dr-gottmann]: https://en.wikipedia.org/wiki/John_Gottman
