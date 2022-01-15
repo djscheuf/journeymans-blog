@@ -18,19 +18,25 @@
     }
 %>
 <div class="footer-widgets">
-    <div class="row inside-wrapper">
-        <div class="col-1-5">
-                <span><b>Featured Articles for you</b></span>
+    <div class="row inside-wrapper featured-row">
+        <div class="col-1-5 featured-col">
+                <aside><b>Featured Articles for you</b></aside>
         </div>
         <% for(var i = 0; i < idxs.length; i++){ %>
-            <div class="col-1-5">
-                <aside>
-                <p><a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank"><b><%= config.featured.articles[idxs[i]].title %></b></a></p>
-                <a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank"> Read More</a>
+            <div class="col-1-5 featured-col">
+                <aside class="link">
+                    <a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank">
+                        <p>
+                            <b><%= config.featured.articles[idxs[i]].title %></b>
+                        </p>
+                        <span>
+                            Read More
+                        </span>
+                    </a>
                 </aside>
             </div>
-          <% } %>
-        <div class="col-1-5"></div>
+        <% } %>
+        <div class="col-1-5 featured-col"></div>
     </div>
-  </div>
+</div>
 <%}%>

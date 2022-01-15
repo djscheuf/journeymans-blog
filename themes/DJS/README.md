@@ -1,4 +1,6 @@
-# hexo-theme-Daily
+# hexo-theme-DJS
+
+Based on Daily Theme. Heavily Modified.
 
 [![GitHub version](https://badge.fury.io/gh/GallenHu%2Fhexo-theme-Daily.svg)](https://badge.fury.io/gh/GallenHu%2Fhexo-theme-Daily)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)

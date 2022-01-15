@@ -1,0 +1,24 @@
+.footer-widgets{
+    .featured-row {
+        display: flex;
+        .featured-col {
+            display: flex;
+            align-self: center;
+    
+            aside {
+                align-self: center;
+                
+            }
+            .link {
+                border-radius: 0.25rem;
+                padding: 0.5rem;
+            }
+
+            .link:hover,
+            .link:focus {
+                background: $ivory-darker;
+            }
+        }
+    }
+    
+}
