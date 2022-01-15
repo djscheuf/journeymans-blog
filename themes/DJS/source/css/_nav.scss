@@ -28,6 +28,7 @@
     outline: none;
     opacity: 0.25;
   }
+
 }
 .header-inside {
   display: block;
@@ -89,4 +90,19 @@
 }
 .navbar ul li:hover:before {
   width: 100%;
+}
+
+// SKIP NAV Link Styles
+.skip-to-content {
+  background: #005a0350;
+  padding: .5rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  left: 7rem;
+  transform: translateY(-120%);
+  z-index: 5;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
 }
