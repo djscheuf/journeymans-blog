@@ -1,6 +1,6 @@
 
 ---
-title: Identity Proceeds Behavior
+title: Identity Precedes Behavior
 categories:
  - Professional Development
  - Leadership
@@ -32,7 +32,7 @@ The trick is to have those conversations about who we are. We need to actively d
 
 Per the Scrum Guide, the [Retrospective][scrum-guide-retro] is to plan ways to increase quality and effectiveness. Very often we limit ourselves to just the actions of this previous sprint, and those we could take to make the immediate next sprint better. What if you took one of those retros per quarter to talk about the team's culture? That would mean every 12 weeks or so, you'd be discussing how the _people_ on your team are working with each other. What kind of improvement could you see in the next quarter, if you could establish a common guidepost to build cultural alignment for respectful collaboration and productivity?
 
-A Culture is built on repeated, anticipated behaviors. And a Consistent behavior becomes a habit. New habits are more effectively build on new Identities. So Identity proceeds Behavior, which builds Culture. No matter where a culture starts, you can take steps to begin to build it intentionally. Eventually the team can openly discuss and verbalize the facets that the team wants in their culture. And once you have a guidepost, it can be used to help the team align themselves with the shared vision. All it takes to get started is to have the discussions about who we want to be, and find the behaviors that would stem from that.
+A Culture is built on repeated, anticipated behaviors. And a Consistent behavior becomes a habit. New habits are more effectively build on new Identities. So Identity precedes Behavior, which builds Culture. No matter where a culture starts, you can take steps to begin to build it intentionally. Eventually the team can openly discuss and verbalize the facets that the team wants in their culture. And once you have a guidepost, it can be used to help the team align themselves with the shared vision. All it takes to get started is to have the discussions about who we want to be, and find the behaviors that would stem from that.
 
 [ladder-inference]: https://youtu.be/BhKEXYX4JI8?t=1128
 [atomic-habits]: https://jamesclear.com/atomic-habits
