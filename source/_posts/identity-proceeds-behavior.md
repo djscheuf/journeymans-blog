@@ -41,4 +41,5 @@ A Culture is built on repeated, anticipated behaviors. And a Consistent behavior
 [engage-thoughts]: /2020/08/10/repost-how-do-you-engage-with-your-thoughts
 [define-habit]: https://www.merriam-webster.com/dictionary/habit
 [scrum-guide-retro]: https://scrumguides.org/scrum-guide.html#sprint-retrospective
-[eisenhouwer-square]: https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method
+[eisenhower-square]: https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method
+[seven-habits]: https://www.franklincovey.com/the-7-habits/
