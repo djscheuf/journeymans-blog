@@ -1,7 +1,7 @@
 ---
 title: Now
 comments: false
-date: 2022-02-12 17:00:00
+date: 2022-04-11 17:00:00
 header-img: "img/header_img/about-bg.png"
 ---
 
@@ -9,27 +9,22 @@ header-img: "img/header_img/about-bg.png"
 
 ---
 
->Written 12 February 2022
+>Written 11 April 2022
 
 ## Quarterly Planning
-When I started planning this year, I had tried to step away from discreet 'Do X' type goals towards more 'Become more X' type goals. It's only a couple months in, but this quarter's goal 'Intentional', has shown some real improvements. I have been somewhat successful in cultivating the kind of relationship I want with my children and my wife. The best example I have of this is was when my eldest son was sick recently. I came home to find him wrapped head to toe in blankets, in something like a nest on the couch. My wife had been working hard to make him comfortable. And a little later in the evening it came out that he had asked to be allowed to sleep downstairs. I did not think that a wise idea. But instead of rushing off to immediately 'correct' that idea, I paused, and was able to find a better way. One of the books I have been reading, the 7 Habits of Highly Effective People, suggested a very effective idea. Treat the other person's challenge, desire, whatever as though it were as important to you as the person is. With my son, that immeidately stilled my hand. And instead I sought a way to communicate my love, respect for, and care for my child. 
+This quarter is going to be a bit of a wild ride. I am still favoring more of the 'Be X' type goals, but the events coming up this quarter will be heavily impacting what will get done. 
 
-In the end, I approached it as a conversation. I asked him to share why he wanted to sleep on the couch. Turned out, he just didn't want to have to leave the blankets and walk on the cold floor, all the way to his bedroom. Since he was sick, that made sense. So I asked, 'if I carried you up, would that address your concern?' After he agreed, I aslo offered my concerns for him sleeping on the couch. And we, not just me, but we agreed that he would rather sleep upstairs, and I carried him up. May not seem like much, but that whole interaction represents a big win and a step in the direction I should like my relationship with my children to continue developing.
+First and foremost of those events, is the immiment arrival of twins for my wife and I. I expect to be taking considerable Paternity leave towards the middle of this year. So almost all of my work this quarter is done with the end of enabling the organizations and capacities I serve to continue while I go dark for a bit. 
 
-In another field of intentionality, I have been working to cultivate my ability to think, and to fashion liminal bridges between novel topics to improve understanding. I am, and likely will remain, a 'practical' focused guy. I want to know 'what does that look like' whenever I talk about a principle. But I have found myself straying into and enjoying a good romp in some more academic realms. I have found [Obsidian](https://obsidian.md/) to be a phenomenal tool, and I'd recommend looking at it if you're considering an Evernote alternative. I'd describe Obsidian as an extensible IDE for Markdown, supporting rapid linking and traversal among your content.
+Along that vein, I am working to deepen several of the mentoring relationships I have been graced to have. I am working to become more intentional in how I approach those conversations, in the hopes that I can help provide better value for the time spent, by doing so. 
+
+Lastly, I am making a concerted effort to cultivate 'restorative action'. I'll be writing on those in the near future. But suffice to say that I am working to apply some realizations I have had about what it takes to maintain a cadence of excellence.
 
 ## Client Work
-I continue in my role of stewarding Front End Development, bootstrapping QA Automation, and coaching on the technical aspects of implementing agile. Most recently, I've been helping the agile coaches get established roadmaps. That includes the team of 'leads' that I am part of. Just recently, we were able to sit down and had the Director I've been reporting to , share his vision for the organization. It certainly took some time, but we helped get his ideas on paper, and started to organize them. Coming away He was pleased and perhaps a touch relieved. He had a solid grasp on where he wanted us to head, and he was able to hand-off several of the major Epics to trusted lieutenants. Our next step will be add some definition to those epics, flesh out some potential features, and run those by him. All in all, I have a hopeful outlook for the next few months as we can begin to make concerted efforts towards that vision.
+On the client front, we just finished an Innovation and Planning sprint. So I am spending considerable time helping to land the threads from those efforts as we go. In addition to that, I have been helping the Director to redesign some of the organization workflows to enable better flow of value and move us towards the culture he envisions. 
 
 ## Reading
-I have been maintianing my habit of reading. Though I have adjusted the habit slightly, trying to optimize for retention and application. So instead of just chewing threw a bunch of books in a month, I am taking my time more, even engaging my wife in reading one of them with me! Not gonna lie, that has been a ton of fun and has lead to the application of several ideas around the houst. We started with the 7 Habits of Highly Effective People, and consistently the conversations we have shared have been deeper and we've solved some of the challenges we've been facing because of it! Naturally I highly recommend it if you haven't already read.
-
-Next up on my reading list are:
-- [Culture for the Left-Brained Leader](https://www.amazon.com/Culture-Left-Brained-Leader-Implementation-Transformative-ebook/dp/B0998DXBTW/ref=sr_1_1?tag=scribemedia-20&dchild=1&keywords=Culture%20for%20the%20Left-Brained%20Leader&qid=1626279378&sr=8-1&geniuslink=true) by Andrew Kim
-- [Antifragile](https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680) by Nassim Taleb
-
-Adnrew is the husband of [Sarah Kim](https://www.linkedin.com/in/sarah-yw-kim/), who I had the pleasure of working with and still enjoy conversation with. She and Andrew have been talking the culture game a long while, and even my own writing has [leaned](/2021/12/08/behaviors-build-culture/) [that way](/2022/01/12/conversational-bids/) recently.
-Antifragile was a book I found recommended by the Art of Manliness on a couple of occassions, and attempts to discuss the construction of anti-fragile systems, ones which benefit or grow stronger when times get hard. 
+More and more books! I had the chance to read a fair few books lately, including finishing Antifragile. I am particularly keen on [Team Topologies](https://www.amazon.com/Team-Topologies-Organizing-Business-Technology/dp/1942788819), which has proven almost immediately useful. Through that book I have gained a vocabulary which has allowed me to more effectively convey several observations and highlight several opportunities in my present work. I even found out recently that the authors are publishing a [Remote Team Interactions Workbook](https://itrevolution.com/remote-team-interactions-workbook/) later this month specifically around virtual teams. I bought it on pre-order and found it likewise insightful.
 
 ## What's next?
-Looking forward, I am looking to end February smoothly. I've been onboarding a number of new team members with my client lately, and that doesn't show any sign of slowing. But I am taking some time to hone my focus. Now that I have those epics, I have some easier touchstones with which to prioritize. I expect I'll still be presenting at User Groups here and there, and I have a talk with Improving's Virtual Lunch and Learns on March 4th, which promises to be interesting. 
+Looking ahead, I am looking to help set a couple initiatives in Improving on a stable course through Q2. I have a number of conference talks coming up in May, with THAT Conference. And I'm hoping I can get some time to settle in with a good book somewhere in there too!
