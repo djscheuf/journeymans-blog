@@ -1,0 +1,16 @@
+FROM python:3
+
+COPY ./convert.py code/convert.py
+COPY ./create_index.py code/create_index.py
+
+# Volume with Fundament Crunch mounted to ./crunch
+# Volume with commonplace output mounted to ./out
+
+WORKDIR code
+
+RUN python convert
+RUN python create_index
+
+
+
+
