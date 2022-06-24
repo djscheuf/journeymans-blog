@@ -1,0 +1,45 @@
+# basic
+title: DJS
+subtitle: Minimalism, simplicity and refined details
+favicon: https://hexo.io/icon/favicon-96x96.png
+
+# avatar: images/avatar.png
+# banner_small: images/banner-small.png
+# banner_large: images/banner-large.png
+logo: https://hexo.io/logo.svg
+
+# disqus
+#disqus_shortname: drakeleung
+
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace:
+
+# nav #
+nav:
+  home: .
+  archive: archives
+  # about: about
+  # rss: atom.xml
+
+# hexo-renderer-sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Default post title
+default_post_title: Untitled
+
+# social
+social:
+  github: https://github.com/djscheuf
+
+# widget
+#   title: 标题
+#   content: 内容
+widget:
+  title: Widget
+  content: <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily/wiki">Theme based on Daily</a></li></ul>

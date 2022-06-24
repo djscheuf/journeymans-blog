@@ -1,0 +1,17 @@
+<div id="main-content" class="content-col">
+  <h4>Read the lastest articles:</h4>
+  <% page.posts.each(function(item, itemIndex){ %>
+    <div class="post-box">
+    <% if (itemIndex % 2 === 0) { %>
+      <div class="even">
+        <%- partial('_partial/post-item', {item: item}) %>
+      </div> 
+    <% } else { %>
+      <div class="odd">
+        <%- partial('_partial/post-item', {item: item}) %>
+      </div>
+    <% } %>
+  </div>
+  <% }); %>
+  <%- partial('_partial/pagination') %>
+</div>

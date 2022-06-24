@@ -1,0 +1,42 @@
+<!-- Featured-widgets -->
+<% if(config.featured && config.featured.active) { %>
+<% 
+    var rand = function(){
+        return Math.floor(
+            Math.random()
+            * config.featured.articles.length
+        );
+    }
+
+    var idxs = [];
+    var temp = rand();
+    while(idxs.length < 3){
+        if(idxs.indexOf(temp) === -1){
+            idxs.push(temp);
+        }
+        temp = rand();
+    }
+%>
+<div class="footer-widgets">
+    <div class="row inside-wrapper featured-row">
+        <div class="col-1-5 featured-col">
+                <aside><b>Featured Articles for you</b></aside>
+        </div>
+        <% for(var i = 0; i < idxs.length; i++){ %>
+            <div class="col-1-5 featured-col">
+                <aside class="link">
+                    <a href="<%- config.featured.articles[idxs[i]].link %>" target="_blank">
+                        <p>
+                            <b><%= config.featured.articles[idxs[i]].title %></b>
+                        </p>
+                        <span>
+                            Read More
+                        </span>
+                    </a>
+                </aside>
+            </div>
+        <% } %>
+        <div class="col-1-5 featured-col"></div>
+    </div>
+</div>
+<%}%>
