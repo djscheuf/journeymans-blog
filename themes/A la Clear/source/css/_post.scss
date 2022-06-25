@@ -1,6 +1,8 @@
 .post {
   padding-top: 70px;
   padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
 
   .post-image {
     // opacity: 0.8;
@@ -9,6 +11,11 @@
   }
 
   .nav-links {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    border-top: solid black 1px ;
+    width: 100%;
     a {
       text-decoration: none;
       color: #3a3a3a;
@@ -23,16 +30,11 @@
       opacity: 0.8;
     }
     .nav-previous {
-      position: fixed;
-      bottom: 64px;
-      left: 50px;
-      z-index: 29;
+      align-self: flex-end;
+      flex:1;
     }
     .nav-next {
-      position: fixed;
-      bottom: 64px;
-      right: 50px;
-      z-index: 29;
+      align-self: flex-start;
     }
   }
 }
