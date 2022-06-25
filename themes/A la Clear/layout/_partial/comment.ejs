@@ -1,22 +1,14 @@
-<% if (page.comments){ %>
-<section id="comment">
-  <!-- <h1 class="title"><%= __('comment') %></h1> -->
-
-  <% if(config.disqus_shortname) { %>
-  <div id="disqus_thread">
+<% if (page.comments !== undefined && page.comments) { %>
+  <section id="comments">
+    <div id="hyvor-talk-view"></div>
     <script type="text/javascript">
-    var disqus_config = function () {
-          this.page.url = window.location.href;
-          this.page.identifier = '<%= page.layout %>-<%= page.slug %>';
-          this.page.title = '<%= page.title %>';
-      };
+        var HYVOR_TALK_WEBSITE = '<%= config.hyvor_talk_id %>';
+        var HYVOR_TALK_CONFIG = {
+            url: '<%= page.permalink %>' || false,
+            id: '<%= page.path %>' || false,
+            authorEmail: 'daniel@scheufler.io'
+        }
     </script>
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-  <% } else if (config.duoshuo_shortname) { %>
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="<%= page.layout %>-<%= page.slug %>" data-title="<%= page.title %>" data-url="<%= page.permalink %>"></div>
-    <!-- 多说评论框 end -->
-  <% } %>
-</section>
+    <script type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
+  </section>
 <% } %>
