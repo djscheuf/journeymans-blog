@@ -9,7 +9,7 @@ var isFullUrl = function(str) {
       <% var thumb = item.photos[0]; %>
       <% var thumbUrl = isFullUrl(thumb) ? thumb : url_for(thumb) %>
 
-    <a href="<%- config.root %><%- item.path %>">
+    <a href="<%- config.root %><%- item.path %>" class="thumb-slot">
         <img src="<%- thumbUrl %>" alt="<%- item.title %>" class="post-thumbnail">
       </a>
     <% } %>
