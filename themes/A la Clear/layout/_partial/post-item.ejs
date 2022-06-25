@@ -5,20 +5,18 @@ var isFullUrl = function(str) {
 %>
 
 <div class="container">
-  <div>
-    <!-- <% if (item.photos.length) { %>
+    <% if (item.photos.length) { %>
       <% var thumb = item.photos[0]; %>
       <% var thumbUrl = isFullUrl(thumb) ? thumb : url_for(thumb) %>
 
-      <a href="<%- config.root %><%- item.path %>">
-          <img src="<%- thumbUrl %>" alt="<%- item.title %>" class="attachment-post-thumbnail">
-        </a>
-    <% } %> -->
+    <a href="<%- config.root %><%- item.path %>">
+        <img src="<%- thumbUrl %>" alt="<%- item.title %>" class="post-thumbnail">
+      </a>
+    <% } %>
     <div class="post-title">
       <a href="<%- config.root %><%- item.path %>" rel="bookmark">
         <%- item.title || theme.default_post_title || "Untitled" %>
       </a>
-    </div>
     <!-- <% if (item.excerpt){ %>
     <div class="entry-content">
       <p>

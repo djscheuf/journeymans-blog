@@ -289,7 +289,7 @@ Content
   display:flex;
   gap:2em;
   box-sizing: content-box;
-  max-width: 1110px;
+  max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 27px;
@@ -298,12 +298,12 @@ Content
   .blurb-col {
     flex-basis:0;
     flex-grow: 1;
-    padding-right: 7.857vw;
+    padding-right: 5vw;
   }
   .content-col {
     flex-basis:0;
     flex-grow: 1;
-    padding-left: 109px;
+    padding-left: 5vw;
     overflow-y: scroll;
   }
 }
@@ -317,14 +317,7 @@ Content
   margin: 0 auto;
   padding: 0 50px;
 }
-.attachment-post-thumbnail {
-  margin: 0 auto 35px;
-  transition: opacity 0.7s;
-  display: block;
-  &:hover {
-    opacity: 0.7;
-  }
-}
+
 .home .entry-content {
   margin: 1.5em 0;
   p {

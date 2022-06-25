@@ -1,46 +1,44 @@
 .post-box {
-    margin-bottom: 15px;
-    .post_title {
-        font-size: 20px;
-        line-height: 165%;
-        a {
-            color: #000;
-            font-weight: 700;
-            text-decoration: none;
-          }
-        &:hover {
-            opacity: 0.7;
-          }
-    }
-    .odd {
-        position: relative;
-        border-top: 1px solid #dcdcdc;
-        border-bottom: 1px solid #dcdcdc;
-        padding-bottom: 10px;
-        padding-top: 10px;
-      }
-  
-.container {
-    max-width: $container-width;
+  margin-bottom: 15px;
+  .odd {
+    position: relative;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .container {
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    flex-direction: row;
   }
-}
-
-.entry-title {
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
-    letter-spacing: 0.2em;
-    color: #000;
-    text-align: center;
-    margin-bottom: 27px;
-    font-weight: 700;
-    font-size: 1.25em;
+  .post_title {
+    flex: 3;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 165%;
     a {
-      color: #000;
-      font-weight: 700;
-      text-decoration: none;
-    }
+        color: #000;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    &:hover {
+        opacity: 0.7;
+      }
+  }
+  
+  .post-thumbnail {
+    transition: opacity 0.7s;
+    display: block;
     &:hover {
       opacity: 0.7;
     }
+    width: 100px;
+    max-height: 100px;
+    margin-right: 50px;
   }
+
+
+}
+ 
