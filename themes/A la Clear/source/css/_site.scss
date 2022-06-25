@@ -300,10 +300,20 @@ Content
     flex-grow: 1;
     padding-right: 5vw;
   }
-  .content-col {
+  .list-col {
     flex-basis:0;
     flex-grow: 1;
     padding-left: 5vw;
+  }
+  .content-col {
+    flex-basis:0;
+    flex-grow: 2;
+    padding-right: 3vw;
+  }
+  .sidebar-col {
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left: 3vw;
   }
 }
 .error404 .content-area,

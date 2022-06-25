@@ -1,0 +1,17 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 75px;
+    padding-right: 27px;
+
+
+    .sidebar-title {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 150%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #EDEADE;
+        padding-bottom: 18px;
+    }
+}
