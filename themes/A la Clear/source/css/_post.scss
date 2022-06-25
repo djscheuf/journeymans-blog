@@ -10,6 +10,11 @@
     display: flex;
   }
 
+  .entry-title {
+    display: flex;
+    justify-content: center;
+  }
+
   .nav-links {
     padding-top: 5px;
     display: flex;
@@ -38,6 +43,26 @@
     }
   }
 }
+
+.posted-on {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  font-size: 0.688em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.tags-links {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+  font-size: 0.800em;
+  font-style: normal;
+  margin-bottom: 30px;
+  a {
+    margin: 0 5px;
+    font-style: italic;
+  }
+}
+
 .entry-content {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
