@@ -89,15 +89,16 @@
     margin: 0 auto;
   }
   a:link {
-    color: #3769c9;
+    color: $links;
   }
   a:visited {
-    color: #3769c9;
+    color: $fg-color;
   }
   a:active,
   a:focus,
   a:hover {
-    color: #3769c9;
+    color: $secondary;
+    font-weight: bold;
     opacity: 0.8;
   }
 

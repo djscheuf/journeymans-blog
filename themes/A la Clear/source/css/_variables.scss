@@ -1,11 +1,22 @@
+// Palette
+
+$cultured: #f6f6f4ff;
+$light-gray: #d7d5d7ff;
+$smoky-black: #161314ff;
+$lincoln-green: #005a03ff;
+$rosso-corsa: #d61d13ff;
+$links: #3769c9;
+
+$bg-color: $cultured;
+$bg-second: $light-gray;
+$fg-color: $smoky-black;
+$secondary: $lincoln-green;
+$accent: $rosso-corsa;
+
 // colors
 $color-title: #000;
-$color-text: #3a3a3a;
-$grey-border: #dcdcdc;
-
-$ivory: #fffff0;
-$ivory-darker: #fafaeb;
-
+$color-text: $fg-color;
+$grey-border: $bg-second;
 
 // length
 $header-height: 70px;
