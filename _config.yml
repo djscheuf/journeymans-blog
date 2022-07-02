@@ -123,37 +123,3 @@ widget:
 # banner_large: img/header_img/home-bg-2-dark.png
 logo: /img/logo/star_catcher_mountains.png
 favicon: /img/logo/star_catcher_mountainsx96.png
-
-featured:
-  active: true
-  articles:
-    - id: 0
-      title: Code is read more often than it is written
-      link: /2016/12/27/Code-is-read-more-often-than-it-is-written/
-    - id: 1
-      title: Models are not Reality
-      link: /2019/12/09/models-are-not-reality/
-    - id: 2
-      title: Mere Exposure
-      link: /2019/11/18/mere-exposure/
-    - id: 3
-      title: Behaviors Build Culture
-      link: /2021/12/08/behaviors-build-culture/
-    - id: 4
-      title: Dungeons and Dragons and Leadership Training?
-      link: /2017/02/07/Dungeons-and-Dragons-and-Leadership-Training/
-    - id: 5
-      title: The MVP of Agile
-      link: /2020/12/30/mvp-of-agile/
-    - id: 6
-      title: The 2 Minute Rule
-      link: /2020/02/17/two-minute-rule/
-    - id: 7
-      title: To Automate, or not To Automate
-      link: 2021/05/03/auto-not-auto/
-    - id: 8
-      title: Models are not Reality
-      link: /2019/12/09/models-are-not-reality/
-    - id: 9
-      title: Functional Alchemy
-      link: 2021/03/17/functional-alchemy/
