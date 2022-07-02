@@ -1,15 +1,30 @@
-<div class="sidebar">
-    <div class="sidebar-title">
-        About the Author
+<div class="sidebar-col">
+    <div class="sidebar-top">
+        <div class="sidebar-title">
+            About the Author
+        </div>
+        <div class="sidebar-content">
+            <strong>Daniel Scheufler</strong> writes about ...
+            <a href="/about">Click here to learn more →</a>
+        </div>
+        <div class="sidebar-social">
+            <% if (config.social) { %>
+                <% _.forIn(config.social, function(val, key){ %>
+                <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
+                <% }) %>
+            <% } else { %>
+                <% _.forIn(theme.social, function(val, key){ %>
+                <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
+                <% }) %>
+            <% } %>
+        </div>  
     </div>
-    <div class="sidebar-content">
-        <p><strong>Daniel Scheufler</strong> writes about ...</p>
-        <p><a href="/about">Click here to learn more →</a></p>
-    </div>
-    <div class="sidebar-social">
-    TODO - Social Links
-    </div>          
-    <div class="read-next">
-
-    </div>
+    <div class="sidebar-bottom">
+        <div class="sidebar-title">
+            Read Next
+        </div>
+        <div class="sidebar-content">
+            TODO
+        </div>
+    </div>        
 </div>

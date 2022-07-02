@@ -82,6 +82,10 @@
     }
   }
 
+  .sidebar-col {
+    visibility: hidden;
+  }
+
 }
 
 
@@ -123,5 +127,9 @@
       flex-basis: 85%;
       padding-left: 20px;
     }
+  }
+
+  .sidebar-col {
+    visibility: hidden;
   }
 }
