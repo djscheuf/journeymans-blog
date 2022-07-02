@@ -18,8 +18,6 @@
   display: flex;
   flex-direction: column;
 
-  // NEED to figure how to get sidebar to register  at level of content, so container outside of Post?
-
   .post-image {
     // opacity: 0.8;
     justify-content: center;
@@ -77,6 +75,7 @@
     margin: 0 5px;
     font-style: italic;
   }
+  padding-top: $gap;
 }
 
 .entry-content {
