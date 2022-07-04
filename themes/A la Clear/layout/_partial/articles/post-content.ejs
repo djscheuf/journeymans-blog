@@ -2,6 +2,8 @@
 var isFullUrl = function(str) {
   return /^(https:|http:|ftp:)?\/\//.test(str);
 };
+
+var shouldShowPostContentWarning = false;
 %>
 <div class="content-col">
   <div class="post">
@@ -21,9 +23,12 @@ var isFullUrl = function(str) {
                   <img src="<%- thumbUrl %>" />
                 </div>
             <% } %>
-          <!-- <p class="posted-on">
+          <div class="posted-on">
           <%= page.date.format(config.date_format) %>
-          </p> -->
+          <% if(shouldShowPostContentWarning) { %>
+            <span class="age-warning">This post is over 2 years old</span>
+            <% } %>
+          </div>
           <!-- TODO - Add Disclaimer for older posts, maybe display the date when over a year old, SEE F# for fun and profit for example. -->
           <div class="tags-links">
             <% if (page.tags) { %>
@@ -37,10 +42,11 @@ var isFullUrl = function(str) {
         </div>
         <!-- Post Main Content -->
         <div class="entry-content <%if(config.highlight.line_number){%>has_line_number<%} %>">
+         
           <%- page.content %>
         </div>
       </article>
-      <%- partial('_partial/post-nav') %>
-      <%- partial('_partial/comment') %>
+      <%- partial('_partial/articles/post-nav') %>
+      <%- partial('_partial/articles/comment') %>
     </div>
 </div>
