@@ -64,7 +64,15 @@
   font-size: 0.688em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  padding-top: $half-gap;
+
+  .age-warning {
+    background: $bg-second;
+    color: $secondary;
+    font-weight: bold;
+  }
 }
+
 .tags-links {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
