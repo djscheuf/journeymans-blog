@@ -6,6 +6,7 @@ var isFullUrl = function(str) {
 var today = new Date();
 var yearGenerated = today.getFullYear();
 var monthGenerated = today.getMonth();
+
 // page.date is a MomentJs Date
 var yearPosted = page.date.year();
 var monthPosted = page.date.month();
@@ -37,7 +38,6 @@ var shouldShowPostContentWarning = diffInMonths > 24;
             <span class="age-warning">This post is over 2 years old</span>
             <% } %>
           </div>
-          <!-- TODO - Add Disclaimer for older posts, maybe display the date when over a year old, SEE F# for fun and profit for example. -->
           <div class="tags-links">
             <% if (page.tags) { %>
               <% page.tags.each(function(tag){ %>
