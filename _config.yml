@@ -76,17 +76,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: landscape
-# theme: Daily
 theme: A la Clear
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: github.com/djscheuf/journeymans-blog
 
-#Custom Setting Start
-
+# Custom Setting Start
+# RSS
 feed:
   type: rss2
   path: rss2.xml
