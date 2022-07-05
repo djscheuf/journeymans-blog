@@ -7,7 +7,6 @@ $dark-gray: #726E72;
 $smoky-black: #161314ff;
 $lincoln-green: #005a03ff;
 $rosso-corsa: #d61d13ff;
-$links: #3769c9;
 
 $bg-color: $cultured;
 $bg-second: $light-gray;
@@ -15,6 +14,10 @@ $bg-second-darker: $dark-gray;
 $fg-color: $smoky-black;
 $secondary: $lincoln-green;
 $accent: $rosso-corsa;
+
+$links: #3769c9;
+$visited-links: $fg-color;
+$hover-links: $lincoln-green;
 
 // colors
 $color-title: #000;

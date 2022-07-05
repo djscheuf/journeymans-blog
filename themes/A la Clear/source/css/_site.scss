@@ -242,12 +242,12 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: $fg-color;
+  color: $visited-links;
 }
 a:active,
 a:focus,
 a:hover {
-  color: $secondary;
+  color: $hover-links;
   font-weight: bold;
   opacity: 0.8;
 }
@@ -354,7 +354,7 @@ Content
   }
   a {
     text-decoration: none;
-    color: $fg-color;
+    color: $links;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
@@ -441,7 +441,7 @@ Footer
   background-repeat: no-repeat;
   background-size: 100%;
   text-indent: -999em;
-  @each $social in github, weibo, mail, twitter, linkedin, rss {
+  @each $social in github, weibo, mail, twitter, linkedin, rss, leanpub {
     &.icon-#{$social} {
       background-image: url('../images/#{$social}.svg');
     }
@@ -462,6 +462,6 @@ Footer
   }
   a {
     text-decoration: none;
-    color: $fg-color;
+    color: $links;
   }
 }
