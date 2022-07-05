@@ -100,10 +100,12 @@ hyvor_talk_id: 6075
 
 # Social Links
 social:
-  github: https://github.com/djscheuf
   mail: mailto:daniel@scheufler.io
+  github: https://github.com/djscheuf
   linkedin: https://www.linkedin.com/in/danielscheufler/
+  leanpub: https://leanpub.com/u/danielscheufler
   rss: /rss2.xml
+  
 
 # Navigation Bar
 nav:
