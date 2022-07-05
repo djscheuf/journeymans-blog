@@ -5,6 +5,7 @@ id: 1
 comments: false
 date: 2016-03-31 21:23:50
 header-img: "img/header_img/about-bg.png"
+hideContentWarning: true
 ---
 
 ![photo](../img/better_me_sm.png)

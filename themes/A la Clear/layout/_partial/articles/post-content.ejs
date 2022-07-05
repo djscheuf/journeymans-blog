@@ -34,7 +34,7 @@ var shouldShowPostContentWarning = diffInMonths > 24;
             <% } %>
           <div class="posted-on">
           <%= page.date.format(config.date_format) %>
-          <% if(shouldShowPostContentWarning) { %>
+          <% if(shouldShowPostContentWarning && !page.hideContentWarning) { %>
             <span class="age-warning">This post is over 2 years old</span>
             <% } %>
           </div>
