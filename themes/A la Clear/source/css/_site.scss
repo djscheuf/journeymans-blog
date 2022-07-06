@@ -289,13 +289,12 @@ Content
   background: $bg-color;
   display:flex;
   flex-direction: row;
-  gap:$gap;
   box-sizing: content-box;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: $padding;
+  padding-right: $padding;
 
   .blurb-col {
     flex-basis:0;

@@ -82,8 +82,19 @@
     }
   }
 
-  .sidebar-col {
-    visibility: hidden;
+  .content-area {
+    .content-col {
+      border-right: none;
+      padding-right: 0px;
+      width: 100%
+    }
+
+    .sidebar-col {
+      flex: 0;
+      visibility: hidden;
+      width: 0px;
+      padding-left: 0px;
+    }
   }
 
 }
@@ -129,7 +140,18 @@
     }
   }
 
-  .sidebar-col {
-    visibility: hidden;
+  .content-area {
+    .content-col {
+      border-right: none;
+      padding-right: 0px;
+      width: 100%
+    }
+
+    .sidebar-col {
+      flex: 0;
+      visibility: hidden;
+      width: 0px;
+      padding-left: 0px;
+    }
   }
 }
