@@ -10,9 +10,13 @@ hideContentWarning: true
 
 ## WORK EXPERIENCE
 
+### Principal Consultant
+
+Improving, Houston, TX May 2022 - Present
+
 ### Senior Consultant
 
-Improving, Houston, TX September 2017- Present
+Improving, Houston, TX September 2017 - April 2022
 
 _Description to come..._
 
