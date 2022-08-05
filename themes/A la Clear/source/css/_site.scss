@@ -64,8 +64,8 @@ tt,
 ul,
 var {
   border: 0;
-  font-family: inherit;
-  font-size: 100%;
+  font-family: minion-pro, serif;
+  font-size: 18px;
   font-style: inherit;
   font-weight: inherit;
   margin: 0;
@@ -81,7 +81,7 @@ input,
 select,
 textarea {
   color: $color-text;
-  font-family: 'Open sans',sans-serif;
+  font-family: Courier, monospace;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -114,8 +114,8 @@ address {
 }
 pre {
   background: $bg-color;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
+  font-family: Courier, monospace;
+  font-size: 16px;
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -127,7 +127,7 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 18px Courier, monospace;
 }
 abbr,
 acronym {
@@ -209,7 +209,7 @@ th {
   font-weight: bold;
 }
 h1, h2, h3, h4 {
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei"; }
+  font-family: europa, serif; }
 h1 {
   font-size: 1.250em; }
 
@@ -356,7 +356,7 @@ Content
     color: $links;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-family: minion-pro, serif;
     font-size: 0.750em;
   }
 }
