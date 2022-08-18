@@ -21,6 +21,9 @@ One of the projects I have been whittling away the evening hours with has been a
  - and refresh the page.
 
 Released Books:
+- [10 Days to Become a Better Developer](https://leanpub.com/10days-betterdeveloper)
+- [10 Days to Better Networking](https://leanpub.com/10days-betternetworking)
+- [10 Days to Better Presentations](https://leanpub.com/10days-betterpresentations)
 
 This will apply the 50% discount to each book. The coupon will work until the end of September. I hope you find these exercises help you improve! If you have any questions, comments, ideas, or feedback tag me at [daniel at scheufler dot io](mailto: daniel@scheufler.io). Thank you for your support! Be on the look out for now content in the future on LeanPub, by checking my [author's page](https://leanpub.com/u/danielscheufler)
 
