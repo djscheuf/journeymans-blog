@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  line-height: 1.15;
 }
 /*--------------------------------------------------------------
 Reset
@@ -63,8 +64,8 @@ tt,
 ul,
 var {
   border: 0;
-  font-family: inherit;
-  font-size: 100%;
+  font-family: minion-pro, serif;
+  font-size: 18px;
   font-style: inherit;
   font-weight: inherit;
   margin: 0;
@@ -80,7 +81,7 @@ input,
 select,
 textarea {
   color: $color-text;
-  font-family: 'Open sans',sans-serif;
+  font-family: Courier, monospace;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -112,9 +113,9 @@ address {
   margin: 0 0 1.5em;
 }
 pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
+  background: $bg-color;
+  font-family: Courier, monospace;
+  font-size: 16px;
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -126,16 +127,16 @@ code,
 kbd,
 tt,
 var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font: 18px Courier, monospace;
 }
 abbr,
 acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted $bg-second;
   cursor: help;
 }
 ins,
 mark {
-  background: #fff9c0;
+  background: $bg-color;
   text-decoration: none;
 }
 sub,
@@ -208,7 +209,7 @@ th {
   font-weight: bold;
 }
 h1, h2, h3, h4 {
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei"; }
+  font-family: europa, serif; }
 h1 {
   font-size: 1.250em; }
 
@@ -237,16 +238,17 @@ em {
 Links
 --------------------------------------------------------------*/
 a {
-  color: $color-text;
+  color: $links;
   text-decoration: none;
 }
 a:visited {
-  color: $color-text;
+  color: $visited-links;
 }
 a:active,
 a:focus,
 a:hover {
-  color: $color-text;
+  color: $hover-links;
+  font-weight: bold;
   opacity: 0.8;
 }
 /*--------------------------------------------------------------
@@ -284,92 +286,51 @@ Content
 }
 .content-area {
   padding-top: $header-height;
-  background: $ivory;
+  background: $bg-color;
+  display:flex;
+  flex-direction: row;
+  box-sizing: content-box;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $padding;
+  padding-right: $padding;
+
+  .blurb-col {
+    flex-basis:0;
+    flex-grow: 1;
+    padding-right: 5vw;
+  }
+  .list-col {
+    flex-basis:0;
+    flex-grow: 1;
+    padding-left: 5vw;
+  }
+ 
 }
 .error404 .content-area,
 .page .content-area {
   padding-top: 120px;
 }
-.odd {
-  background: $ivory-darker;
-  position: relative;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc
-}
-.even {
-  background: $ivory;
-  position: relative;
-}
-.container {
-  max-width: $container-width;
-  margin: 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
 .inside-wrapper {
   max-width: $inside-wrapper-width;
   margin: 0 auto;
   padding: 0 50px;
 }
-.attachment-post-thumbnail {
-  margin: 0 auto 35px;
-  transition: opacity 0.7s;
-  display: block;
-  &:hover {
-    opacity: 0.7;
-  }
-}
-.entry-title {
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
-  letter-spacing: 0.2em;
-  color: #000;
-  text-align: center;
-  margin-bottom: 27px;
-  font-weight: 700;
-  font-size: 1.25em;
-  a {
-    color: #000;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  &:after {
-    content: "";
-    height: 2px;
-    width: 50px;
-    background: black;
-    display: block;
-    margin: 20px auto 0;
-  }
-  &:hover {
-    opacity: 0.7;
-  }
-}
+
 .home .entry-content {
   margin: 1.5em 0;
   p {
     text-align: center;
   }
 }
-.posted-on {
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
-  font-size: 0.688em;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-.tags-links {
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
-  font-size: 0.800em;
-  font-style: normal;
-  margin-bottom: 30px;
-  a {
-    margin: 0 5px;
-    font-style: italic;
-  }
-}
+
 .pager {
   padding: 1.5em 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   &:after {
     visibility: hidden;
     display: block;
@@ -384,20 +345,18 @@ Content
     }
   }
   .previous {
-    float: right;
-    text-align: right;
-    width: 50%;
+    align-self: flex-end;
+    flex:1;
   }
   .next {
-    float: left;
-    width: 50%;
+    align-self: flex-start;
   }
   a {
     text-decoration: none;
-    color: #3a3a3a;
+    color: $links;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-family: minion-pro, serif;
     font-size: 0.750em;
   }
 }
@@ -431,7 +390,7 @@ Footer
   font-size: 0.750em;
   z-index: 2;
   position: relative;
-  background: $ivory;
+  background: $bg-color;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   padding-top: 50px;
@@ -481,7 +440,7 @@ Footer
   background-repeat: no-repeat;
   background-size: 100%;
   text-indent: -999em;
-  @each $social in github, weibo, mail, twitter, linkedin, rss {
+  @each $social in github, weibo, mail, twitter, linkedin, rss, leanpub, podcast {
     &.icon-#{$social} {
       background-image: url('../images/#{$social}.svg');
     }
@@ -491,17 +450,17 @@ Footer
   }
 }
 .site-info {
-  background: $ivory;
+  background: $bg-color;
   text-align: center;
   font-size: 0.750em;
   padding-bottom: 20px;
   padding-top: 20px;
-  color: #a2a2a2;
+  color: $bg-second;
   .split {
     margin: 0 2px;
   }
   a {
     text-decoration: none;
-    color: #666666;
+    color: $links;
   }
 }

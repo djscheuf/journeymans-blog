@@ -1,0 +1,45 @@
+<div class="sidebar-col">
+    <div class="sidebar-top">
+        <div class="sidebar-title">
+            About the Author
+        </div>
+        <div class="sidebar-content">
+            <p><strong>Daniel Scheufler</strong> is a Principal Consultant at Improving with experience in ECommerce, TeleMedicine, and of course Oil and Gas. As an Electrical Engineer turned Software Developer, He prides himself on highly disciplined development leading to more effective products and processes. He is a problem-solver at heart and leverages this strength in applying industrial theory to the challenges of software development. Among the key challenges facing development is the communication gap.</p>
+            <p>So Daniel has taken to blogging, public speaking, and consulting to help bridge the gap and demystify the technology our world depends on. When not engaged in tackling the gap, or coding, you'll find Daniel playing with his <span class="strikethrough">three</span> five children, reading, or tinkering whether in the woodshop or in a computer.</p>
+            <a href="/about">Click here to learn more →</a>
+        </div>
+        <div class="sidebar-social">
+            <% if (config.social) { %>
+                <% _.forIn(config.social, function(val, key){ %>
+                <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
+                <% }) %>
+            <% } else { %>
+                <% _.forIn(theme.social, function(val, key){ %>
+                <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
+                <% }) %>
+            <% } %>
+        </div>  
+    </div>
+    <div class="sidebar-bottom">
+        <div class="sidebar-title">
+            Read Next
+        </div>
+        <div class="sidebar-content">
+            <a href="/2016/12/27/Code-is-read-more-often-than-it-is-written/" target="_blank">
+                <p>
+                    <b>Code is read more often than it is written</b>
+                </p>
+            </a>
+            <a href="/2021/12/08/behaviors-build-culture/" target="_blank">
+                <p>
+                    <b>Behaviors Build Culture</b>
+                </p>
+            </a>
+            <a href="/2021/03/17/functional-alchemy/" target="_blank">
+                <p>
+                    <b>Functional Alchemy</b>
+                </p>
+            </a>
+        </div>
+    </div>        
+</div>

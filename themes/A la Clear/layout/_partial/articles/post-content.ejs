@@ -1,0 +1,59 @@
+<%
+var isFullUrl = function(str) {
+  return /^(https:|http:|ftp:)?\/\//.test(str);
+};
+
+var today = new Date();
+var yearGenerated = today.getFullYear();
+var monthGenerated = today.getMonth();
+
+// page.date is a MomentJs Date
+var yearPosted = page.date.year();
+var monthPosted = page.date.month();
+
+var diffInMonths = (yearGenerated-yearPosted)*12 + monthGenerated - monthPosted;
+var shouldShowPostContentWarning = diffInMonths > 24;
+%>
+<div class="content-col">
+  <div class="post">
+      <article  id="main-content">
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            <%- page.title || theme.default_post_title || "Untitled" %>
+            <% if (page.subtitle && page.subtitle.length) { %>
+              <p><%- page.subtitle %></p>
+            <% } %>
+          </h1>
+            <% if (page["photos"] && page["photos"].length > 0) { %>
+              <% var photo = page["photos"].toString(); %>
+              <% var thumbUrl = isFullUrl(photo) ? photo : url_for(photo) %>
+              <div class="post-image">
+                  <img src="<%- thumbUrl %>" />
+                </div>
+            <% } %>
+          <div class="posted-on">
+          <%= page.date.format(config.date_format) %>
+          <% if(shouldShowPostContentWarning && !page.hideContentWarning) { %>
+            <span class="age-warning">This post is over 2 years old</span>
+            <% } %>
+          </div>
+          <div class="tags-links">
+            <% if (page.tags) { %>
+              <% page.tags.each(function(tag){ %>
+                <a href="<%= config.root %>tags/<%= tag.name %>/" rel="tag">
+                  <%- tag.name %>
+                </a>
+              <% }); %>
+            <% } %>
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content <%if(config.highlight.line_number){%>has_line_number<%} %>">
+          <%- page.content %>
+        </div>
+      </article>
+      <%- partial('_partial/articles/post-nav') %>
+      <%- partial('_partial/articles/comment') %>
+    </div>
+</div>
