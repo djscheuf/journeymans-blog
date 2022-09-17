@@ -5,13 +5,18 @@ id: 2
 comments: false
 date: 2016-03-31 21:39:46
 header-img: "img/header_img/about-bg.png"
+hideContentWarning: true
 ---
 
 ## WORK EXPERIENCE
 
+### Principal Consultant
+
+Improving, Houston, TX May 2022 - Present
+
 ### Senior Consultant
 
-Improving, Houston, TX September 2017- Present
+Improving, Houston, TX September 2017 - April 2022
 
 _Description to come..._
 
