@@ -239,7 +239,7 @@ Links
 --------------------------------------------------------------*/
 a {
   color: $links;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:visited {
   color: $visited-links;
@@ -460,7 +460,7 @@ Footer
     margin: 0 2px;
   }
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: $links;
   }
 }
