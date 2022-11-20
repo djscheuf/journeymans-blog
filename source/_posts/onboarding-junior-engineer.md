@@ -1,4 +1,3 @@
-
 ---
 title: Am I bothering you? Effectively onboarding as a Junior Developer
 categories:
@@ -12,9 +11,10 @@ tags:
 date: 2022-02-16 09:00:00
 photos: 
  -  img/post_img/pseudo-code.png
+canonical_url: https://improving.com/thoughts/effectively-onboarding-as-a-junior-developer
 ---
 
-> This post first appeared on Improving's [Thoughts][thoughts-page] page
+> This post first appeared on Improving's [Thoughts](https://improving.com/thoughts/effectively-onboarding-as-a-junior-developer) page
 
 When you first join a company, there is a natural amount of anxiety. You want to perform well in the job you were just awarded. You want to establish a good reputation and be able to contribute. Add a dash of proving yourself, and you'll get a potent mix of emotions driving you towards thinking 'I have to do it myself'! 
 
