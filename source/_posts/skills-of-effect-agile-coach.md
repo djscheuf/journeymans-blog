@@ -9,6 +9,7 @@ tags:
 date: 2022-08-31 09:00:00
 photos:
   - img/post_img/agile_team.png
+canonical_url: https://improving.com/thoughts/effective-agile-coach-from-developer-point-of-view
 ---
 As a consultant, I have experienced many workplace cultures. Each of them has a different working style and industry.  I get to observe this while continuing to hone my craft of software development. 
 One of the most common pairs I see is a company hiring software consultants and Agile coaches at the same time. Usually, they try to create an 'Agile Transformation'. Given the name, I am certain you know how many of those actually do any transforming. But every once in a while, something special happens. 

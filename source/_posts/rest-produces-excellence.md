@@ -11,6 +11,7 @@ tags:
 date: 2022-06-02 09:00:00
 photos: 
  - img/post_img/rest.jpg
+canonical_url: https://improving.com/thoughts/how-rest-produces-excellence
 ---
 
 One of Improving's core Pillars is Excellence. We define excellence as a consistent habit, and not an occasional act. Practically that means we don't call it excellence to deliver at a high rate in the short-term and them fall off when the pressure isn't there anymore. Instead, we want to be continually ratchetting up our delivery at a sustainable pace over time. And truly this is harder to achieve, but the results speak for themselves. now, just like any large machine needs maintenance to keep producing, so too will maintaining this kind of excellence. Only the 'machine' that needs tuning and maintenance isn't some car, or mammoth excavator... it is you.
