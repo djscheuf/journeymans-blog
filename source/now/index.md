@@ -9,30 +9,46 @@ header-img: "img/header_img/about-bg.png"
 
 ---
 
->Written 18 August 2022
+> Written 10 December 2022
 
-## Blog Re-stlye Launched!
-In case you hadn't noticed, I've just launched a massive restyle of my blog. Where previously I had leaned into a kind of papyrus tone, I am not favoring a rich off-white, and a more coherent palette. I had originally been targeting a kinda wood-paneled study and leatherbound philosophy vibe. But that did not fit either my articles nor the industry I am part of. So welcome to the new Journeyman's Travels Blog! In the coming quarters, I am going to be experimenting with additional features. These will be in support of the other content initiatives that I am working on. Other Content initiatives? Read on!
+# The Year Behind
 
-## Now available...
-One of the projects I have been whittling away the evening hours with has been a book... or rather several books. I have been collecting simple exercises for practicing and improving skills; both developer and otherwise. I have been slowly refining these books over the last quarter or so. I am happy to announce them in concert with this launch. As part of this effort, I'd like to offer a coupon code for 50% off _each_ of the books to anyone whose interested. All you need to do is:
- - visit any of the book pages listed below
- - add "/c/RestyleAnnouncement" to the end
- - and refresh the page.
+## Things that Excited me
+- Improved Bible Study practice /Experiment showing promise, particularly enjoyed the study on Endurance, which also allowed me to share some encouragement (blog post link)
+- My wife and I welcomed our Twins home mid-year, bringing my home from 5 to 7 total. While it certainly is louder, I continue to deeply enjoy being dog-piled by my children on a daily basis!
+- I was promoted to Principal Consultant this year, and continue to hone my craft acting as Technical adviser to my current client, leading their efforts to establish a Software Crafstmanship Culture, with sound automated quality practices, and effective teams.
 
-Released Books:
-- [10 Days to Become a Better Developer](https://leanpub.com/10days-betterdeveloper)
-- [10 Days to Better Networking](https://leanpub.com/10days-betternetworking)
-- [10 Days to Better Presentations](https://leanpub.com/10days-betterpresentations)
+## Things that made me ponder
+- This year, I have really stepped up my reading habit, and have been very pleased with the results. Some books that stand out from that are:
+    -   The Effective Executive
+    - 7 Habits of Highly Effective People
+    - The Obstacle becomes the Way (Re-read)
 
-This will apply the 50% discount to each book. The coupon will work until the end of September. I hope you find these exercises help you improve! If you have any questions, comments, ideas, or feedback tag me at [daniel at scheufler dot io](mailto:daniel@scheufler.io). Thank you for your support! Be on the look out for now content in the future on LeanPub, by checking my [author's page](https://leanpub.com/u/danielscheufler)
+- Here are some of my key insights from each of these books:
+    - Effective Executive: The Job of the effective Executive is to create the rule for the various 'special-case' or gut-feeling actions he knows to be right in his line of work. In essence, he is 'writing the program' to codify the effective process of his business. This is remarkably like if not exactly like, the role of a Product Owner for Internal-facing software applications!
+    - 7 Habits: One of the most powerful realizations in your life is that you hold 2 roles over your life: The Author of your life's 'program', and The Enacter of your life's program. Recalling that 'You don't rise to the level of your goals, you fall to the level of your systems' (link to Clear), this insight profoundly calls on you to intentionally, consistently inspect your habits , your program, and to adapt towards the kind of person you wish to become. For me, distinctly separating those roles helps to clear the way for action. Never wear the Writer's hat and the Editor's hat at the same time!
+    - The Obstacle becomes the Way : One of my favorite quote is "Flow like water" I've applied in numerous professional and personal scenarios. Stopped by some big boulder of circumstance? Flow like water - go around, or go through! But in the Obstacle becomes the way, another quote, of similar nature, was discussed - "Burn like fire". Once you get a fire going, just about anything you throw in it, help the fire burn brighter and hotter. Sure you can smother it, dumping buckets of sand or whaterver, but the quote made me pause and think. You see it refers to the stoic idea of power. That is power over the self and especially over the mind. We do not control life's circumstances, but only how we choose to interact or react to them. So given the choice between being stopped, quitting, or whatever other negative reaction, we can instead choose to 'burn like fire'. We can choose to look at teach challenge, each new wrinkle as fuel for our fire, building us up. It was an invigorating thought.
 
-But wait! There's more! Keep reading in the next few minutes to find out about how I've been applying my _'radio voice'_.
+## Things I want to improve
 
-## With a voice made for radio
-One of the greatest compliments I have received in the recent past is that my voice would be great for radio. I will admit it touches me in a soft spot, as I wasn't always so confident about how my voice was received. But suffice to say that I finally started listening and thought trying my hand at podcasting would be fun! [Someone](https://www.linkedin.com/in/inna-aracri/) pointed me to [Anchor.fm](https://anchor.fm), and let me tell you! That tool is amazing! It is hands-down the best podcasting kickstart I could have asked for! 
+# The Year Ahead
 
-But don't worry! With all I am already doing, see _'father of five'_, I am taking a different approach to this project. I will still be experimenting, but on a more governed cadence. I plan to run a seasonal pattern, with about seven full episodes every quarter, with maybe two bonus or experimental episodes along for the ride. This season is already under way and the first bonus episode should drop soon! Please [check it out](https://anchor.fm/journeymans-travels) on [Anchor.fm](https://anchor.fm/journeymans-travels), [Spotify](https://open.spotify.com/show/36jPtU3rHKEE16CjwEoq8V), or even [Google](https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy9hZjJjMjRjOC9wb2RjYXN0L3Jzcw)! I hope you find it enjoyable!
+## Doing Business As
+- Announce the DBA
+- Associate the Podcast, Blog, Books under that heading
+- Discuss the goal for Breaking even
+- Point to 'BMC' button coming soon, as well as comment system under review
 
-## Continued commitment to service
-So with all of this change, I want go back to basics, to Why. I started this blog to share what I was learning. My goal has been and remains to add value to our community by sharing the insights I receive. But I hope to point to more than just 'more effective work'. I believe we are human _beings_ NOT human _doings_. So while effective work is good and necessary, it is not sufficient. I hope to share insights that leave the reader's life more vibrant and brighter than before. I thank you for joining me on that journey, and for your help in getting better. So here's to the brighter future, and the foundation that these projects will provide!
+## Content Strategy
+- Plan to post videos, podcasts, and Show notes as part of integrating the content streams
+- Will still be producing blog posts, though more of those 'just blog posts' will be part of a refined dev strategy , segue to Deeper T
+
+### Deepening the T
+- Breif on concept of T shaped individual, link to kind of talks I've been producing. breifly mention plan is to do at least 1 'deeper' talk per quarter or so, and possible 2 broad talks across the year. Sprinkled in with the other existing talks being delivered. The deeper talks will be a deeper dive either into a topic I've directly spoken on before, like 'Effective Meetings' or else exploring a deeper element of a concept I've touched on before, like Personal Knowledge Management or Leadership. To support that, the Content strategy will likely have glimpses and collections of my ongoing research and insights as I work to collect them into meaningful talks.
+
+## Improving Initiatives
+- On a related note, I am going to be working behind the scenes with the 'Improving Talks' initiative this year, to help drive high-quality and engaging talks across the year. So if you have _any_ feedback , please let me know, and I'll look into incorporating it. I am particularly excited for several experiments that I and my co-conspirators are cooking up!
+
+
+You can the previous [Now Page here](./now/archive/now_20220818)
+
