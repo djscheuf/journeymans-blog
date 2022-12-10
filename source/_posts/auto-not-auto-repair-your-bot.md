@@ -11,6 +11,7 @@ tags:
 date: 2021-09-28 09:00:00
 photos: 
  - img/post_img/auto_not_auto.jpg
+canonical_url: https://improving.com/thoughts/repairing-your-care-taker-bot--improving--thoughts
 ---
 
 > This post was part of a series I wrote for Improving and originally posted on the [Improving's Thoughts Page](https://improving.com/thoughts/repairing-your-care-taker-bot--improving--thoughts).
