@@ -1,7 +1,7 @@
 ---
 title: Now
 comments: false
-date: 2022-08-18 10:00:00
+date: 2022-12-10 10:00:00
 header-img: "img/header_img/about-bg.png"
 ---
 
