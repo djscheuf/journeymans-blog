@@ -14,15 +14,7 @@
       <aside>
         <h1 class="widget-title"><%- __('contact') %></h1>
         <div class="widget-text">
-          <% if (config.social) { %>
-            <% _.forIn(config.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
-            <% }) %>
-          <% } else { %>
-            <% _.forIn(theme.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
-            <% }) %>
-          <% } %>
+          <%- partial('_partial/social') %>
         </div>
       </aside>
     </div>
