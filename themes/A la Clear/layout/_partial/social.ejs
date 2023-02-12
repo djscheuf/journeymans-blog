@@ -1,0 +1,5 @@
+<% if (config.social) { %>
+    <% for(let [key, val] of Object.entries(config.social)){ %>
+      <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><%- key %></a>
+    <% } %>
+<% } %>

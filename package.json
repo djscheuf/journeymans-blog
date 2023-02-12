@@ -11,10 +11,10 @@
     "start": "hexo server -p $PORT"
   },
   "hexo": {
-    "version": "3.9.0"
+    "version": "5.4.2"
   },
   "dependencies": {
-    "hexo": "^3.9.0",
+    "hexo": "^5.4.0",
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^0.3.1",
     "hexo-generator-archive": "^0.1.4",
@@ -25,7 +25,7 @@
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-markdown-it": "^3.4.1",
-    "hexo-renderer-sass": "^0.3.2",
+    "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-toc": "^1.0.8"
