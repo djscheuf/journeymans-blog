@@ -3,7 +3,6 @@
 // 1. archive 使用的 site.posts, tag使用的是page.posts；
 // 2. tag 有分页。 (如果使用page.posts, hexo 默认使用config里的[per_page]来配置archive和tag分页)
     var title = '';
-    if (page.category) title = page.category;
     if (page.tag) title = "#" + page.tag;
     if (page.archive) {
         if (page.year) title = page.year + (page.month ? '/' + page.month : '');
@@ -18,13 +17,30 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy -->
-        <% var groupObj = _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')}) %>
-        <% for (var year in groupObj){ %>
-          <h2 class="year"><%- -year %></h2>
+        <% let groupObj = page.posts.toArray()
+          .reduce( function (groups, post) { 
+            const key = post.date.format('YYYY');
+            if ( key in groups ) groups[key].push(post); 
+            else groups[key] = [post]; 
+            return groups; 
+          }, {} ); 
+
+          var groupArr = [];
+          for (var year in groupObj){
+            var postsInThisYear = groupObj[year];
+            var sortedPosts = postsInThisYear.sort((p)=> p.date.format('MMDD'));
+            groupArr.push({
+              year: year,
+              posts: sortedPosts.reverse()
+            });
+          }
+        %>
+        <% groupArr.reverse().forEach(function(item){ %>
+          <h2 class="year"><%- item.year %></h2>
           <ul class="list">
-            <%- partial('_partial/article-archive', {posts: groupObj[year]}) %>
+            <%- partial('_partial/article-archive', {posts: item.posts}) %>
           </ul>
-        <% } %>
+        <% }); %>
       </div>
     </div>
   </div>
