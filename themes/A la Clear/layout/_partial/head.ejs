@@ -66,3 +66,17 @@
   <%- css('css/style') %>
 
 </head>
+<%if (config.google_analytics) { 
+    var id = "'"+config.google_analytics+"'";    
+    var src = "https://www.googletagmanager.com/gtag/js?id="+config.google_analytics;
+%>
+<!-- Google tag (gtag.js) -->
+<script async src=<%- src %>></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', <%- id%>);
+</script>
+<!-- Google tag end -->
+<% } %>
