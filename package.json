@@ -18,7 +18,7 @@
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
-    "hexo-generator-feed": "^1.2.2",
+    "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-tag": "^0.2.0",
