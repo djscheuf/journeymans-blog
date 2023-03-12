@@ -8,7 +8,7 @@ tags:
   - delegation
   - okr
   - communication
-date: 2023-02-28 09:30:00
+date: 2023-03-14 09:30:00
 photos: 
   - img/post_img/conversation.jpg
 description: Key to a leader's effectiveness is their ability to work through others. So how do you do that?
