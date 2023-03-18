@@ -10,7 +10,7 @@ tags:
   - lean
 date: 2023-03-28 09:30:00
 photos: 
-  - img/post_img/conversation.jpg
+  - img/post_img/flow.jpg
 description: Key to a leader's effectiveness is their ability to work through others. So how do you do that?
 ---
 
