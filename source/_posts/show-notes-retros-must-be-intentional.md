@@ -21,7 +21,7 @@ These are the notes from which I recorded the show. They're a little unpolished 
 - Introduce Principle
 	- What is Intent
 	- Not just Gripe, but get better
-- First intentionally here to GROW
+- First intent: here to GROW
 	- That means Change!
 	- Just going into a meeting doesn't mean you'll grow from it.,
 	- This is the core WHY
@@ -53,7 +53,7 @@ These are the notes from which I recorded the show. They're a little unpolished 
 			- Do it too often and people disengage, stop thinking.
 			- Need to balance the novelty with the ability to execute the learning.
 		- Is a great place for SMs to intentionally coach their team, courting the conversations that need to happen
-			- Maybe help focus on things other than just DOPING
+			- Maybe help focus on things other than just DOING
 			- What about your team's interactions?
 				- After all that is one of the Agile Manifesto principles.
 	- Intentionality is a core of retrospectives.
