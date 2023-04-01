@@ -25,7 +25,14 @@ nav:
   # rss: atom.xml
 
 # hexo-renderer-sass
+# node_sass:
+#   outputStyle: nested
+#   precision: 5
+#   sourceComments: false
+
+# hexo-renderer-scss
 node_sass:
+  debug: false
   outputStyle: nested
   precision: 5
   sourceComments: false
