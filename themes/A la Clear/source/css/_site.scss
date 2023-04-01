@@ -288,7 +288,7 @@ Content
   padding-top: $header-height;
   background: $bg-color;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   box-sizing: content-box;
   max-width: 1440px;
   margin-right: auto;
@@ -296,18 +296,30 @@ Content
   padding-left: $padding;
   padding-right: $padding;
 
-  .blurb-col {
+  .row{
+    display: flex;
+    flex-direction: row;
+
+    .blurb-col {
+      flex-basis:0;
+      flex-grow: 1;
+      padding-right: 5vw;
+    }
+    .list-col {
+      flex-basis:0;
+      flex-grow: 1;
+      padding-left: 5vw;
+    } 
+  }
+
+  .newsletter-col {
     flex-basis:0;
     flex-grow: 1;
     padding-right: 5vw;
   }
-  .list-col {
-    flex-basis:0;
-    flex-grow: 1;
-    padding-left: 5vw;
-  }
- 
+  
 }
+
 .error404 .content-area,
 .page .content-area {
   padding-top: 120px;
