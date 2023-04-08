@@ -8,7 +8,8 @@
     "url": "daniel.scheufler.io"
   },
   "scripts": {
-    "start": "hexo server -p $PORT"
+    "start": "hexo server -p $PORT",
+    "generate": "hexo generate"
   },
   "hexo": {
     "version": "5.4.2"
