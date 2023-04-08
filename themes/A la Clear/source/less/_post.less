@@ -1,0 +1,133 @@
+.content-col {
+    flex-basis:0;
+    flex-grow: 4;
+    padding-right: 3vw;
+    border-right: 1px solid #lib.colors[@bg-second];
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .post {
+    padding-top: #lib.colors[@header-height];
+    padding-bottom: #lib.colors[@header-height];
+    display: flex;
+    flex-direction: column;
+  
+    .post-image {
+      // opacity: 0.8;
+      justify-content: center;
+      display: flex;
+    }
+  
+    .entry-title {
+      display: flex;
+      text-align: center;
+    }
+  
+    .nav-links {
+      padding-top: 5px;
+      display: flex;
+      flex-direction: row;
+      border-top: solid black 1px ;
+      width: 100%;
+      a {
+        text-decoration: none;
+        color: #3a3a3a;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
+          "sans-serif", "Microsoft YaHei";
+        font-size: 0.75em;
+      }
+      .meta-arraw {
+        opacity: 0.8;
+      }
+      .nav-previous {
+        align-self: flex-end;
+        flex:1;
+      }
+      .nav-next {
+        align-self: flex-start;
+      }
+    }
+  }
+  
+  .posted-on {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-size: 0.688em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding-top: #lib.lengths[@half-gap];
+  
+    .age-warning {
+      background: #lib.colors[@bg-second];
+      color: #lib.colors[@secondary];
+      font-weight: bold;
+    }
+  }
+  
+  .tags-links {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-size: 0.800em;
+    font-style: normal;
+    margin-bottom: 30px;
+    a {
+      margin: 0 5px;
+      font-style: italic;
+    }
+    padding-top: #lib.lengths[@gap];
+  }
+  
+  .entry-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+      "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
+      "sans-serif", "Microsoft YaHei";
+    line-height: 1.7;
+    word-wrap: break-word;
+    ol,
+    ul {
+      margin: 0 0 1.5em 3em;
+    }
+    ul {
+      list-style: disc;
+    }
+    blockquote {
+      color: #aaa;
+      margin: 1em 0;
+      padding: 0 0 0 30px;
+      border-left: 4px solid #aaa;
+    }
+    p img {
+      display: block;
+      margin: 0 auto;
+    }
+    a:link {
+      color: #lib.colors[@links];
+    }
+    a:visited {
+      color: #lib.colors[@fg-color];
+    }
+    a:active,
+    a:focus,
+    a:hover {
+      color: #lib.colors[@secondary];
+      font-weight: bold;
+      opacity: 0.8;
+    }
+  
+    table {
+      border: 1px solid black;
+      td {
+        text-align: center;
+      }
+    }
+  }
+  

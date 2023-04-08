@@ -25,10 +25,14 @@ nav:
   # rss: atom.xml
 
 # hexo-renderer-sass
-node_sass:
-  outputStyle: nested
-  precision: 5
-  sourceComments: false
+# node_sass:
+#   outputStyle: nested
+#   precision: 5
+#   sourceComments: false
+
+less:
+  paths: ['layout/source/css/less']
+  options: 
 
 # Default post title
 default_post_title: Untitled
