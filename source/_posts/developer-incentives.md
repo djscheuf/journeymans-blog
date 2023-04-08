@@ -10,7 +10,7 @@ tags:
   - organization
 date: 2023-04-18 09:30:00
 photos: 
-  - img/post_img/ship_in_bottle.jpg
+  - img/post_img/money_and_time.jpg
 description: Perverse Incentives misalign reward and desired result. What would it look like to better align developer's incentives with the results of their products?
 ---
 
