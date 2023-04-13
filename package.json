@@ -10,7 +10,8 @@
   "scripts": {
     "start": "hexo server -p $PORT",
     "generate": "hexo generate",
-    "clean": "rimraf public"
+    "clean": "rimraf public",
+    "regen":"npm run clean && npm run generate"
   },
   "hexo": {
     "version": "5.4.2"
@@ -27,7 +28,6 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-less": "^4.0.0",
     "hexo-renderer-markdown-it": "^7.0.0",
-    "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0"
   },
