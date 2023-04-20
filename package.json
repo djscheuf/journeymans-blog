@@ -1,6 +1,6 @@
 {
   "name": "journeymans-blog",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "private": true,
   "authors": {
     "name": "Daniel Scheufler",
@@ -8,7 +8,10 @@
     "url": "daniel.scheufler.io"
   },
   "scripts": {
-    "start": "hexo server -p $PORT"
+    "start": "hexo server -p $PORT",
+    "generate": "hexo generate",
+    "clean": "rimraf public",
+    "regen":"npm run clean && npm run generate"
   },
   "hexo": {
     "version": "5.4.2"
@@ -23,12 +26,13 @@
     "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-less": "^4.0.0",
     "hexo-renderer-markdown-it": "^7.0.0",
-    "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
-    "hexo-migrator-wordpress": "^1.0.0"
+    "hexo-migrator-wordpress": "^1.0.0",
+    "rimraf": "^5.0.0"
   }
 }

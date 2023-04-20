@@ -52,7 +52,7 @@ pre {
         user-select: none;
     }
     .gutter pre {
-        padding: 0;
+        padding: 1.2em 1.4em;
         margin: 0;
         color: rgba(27,31,35,0.3);
     }
@@ -60,12 +60,13 @@ pre {
         padding: 1.2em 1.4em;
         line-height: 1.5em;
         margin: 0;
+        text-align: left;
     }
 }
 
 .has_line_number .highlight .gutter { display: table-cell; }
 
-%code-base {
+.code-base {
     position: absolute;
     top: 0;
     right: 0;
@@ -78,17 +79,17 @@ pre {
     font-weight: 600;
 }
 
-@mixin code-signs($keys) {
-    @each $key in $keys {
-        .highlight.#{$key} .code:after {
-            content: to-upper-case($key);
-            @extend %code-base;
+.code-signs(@keys) {
+    each(@keys, {
+        .highlight.@{value} .code:after {
+            content: to-upper-case(@value);
+            .code-base();
         }
-    }
+    })
 }
 
-$signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "json", "swift", "ruby", "perl", "php", "c", "java", "cpp", "ts");
-@include code-signs($signs);
+@signs: html, js, bash, css, scss,diff, java, xml, python, json, swift, ruby, perl, php, c, java, cpp, ts;
+.code-signs(@signs);
 
 .highlight.cpp .code:after {
     content: 'C++';

@@ -80,7 +80,7 @@ button,
 input,
 select,
 textarea {
-  color: $color-text;
+  color: #lib.colors[@color-text];
   font-family: Courier, monospace;
   font-size: 100%;
   line-height: 1.5;
@@ -113,7 +113,7 @@ address {
   margin: 0 0 1.5em;
 }
 pre {
-  background: $bg-color;
+  background: #lib.colors[@bg-color];
   font-family: Courier, monospace;
   font-size: 16px;
   font-size: 1.5rem;
@@ -131,12 +131,12 @@ var {
 }
 abbr,
 acronym {
-  border-bottom: 1px dotted $bg-second;
+  border-bottom: 1px dotted #lib.colors[@bg-second];
   cursor: help;
 }
 ins,
 mark {
-  background: $bg-color;
+  background: #lib.colors[@bg-color];
   text-decoration: none;
 }
 sub,
@@ -238,16 +238,16 @@ em {
 Links
 --------------------------------------------------------------*/
 a {
-  color: $links;
+  color: #lib.colors[@links];
   text-decoration: underline;
 }
 a:visited {
-  color: $visited-links;
+  color: #lib.colors[@visited-links];
 }
 a:active,
 a:focus,
 a:hover {
-  color: $hover-links;
+  color: #lib.colors[@hover-links];
   font-weight: bold;
   opacity: 0.8;
 }
@@ -264,14 +264,14 @@ Grad
     clear: both;
   }
 }
-@for $i from 1 through 10 {
-  .col-1-#{$i} {
-    width: 100% / $i;
+each(range(10), {
+  .col-1-@{value} {
+    width: 100% / @value;
     float: left;
     padding: 0 15px;
     box-sizing: border-box;
   }
-}
+});
 /*--------------------------------------------------------------
 Common
 --------------------------------------------------------------*/
@@ -285,16 +285,16 @@ Content
   min-height: calc(100% - 274px);
 }
 .content-area {
-  padding-top: $header-height;
-  background: $bg-color;
+  padding-top: #lib.lengths[@header-height];
+  background: #lib.colors[@bg-color];
   display:flex;
   flex-direction: row;
   box-sizing: content-box;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: $padding;
-  padding-right: $padding;
+  padding-left: #lib.lengths[@padding];
+  padding-right: #lib.lengths[@padding];
 
   .blurb-col {
     flex-basis:0;
@@ -314,7 +314,7 @@ Content
 }
 
 .inside-wrapper {
-  max-width: $inside-wrapper-width;
+  max-width: #lib.lengths[@inside-wrapper-width];
   margin: 0 auto;
   padding: 0 50px;
 }
@@ -353,7 +353,7 @@ Content
   }
   a {
     text-decoration: none;
-    color: $links;
+    color: #lib.colors[@links];
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-family: minion-pro, serif;
@@ -390,7 +390,7 @@ Footer
   font-size: 0.750em;
   z-index: 2;
   position: relative;
-  background: $bg-color;
+  background: #lib.colors[@bg-color];
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
   padding-top: 50px;
@@ -433,34 +433,36 @@ Footer
     display: inline-block;
   }
 }
+
+@social: github, weibo, mail, twitter, linkedin, rss, leanpub, podcast;
 .icon {
   display: inline-block;
-  width: $icon-size;
-  height: $icon-size;
+  width: #lib.lengths[@icon-size];
+  height: #lib.lengths[@icon-size];
   background-repeat: no-repeat;
   background-size: 100%;
   text-indent: -999em;
-  @each $social in github, weibo, mail, twitter, linkedin, rss, leanpub, podcast {
-    &.icon-#{$social} {
-      background-image: url('../images/#{$social}.svg');
+  each(@social, {
+    &.icon-@{value} {
+      background-image: url('../images/@{value}.svg');
     }
-  }
+  })
   &:hover {
     opacity: 0.7;
   }
 }
 .site-info {
-  background: $bg-color;
+  background: #lib.colors[@bg-color];
   text-align: center;
   font-size: 0.750em;
   padding-bottom: 20px;
   padding-top: 20px;
-  color: $bg-second;
+  color: #lib.colors[@bg-second];
   .split {
     margin: 0 2px;
   }
   a {
     text-decoration: underline;
-    color: $links;
+    color: #lib.colors[@links];
   }
 }

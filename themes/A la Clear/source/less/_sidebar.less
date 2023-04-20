@@ -4,8 +4,8 @@
     padding-left: 3vw;
     display:flex;
     flex-direction: column;
-    padding-top: $header-height;
-    padding-bottom: $header-height;
+    padding-top: #lib.lengths[@header-height];
+    padding-bottom: #lib.lengths[@header-height];
 
     .sidebar-top {
         flex:6;
@@ -22,9 +22,9 @@
         line-height: 150%;
         letter-spacing: 1px;
         text-transform: uppercase;
-        border-bottom: 1px solid $fg-color;
-        padding-bottom: $half-gap;
-        color: $bg-second-darker;
+        border-bottom: 1px solid #lib.colors[@fg-color];
+        padding-bottom: #lib.lengths[@half-gap];
+        color: #lib.colors[@bg-second-darker];
     }
 
     .sidebar-content {
@@ -34,6 +34,6 @@
     }
 
     .sidebar-social {
-        padding-bottom: $gap;
+        padding-bottom: #lib.lengths[@gap];
     }
 }
