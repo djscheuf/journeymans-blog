@@ -266,7 +266,7 @@ Grad
 }
 each(range(10), {
   .col-1-@{value} {
-    width: 100% / @value;
+    width: unit((100/@value),%);
     float: left;
     padding: 0 15px;
     box-sizing: border-box;
