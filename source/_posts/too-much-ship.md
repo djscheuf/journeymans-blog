@@ -7,7 +7,7 @@ tags:
   - leadership
   - testing
   - challenge
-date: 2023-04-11 09:30:00
+date: 2023-04-25 09:30:00
 photos: 
   - img/post_img/ship_in_bottle.jpg
 description: Disaster occurs when we find out too late that our organization hasn't the strength to pivot. How might discover this before we need our fullest capacity?
