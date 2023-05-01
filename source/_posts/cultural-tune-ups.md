@@ -6,7 +6,7 @@ categories:
 tags:
   - culture
   - teams
-date: 2023-05-10 09:30:00
+date: 2023-05-09 09:30:00
 photos: 
   - img/post_img/agile_team.png
 description: High-performance engines need periodic tuning and alignment. What might the equivalent be for High-performance teams?
