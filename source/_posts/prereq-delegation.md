@@ -8,7 +8,7 @@ tags:
   - delegation
   - trust
   - communication
-date: 2023-05-03 09:30:00
+date: 2023-05-02 09:30:00
 photos: 
   - img/post_img/conversation.jpg
 description: Without a shared sense of 'What is important' effective delegation is impossible! But how do we do that, and what would it require of us?
