@@ -6,7 +6,7 @@ tags:
   - documentation
   - ux
   - communication
-date: 2023-06-13 09:30:00
+date: 2023-06-05 09:30:00
 photos: 
   - img/post_img/ux_joke.jpg
 description: Have you ever discovered documentation answers somewhere you'd never look? After a recent occurrence, I did some thinking...
