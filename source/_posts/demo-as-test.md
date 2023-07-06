@@ -8,7 +8,7 @@ tags:
   - scrum
   - testing
   - communication
-date: 2023-06-27 09:30:00
+date: 2023-07-06 09:30:00
 photos: 
   - img/post_img/checklist.png
 description: While reading Agile Testing, the authors included 'Demonstration' as a testing method. But what does a Demo need to make it a suitable test?
