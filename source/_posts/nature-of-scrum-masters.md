@@ -1,5 +1,5 @@
 ---
-title: On the Nature of Scrum MAsters
+title: On the Nature of Scrum Masters
 categories:
   - Software Development
   - agile
