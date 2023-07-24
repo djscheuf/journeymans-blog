@@ -1,7 +1,7 @@
 ---
 title: Now
 comments: false
-date: 2022-12-10 10:00:00
+date: 2023-07-23 20:23:00
 header-img: "img/header_img/about-bg.png"
 ---
 
@@ -9,47 +9,21 @@ header-img: "img/header_img/about-bg.png"
 
 ---
 
-> Written 10 December 2022
+> Written 23 July 2023
 
-# The Year Behind
+## Happening Now
 
-## Things that Excited me
-- Improved Bible Study practice /Experiment showing promise, particularly enjoyed the [study on Endurance](https://daniel.scheufler.io/2022/12/09/on-endurance/), which also allowed me to share some encouragement!
-- My wife and I welcomed our Twins home mid-year, bringing my home from 5 to 7 total. While it certainly is louder, I continue to deeply enjoy being dog-piled by my children on a daily basis!
-- I was promoted to Principal Consultant this year, and continue to hone my craft acting as Technical adviser to my current client, leading their efforts to establish a [Software Craftsmanship Culture](https://manifesto.softwarecraftsmanship.org/), with sound automated quality practices, and effective teams.
+### Improving Talks
+I've spent this year focusing deeply on Improving Talks, the weekly, virtual, thought leader lunch and learn put on by Improving. I've found numerous areas for improvement, but among the experiments I have been most pleased with has been the development of series. The first of these experiments ran in March, honing all 5 of the talks that month on a single subject area. At the time of writing, the second iteration of this experiment will be just about to conclude. I am eager to see the results, and to continue experimentation. If you have any feedback, or perhaps topics you'd like to see covered, just reach out and tag me at [daniel dot scheufler at improving dot com](mailto:daniel.scheufler@improving.com)!
 
-## Things that made me ponder
-- This year, I have really stepped up my reading habit, and have been very pleased with the results. Some books that stand out from that are:
-    - [The Effective Executive](https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/0060833459)
-    - [7 Habits of Highly Effective People](https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/1982137274)
-    - [The Obstacle is the Way](https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358) (Re-read)
+### My Talks Page
+One of my favorite ways to contribute to the community, is though Public Speaking. I've delivered numerous topics, on numerous subjects, even virtually during COVID. Though nothing quite matched the feeling of engaging with a live audience. That said, I am planning to build up a public list of Talks hosted on this side. I'll keep the v1 of the list short for now, focusing on those talks which have proven durable, or are in the subject areas I specifically want to focus in. Keep an eye out for future updates on [My Talks](/talks) page for new future entries!
 
-- Here are some of my key insights from each of these books:
-    - Effective Executive: The Job of the Effective Executive is to create the rule for the various 'special-case' or gut-feeling actions he knows to be right in his line of work. In essence, he is 'writing the program' to codify the effective process of his business. This is remarkably like, if not exactly, the role of a Product Owner for Internal-facing software applications!
-    - 7 Habits: One of the most powerful realizations in your life is that you hold 2 roles over your life: The Author of your life's 'program', and The Enacter of your life's program. Recalling that 'You don't rise to the level of your goals, you fall to the level of your systems' (link to Clear), this insight profoundly calls on you to intentionally, consistently inspect your habits , your program, and to adapt towards the kind of person you wish to become. For me, distinctly separating those roles helps to clear the way for action. Never wear the Writer's hat and the Editor's hat at the same time!
-    - The Obstacle becomes the Way : One of my favorite quote is "Flow like water" I've applied in numerous professional and personal scenarios. Stopped by some big boulder of circumstance? Flow like water - go around, or go through! But in the Obstacle becomes the way, another quote, of similar nature, was discussed - "Burn like fire". Once you get a fire going, just about anything you throw in it, help the fire burn brighter and hotter. Sure you can smother it, dumping buckets of sand or whaterver, but the quote made me pause and think. You see it refers to the stoic idea of power. That is power over the self and especially over the mind. We do not control life's circumstances, but only how we choose to interact or react to them. So given the choice between being stopped, quitting, or whatever other negative reaction, we can instead choose to 'burn like fire'. We can choose to look at teach challenge, each new wrinkle as fuel for our fire, building us up. It was an invigorating thought.
+### Good Reading
 
-## Things I want to improve
-- I went at things a little hard upon returning to work after my twins were born. As a result, I got darn close to burning out. So I continue to want to get better at managing my own expectations and cultivating my commitments. It is becoming ever more evident that saying No is a superpower, and one I need serious practice with.
-- While I definitely wanted to read _more_ this year, I also wanted to get better at reading _deeply_. The books I highlighted hit that mark, but many of the book I read didn't. Maybe it was a life circumstances thing, or maybe it was sleep deprivation. But this is an area I'd like to improve on in the coming year. 
-- Patience. Having 5 kids can be tough at times. And I was not as patience as I would have wanted to be during the year. I love them deeply and wish to serve them better in this department. Thankfully the situation is not without hope. I was intentionally practicing patience this year too, and I did make progress. But did go as for as I felt I could have, and as a result of the practice, gained insight into just how much farther I can yet go. I am eager to make more progress on Patient Fatherhood in the next year too.
+I've been blessed to find several good books this year. At the moment, I am thoroughly enjoying a re-read of [The Effective Executive](https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/B015YMLYGM/) by Drucker, as I prepare for the next Podcast Season. Be sure to [keep an eye out](https://podcasters.spotify.com/pod/show/journeymans-travels) for the trailer in the near future! But I'd also recommend taking a look at [Help Them Grow or Watch Them Go](https://www.amazon.com/Help-Them-Grow-Watch-Conversations/dp/1523097507/)! The new way of looking at career conversations, and some of the tools discussed have been great!
 
-# The Year Ahead
+## Happening Soon
 
-## Doing Business As
-In case you missed it, this year, I started a business! Just a small media business by the name of _Starcatcher Mountain Media_. Aside from the blog, and the [podcast](https://anchor.fm/journeymans-travels) which remain free, I also [published 4 books](https://leanpub.com/u/danielscheufler), with more on the way. My goal for ths business this year is to break even with the operating costs. For example, running the [comment system](https://talk.hyvor.com/) with Hyvor runs about 6$ a month. The domain runs about 12$. Those may not sound like much, but as you add up all those little items, like registering the business, or the like it adds up. I made good progress this year. But as I grow in my understanding, and my abilities, I will be scrutinizing those things I purchase for the media business. Hence my goal this year is to break-even, and some of that will come from eliminating costs which don't have a good RoI. I hope you'll enjoy watching the business grow, and perhaps [help pitch in](https://www.buymeacoffee.com/djscheuf) if this content has proven useful to you and you'd like to see more. But with that context, you can expect some changes in the coming year, including in my content strategy.
-
-## Content Strategy
-In 2022, I started a podcast, and published 2 seasons so far. I've had fun with the practice, and found that getting to assemble the episodes and build the content was an enjoyable way to [develop ideas](../2020/06/29/repost-how-to-break-into-conference-speaking/). In the coming year, I am hoping to mature my own practice as part of evaluating the RoI. One key aspect I hope to improve is the amount of value I can generate for the same level of effort. So I am going to be trying an experiment in leveraging multiple platforms for the content: the podcast, my blog, and Youtube. I am planning to record videos of the podcasts, to allow me to upload both a video and an audio version, so people can consume the content as they'd prefer. Then to kind of round things out, I was planning to share my show notes for the podcast as posts on the blog. 
-
-But don't worry, I am not _just_ going to turn the blog into my show notes platform. I am still planning to produce blog posts here and there. But these regular articles will be part of a deeper layer in my content development strategy. I want to use them to dive deeper in pillars of my T.
-
-### Deepening the T
-The concept of a T-shaped individual was first introduced to be in [The Toyota Way to Lean Leadership](https://www.amazon.com/Toyota-Way-Lean-Leadership-Development/dp/0071780785). Briefly, the idea is that the best way to develop a leader is to allow an individual  to have a deep base of knowledge in an area, and then intentionally move them into new areas of the business, where they do NOT have that depth of knowledge to lead, allowing for seasoning across the company. This results in leaders with one or a handful of deep areas of expertise and a wider breadth of knowledge across the organization, and experience in right form of leadership.  
-
-I have been adopting this concept in the kinds of talks I have chosen to develop. Many of the topic I speak on are complementary to software development, but seldom on technology. So as part of deepening my T, I am going to intentionally develop at least 1 'deeper' talk per quarter, or so. IN previous years, I would simply share whatever my exploration that quarter had produced in a broad exploration topic. THis year my hope is to revisit areas I have explored before, and dive deeper. This will either look like deepending existing concept talks like [my talk on Effective Meetings](https://www.youtube.com/watch?v=rN5UJ4J36YY&list=PL2I3mxniQ45SNCUKKM1_PrG84aY3eEm7H), or may dive deeper on specific connections to topic I have brushed on before such as the link between [effective onboarding](https://daniel.scheufler.io/2022/02/16/onboarding-junior-engineer/), and [effective Personal Knowledge Management](https://www.youtube.com/watch?v=rluFxA1BvX4&list=PL2I3mxniQ45SNCUKKM1_PrG84aY3eEm7H&index=4). The regular blog articles will likely have glimpses and collections of my ongoing research and insights, as I work to collect them into meaningful talks!
-
-## Improving Initiatives
-Oh! On last note, I was asked to head up on of [Improving's](https://improving.com/) more visible initiatives this year: [Improving Talks](https://improving.com/virtual-events/). These are [weekly talks put on by Improvers on all manner of subjects](https://www.youtube.com/watch?v=4vydbZfsNY4&list=PLqXBkW2Bgxfgw_ye7p9grNCIw3HN_euWL), and it is a great way to boost your expertise in any areas they talk about. So, I want to specifically solicit feedback. If you end up joining a talk, and have any comments please share! Be it about the topics, the timing, production, or even when our videos get posted to youtube, please tag me! Sending an email, though a little tedious helps me keep those ideas organized and to act one them better. Would you help me out and tag me at [daniel dot scheufler at improving dot com](mailto:daniel.scheufler@improving.com)? 
-
-Here's to the year ahead! May you are yours have a very blessed holiday season, and enter 2023 refreshed and ready!
+### Retiring the Comment System
+A while back, I ran a series on how I went about selecting a comment system. I still stand by the process I used, but I am finding that the comment system sees far less use than I had hoped. And being the financier, far less use that I am wish to purchase at its current price. So in the near future, likely by the end of September, I will be removing the Hyvor Talks comment system from a Journeyman's Travels. I have not yet decided what I'll be replacing it with, but I would be open to suggestions.  If you have an opinion, or an option you think I should consider, tag me at [daniel at scheufler dot io](mailto:daniel@scheufler.io). 
