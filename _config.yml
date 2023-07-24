@@ -110,6 +110,7 @@ social:
 nav:
   Home: .
   Now: now
+  My Talks: talks
   User's Manual: manual
   About: about
   Archive: archives
