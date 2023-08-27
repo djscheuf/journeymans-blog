@@ -1,13 +1,11 @@
 ---
 title: Now
 comments: false
-date: 2023-07-23 20:23:00
-header-img: "img/header_img/about-bg.png"
+date: 2023-07-23 21:30:00
+photos: 
+ - img/page_img/clock.jpg
 ---
 
-![photo](../img/page_img/clock.jpg)
-
----
 
 > Written 23 July 2023
 
