@@ -1,18 +1,33 @@
 ---
 title: Now
 comments: false
-date: 2023-07-23 21:30:00
+date: 2023-08-26 21:30:00
 photos: 
  - img/page_img/clock.jpg
 ---
 
 
-> Written 23 July 2023
+> Written 26 August 2023
 
 ## Happening Now
 
-### Improving Talks
-I've spent this year focusing deeply on Improving Talks, the weekly, virtual, thought leader lunch and learn put on by Improving. I've found numerous areas for improvement, but among the experiments I have been most pleased with has been the development of series. The first of these experiments ran in March, honing all 5 of the talks that month on a single subject area. At the time of writing, the second iteration of this experiment will be just about to conclude. I am eager to see the results, and to continue experimentation. If you have any feedback, or perhaps topics you'd like to see covered, just reach out and tag me at [daniel dot scheufler at improving dot com](mailto:daniel.scheufler@improving.com)!
+### THAT Conference CFP has closed
+As may or may not be clear, I have something of a hobby in public speaking. It has been an odd pleasure I discovered some years back. But peculiarities of the author aside, I am particularly excited for some potential conference opportunities coming in the next few months. It has been ages since I have been able to attend a conference in person. THAT Conference recently added a Texas offering, close enough to home for me to reach for. Organizers willing, I will have a talk or two to present, and Lord willing, I'll be able to take a bit of vacation to go an enjoy my return to in-person conferences in early 2024. So I am excited that the CFP has closed, and now all that remains is some eager waiting!
+
+### Retiring the Comment System
+A while back, I ran [an article](/2022/01/03/comments-now-online/) on how I went about selecting a comment system. I still stand by the process I used, but I am finding that the comment system sees far less use than I had hoped. And being the financier, far less use that I am wish to purchase at its current price. By the time you are reading this, I will have removed the [Hyvor Talks](https://talk.hyvor.com/) comment system from a Journeyman's Travels. 
+
+I have taken a backup of the comments already made, as well as any reactions you've provided. I will be using these to build the process that will replace comments on the blog. I expect the reactions and comments will inform which of my existing posts end up in the 'read-next' prompts already on the website, in combination with the page view data. I have not yet decided what I'll be replacing it with, but I would be open to suggestions.  If you have an opinion, or an option you think I should consider, tag me at [daniel at scheufler dot io](mailto:daniel@scheufler.io). 
+
+I want to offer kudos to [Hyvor Talks](https://talk.hyvor.com/) for the excellent tool, and the super-easy installation. Perhaps in time, I may return to it, as it is still the best system I can think of. This step is taken as part of my work on my media business _**Starcatcher Mountain Media**_. I stated in previous 'Now' page updates that:
+
+> But as I grow in my understanding, and my abilities, I will be scrutinizing those things I purchase for the media business. Hence my goal this year is to break-even, and some of that will come from eliminating costs which don't have a good RoI.
+> From Now, written 10 December 2022
+
+The Comments system, released more than 18 months ago, has seen only middling use every month.  Meanwhile it represents a sizable chunk of my monthly operating expenses. Therefore, I will discontinue my use of the tool until the state of my business and blog makes it's capabilities attractive and fruitful.
+
+
+## Happening Recently
 
 ### My Talks Page
 One of my favorite ways to contribute to the community, is though Public Speaking. I've delivered numerous topics, on numerous subjects, even virtually during COVID. Though nothing quite matched the feeling of engaging with a live audience. That said, I am planning to build up a public list of Talks hosted on this side. I'll keep the v1 of the list short for now, focusing on those talks which have proven durable, or are in the subject areas I specifically want to focus in. Keep an eye out for future updates on [My Talks](/talks) page for new future entries!
@@ -20,8 +35,3 @@ One of my favorite ways to contribute to the community, is though Public Speakin
 ### Good Reading
 
 I've been blessed to find several good books this year. At the moment, I am thoroughly enjoying a re-read of [The Effective Executive](https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials/dp/B015YMLYGM/) by Drucker, as I prepare for the next Podcast Season. Be sure to [keep an eye out](https://podcasters.spotify.com/pod/show/journeymans-travels) for the trailer in the near future! But I'd also recommend taking a look at [Help Them Grow or Watch Them Go](https://www.amazon.com/Help-Them-Grow-Watch-Conversations/dp/1523097507/)! The new way of looking at career conversations, and some of the tools discussed have been great!
-
-## Happening Soon
-
-### Retiring the Comment System
-A while back, I ran a series on how I went about selecting a comment system. I still stand by the process I used, but I am finding that the comment system sees far less use than I had hoped. And being the financier, far less use that I am wish to purchase at its current price. So in the near future, likely by the end of September, I will be removing the Hyvor Talks comment system from a Journeyman's Travels. I have not yet decided what I'll be replacing it with, but I would be open to suggestions.  If you have an opinion, or an option you think I should consider, tag me at [daniel at scheufler dot io](mailto:daniel@scheufler.io). 
