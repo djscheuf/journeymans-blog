@@ -2,12 +2,10 @@
 title: Now
 comments: false
 date: 2023-08-26 21:30:00
-header-img: "img/header_img/about-bg.png"
+photos: 
+ - img/page_img/clock.jpg
 ---
 
-![photo](../img/page_img/clock.jpg)
-
----
 
 > Written 26 August 2023
 
