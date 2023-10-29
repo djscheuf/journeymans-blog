@@ -27,12 +27,11 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-less": "^4.0.0",
-    "hexo-renderer-markdown-it": "^7.0.0",
+    "hexo-renderer-markdown-it": "^7.1.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
-    "hexo-migrator-wordpress": "^1.0.0",
-    "rimraf": "^5.0.0"
+    "rimraf": "^5.0.5"
   }
 }
