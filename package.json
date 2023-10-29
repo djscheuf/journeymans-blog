@@ -14,10 +14,10 @@
     "regen":"npm run clean && npm run generate"
   },
   "hexo": {
-    "version": "5.4.2"
+    "version": "6.3.0"
   },
   "dependencies": {
-    "hexo": "^5.4.0",
+    "hexo": "^6.3.0",
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
