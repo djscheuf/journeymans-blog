@@ -1,5 +1,5 @@
 ---
-title: On AI and the Future of Software Development
+title: Recent Trends with Copilot
 categories:
   - Software Development
 tags:
@@ -9,9 +9,9 @@ tags:
 date: 2024-01-30 09:30:00
 photos: 
   - img/post_img/man_think_ai.jpg
-description: Some new CoPilot research revealed a troubling trend. How might this trend develop?
+description: Some new Copilot research revealed a troubling trend. How might this trend develop?
 ---
-Visual Studio Magazine recently posted an article on [some new CoPilot research](https://visualstudiomagazine.com/articles/2024/01/25/copilot-research.aspx). It revealed discovered a troubling trend. Use of CoPilot correlates to an increase in code-churn. Their data measured code churn by code committed today gets replaced in two weeks or less. This pattern usually appears in repositories cheifly delivered by itinerant developers (read: contractors). The research's abstract concludes with this line:
+Visual Studio Magazine recently posted an article on [some new Copilot research](https://visualstudiomagazine.com/articles/2024/01/25/copilot-research.aspx). It revealed discovered a troubling trend. Use of CoPilot correlates to an increase in code-churn. Their data measured code churn by code committed today gets replaced in two weeks or less. This pattern usually appears in repositories cheifly delivered by itinerant developers (read: contractors). The research's abstract concludes with this line:
 > [sic] _AI-generated code resembles an itinerant contributor, prone to violate the DRY-ness [don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) of the repos visited._
 
 I am inclined to view this result as somewhat inevitable. Consider how they marketed these AI code tools! And don't forget what strengths computers have in general. AI Code Gen got sold as a potential replacement for writing common code solutions. Much like the work a Jr Developer would do. So, of course, we should expect it to used, like a spam-able solution generator. Consider also that Computers are just potent calculators. Their strength is in repeated sequences of concrete computational steps. So any challenge that rewards 'lots' in a short time will naturally favor the machine.
