@@ -7,6 +7,7 @@ tags:
   - learning
   - humility
   - mentorship
+  - ai
 date: 2023-02-21 09:30:00
 photos: 
   - img/post_img/man_think_ai.jpg
