@@ -7,6 +7,7 @@ tags:
  - automation
  - testing
  - quality
+ - metrics
  
 date: 2021-07-19 09:00:00
 photos: 

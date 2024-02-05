@@ -8,6 +8,7 @@ tags:
   - agile
   - interview
   - communication
+  - metrics
 photos:
   - img/post_img/office_politics.jpg
 date: 2020-05-06 09:00:00
