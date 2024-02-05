@@ -5,7 +5,6 @@ categories:
  - Tools
 tags:
  - productivity
- - organization
  - effectiveness
 date: 2020-02-17 09:00:00
 photos: 

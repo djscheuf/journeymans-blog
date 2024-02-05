@@ -8,7 +8,6 @@ tags:
   - list
   - lists
   - notebook
-  - organization
   - organize
   - to-do
 url: 1173.html
