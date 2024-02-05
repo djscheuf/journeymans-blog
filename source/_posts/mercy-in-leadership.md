@@ -4,8 +4,8 @@ categories:
   - Personal Development
 tags:
   - leadership
-  - teamwork
-  - emotional-maturity
+  - teams
+  - emotional-intelligence
 date: 2022-03-18 09:00:00
 photos:
   - img/post_img/captain_america_shield.jpg

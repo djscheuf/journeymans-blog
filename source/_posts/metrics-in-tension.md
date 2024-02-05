@@ -5,6 +5,7 @@ categories:
   - Leadership
 tags:
   - metrics
+  - leadership
 date: 2024-02-06 09:30:00
 photos: 
   - img/post_img/metric-tension.png

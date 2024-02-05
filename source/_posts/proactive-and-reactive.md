@@ -7,7 +7,7 @@ tags:
  - intentionality
  - time-box
  - priority
- - lead-yourself
+ - leadership
 date: 2020-05-11 09:00:00
 photos: 
  - img/post_img/clock.jpg

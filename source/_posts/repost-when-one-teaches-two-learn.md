@@ -10,6 +10,7 @@ tags:
   - jest
   - tdd
   - repost
+  - leadership
 photos:
   - img/post_img/knowledge_base.jpg
 date: 2020-07-13 09:00:00

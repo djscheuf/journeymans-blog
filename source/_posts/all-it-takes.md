@@ -5,7 +5,7 @@ categories:
 tags:
   - perspective
   - courage
-  - self-leadership
+  - leadership
   - contribute
   - community
 date: 2020-11-03 09:00:00

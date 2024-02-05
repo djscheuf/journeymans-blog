@@ -3,7 +3,7 @@ title: Setting others up to succeed
 tags:
   - influence
   - success
-  - team
+  - teams
   - leadership
 categories:
   - Professional Development
