@@ -7,7 +7,7 @@ tags:
   - leadership
   - effectiveness
   - communication
-  - teamwork
+  - teams
 date: 2023-06-20 09:30:00
 photos: 
   - img/post_img/quiet_forest.jpg

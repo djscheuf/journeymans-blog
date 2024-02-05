@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - leadership
-  - team-building
+  - teams
   - values
   - organization
 date: 2023-04-18 09:30:00

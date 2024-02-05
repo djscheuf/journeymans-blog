@@ -4,7 +4,7 @@ categories:
  - Professional Development
  - Leadership
 tags:
- - teamwork
+ - teams
  - leadership
 date: 2021-12-08 09:00:00
 photos: 
