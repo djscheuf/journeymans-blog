@@ -4,12 +4,10 @@ categories:
   - Software Development
   - Quality
 tags:
-  - story
-  - code
-  - english
-  - geek-speak
-  - jargon
-  - measure
+  - quality
+  - culture
+  - communication
+  - metrics
 date: 2019-01-28 09:00:00
 photos: 
   - img/post_img/book.jpg

@@ -6,8 +6,8 @@ categories:
 tags:
   - leadership
   - teams
-  - values
-  - organization
+  - culture
+  - metrics
 date: 2023-04-18 09:30:00
 photos: 
   - img/post_img/money_and_time.jpg

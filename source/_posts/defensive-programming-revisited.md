@@ -7,7 +7,7 @@ date: 2016-06-23 15:00:08
 tags:
   - leadership
   - teams
-  - values
+  - culture
   - organization
 photos: 
   - /img/post_img/submarine.jpg
