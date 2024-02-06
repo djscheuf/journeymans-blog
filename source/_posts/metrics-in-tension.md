@@ -16,3 +16,5 @@ Measuring results is the typical first step towards improving them. Sadly, the a
 I noticed an interesting pattern from two sources, that points to a possible solution. [Dr. Goldratt](https://en.wikipedia.org/wiki/Eliyahu_M._Goldratt) proposed to measure both [Throughput Dollar Days](https://en.wikipedia.org/wiki/Theory_of_constraints#Finance_and_accounting) and Inventory Dollar Days. Meanwhile the [DORA metrics](https://en.wikipedia.org/wiki/Accelerate_(book)#Four_Key_Metrics) offer 4 metrics. Deploy Frequency, Change Failure Rate, Change Lead Time, and Mean Time to Recover.
 
 The key is that these metrics are in tension. 'Gamified' improvements in one diminish the other. You can max out throughput by running all the machines all the time. But that leads to more inventory. The desired behavior would improve both metrics. The trick is that we must identify useful metrics that are in tension with each other.
+
+> Image generated with [Hotpot AI Image Generation](https://hotpot.ai/art-generator)
