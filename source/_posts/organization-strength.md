@@ -7,7 +7,7 @@ tags:
   - leadership
   - organization
   - effectiveness
-  - team-building
+  - teams
 date: 2023-09-26 09:30:00
 photos: 
   - img/post_img/rockwall.jpg

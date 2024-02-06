@@ -5,7 +5,7 @@ categories:
   - Lessons Learned
 tags:
   - intentionality
-  - entreleadership
+  - leadership
   - challenge
   - growth
 date: 2019-03-18 09:00:00

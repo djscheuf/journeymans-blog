@@ -6,7 +6,7 @@ categories:
 tags:
   - advice
   - coaching
-  - self-leadership
+  - leadership
 date: 2019-12-02 09:00:00
 photos: 
   - img/post_img/lighthouse.jpg

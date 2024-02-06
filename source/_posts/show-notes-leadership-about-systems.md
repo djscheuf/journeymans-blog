@@ -7,6 +7,8 @@ tags:
  - podcast
  - leadership
  - habits
+ - organization
+ - effectiveness
 date: 2023-04-29 15:30:00
 photos: 
  - img/post_img/trail-marker.jpg

@@ -8,7 +8,7 @@ tags:
   - retrospectives
   - facilitation
   - effectiveness
-  - team-building
+  - teams
 date: 2023-08-22 09:30:00
 photos: 
   - img/post_img/agile_team.png

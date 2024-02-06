@@ -7,7 +7,7 @@ tags:
   - 30sec-review
   - devops
   - continuous
-  - product-teams
+  - teams
   - goto
 date: 2020-10-12 09:00:00
 photos:

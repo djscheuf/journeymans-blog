@@ -6,7 +6,7 @@ categories:
 tags:
   - leadership
   - trust
-  - teambuilding
+  - teams
   - communication
 date: 2023-06-27 09:30:00
 photos: 

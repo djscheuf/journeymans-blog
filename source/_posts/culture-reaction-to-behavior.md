@@ -6,7 +6,7 @@ categories:
 tags:
  - culture
  - leadership
- - teamwork
+ - teams
 date: 2023-03-07 09:00:00
 photos: 
  - img/post_img/trail-marker.jpg

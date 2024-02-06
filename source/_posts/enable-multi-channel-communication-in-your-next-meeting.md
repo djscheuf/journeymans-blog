@@ -4,9 +4,7 @@ tags:
   - business
   - business meetings
   - communication
-  - effective
-  - effective communication
-  - effective meetings
+  - effectiveness
   - hands
   - meetings
   - visual communication

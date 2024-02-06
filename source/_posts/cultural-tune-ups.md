@@ -6,6 +6,7 @@ categories:
 tags:
   - culture
   - teams
+  - leadership
 date: 2023-05-09 09:30:00
 photos: 
   - img/post_img/agile_team.png

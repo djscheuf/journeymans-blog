@@ -6,6 +6,7 @@ categories:
   - Mentorship
 tags:
   - mentorship
+  - leadership
   - redux
   - jest
   - tdd
