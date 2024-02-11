@@ -2,15 +2,11 @@
 title: Having no fear for the outcome of 1000 battles
 tags:
   - business
-  - goal
   - goals
-  - leader
   - leadership
-  - management
   - metrics
   - mission
   - principles
-  - sun tzu
 url: 1439.html
 id: 1439
 categories:
