@@ -44,3 +44,7 @@ As developers we solved misbehaving code with Unit Tests. WE adjusted the way we
 
 ### Designing and Running Effective Meetings
 Do meeting at your company drag on and on and on... ? Do you wish they'd get to the point already? Have you ever had to have a meeting after the meeting to make the real decisions? What if there was a way to fix this broken process? What if we could make meetings effective again? Come learn some guiding principles to help make your meetings more effective, and not just the ones you lead! Tips include how to organize your meeting, how to help ensure decisions are made, and suggestions for follow-ups to communicate the decisions, so they don't die in the meeting!
+
+## Recordered Talks
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?si=G7Z9g5KPjPqX_nI9&amp;list=PL2I3mxniQ45SNCUKKM1_PrG84aY3eEm7H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
