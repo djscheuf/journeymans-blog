@@ -7,6 +7,7 @@ tags:
   - transformation
   - growth
 date: 2023-12-05 09:30:00
+used-hotpot: true
 photos: 
   - img/post_img/thinker.png
 description: A good question is worth a thousand answers... But what makes a question transformational?
@@ -25,5 +26,3 @@ I've been asking myself this question almost daily since: _"What can I contribut
 These transformational questions ought to be shared, and widely and frequently! 
 A good question is worth a thousand answers, and could change the world. 
 What transformational questions do you have in your kit?
-
-> Image generated with [Hotpot AI Image Generation](https://hotpot.ai/art-generator)
