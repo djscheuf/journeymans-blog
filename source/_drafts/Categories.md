@@ -23,3 +23,10 @@ For Future use and reference
   - Testing
   - Tools
   - Work Projects
+
+  # Tags
+  - teams
+  - effectiveness
+  - agile
+  - leadership
+  - 
