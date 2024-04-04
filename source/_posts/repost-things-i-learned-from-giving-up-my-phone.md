@@ -5,7 +5,7 @@ categories:
   - Lessons Learned
 tags:
   - intentionality
-  - entreleadership
+  - leadership
   - challenge
   - growth
   - repost

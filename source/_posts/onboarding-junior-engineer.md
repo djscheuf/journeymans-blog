@@ -6,7 +6,7 @@ categories:
  - Mentorship
 tags:
  - onboarding
- - teamwork
+ - teams
  - leadership
 date: 2022-02-16 09:00:00
 photos: 

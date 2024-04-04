@@ -8,6 +8,7 @@ tags:
   - mindset
   - flow
   - lean
+  - metrics
 date: 2023-03-28 09:30:00
 photos: 
   - img/post_img/flow.jpg

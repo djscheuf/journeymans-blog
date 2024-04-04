@@ -4,8 +4,8 @@ categories:
   - Software Development
   - Quality
 tags:
-  - teamwork
-  - values
+  - teams
+  - culture
   - quality
 date: 2019-02-11 09:00:00
 photos: 

@@ -6,8 +6,8 @@ categories:
 date: 2016-06-23 15:00:08
 tags:
   - leadership
-  - team-building
-  - values
+  - teams
+  - culture
   - organization
 photos: 
   - /img/post_img/submarine.jpg

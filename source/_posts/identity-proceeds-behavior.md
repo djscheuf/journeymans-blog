@@ -7,7 +7,7 @@ categories:
 tags:
  - culture
  - leadership
- - teamwork
+ - teams
 date: 2022-02-16 09:00:00
 photos: 
  -  img/post_img/leader.jpg

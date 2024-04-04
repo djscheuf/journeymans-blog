@@ -9,7 +9,7 @@ tags:
   - strength
   - weakness
   - fusion
-  - team-stages
+  - teams
   - retro
 date: 2019-01-19 08:00:00
 photos: 

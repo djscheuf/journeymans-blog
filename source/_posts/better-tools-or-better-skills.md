@@ -3,9 +3,8 @@ title: 'Better tools, or Better skills?'
 tags:
   - business
   - business meetings
+  - effectiveness
   - communication
-  - effective
-  - effective communication
   - learning
   - meetings
   - principles

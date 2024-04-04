@@ -7,7 +7,7 @@ categories:
 tags:
  - trust
  - communication
- - teamwork
+ - teams
 date: 2022-01-12 09:00:00
 photos: 
  - img/post_img/conversation.jpg

@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - trust
-  - team-building
+  - teams
   - disc
   - leadership
 date: 2023-03-21 09:30:00

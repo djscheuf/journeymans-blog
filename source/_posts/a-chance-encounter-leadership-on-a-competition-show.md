@@ -4,7 +4,7 @@ tags:
   - competition
   - leader
   - leadership
-  - team
+  - teams
   - trust
 url: 1448.html
 id: 1448
