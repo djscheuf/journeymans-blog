@@ -8,9 +8,9 @@ tags:
   - testing
   - architecture
   - design
-date: 2023-06-20 09:30:00
+date: 2024-04-09 09:30:00
 photos: 
-  - img/post_img/quiet_forest.jpg
+  - img/post_img/submarine.jpg
 description: Not too long ago, my KitchenAid Stand Mixer stopped, and my wife and I repaired it. But while repairing it, the intentional design for failure challenges me. 
 ---
 Not too long ago, my KitchenAid Stand Mixer stopped, and my wife and I repaired it. But while repairing it, the intentional design for failure challenges me. The Engineers put some serious thought into their mixer design! The plastic gear that had shredded, stopping my mixer, was designed to do fail. This allowed it to protect to other critical all-metal assemblies in the mixer. Moreover, the engineers made it straight forward to replace in the event of this failure!
