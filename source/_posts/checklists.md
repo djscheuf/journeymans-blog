@@ -12,7 +12,7 @@ photos:
   - img/post_img/checklist.png
 description: I posted a list of Team Behaviors recently. I wanted to expand on the rational and power I see in creating checklists.
 ---
-I recently published a list of [mature agile team behaviors](./../../../mature-team-behaviors/). I advocated that you could use it as a litmus test or frankly a checklist of "does your team do these things?" I want to revisit why I built that list.
+I recently published a list of [mature agile team behaviors](./../../../../mature-team-behaviors/). I advocated that you could use it as a litmus test or frankly a checklist of "does your team do these things?" I want to revisit why I built that list.
 
 I've found that the act of building a checklist for yourself is a means of self-programming. I was first introduced to this idea by [7 Habits of Highly Effective People](https://www.amazon.com/Habits-Highly-Effective-People-Powerful/dp/B0006IU4C0). This act of self-programming is a means of learning and codifying what you believe is good. Many high performing groups find checklist help them produce better, more consistent results. But you can also share these checklists!
 
