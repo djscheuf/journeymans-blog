@@ -6,6 +6,7 @@ categories:
 tags:
   - metrics
   - leadership
+  - theory-of-constraints
 date: 2024-02-06 09:30:00
 used-hotpot: true
 photos: 
