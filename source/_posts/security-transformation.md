@@ -10,6 +10,7 @@ tags:
  - authentication
  - identity
  - transformation
+ - jobs-to-be-done
 date: 2023-01-10 09:00:00
 photos: 
  - img/post_img/castle.jpg
