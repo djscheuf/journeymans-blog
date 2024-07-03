@@ -4,12 +4,10 @@ categories:
   - Personal Development
   - Lessons Learned
 tags:
-  - books
   - leadership
-  - 30sr
 date: 2024-07-02 09:30:00
 photos: 
-  - img/post_img/office_politics.jpg
+  - https://prodimage.images-bn.com/pimages/9781647821241_p0_v1_s1200x630.jpg
 description: I recently found and read Marcus Buckingham's Love and Work. I found it a good read, and thought I'd share my takeaways in this review. 
 ---
 
