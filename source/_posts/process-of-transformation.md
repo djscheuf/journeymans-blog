@@ -7,7 +7,7 @@ tags:
   - leadership
   - agile
   - transformation
-  - organizational-change-management
+  - organizationsal-change-management
 date: 2024-04-30 09:30:00
 photos: 
   - img/post_img/ocean_thought.jpg

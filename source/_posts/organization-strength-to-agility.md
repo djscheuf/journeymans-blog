@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - leadership
-  - organization
+  - organizations
   - effectiveness
   - agile
 date: 2023-10-03 09:30:00
