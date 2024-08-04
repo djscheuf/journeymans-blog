@@ -6,7 +6,7 @@ categories:
 tags:
   - leadership
   - testing
-  - challenge
+  - organizations
 date: 2023-04-25 09:30:00
 photos: 
   - img/post_img/ship_in_bottle.jpg
