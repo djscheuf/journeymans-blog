@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - leadership
-  - organization
+  - organizations
   - transformation
   - agile
 date: 2023-09-19 09:30:00

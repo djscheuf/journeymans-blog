@@ -8,7 +8,7 @@ tags:
   - leadership
   - teams
   - culture
-  - organization
+  - organizations
 photos: 
   - /img/post_img/submarine.jpg
 ---

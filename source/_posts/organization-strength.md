@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - leadership
-  - organization
+  - organizations
   - effectiveness
   - teams
 date: 2023-09-26 09:30:00
