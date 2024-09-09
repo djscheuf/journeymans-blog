@@ -6,10 +6,8 @@ categories:
 tags:
   - executive
   - effectiveness
-  - drucker
   - product-owner
 date: 2024-08-07 09:30:00
-used-hotpot: true
 photos: 
   - img/post_img/blueprint.jpg
 description: While reading through the Effective Executive, I noticed a link between Drucker's recommendations and real organizational opportunity. It starts with evolving your business processes!

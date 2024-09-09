@@ -6,12 +6,10 @@ categories:
 tags:
   - executive
   - effectiveness
-  - drucker
   - product-owner
 date: 2024-09-04 09:30:00
-used-hotpot: true
 photos: 
-  - img/post_img/blueprint.png
+  - img/post_img/blueprint.jpg
 description: How do you train the next generation of executives? Drucker considered this question heavily, even identifying key skills needed. Key to his findings is the need to practice, and many organisations are leaving their best practice areas unused!
 canonical_url: https://www.improving.com/thoughts/druckers-blueprint-product-owner-to-effective-executive-pt-3/
 ---
