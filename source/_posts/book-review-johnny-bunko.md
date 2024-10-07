@@ -12,7 +12,7 @@ photos:
 description: I recently found and read Daniel Pink's The Adventures of Johnny Bunko. You might not think a Manga would be a good business book read, but it was! Let me tell you about it!
 ---
 
-It's not often that I am surprised by how good a 'recommendation' from my shopping app is. Today though I get to share one! I was familiar with [Daniel Pink](https://en.wikipedia.org/wiki/Daniel_H._Pink) from [To Sell is Human](https://www.amazon.com/Sell-Human-Surprising-Persuading-Influencing/dp/1786891719/), but when I saw a Manga with his name on it, I was honestly confused. I thought it was a spoof. But nope! It's legit. And the contents were top quality; art, story, and all! [The Adventures of Johnny Bunko(https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide/dp/1594482918/) sells itself as "The Last Career Guide You'll Ever Need". And it lives up to that claim.
+It's not often that I am surprised by how good a 'recommendation' from my shopping app is. Today though I get to share one! I was familiar with [Daniel Pink](https://en.wikipedia.org/wiki/Daniel_H._Pink) from [To Sell is Human](https://www.amazon.com/Sell-Human-Surprising-Persuading-Influencing/dp/1786891719/), but when I saw a Manga with his name on it, I was honestly confused. I thought it was a spoof. But nope! It's legit. And the contents were top quality; art, story, and all! [The Adventures of Johnny Bunko](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide/dp/1594482918/) sells itself as "The Last Career Guide You'll Ever Need". And it lives up to that claim.
 
 If I had to summarize the book in a few sentences, here's what I'd try to pitch:
 - Johnny Bunko, an accountant as Boggs, feel stuck in his job, when a magic Chopstick Fairy offers to advise him.
