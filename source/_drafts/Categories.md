@@ -24,9 +24,9 @@ For Future use and reference
   - Tools
   - Work Projects
 
-  # Tags
+# Approved Tags
   - teams
   - effectiveness
   - agile
   - leadership
-  - 
+  - organization
