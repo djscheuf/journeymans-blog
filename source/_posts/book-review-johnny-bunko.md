@@ -6,7 +6,6 @@ categories:
 tags:
   - career
 date: 2024-10-07 09:30:00
-used-hotpot: true
 photos: 
   - img/post_img/johnny_bunko.png
 description: I recently found and read Daniel Pink's The Adventures of Johnny Bunko. You might not think a Manga would be a good business book read, but it was! Let me tell you about it!
