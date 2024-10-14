@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - leadership
-  - organization
+  - organizations
   - effectiveness
   - communication
 date: 2023-05-16 09:30:00

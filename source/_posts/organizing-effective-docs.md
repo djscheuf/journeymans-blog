@@ -6,6 +6,7 @@ tags:
   - documentation
   - ux
   - communication
+  - jobs-to-be-done
 date: 2023-06-05 09:30:00
 photos: 
   - img/post_img/ux_joke.jpg

@@ -7,7 +7,7 @@ tags:
  - podcast
  - leadership
  - habits
- - organization
+ - organizations
  - effectiveness
 date: 2023-04-29 15:30:00
 photos: 
