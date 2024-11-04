@@ -6,7 +6,7 @@ categories:
 tags:
   - performance
   - effectiveness
-date: 2024-10-21 09:30:00
+date: 2024-10-28 09:30:00
 photos: 
   - img/post_img/office_politics.jpg
 description: A while back, a colleague of mine asked to pick my brain. He was having a performance challenge on his team, and wasn't certain how to proceed. Fixing this challenges can be quite frustrating. But how can you tell if it really is a performance problem?
