@@ -6,7 +6,7 @@ categories:
 tags:
   - organization
   - effectiveness
-date: 2024-11-11 09:30:00
+date: 2024-11-19 09:30:00
 photos: 
   - img/post_img/tool_kit.jpg
 description: 
