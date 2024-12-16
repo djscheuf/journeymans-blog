@@ -14,6 +14,8 @@ description:
 ---
 > Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
 
+150 Words | ~1.5 Minutes
+
 Your Organization *probably* skipped practice. 
 
 Any new behavior/process takes a few repetitions to learn. New Habits take 21 reps to sink in! But when was the last time you 'drilled' on any process? A new process only works when we follow it. We can only follow it, if we've learned it. And to learn, it takes repetition aka practice! Just remember, if you're playing the game, it isn't practice. 
