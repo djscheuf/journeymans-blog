@@ -1,6 +1,6 @@
 {
   "name": "journeymans-blog",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "private": true,
   "authors": {
     "name": "Daniel Scheufler",
@@ -14,10 +14,10 @@
     "regen":"npm run clean && npm run generate"
   },
   "hexo": {
-    "version": "6.3.0"
+    "version": "7.3.0"
   },
   "dependencies": {
-    "hexo": "^6.3.0",
+    "hexo": "^7.3.0",
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
