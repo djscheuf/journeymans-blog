@@ -7,7 +7,7 @@ tags:
   - growth
   - people-development
   - leadership
-  - book-club
+  - books
 photos:
   - img/post_img/book.jpg
 date: 2020-01-13 09:00:00
