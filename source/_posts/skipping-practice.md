@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - process
-  - organization
+  - organizations
   - effectiveness
 date: 2024-12-16 09:30:00
 photos: 
