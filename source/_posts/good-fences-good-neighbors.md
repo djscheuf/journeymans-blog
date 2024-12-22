@@ -5,7 +5,7 @@ categories:
   - Architecture
 tags:
   - software design
-  - organization
+  - organizations
 date: 2024-11-06 12:30:00
 photos: 
   - img/post_img/castle.jpg

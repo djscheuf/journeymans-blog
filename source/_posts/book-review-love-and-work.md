@@ -5,6 +5,7 @@ categories:
   - Lessons Learned
 tags:
   - leadership
+  - books
 date: 2024-07-02 09:30:00
 photos: 
   - https://prodimage.images-bn.com/pimages/9781647821241_p0_v1_s1200x630.jpg

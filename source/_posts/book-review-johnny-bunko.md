@@ -5,6 +5,7 @@ categories:
   - Lessons Learned
 tags:
   - career
+  - books
 date: 2024-10-07 09:30:00
 photos: 
   - img/post_img/johnny_bunko.png

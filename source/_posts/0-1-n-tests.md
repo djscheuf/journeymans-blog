@@ -5,7 +5,7 @@ categories:
   - Leadership
 tags:
   - testing
-  - organization
+  - organizations
   - facilitation
 date: 2024-12-09 09:30:00
 photos: 

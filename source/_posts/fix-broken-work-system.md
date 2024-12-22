@@ -4,7 +4,7 @@ categories:
   - Professional Development
   - Leadership
 tags:
-  - organization
+  - organizations
   - effectiveness
 date: 2024-11-19 09:30:00
 photos: 
