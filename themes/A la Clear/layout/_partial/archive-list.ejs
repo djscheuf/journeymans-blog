@@ -1,0 +1,52 @@
+
+<!-- Main Content -->
+<div class="archive content-area">
+    <div class="container">
+      <h1 class="entry-title"><%- title %></h1>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <%
+            function toDictionaryOfPostsByYear(groups, post){
+              const key = post.date.format('YYYY');
+  
+              if ( key in groups ) groups[key].push(post); 
+              else groups[key] = [post]; 
+  
+              return groups; 
+            }
+            var groupObj = page.posts.toArray()
+              .reduce( toDictionaryOfPostsByYear, {} );
+  
+            function NumericalMonthAndDay(post){
+              return Number(post.date.format('MMDD'));
+            }
+            function byMonthThenDay(a,b){
+              return NumericalMonthAndDay(a) - NumericalMonthAndDay(b)
+            }
+  
+            var groupArr = [];
+            for (var year in groupObj){
+              var postsInThisYear = groupObj[year];
+              var sortedPosts = postsInThisYear.sort(byMonthThenDay);
+              groupArr.push({
+                year: year,
+                posts: sortedPosts.reverse()
+              });
+            }
+          %>
+  
+          <%
+          <!-- console.log(`array of tags:${page.tag}; ${groupArr.map((x)=>`${x.year}:${x.posts.length}`)}`); -->
+          %>
+  
+          <% groupArr.reverse().forEach(function(item) { %>
+            <h2 class="year"><%- item.year %></h2>
+            <ul class="list">
+              <%- partial('_partial/article-archive', {posts: item.posts}) %>
+            </ul>
+          <% }) %>
+        </div>
+      </div>
+      <%- partial('_partial/pagination') %>
+    </div>
+  </div>
