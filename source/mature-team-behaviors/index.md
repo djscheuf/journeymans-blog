@@ -1,9 +1,14 @@
 ---
 title: Mature Agile Team Behaviors
 comments: false
-date: 2024-5-13 9:30:00
-version: 1.0.0
+date: 2025-01-21 9:30:00
+version: 1.1.0
 ---
+
+> version 1.1.0 - Posted 20250121
+> - Sequence of Headings grouped and aligned to better flow.  
+> - Recommended Behaviors for Work Disruptions added under 'Each Sprint'
+
 **DISCLAIMER**: This document is still under development. It represents the experience and opinions of myself and the contributors of this document. It is NOT a hard-and-fast rule, but rather a distilled guide from experience. Use it wisely.
 
 ***Acknowledgement***: I first encountered the idea of Behavioral Markers, applied to Agile Teams, in a talk by [Daniel Walsh](https://www.linkedin.com/in/danwalsh1115/), at Keep Austin Agile 2024. Credit to him for inspiring this application. 
@@ -16,7 +21,9 @@ This document can be treated like an Open Assessment for your team. A regular ch
 
 Most of these behaviors are intended to measure a discrete event. However the same criteria could be cast into a on-going evaluation to check for the consistency of practice in these behaviors.
 
-## Backlog Refinement
+## Backlog Management
+
+### Backlog Refinement (Event)
 
 - Story discussed by Individual Contributors
     - Minimum: Sr. Contributor can start discussion
@@ -64,7 +71,10 @@ Most of these behaviors are intended to measure a discrete event. However the sa
         - How will I {know|test} that _value_ has been delivered?
         - Do we depend on someone outside of this team to deliver this value?
 
-## Bugs
+### Stories
+- TBD
+
+### Bugs
 - {Still WIP}
 - Reproduction Steps are provided
     - Screenshots or other supporting media are valuable
@@ -92,7 +102,34 @@ Most of these behaviors are intended to measure a discrete event. However the sa
 - Team members allocate time to grow their skills (e.g. training, practice, research etc.)
 - Team gathers feedback on completed work from stakeholders (usually in the form of a Sprint Demo)
 
-## Sprint Planning
+### During Work Disruptions
+- For Every kind of Disruption:
+		1. Finish WIP as much as you can (Flow Like Water), BEFORE diverting to any other Behavior ;  see also [Effectively Onboarding as a Junior Dev](./2022/02/16/onboarding-junior-engineer/)
+		2. Do NOT pick up NEW WIP!
+		3. Review Disruption SOP (e.g. this list or similar)
+		4. Start Monitoring Disruption Duration
+- Activities by Disruption Duration (progress thru the List as Timer runs)
+	- 0 - 15m - _Don't Lose Task Working-Memory_
+		- Get up and Stretch
+		- Clean your physical Workspace desk
+		- Document your work (Comments, Documentation, Instrumentation)
+	- 15 - 30m - _Stay within Task Zone, but expect Resumption Tax_
+		- Add some Tests [Given-When-Then](https://en.wikipedia.org/wiki/Given-When-Then) or similar post on testing. 
+		- Review/Capture SOP (Your Supported Technologies, Team Working Agreement, Project Charter, [Ramp-up Dossier](https://youtube.com/shorts/nlRNc2YbwR4) etc.)
+		- Install/Check for Dependency updates
+	- 30 - 90m - _Resumption Tax unavoidable, can work further afield._
+		- Inform Team/Leader of disruption, 
+		- Defer to Leader's decision next actions (Swarm, Pivot, or Other)
+		- Absent instruction:
+			- Refactor per best practices, Upgrade core dependencies
+			- Review Sprint Goal, and Action Items for this Sprint
+			- Process/Self Improvement (Training, read a book, run an experiment)
+	- Significant Disruption (e.g. 90m +) - _Work is stalled, prepare to swarm, or pivot_
+		- Escalate Issue, start making noise, and get instruction/help from Ladders
+		- Begin Swarming the problem with your Team if in your area
+		- Or Pivot,per your Leader, to next-highest-value improvement
+
+### Sprint Planning
 - Sprint Goal is created based on the Value the Team wishes to capture for end Users this sprint
     - NOT a statement of 'will complete these committed tickets'
     - For best results, Product Owner provides an initial draft goal, based on Product Strategy and User Needs. The Team refines this to reflect the achievable increment of that value within the sprint.
@@ -118,7 +155,7 @@ Most of these behaviors are intended to measure a discrete event. However the sa
     - Loose solution ideas reviewed
     - Before Ticket is Committed, 'Before-After' summary of ticket provided by team member likely to work the ticket
 
-## Daily Scrum
+### Daily Scrum
 - Facilitation
     - Daily Scrum starts and ends on time. (15min duration)
     - Daily Scrum is lead by Developers, rather than by the Scrum Master or Manager.
@@ -145,7 +182,9 @@ Most of these behaviors are intended to measure a discrete event. However the sa
     - Scrum Master prompts team to identify action they can take to prevent blockers when risks are brought up in DSU
         - Scrum Master may offer ways to prevent blockers, if team struggles to identify options.
 
-## Sprint Review/Demo
+
+
+### Sprint Review/Demo
 - {Still WIP}
 - Only Completed Stories are 'demonstrated'
     - Team does NOT demonstrate incomplete or undelivered work.
@@ -162,7 +201,7 @@ Most of these behaviors are intended to measure a discrete event. However the sa
     - Team actively solicits Stakeholder Feedback, if it is not provided unprompted.
         - Team may develop specific questions they seek answers to to aide in this conversation.
 
-## Sprint Retrospective
+### Sprint Retrospective
 - Timing
     - Sprint Retrospective takes place _after_ Sprint Review, and _before_ Sprint Planning
     - Retrospective is regularly scheduled, on the sprint cadence
