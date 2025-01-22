@@ -21,7 +21,7 @@ The very best teams plan how they play, and how they recover when things go wron
 There are observable repeatable behaviors exhibited by High Performing teams, called [Behavioral Markers](https://pubmed.ncbi.nlm.nih.gov/25157188/)!
 By documenting the behavioral markers you empower your teams and organization to mutually improve. 
 This should include markers both the good times and during disruptions!
-Check out [this set of Behavioral Markers](./mature-team-behaviors/), now including Disruption Behaviors!
+Check out [this set of Behavioral Markers](/mature-team-behaviors/), now including Disruption Behaviors!
 
 Reach out to [Dan Walsh](https://www.linkedin.com/in/danwalsh1115/) for more on [Scaling Agile Mindset with Behavioral Markers](https://www.slideshare.net/slideshow/scaling-an-agile-mindset-with-behavioral-marker-systems-2024-03pdf/266681348), from whom I first learned about Behavioral Markers!
 I read about how a Toyota Factory handles work disruptions in [Wiring the Winning Organization](https://www.amazon.com/Wiring-Winning-Organization-Slowification-Simplification/dp/1950508420/), which sparked the expansion. 
