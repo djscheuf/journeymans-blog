@@ -4,13 +4,13 @@
 code,
 pre {
     font-size: 0.8em;
-    background-color: #f8f8f8;
-    font-family: 'Roboto Mono', Monaco, courier, monospace;
+    background-color: #lib.colors[@bg-lighter];
+    font-family: #lib.fonts[@code-font];
 }
 
 code {
   padding: 0.2em 0.4em;
-  background-color: #efefef;
+  background-color: #lib.colors[@bg-lighter];
   border-radius: 3px;
 }
 
@@ -25,8 +25,8 @@ pre {
     margin: 1em 0;
     border-radius: 2px;
     line-height: 1.1em;
-    background-color: #f8f8f8;
-    border: 1px solid #eeeeee;
+    background-color: #lib.colors[@bg-lighter];
+    border: 1px solid #lib.colors[@grey-border];
     overflow-x: auto;
     table, tr, td {
         width: 100%;
@@ -41,7 +41,7 @@ pre {
         padding-right: 10px;
         padding-left: 10px;
         box-sizing: border-box;
-        font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+        font-family: #lib.fonts[@code-font];
         font-size: 12px;
         line-height: 20px;
         text-align: right;
@@ -54,7 +54,7 @@ pre {
     .gutter pre {
         padding: 1.2em 1.4em;
         margin: 0;
-        color: rgba(27,31,35,0.3);
+        color: #lib.colors[@grey-border];
     }
     .code pre {
         padding: 1.2em 1.4em;
@@ -70,7 +70,7 @@ pre {
     position: absolute;
     top: 0;
     right: 0;
-    color: #ccc;
+    color: #lib.colors[@bg-darker];
     text-align: right;
     font-size: 0.75em;
     padding: 5px 10px 0;
@@ -96,18 +96,18 @@ pre {
 }
 
 pre {
-    color: #525252;
+    color: #lib.colors[@bg-darker];
     .function .keyword,
     .constant {
-       color: #0092db;
+       color: #lib.colors[@secondary];
     }
     .keyword,
     .attribute {
-        color: #e96900;
+        color: #lib.colors[@accent];
     }
     .number,
     .literal {
-        color: #ae81ff;
+        color: #lib.colors[@terceary-lighter];
     }
     .tag,
     .tag .title,
@@ -118,16 +118,16 @@ pre {
     .clojure .built_in,
     .nginx .title,
     .tex .special {
-        color: #2973b7;
+        color: #lib.colors[@secondary];
     }
     .symbol,
     .symbol .string,
     .value,
     .regexp {
-        color: #42b983;
+        color: #lib.colors[@accent];
     }
     .title {
-        color: #83B917;
+        color: #lib.colors[@terceary];
     }
     .tag .value,
     .string,
@@ -153,7 +153,7 @@ pre {
     .apache .cbracket,
     .tex .command,
     .prompt {
-        color: #42b983;
+        color: #lib.colors[@accent-lighter];
     }
     .comment,
     .java .annotation,
@@ -164,10 +164,10 @@ pre {
     .shebang,
     .apache .sqbracket,
     .tex .formula {
-        color: #b3b3b3;
+        color: #lib.colors[@bg-darker];
     }
     .deletion {
-        color: #BA4545;
+        color: #lib.colors[@error];
     }
     .coffeescript .javascript,
     .javascript .xml,

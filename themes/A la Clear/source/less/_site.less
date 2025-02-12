@@ -64,7 +64,7 @@ tt,
 ul,
 var {
   border: 0;
-  font-family: minion-pro, serif;
+  font-family: #lib.fonts[@body-font];
   font-size: 18px;
   font-style: inherit;
   font-weight: inherit;
@@ -81,7 +81,7 @@ input,
 select,
 textarea {
   color: #lib.colors[@color-text];
-  font-family: Courier, monospace;
+  font-family: #lib.fonts[@body-font];
   font-size: 100%;
   line-height: 1.5;
 }
@@ -94,6 +94,7 @@ h6 {
   clear: both;
   font-weight: bold;
   margin: 1.5em 0 1em;
+  font-family: #lib.fonts[@heading-font];
 }
 p {
   margin: 1em 0;
@@ -114,7 +115,7 @@ address {
 }
 pre {
   background: #lib.colors[@bg-color];
-  font-family: Courier, monospace;
+  font-family: #lib.fonts[@body-font];
   font-size: 16px;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -127,7 +128,7 @@ code,
 kbd,
 tt,
 var {
-  font: 18px Courier, monospace;
+  font: 18px #lib.fonts[@body-font];
 }
 abbr,
 acronym {
@@ -167,7 +168,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: #d3d3d3 1px solid;
+  border-top: 1px solid #lib.colors[@grey-border];
   margin: 40px 0;
   padding: 0;
 }
@@ -209,7 +210,7 @@ th {
   font-weight: bold;
 }
 h1, h2, h3, h4 {
-  font-family: europa, serif; }
+  font-family: #lib.fonts[@heading-font] }
 h1 {
   font-size: 1.250em; }
 
@@ -356,7 +357,7 @@ Content
     color: #lib.colors[@links];
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-family: minion-pro, serif;
+    font-family: #lib.fonts[@link-font];
     font-size: 0.750em;
   }
 }
@@ -391,8 +392,8 @@ Footer
   z-index: 2;
   position: relative;
   background: #lib.colors[@bg-color];
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid #lib.colors[@grey-border];
+  border-bottom: 1px solid #lib.colors[@grey-border];
   padding-top: 50px;
   padding-bottom: 40px;
   text-align: center;
@@ -407,15 +408,15 @@ Footer
   input[type="text"] {
     width: 200px;
     color: #111;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #lib.colors[@grey-border];
     border-radius: 3px;
     padding: 3px;
   }
   input[type="submit"] {
     border: 1px solid;
-    border-color: #ccc #ccc #bbb;
+    border-color: #lib.colors[@grey-border];
     border-radius: 3px;
-    background: #e6e6e6;
+    background: #lib.colors[@bg-lighter];
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     -webkit-appearance: button;
@@ -457,7 +458,7 @@ Footer
   font-size: 0.750em;
   padding-bottom: 20px;
   padding-top: 20px;
-  color: #lib.colors[@bg-second];
+  color: #lib.colors[@fg-color];
   .split {
     margin: 0 2px;
   }
@@ -469,9 +470,9 @@ Footer
 
 .attributions {
   blockquote {
-    color: #aaa;
+    color: #lib.colors[@bg-darker];
     margin: 1em 0;
     padding: 0 0 0 30px;
-    border-left: 4px solid #aaa;
+    border-left: 4px solid #lib.colors[@bg-darker];
   }
 }
