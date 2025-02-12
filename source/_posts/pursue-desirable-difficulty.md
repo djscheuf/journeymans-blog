@@ -1,5 +1,5 @@
 ---
-title: Pursue Desirable Difficult
+title: Pursue Desirable Difficulty
 categories:
   - Personal Development
   - Lessons Learned
