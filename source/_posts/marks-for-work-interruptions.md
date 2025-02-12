@@ -29,7 +29,7 @@ For Disruptions, I advocate for the following behavioral markers:
 
 ## Recommended Behaviors
 - For Every kind of Disruption:
-		1. Finish WIP as much as you can (Flow Like Water), BEFORE diverting to any other Behavior ;  see also [Effectively Onboarding as a Junior Dev](https://daniel.scheufler.io/2022/02/16/onboarding-junior-engineer/)
+		1. Finish WIP as much as you can (Flow Like Water), BEFORE diverting to any other Behavior ;  see also [Effectively Onboarding as a Junior Dev](../onboarding-junior-engineer/)
 		2. Do NOT pick up NEW WIP!
 		3. Review Disruption SOP (e.g. this list or similar)
 		4. Start Monitoring Disruption Duration
