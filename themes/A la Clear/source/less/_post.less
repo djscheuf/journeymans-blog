@@ -2,7 +2,7 @@
     flex-basis:0;
     flex-grow: 4;
     padding-right: 3vw;
-    border-right: 1px solid #lib.colors[@bg-second];
+    border-right: 1px solid #lib.colors[@grey-border];
   }
   
   .container {
@@ -40,16 +40,14 @@
       padding-top: 5px;
       display: flex;
       flex-direction: row;
-      border-top: solid black 1px ;
+      border-top: solid 1px #lib.colors[@grey-border];
       width: 100%;
       a {
         text-decoration: none;
-        color: #3a3a3a;
+        color: #lib.colors[@fg-color];
         text-transform: uppercase;
         letter-spacing: 0.2em;
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-          "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
-          "sans-serif", "Microsoft YaHei";
+        font-family: #lib.fonts[@link-font];
         font-size: 0.75em;
       }
       .meta-arraw {
@@ -67,14 +65,14 @@
   
   .posted-on {
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-family: #lib.fonts[@heading-font];
     font-size: 0.688em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     padding-top: #lib.lengths[@half-gap];
   
     .age-warning {
-      background: #lib.colors[@bg-second];
+      background: #lib.colors[@bg-darker];
       color: #lib.colors[@secondary];
       font-weight: bold;
     }
@@ -82,7 +80,7 @@
   
   .tags-links {
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont,"Helvetica Neue","PingFang-SC-Regular","STHeiti", "Helvetica","Arial","Verdana","sans-serif","Microsoft YaHei";
+    font-family: #lib.fonts[@link-font];
     font-size: 0.800em;
     font-style: normal;
     margin-bottom: 30px;
@@ -94,9 +92,7 @@
   }
   
   .entry-content {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-      "PingFang-SC-Regular", "STHeiti", "Helvetica", "Arial", "Verdana",
-      "sans-serif", "Microsoft YaHei";
+    font-family: #lib.fonts[@body-font];
     line-height: 1.7;
     word-wrap: break-word;
     ol,
@@ -107,10 +103,11 @@
       list-style: disc;
     }
     blockquote {
-      color: #aaa;
+      color: #lib.colors[@bg-darker];
       margin: 1em 0;
       padding: 0 0 0 30px;
-      border-left: 4px solid #aaa;
+      border-left: 4px solid #lib.colors[@grey-border];
+      background-color: #lib.colors[@bg-lighter];
     }
     p img {
       display: block;
@@ -120,18 +117,18 @@
       color: #lib.colors[@links];
     }
     a:visited {
-      color: #lib.colors[@fg-color];
+      color: #lib.colors[@visited-links];
     }
     a:active,
     a:focus,
     a:hover {
-      color: #lib.colors[@secondary];
+      color: #lib.colors[@hover-links];
       font-weight: bold;
       opacity: 0.8;
     }
   
     table {
-      border: 1px solid black;
+      border: 1px solid #lib.colors[@grey-border];
       td {
         text-align: center;
       }

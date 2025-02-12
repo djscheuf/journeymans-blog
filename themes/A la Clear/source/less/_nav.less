@@ -1,7 +1,7 @@
 .site-header {
     width: 100%;
     background: #lib.colors[@bg-color];
-    border-bottom: 1px solid #lib.colors[@bg-second];
+    border-bottom: 1px solid #lib.colors[@grey-border];
     z-index: 30;
     position: fixed;
     top: 0;
@@ -82,7 +82,7 @@
     content: "";
     width: 0%;
     height: 1px;
-    background: #7e7e7e;
+    background: #lib.colors[@bg-color];
     display: block;
     -webkit-transition: width 0.25s ease;
     transition: width 0.25s ease;
@@ -93,7 +93,7 @@
   
   // SKIP NAV Link Styles
   .skip-to-content {
-    background: #005a0350;
+    background: #lib.colors[@links];
     padding: .5rem 1.5rem;
     border-radius: 0 0 0.25rem 0.25rem;
     position: absolute;
