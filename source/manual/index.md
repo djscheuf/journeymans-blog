@@ -43,4 +43,4 @@ Last Updates: 6-24-2024
 ## What people misunderstand about me:
 - Experiments – I like to try things out and see what works.  I don’t expect everything to be a success, as long as an honest effort was given. Experiments, whether success or failure are primarily valuable for what we learn from them.
 
-These points are _not_ an exhaustive list, but should save you some time figuring out how I work and behave. Please make me aware of additional points you think I should put on a revised version of this “user’s manual". Just [send me an email](mailto:daniel@scheufler.io), I'm happy to improve the usefulness of this manual.
+These points are _not_ an exhaustive list, but should save you some time figuring out how I work and behave. Please make me aware of additional points you think I should put on a revised version of this “user’s manual". Just [send me an email](mailto:daniel@scheufler.tech), I'm happy to improve the usefulness of this manual.

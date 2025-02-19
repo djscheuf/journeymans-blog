@@ -12,7 +12,7 @@ photos:
   - img/post_img/org_skip_prac.png
 description: 
 ---
-> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
+> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.tech)
 
 150 Words | ~1.5 Minutes
 

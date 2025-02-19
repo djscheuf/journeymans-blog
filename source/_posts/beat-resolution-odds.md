@@ -9,7 +9,7 @@ photos:
   - img/post_img/office_politics.jpg
 description: 
 ---
-> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
+> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.tech)
 
 220 Words | ~2 Minute Read
 

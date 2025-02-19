@@ -72,6 +72,6 @@ get displayModel() : MultiPartModel {
 
 Now the form of the solution I described likely already exists in some named model. Identify your data access points. Create an alternate path which matches the contracts, then swap the access to the new path. Finally, you can alter the actions of the new path , so long as it meets the contract, to provide the new behavior. I hope this discussion help you in your refactoring adventures!
 
-P.S. I did not discuss how the Parent acquires the modifiedCopy in this post. I believe it is either a different pattern altogether. Or that it may be an idiosyncratic implementation for this particular client's system. As a result, I did not think it worth diving into. If you're curious about it, [shoot me an email](mailto:daniel@scheufler.io)!
+P.S. I did not discuss how the Parent acquires the modifiedCopy in this post. I believe it is either a different pattern altogether. Or that it may be an idiosyncratic implementation for this particular client's system. As a result, I did not think it worth diving into. If you're curious about it, [shoot me an email](mailto:daniel@scheufler.tech)!
 
 P.S.S. 03FEB2020 After writing this post, it was brought to my attention that the described pattern is likely a [Proxy](https://en.wikipedia.org/wiki/Proxy_pattern)

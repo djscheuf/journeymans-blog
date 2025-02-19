@@ -49,4 +49,4 @@ Links:
 - [Book: Start with Why](https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447)
 - [Book: Power of Who](https://www.amazon.com/Power-Who-Already-Know-Everyone/dp/1599951533/ref=sr_1_1?dchild=1&keywords=power+of+who&qid=1600372477&s=books&sr=1-1)
 
-Feel free to [tag me](mailto:daniel@scheufler.io) for any questions you've had since the conference! I'd be happy to speak with you.
+Feel free to [tag me](mailto:daniel@scheufler.tech) for any questions you've had since the conference! I'd be happy to speak with you.
