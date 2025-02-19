@@ -34,8 +34,8 @@ Links:
 
 Example Retro Formats
 
-- [Retro on Motivators](/2019/05/20/encouraging-ownership-in-your-retro/)
-- [Retro on Strengths Weaknesses and Fusions](/2019/01/19/strengths-weaknesses-fusions/)
+- [Retro on Motivators](/blog/encouraging-ownership-in-your-retro/)
+- [Retro on Strengths Weaknesses and Fusions](/blog/strengths-weaknesses-fusions/)
 - More thoughts on the topic of [Retros](/tags/retrospective/)
 
 ---
@@ -44,7 +44,7 @@ Example Retro Formats
 
 Links:
 
-- First post in the [deep dive series on 'Own Your Career'](/2019/09/23/career-rock-wall/)
+- First post in the [deep dive series on 'Own Your Career'](/blog/career-rock-wall/)
 - [Between Jobs Ministries](https://www.nwbc.org/bjm)
 - [Book: Start with Why](https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447)
 - [Book: Power of Who](https://www.amazon.com/Power-Who-Already-Know-Everyone/dp/1599951533/ref=sr_1_1?dchild=1&keywords=power+of+who&qid=1600372477&s=books&sr=1-1)

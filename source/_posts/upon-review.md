@@ -14,7 +14,7 @@ photos:
 date: 2021-01-13 09:00:00
 ---
 
-As part of one of my 2021 projects, I was reviewing some of my past articles. [Software Engineers are Translators](/2017/03/07/software-developers-are-translators/), [Where'd my UX go?](/2016/12/06/whered-my-ux-go/) and [Resuscitating the dread word 'Agile'](/2017/01/10/resuscitating-the-dread-word-agile/) all stand out in my recent memory. Some of the articles were riddled with mistakes in grammar, or spelling. Others just contained poorly constructed analogies. I'd like to think I've gotten better at writing over the years. At the least, I've had lots more practice.
+As part of one of my 2021 projects, I was reviewing some of my past articles. [Software Engineers are Translators](/blog/software-developers-are-translators/), [Where'd my UX go?](/blog/whered-my-ux-go/) and [Resuscitating the dread word 'Agile'](/blog/resuscitating-the-dread-word-agile/) all stand out in my recent memory. Some of the articles were riddled with mistakes in grammar, or spelling. Others just contained poorly constructed analogies. I'd like to think I've gotten better at writing over the years. At the least, I've had lots more practice.
 
 Despite those shortcomings, I found I still agreed with _some_ of the base concepts my past self had pointed to. This reflection brought to mind a quote, I am uncertain from where.
 

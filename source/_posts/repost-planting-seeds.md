@@ -14,7 +14,7 @@ photos:
   - img/post_img/seeds_in_hand.jpg
 ---
 
-Today marks a transition in the 'guided path'. Over the last several weeks, I've shared steps in a career journey, which gradually change one's focus. At a certain point, the most value you can bring is not through your own efforts. It will be through improving the efforts of others. Sometimes it is [a season in your career](/2020/07/06/repost-career-know-stage/), or it can be in discrete instances of [facilitation](/tags/facilitation/) or coaching. But to best serve in both cases you focus needs to move outward.
+Today marks a transition in the 'guided path'. Over the last several weeks, I've shared steps in a career journey, which gradually change one's focus. At a certain point, the most value you can bring is not through your own efforts. It will be through improving the efforts of others. Sometimes it is [a season in your career](/blog/repost-career-know-stage/), or it can be in discrete instances of [facilitation](/tags/facilitation/) or coaching. But to best serve in both cases you focus needs to move outward.
 
 Now, moving your focus outward means your indicators of success also moved out. I am a very goals driven person, so when I took the first steps into the other-focuses seasons, I was a bit lost. I knew a great deal. But my sentiments and expectations weren't yet tempered with experience. Head knowledge, versus Heart knowledge. Today I experience much less disappointment due to inflated expectations. And in my mind echos a very powerful metaphor for the right other-focused mindset...
 

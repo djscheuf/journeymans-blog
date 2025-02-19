@@ -12,7 +12,7 @@ photos:
 date: 2019-10-07 09:00:00
 ---
 
-So a couple weeks ago I posts on this idea of a ['Career Rockwall'](/2019/09/23/career-rock-wall/). I believe it's a better model for how a career grows and changes over time. As part of my talk, I added a layer to the model, which I called stages.  Now over my career, I have work for a handful of companies. And each position has started with a very similar tone: 'Can you _DO_ the work?' Even after a few years at this profession, every position seems to start with DO. I called this the 'DO' stage, because you are valued for what you can _do_.
+So a couple weeks ago I posts on this idea of a ['Career Rockwall'](/blog/career-rock-wall/). I believe it's a better model for how a career grows and changes over time. As part of my talk, I added a layer to the model, which I called stages.  Now over my career, I have work for a handful of companies. And each position has started with a very similar tone: 'Can you _DO_ the work?' Even after a few years at this profession, every position seems to start with DO. I called this the 'DO' stage, because you are valued for what you can _do_.
 
 When I first started my career, I remember this challenge constantly gnawing at me. 'Can I _do_ my job?' I chose to adapt to this challenge by acting the sponge. I tried to learn everything! How does this thing work? Why did we choose that thing? Why did we build it this way? I wanted to learn all I could. I found teachers and I stayed curious. Now, 5 years later, I just started at a new client. And I find myself asking the same questions. How does this work? Why did we choose that? Why did we build it this way? In both cases, I came it not knowing.
 

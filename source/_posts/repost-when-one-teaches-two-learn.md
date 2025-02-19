@@ -15,7 +15,7 @@ photos:
   - img/post_img/knowledge_base.jpg
 date: 2020-07-13 09:00:00
 ---
-As the next step in the guided path, let's talk about a [Tiny Next Step](/2020/06/23/repost-tiny-next-steps/) you can take to improve your 'Know-state' skills. Last week, I breifly explained the ['Do-Know-Grow'](/2020/07/06/repost-career-know-stage/) model for career development. While exploring the concept, I found myself asking how someone could begin to develop the skills, _and_ the knowledge for really living into the 'Know' stage. Here, the idea of teach repeatedly came to mind. 
+As the next step in the guided path, let's talk about a [Tiny Next Step](/blog/repost-tiny-next-steps/) you can take to improve your 'Know-state' skills. Last week, I breifly explained the ['Do-Know-Grow'](/blog/repost-career-know-stage/) model for career development. While exploring the concept, I found myself asking how someone could begin to develop the skills, _and_ the knowledge for really living into the 'Know' stage. Here, the idea of teach repeatedly came to mind. 
 
 When you teach, you force yourself to learn more deeply. So the practice of the teacher is in a sense that of a deeper student. I discovered this under the mentor-ship of a fantastic student. (Yes, you read that correctly). Here's what I learned:
 

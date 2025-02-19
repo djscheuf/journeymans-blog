@@ -28,7 +28,7 @@ You can further vary the format by trying new styles of Retro. Spotify, for exam
 
 I admit that I am particularly fond of the 'Warm-ups' that Spotify uses. These warm-ups help the team to enter the 'Retro mindset'. Some get the creative juices flowing, others, help to gauge the mood of the group. There are even more 'Scrum Games', which are suitable warm-ups. I find many of these at ['Tasty Cupcakes'](https://www.tastycupcakes.org/tag/retrospective/). I know it's a weird name. But trust me, it's worth it!
 
-So you've got new format. You've got games. what else can their be? What about varying the subject, or the theme? I shared [my 'Strengths-Weaknesses-Fusions' retrospective](/2019/01/19/strengths-weaknesses-fusions/). It was a new 'format' for us. The focus of the retro was less on that sprint's work, and more on the people who composed the team. I wanted to highlight their unique skills and dispositions. Turn the lens to new subjects, new fields. Let the team explore that 'self-organizing' part of agile.
+So you've got new format. You've got games. what else can their be? What about varying the subject, or the theme? I shared [my 'Strengths-Weaknesses-Fusions' retrospective](/blog/strengths-weaknesses-fusions/). It was a new 'format' for us. The focus of the retro was less on that sprint's work, and more on the people who composed the team. I wanted to highlight their unique skills and dispositions. Turn the lens to new subjects, new fields. Let the team explore that 'self-organizing' part of agile.
 
 You could spend moments exploring intrinsic motivations (Autonomy, Purpose, Mastery) with your team. But keep in mind that it takes a healthy team to explore these in a constructive way. Take heart, you can get there.
 

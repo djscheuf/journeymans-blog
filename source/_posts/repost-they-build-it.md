@@ -14,7 +14,7 @@ photos:
  - img/post_img/ocean_thought.jpg
 ---
 
-Last week, We discussed [planting seeds](/2020/07/27/repost-planting-seeds/).Even though I learned this model a while back, I am still grappling with the implications. The more I bump up against it, or the more I coach, the more I find one element of my character being challenged and improved. When confronted with the realities of coaching, I am forced to become more humble. As the coach the value you are producing isn't for you. And if you're planting seeds, you're likely not going to be the one who received the good results. 
+Last week, We discussed [planting seeds](/blog/repost-planting-seeds/).Even though I learned this model a while back, I am still grappling with the implications. The more I bump up against it, or the more I coach, the more I find one element of my character being challenged and improved. When confronted with the realities of coaching, I am forced to become more humble. As the coach the value you are producing isn't for you. And if you're planting seeds, you're likely not going to be the one who received the good results. 
 
 When you coach another, the results they get, aren't because of you. The results rightly belong to the one who changed. But in a strange way, the coach has also some stake in the results. Just not the same kind. It is odd really. As I have coached and lead, I find myself distanced from the work. I watch as others build what I may have architect-ed. I first realized that 'They Build it' last year, but it has stuck with me ever since.
 

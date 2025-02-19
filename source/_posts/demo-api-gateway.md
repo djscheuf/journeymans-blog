@@ -15,7 +15,7 @@ photos:
   - img/post_img/ship_in_bottle.jpg
 ---
 
-Last week, I talked about getting to PoC [a new tool called Ocelot](/2020/11/11/new-pet-ocelot/), which is an API Gateway. I mentioned that as part of this work, I demonstrated it's function to the Architecture board. What I didn't mention was how. For context, Ocelot has no front-end, as it were. You don't have a UI to interact it. Ocelot exists in the layer in between your UI and whatever backends support it. So in a PoC case, how do you 'demonstrate' such a thing, since it has no UI to show?
+Last week, I talked about getting to PoC [a new tool called Ocelot](/blog/new-pet-ocelot/), which is an API Gateway. I mentioned that as part of this work, I demonstrated it's function to the Architecture board. What I didn't mention was how. For context, Ocelot has no front-end, as it were. You don't have a UI to interact it. Ocelot exists in the layer in between your UI and whatever backends support it. So in a PoC case, how do you 'demonstrate' such a thing, since it has no UI to show?
 
 I relied on a tool I have begun to use heavily in the last few months: [Postman](https://www.postman.com/). Postman is a Http Request Client, and so mimics much of the behavior a UI might have as it regards the API. That is, you can use Postman to pretend to be the UI, and interact manually with the different API endpoints which support the work. I know that may not sound super useful, having a human pretend to be software, but hear me out. Ocelot need someone to pretend to be the UI. That way it can 'answer' by routing the request to proper destination. Postman allows a human to do this. The natural next question might be How?
 
@@ -43,7 +43,7 @@ As a result, Ocelot hears the language it understands, and run off to route the 
 }
 ```
 
-Ok, so no big surprise, Dev has a new toy. But is that all it can be good for? Actually no, Postman can actually do quite a lot, and the use case above is just the basics. While it certainly is useful for a Dev, it can also really help our friend the QA. In case you don't already know, I am a Fan of [our friends in QA](/2019/02/11/a-developers-best-friend/). I believe [we have a lot we could learn from each other](https://www.youtube.com/watch?v=hvnX4CcZvnQ), and Postman is one of the tools which allows the Dev to proactively help our brother the QA.
+Ok, so no big surprise, Dev has a new toy. But is that all it can be good for? Actually no, Postman can actually do quite a lot, and the use case above is just the basics. While it certainly is useful for a Dev, it can also really help our friend the QA. In case you don't already know, I am a Fan of [our friends in QA](/blog/a-developers-best-friend/). I believe [we have a lot we could learn from each other](https://www.youtube.com/watch?v=hvnX4CcZvnQ), and Postman is one of the tools which allows the Dev to proactively help our brother the QA.
 
 Let's take an easy example. Suppose you are writing a simple change to an Endpoint to filter out null results. As a Dev you might test this with Unit tests on the API, and maybe you'd go check with some real Test Data thru the UI. But did you notice how much longer it too to verify your change by going through the UI? Imagine if you had to _create_ that data thru the UI , as well as verify it? Think of all the screen loading! Yuck. Behind the scenes, you and I know that the UI is just stringing together some requests to the API like:
 

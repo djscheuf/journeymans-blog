@@ -27,4 +27,4 @@ You see, Toyota returns to Shu after achieving Ri. The authors of ['The Toyota w
 
 Once an agile team reaches a transcendent level of Mastery, the next step is returning to basics. And specifically to return with the mind of a student. The Scrum Master's job at this point may be quite difficult. Speaking from experience, Developer's enjoy being in the Know. And we don't generally enjoy going back to our first lessons.
 
-Having realized this, I intent to go back to basics both in agile and in development. I want to relearn what I think I 'know'. After all, [You need to lead yourself first](/2019/01/05/lead-yourself). What do you think? Let's start a conversation with the community about what to do after you arrive!
+Having realized this, I intent to go back to basics both in agile and in development. I want to relearn what I think I 'know'. After all, [You need to lead yourself first](/blog/lead-yourself). What do you think? Let's start a conversation with the community about what to do after you arrive!

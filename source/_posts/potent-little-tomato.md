@@ -12,7 +12,7 @@ photos:
  - img/post_img/potent_tomato.jpg
 ---
 
-Last week, I asked ['How does one seize a day?'](/2020/05/11/proactive-and-reactive/) And the general form of that answer boils down to choosing where to spend your time. But before we can make a choice about a 'better' way to spend the day, we needed to know where it was being spent first. To that end, I encouraged readers to try to record what they did during their day at 15minute increments. Then at the end of each tracked day to categorize the time as either Proactice, Reactive or Other. This post is intended to build on that information, but it does not require it.
+Last week, I asked ['How does one seize a day?'](/blog/proactive-and-reactive/) And the general form of that answer boils down to choosing where to spend your time. But before we can make a choice about a 'better' way to spend the day, we needed to know where it was being spent first. To that end, I encouraged readers to try to record what they did during their day at 15minute increments. Then at the end of each tracked day to categorize the time as either Proactice, Reactive or Other. This post is intended to build on that information, but it does not require it.
 
 ___
 

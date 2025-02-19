@@ -26,12 +26,12 @@ These are the notes from which I recorded the show. They're a little unpolished 
 > We don't right to level of our goals. We fall to the level of our systems.
 > - James Clear
 
-- This is why we talked about [Leadership - Its About Time](/2023/04/22/show-notes-leadership-about-time)
+- This is why we talked about [Leadership - Its About Time](/blog/show-notes-leadership-about-time)
 - Succeeding Today is important, but so is succeeding into the future. 
 - What got you here, was likely the systems you built the practices and processes you used to get your work done.
 ## Codifying Knowledge
 - Organizations are made of people. They only grow and change as people do. The critical path for this to occur is when a Leader codifies their knowledge into a process. Into steps that others can go and repeat. This is the coaching and training portion of leadership, teaching your team how to do what you learned to do. 
-- As we mentioned when talking previously, [Leadership - Not About You](/2023/04/15/show-notes-leadership-not-about-you)... We immediately are talking about your team again. 
+- As we mentioned when talking previously, [Leadership - Not About You](/blog/show-notes-leadership-not-about-you)... We immediately are talking about your team again. 
 - Success in this is NOT in you being able to do the action, or in you writing it down... but in your TEAM being able to act on that guidance! They have to see what you see, understand what you understood and act like you used to. 
 - And where there are gaps, they'll probably come back to you with questions.
 - And for a somewhat rout process, this is easy to codify... but what about something more nuanced? something like problem-solving? or software development?

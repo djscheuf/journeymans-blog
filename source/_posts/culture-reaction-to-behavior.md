@@ -12,7 +12,7 @@ photos:
  - img/post_img/trail-marker.jpg
 ---
 
-I have discussed how [behaviors build culture](/2021/12/08/behaviors-build-culture/) before. But behaviors alone do not make a culture. 'Culture' encompasses the patterns, values, and _behaviors_ common to a group. Cultures are fundamentally about people and their interactions. So they can be difficult to measure. But you can identify what a culture values by how it treats certain behaviors.
+I have discussed how [behaviors build culture](/blog/behaviors-build-culture/) before. But behaviors alone do not make a culture. 'Culture' encompasses the patterns, values, and _behaviors_ common to a group. Cultures are fundamentally about people and their interactions. So they can be difficult to measure. But you can identify what a culture values by how it treats certain behaviors.
 
 What behaviors do you reward? People will repeat these.
 What behaviors do you accept? These will become the standard.

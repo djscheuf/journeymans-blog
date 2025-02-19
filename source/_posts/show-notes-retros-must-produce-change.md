@@ -18,7 +18,7 @@ These are the notes from which I recorded the show. They're a little unpolished 
 ## Show Notes
 ### Intro
 - Welcome
-- Last time we discussed that [Retrospectives must be intentional](/2023/03/24/show-notes-retros-must-be-intentional/), which encompassed [BOTH pillars of Scrum](https://scrumguides.org/scrum-guide.html#scrum-theory) (Inspection and Adaptation)
+- Last time we discussed that [Retrospectives must be intentional](/blog/show-notes-retros-must-be-intentional/), which encompassed [BOTH pillars of Scrum](https://scrumguides.org/scrum-guide.html#scrum-theory) (Inspection and Adaptation)
 - The next principle of Retrospectives is that Retros must produce Change 
 
 ### Change Occurs outside of the Retro

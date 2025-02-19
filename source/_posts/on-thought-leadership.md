@@ -21,7 +21,7 @@ From [Oxford Dictionary](https://www.oxfordlearnersdictionaries.com/us/definitio
 
 From [Oxford Dictionary](https://www.oxfordlearnersdictionaries.com/us/definition/english/thought?q=thought)
 
-"To show the way to something you think or remember." That doesn't sound quite so daunting. But to be fair that is also not what we always think of when discussing Thought Leadership. We often think of a definition closer to "Leading through the influence of the serious and careful consideration of one's own ideas". Traditionally that might look like blog posts, or [public speaking](/2019/04/02/how-to-break-into-conference-speaking/).
+"To show the way to something you think or remember." That doesn't sound quite so daunting. But to be fair that is also not what we always think of when discussing Thought Leadership. We often think of a definition closer to "Leading through the influence of the serious and careful consideration of one's own ideas". Traditionally that might look like blog posts, or [public speaking](/blog/how-to-break-into-conference-speaking/).
 
 But for the earlier definition, showing the way, there are other method. Did you know you can take part in that kind of thought leadership by asking good questions? Sharing someone else’s ideas with a new audience also accomplishes this. And you wouldn't be alone in leading this way!
 
