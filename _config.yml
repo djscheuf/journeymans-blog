@@ -109,10 +109,8 @@ social:
 # Navigation Bar
 nav:
   Home: .
-  Now: now
   User's Manual: manual
   Mature Team Behaviors: mature-team-behaviors
-  About: about
   Archive: archives
 
 widget:
