@@ -13,7 +13,7 @@ timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://daniel.scheufler.io
+url: https://daniel.scheufler.tech
 root: /
 permalink: blog/:title/
 permalink_defaults:
@@ -123,5 +123,5 @@ widget:
 # avatar: img/better_me_sm.png
 # banner_small: images/banner-small.png
 # banner_large: img/header_img/home-bg-2-dark.png
-logo: /img/logo/star_catcher_mountains.png
-favicon: /img/logo/star_catcher_mountainsx96.png
+logo: /img/logo/starcatcher_mountains_ink.png
+favicon: /img/logo/starcatcher_mountains_ink_96.png
