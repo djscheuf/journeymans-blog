@@ -3,9 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: A Journeyman's Travels
-subtitle:
-# description: The blog of a journeyman software engineer.
+title: Next Iteration, We Should Try...
+subtitle: Leading Software Engineering, Excellently!
 keywords: software, engineering, leadership, scheufler, consultant
 author: Daniel Scheufler
 language: en
@@ -57,9 +56,9 @@ sitemap:
   path: sitemap.xml
 
 # Category & Tag
-default_category: Software Development
-category_map:
-tag_map:
+# default_category: Software Development
+# category_map:
+# tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -114,12 +113,9 @@ nav:
   Archive: archives
 
 widget:
-  title: A Journeyman's Travels
+  title: Next Iteration, We Should Try...
   content: <span>Blog by <a href="/about">Daniel Scheufler</a>.</span>
 
 # Visual Config
-# avatar: img/better_me_sm.png
-# banner_small: images/banner-small.png
-# banner_large: img/header_img/home-bg-2-dark.png
 logo: /img/logo/logo_2025.png
 favicon: /img/logo/logo_2025x96.png
