@@ -92,8 +92,9 @@ feed:
 
 # Site settings
 SEOTitle: Journeyman's Travels
-email: daniel@shceufler.io
+email: daniel@shceufler.tech
 google_analytics: G-9J2D121NSY
+mailerlite: true
 # hyvor_talk_id: 6075
 
 # Social Links
