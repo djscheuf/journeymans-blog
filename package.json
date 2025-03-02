@@ -1,11 +1,11 @@
 {
   "name": "journeymans-blog",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "private": true,
   "authors": {
     "name": "Daniel Scheufler",
-    "email": "daniel@shceufler.io",
-    "url": "daniel.scheufler.io"
+    "email": "daniel@shceufler.tech",
+    "url": "daniel.scheufler.tech"
   },
   "scripts": {
     "start": "hexo server -p $PORT",
