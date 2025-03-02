@@ -12,7 +12,7 @@ photos:
  - img/post_img/potent_tomato.jpg
 ---
 
-Last week, I asked ['How does one seize a day?'](/2020/05/11/proactive-and-reactive/) And the general form of that answer boils down to choosing where to spend your time. But before we can make a choice about a 'better' way to spend the day, we needed to know where it was being spent first. To that end, I encouraged readers to try to record what they did during their day at 15minute increments. Then at the end of each tracked day to categorize the time as either Proactice, Reactive or Other. This post is intended to build on that information, but it does not require it.
+Last week, I asked ['How does one seize a day?'](/blog/proactive-and-reactive/) And the general form of that answer boils down to choosing where to spend your time. But before we can make a choice about a 'better' way to spend the day, we needed to know where it was being spent first. To that end, I encouraged readers to try to record what they did during their day at 15minute increments. Then at the end of each tracked day to categorize the time as either Proactice, Reactive or Other. This post is intended to build on that information, but it does not require it.
 
 ___
 
@@ -35,7 +35,7 @@ Friendly colleague wants to ask for help. What do you do?
 
 And that's where the rubber meets the road. Do you break the Pomodoro, and your plan to offer help? Or do you keep your Pomodoro going and help them later? Both are good outcomes, right? But which is better?
 
-To be honest, you can't answer that until you are in that situation. I've found it helps to think in these terms: [In order to say Yes, I must first say No](https://daniel.scheufler.io/2019/07/15/say-no-to-say-yes/). Now that is not 'must first say no to them'. The point is recognizing the trade-off one must make. If I say yes to helping my colleague, I must say No to completing my focused work and honoring my time budget. Something similar holds true in reverse. Saying Yes to the Pomodoro and focused work, means I'd have to say no to the Colleague... at least for the moment. Not to worry thought, that potent little tomato is build to handle this!
+To be honest, you can't answer that until you are in that situation. I've found it helps to think in these terms: [In order to say Yes, I must first say No](../say-no-to-say-yes/). Now that is not 'must first say no to them'. The point is recognizing the trade-off one must make. If I say yes to helping my colleague, I must say No to completing my focused work and honoring my time budget. Something similar holds true in reverse. Saying Yes to the Pomodoro and focused work, means I'd have to say no to the Colleague... at least for the moment. Not to worry thought, that potent little tomato is build to handle this!
 
 The Pomodoro technique is not about capturing every last drop of the day, and forcing it into 30minute blocks. It is for honing, and organizing your intentional work, in a way which helps you protect your attention, your focus, for effective work! That little tomato acts as your little helper when it's going. With it's subtle little tick-tick-tick, its reminding you what you promised to your future self. When your friendly colleague comes along, you're actually presented with a choice. Honor the commitment made to your future self, or try to claim another good thing in the present at the expense of that commitment.
 

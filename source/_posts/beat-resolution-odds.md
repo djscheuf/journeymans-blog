@@ -9,7 +9,7 @@ photos:
   - img/post_img/office_politics.jpg
 description: 
 ---
-> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
+> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.tech)
 
 220 Words | ~2 Minute Read
 
@@ -31,6 +31,6 @@ You can beat these odds with a few simple, though not easy, actions:
 3. Get Accountability! Tell someone who will check up on you regularly!
 
 **Dive Deeper**
-- I first heard the Fundamental/Instrumental dichotomy in [The Adventures of Johnny Bunko](/2024/10/07/book-review-johnny-bunko/)
+- I first heard the Fundamental/Instrumental dichotomy in [The Adventures of Johnny Bunko](/blog/book-review-johnny-bunko/)
 - Check out James Clear's [Atomic Habits](), and esp. his thoughts on [Identity-based Habits](https://jamesclear.com/identity-based-habits)
 - I'm using [Habitica](https://habitica.com/static/home) with my wife to help with my accountability this year!

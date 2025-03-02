@@ -15,7 +15,7 @@ photos:
   - img/post_img/child_programmers.jpg
 ---
 
-Last week I talked about how I [engaged 6 volunteers](/2020/03/09/engaging-facilitators/) for the [retro en masse](/2020/03/02/retro-en-masse/). After collecting the team, I started to prepare in earnest for the Retro. But the weekend before something was still bothering me. Some element I hadn't accounted for. After pondering, I was able to pin it down to the facilitation. I was worried about the emotional temperature of the room. I wondered how to best help the facilitators succeed. So I scheduled a quick training session with the facilitators before the day of the retro. But I had no idea how I could help them prepare.
+Last week I talked about how I [engaged 6 volunteers](/blog/engaging-facilitators/) for the [retro en masse](/blog/retro-en-masse/). After collecting the team, I started to prepare in earnest for the Retro. But the weekend before something was still bothering me. Some element I hadn't accounted for. After pondering, I was able to pin it down to the facilitation. I was worried about the emotional temperature of the room. I wondered how to best help the facilitators succeed. So I scheduled a quick training session with the facilitators before the day of the retro. But I had no idea how I could help them prepare.
 
 I puzzled over this problem the entire weekend. When the alarm rang at 0-dark-thirty on Monday, I still didn't have a plan. I plodded off to the shower, continuing to mull it over. I needed some way to distill the experience of facilitation and arm them with tools to manage confrontation. For my part, I'd been coached and well-read in portions of the subject. But how could I share the theory with the group in a way they could immediately use it. Then it struck me. _'Immediately use it'_... With new excitement I shut off the water and accelerated through my morning routine.
 
@@ -31,4 +31,4 @@ It was in one of these breaks, that the elder statesmen of our facilitators offe
 
 Eventually we ran out of time, so I thanked the gathered and dismissed the meeting. I stayed back a few moments to collect my things and to breathe. The group left the room in a somewhat boisterous crowd, and a happy amount of chuckles and jokes. When the retro finally came, the facilitators did a bang-up job, and this strange training game helped build their confidence.
 
-P.S. In hindsight, I realized this post is effectively another application on [Leadership Role-playing as a means of training](/2017/02/07/dungeons-and-dragons-and-leadership-training/).
+P.S. In hindsight, I realized this post is effectively another application on [Leadership Role-playing as a means of training](/blog/dungeons-and-dragons-and-leadership-training/).

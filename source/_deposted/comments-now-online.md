@@ -47,7 +47,7 @@ My goal is to keep my need to 'moderate' to a minimum. As I mentioned I run this
 [first-hexo]: /2018/10/14/hexo-discovery/
 [netlify]: https://www.netlify.com/
 [email-me]: mailto:daniel@scheufler.io
-[blog]: https://daniel.scheufler.io
+[blog]: https://daniel.scheufler.tech
 [yagni]: https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it
 [github]: https://github.com/
 [netlify-pr]: https://docs.netlify.com/site-deploys/create-deploys/

@@ -137,4 +137,4 @@ With this knowledge of common patterns, you get a rudimentary grasp of what the 
    - Be wary of Recursion, which makes such an approximation difficult
    - Be wary of Side-effects.
 
-Now, all this said, I know I glossed over a number of items in the original, and I have learned a little better since. So I am planning to refine this idea further. So if you have any suggestions or pointers, or if you'd like to chat with me further specifically on this, [tag me by email](mailto:daniel@scheufler.io). I'd love to chat. Otherwise I hope this proves useful to you in your endeavors!
+Now, all this said, I know I glossed over a number of items in the original, and I have learned a little better since. So I am planning to refine this idea further. So if you have any suggestions or pointers, or if you'd like to chat with me further specifically on this, [tag me by email](mailto:daniel@scheufler.tech). I'd love to chat. Otherwise I hope this proves useful to you in your endeavors!

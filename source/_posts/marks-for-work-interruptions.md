@@ -12,7 +12,7 @@ photos:
   - img/post_img/hammer_and_egg.jpg
 description: 
 ---
-> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
+> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.tech)
 
 350 Words | ~3.5 Minute Read
 
@@ -29,7 +29,7 @@ For Disruptions, I advocate for the following behavioral markers:
 
 ## Recommended Behaviors
 - For Every kind of Disruption:
-		1. Finish WIP as much as you can (Flow Like Water), BEFORE diverting to any other Behavior ;  see also [Effectively Onboarding as a Junior Dev](https://daniel.scheufler.io/2022/02/16/onboarding-junior-engineer/)
+		1. Finish WIP as much as you can (Flow Like Water), BEFORE diverting to any other Behavior ;  see also [Effectively Onboarding as a Junior Dev](../onboarding-junior-engineer/)
 		2. Do NOT pick up NEW WIP!
 		3. Review Disruption SOP (e.g. this list or similar)
 		4. Start Monitoring Disruption Duration

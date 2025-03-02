@@ -2,7 +2,7 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background-color:#f6f6f4ff;
+    background-color:#lib.colors[@bg-color];
   }
   body {
     margin: 0;
@@ -58,8 +58,8 @@ html {
     margin: 0.67em 0;
   }
   mark {
-    background: #ff0;
-    color: #000;
+    background: #lib.colors[@bg-darker];
+    color: #lib.colors[@fg-color];
   }
   small {
     font-size: 80%;
@@ -97,7 +97,7 @@ html {
   kbd,
   pre,
   samp {
-    font-family: monospace, monospace;
+    font-family: #lib.fonts[@code-font];
     font-size: 1em;
   }
   button,
@@ -149,7 +149,7 @@ html {
     -webkit-appearance: none;
   }
   fieldset {
-    border: 1px solid #c0c0c0;
+    border: 1px solid #lib.colors[@grey-border];
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
   }

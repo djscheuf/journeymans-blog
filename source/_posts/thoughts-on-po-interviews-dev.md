@@ -26,7 +26,7 @@ The Product Owner is exposed to, and deals in customer needs and wants. That is 
 
 And it's that last phrase which carries all the weight: 'what matters to us'. For Product Owners, what matters to you isn't always known to the Developer. I had never even heard of base points until that fateful meeting when the Product Owner had explain how the code we were writing would affect the sales in those units. If my Product Owner had started talking about the affect to Base Points before that time, I would have been lost.
 
-So the nature of our work has us spinning in different spheres. Our eyes are on different parts of what matters to the business. [Developers need to translate for both humans and machines.](https://daniel.scheufler.io/2017/03/07/software-developers-are-translators/) Effective conversations between Product Owners and Developers need some translation as well.
+So the nature of our work has us spinning in different spheres. Our eyes are on different parts of what matters to the business. [Developers need to translate for both humans and machines.](../software-developers-are-translators/) Effective conversations between Product Owners and Developers need some translation as well.
 
 ## What do PMs usually get wrong when writing stories?
 

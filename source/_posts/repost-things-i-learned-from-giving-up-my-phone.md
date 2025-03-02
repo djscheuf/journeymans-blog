@@ -16,7 +16,7 @@ photos:
 
 These last few months I revisited some past posts. I took the time to expanded on the lessons I had learned in the area since writing them. These visits took a guided path through growth areas I experience in the last couple years. I found that revisiting the posts helped me to articulate what I have learned since or by applying that lesson. I hope it has helped the reader as well.
 
-This will be the last revisit, and it builds off of [the introspection discussed last week](/2020/08/10/repost-how-do-you-engage-with-your-thoughts/). In our modern world, it is _really_ hard to get away, to just figure out how you feel. That little black box in your pocket provides you ready access to more content that you could consume in a lifetime, and it is just so enticing!
+This will be the last revisit, and it builds off of [the introspection discussed last week](/blog/repost-how-do-you-engage-with-your-thoughts/). In our modern world, it is _really_ hard to get away, to just figure out how you feel. That little black box in your pocket provides you ready access to more content that you could consume in a lifetime, and it is just so enticing!
 
 I was first introduced to the concept of a 'phone-free' weekend by EntreLeadership ,during one of their 10 Day Challenges in 2018. It was weird, and uncomfortable.And it was wonderful, and it was quiet. I ran into the concept again as part of leadership training with Improving. This time the aim was to 'lose the electronic leash'. It was easier the second time, and similarly helpful.
 
@@ -48,7 +48,7 @@ Now, I want to share one more lesson I learned that Sunday. But It wasn't direct
 
 But in so doing, they took great care, setting me up to succeed. They built my confidence through the work week. They encouraged me to rest and spend time with loved-ones on Saturday. And then, only then, have they asked something difficult of me. I _know_ they realized that it would be hard, and I _know_ they planned it to be Sunday. Religious reasons aside, they put it on a day when I would not be at work. They put it on a day when they would encourage me to rest again. They put this challenge on a day when it would be _easiest_ to accomplish!
 
-4. An Excellent Example of ['Setting others up to succeed'](/2019/01/12/setting-others-up-to-succeed/)
+4. An Excellent Example of ['Setting others up to succeed'](/blog/setting-others-up-to-succeed/)
 
 To borrow their phrase, They intentionally designed their 'Intentionality' Challenge. So I wish to offer Kudos to the EntreLeadership team for a well-designed and instructive challenge series. I am eagerly awaiting their next: 'Influence'. Interested in joining the challenge? Go [here](https://is-tracking-link-api-prod.appspot.com/api/v1/click/6375256661950464/5251947050303488) for more information!
 

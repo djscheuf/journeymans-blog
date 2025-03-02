@@ -13,7 +13,7 @@ photos:
   - img/post_img/office_politics.jpg
 ---
 
-I'd like to share [another 30 second review](/2020/07/08/30sr-career-cost-of-agile-adoption/) with you. This time it's in the [10 Agile Practices for Working Together Remotely](https://www.youtube.com/watch?v=h0pUfMB_78M) talk from [the virtual Agile Shift Conference](https://www.youtube.com/channel/UClPGTd_j2EVKmaWMAAAWfwg/). It concluded last month. But they've shared all the recordings, which you should totally check out!. Back on target, The speakers for this talk was discussing BP's agile transformation journey. They particularly spoke to how this agility was applied to the COVID-19 situation. There was a ton of content, but here's what struck home to me.
+I'd like to share [another 30 second review](/blog/30sr-career-cost-of-agile-adoption/) with you. This time it's in the [10 Agile Practices for Working Together Remotely](https://www.youtube.com/watch?v=h0pUfMB_78M) talk from [the virtual Agile Shift Conference](https://www.youtube.com/channel/UClPGTd_j2EVKmaWMAAAWfwg/). It concluded last month. But they've shared all the recordings, which you should totally check out!. Back on target, The speakers for this talk was discussing BP's agile transformation journey. They particularly spoke to how this agility was applied to the COVID-19 situation. There was a ton of content, but here's what struck home to me.
 
 ## Agility is NOT a strategy
 

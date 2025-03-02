@@ -1,5 +1,5 @@
 ---
-title: Pursue Desirable Difficult
+title: Pursue Desirable Difficulty
 categories:
   - Personal Development
   - Lessons Learned
@@ -13,7 +13,7 @@ photos:
 description: While setting up a Windows11 VM, I encountered some difficulty. But these difficulties ended up helping me learn!
 used-hotpot: true
 ---
-> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.io)
+> Author's Note: Trying a new format. [Tell me what you think!](mailto:daniel@scheufler.tech)
 
 250 Words | ~1 Minute Read
 

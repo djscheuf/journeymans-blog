@@ -17,8 +17,8 @@ These are the notes from which I recorded the show. They're a little unpolished 
 
 ## Show Notes
 ### Intro
-- Call back to [Retros must be Intentional](/2023/03/24/show-notes-retros-must-be-intentional/)
-- [Retros must Produce Change](/2023/03/31/show-notes-retros-must-produce-change/), AND that Change was enacted by Individuals, PEOPLE
+- Call back to [Retros must be Intentional](/blog/show-notes-retros-must-be-intentional/)
+- [Retros must Produce Change](/blog/show-notes-retros-must-produce-change/), AND that Change was enacted by Individuals, PEOPLE
 - Today's Retros are FOR People
 
 ### Teams Performance is FROM PEOPLE, and HOW they connect
@@ -50,7 +50,7 @@ These are the notes from which I recorded the show. They're a little unpolished 
  - It can sometimes feel like you team shouldn't need to do that, especially if they've been together for a while. But remember, even the signers of the Agile Manifesto stated that they were still learning better way to develop software. The Manifesto was just a collection of their notes on what principles had consistently worked. 
  - And a long lived team can actually benefit even more from a people focused retro! People fall into patterns, or habits. We touched on this last episode when discussing the need to vary the format of the retro. It's not bad, it's just the way our minds optimize our work. 
  - By running a retro where people are encouraged to discuss their personal strengths, their weaknesses, the patterns of their interactions, you are giving them a gift. 
- - One of the most powerful stories I have of this, was on a format I designed called [Strengths, Weaknesses, and Fusions](/2019/01/19/strengths-weaknesses-fusions/). {Story}
+ - One of the most powerful stories I have of this, was on a format I designed called [Strengths, Weaknesses, and Fusions](/blog/strengths-weaknesses-fusions/). {Story}
  - I hope hearing that story offers some insight into how you can safely approach a People focused retro, and the kind of results your team might receive on the other end!
 
 ### Outro

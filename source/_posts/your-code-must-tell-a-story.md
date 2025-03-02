@@ -16,7 +16,7 @@ photos:
 What makes a good software engineer? Every developer knows it is not measured by lines of code written or removed. Nor is it measured by the speed of task completion. As translators for Man and Machine, the best measure of our success is in whether our code tells a its story.
 In most cases, code is no longer written for the computer. The compiler will obliterate your variable names. And then it will convert them into a sequence of byte-code instructions. No, our variable names are for us, the software engineers.
 
-More often that not, the code you write is actually written for you. [You read code more often than you write it](/2016/12/27/Code-is-read-more-often-than-it-is-written/). To cast it as advice: Have mercy on your future self. For he will have forgotten the context you now know. So write self-documenting code.
+More often that not, the code you write is actually written for you. [You read code more often than you write it](/blog/Code-is-read-more-often-than-it-is-written/). To cast it as advice: Have mercy on your future self. For he will have forgotten the context you now know. So write self-documenting code.
 
 I've heard it said: _'Write English first'_. And I strive to match my test cases to that paradigm. This is not as easy as it sounds. Very often I find myself redrafting my test case because I spoke in Geek-speak not in English. Tell your story in English, human words. Not Geek-speak jargon.
 

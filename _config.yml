@@ -3,9 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: A Journeyman's Travels
-subtitle:
-# description: The blog of a journeyman software engineer.
+title: Next Iteration, We Should Try...
+subtitle: Leading Software Engineering, Excellently!
 keywords: software, engineering, leadership, scheufler, consultant
 author: Daniel Scheufler
 language: en
@@ -13,9 +12,9 @@ timezone: America/Chicago
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://daniel.scheufler.io
+url: https://daniel.scheufler.tech
 root: /
-permalink: :year/:month/:day/:title/
+permalink: blog/:title/
 permalink_defaults:
 
 # Directory
@@ -57,9 +56,9 @@ sitemap:
   path: sitemap.xml
 
 # Category & Tag
-default_category: Software Development
-category_map:
-tag_map:
+# default_category: Software Development
+# category_map:
+# tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -70,7 +69,7 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 7
+per_page: 0
 pagination_dir: page
 
 # Extensions
@@ -93,13 +92,14 @@ feed:
 
 # Site settings
 SEOTitle: Journeyman's Travels
-email: daniel@shceufler.io
+email: daniel@shceufler.tech
 google_analytics: G-9J2D121NSY
+mailerlite: true
 # hyvor_talk_id: 6075
 
 # Social Links
 social:
-  mail: mailto:daniel@scheufler.io
+  mail: mailto:daniel@scheufler.tech
   github: https://github.com/djscheuf
   linkedin: https://www.linkedin.com/in/danielscheufler/
   leanpub: https://leanpub.com/u/danielscheufler
@@ -109,20 +109,14 @@ social:
 # Navigation Bar
 nav:
   Home: .
-  Now: now
-  My Talks: talks
   User's Manual: manual
   Mature Team Behaviors: mature-team-behaviors
-  About: about
   Archive: archives
 
 widget:
-  title: A Journeyman's Travels
+  title: Next Iteration, We Should Try...
   content: <span>Blog by <a href="/about">Daniel Scheufler</a>.</span>
 
 # Visual Config
-# avatar: img/better_me_sm.png
-# banner_small: images/banner-small.png
-# banner_large: img/header_img/home-bg-2-dark.png
-logo: /img/logo/star_catcher_mountains.png
-favicon: /img/logo/star_catcher_mountainsx96.png
+logo: /img/logo/logo_2025.png
+favicon: /img/logo/logo_2025x96.png

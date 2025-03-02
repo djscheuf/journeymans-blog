@@ -19,7 +19,7 @@ These are the notes from which I recorded the show. They're a little unpolished 
 ## Intro
 This season we've been talking about 'First Principles' or atomic units of reasoning about a concept. However, It would do our second topic this season to suggest that the four principles we've discussed cover everything in leadership. Frankly the topic is too fast for me to even approach covering to all in an hour of talking across 4 episodes. But if I had to pick one last principle to discuss with leadership it would be this: Leadership is about Endurance.
 ## Endurance and Discipline
-- Talked last time about [Leadership - It's about Systems](/2023/04/29/show-notes-leadership-about-systems), and how a Leader needed to build the ability for the team to act and decide even when the Leader isn't present. That is, we are to build systems and patterns for consistent action and then stick with them!
+- Talked last time about [Leadership - It's about Systems](/blog/show-notes-leadership-about-systems), and how a Leader needed to build the ability for the team to act and decide even when the Leader isn't present. That is, we are to build systems and patterns for consistent action and then stick with them!
 - This Discipline is very closely related to Endurance.
 - Discipline is doing this thing you don't really want to do, so that you can do that thing you really want to do! Keeping the consistent, though momentarily unpleasant habit to keep you focused and growing. This is to Endure in some action.
 - But Endurance is also maintaining the pressure , pushing towards a goal, even in the face of momentarily challenge or failure. 
@@ -28,7 +28,7 @@ This season we've been talking about 'First Principles' or atomic units of reaso
 	- Even Sun Tzu lauds the merits of patiently waiting out your enemy.
 - But critically this endurance is NEVER idle! It's not stationary rather it is the in the moment discipline to keep doing the right thing!
 ## Endurance with People
-- This applies to people as well. Recall [Leadership - Not About You](/2023/04/25/show-notes-leadership-not-about-you), but rather it is about the People you lead, so endurance in Leadership in some senses means Endurance with People too!
+- This applies to people as well. Recall [Leadership - Not About You](/blog/show-notes-leadership-not-about-you), but rather it is about the People you lead, so endurance in Leadership in some senses means Endurance with People too!
 - People change slowly. We change a WHOLE lot over the first 20 or so years of life, and that rate slows dramatically after 25. So while we _might_ teach them a new pattern today, expecting it to be perfectly applied tomorrow is foolish and sets the Leader up for great frustration. 
 - Rather we must look at it as a process. Not to say the good pattern once and assume it sunk in, rather to repeat ourselves time and again until our Team can predict what we're going to say. Then they _might_ start to understand and apply it. But for this to occur, the Leader must endure for months, or perhaps even years, to get there!
 - Scale this up for an Organization full of many different kinds of people, under many different leaders, and with different , potentially conflicting desires. Organizations evolve even slower than individuals, because they are composed of many individuals, and until the overwhelming majority of people in an organization believe the same thing, the organization has little chance of change.
@@ -46,9 +46,9 @@ This season we've been talking about 'First Principles' or atomic units of reaso
 - With out that Hope-for-future, we have no goal to march towards, and therefore no way to be consistent in our marching!
 - Lastly, without the faith that the world can be changed, that the Hope-for-future can be, the leader and their team has nothing to pursue, no reason to get up and create. 
 - In order for a team to pursue a goal effectively, the leader must be able to articulate it to them, and demonstrate the path to get there! 
-- Remember, [Leadership - Not About You](/2023/04/25/show-notes-leadership-not-about-you), but it is about how you LEAD the people. That [core verb, to lead](/2023/04/29/show-notes-leadership-about-systems), is `to go ahead of, and show the way`!
+- Remember, [Leadership - Not About You](/blog/show-notes-leadership-not-about-you), but it is about how you LEAD the people. That [core verb, to lead](/blog/show-notes-leadership-about-systems), is `to go ahead of, and show the way`!
 - You can only truly endure, if you have a purpose to endure for, without it, it's not endurance, but rather going through the motions.
-- See also [On Endurance](/2022/12/09/on-endurance)
+- See also [On Endurance](/blog/on-endurance)
 ## Outro
 - This season we've discussed several atomic principles for reasoning about Leadership. 
 	- Firstly, Leadership isn't about the Leader, but about their Team and the people whom they serve. This guides the kind of actions, and improvements which the Leader must pursue in them selves. Here we explored the very nature of Leadership and the meaning of the word.

@@ -1,28 +1,38 @@
 #lib() {
     .colors() {
-      @cultured: #f6f6f4ff;
-      @light-gray: #d7d5d7ff;
-      @darker-gray: #C3C1C3;
-      @dark-gray: #726E72;
-      @smoky-black: #161314ff;
-      @lincoln-green: #005a03ff;
-      @rosso-corsa: #d61d13ff;
+     @bg-color: #E9E9ED;
+     @bg-lighter: #FBFAFA;
+     @bg-second: @bg-lighter;
+     @bg-darker: #BCBCC8;
+     @bg-second-darker: @bg-darker;
 
-     @bg-color: @cultured;
-     @bg-second: @light-gray;
-     @bg-second-darker: @dark-gray;
-     @fg-color: @smoky-black;
-     @secondary: @lincoln-green;
-     @accent: @rosso-corsa;
+     @fg-color: #2A2828;
 
-    
-     @links: #3769c9;
+     @primary: #0D446D;
+     @primary-lighter:#34688F;
+     @primary-darker:#053459;
+     
+     @secondary: #A9370A;
+     @secondary-lighter: #DF7246;
+     @secondary-darker: #8A2700;
+
+     @terceary: #077445;
+     @terceary-lighter: #30996C;
+     @terceary-darker: #005F36;
+ 
+     @accent: #A9650A;
+     @accent-lighter: #DF9E46;
+     @accent-darker: #8A4F00;
+
+     @links: @primary-lighter;
      @visited-links: @fg-color;
-     @hover-links: @lincoln-green;
+     @hover-links: @secondary-lighter;
 
-     @color-title: #000;
+     @color-title: @fg-color;
      @color-text: @fg-color;
-     @grey-border: @bg-second;
+     @grey-border: @bg-darker;
+
+     @error: @secondary-darker;
     }
   
   .lengths(){
@@ -34,5 +44,16 @@
     @gap: 2em;
     @half-gap: 1em;
     @padding: 5vw;
+  }
+
+  .fonts(){
+    @title-font: Garamond;
+    @heading-font: Garamond;
+    @body-font: Roboto;
+    @cta-font: Baskerville;
+
+    @link-font: Roboto;
+
+    @code-font: 'Roboto Mono';
   }
 }

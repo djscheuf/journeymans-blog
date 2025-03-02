@@ -26,4 +26,4 @@ Looking back at my other side projects, I realize these were never the best prac
 
 Maybe it is a kind of practice, but not the most effective kind. You know that research that says you need something like [10000 hours to become a world-class expert](https://en.wikipedia.org/wiki/Outliers_%28book%29){1}? The practice they talk about there, isn't the kind you get by playing the game or working a project. Those experts pursue a 'deliberate practice', focusing on specific elements of their technique. A little like what we did at the Code Retreat. So if you want to _practice_, maybe you should try deleting your code first.
 
-[{1}](/2016/05/12/how-to-learn-any-skill-in-20-hours/) - I happened on a TED talk about 3 years ago, which touched on this idea. The talk suggests that it is possible to learn _any skill_ with about 20 hours of work.
+[{1}](/blog/how-to-learn-any-skill-in-20-hours/) - I happened on a TED talk about 3 years ago, which touched on this idea. The talk suggests that it is possible to learn _any skill_ with about 20 hours of work.
