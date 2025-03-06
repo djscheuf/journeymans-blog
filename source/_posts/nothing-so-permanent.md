@@ -7,7 +7,7 @@ tags:
   - effectiveness
 date: 2025-04-22 09:30:00
 photos: 
-  - img/post_img/checklist.png
+  - img/post_img/code_wall.jpg
 description: Recently a Software Engineer Budy of mine reached out about some code I wrote 6 years ago. Turns out my temporary fix was rather permanent...
 ---
 I recently have a Software Engineer buddy of mine reach out about some code I wrote about 6 years ago. You see, I'd left a comment in that code to the effect of _"Forgive me Father, for I have sinned"_. And my buddy couldn't figure out why I'd left that comment.
