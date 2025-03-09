@@ -11,6 +11,9 @@ photos:
 description: 
 ---
 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: Sign up Today! 
+> I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
+
 ~280 word | ~1.5 min read
 
 Leftover Maintenance becomes Unplanned Work. 
@@ -31,5 +34,3 @@ Leftover maintenance becomes unplanned work.
 Will you decide when to do maintenance?
 Or will you let the machine decide?
 This is an excellent arena to [practice effective delegation](/blog/on-effective-delegation/) with your team.
-
-> P.S. My content is moving to a newsletter. Sign-up to get these and other insights delivered directly in your inbox! See you _Next Iteration_!
