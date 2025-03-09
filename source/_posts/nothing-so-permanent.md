@@ -10,6 +10,9 @@ photos:
   - img/post_img/code_wall.jpg
 description: Recently a Software Engineer Budy of mine reached out about some code I wrote 6 years ago. Turns out my temporary fix was rather permanent...
 ---
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](subscribepage.io/nOrcj7)! 
+> I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
+
 I recently have a Software Engineer buddy of mine reach out about some code I wrote about 6 years ago. You see, I'd left a comment in that code to the effect of _"Forgive me Father, for I have sinned"_. And my buddy couldn't figure out why I'd left that comment.
 
 For my part, I had a good laugh remembering that moment. At the time, I felt the code in question was rather hacky. I sensed that there was a better, or 'proper' way to build that function. But in the moment, I couldn't figure it out. With time running out for the sprint, I wrapped it in some tests. Then I dropped an apology for whatever future developer had to come back and fix my work. I was certain it was going to cause problems in the future. But my buddy had only tagged me because he thought it was funny. He didn't need to fix it. He found it while preparing to fix another part of the code!
