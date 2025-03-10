@@ -10,7 +10,7 @@ photos:
   - img/post_img/code_wall.jpg
 description: Recently a Software Engineer Budy of mine reached out about some code I wrote 6 years ago. Turns out my temporary fix was rather permanent...
 ---
-> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](subscribepage.io/nOrcj7)! 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](http://signup.scheufler.tech)! 
 > I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
 
 I recently have a Software Engineer buddy of mine reach out about some code I wrote about 6 years ago. You see, I'd left a comment in that code to the effect of _"Forgive me Father, for I have sinned"_. And my buddy couldn't figure out why I'd left that comment.
