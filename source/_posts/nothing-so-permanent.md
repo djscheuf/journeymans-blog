@@ -5,7 +5,7 @@ categories:
 tags:
   - software
   - effectiveness
-date: 2025-04-22 09:30:00
+date: 2025-04-29 09:30:00
 photos: 
   - img/post_img/code_wall.jpg
 description: Recently a Software Engineer Budy of mine reached out about some code I wrote 6 years ago. Turns out my temporary fix was rather permanent...
