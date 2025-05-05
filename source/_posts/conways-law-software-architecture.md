@@ -11,7 +11,7 @@ photos:
 description: Your organizational structure impacts how you can use your tools. Conway's law gives us some insight into how our teams ought to evovle as our tools do.
 ---
 
-> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](subscribepage.io/nOrcj7)! 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](https://subscribepage.io/nOrcj7)! 
 > I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
 
 ~170 word | ~1 min read
