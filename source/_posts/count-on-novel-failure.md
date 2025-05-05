@@ -11,7 +11,7 @@ photos:
 description: Failure is inevitable. In just the snap of a finger, an otherwise stable system can disintegrate. Murphy's Law applies to everyone.  But setting allusions aside, what should you do? 
 ---
 
-> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](http://signup.scheufler.tech)! 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](https://subscribepage.io/nOrcj7)! 
 > I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
 
 ~390 word | ~1.5 min read
