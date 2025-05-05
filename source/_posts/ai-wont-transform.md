@@ -12,7 +12,7 @@ used-hotpot: true
 description: AI won't transform your business. No tool does. Rather clever people applying those tools do. Focus on enabling them, for the benefits you're looking for. 
 ---
 
-> Author's Note: If you'd like to be the first notified, with content like this sent direct to you: [Sign up for the Newsletter](http://signup.scheufler.tech)! 
+> Author's Note: If you'd like to be the first notified, with content like this sent direct to you: [Sign up for the Newsletter](https://subscribepage.io/nOrcj7)! 
 
 
 ~450 word | ~2 min read
