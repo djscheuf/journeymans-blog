@@ -12,7 +12,7 @@ photos:
 description: It's always interesting when your work shows up at home. I recently wrote about how Leftover Maintenance Become Unplanned Work. And in fact I encountered just such a situation at home... in my own breaker box. 
 ---
 
-> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](http://signup.scheufler.tech)! 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](https://subscribepage.io/nOrcj7)! 
 > I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
 
 ~1000 word | ~6 min read
