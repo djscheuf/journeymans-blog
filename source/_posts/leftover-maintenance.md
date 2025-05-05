@@ -11,7 +11,7 @@ photos:
 description: Leftover Maintenance becomes Unplanned Work. Most teams plan some time for maintenance. But when that fire breaks out, what work does it interrupt first?
 ---
 
-> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](http://signup.scheufler.tech)! 
+> Author's Note: I'm launching a newsletter! If you'd like to be the first notified, with content like this send direct to you: [Sign up Today](https://subscribepage.io/nOrcj7)! 
 > I'll still post to the blog, but the newsletter will always receive it first! Hope to see you _Next Iteration_!
 
 ~280 Words | ~1.5min Read
