@@ -25,6 +25,7 @@ For Future use and reference
   - Work Projects
 
 # Approved Tags
+  - ai
   - teams
   - effectiveness
   - agile
