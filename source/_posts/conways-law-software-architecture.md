@@ -5,7 +5,7 @@ categories:
 tags:
   - organizations
   - effectiveness
-date: 2025-04-15 09:30:00
+date: 2025-05-27 09:30:00
 photos: 
   - img/post_img/tool_kit.jpg
 description: Your organizational structure impacts how you can use your tools. Conway's law gives us some insight into how our teams ought to evovle as our tools do.
