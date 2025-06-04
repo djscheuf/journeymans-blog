@@ -5,7 +5,7 @@ categories:
 tags:
   - organizations
   - effectiveness
-date: 2025-06-10 09:30:00
+date: 2025-07-22 09:30:00
 photos: 
   - img/post_img/hammer_and_egg.jpg
 description: Failure is inevitable. In just the snap of a finger, an otherwise stable system can disintegrate. Murphy's Law applies to everyone.  But setting allusions aside, what should you do? 
