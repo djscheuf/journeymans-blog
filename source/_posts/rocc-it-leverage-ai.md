@@ -8,7 +8,7 @@ tags:
 date: 2025-06-10 09:30:00
 use-hotpot: true
 photos: 
-  - img/post_img/man_thing_ai.jpg
+  - /img/post_img/man_think_ai.jpg
 description: 
 ---
 
