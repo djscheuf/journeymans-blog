@@ -1,0 +1,29 @@
+<%
+// Calculate the difference in months between current date and post date
+var today = new Date();
+var yearGenerated = today.getFullYear();
+var monthGenerated = today.getMonth();
+
+// page.date is a MomentJs Date
+var yearPosted = page.date.year();
+var monthPosted = page.date.month();
+
+var diffInMonths = (yearGenerated-yearPosted)*12 + monthGenerated - monthPosted;
+
+// Check if post has 'ai' tag
+var hasAiTag = false;
+if (page.tags) {
+  page.tags.forEach(function(tag) {
+    if (tag.name === 'ai') {
+      hasAiTag = true;
+    }
+  });
+}
+
+// Different warning thresholds based on tags
+var shouldShowPostContentWarning = hasAiTag ? diffInMonths > 3 : diffInMonths > 24;
+
+if(shouldShowPostContentWarning && !page.hideContentWarning) { 
+%>
+  <span class="age-warning"><% if(hasAiTag) { %>This AI-related post is over 3 months old<% } else { %>This post is over 2 years old<% } %></span>
+<% } %>
