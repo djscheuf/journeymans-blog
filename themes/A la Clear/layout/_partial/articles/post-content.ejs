@@ -1,18 +1,7 @@
 <%
 var isFullUrl = function(str) {
-  return /^(https:|http:|ftp:)?\/\//.test(str);
+  return /^(https:|http:|ftp:)?///.test(str);
 };
-
-var today = new Date();
-var yearGenerated = today.getFullYear();
-var monthGenerated = today.getMonth();
-
-// page.date is a MomentJs Date
-var yearPosted = page.date.year();
-var monthPosted = page.date.month();
-
-var diffInMonths = (yearGenerated-yearPosted)*12 + monthGenerated - monthPosted;
-var shouldShowPostContentWarning = diffInMonths > 24;
 %>
 <div class="content-col">
   <div class="post">
@@ -34,9 +23,7 @@ var shouldShowPostContentWarning = diffInMonths > 24;
             <% } %>
           <div class="posted-on">
           <%= page.date.format(config.date_format) %>
-          <% if(shouldShowPostContentWarning && !page.hideContentWarning) { %>
-            <span class="age-warning">This post is over 2 years old</span>
-            <% } %>
+          <%- partial('_partial/articles/age-warning') %>
           </div>
           <div class="tags-links">
             <% if (page.tags) { %>
