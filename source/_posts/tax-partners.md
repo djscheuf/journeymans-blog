@@ -1,5 +1,5 @@
 ---
-title: Tax Partners for Agility
+title: New Opportunity in the 2025 Taxes
 categories:
   - Software Development
 tags:
