@@ -6,7 +6,7 @@ tags:
   - agile
   - leadership
   - effectiveness
-date: 2025-09-02 09:30:00
+date: 2025-09-09 09:30:00
 photos: 
   - img/post_img/repeat_true_self.jpg
 description: How do you ensure something happens? You put it first. What makes it prioritization, is action. But what should you put first?
@@ -25,3 +25,5 @@ If we invest in our development systems first, we'll create a virtuous cycle. A 
 More productive engineers create more time for work, each time we do work. But it all depends on adopting a disciplined, intentional habit around our priorities. First things first. 
 
 So for your next sprint, before you jump into the code, make a decision. Is Code the first thing? Test Cases? Or should it something else? Pick your 'first thing' based on the results you want to see. Put your 'first thing' first. And then _actually_ do it.
+
+P.S. I first encountered timeless lessons, like this one, in Peter Drucker's the Effective Executive. And I [just released a commentary](https://leanpub.com/sweng-commentary-efvexec) on this seminal book on management. Check it out for insights on Effectiveness!
