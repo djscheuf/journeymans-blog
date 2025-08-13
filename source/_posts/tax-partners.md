@@ -12,7 +12,7 @@ description:
 ---
 
 
-~380 word | ~1.5 min read
+~260 word | ~1 min read
 
 > Disclaimer: To be clear, I am NOT a tax professional. 
 > Consult your accountant before acting on anything you learn from this article!
