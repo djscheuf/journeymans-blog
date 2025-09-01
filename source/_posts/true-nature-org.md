@@ -6,7 +6,7 @@ tags:
   - leadership
   - organizations
   - effectiveness
-date: 2025-08-12 09:30:00
+date: 2025-09-23 09:30:00
 photos: 
   - img/post_img/agile_team.png
 description: Organizations are an abstraction, a model. By understanding the nature of models, you unlock new, powerful ways to interact with your organization!
