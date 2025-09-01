@@ -28,12 +28,11 @@ _Organizations_ exist to make it easier to describe and reason about the collect
 Abstractions are necessarily less detailed than the reality. That make it easier to hold the complexity in mind. But it means losing clarity when you reason in concrete terms. Organizations, are the voluntary inter-relation-ships among a large group of people. When you keep that in mind, it changes how you see a variety of organizational challenges. 
 
 The Organization is inefficient? 
-The way people are interacting takes more effort than the value we are producing.
+That means the way people are interacting takes more effort for the value we are producing than we'd like.
 
-_"We need a process for ..."_ 
-_"When such and such situation occurs, the people who see it should respond like..."_
+_"We need a process for ..."_ becomes _"When such and such situation occurs, the people who see it should respond like..."_
 
 Realize that your Organization, being an abstraction, is a model. And at the end of the day, when the map and the territory disagree, trust the territory. 
 
 Or put an different way, when the 'Organization' and the 'People' disagree; Trust the People. 
-Then adapt the organization to match reality.
+**Then adapt the organization to match reality.**
