@@ -13,6 +13,8 @@ photos:
   - img/post_img/frustration.jpg
 description: Have you ever read some old code, and immediately thought "Why on earth would the call it _that_!?" We can learn a trick from some old books to help write better code today!
 ---
+~440 Words | ~2 min read
+
 Have you ever read some old code, and immediately thought "Why on earth would the call it _that_!?" Knowing that old code has a [high WTFPM](https://www.osnews.com/story/19266/wtfsm/) score doesn't help us write better code today. For that, we need to go deeper.
 
 The question we need to answer is _"why is code ,written long ago, harder to read?"_ Don't go off half-cocked! It is not because we are better than our fore-fathers at writing readable code. We are still human after all. Instead it is something about our language. (No, not C, the human one). It is an attribute of our language I was recently shown. And I found it whilst reading an old book.
