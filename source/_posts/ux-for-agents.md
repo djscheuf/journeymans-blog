@@ -25,11 +25,9 @@ Our APIs are about to become the new 'User' Experience. With the advent of AI Ag
 
 Imaging you're using the AI to product a profitability report. It uses your bank's API to check on your small business account. Maybe your telling it to "complete the purchase..." and fat finger the prompt. You intended to complete a purchases report. But now you've sent the agent into the wild to "complete the purchase". What purchase? God Only Knows. But that poor bot is going to try!
 
-A fat-finger prompt might turn a simple analysis into a irreversible action. You could make an argument that the user of the agents is accepting those risks. 
-Caveat Emptor, and all that. But that won't prevent a few vocal users from deriding poor API or service design which allowed it! And they will have a point. 
+A fat-finger prompt might turn a simple analysis into a irreversible action. You could make an argument that the user of the agents is accepting those risks. Caveat Emptor, and all that. But that won't prevent a few vocal users from deriding poor API or service design which allowed it! And they will have a point. 
 
-Consider the industrial setting again. The Designer knows the 'dangerous' states of the machine. And it is their responsibility to inform the user. 
-After all, the operator typically can't see the internal state of the machine. At least, they cannot without intentional signalling. So it is with with our new systems. 
+Consider the industrial setting again. The Designer knows the 'dangerous' states of the machine. And it is their responsibility to inform the user. After all, the operator typically can't see the internal state of the machine. At least, they cannot without intentional signalling. So it is with with our new systems. 
 
 As Agentic interactions become more common, we will need a new form of Experience Design. As engineers, and system designers, we need a new level of rigor. We must identify our own 'irreversible' operations, and draw firm lines. Ideally, we provide a space for human oversight with these. Or we make the 'irreversible' operations easier to undo. 
 
