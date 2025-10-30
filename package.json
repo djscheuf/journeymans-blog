@@ -11,12 +11,14 @@
     "start": "hexo server -p $PORT",
     "generate": "hexo generate",
     "clean": "rimraf public",
-    "regen":"npm run clean && npm run generate"
+    "regen":"npm run clean && npm run generate",
+    "consolidate-pdf": "node scripts/consolidate-posts-to-pdf.js"
   },
   "hexo": {
     "version": "7.3.0"
   },
   "dependencies": {
+    "axios": "^1.6.0",
     "hexo": "^7.3.0",
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
@@ -28,7 +30,10 @@
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-less": "^4.0.0",
     "hexo-renderer-markdown-it": "^7.1.0",
-    "hexo-server": "^3.0.0"
+    "hexo-server": "^3.0.0",
+    "js-yaml": "^4.1.0",
+    "marked": "^11.0.0",
+    "pdfkit": "^0.15.0"
   },
   "devDependencies": {
     "rimraf": "^5.0.5"
