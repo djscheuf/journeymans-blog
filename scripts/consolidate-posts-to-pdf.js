@@ -264,24 +264,6 @@ async function createPDF(posts, outputPath) {
                        .text(`Published: ${formatDate(post.date)}`, { align: 'left' });
                 }
                 
-                // Add categories and tags
-                const metaInfo = [];
-                if (post.categories && post.categories.length > 0) {
-                    const cats = Array.isArray(post.categories) ? post.categories.join(', ') : String(post.categories);
-                    metaInfo.push(`Categories: ${cats}`);
-                }
-                if (post.tags && post.tags.length > 0) {
-                    const tags = Array.isArray(post.tags) ? post.tags.join(', ') : String(post.tags);
-                    metaInfo.push(`Tags: ${tags}`);
-                }
-                
-                if (metaInfo.length > 0) {
-                    doc.fontSize(9)
-                       .fillColor('#95A5A6')
-                       .font('Helvetica')
-                       .text(metaInfo.join(' | '), { align: 'left' });
-                }
-                
                 doc.moveDown(0.5);
                 
                 // Add photo if available
