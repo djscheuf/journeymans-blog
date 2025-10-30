@@ -27,8 +27,7 @@ The generated PDF includes:
 2. **Individual posts** with:
    - Post title (large, bold)
    - Publication date
-   - Categories and tags
-   - Featured image (if available)
+   - Featured image (centered, if available)
    - Full post content with clickable links
 
 ## Technical Details
@@ -41,6 +40,8 @@ The generated PDF includes:
 
 ### Link Handling
 Markdown links like `[Click here](https://example.com)` are automatically converted to clickable hyperlinks in the PDF. Links appear in blue with underlines.
+
+**Internal Blog Links**: Relative links to other blog posts (e.g., `/blog/post-name/`) are automatically converted to absolute URLs (`https://daniel.scheufler.tech/blog/post-name/`) so they work correctly when clicked in the PDF.
 
 ### Image Handling
 The script handles both:

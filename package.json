@@ -12,7 +12,8 @@
     "generate": "hexo generate",
     "clean": "rimraf public",
     "regen":"npm run clean && npm run generate",
-    "consolidate-pdf": "node scripts/consolidate-posts-to-pdf.js"
+    "consolidate-pdf": "node scripts/consolidate-posts-to-pdf.js",
+    "phase1-analysis": "node scripts/phase1-corpus-analysis.js"
   },
   "hexo": {
     "version": "7.3.0"
