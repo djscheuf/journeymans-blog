@@ -52,10 +52,32 @@ function parseMarkdownFile(filepath) {
 }
 
 /**
- * Download an image from URL
+ * Download an image from URL or load from local file
  */
 async function downloadImage(url) {
     try {
+        // Check if it's a local path (relative or starts with img/)
+        if (!url.startsWith('http://') && !url.startsWith('https://')) {
+            // Handle local image paths
+            let localPath = url;
+            
+            // Remove leading slash if present
+            if (localPath.startsWith('/')) {
+                localPath = localPath.substring(1);
+            }
+            
+            // Try to find the image in source directory
+            const imagePath = path.join(PROJECT_ROOT, 'source', localPath);
+            
+            if (fs.existsSync(imagePath)) {
+                return fs.readFileSync(imagePath);
+            } else {
+                console.warn(`Local image not found: ${imagePath}`);
+                return null;
+            }
+        }
+        
+        // Download from URL
         const response = await axios.get(url, {
             responseType: 'arraybuffer',
             timeout: 10000
@@ -68,50 +90,103 @@ async function downloadImage(url) {
 }
 
 /**
- * Convert markdown to plain text while preserving structure
+ * Parse markdown and return structured content with links preserved
  */
-function markdownToText(mdContent) {
-    // Use marked to parse markdown
+function parseMarkdownContent(mdContent) {
     const tokens = marked.lexer(mdContent);
-    let text = '';
+    const paragraphs = [];
+    
+    function extractLinksFromText(text) {
+        // Extract markdown links: [text](url)
+        const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+        const segments = [];
+        let lastIndex = 0;
+        let match;
+        
+        while ((match = linkRegex.exec(text)) !== null) {
+            // Add text before link
+            if (match.index > lastIndex) {
+                segments.push({
+                    type: 'text',
+                    content: text.substring(lastIndex, match.index)
+                });
+            }
+            
+            // Add link
+            segments.push({
+                type: 'link',
+                text: match[1],
+                url: match[2]
+            });
+            
+            lastIndex = match.index + match[0].length;
+        }
+        
+        // Add remaining text
+        if (lastIndex < text.length) {
+            segments.push({
+                type: 'text',
+                content: text.substring(lastIndex)
+            });
+        }
+        
+        return segments.length > 0 ? segments : [{ type: 'text', content: text }];
+    }
     
     function processTokens(tokens, indent = '') {
-        let result = '';
         for (const token of tokens) {
             switch (token.type) {
                 case 'heading':
-                    result += '\n' + token.text + '\n\n';
+                    paragraphs.push({
+                        type: 'heading',
+                        level: token.depth,
+                        segments: extractLinksFromText(token.text)
+                    });
                     break;
                 case 'paragraph':
-                    result += token.text + '\n\n';
+                    paragraphs.push({
+                        type: 'paragraph',
+                        segments: extractLinksFromText(token.text)
+                    });
                     break;
                 case 'list':
                     if (token.items) {
                         token.items.forEach(item => {
-                            result += indent + '• ' + item.text + '\n';
+                            paragraphs.push({
+                                type: 'list-item',
+                                segments: extractLinksFromText(indent + '• ' + item.text)
+                            });
                         });
-                        result += '\n';
                     }
                     break;
                 case 'code':
-                    result += '\n' + token.text + '\n\n';
+                    paragraphs.push({
+                        type: 'code',
+                        segments: [{ type: 'text', content: token.text }]
+                    });
                     break;
                 case 'blockquote':
-                    result += '  ' + token.text + '\n\n';
+                    paragraphs.push({
+                        type: 'blockquote',
+                        segments: extractLinksFromText('  ' + token.text)
+                    });
                     break;
                 case 'space':
-                    result += '\n';
+                    // Skip spaces
                     break;
                 default:
                     if (token.text) {
-                        result += token.text + ' ';
+                        paragraphs.push({
+                            type: 'paragraph',
+                            segments: extractLinksFromText(token.text)
+                        });
                     }
             }
         }
-        return result;
     }
     
-    return processTokens(tokens);
+    processTokens(tokens);
+    return paragraphs;
 }
 
 /**
@@ -216,13 +291,34 @@ async function createPDF(posts, outputPath) {
                         try {
                             const imageBuffer = await downloadImage(photoUrl);
                             if (imageBuffer) {
-                                const maxWidth = 500;
+                                const maxWidth = 450;
                                 const maxHeight = 300;
-                                doc.image(imageBuffer, {
-                                    fit: [maxWidth, maxHeight],
-                                    align: 'left'
+                                
+                                // Get page dimensions
+                                const pageWidth = doc.page.width;
+                                const leftMargin = doc.page.margins.left;
+                                const rightMargin = doc.page.margins.right;
+                                const availableWidth = pageWidth - leftMargin - rightMargin;
+                                
+                                // Calculate centered position
+                                const imageX = leftMargin + (availableWidth - maxWidth) / 2;
+                                const currentY = doc.y;
+                                
+                                // Add the image at centered position
+                                doc.image(imageBuffer, imageX, currentY, {
+                                    fit: [maxWidth, maxHeight]
                                 });
-                                doc.moveDown(0.5);
+                                
+                                // Move cursor down past the image
+                                // We need to calculate actual image height after fitting
+                                const img = doc.openImage(imageBuffer);
+                                const aspectRatio = img.height / img.width;
+                                let actualHeight = maxWidth * aspectRatio;
+                                if (actualHeight > maxHeight) {
+                                    actualHeight = maxHeight;
+                                }
+                                
+                                doc.y = currentY + actualHeight + 20; // Add 20 points of spacing
                             }
                         } catch (error) {
                             console.warn(`Could not add image for ${post.title}:`, error.message);
@@ -235,21 +331,58 @@ async function createPDF(posts, outputPath) {
                    .fillColor('#000000')
                    .font('Helvetica');
                 
-                const textContent = markdownToText(post.content);
-                const paragraphs = textContent.split('\n\n').filter(p => p.trim());
+                const parsedContent = parseMarkdownContent(post.content);
                 
-                for (const para of paragraphs) {
-                    const trimmed = para.trim();
-                    if (trimmed) {
-                        try {
-                            doc.text(trimmed, {
-                                align: 'left',
-                                lineGap: 4
-                            });
-                            doc.moveDown(0.5);
-                        } catch (error) {
-                            console.warn(`Error adding paragraph:`, error.message);
+                for (const para of parsedContent) {
+                    try {
+                        // Set font based on paragraph type
+                        if (para.type === 'heading') {
+                            const headingSizes = { 1: 16, 2: 14, 3: 12 };
+                            doc.fontSize(headingSizes[para.level] || 12)
+                               .font('Helvetica-Bold');
+                        } else if (para.type === 'code') {
+                            doc.fontSize(9)
+                               .font('Courier');
+                        } else {
+                            doc.fontSize(11)
+                               .font('Helvetica');
                         }
+                        
+                        // Render segments (text and links)
+                        for (let i = 0; i < para.segments.length; i++) {
+                            const segment = para.segments[i];
+                            
+                            if (segment.type === 'link') {
+                                // Render clickable link
+                                const linkText = segment.text;
+                                const linkUrl = segment.url;
+                                
+                                doc.fillColor('#0066CC')
+                                   .text(linkText, {
+                                       link: linkUrl,
+                                       underline: true,
+                                       continued: i < para.segments.length - 1
+                                   })
+                                   .fillColor('#000000');
+                            } else if (segment.content) {
+                                // Render regular text
+                                doc.text(segment.content, {
+                                    continued: i < para.segments.length - 1
+                                });
+                            }
+                        }
+                        
+                        // End the text line and add spacing
+                        doc.text(''); // This ends any continued text
+                        
+                        if (para.type === 'heading') {
+                            doc.moveDown(0.3);
+                        } else {
+                            doc.moveDown(0.5);
+                        }
+                        
+                    } catch (error) {
+                        console.warn(`Error adding paragraph:`, error.message);
                     }
                 }
                 
