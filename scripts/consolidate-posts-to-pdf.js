@@ -17,6 +17,7 @@ const { marked } = require('marked');
 const PROJECT_ROOT = path.join(__dirname, '..');
 const POSTS_DIR = path.join(PROJECT_ROOT, 'source', '_posts');
 const OUTPUT_PATH = path.join(PROJECT_ROOT, 'consolidated_blog_posts.pdf');
+const BLOG_BASE_URL = 'https://daniel.scheufler.tech';
 
 /**
  * Parse a markdown file and extract YAML front matter and content
@@ -112,11 +113,21 @@ function parseMarkdownContent(mdContent) {
                 });
             }
             
-            // Add link
+            // Add link (convert relative blog links to absolute URLs)
+            let linkUrl = match[2];
+            
+            // Convert relative blog links to absolute URLs
+            if (linkUrl.startsWith('/blog/')) {
+                linkUrl = BLOG_BASE_URL + linkUrl;
+            } else if (linkUrl.startsWith('/')) {
+                // Other relative links (like /about, /contact, etc.)
+                linkUrl = BLOG_BASE_URL + linkUrl;
+            }
+            
             segments.push({
                 type: 'link',
                 text: match[1],
-                url: match[2]
+                url: linkUrl
             });
             
             lastIndex = match.index + match[0].length;
