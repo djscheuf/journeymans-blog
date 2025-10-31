@@ -6,7 +6,7 @@ tags:
   - ai
   - teams
   - communication
-date: 2025-11-25 09:30:00
+date: 2025-11-18 09:30:00
 photos: 
   - img/post_img/man_think_ai.jpg
 description: AI won't transform your business, or your meetings. Effective meetings, and effective organizations depend on the same things - The Right People, using the Right Process, supported by the Right Tech IN THAT ORDER! AI only hits that last part. We humans still need to handle those first two well.
