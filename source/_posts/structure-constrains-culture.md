@@ -6,7 +6,7 @@ tags:
   - leadership
   - teams
   - effectiveness
-date: 2025-12-02 09:30:00
+date: 2026-01-06 09:30:00
 photos: 
   - img/post_img/architecture.jpg
 description: Human systems and culture have long fascinated me, esp. Why they are the way they are? I've previously explore team cultures thru an individualistic lens. Today, I explore the impact of existing structures on a culture. 
