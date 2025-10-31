@@ -6,7 +6,7 @@ tags:
   - agile
   - leadership
   - effectiveness
-date: 2025-11-18 09:30:00
+date: 2025-12-16 09:30:00
 photos: 
   - img/post_img/ship_in_bottle.jpg
 description: If the impact of failures scales up the higher you go, how can an Executive test new solutions? By 'Limiting Blast Radius'. Agile has tools for this, but some translation work is needed for organizations.
