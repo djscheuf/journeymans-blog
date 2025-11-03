@@ -4,9 +4,8 @@ categories:
   - Software Development
   - Lessons Learned
 tags:
-  - readability
-  - craftsmanship
-  - information
+  - quality
+  - effectiveness
 date: 2021-03-24 09:00:00
 photos:
   - img/post_img/book.jpg

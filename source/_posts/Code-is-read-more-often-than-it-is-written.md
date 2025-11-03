@@ -1,11 +1,8 @@
 ---
 title: Code is read more often than it is written
 tags:
-  - python
-  - principles
-  - software
-  - user-experience
-  - featured
+  - quality
+  - effectiveness
 photos:
   - img/post_img/code_wall.jpg
 categories:

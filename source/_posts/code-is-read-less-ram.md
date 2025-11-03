@@ -4,9 +4,8 @@ categories:
   - Software Development
   - Lessons Learned
 tags:
-  - readability
-  - craftsmanship
-  - information
+  - quality
+  - effectiveness
 date: 2021-03-31 09:00:00
 photos:
   - img/post_img/pcb_ram.jpg
