@@ -6,7 +6,7 @@ tags:
   - process
   - team
   - maintenance
-date: 2026-01-22 09:30:00
+date: 2026-01-20 09:30:00
 photos: 
   - img/post_img/tool_kit.jpg
 description: If you don't schedule your maintenance, your machine will schedule it for you. And that applies regardless of the type of machine, including you! We ought to put First Things First. But what does that look like?
