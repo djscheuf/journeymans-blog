@@ -7,7 +7,7 @@ tags:
   - organizations
 date: 2026-02-03 09:30:00
 photos: 
-  - img/post_img/man_think_ai.jpg
+  - img/post_img/leader.jpg
 description: Speed is a Leadership Issue, because your work system controls your speed. Leaders control the work system. So how do you go faster?
 ---
 
@@ -15,7 +15,7 @@ description: Speed is a Leadership Issue, because your work system controls your
 
 Are you going fast enough? Most of the time, the answer is no. We always want to deliver faster than we did last time. Or to deliver more than we did last year. But speed is not a work-product issue. [Speed is a Leadership Issue](https://hbr.org/2025/07/speed-is-a-leadership-decision).
 
-[The system you are working is in perfectly tailored to get the results you currently do](https://www.goodreads.com/quotes/7224415-every-system-is-perfectly-designed-to-get-the-result-that). And doing the same thing again, hoping for a different result is the [definition of insanity](https://quoteinvestigator.com/2017/03/23/same/)! Speed is a leadership issue, because it is a work-system issue. If you want better speed, you have to change the work-system. And Leader own the work-system!
+[The system you are working is in perfectly tailored to get the results you currently do](https://www.goodreads.com/quotes/7224415-every-system-is-perfectly-designed-to-get-the-result-that). And doing the same thing again, hoping for a different result is the [definition of insanity](https://quoteinvestigator.com/2017/03/23/same/)! Speed is a leadership issue, because it is a work-system issue. If you want better speed, you have to change the work-system. And [leaders own the work-system](https://itrevolution.com/articles/the-three-layers-of-work/)!
 
 So if you want your system, your team, your org to go faster, you have to change the system. How do you do that? Start by asking what the future needs to look like. Consider development flow. You could describe the new future state with a target Cycle-time. For example you might target a cycle time of 10 days or less. This is basic vision casting and communication. Not just "We need to be better...", but "We need to be better. And here's what that looks like!"
 
