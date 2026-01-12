@@ -1,0 +1,108 @@
+Tag Analysis Results
+Generated: 2026-01-12 11:39:43
+============================================================
+
+Total posts since 2023: 85
+Posts with tags: 85
+Total tag instances: 258
+Unique tags: 59
+
+Average tags per post: 3.0
+Max tags on a post: 7
+Min tags on a post: 1
+
+TOP 30 TAGS BY FREQUENCY
+------------------------------------------------------------
+leadership                      41 posts
+effectiveness                   37 posts
+organizations                   22 posts
+agile                           15 posts
+teams                           12 posts
+communication                   10 posts
+ai                               8 posts
+podcast                          7 posts
+transformation                   6 posts
+learning                         6 posts
+testing                          5 posts
+scrum                            5 posts
+books                            4 posts
+trust                            4 posts
+culture                          4 posts
+architecture                     4 posts
+retrospectives                   4 posts
+facilitation                     3 posts
+metrics                          3 posts
+delegation                       3 posts
+executive                        3 posts
+product-owner                    3 posts
+jobs-to-be-done                  3 posts
+humility                         2 posts
+mentorship                       2 posts
+process                          2 posts
+coaching                         2 posts
+security                         2 posts
+design                           2 posts
+documentation                    2 posts
+
+
+ALL UNIQUE TAGS (ALPHABETICAL)
+------------------------------------------------------------
+agile                           15 posts
+ai                               8 posts
+architecture                     4 posts
+authentication                   1 posts
+authorization                    1 posts
+books                            4 posts
+career                           1 posts
+checklists                       1 posts
+coaching                         2 posts
+communication                   10 posts
+courage                          1 posts
+culture                          4 posts
+decision                         2 posts
+delegation                       3 posts
+design                           2 posts
+disc                             1 posts
+documentation                    2 posts
+effectiveness                   37 posts
+endurance                        1 posts
+estimation                       1 posts
+executive                        3 posts
+facilitation                     3 posts
+flow                             1 posts
+goals                            1 posts
+growth                           1 posts
+habits                           1 posts
+humility                         2 posts
+identity                         1 posts
+jobs-to-be-done                  3 posts
+leadership                      41 posts
+lean                             1 posts
+learning                         6 posts
+mentorship                       2 posts
+metrics                          3 posts
+mindset                          1 posts
+models                           1 posts
+okr                              1 posts
+organizations                   22 posts
+organizationsal-change-management   1 posts
+performance                      1 posts
+planning                         1 posts
+podcast                          7 posts
+process                          2 posts
+product-owner                    3 posts
+quality                          1 posts
+retrospective                    1 posts
+retrospectives                   4 posts
+scrum                            5 posts
+security                         2 posts
+self-leadership                  1 posts
+software                         2 posts
+software design                  1 posts
+teams                           12 posts
+testing                          5 posts
+theory-of-constraints            2 posts
+tools                            1 posts
+transformation                   6 posts
+trust                            4 posts
+ux                               1 posts
