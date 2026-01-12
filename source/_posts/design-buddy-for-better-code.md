@@ -1,5 +1,5 @@
 ---
-title: Design Buddy for Better Code
+title: Create a 'Design Buddy' for Better Code
 categories:
   - Engineering
 tags:
@@ -7,14 +7,14 @@ tags:
   - ai
   - effectiveness
 date: 2026-01-20 09:30:00
-description: Create an AI Design Buddy persona to critically evaluate your designs before implementation, helping you consider alternatives and maintain architectural consistency.
----
 
+description: AI lets a solo developer do the work of a team. It doesn't let you overcome the human limit of perspective. But what if it could raise the level of your think?
+---
 ~430 Words | ~1.5min Read
 
 AI lets a solo developer do the work of a team. But it doesn't let you overcome the human limit of perspective. You still have one mind, and when you're designing a solution, you're often not looking at options. You're thinking about how you would solve the problem. At least, that's true for me. 
 
-Here's what typically happens: You refine requirements, maybe capture some test cases. Many developers jump straight into implementation from there. But there's a step between  requirements and implementation that is usually implicit. You're making design decisions about scalability, security, and adaptability. These sit at the interface between business requirements and technical limitations. 
+Here's what typically happens: You refine requirements, maybe capture some test cases. Many developers jump straight into implementation from there. But there's a step between  requirements and implementation that is usually implicit. You make design decisions about scalability, security, and adaptability. These sit at the interface between business requirements and technical limitations. 
 
 The problem? When you're focused on your implementation approach, you stop considering alternative options. You may not remember all your ADRs, while designing a new section. This gap is where architectural drift enters, even with the best intentions. 
 
