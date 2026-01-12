@@ -80,7 +80,28 @@ Once received, format the date as: `YYYY-MM-DD 09:30:00`
 
 All posts are published at 9:30 AM Central Time.
 
-### 8. Create the Blog Post with Front Matter
+### 8. Calculate Word Count and Reading Time
+
+// turbo
+Run the word count script to calculate statistics for the Hemingway content:
+
+```bash
+node scripts/calculate-reading-stats.js "[Hemingway content as string]"
+```
+
+The script will output:
+- Estimated word count (rounded to nearest 10)
+- Estimated reading time (rounded to nearest 0.5 minutes)
+
+Format for prepending to content:
+```
+~[word count] Words | ~[reading time]min Read
+
+```
+
+Example output: `~820 Words | ~3.5min Read`
+
+### 9. Create the Blog Post with Front Matter
 
 Create the file with this structure:
 
@@ -97,6 +118,8 @@ date: YYYY-MM-DD 09:30:00
 description: [1-2 sentence teaser]
 ---
 
+~[word count] Words | ~[reading time]min Read
+
 [Exact content from Hemingway section, word for word]
 ```
 
@@ -105,28 +128,26 @@ description: [1-2 sentence teaser]
 - Do not modify, edit, or "improve" the content
 - Preserve all formatting, line breaks, and markdown
 
-### 9. Create Git Branch
+### 10. Create Git Branch
 
 // turbo
-Create a new git branch in the journeymans-blog repository:
+Create a new git branch:
 
 ```bash
-cd /home/djs/0_repo/journeymans-blog
 git checkout -b post/[kebab-case-title]
 ```
 
-### 10. Stage and Commit the New Post
+### 11. Stage and Commit the New Post
 
 // turbo
 Stage and commit the new blog post file:
 
 ```bash
-cd /home/djs/0_repo/journeymans-blog
 git add source/_posts/[kebab-case-title].md
 git commit -m "Add blog post: [Title]"
 ```
 
-### 11. Confirm Completion
+### 12. Confirm Completion
 
 Inform the user:
 - ✅ Blog post created: `source/_posts/[filename].md`
