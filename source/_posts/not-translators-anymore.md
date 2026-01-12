@@ -7,6 +7,8 @@ tags:
   - transformation
   - career
 date: 2026-01-13 09:30:00
+photos: 
+  - img/post_img/conversation.jpg
 description: AI has compressed the translation work of software development, shifting the role from writing code to managing the context that informs it.
 ---
 

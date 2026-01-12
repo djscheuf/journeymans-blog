@@ -7,12 +7,14 @@ tags:
   - process
   - learning
 date: 2026-01-13 09:30:00
+photos: 
+  - img/post_img/office_politics.jpg
 description: A practical guide to mapping your development process, identifying implicit knowledge, and creating machine-readable context documents that help AI agents produce better code.
 ---
 
 ~760 Words | ~3min Read
 
-I recently wrote about how [software engineers aren't translators anymore](link-to-first-post). AI has compressed the translation work. But the context we accumulate in our heads hasn't gone anywhere. The agent wasn't in the meeting with the product owner. It doesn't know what "it" refers to when you say "update it like we discussed."
+I recently wrote about how [software engineers aren't translators anymore](/blog/not-translators-anymore/). AI has compressed the translation work. But the context we accumulate in our heads hasn't gone anywhere. The agent wasn't in the meeting with the product owner. It doesn't know what "it" refers to when you say "update it like we discussed."
 
 So how do you actually start capturing that context? Here's what's worked for me.
 
