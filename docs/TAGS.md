@@ -1,6 +1,7 @@
 # Approved Blog Tags
 
-**Generated on:** 2026-01-12
+**Generated on:** 2026-01-12  
+**Updated on:** 2026-01-12
 
 ## Purpose
 
@@ -15,67 +16,76 @@ This document defines the approved set of tags for blog posts. Each post should 
 
 ---
 
-## The 20 Approved Tags
+## The 23 Approved Tags
 
-### 1. **leadership**
-Leadership principles, practices, and development for individuals and teams at all levels.
-
-### 2. **effectiveness**
+### 1. **effectiveness**
 Improving personal, team, and organizational effectiveness through better practices, processes, and mindsets.
 
-### 3. **organizations**
+### 2. **organizations**
 Organizational structure, dynamics, culture, and how organizations function and evolve.
 
-### 4. **teams**
+### 3. **teams**
 Team dynamics, collaboration, building high-performing teams, and team-level practices.
 
-### 5. **agile**
+### 4. **agile**
 Agile methodologies, principles, practices, and transformation efforts.
 
-### 6. **communication**
+### 5. **communication**
 Communication skills, strategies, and practices for individuals, teams, and organizations.
 
-### 7. **transformation**
+### 6. **transformation**
 Organizational change, transformation initiatives, and managing significant shifts in how work is done.
 
-### 8. **learning**
+### 7. **learning**
 Continuous learning, professional development, skill acquisition, and learning organizations.
 
-### 9. **culture**
+### 8. **culture**
 Organizational culture, cultural change, values, and behavioral norms.
 
-### 10. **trust**
+### 9. **trust**
 Building and maintaining trust in teams and organizations.
 
-### 11. **testing**
+### 10. **testing**
 Software testing practices, test-driven development, quality assurance.
 
-### 12. **architecture**
+### 11. **architecture**
 Software architecture, system design, technical decision-making.
 
-### 13. **facilitation**
+### 12. **facilitation**
 Facilitation skills, running effective meetings, workshops, and collaborative sessions.
 
-### 14. **coaching**
+### 13. **coaching**
 Coaching skills, mentoring, developing others, and coaching mindsets.
 
-### 15. **process**
+### 14. **process**
 Process improvement, workflow optimization, and systematic approaches to work.
 
-### 16. **decision-making**
+### 15. **decision-making**
 Decision-making frameworks, judgment, and making effective choices.
 
-### 17. **product-management**
+### 16. **product-management**
 Product ownership, product strategy, and product development practices.
 
-### 18. **career**
+### 17. **career**
 Career development, professional growth, and navigating career paths.
 
-### 19. **ai**
+### 18. **ai**
 Artificial intelligence, AI tools, and AI's impact on work and organizations.
 
-### 20. **retrospectives**
+### 19. **retrospectives**
 Retrospective practices, reflection, and continuous improvement through inspection and adaptation.
+
+### 20. **delegation**
+Delegation practices, working through others, and distributing responsibilities effectively.
+
+### 21. **security**
+Security practices, authentication, authorization, and secure software development.
+
+### 22. **design**
+Design thinking, UX design, software design principles, and design practices.
+
+### 23. **jobs-to-be-done**
+Jobs-to-be-done framework for understanding customer needs and product development.
 
 ---
 
@@ -88,7 +98,10 @@ Retrospective practices, reflection, and continuous improvement through inspecti
 - Tags: `ai`, `organizations`, `effectiveness`
 
 **Example 3:** A post about coaching developers
-- Tags: `coaching`, `leadership`, `learning`
+- Tags: `coaching`, `learning`, `effectiveness`
+
+**Example 4:** A post about delegation in leadership
+- Tags: `delegation`, `effectiveness`, `teams`
 
 ---
 
