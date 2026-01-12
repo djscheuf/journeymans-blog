@@ -7,7 +7,8 @@ tags:
   - ai
   - effectiveness
 date: 2026-01-20 09:30:00
-
+photos: 
+  - img/post_img/agile_team.png
 description: AI lets a solo developer do the work of a team. It doesn't let you overcome the human limit of perspective. But what if it could raise the level of your think?
 ---
 ~430 Words | ~1.5min Read
