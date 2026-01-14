@@ -7,7 +7,9 @@ tags:
   - organizations
   - transformation
 date: 2026-01-15 09:30:00
-description: AI isn't smarter than you—it's an adapter that transforms your specialty time into average-level output in any other domain. The question is: what would you do with access to an infinite team of average specialists?
+photos:
+  - /img/post_img/man_think_ai.jpg
+description: AI isn't smarter than you—it's an adapter that transforms your specialty time into average-level output in any other domain. The question is - what would you do with access to an infinite team of average specialists?
 ---
 
 ~420 Words | ~1.5min Read
