@@ -7,12 +7,14 @@ tags:
   - ai
   - learning
 date: 2026-01-23 09:30:00
+photos:
+  - /img/post_img/office_politics.jpg
 description: Discover how AI-powered journaling can transform your development workflow with just three simple questions every two hours.
 ---
 
 ~500 Words | ~2min Read
 
-I recently wrote about how "Rubber-Duck" Journaling is like self-improvement superpowers. Here, I want to share the approach I've been using to make that easy and repeatable.
+I recently wrote about how ["Rubber-Duck" Journaling](/blog/rubber-duck-self-improvement/) is like self-improvement superpowers. Here, I want to share the approach I've been using to make that easy and repeatable.
 
 I started a daily journaling practice with 6 questions. They were thought-provoking, and focused on connecting my knowledge. It worked well, but answering six questions every day was exhausting. So I pivoted to something sustainable. I would transcribing some thoughts every couple of hours  instead.
 

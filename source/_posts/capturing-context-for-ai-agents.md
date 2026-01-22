@@ -8,7 +8,7 @@ tags:
   - learning
 date: 2026-01-13 09:30:00
 photos: 
-  - img/post_img/office_politics.jpg
+  - img/post_img/knowledge_base.jpg
 description: A practical guide to mapping your development process, identifying implicit knowledge, and creating machine-readable context documents that help AI agents produce better code.
 ---
 

@@ -7,6 +7,9 @@ tags:
   - effectiveness
   - teams
 date: 2026-01-23 09:30:00
+photos:
+  - /img/post_img/rubber_duck.png
+used-hotpot: true
 description: Discover how the simple act of narrating your work can accelerate your learning and problem-solving as a developer.
 ---
 
