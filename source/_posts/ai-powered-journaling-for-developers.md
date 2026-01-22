@@ -39,7 +39,7 @@ As for timing, just set a timer on your phone for every two hours. When it goes 
 
 ## Making It Stick
 
-Just remember: "You don't rise to the level of your goals. You fall to the level of your systems." The key is "little and often make much." This practice is quick enough to preserve flow. It is natural enough to fit into transitions you already take. And it will be valuable enough that you'll want to keep doing it, if you take the right steps. 
+Just remember: ["You don't rise to the level of your goals. You fall to the level of your systems."](https://jamesclear.com/) The key is "little and often, make much." This practice is quick enough to preserve flow. It is natural enough to fit into transitions you already take. And it will be valuable enough that you'll want to keep doing it, if you take the right steps. 
 
 - Be consistent
 - Eliminate friction
