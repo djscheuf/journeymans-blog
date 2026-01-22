@@ -16,7 +16,7 @@ I recently wrote about how "Rubber-Duck" Journaling is like self-improvement sup
 
 I started a daily journaling practice with 6 questions. They were thought-provoking, and focused on connecting my knowledge. It worked well, but answering six questions every day was exhausting. So I pivoted to something sustainable. I would transcribing some thoughts every couple of hours  instead.
 
-Here's how the system works:
+Here's how the system works.
 
 I ask myself these 3 questions, every 2 hours:
 - What am I working on?
@@ -31,9 +31,9 @@ That's about as far back as I can remember with good detail. Wait longer and you
 
 ## Use the Tools You Already Have!
 
-By Now, AI-powered IDEs like [[Windsurf]] support speech-to-text. Or you can grab a voice recorder, and transcribe through a service. This handles making your journal accessible for later. 
+By Now, AI-powered IDEs like [Windsurf](https://windsurf.com/) support speech-to-text. Or you can grab a voice recorder, and transcribe through a service. This handles making your journal accessible for later. 
 
-As for timing, just set a timer on your phone for every two hours. When it goes off, take three minutes during a natural break—getting coffee, heading to a meeting, switching tasks. If you use the [[Pomodoro]] technique, you already have built-in reflection points.
+As for timing, just set a timer on your phone for every two hours. When it goes off, take three minutes during a natural break—getting coffee, heading to a meeting, switching tasks. If you use the [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) technique, you already have built-in reflection points.
 
 ## Making It Stick
 
@@ -58,3 +58,5 @@ These questions shift from 'what task am I doing' towards reflecting on how you 
 ## Start Small, Start Now
 
 Whatever you do, you can bake regular reflection into your normal workflow. And you will reap the benefits of reflection and shareable knowledge far into the future. Start with one session today. Answer the three questions. See what happens.
+
+P.S. One note that didn't make it in the initial post: Security. Keep in mind that the text transcribed from your voice may contain sensitive information. Consider using a local AI model or a service that you trust with your data. Be safe out there!
