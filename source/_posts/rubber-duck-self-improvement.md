@@ -13,7 +13,7 @@ used-hotpot: true
 description: Discover how the simple act of narrating your work can accelerate your learning and problem-solving as a developer.
 ---
 
-~820 Words | ~3.5min Read
+~410 Words | ~2min Read
 
 Have you ever solved a bug by talking to your rubber duck? You know the drill, right? Explain your problem to an inanimate object, and suddenly the solution appears! But a colleague recently connected a dot for me. I was talking about the current shape of my journalling practice. I had started iterating through work challenges in days rather than weeks!  And I had connected this to an educational technique: [Narration](https://pmc.ncbi.nlm.nih.gov/articles/PMC7970782/). 
 
