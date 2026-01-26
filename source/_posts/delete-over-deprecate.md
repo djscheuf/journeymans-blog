@@ -10,7 +10,7 @@ date: 2026-01-27 09:30:00
 description: Deprecated code becomes a liability with AI coding assistants because AI treats all discoverable code as valid examples to follow, making aggressive deletion more important than traditional deprecation strategies.
 ---
 
-~500 Words | ~2min Read
+~520 Words | ~2min Read
 
 Brownfield codebases can feel like an archeological dig site. You'll turn up some record from the past which declares itself the 'current state' of the kingdom. A README explaining an architecture that no longer exists. An ADR documenting the 'latest' decision, reversed three sprints ago and never updated. A diagram showing services that you deprecated last year.
 

@@ -10,7 +10,7 @@ date: 2026-01-27 09:30:00
 description: The nouns we use to label ourselves in technology profoundly constrain what we think we're there to do, especially as AI automates mechanical work.
 ---
 
-~420 Words | ~1.5min Read
+~440 Words | ~1.5min Read
 
 Have you ever really considered your job title? Not just accepted it, but thought about what it means and implies? The nouns we use to label ourselves tend to constrain what we think we're there to do. And right now, with AI automating more mechanical work, those mental constraints matter more than ever.
 

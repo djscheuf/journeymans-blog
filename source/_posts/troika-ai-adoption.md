@@ -10,7 +10,7 @@ date: 2026-01-27 09:30:00
 description: Leverage your AI proponents through Troika Consulting to create psychologically safe spaces where fence-sitters get personalized help adopting AI, turning early adopters into force multipliers across your organization.
 ---
 
-~170 Words | ~0.5min Read
+~520 Words | ~2min Read
 
 In any transformation, the hardest part is never technical. It's helping people adopt a new mode of work. Right now, with AI looming so large, confusion abounds. Your team might have a handful of AI proponents who jumped in early and know how to use it effectively. But how do you leverage these few experts to maximize impact across your organization?
 
