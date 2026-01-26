@@ -7,6 +7,8 @@ tags:
   - process
   - effectiveness
 date: 2026-01-27 09:30:00
+photos:
+  - img/post_img/library.jpg
 description: Deprecated code becomes a liability with AI coding assistants because AI treats all discoverable code as valid examples to follow, making aggressive deletion more important than traditional deprecation strategies.
 ---
 

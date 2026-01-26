@@ -7,6 +7,8 @@ tags:
   - ai
   - effectiveness
 date: 2026-01-27 09:30:00
+photos:
+    - img/post_img/agile_team.png
 description: The nouns we use to label ourselves in technology profoundly constrain what we think we're there to do, especially as AI automates mechanical work.
 ---
 

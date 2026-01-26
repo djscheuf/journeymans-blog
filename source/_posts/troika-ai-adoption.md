@@ -7,6 +7,8 @@ tags:
   - facilitation
   - effectiveness
 date: 2026-01-27 09:30:00
+photos:
+  - img/post_img/child_programmers.jpg
 description: Leverage your AI proponents through Troika Consulting to create psychologically safe spaces where fence-sitters get personalized help adopting AI, turning early adopters into force multipliers across your organization.
 ---
 
