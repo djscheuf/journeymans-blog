@@ -1,7 +1,7 @@
 ---
 title: Define Your Metric Responses
 categories:
-  - Leadership
+  - Engineering
 tags:
   - effectiveness
   - organizations
