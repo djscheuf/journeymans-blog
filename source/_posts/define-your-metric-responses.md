@@ -7,6 +7,8 @@ tags:
   - organizations
   - process
 date: 2026-02-03 09:40:00
+photos:
+  - img/post_img/conversation.jpg
 description: Metrics are useless if teams don't know how to respond to them. Learn how to define clear responses for each quadrant of your success and balance metrics to turn dashboards into actionable tools.
 ---
 
@@ -32,7 +34,7 @@ When you have a success metric paired with a balance metric, there are four poss
 
 But here's where it gets nuanced. Context matters. What was happening before?  Consider this scenario: Success was previously going up while balance was going down, and now it's flipped. That scenario needs a different response than if both were up and balance just started dropping. You need to define not just the response to the current state, but account for the trends .
 
-This is where [zone-based metrics](/blog/red-yellow-green-zones-enable-experimentation) layer in beautifully. You could define your quadrant-response like this: "So long as success is in the green or yellow with trending up, you don't need to change. But the moment balance slips from green to yellow with trend down, react in this specific way." The zones capture that context and trend without having to invent new language for it.
+This is where [zone-based metrics](/blog/green-zones-enable-experimentation) layer in beautifully. You could define your quadrant-response like this: "So long as success is in the green or yellow with trending up, you don't need to change. But the moment balance slips from green to yellow with trend down, react in this specific way." The zones capture that context and trend without having to invent new language for it.
 
 ### How to Define Your Responses
 

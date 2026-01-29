@@ -7,6 +7,8 @@ tags:
   - process
   - effectiveness
 date: 2026-02-03 09:30:00
+photos:
+  - img/post_img/map_and_compass.jpg
 description: Teams evolve through predictable stages of measurement maturity—from tracking work to measuring business outcomes—and you can't skip stages.
 ---
 

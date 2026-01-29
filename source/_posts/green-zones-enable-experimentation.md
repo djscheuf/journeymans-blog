@@ -7,6 +7,8 @@ tags:
   - effectiveness
   - process
 date: 2026-02-03 09:35:00
+photos:
+  - img/post_img/self_employed.jpg
 description: Red-yellow-green zones give teams permission to experiment without panic, making metrics a tool for learning rather than a weapon for judgment.
 ---
 

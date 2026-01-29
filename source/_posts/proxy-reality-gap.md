@@ -7,6 +7,8 @@ tags:
   - organizations
   - process
 date: 2026-02-03 09:30:00
+photos:
+  - img/post_img/metric-tension.png
 description: All metrics are proxies—never the actual thing you care about. Understanding this gap between what you measure and what you want helps teams stay focused on outcomes rather than optimizing the proxy itself.
 ---
 

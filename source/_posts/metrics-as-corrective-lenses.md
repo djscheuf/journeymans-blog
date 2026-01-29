@@ -7,6 +7,8 @@ tags:
   - teams
   - decision-making
 date: 2026-02-03 09:30:00
+photos:
+  - img/post_img/knowledge_base.jpg
 description: Metrics aren't objective speedometers—they're corrective lenses that reshape what you see and where you focus. Learn why copying metrics from other teams is like wearing someone else's prescription glasses.
 ---
 
