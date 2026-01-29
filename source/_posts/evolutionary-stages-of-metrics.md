@@ -1,7 +1,7 @@
 ---
 title: Evolutionary Stages of Metrics
 categories:
-  - Leadership
+  - Engineering
 tags:
   - organizations
   - process
