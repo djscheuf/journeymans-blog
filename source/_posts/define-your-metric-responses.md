@@ -6,7 +6,7 @@ tags:
   - effectiveness
   - organizations
   - process
-date: 2026-02-03 09:30:00
+date: 2026-02-03 09:40:00
 description: Metrics are useless if teams don't know how to respond to them. Learn how to define clear responses for each quadrant of your success and balance metrics to turn dashboards into actionable tools.
 ---
 
@@ -14,7 +14,7 @@ description: Metrics are useless if teams don't know how to respond to them. Lea
 
 Metrics are like a speedometer in your car. They're feedback mechanisms that help you adjust your actions. But here's the problem: metrics are useless if the team doesn't know what to do with that feedback. Handing someone a dashboard full of metrics without guidance is like showing the speedometer to a four-year-old. They can read the numbers, maybe, but they don't know what to do about it.
 
-So what now? You've defined your [[202401251555 - BPI - Metrics in Tension|success and balance metrics]]. Maybe you've even set up [[202601211429 - BPI - Red Yellow Green Zones Enable Experimentation|red-yellow-green zones]]. But if your team doesn't know how to respond when those metrics shift, you're still stuck with numbers on a dashboard instead of a tool for action.
+So what now? You've defined your [success and balance metrics](/blog/metrics-in-tension). Maybe you've even set up [red-yellow-green zones](/blog/green-zones-enable-experimentation). But if your team doesn't know how to respond when those metrics shift, you're still stuck with numbers on a dashboard instead of a tool for action.
 
 The solution is surprisingly straightforward. Identify the quadrants. Then define the correct response for each of the four quadrant states.
 
@@ -32,7 +32,7 @@ When you have a success metric paired with a balance metric, there are four poss
 
 But here's where it gets nuanced. Context matters. What was happening before?  Consider this scenario: Success was previously going up while balance was going down, and now it's flipped. That scenario needs a different response than if both were up and balance just started dropping. You need to define not just the response to the current state, but account for the trends .
 
-This is where [[202601211429 - BPI - Red Yellow Green Zones Enable Experimentation|zone-based metrics]] layer in beautifully. You could define your quadrant-response like this: "So long as success is in the green or yellow with trending up, you don't need to change. But the moment balance slips from green to yellow with trend down, react in this specific way." The zones capture that context and trend without having to invent new language for it.
+This is where [zone-based metrics](/blog/red-yellow-green-zones-enable-experimentation) layer in beautifully. You could define your quadrant-response like this: "So long as success is in the green or yellow with trending up, you don't need to change. But the moment balance slips from green to yellow with trend down, react in this specific way." The zones capture that context and trend without having to invent new language for it.
 
 ### How to Define Your Responses
 
@@ -42,7 +42,7 @@ Be concrete. Not "we should look into it" but "when success is up and balance is
 
 Then share those defined responses with your team. Better yet, work with your team to discuss what those actions need to be! Keep in mind, these actions may take training too! Work with your team to find out what training  they need to enable them to take those actions.
 
-Defining these responses, and providing the training is [[202302061201 - BPI - On Effective Delegation|effective delegation]]. You're enabling decisions, and action when you're not in the room.  Those definitions, and the training create the shared understanding to make it happen. 
+Defining these responses, and providing the training is [effective delegation](/blog/on-effective-delegation). You're enabling decisions, and action when you're not in the room.  Those definitions, and the training create the shared understanding to make it happen. 
 
 ### Chain It Up and Down
 
