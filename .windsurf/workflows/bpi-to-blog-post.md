@@ -146,14 +146,21 @@ Example output: `~820 Words | ~3.5min Read`
 - Preserve all formatting, line breaks, and markdown
 - At this point, all front matter fields should be populated and the content should be complete
 
-### 10. Create Git Branch
+### 10. Check Current Branch and Create Branch if Needed
 
 // turbo
-Create a new git branch:
+First, check what branch you're currently on:
 
 ```bash
-git checkout -b post/[kebab-case-title]
+git branch --show-current
 ```
+
+**Branch Decision Logic:**
+- **If on `main` or `master`:** Create a new branch for this post:
+  ```bash
+  git checkout -b post/[kebab-case-title]
+  ```
+- **If on any other branch:** Continue working on the current branch. Do NOT create a new branch. Multiple agents may be working in this repository simultaneously, and each should work on their own file within the shared branch.
 
 ### 11. Stage and Commit the New Post
 
@@ -171,7 +178,7 @@ git commit -m "post([kebab-case-title])"
 
 Inform the user:
 - ✅ Blog post created: `source/_posts/[filename].md`
-- ✅ Branch created: `post/[title]`
+- ✅ Branch: `[current-branch-name]` (created new branch if on main/master, or continued on existing branch)
 - ✅ File committed
 - Next steps: Review the post, make any edits, and push the branch when ready
 
@@ -188,7 +195,7 @@ Inform the user:
 6. Create description: "Understanding the four types of work..." → Edit file to update description
 7. Ask for date: User provides "2025-04-15" → Edit file to update date to "2025-04-15 09:30:00"
 8. Calculate word count and add content → Edit file to add reading stats and Hemingway content
-9. Create branch: `post/ratios-of-work`
+9. Check branch: If on `main`, create `post/ratios-of-work`; if on another branch, continue on that branch
 10. Commit: `post(ratios-of-work)`
 
 ## Notes
