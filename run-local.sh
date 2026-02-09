@@ -1,0 +1,1 @@
+docker run --name blog-local -p 8080:4000 journeymans-blog:latest 
