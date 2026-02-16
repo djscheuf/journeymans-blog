@@ -6,7 +6,7 @@ tags:
   - architecture
   - learning
   - tools
-date: 2026-02-21 09:30:00
+date: 2026-02-17 09:30:00
 photos: 
   - img/post_img/office_politics.jpg
 description: Build better software judgment by applying Peter Drucker's memo technique to your architectural decisions. Capture your reasoning when making pragmatic trade-offs, then review them months later to learn what worked and what didn't.
