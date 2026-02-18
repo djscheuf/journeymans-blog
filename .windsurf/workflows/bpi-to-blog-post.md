@@ -146,7 +146,31 @@ Example output: `~820 Words | ~3.5min Read`
 - Preserve all formatting, line breaks, and markdown
 - At this point, all front matter fields should be populated and the content should be complete
 
-### 10. Check Current Branch and Create Branch if Needed
+### 10. Select Header Image
+
+Invoke /select-blog-image.md 
+with the hemingway section content as input
+
+**Input to sub-workflow:**
+- Pass the Hemingway section content
+- Path to image index: `/mnt/data/0_repo/journeymans-blog/source/img/post_img/image-index.json`
+
+**Expected output:**
+- Selected image path (e.g., `/img/post_img/agile_team.png`)
+- Confidence score
+- Reasoning for selection
+
+**After receiving recommendation:**
+- If confidence >= 0.5: Add image to front matter automatically
+- If confidence < 0.5: Show user the recommendation and alternatives, ask for confirmation
+
+**Edit the file to add the `photos` field to front matter:**
+```yaml
+photos:
+  - [selected image path]
+```
+
+### 11. Create Git Branch
 
 // turbo
 First, check what branch you're currently on:
@@ -155,14 +179,7 @@ First, check what branch you're currently on:
 git branch --show-current
 ```
 
-**Branch Decision Logic:**
-- **If on `main` or `master`:** Create a new branch for this post:
-  ```bash
-  git checkout -b post/[kebab-case-title]
-  ```
-- **If on any other branch:** Continue working on the current branch. Do NOT create a new branch. Multiple agents may be working in this repository simultaneously, and each should work on their own file within the shared branch.
-
-### 11. Stage and Commit the New Post
+### 12. Stage and Commit the New Post
 
 // turbo
 Stage and commit the new blog post file:
@@ -174,7 +191,7 @@ git commit -m "post([kebab-case-title])"
 
 **Note:** Commit message format follows the repo convention: `post([kebab-case-title])`
 
-### 12. Confirm Completion
+### 13. Confirm Completion
 
 Inform the user:
 - ✅ Blog post created: `source/_posts/[filename].md`
@@ -195,8 +212,9 @@ Inform the user:
 6. Create description: "Understanding the four types of work..." → Edit file to update description
 7. Ask for date: User provides "2025-04-15" → Edit file to update date to "2025-04-15 09:30:00"
 8. Calculate word count and add content → Edit file to add reading stats and Hemingway content
-9. Check branch: If on `main`, create `post/ratios-of-work`; if on another branch, continue on that branch
-10. Commit: `post(ratios-of-work)`
+9. Select header image: Invoke sub-workflow → Edit file to add `photos: - /img/post_img/balancing_stones.jpg`
+10. Create branch: `post/ratios-of-work`
+11. Commit: `post(ratios-of-work)`
 
 ## Notes
 
