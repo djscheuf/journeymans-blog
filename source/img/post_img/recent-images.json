@@ -1,0 +1,766 @@
+[
+  {
+    "path": "img/post_img/agile_team.png",
+    "normalizedPath": "post_img/agile_team.png",
+    "posts": [
+      {
+        "file": "cultural-tune-ups.md",
+        "title": "Cultural Tune-ups",
+        "date": "2023-05-09T09:30:00.000Z"
+      },
+      {
+        "file": "design-buddy-for-better-code.md",
+        "title": "Create a 'Design Buddy' for Better Code",
+        "date": "2026-01-20T09:30:00.000Z"
+      },
+      {
+        "file": "disc-and-trust.md",
+        "title": "DISC Profiles and Trust Behaviors",
+        "date": "2023-03-21T09:30:00.000Z"
+      },
+      {
+        "file": "nature-of-scrum-masters.md",
+        "title": "On the Nature of Scrum Masters",
+        "date": "2023-07-11T09:30:00.000Z"
+      },
+      {
+        "file": "points-are-cost.md",
+        "title": "Story Points are Cost",
+        "date": "2024-05-07T09:30:00.000Z"
+      },
+      {
+        "file": "power-of-naming-in-tech.md",
+        "title": "Power of Naming in Tech",
+        "date": "2026-01-27T09:30:00.000Z"
+      },
+      {
+        "file": "true-nature-org.md",
+        "title": "The True Nature of Organizations",
+        "date": "2025-09-23T09:30:00.000Z"
+      },
+      {
+        "file": "unlock-effective-collab-problem-solving-retros.md",
+        "title": "Unlocking Effective Collaborative Problem Solving in your Retros",
+        "date": "2023-08-22T09:30:00.000Z"
+      },
+      {
+        "file": "who-should-operate.md",
+        "title": "Why those who build should also operate your products",
+        "date": "2025-07-08T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 9
+  },
+  {
+    "path": "img/post_img/trail-marker.jpg",
+    "normalizedPath": "post_img/trail-marker.jpg",
+    "posts": [
+      {
+        "file": "culture-reaction-to-behavior.md",
+        "title": "Culture as Reaction to Behaviors",
+        "date": "2023-03-07T09:00:00.000Z"
+      },
+      {
+        "file": "show-notes-leadership-about-endurance.md",
+        "title": "Show Notes - Leadership is about endurance",
+        "date": "2023-05-06T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-leadership-about-systems.md",
+        "title": "Show Notes - Leadership is about systems",
+        "date": "2023-04-29T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-leadership-about-time.md",
+        "title": "Show Notes - Leadership is about time",
+        "date": "2023-04-22T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-leadership-not-about-you.md",
+        "title": "Show Notes - Leadership is NOT about you",
+        "date": "2023-04-15T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-retros-are-for-people.md",
+        "title": "Show Notes - Retros are for people",
+        "date": "2023-04-07T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-retros-must-be-intentional.md",
+        "title": "Show Notes - Retros must be intentional",
+        "date": "2023-03-24T15:30:00.000Z"
+      },
+      {
+        "file": "show-notes-retros-must-produce-change.md",
+        "title": "Show Notes - Retros must produce change",
+        "date": "2023-03-31T15:30:00.000Z"
+      }
+    ],
+    "usageCount": 8
+  },
+  {
+    "path": "/img/post_img/man_think_ai.jpg",
+    "normalizedPath": "post_img/man_think_ai.jpg",
+    "posts": [
+      {
+        "file": "ai-as-adapter.md",
+        "title": "AI as Adapter",
+        "date": "2026-01-15T09:30:00.000Z"
+      },
+      {
+        "file": "ai-in-meetings.md",
+        "title": "AI in Meetings",
+        "date": "2025-11-18T09:30:00.000Z"
+      },
+      {
+        "file": "ai-software-future.md",
+        "title": "On AI and the Future of Software Development",
+        "date": "2023-02-21T09:30:00.000Z"
+      },
+      {
+        "file": "ai-wont-transform.md",
+        "title": "AI Won't Transform Your Business",
+        "date": "2025-05-13T09:30:00.000Z"
+      },
+      {
+        "file": "copilot-troubling-trend.md",
+        "title": "Recent Trends with Copilot",
+        "date": "2024-01-30T09:30:00.000Z"
+      },
+      {
+        "file": "rocc-it-leverage-ai.md",
+        "title": "ROCC It! Leverage  AI in your workflow",
+        "date": "2025-06-10T09:30:00.000Z"
+      },
+      {
+        "file": "ux-for-agents.md",
+        "title": "Your API is UX for AI-Agents",
+        "date": "2025-10-21T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 7
+  },
+  {
+    "path": "img/post_img/conversation.jpg",
+    "normalizedPath": "post_img/conversation.jpg",
+    "posts": [
+      {
+        "file": "coach-and-players.md",
+        "title": "The relationship between coach and players",
+        "date": "2023-04-04T09:30:00.000Z"
+      },
+      {
+        "file": "design-good-retro.md",
+        "title": "How do you design a good Retro?",
+        "date": "2024-03-05T09:30:00.000Z"
+      },
+      {
+        "file": "not-translators-anymore.md",
+        "title": "Software Engineers Aren't Translators Anymore",
+        "date": "2026-01-13T09:30:00.000Z"
+      },
+      {
+        "file": "on-effective-delegation.md",
+        "title": "On Effective Delegation",
+        "date": "2023-03-14T09:30:00.000Z"
+      },
+      {
+        "file": "prereq-delegation.md",
+        "title": "The Prerequisites of Delegation",
+        "date": "2023-05-02T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 5
+  },
+  {
+    "path": "img/post_img/checklist.png",
+    "normalizedPath": "post_img/checklist.png",
+    "posts": [
+      {
+        "file": "0-1-n-tests.md",
+        "title": "0,1,N Tests and Understanding Teams",
+        "date": "2024-12-09T09:30:00.000Z"
+      },
+      {
+        "file": "checklists.md",
+        "title": "The Power of Checklists",
+        "date": "2024-05-21T09:30:00.000Z"
+      },
+      {
+        "file": "demo-as-test.md",
+        "title": "Sprint Demo as a Software Test",
+        "date": "2023-07-06T09:30:00.000Z"
+      },
+      {
+        "file": "safely-proof-core-changes.md",
+        "title": "Safely Proof Core Changes",
+        "date": "2025-03-04T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 4
+  },
+  {
+    "path": "img/post_img/money_and_time.jpg",
+    "normalizedPath": "post_img/money_and_time.jpg",
+    "posts": [
+      {
+        "file": "developer-incentives.md",
+        "title": "Developer Incentives",
+        "date": "2023-04-18T09:30:00.000Z"
+      },
+      {
+        "file": "moving-goalpost-effective.md",
+        "title": "The moving goalpost of 'Effective'",
+        "date": "2024-02-13T09:30:00.000Z"
+      },
+      {
+        "file": "tax-partners.md",
+        "title": "New Opportunity in the 2025 Taxes",
+        "date": "2025-08-26T09:00:00.000Z"
+      },
+      {
+        "file": "taxes-docs-ohmy.md",
+        "title": "Taxes, and Docs, and Agility, Oh my!",
+        "date": "2025-08-05T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 4
+  },
+  {
+    "path": "img/post_img/blueprint.jpg",
+    "normalizedPath": "post_img/blueprint.jpg",
+    "posts": [
+      {
+        "file": "efvexec-po-evolve-process.md",
+        "title": "Drucker's Blueprint - The Effective Product Owner Evolves the Process",
+        "date": "2024-08-07T09:30:00.000Z"
+      },
+      {
+        "file": "efvexec-po-executive-skills.md",
+        "title": "Drucker's Blueprint - Product Owners Build Executive Skills",
+        "date": "2024-09-04T09:30:00.000Z"
+      },
+      {
+        "file": "efvexec-po-work-thru-others.md",
+        "title": "Drucker's Blueprint - The Effective Product Owner Works Through Others",
+        "date": "2024-08-21T09:30:00.000Z"
+      },
+      {
+        "file": "you-must-unlearn.md",
+        "title": "You must unlearn",
+        "date": "2025-10-07T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 4
+  },
+  {
+    "path": "img/post_img/frustration.jpg",
+    "normalizedPath": "post_img/frustration.jpg",
+    "posts": [
+      {
+        "file": "fit-of-maintenance.md",
+        "title": "In a Fit of Maintenance",
+        "date": "2025-04-01T09:30:00.000Z"
+      },
+      {
+        "file": "old-books-readable-code.md",
+        "title": "What Old Books taught me about readable code",
+        "date": "2025-11-04T09:30:00.000Z"
+      },
+      {
+        "file": "org-strain-injury.md",
+        "title": "Repetetive Organizational Strain Injury",
+        "date": "2024-09-10T09:30:00.000Z"
+      },
+      {
+        "file": "pursue-desirable-difficulty.md",
+        "title": "Pursue Desirable Difficulty",
+        "date": "2025-02-04T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 4
+  },
+  {
+    "path": "/img/post_img/office_politics.jpg",
+    "normalizedPath": "post_img/office_politics.jpg",
+    "posts": [
+      {
+        "file": "ai-powered-journaling-for-developers.md",
+        "title": "AI-Powered Journaling for Developers",
+        "date": "2026-01-23T09:30:00.000Z"
+      },
+      {
+        "file": "beat-resolution-odds.md",
+        "title": "Beat the New Year's Resolution Odds",
+        "date": "2025-01-07T09:30:00.000Z"
+      },
+      {
+        "file": "performance-function-individual-system.md",
+        "title": "Performance is a Function of the Individual and the System",
+        "date": "2024-10-28T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 3
+  },
+  {
+    "path": "img/post_img/tool_kit.jpg",
+    "normalizedPath": "post_img/tool_kit.jpg",
+    "posts": [
+      {
+        "file": "conways-law-software-architecture.md",
+        "title": "Account for Conway's Law in your Architecture",
+        "date": "2025-05-27T09:30:00.000Z"
+      },
+      {
+        "file": "fix-broken-work-system.md",
+        "title": "How to fix a Broken Work-System",
+        "date": "2024-11-19T09:30:00.000Z"
+      },
+      {
+        "file": "software-as-new-verbs.md",
+        "title": "Custom Software should give your Organization new Verbs!",
+        "date": "2024-06-04T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 3
+  },
+  {
+    "path": "img/post_img/hammer_and_egg.jpg",
+    "normalizedPath": "post_img/hammer_and_egg.jpg",
+    "posts": [
+      {
+        "file": "count-on-novel-failure.md",
+        "title": "Count On Novel Failure",
+        "date": "2025-07-22T09:30:00.000Z"
+      },
+      {
+        "file": "leftover-maintenance.md",
+        "title": "Leftover Maintenance Becomes Unplanned Work",
+        "date": "2025-03-19T09:30:00.000Z"
+      },
+      {
+        "file": "marks-for-work-interruptions.md",
+        "title": "Behavioral Markers for Work Interruptions",
+        "date": "2025-01-21T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 3
+  },
+  {
+    "path": "img/post_img/atom.png",
+    "normalizedPath": "post_img/atom.png",
+    "posts": [
+      {
+        "file": "scrum-is-atomic.md",
+        "title": "Scrum is Atomic",
+        "date": "2023-10-17T09:30:00.000Z"
+      },
+      {
+        "file": "scrum-molecules.md",
+        "title": "Molecules made with Scrum",
+        "date": "2023-10-24T09:30:00.000Z"
+      },
+      {
+        "file": "scrum-working-systems.md",
+        "title": "Working Systems and Scrum",
+        "date": "2023-10-31T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 3
+  },
+  {
+    "path": "img/post_img/agility.jpg",
+    "normalizedPath": "post_img/agility.jpg",
+    "posts": [
+      {
+        "file": "agile-organism.md",
+        "title": "Agility is an Organism's Characteristic",
+        "date": "2023-09-19T09:30:00.000Z"
+      },
+      {
+        "file": "organization-strength-to-agility.md",
+        "title": "How strength becomes agility",
+        "date": "2023-10-03T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/thinker.png",
+    "normalizedPath": "post_img/thinker.png",
+    "posts": [
+      {
+        "file": "cultivate-employee-judgment.md",
+        "title": "Cultivate Employee Judgment",
+        "date": "2024-08-06T09:30:00.000Z"
+      },
+      {
+        "file": "transformational-questions.md",
+        "title": "Transformational Questions",
+        "date": "2023-12-05T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/ship_in_bottle.jpg",
+    "normalizedPath": "post_img/ship_in_bottle.jpg",
+    "posts": [
+      {
+        "file": "executive-limit-blast-radius.md",
+        "title": "How an Executive can Limit Blast Radius",
+        "date": "2025-12-16T09:30:00.000Z"
+      },
+      {
+        "file": "too-much-ship.md",
+        "title": "Too much ship, Too little rudder",
+        "date": "2023-04-25T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/repeat_true_self.jpg",
+    "normalizedPath": "post_img/repeat_true_self.jpg",
+    "posts": [
+      {
+        "file": "first-things-first.md",
+        "title": "First Things First",
+        "date": "2025-09-09T09:30:00.000Z"
+      },
+      {
+        "file": "secret-tool-repetition.md",
+        "title": "A Secret Tool of Leadership",
+        "date": "2024-04-23T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/code_wall.jpg",
+    "normalizedPath": "post_img/code_wall.jpg",
+    "posts": [
+      {
+        "file": "nothing-so-permanent.md",
+        "title": "There's Nothing so Permanent...",
+        "date": "2025-04-29T09:30:00.000Z"
+      },
+      {
+        "file": "what-developers-get-paid-for.md",
+        "title": "What Developers Get Paid For",
+        "date": "2026-01-15T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/ocean_thought.jpg",
+    "normalizedPath": "post_img/ocean_thought.jpg",
+    "posts": [
+      {
+        "file": "process-of-transformation.md",
+        "title": "The Process of Transformation",
+        "date": "2024-04-30T09:30:00.000Z"
+      },
+      {
+        "file": "simple-courage.md",
+        "title": "On the simple courage of Leadership",
+        "date": "2024-05-28T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/architecture.jpg",
+    "normalizedPath": "post_img/architecture.jpg",
+    "posts": [
+      {
+        "file": "structure-constrains-culture.md",
+        "title": "Structure Constrains Culture",
+        "date": "2026-01-06T09:30:00.000Z"
+      },
+      {
+        "file": "vernacular-software-architecture.md",
+        "title": "Vernacular Software Architecture",
+        "date": "2023-11-07T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 2
+  },
+  {
+    "path": "img/post_img/flow.jpg",
+    "normalizedPath": "post_img/flow.jpg",
+    "posts": [
+      {
+        "file": "ask-right-questions-agile.md",
+        "title": "Asking the Right questions for agility",
+        "date": "2023-03-28T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/johnny_bunko.png",
+    "normalizedPath": "post_img/johnny_bunko.png",
+    "posts": [
+      {
+        "file": "book-review-johnny-bunko.md",
+        "title": "Book Review - The Adventures of Johnny Bunko",
+        "date": "2024-10-07T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "https://prodimage.images-bn.com/pimages/9781647821241_p0_v1_s1200x630.jpg",
+    "normalizedPath": "https://prodimage.images-bn.com/pimages/9781647821241_p0_v1_s1200x630.jpg",
+    "posts": [
+      {
+        "file": "book-review-love-and-work.md",
+        "title": "Book Review - Love And Work",
+        "date": "2024-07-02T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/knowledge_base.jpg",
+    "normalizedPath": "post_img/knowledge_base.jpg",
+    "posts": [
+      {
+        "file": "capturing-context-for-ai-agents.md",
+        "title": "Capturing Context for AI Agents",
+        "date": "2026-01-13T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/discussion.jpg",
+    "normalizedPath": "post_img/discussion.jpg",
+    "posts": [
+      {
+        "file": "communication-and-context.md",
+        "title": "Communication and Context",
+        "date": "2023-11-21T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/library.jpg",
+    "normalizedPath": "post_img/library.jpg",
+    "posts": [
+      {
+        "file": "delete-over-deprecate.md",
+        "title": "Delete Over Deprecate",
+        "date": "2026-01-27T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/submarine.jpg",
+    "normalizedPath": "post_img/submarine.jpg",
+    "posts": [
+      {
+        "file": "design-for-failure.md",
+        "title": "Design For Failure",
+        "date": "2024-04-09T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/castle.jpg",
+    "normalizedPath": "post_img/castle.jpg",
+    "posts": [
+      {
+        "file": "good-fences-good-neighbors.md",
+        "title": "APIs and the Walls They Build - Do Good Fences Make Good Neighbors?",
+        "date": "2024-11-06T12:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/bookshelf.jpg",
+    "normalizedPath": "post_img/bookshelf.jpg",
+    "posts": [
+      {
+        "file": "leadership-thru-documentation.md",
+        "title": "Leadership through Documentation",
+        "date": "2023-06-13T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/quiet_forest.jpg",
+    "normalizedPath": "post_img/quiet_forest.jpg",
+    "posts": [
+      {
+        "file": "leading-with-silence.md",
+        "title": "Leading with Silence",
+        "date": "2023-06-20T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/metric-tension.png",
+    "normalizedPath": "post_img/metric-tension.png",
+    "posts": [
+      {
+        "file": "metrics-in-tension.md",
+        "title": "Metrics in Tension",
+        "date": "2024-02-06T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/conference_table.jpg",
+    "normalizedPath": "post_img/conference_table.jpg",
+    "posts": [
+      {
+        "file": "organization-amplifier.md",
+        "title": "Organization as Amplifier",
+        "date": "2023-05-16T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/koch_snowflake_fractal.png",
+    "normalizedPath": "post_img/koch_snowflake_fractal.png",
+    "posts": [
+      {
+        "file": "organization-fractal.md",
+        "title": "Organization as Fractal",
+        "date": "2023-08-01T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/organism.jpg",
+    "normalizedPath": "post_img/organism.jpg",
+    "posts": [
+      {
+        "file": "organization-organism.md",
+        "title": "Organization as Organism",
+        "date": "2023-09-12T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/rockwall.jpg",
+    "normalizedPath": "post_img/rockwall.jpg",
+    "posts": [
+      {
+        "file": "organization-strength.md",
+        "title": "Strength comes from dichotomy",
+        "date": "2023-09-26T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/ux_joke.jpg",
+    "normalizedPath": "post_img/ux_joke.jpg",
+    "posts": [
+      {
+        "file": "organizing-effective-docs.md",
+        "title": "On Organizing Effective Docs",
+        "date": "2023-06-05T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/balancing_stones.jpg",
+    "normalizedPath": "post_img/balancing_stones.jpg",
+    "posts": [
+      {
+        "file": "ratios-of-your-work.md",
+        "title": "The Ratios of Your Work",
+        "date": "2025-06-24T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "/img/post_img/rubber_duck.png",
+    "normalizedPath": "post_img/rubber_duck.png",
+    "posts": [
+      {
+        "file": "rubber-duck-self-improvement.md",
+        "title": "Rubber Duck Self-Improvement",
+        "date": "2026-01-23T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/org_skip_prac.png",
+    "normalizedPath": "post_img/org_skip_prac.png",
+    "posts": [
+      {
+        "file": "skipping-practice.md",
+        "title": "Your Organization Probably Skipped Practice",
+        "date": "2024-12-16T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/many_paths.jpg",
+    "normalizedPath": "post_img/many_paths.jpg",
+    "posts": [
+      {
+        "file": "software-and-roads.md",
+        "title": "Software And Roads",
+        "date": "2023-11-14T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/chalk_steps.jpg",
+    "normalizedPath": "post_img/chalk_steps.jpg",
+    "posts": [
+      {
+        "file": "speed-learn-speed-change.md",
+        "title": "Speed of learning limits speed of change!",
+        "date": "2025-02-18T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/child_programmers.jpg",
+    "normalizedPath": "post_img/child_programmers.jpg",
+    "posts": [
+      {
+        "file": "troika-ai-adoption.md",
+        "title": "Troika AI Adoption",
+        "date": "2026-01-27T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  },
+  {
+    "path": "img/post_img/leader.jpg",
+    "normalizedPath": "post_img/leader.jpg",
+    "posts": [
+      {
+        "file": "wavering-guide.md",
+        "title": "It is hard to follow a wavering guide",
+        "date": "2023-06-27T09:30:00.000Z"
+      }
+    ],
+    "usageCount": 1
+  }
+]
