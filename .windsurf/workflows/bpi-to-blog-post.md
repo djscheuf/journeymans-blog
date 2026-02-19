@@ -170,16 +170,7 @@ photos:
   - [selected image path]
 ```
 
-### 11. Create Git Branch
-
-// turbo
-First, check what branch you're currently on:
-
-```bash
-git branch --show-current
-```
-
-### 12. Stage and Commit the New Post
+### 11. Stage and Commit the New Post
 
 // turbo
 Stage and commit the new blog post file:
@@ -191,13 +182,12 @@ git commit -m "post([kebab-case-title])"
 
 **Note:** Commit message format follows the repo convention: `post([kebab-case-title])`
 
-### 13. Confirm Completion
+### 12. Confirm Completion
 
 Inform the user:
 - ✅ Blog post created: `source/_posts/[filename].md`
-- ✅ Branch: `[current-branch-name]` (created new branch if on main/master, or continued on existing branch)
-- ✅ File committed
-- Next steps: Review the post, make any edits, and push the branch when ready
+- ✅ File committed on current branch
+- Next steps: Review the post, make any edits, and push when ready
 
 ## Example Execution
 
@@ -213,8 +203,7 @@ Inform the user:
 7. Ask for date: User provides "2025-04-15" → Edit file to update date to "2025-04-15 09:30:00"
 8. Calculate word count and add content → Edit file to add reading stats and Hemingway content
 9. Select header image: Invoke sub-workflow → Edit file to add `photos: - /img/post_img/balancing_stones.jpg`
-10. Create branch: `post/ratios-of-work`
-11. Commit: `post(ratios-of-work)`
+10. Commit: `post(ratios-of-work)`
 
 ## Notes
 
