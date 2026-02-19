@@ -1,0 +1,9 @@
+# MailerLite API Configuration
+# Copy this file to .envrc and add your actual API token
+# Then run: direnv allow
+
+# Get your API token from:
+# https://dashboard.mailerlite.com/integrations/api
+# Navigate to: Integrations → MailerLite API → Generate new token
+
+export MAILERLITE_API_KEY="Your MailerLite API token"
