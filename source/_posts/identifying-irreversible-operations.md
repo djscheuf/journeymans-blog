@@ -16,7 +16,7 @@ photos:
 
 Soon your users will begin using AI agents to drive your systems, whether you like it or not. The question isn't if, but when. And when they do, you need to know which operations in your system are truly irreversible.
 
-You already know how to [map processes and identify inefficiencies](/blog/ai-transformation-verbs/). Now apply that same skill to a new question: what happens when an AI makes a mistake in your system? [Which actions can you undo](/blog/ux-for-agents/), and which ones can't you take back?
+You might already have some experience [mapping processes](/blog/ai-transformation-verbs/). Now apply that same skill to a new question: what happens when an AI makes a mistake in your system? [Which actions can you undo](/blog/ux-for-agents/), and which ones can't you take back?
 
 Here's a systematic exercise to find out.
 
@@ -36,7 +36,7 @@ Now ask three questions about each event:
 
 3. **Who would need to be involved to reverse it?** Here's where [Conway's Law](https://www.improving.com/thoughts/apis-and-the-walls-they-build-do-good-fences-make-good-neighbors/) matters. An action that crosses team boundaries becomes harder to reverse, not because it's technically impossible, but because coordination is expensive. If reversing an event requires three teams and two approval chains, it's effectively irreversible for practical purposes.
 
-Don't forget the temporal dimension. Some events become irreversible after a certain point. `Email Sent` can't be unsent once the recipient reads it. `Report Generated` might be fine to regenerate, unless it's already been distributed to stakeholders.
+Don't forget the temporal dimension. Some events become irreversible after a certain point. `Email Sent` certainly can't be unsent once the recipient reads it. `Report Generated` might be fine to regenerate, unless it's already been distributed to stakeholders.
 
 **Determine Your Mitigations**
 
