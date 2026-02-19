@@ -16,11 +16,11 @@ photos:
 
 I used to have several thousand-line documents for implementation prompts. Everything from how I do TDD to how I like things named. They wasted a ton of tokens and slowed startup down. Worse, the AI would lose things in the middle.
 
-So I asked the AI to help me tune them. Using the [[202602021535 - BPI - Active Partner Prompt Pattern|Active Partner]] pattern, I pointed it at the original document and asked what could be improved. It asked me a simple question: "What's the document mostly used for?"
+So I asked the AI to help me tune them. Using the [Active Partner](https://github.com/djscheuf/non-dev-agentic-toolkit/blob/main/docs/using-active-partner.md) pattern, I pointed it at the original document and asked what could be improved. It asked me a simple question: "What's the document mostly used for?"
 
 That question stopped me cold. I realized I'd crammed two completely different ideas into the same note. Workflow planning needed different instructions than implementation execution. The moment I saw that, something else clicked: AI is not human. Humans get better from several examples and explanations. AI only needs one explanation and one proper example of the pattern.
 
-This is how you [[202306061429 - BPI - Leadership Thru Documentation|lead AI through documentation]]. But leadership doesn't depend on telling it every last thing. There's give and take.  The way the AI needs instructions is different than how you'd instruct a junior engineer. Several honed prompts good at their one thing, is better than one mammoth context document for all purposes!
+This is how you [lead AI through documentation](/blog/leadership-thru-documentation/). But leadership doesn't depend on telling it every last thing. There's give and take.  The way the AI needs instructions is different than how you'd instruct a junior engineer. Several honed prompts good at their one thing, is better than one mammoth context document for all purposes!
 
 But you can break that large context down, like refactoring. Think of this as code review, but for your instructions. Test the extracted prompt out. See if it at least achieves something close to the end goal. Then give the agent feedback on how it could be better, or ask the agent to help rewrite the prompt. Start small and iterate.
 
@@ -30,8 +30,8 @@ Extract a targeted prompt or workflow. And run it. See how far you can go. Worst
 
 If you're worried, cut off a smaller piece. Run an experiment. 
 
-"I'm going to try X with AI. Here's the prompt I think will work... Here's what good output looks like... Here's when I need to stop it..." 
+_"I'm going to try X with AI. Here's the prompt I think will work... Here's what good output looks like... Here's when I need to stop it..."_
 
 Be clear on that ahead of time. The thinking work has to go up front because AI compresses the generative effort.
 
-When should you do this kind of work? I typically sharpen my axe before I start the next story. There is a liminal space between "I finished one" and "I'm about to start the next,". In there, I clean up my workspace. [[201907160854 The Tale of Hurly Burly|I sharpen my axe]]. Keep the axe sharp. Refine your prompts, making them clearer. Improving the prompt so the AI makes a few less mistakes next time compounds!
+When should you do this kind of work? I typically sharpen my axe before I start the next story. There is a liminal space between "I finished one" and "I'm about to start the next,". In there, I clean up my workspace. [I sharpen my axe](/blog/parable-hurly-burly/). Keep the axe sharp. Refine your prompts, making them clearer. Improving the prompt so the AI makes a few less mistakes next time compounds!
