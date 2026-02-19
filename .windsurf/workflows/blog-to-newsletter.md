@@ -74,14 +74,23 @@ Construct the complete email HTML by:
 
 ### 5. Create Campaign Name
 
-Generate an internal campaign name using the format:
+Generate an internal campaign name using the standard format:
 ```
 YYYYMMDD - Blog Post Title
 ```
 
-Example: `20260217 - Drucker Memo Architecture`
+**Format Rules:**
+- **YYYYMMDD:** Use the blog post's publication date (from front matter `date` field)
+- **Blog Post Title:** Use the exact title from the blog post front matter
+- **Separator:** Space-hyphen-space ` - ` between date and title
 
-Use the blog post's publication date for the YYYYMMDD portion.
+**Examples from existing campaigns:**
+- `20260217 - Drucker Memo Architecture`
+- `20260203 - Evolutionary Stages of Metrics`
+- `20260120 - Design Buddy`
+- `20260106 - Structure Constrains Culture`
+
+**Important:** This name is for internal MailerLite organization only. It does not appear in the email sent to subscribers.
 
 ### 6. Build Campaign JSON
 
