@@ -23,16 +23,33 @@ Read the provided blog post file and extract:
 
 ### 2. Generate Newsletter Subject Line
 
-Based on the blog post title and content, create a compelling newsletter subject line that:
-- Is 50-60 characters (ideal for email clients)
-- Asks a question or makes a bold statement
-- May include relevant emoji (e.g., 🚅 ⚖️ 💡)
-- Captures the core insight or value proposition
-- Is authentic, not clickbait
+Using the `mailerlite-email` skill for guidance, create a compelling newsletter subject line based on analysis of high-performing campaigns (≥50% open rate).
 
-**Examples from existing campaigns:**
-- "How do you build Engineering🚅 Judgement⚖️?"
-- "Don't miss the simple tool to train Engineering🚅 Judgement⚖️!"
+**Critical Success Factors:**
+- ✅ **MUST include 1-3 relevant emoji** (100% of top performers use emoji)
+- ✅ **Prefer questions** (70% of top performers ask questions)
+- ✅ **Target ~55 characters** (average of top performers)
+- ✅ Use exclamation points strategically (60% of top performers)
+- ❌ Avoid personalization variables like {$name}
+
+**Proven Formulas (in order of effectiveness):**
+
+1. **Question + Emoji** (Highest performing)
+   - "How do you build Engineering🚅 Judgement⚖️?" (51.1% open)
+   - "What does it look like👀 to put First Things First🥇?" (54.9% open)
+   - "What do Cannonballs🎆, Feature Flags⛳, and Executives🕴️ have to do with each other!?" (56.0% open)
+
+2. **Bold Statement + Emoji + Exclamation**
+   - "Meetings suck! Wanna add some expert tools🛠️ to your kit🧰?" (53.8% open)
+   - "You Need Effective Meetings! 🤖AI Can Help." (52.3% open)
+
+3. **Curiosity + Emoji**
+   - "If behavior 🛠️builds culture, what influences⚖️ behavior?" (52.2% open)
+
+**Emoji Selection Guide:**
+- Technical: 🚅 ⚖️ 🛠️ 🖥️ 🤖
+- Leadership: 🕴️ 🥇 📈 🎆
+- Learning: 👀 🐒->👷‍♂️ 🧰 🏆
 
 **Present the proposed subject line to the user for approval or modification.**
 
