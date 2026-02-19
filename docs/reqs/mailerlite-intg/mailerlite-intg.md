@@ -20,17 +20,24 @@ Integration with MailerLite to create draft newsletter campaigns from blog posts
 
 ## Integration Approach
 
-### Primary Method: MCP Server
+### Primary Method: REST API (Direct)
 
-**MCP Endpoint:** `https://mcp.mailerlite.com/mcp`
+**API Endpoint:** `https://connect.mailerlite.com/api`
 
-**Authentication:** OAuth (handled by Windsurf/Cascade MCP integration)
+**Authentication:** Bearer token (API key in Authorization header)
 
-**Key MCP Tools:**
-- `create_campaign` - Create new draft campaigns
-- `get_campaign` - Retrieve existing campaign details (for template extraction)
-- `update_campaign` - Update campaign content
-- `list_campaigns` - List campaigns for template selection
+**Reason for Direct API:** MCP server integration encountered configuration issues with Windsurf. Direct REST API provides more reliable and debuggable integration.
+
+**Key API Endpoints:**
+- `GET /campaigns` - List campaigns (for template extraction)
+- `GET /campaigns/{id}` - Get campaign details including HTML
+- `POST /campaigns` - Create new draft campaigns
+- `PUT /campaigns/{id}` - Update campaign content
+
+**Authentication Header:**
+```
+Authorization: Bearer {API_TOKEN}
+```
 
 ---
 
