@@ -1,0 +1,1079 @@
+{
+  "version": "1.0",
+  "generated": "2026-02-18T22:24:12.281Z",
+  "count": 37,
+  "images": [
+    {
+      "filename": "agile_team.png",
+      "path": "/img/post_img/agile_team.png",
+      "description": "Diverse team of five people gathered around a laptop in a modern office setting. The group is engaged in collaborative work, with team members standing and sitting around a desk with laptops, coffee cups, and work materials. Natural lighting, casual professional atmosphere.",
+      "themes": [
+        "Team collaboration",
+        "Agile teamwork",
+        "Diversity and inclusion",
+        "Problem-solving together",
+        "Collective focus"
+      ],
+      "concepts": [
+        "Scrum teams",
+        "Pair programming",
+        "Collaborative problem-solving",
+        "Team dynamics",
+        "Agile practices",
+        "Cross-functional teams",
+        "Knowledge sharing"
+      ],
+      "mood": [
+        "Collaborative",
+        "focused",
+        "engaged",
+        "professional",
+        "inclusive"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "agility.jpg",
+      "path": "/img/post_img/agility.jpg",
+      "description": "Athlete's arms gripping gymnastic rings in gym setting with international flags in background. Focus on strength, control, and athletic capability. Represents physical agility and strength training.",
+      "themes": [
+        "Agility and flexibility",
+        "Strength and capability",
+        "Organism characteristics",
+        "Physical fitness metaphor",
+        "Adaptability"
+      ],
+      "concepts": [
+        "Organizational agility",
+        "Strength becoming agility",
+        "Organism characteristics",
+        "Adaptive capability",
+        "Physical metaphors for business",
+        "Flexibility and strength balance",
+        "Capability building"
+      ],
+      "mood": [
+        "Strong",
+        "capable",
+        "athletic",
+        "adaptive",
+        "powerful"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "atom.png",
+      "path": "/img/post_img/atom.png",
+      "description": "Simple, clean illustration of an atom with red/coral colored nucleus and orbital paths with electrons. Minimalist scientific diagram on neutral background representing fundamental building blocks.",
+      "themes": [
+        "Fundamental units",
+        "Building blocks",
+        "Atomic principles",
+        "Scrum fundamentals",
+        "Core components"
+      ],
+      "concepts": [
+        "Scrum as atomic unit",
+        "Fundamental practices",
+        "Building complex systems from simple parts",
+        "Molecular composition",
+        "Working systems",
+        "Core methodologies",
+        "Foundational elements"
+      ],
+      "mood": [
+        "Fundamental",
+        "scientific",
+        "clean",
+        "foundational",
+        "elemental"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "balancing_stones.jpg",
+      "path": "/img/post_img/balancing_stones.jpg",
+      "description": "Artistic stone balancing sculptures on beach with ocean in background. Multiple carefully balanced rock stacks showing precarious but stable arrangements. Natural art demonstrating balance and ratios.",
+      "themes": [
+        "Balance and ratios",
+        "Careful equilibrium",
+        "Work proportions",
+        "Delicate balance",
+        "Multiple elements in harmony"
+      ],
+      "concepts": [
+        "Ratios of work",
+        "Work balance",
+        "Proportional effort",
+        "Balanced workload",
+        "Four types of work",
+        "Work distribution",
+        "Equilibrium in work"
+      ],
+      "mood": [
+        "Balanced",
+        "careful",
+        "proportional",
+        "harmonious",
+        "delicate"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "blueprint.jpg",
+      "path": "/img/post_img/blueprint.jpg",
+      "description": "Classic blueprint style technical drawing with white line drawings on deep blue background. Shows various geometric shapes, architectural elements, and handwritten notes in cursive script. Vintage technical drawing aesthetic.",
+      "themes": [
+        "Planning and design",
+        "Executive thinking",
+        "Strategic frameworks",
+        "Foundational principles",
+        "Systematic design"
+      ],
+      "concepts": [
+        "Drucker's principles",
+        "Executive effectiveness",
+        "Product ownership",
+        "Strategic planning",
+        "Process evolution",
+        "Foundational frameworks",
+        "Systematic approaches"
+      ],
+      "mood": [
+        "Strategic",
+        "foundational",
+        "methodical",
+        "classic",
+        "authoritative"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "bookshelf.jpg",
+      "path": "/img/post_img/bookshelf.jpg",
+      "description": "Old library bookshelf with vintage leather-bound books, wooden ladder leaning against shelves. Aged, well-used books in various colors and sizes, suggesting accumulated knowledge and documentation over time.",
+      "themes": [
+        "Documentation",
+        "Leadership through writing",
+        "Knowledge accumulation",
+        "Historical records",
+        "Written legacy"
+      ],
+      "concepts": [
+        "Leadership through documentation",
+        "Documentation practices",
+        "Knowledge preservation",
+        "Written communication",
+        "Historical documentation",
+        "Legacy through writing",
+        "Organizational memory"
+      ],
+      "mood": [
+        "Historical",
+        "documented",
+        "preserved",
+        "scholarly",
+        "legacy-focused"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "castle.jpg",
+      "path": "/img/post_img/castle.jpg",
+      "description": "Isometric pixel art illustration of castle walls with battlements and gate, rendered in dark blocks against lighter background. Suggests fortification, boundaries, and defensive architecture.",
+      "themes": [
+        "Boundaries and walls",
+        "API design",
+        "Good fences",
+        "Defensive architecture",
+        "Controlled access"
+      ],
+      "concepts": [
+        "APIs and walls",
+        "Good fences make good neighbors",
+        "Boundary design",
+        "Access control",
+        "Interface design",
+        "Defensive boundaries",
+        "Controlled interfaces"
+      ],
+      "mood": [
+        "Defensive",
+        "bounded",
+        "controlled",
+        "architectural",
+        "protective"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "chalk_steps.jpg",
+      "path": "/img/post_img/chalk_steps.jpg",
+      "description": "Chalk-drawn steps/stairs on pavement numbered 1, 2, 3 suggesting progression, learning steps, or incremental progress. Simple, educational illustration on ground.",
+      "themes": [
+        "Learning progression",
+        "Step-by-step growth",
+        "Speed of learning",
+        "Incremental progress",
+        "Educational steps"
+      ],
+      "concepts": [
+        "Speed of learning limits speed of change",
+        "Learning progression",
+        "Incremental learning",
+        "Step-by-step development",
+        "Learning pace",
+        "Change velocity",
+        "Educational progression"
+      ],
+      "mood": [
+        "Progressive",
+        "educational",
+        "step-by-step",
+        "learning-focused",
+        "incremental"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "checklist.png",
+      "path": "/img/post_img/checklist.png",
+      "description": "Stylized clipboard with checklist showing items with checkmarks (red checks) and one X mark. Simple, bold illustration with orange/brown clipboard frame, black text lines, and red marking symbols.",
+      "themes": [
+        "Process and procedures",
+        "Verification and validation",
+        "Quality assurance",
+        "Systematic approach",
+        "Testing and checking"
+      ],
+      "concepts": [
+        "Checklists and procedures",
+        "Software testing",
+        "Quality control",
+        "Sprint demos",
+        "Verification processes",
+        "Systematic validation",
+        "Process adherence"
+      ],
+      "mood": [
+        "Organized",
+        "systematic",
+        "methodical",
+        "reliable",
+        "structured"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "child_programmers.jpg",
+      "path": "/img/post_img/child_programmers.jpg",
+      "description": "Young children working together at computer, engaged in programming or technology learning. Collaborative learning scene with kids focused on screen, suggesting early tech education.",
+      "themes": [
+        "AI adoption",
+        "Learning technology",
+        "Youth and technology",
+        "Collaborative learning",
+        "Future generations"
+      ],
+      "concepts": [
+        "Troika AI adoption",
+        "Technology education",
+        "Early learning",
+        "AI for next generation",
+        "Collaborative tech learning",
+        "Youth development",
+        "Technology adoption patterns"
+      ],
+      "mood": [
+        "Educational",
+        "youthful",
+        "collaborative",
+        "future-focused",
+        "learning"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "code_wall.jpg",
+      "path": "/img/post_img/code_wall.jpg",
+      "description": "Dense wall of code displayed on screen with syntax highlighting showing JavaScript/web code. Multiple lines of programming code with functions, methods, and various programming constructs visible. Represents complexity and volume of code.",
+      "themes": [
+        "Code complexity",
+        "Software permanence",
+        "Developer work",
+        "Technical debt",
+        "Code volume"
+      ],
+      "concepts": [
+        "Nothing is permanent as temporary code",
+        "What developers get paid for",
+        "Code maintenance",
+        "Software longevity",
+        "Technical complexity",
+        "Legacy code",
+        "Developer value"
+      ],
+      "mood": [
+        "Complex",
+        "dense",
+        "technical",
+        "permanent",
+        "overwhelming"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "conference_table.jpg",
+      "path": "/img/post_img/conference_table.jpg",
+      "description": "Modern corporate conference room with large table, executive chairs, floor-to-ceiling windows overlooking landscape. Empty, professional meeting space suggesting organizational gatherings and executive decisions.",
+      "themes": [
+        "Organizational meetings",
+        "Amplification",
+        "Executive decisions",
+        "Corporate structure",
+        "Collective action"
+      ],
+      "concepts": [
+        "Organization as amplifier",
+        "Organizational meetings",
+        "Executive gatherings",
+        "Collective decision-making",
+        "Organizational structure",
+        "Amplifying individual efforts",
+        "Corporate coordination"
+      ],
+      "mood": [
+        "Professional",
+        "corporate",
+        "amplifying",
+        "organizational",
+        "executive"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "conversation.jpg",
+      "path": "/img/post_img/conversation.jpg",
+      "description": "Blurred office setting with people in background, foreground shows colorful speech bubble icons (blue, orange, yellow, purple, green) floating in space with a hand pointing/touching them. Represents communication and dialogue.",
+      "themes": [
+        "Communication",
+        "Dialogue and discussion",
+        "Coaching conversations",
+        "Delegation",
+        "Feedback and interaction"
+      ],
+      "concepts": [
+        "Effective communication",
+        "Coach-player relationships",
+        "Delegation skills",
+        "Collaborative dialogue",
+        "Feedback loops",
+        "Interpersonal skills",
+        "Active listening"
+      ],
+      "mood": [
+        "Interactive",
+        "communicative",
+        "engaging",
+        "collaborative",
+        "open"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "discussion.jpg",
+      "path": "/img/post_img/discussion.jpg",
+      "description": "Simple icon illustration of three people silhouettes with speech bubbles above them in blue and purple. Minimalist representation of group communication and dialogue.",
+      "themes": [
+        "Group communication",
+        "Discussion and dialogue",
+        "Context sharing",
+        "Team communication",
+        "Information exchange"
+      ],
+      "concepts": [
+        "Communication and context",
+        "Group discussions",
+        "Information sharing",
+        "Contextual communication",
+        "Team dialogue",
+        "Shared understanding",
+        "Communication patterns"
+      ],
+      "mood": [
+        "Communicative",
+        "collaborative",
+        "simple",
+        "clear",
+        "dialogic"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "flow.jpg",
+      "path": "/img/post_img/flow.jpg",
+      "description": "Dramatic waterfall cascading down between moss-covered cliffs with tiny person standing at base with arms raised. Powerful natural flow of water, scale showing human smallness against nature's force. Misty, powerful scene.",
+      "themes": [
+        "Flow and movement",
+        "Natural processes",
+        "Power and force",
+        "Agility and adaptation",
+        "Questions and inquiry"
+      ],
+      "concepts": [
+        "Asking right questions",
+        "Agile flow",
+        "Natural movement",
+        "Powerful forces",
+        "Adaptation to flow",
+        "Working with nature",
+        "Question-driven approach"
+      ],
+      "mood": [
+        "Powerful",
+        "flowing",
+        "natural",
+        "awe-inspiring",
+        "dynamic"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "frustration.jpg",
+      "path": "/img/post_img/frustration.jpg",
+      "description": "Artistic painting-style image of person at laptop with head in hands, showing stress or frustration. Dramatic orange and teal color palette with painterly brushstrokes creating an emotional, intense atmosphere.",
+      "themes": [
+        "Technical frustration",
+        "Developer challenges",
+        "Stress and difficulty",
+        "Problem complexity",
+        "Organizational strain"
+      ],
+      "concepts": [
+        "Technical debt",
+        "Maintenance burden",
+        "Code readability challenges",
+        "Organizational strain",
+        "Desirable difficulty",
+        "Learning struggles",
+        "System complexity"
+      ],
+      "mood": [
+        "Frustrated",
+        "stressed",
+        "challenging",
+        "intense",
+        "struggling"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "hammer_and_egg.jpg",
+      "path": "/img/post_img/hammer_and_egg.jpg",
+      "description": "Large wooden mallet suspended above a single egg in an egg cup against black background. Dramatic contrast suggesting fragility, inappropriate force, or delicate situations requiring care.",
+      "themes": [
+        "Inappropriate tools or approaches",
+        "Fragility and care",
+        "Novel failure",
+        "Unplanned consequences",
+        "Delicate situations"
+      ],
+      "concepts": [
+        "Novel failure modes",
+        "Maintenance challenges",
+        "Work interruptions",
+        "Inappropriate solutions",
+        "Unintended consequences",
+        "System fragility",
+        "Careful handling required"
+      ],
+      "mood": [
+        "Precarious",
+        "tense",
+        "dramatic",
+        "cautionary",
+        "delicate"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "johnny_bunko.png",
+      "path": "/img/post_img/johnny_bunko.png",
+      "description": "Book cover for \"The Adventures of Johnny Bunko: The Last Career Guide You'll Ever Need\" by Daniel H. Pink. Manga-style illustration showing stressed office worker with hand on head. Bright orange/red background with bold typography.",
+      "themes": [
+        "Career guidance",
+        "Professional development",
+        "Career advice",
+        "Work-life navigation",
+        "Career decisions"
+      ],
+      "concepts": [
+        "Career development",
+        "Professional growth",
+        "Career guidance principles",
+        "Work philosophy",
+        "Career decision-making",
+        "Professional advice",
+        "Career navigation"
+      ],
+      "mood": [
+        "Engaging",
+        "accessible",
+        "practical",
+        "career-focused",
+        "advisory"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "knowledge_base.jpg",
+      "path": "/img/post_img/knowledge_base.jpg",
+      "description": "Old book open on wooden table with reading glasses resting on pages. Vintage, aged book with visible text on yellowed pages. Warm, scholarly atmosphere suggesting knowledge preservation and study.",
+      "themes": [
+        "Knowledge management",
+        "Context preservation",
+        "AI agent context",
+        "Information storage",
+        "Historical knowledge"
+      ],
+      "concepts": [
+        "Capturing context for AI agents",
+        "Knowledge bases",
+        "Context management",
+        "Information preservation",
+        "AI context systems",
+        "Documentation",
+        "Knowledge retention"
+      ],
+      "mood": [
+        "Scholarly",
+        "preserved",
+        "historical",
+        "thoughtful",
+        "contextual"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "koch_snowflake_fractal.png",
+      "path": "/img/post_img/koch_snowflake_fractal.png",
+      "description": "Mathematical progression showing Koch snowflake fractal development from simple triangle through increasingly complex iterations. Shows self-similar patterns at different scales in navy blue.",
+      "themes": [
+        "Fractal patterns",
+        "Self-similarity",
+        "Organizational patterns",
+        "Recursive structures",
+        "Scale and complexity"
+      ],
+      "concepts": [
+        "Organization as fractal",
+        "Self-similar patterns",
+        "Recursive organizational structure",
+        "Patterns at scale",
+        "Complexity from simplicity",
+        "Organizational fractals",
+        "Scale-invariant patterns"
+      ],
+      "mood": [
+        "Mathematical",
+        "recursive",
+        "patterned",
+        "complex",
+        "self-similar"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "library.jpg",
+      "path": "/img/post_img/library.jpg",
+      "description": "Grand classical library interior with floor-to-ceiling bookshelves filled with old books, ornate ceiling with decorative panels, chandelier, and elegant architectural details. Multi-level shelving with ladder access.",
+      "themes": [
+        "Knowledge repositories",
+        "Code libraries",
+        "Deprecation vs deletion",
+        "Historical preservation",
+        "Accumulated knowledge"
+      ],
+      "concepts": [
+        "Delete over deprecate",
+        "Code libraries",
+        "Knowledge management",
+        "Technical debt",
+        "Legacy systems",
+        "Preservation decisions",
+        "Library management"
+      ],
+      "mood": [
+        "Grand",
+        "historical",
+        "preserved",
+        "accumulated",
+        "majestic"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "man_think_ai.jpg",
+      "path": "/img/post_img/man_think_ai.jpg",
+      "description": "Minimalist illustration of a person at a desk with computer, thought bubble containing an AI chip icon with circuit connections. Clean, modern design with blue and light color palette.",
+      "themes": [
+        "Artificial Intelligence",
+        "Human-AI interaction",
+        "Contemplation and thinking",
+        "Technology integration",
+        "Workflow and productivity"
+      ],
+      "concepts": [
+        "AI in daily work",
+        "Cognitive processes",
+        "Digital transformation",
+        "Machine learning",
+        "Human thought meets artificial intelligence",
+        "AI adoption",
+        "Technology strategy"
+      ],
+      "mood": [
+        "Thoughtful",
+        "modern",
+        "professional",
+        "contemplative",
+        "forward-thinking"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "many_paths.jpg",
+      "path": "/img/post_img/many_paths.jpg",
+      "description": "Winding mountain road with multiple switchbacks cutting through forested hillside. Aerial or elevated view showing the serpentine path with many curves and turns.",
+      "themes": [
+        "Multiple paths and routes",
+        "Software evolution",
+        "Complex journeys",
+        "Roads and infrastructure",
+        "Path choices"
+      ],
+      "concepts": [
+        "Software and roads metaphor",
+        "Multiple approaches",
+        "Path complexity",
+        "Infrastructure evolution",
+        "Journey complexity",
+        "Route selection",
+        "Software architecture paths"
+      ],
+      "mood": [
+        "Winding",
+        "complex",
+        "journey-focused",
+        "infrastructural",
+        "evolving"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "metric-tension.png",
+      "path": "/img/post_img/metric-tension.png",
+      "description": "Artistic illustration of two businessmen in dynamic tension against backdrop of charts and graphs with opposing trend lines. Suggests conflict or balance between competing metrics or goals.",
+      "themes": [
+        "Competing metrics",
+        "Tension and balance",
+        "Trade-offs",
+        "Conflicting goals",
+        "Measurement challenges"
+      ],
+      "concepts": [
+        "Metrics in tension",
+        "Competing objectives",
+        "Trade-off management",
+        "Balanced scorecard",
+        "Metric conflicts",
+        "Goal tension",
+        "Performance measurement"
+      ],
+      "mood": [
+        "Tense",
+        "balanced",
+        "conflicting",
+        "dynamic",
+        "challenging"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "money_and_time.jpg",
+      "path": "/img/post_img/money_and_time.jpg",
+      "description": "Stack of coins in sharp focus in foreground with blurred clock face in background, representing the relationship between time and money. Metallic coins of various denominations stacked vertically.",
+      "themes": [
+        "Time and money trade-offs",
+        "Resource allocation",
+        "Investment and value",
+        "Incentives and motivation",
+        "Economic considerations"
+      ],
+      "concepts": [
+        "Developer incentives",
+        "Cost-benefit analysis",
+        "Time investment",
+        "Economic efficiency",
+        "Resource management",
+        "Value creation",
+        "Effectiveness metrics"
+      ],
+      "mood": [
+        "Pragmatic",
+        "economic",
+        "measured",
+        "valuable",
+        "resource-conscious"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "ocean_thought.jpg",
+      "path": "/img/post_img/ocean_thought.jpg",
+      "description": "Silhouette of person standing alone on beach facing vast ocean with waves and cloudy sky. Contemplative scene suggesting reflection, courage, or facing the unknown. Moody blue tones.",
+      "themes": [
+        "Courage and facing challenges",
+        "Transformation",
+        "Contemplation",
+        "Standing before vastness",
+        "Leadership courage"
+      ],
+      "concepts": [
+        "Process of transformation",
+        "Simple courage of leadership",
+        "Facing the unknown",
+        "Personal transformation",
+        "Leadership challenges",
+        "Contemplative leadership",
+        "Standing firm"
+      ],
+      "mood": [
+        "Courageous",
+        "contemplative",
+        "transformative",
+        "solitary",
+        "facing challenges"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "office_politics.jpg",
+      "path": "/img/post_img/office_politics.jpg",
+      "description": "Person writing in notebook at desk with laptop visible, warm orange background. Focus on hands and notebook with pen, professional workspace setting. Intimate, focused perspective on journaling or note-taking activity.",
+      "themes": [
+        "Journaling and reflection",
+        "Personal development",
+        "Self-improvement",
+        "Goal setting",
+        "Individual performance"
+      ],
+      "concepts": [
+        "AI-powered journaling",
+        "New Year's resolutions",
+        "Personal effectiveness",
+        "Self-reflection",
+        "Performance improvement",
+        "Individual and system dynamics",
+        "Habit formation"
+      ],
+      "mood": [
+        "Reflective",
+        "personal",
+        "focused",
+        "developmental",
+        "introspective"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "org_skip_prac.png",
+      "path": "/img/post_img/org_skip_prac.png",
+      "description": "Silhouetted figure with question mark on back playing soccer/football on field. Suggests unknown player or missing practice/preparation. Sports context with blurred background.",
+      "themes": [
+        "Practice and preparation",
+        "Skipping fundamentals",
+        "Training gaps",
+        "Organizational readiness",
+        "Missing steps"
+      ],
+      "concepts": [
+        "Organizations skipping practice",
+        "Missing preparation",
+        "Training gaps",
+        "Fundamental practices",
+        "Organizational readiness",
+        "Practice before performance",
+        "Preparation importance"
+      ],
+      "mood": [
+        "Unprepared",
+        "questioning",
+        "missing steps",
+        "uncertain",
+        "gap-filled"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "quiet_forest.jpg",
+      "path": "/img/post_img/quiet_forest.jpg",
+      "description": "Serene forest path through tall trees with sunlight filtering through, creating a peaceful corridor. Natural, quiet woodland scene with dappled light and clear path forward.",
+      "themes": [
+        "Silence and quiet",
+        "Leadership through restraint",
+        "Peaceful contemplation",
+        "Clear path",
+        "Natural wisdom"
+      ],
+      "concepts": [
+        "Leading with silence",
+        "Quiet leadership",
+        "Contemplative leadership",
+        "Space for thought",
+        "Restraint as strength",
+        "Peaceful guidance",
+        "Natural leadership"
+      ],
+      "mood": [
+        "Peaceful",
+        "quiet",
+        "contemplative",
+        "serene",
+        "restrained"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "repeat_true_self.jpg",
+      "path": "/img/post_img/repeat_true_self.jpg",
+      "description": "Artistic illustration showing recursive/fractal pattern of person in orange hoodie opening their chest to reveal smaller version of themselves, repeating infinitely inward. Represents layers, self-discovery, or repetition of core identity.",
+      "themes": [
+        "Repetition and consistency",
+        "Core identity",
+        "Layers of self",
+        "First principles",
+        "Authentic leadership"
+      ],
+      "concepts": [
+        "Leadership repetition",
+        "First things first",
+        "Core values",
+        "Authentic self",
+        "Consistent messaging",
+        "Recursive patterns",
+        "Inner truth"
+      ],
+      "mood": [
+        "Introspective",
+        "recursive",
+        "authentic",
+        "layered",
+        "consistent"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "rockwall.jpg",
+      "path": "/img/post_img/rockwall.jpg",
+      "description": "Person rock climbing on indoor climbing wall with colorful holds, secured by rope. Shows active climbing, strength, and navigating challenges using available holds.",
+      "themes": [
+        "Strength and challenge",
+        "Dichotomy",
+        "Multiple paths",
+        "Overcoming obstacles",
+        "Strength building"
+      ],
+      "concepts": [
+        "Strength from dichotomy",
+        "Opposing forces creating strength",
+        "Challenge navigation",
+        "Multiple approaches",
+        "Building capability",
+        "Tension as strength",
+        "Balanced opposition"
+      ],
+      "mood": [
+        "Challenging",
+        "strong",
+        "active",
+        "balanced",
+        "determined"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "ship_in_bottle.jpg",
+      "path": "/img/post_img/ship_in_bottle.jpg",
+      "description": "LEGO ship in a clear bottle display piece against blue background. Detailed sailing ship model with masts and rigging contained within transparent bottle, mounted on decorative base. Classic \"ship in a bottle\" concept.",
+      "themes": [
+        "Containment and constraints",
+        "Blast radius limitation",
+        "Controlled environments",
+        "Balance of size and control",
+        "Careful construction"
+      ],
+      "concepts": [
+        "Executive blast radius control",
+        "Too much ship, too little rudder",
+        "Organizational size vs maneuverability",
+        "Controlled scope",
+        "Constraint as design",
+        "Balance and proportion"
+      ],
+      "mood": [
+        "Constrained",
+        "careful",
+        "balanced",
+        "contained",
+        "precise"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "submarine.jpg",
+      "path": "/img/post_img/submarine.jpg",
+      "description": "Submarine silhouette underwater between rocky formations, deep blue water environment. Vessel navigating through confined underwater space, suggesting careful operation in challenging conditions.",
+      "themes": [
+        "Design for failure",
+        "Operating in hostile environments",
+        "Resilience and redundancy",
+        "Careful navigation",
+        "Failure preparation"
+      ],
+      "concepts": [
+        "Design for failure",
+        "Resilient systems",
+        "Redundancy planning",
+        "Operating under pressure",
+        "Failure modes",
+        "System reliability",
+        "Defensive design"
+      ],
+      "mood": [
+        "Cautious",
+        "resilient",
+        "prepared",
+        "underwater",
+        "defensive"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "thinker.png",
+      "path": "/img/post_img/thinker.png",
+      "description": "Illustrated figure in contemplative pose at desk with papers, hand on chin in classic thinking position. Thought bubbles floating above suggesting deep contemplation. Artistic, vintage illustration style with muted colors.",
+      "themes": [
+        "Deep thinking",
+        "Judgment and decision-making",
+        "Contemplation",
+        "Problem analysis",
+        "Transformational questions"
+      ],
+      "concepts": [
+        "Employee judgment",
+        "Critical thinking",
+        "Transformational questions",
+        "Decision-making skills",
+        "Analytical thinking",
+        "Problem-solving mindset",
+        "Thoughtful leadership"
+      ],
+      "mood": [
+        "Contemplative",
+        "thoughtful",
+        "analytical",
+        "reflective",
+        "deliberate"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "tool_kit.jpg",
+      "path": "/img/post_img/tool_kit.jpg",
+      "description": "Vintage craftsman tools laid out on weathered wooden surface - hammers, axe, measuring tape, gloves, scissors, and various hand tools. Rustic, well-used tools suggesting craftsmanship and practical work.",
+      "themes": [
+        "Tools and craftsmanship",
+        "System repair and maintenance",
+        "Practical solutions",
+        "Right tool for the job",
+        "Building and fixing"
+      ],
+      "concepts": [
+        "Conway's Law",
+        "System architecture",
+        "Work system repair",
+        "Software as organizational tools",
+        "Custom tooling",
+        "Technical craftsmanship",
+        "Appropriate tool selection"
+      ],
+      "mood": [
+        "Practical",
+        "craftsmanlike",
+        "grounded",
+        "functional",
+        "experienced"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "trail-marker.jpg",
+      "path": "/img/post_img/trail-marker.jpg",
+      "description": "Stack of balanced rocks (cairn) on a hiking trail in a natural outdoor setting with red rock formations, trees, and blue sky in the background. The cairn serves as a trail marker, carefully balanced stones creating a vertical structure.",
+      "themes": [
+        "Guidance and direction",
+        "Incremental progress",
+        "Balance and stability",
+        "Journey and path-finding",
+        "Intentional markers"
+      ],
+      "concepts": [
+        "Leadership guidance",
+        "Cultural markers",
+        "Intentional behavior",
+        "Building on foundations",
+        "Showing the way",
+        "Endurance and persistence",
+        "Systems and processes"
+      ],
+      "mood": [
+        "Purposeful",
+        "grounded",
+        "guiding",
+        "natural",
+        "steady"
+      ],
+      "use_cases": []
+    },
+    {
+      "filename": "ux_joke.jpg",
+      "path": "/img/post_img/ux_joke.jpg",
+      "description": "Person presenting framed poster with text \"A user interface is like a joke. If you have to explain it, it's not that good.\" Humorous but insightful UX principle displayed as office art.",
+      "themes": [
+        "User experience",
+        "Documentation clarity",
+        "Intuitive design",
+        "Self-explanatory systems",
+        "UX principles"
+      ],
+      "concepts": [
+        "Organizing effective docs",
+        "UX design principles",
+        "Intuitive interfaces",
+        "Self-documenting systems",
+        "Clarity in design",
+        "Documentation effectiveness",
+        "User-centered design"
+      ],
+      "mood": [
+        "Humorous",
+        "insightful",
+        "clear",
+        "user-focused",
+        "practical"
+      ],
+      "use_cases": []
+    }
+  ]
+}
