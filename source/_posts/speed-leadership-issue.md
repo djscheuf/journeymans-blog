@@ -5,7 +5,7 @@ categories:
 tags:
   - systems
   - organizations
-date: 2026-02-03 09:30:00
+date: 2026-03-17 09:30:00
 photos: 
   - img/post_img/leader.jpg
 description: Speed is a Leadership Issue, because your work system controls your speed. Leaders control the work system. So how do you go faster?
