@@ -14,7 +14,7 @@ description: If you don't schedule your maintenance, your machine will schedule 
 
 290 words | ~1.5 min read
 
-If you don't schedule your maintenance, your machine will schedule it for you. And that applies regardless of the type of machine, including you! [Leftover Maintenance becomes unplanned work](/blog/leftover-maintenance). You get sick. Or the machine breaks. Either way you're stuck holding the bag. 
+If you don't schedule your maintenance, your machine will schedule it for you. And that applies regardless of the type of machine, including you! [Leftover Maintenance becomes unplanned work](/blog/leftover-maintenance). You catch the flu or maybe a machine breaks. Either way you're stuck holding the bag. 
 
 We ought to put [First Things First](/blog/first-things-first). You can delay Maintenance, sure. But it comes due with interest. By contrast, simple daily maintenance is cheap, like brushing your teeth. But if you don't do it first thing, you will likely forget. 
 
