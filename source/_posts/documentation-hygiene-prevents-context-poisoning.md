@@ -20,7 +20,7 @@ That's when it hit me: outdated documentation isn't just annoying anymore. It's 
 
 When was the last time you ate something from your fridge that had been sitting there for weeks? Documentation rots the same way. But here's the critical difference: a junior developer can ask questions, and recognize when documentation doesn't match reality. Your AI coding buddy can't. It trusts what's written. It has no informational immune system to protect it from misleading context.
 
-This brought to mind something from my post on [Delete Over Deprecate](link): deleted can't pollute, deprecated can. The same principle applies to documentation. As long as that outdated examples exist, you're weighting the statistical probability. That is your AI is more likely to generate code matching those old patterns. You're actively poisoning every future prompt.
+This brought to mind something from my post on [Delete Over Deprecate](/blog/delete-over-deprecate/): deleted can't pollute, deprecated can. The same principle applies to documentation. As long as that outdated examples exist, you're weighting the statistical probability. That is your AI is more likely to generate code matching those old patterns. You're actively poisoning every future prompt.
 
 ADRs solidify tacit knowledge. They capture the decisions and trade-offs your team made during design. But you should also review them over time as part of knowledge curation. And here's the trick: the right thing to do now may be eliminating some of that solidified information! We have to recognize when the right thing to do is delete components from the ADR, not just mark them deprecated.
 
