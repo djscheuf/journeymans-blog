@@ -37,4 +37,4 @@ This requires upfront investment. You have to define what "done" means. You have
 
 The principle is simple: give your agents tight feedback loops at the speed they operate. Then they'll self-correct faster than any human review could ever catch the error. That's how you remove unintentional rework and build sustainable AI-augmented development.
 
-P.S. If you'd like a look at an exmaple of this self-validating system, [check out this repo](https://github.com/djscheuf/agentic-dev-ecosystem-template/releases/tag/v2.0).
+P.S. If you'd like a look at an example of this self-validating system, [check out this repo](https://github.com/djscheuf/agentic-dev-ecosystem-template/releases/tag/v2.0).
