@@ -125,6 +125,23 @@ I wrote about how to implement this practice with your team: [URL]
 #EngineeringLeadership #TeamDevelopment
 ```
 
+## Generated Posts
+
+### Developer as Team Lead
+```
+The most productive developers aren't writing the most code. They're leading a team—even if that team is made of AI agents.
+
+I've been working with AI agents to build software, and I'm achieving output levels that used to require five developers. Not by coding faster, but by working differently.
+
+It turns out, the team lead skills I learned years ago? They're suddenly the most valuable tools in my toolkit. Defining processes. Conducting reviews. Orchestrating multiple agents. Mentoring through documentation.
+
+The insight is simple: you get to write the rules. You get to build your ideal software team, starting now.
+
+I wrote about how to shift from individual contributor to team lead in an agentic world: https://daniel.scheufler.tech/blog/developer-as-team-lead/
+
+#SoftwareEngineering #AIAgents #TechnicalLeadership #EngineeringLeadership
+```
+
 ## Usage Instructions
 
 When asked to create a LinkedIn promotional post:
