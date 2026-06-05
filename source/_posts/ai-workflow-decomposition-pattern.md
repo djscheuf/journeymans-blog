@@ -1,5 +1,5 @@
 ---
-title: AI Workflow Decomposition Pattern
+title: How to decompose workflows for AI Augmentation
 categories:
   - Engineering
 tags:
@@ -9,18 +9,22 @@ tags:
 date: 2026-07-07 09:30:00
 description: Learn how to decompose workflows into discrete steps to identify where AI excels at transformation tasks, where it needs tools for math, and where human judgment must remain in control.
 photos:
-  - /img/post_img/man_think_ai.jpg
+  - /img/post_img/lego_blocks.jpg
 ---
 
 ~690 Words | ~3min Read
 
-AI doesn't replace entire jobs. It replaces tasks within those jobs. But most of us look at our work as monolithic activities. "Evaluate this solution." "Analyze these requirements." "Research the market." When you see work this way, AI integration feels impossible. How do you hand off something that requires judgment from start to finish?
+[AI doesn't replace entire jobs](/blog/ai-replaces-tasks-not-jobs/). It replaces tasks within those jobs. But most of us look at our work as monolithic activities. "Evaluate this solution." "Analyze these requirements." "Research the market." When you see work this way, AI integration feels impossible. How do you hand off something that requires judgment from start to finish?
 
 You need task decomposition. Break work into progressively smaller, clearer steps. And build explicit understanding of what each step accomplishes. This reveals which pieces AI can handle and which require human control.
 
 Let's take a simplified example first. Consider solution evaluation in business analysis. You're assessing whether a delivered solution meets its targets. Seems entirely human, right? Judgment, domain knowledge, analytical thinking and all that. But watch what happens when you decompose it.
 
-List the steps to evaluate. First, you define the metrics and their targets. Then you measure the solution performance on each metric. Then you compare those measurements to your targets. Finally, you document the benchmark results.
+List the steps to evaluate. 
+- First, you define the metrics and their targets. 
+- Then you measure the solution performance on each metric. 
+- Then you compare those measurements to your targets. 
+- Finally, you document the benchmark results.
 
 Now at each step, as this: Is this a transformation task?
 
@@ -30,7 +34,7 @@ But step one? Defining what to measure? God help you if you let AI do that. That
 
 Step two gets interesting. Measuring performance sounds mechanical, but AI is bad at math. Don't ever let it do calculations directly! However, if you give it a tool... Like a script that performs the math consistently.  Then your agent can call that tool repeatedly across multiple solutions. You just need guardrails to ensure it's calling legitimate calculations.
 
-Step three, comparing to targets, hits the same issue. Is 2.0 seconds above or below a 1.5 second target? AI might get that wrong. Yey, Hallucinations!  But if you hand it a script that says "compare to target, return 'above/below by X amount,'" now it's just routing data to a tool. That works.
+Step three, comparing to targets, hits the same issue. Is 2.0 seconds above or below a 1.5 second target? AI might get that wrong. Yey, Hallucinations!  But if you hand it a script that "compares to target, return 'above/below by X amount,'" now it's just routing data to a tool. That works.
 
 Notice what happened. You identified transformation tasks where AI excels. Judgment tasks that must stay human. Math tasks where AI needs tools. Further, you saw Fan-out points. Those spots where the same action repeats across multiple solutions. This is where a multi-agent patterns make sense.
 
