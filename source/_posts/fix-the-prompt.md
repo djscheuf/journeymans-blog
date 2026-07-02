@@ -22,9 +22,9 @@ If your output is bad, don't fix the output. Fix the prompt, not the output. Thr
 
 Think of it like code review, but for your prompts and context. A prompt going awry is exploratory testing. A novel situation revealed a novel bug. You don't patch symptoms in production. You fix the root cause and redeploy. Same discipline applies here. When AI produces wrong output, unwind the change and fix the foundation.
 
-Now this requires some serious git discipline. Commit after each discrete change, not after multiple. That way you roll back a small unit, not a whole bunch of slop. Build reusable prompts for specific workflow actions. When output is wrong, diagnose the root cause in the prompt or context rather than patching the result.
+Now this requires some serious git discipline. Commit after each discrete change, not after multiple. That way you roll back a small unit, not a whole bunch of slop. [Build reusable prompts](/blog/rocc-it-leverage-ai) for specific workflow actions. When output is wrong, diagnose the root cause in the prompt or context rather than patching the result.
 
-It's slower at first. You're choosing to go slower now to build control systems and a knowledge base. But improving the prompt so the AI makes fewer mistakes next time compounds. You're not optimizing for more AI work per swing. You're optimizing for correct AI work at every stroke. [Keep the axe sharp](202511080650%20-%20BPI%20-%20Sharpening%20the%20Agent%20Axe).
+It's slower at first. You're choosing to go slower now to build control systems and a knowledge base. But improving the prompt so the AI makes fewer mistakes next time compounds. You're not optimizing for more AI work per swing. You're optimizing for correct AI work at every stroke. [Keep the axe sharp](/blog/sharpening-the-agent-axe).
 
 Your job is to recognize when the foundation is faulty and stop building on it. Pour the foundation first. When you recognize the fault, fix that before building the house. It's harder to fix foundation problems after the house is already there.
 
