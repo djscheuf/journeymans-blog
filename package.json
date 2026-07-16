@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "hexo server -p $PORT",
+    "start:verbose": "hexo server -p $PORT --debug > test.log",
     "generate": "hexo generate",
     "clean": "rimraf public",
     "regen":"npm run clean && npm run generate"
