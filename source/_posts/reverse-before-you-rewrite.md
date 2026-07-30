@@ -54,15 +54,15 @@ You may request clarification when you encounter ambiguity, after you have logge
 - If a code conditional applies to multiple Roles, or multiple error states, capture a Business Rule for Each
 - If a code conditional shows or hides multiple UI elements at once, capture JUST ONE rule. 
 - Each Business Rule should take the form of:
-"""
+`
 ## {3-5 word Business rule description}
 GIVEN {situation/condition}
 WHEN {action triggering the rule}
 THEN {list of expectations}
-"""
+`
 
 ## Output File Format
-"""
+`
 # Business Rule Extraction - {Provided File Name}
 
 ## {3-5 word Business rule description}
@@ -74,7 +74,7 @@ THEN {expectations}
 
 ## Open Questions
 - {Clarifying Question related to the discovered business rules}
-"""
+`
 
 ```
 
