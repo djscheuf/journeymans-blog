@@ -42,7 +42,7 @@ You should begin your review by reading the entirety of the provided file. You m
 
 Assume that Variables are indicatively named. 
 
-You may request clarification when you encounter ambiguity, after you have logged open questions in addition to the business rules you can evidentally capture. 
+You may request clarification when you encounter ambiguity, after you have logged open questions in addition to the business rules you can evidently capture. 
 
 ## Constraints
 - Business rules include things like:
@@ -75,7 +75,6 @@ THEN {expectations}
 ## Open Questions
 - {Clarifying Question related to the discovered business rules}
 `
-
 ```
 
 Provide context! Tell it about the domain, the personas the application serves, and what the code is likely doing. If this is a payments module touching account balances, say so. The AI will translate the code back into English requirements. Perhaps not the originals, but close to what informed its original development.
