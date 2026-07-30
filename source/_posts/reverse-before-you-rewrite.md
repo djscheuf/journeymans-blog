@@ -7,7 +7,7 @@ tags:
   - testing
   - decision-making
 date: 2026-09-29 09:30:00
-description: Legacy codebases lack tests because they're legacy. Here's how to use AI to reverse-engineer business rules and build the guardrails that make a safe, AI-accelerated rewrite possible.
+description: Legacy codebases are legacy because they lack tests. Here's how to use AI to reverse-engineer business rules and build the guardrails that make a safe, AI-accelerated rewrite possible.
 photos:
   - /img/post_img/code_wall.jpg
 ---
@@ -18,7 +18,7 @@ Your legacy application is seven or eight major versions behind. It's blocking f
 
 The answer is yes. But only if you do the hard work first.
 
-Here's what nobody talks about: legacy codebases lack tests because they're legacy. That's what made them legacy. So when you hand your codebase to an AI agent and say "rewrite this," the agent has no guardrails. No proof that what it builds actually does what the original did. It will generate code at incredible speed. But without tests, you're vibe-coding at scale. You'll ship bugs you didn't know existed. You'll break functionality nobody remembered was there. You'll spend months debugging instead of shipping.
+Here's what nobody talks about: legacy codebases are legacy because they lack tests. That's what made them legacy. So when you hand your codebase to an AI agent and say "rewrite this," the agent has no guardrails. No proof that what it builds actually does what the original did. It will generate code at incredible speed. But without tests, you're vibe-coding at scale. You'll ship bugs you didn't know existed. You'll break functionality nobody remembered was there. You'll spend months debugging instead of shipping.
 
 The solution isn't to skip the hard work. It's to use AI to compress it.
 
@@ -26,7 +26,59 @@ Before you can safely use AI to rewrite your system, you need to know what your 
 
 This is where reverse-engineering comes in. You extract the business rules from your existing codebase. Then translate them into a format both humans and AI agents understand. The format matters: Given-When-Then acceptance criteria. "Given this situation, when this action happens, then these expectations hold." This isn't new. It's how acceptance criteria have always worked. But now you're deriving them from code instead of writing them from scratch.
 
-Take a file or module from your legacy system. Give an AI agent a prompt [like this]([[Business Rule Extractor]]). Provide context! Tell it about the domain, the personas the application serves, and what the code is likely doing. If this is a payments module touching account balances, say so. The AI will translate the code back into English requirements. Perhaps not the originals, but close to what informed its original development.
+Take a file or module from your legacy system. Give an AI agent a prompt like this:
+
+```markdown
+## Role
+You are an Expert Business Analyst with extensive Software Development Experience, especially in reverse-engineering business intent from existing code.
+
+## Task
+ Extract the business rules, and conditions from the provided code sample, in the form of Given-When-Then Acceptance Criteria
+
+## Context
+You are reviewing pre-existing code in a production Angular Application, related to Commercial Account Management. {Some details about target Architecture and how modules are associated to their pages}
+
+You should begin your review by reading the entirety of the provided file. You may enrich your context by finding the associated HTML page, and services. Stay within ONE navigational link of the file you started with. 
+
+Assume that Variables are indicatively named. 
+
+You may request clarification when you encounter ambiguity, after you have logged open questions in addition to the business rules you can evidentally capture. 
+
+## Constraints
+- Business rules include things like:
+  - permissions of specific roles
+  - show or hiding of UI controls
+  - data transformations from a UI form into an API Data model
+  - what to do in the case of Errors
+- Capture EACH Business Rule Separately
+- If a code conditional applies to multiple Roles, or multiple error states, capture a Business Rule for Each
+- If a code conditional shows or hides multiple UI elements at once, capture JUST ONE rule. 
+- Each Business Rule should take the form of:
+"""
+## {3-5 word Business rule description}
+GIVEN {situation/condition}
+WHEN {action triggering the rule}
+THEN {list of expectations}
+"""
+
+## Output File Format
+"""
+# Business Rule Extraction - {Provided File Name}
+
+## {3-5 word Business rule description}
+GIVEN {situation}
+WHEN {trigger action}
+THEN {expectations}
+
+{List of Business Rules}
+
+## Open Questions
+- {Clarifying Question related to the discovered business rules}
+"""
+
+```
+
+Provide context! Tell it about the domain, the personas the application serves, and what the code is likely doing. If this is a payments module touching account balances, say so. The AI will translate the code back into English requirements. Perhaps not the originals, but close to what informed its original development.
 
 But test your prompt before you trust the output. Run it on a small piece of code. Review what comes back. Adjust the prompt. Run it again. This is not a one-shot process. You're training yourself to extract business rules effectively. You need to learn how to specify the relevant context. The AI is helping you do extract the rules faster than you could manually.
 
