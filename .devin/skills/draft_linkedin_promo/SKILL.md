@@ -1,8 +1,7 @@
-# Draft LinkedIn Promotional Post
-
-## Purpose
-Create short, curiosity-driven LinkedIn posts that promote blog articles using a conversational, relatable style.
-
+---
+name: draft_linkedin_promo
+description: Create short, curiosity-driven LinkedIn posts that promote blog articles using a conversational, relatable style.
+---
 ## Style Guidelines
 
 ### Tone & Voice
@@ -24,9 +23,9 @@ Create short, curiosity-driven LinkedIn posts that promote blog articles using a
    - "No, it's not some obscure [misconception]..."
    - "No, I'm not making this up..."
 
-3. **Personal Connection** - Share your experience or realization
-   - "I've been [doing X] for years, and I recently realized..."
-   - "It was a practice I was taught as a [role]..."
+3. **Personal Connection (optional)** - Share your experience or realization, OR frame the insight abstractly/systemically if no natural anecdote fits
+   - Anecdote version: "I've been [doing X] for years, and I recently realized..." / "It was a practice I was taught as a [role]..."
+   - Abstract/systemic version: "The system can only tell you about itself. Naturally, a change to the system isn't part of the system yet."
 
 4. **The Insight** - The key realization or problem
    - "Sometimes that [thing] I did? It was actually the right call. But I only knew that looking back."
@@ -35,8 +34,9 @@ Create short, curiosity-driven LinkedIn posts that promote blog articles using a
 5. **The Bridge** - Connect to the solution
    - "So how do you get better at [problem]?"
 
-6. **The Reveal** - Name the technique (but NOT how to do it)
+6. **The Reveal (optional)** - Name the technique (but NOT how to do it), only if there's a clean, recognizable name worth dropping
    - "Turns out, there's a technique for that - It's called [Name]."
+   - If no clean name fits, skip straight from the Bridge to the Call to Action.
 
 7. **Call to Action** - Invite them to learn HOW
    - "I wrote about how to [implement/apply] this [context]: [URL]"
@@ -69,6 +69,14 @@ Create short, curiosity-driven LinkedIn posts that promote blog articles using a
 - Short paragraphs (1-3 sentences each)
 - Use line breaks for readability
 
+### Handling Optional Elements
+
+When a personal anecdote might not clearly fit the article (e.g., abstract/systems-level topics), produce **two variants** of the post, both following the same structure pattern:
+1. **With anecdote** - Personal Connection step uses a genuine first-person experience.
+2. **Without anecdote** - Personal Connection step is replaced with an abstract/systemic framing of the same insight.
+
+Present both variants to the user so they can pick the one that fits their voice for that post. The Reveal step (naming the technique) should only be included in either variant if a clean, recognizable technique name is genuinely available - don't force a name onto a concept that doesn't have one.
+
 ### What to Avoid
 - **Don't reveal HOW to do the technique** - Only name it and point to its value
 - **Don't give step-by-step instructions** - Save that for the blog post
@@ -92,9 +100,9 @@ So how do you get better at making those calls in the moment?
 
 Turns out, there's a technique for that - It's called the Drucker Memo.
 
-I wrote about how to apply this executive practice to your architecture decisions: https://daniel.scheufler.tech/blog/drucker-memo-architecture/
+I wrote about how to apply this executive practice to your architecture decisions: {link to post}
 
-#SoftwareEngineering #TechnicalLeadership #EngineeringJudgment
+{relevant hashtags}
 ```
 
 ### Example 2: Rubber Duck Debugging Post
@@ -105,9 +113,9 @@ No, I'm not making this up. It was a practice I was taught as a Junior Dev. Expl
 
 I've been using the practice for years, and recently realized that I could get some more value out of 'talking to myself'. 
 
-Check it out: https://lnkd.in/gAEtFdgk
+Check it out: {link to post}
 
-#selfimprovement #journalling #debugging
+{relevant hashtags}
 ```
 
 ### Example 3: Drucker Memo for Leaders (Direct Value Style)
@@ -137,9 +145,8 @@ It turns out, the team lead skills I learned years ago? They're suddenly the mos
 
 The insight is simple: you get to write the rules. You get to build your ideal software team, starting now.
 
-I wrote about how to shift from individual contributor to team lead in an agentic world: https://daniel.scheufler.tech/blog/developer-as-team-lead/
-
-#SoftwareEngineering #AIAgents #TechnicalLeadership #EngineeringLeadership
+I wrote about how to shift from individual contributor to team lead in an agentic world: {link to post}
+{relevant hashtags}
 ```
 
 ## Usage Instructions
@@ -157,15 +164,17 @@ When asked to create a LinkedIn promotional post:
    - What executive/senior practice can engineers learn from?
    - What common experience can you reference?
 
-3. **Draft the post** following the structure pattern above
+3. **Check whether a personal anecdote fits.** If it does not fit naturally, draft **two variants** per the "Handling Optional Elements" section - one with the anecdote, one with an abstract/systemic framing instead.
 
-4. **Keep it personal**:
-   - Use "I" statements
+4. **Draft the post(s)** following the structure pattern above
+
+5. **Keep it personal where applicable**:
+   - Use "I" statements when using the anecdote version
    - Share genuine realizations
    - Make it relatable to the reader's experience
 
-5. **End with clarity**:
-   - Name the technique
+6. **End with clarity**:
+   - Name the technique, if one clearly applies
    - Provide the link
    - Add relevant hashtags
 
@@ -173,9 +182,12 @@ When asked to create a LinkedIn promotional post:
 
 - **Curiosity over explanation** - Make them want to click, don't give away everything
 - **Value over process** - Show the outcome, invite them to learn the how
-- **Name the technique, not the steps** - "It's called X" not "Here's how to do X"
-- **Personal over professional** - Share discoveries, not lectures
+- **Name the technique, not the steps (when a name exists)** - "It's called X" not "Here's how to do X"
+- **Personal over professional, when it fits** - Share discoveries, not lectures; otherwise use systemic/abstract framing rather than forcing an anecdote
 - **Simple over sophisticated** - Clear language beats clever wordplay
 - **Relatable over impressive** - Connect with shared experiences
 - **Bridge executive practices to engineering** - Show how "boss-level" techniques apply to code
 - **The blog post teaches HOW** - The promo only teaches WHAT and WHY
+
+## Additional Reference Materials
+- Broad concept guidance: `./ref/202605051937 - Summary - LinkedIn Strategy for Tech Recruiters.md`
