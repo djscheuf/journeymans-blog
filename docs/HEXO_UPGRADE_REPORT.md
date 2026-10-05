@@ -269,3 +269,42 @@ Decided by the assistant, to be reviewed:
 Not in scope for this upgrade, noted for later: the sitemap also lists the generated `img/post_img/descriptions/*.html` pages, because the plugin includes every rendered page. Excluding them is a separate decision.
 
 Each step is staged, not committed. Staged changes are reviewed and committed by the owner.
+
+## 10. Implementation record
+
+Carried out on 2026-10-05. Each major step was staged before the next began. Verification compared each build against a baseline built from the original lockfile.
+
+| Step | Change | Staged | Verification |
+|---|---|---|---|
+| 0 | Email typo fixed in `package.json` (`_config.yml` was already corrected by the owner). Report decisions recorded | Yes | Baseline build saved |
+| 1 | `hexo` → 8.1.2 | Yes | Clean build, 0 warnings. HTML pages match baseline after normalisation |
+| 2 | `hexo-renderer-markdown-it` → 7.1.1 | Yes | Clean build, 0 warnings. No content changes |
+| 3 | `hexo-generator-index` → 4.0.0 | Yes | Clean build, 0 warnings. No content changes (see note on ordering) |
+| 4 | `hexo-generator-feed` → 4.0.0 | Yes | Only `rss2.xml` changes content. Expected format change (§5, Step 4) |
+| 5 | Sitemap replaced with `hexo-generator-sitemap` 3.0.1. JSON excluded. See below | Yes | Sitemap URL set matches the baseline exactly. No JSON entries. JSON files still published |
+| 6 | `rimraf` → 6.1.3 | Yes | `npm run clean` removes `public/`. `npm run regen` succeeds |
+| 7 | Clean reinstall from lockfile (`npm ci`), regenerate, server smoke test, audit | Yes | All 8 URLs tested return 200 (home, post, archive, tag, RSS, sitemap, JSON, about). 0 warnings |
+
+**Step 5 detail.** Three config changes were needed beyond the plugin swap:
+- `skip_render: ["img/post_img/**/*.json"]` excludes the JSON data files from the sitemap. The files are still published.
+- `sitemap.tags` and `sitemap.categories` are enabled, so tag and category URLs stay in the sitemap as before.
+- `sitemap.template` points to `_scripts/sitemap-template.xml`, a copy of the plugin's template. The copy strips `index.html` from URLs. Without this, six pages (`/about/`, `/manual/`, `/mature-team-behaviors/`, `/now/`, `/resume/`, `/talks/`) were listed as `…/index.html`, which duplicates the canonical trailing-slash URL.
+
+**Findings from the trial that were not in the original report:**
+- **Build order is not deterministic.** Hexo 7 and Hexo 8 both change the tag order on posts and pages between identical builds. Tag-order differences are therefore noise, not upgrade regressions. Comparisons normalise ordering.
+- **`npm run clean` does not clear Hexo's cache.** It removes only `public/`. Hexo's `db.json` cache kept stale asset content in one baseline. Use `npx hexo clean` for a true rebuild. `npm run regen` does not do this.
+- **The sitemap index stylesheet is gone.** The old plugin emitted `sitemap.xsl`, which browsers used to render the sitemap. The new plugin does not, and the site does not serve it. Browsers will show raw XML. No functional impact on search engines.
+- **One tag is listed twice in the sitemap** (`/tags/liberating-structures/`). This already existed in the baseline and is not caused by this upgrade.
+
+**Security after Step 5 (production audit):**
+
+| State | Total | Critical | High |
+|---|---|---|---|
+| Original lockfile | 22 | 2 | 11 |
+| After Step 7 | 26 | 0 | 18 |
+
+The two critical advisories are removed. The high count is higher than before. Most of the new high advisories sit in the transitive tree of `hexo`, `hexo-cli` and `hexo-fs`, and npm's suggested fixes there are downgrades that must not be applied. This is **not triaged yet** and should be reviewed before the upgrade is considered closed.
+
+**Not done in this upgrade** (recommended in §4.3, left for a separate change): removing the dead `highlight.enable` key, and setting `highlight.tab_replace` to `''`. Neither changes output.
+
+**Not run:** `hexo deploy`, because it pushes to GitHub.

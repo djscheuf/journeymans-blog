@@ -24,7 +24,7 @@
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-feed": "^4.0.0",
     "hexo-generator-index": "^4.0.0",
-    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
+    "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-less": "^4.0.0",
@@ -32,6 +32,6 @@
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^6.1.3"
   }
 }
