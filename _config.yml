@@ -26,6 +26,7 @@ archive_dir: archives
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "img/post_img/**/*.json" # data files: published, but kept out of the sitemap
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -54,6 +55,9 @@ index_generator:
 
 sitemap:
   path: sitemap.xml
+  tags: true
+  categories: true
+  template: _scripts/sitemap-template.xml # plugin default, with index.html stripped from URLs
 
 # Category & Tag
 # default_category: Software Development
@@ -92,7 +96,7 @@ feed:
 
 # Site settings
 SEOTitle: Journeyman's Travels
-email: daniel@shceufler.tech
+email: daniel@scheufler.tech
 google_analytics: G-9J2D121NSY
 mailerlite: true
 # hyvor_talk_id: 6075

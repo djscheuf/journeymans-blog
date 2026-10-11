@@ -4,7 +4,7 @@
   "private": true,
   "authors": {
     "name": "Daniel Scheufler",
-    "email": "daniel@shceufler.tech",
+    "email": "daniel@scheufler.tech",
     "url": "daniel.scheufler.tech"
   },
   "scripts": {
@@ -12,26 +12,26 @@
     "start:verbose": "hexo server -p $PORT --debug > test.log",
     "generate": "hexo generate",
     "clean": "rimraf public",
-    "regen":"npm run clean && npm run generate"
+    "regen": "npm run clean && npm run generate"
   },
   "hexo": {
-    "version": "7.3.0"
+    "version": "8.1.2"
   },
   "dependencies": {
-    "hexo": "^7.3.0",
+    "hexo": "^8.1.2",
     "hexo-canonical-link": "^2.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
-    "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^3.0.0",
-    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
+    "hexo-generator-feed": "^4.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-less": "^4.0.0",
-    "hexo-renderer-markdown-it": "^7.1.0",
+    "hexo-renderer-markdown-it": "^7.1.1",
     "hexo-server": "^3.0.0"
   },
   "devDependencies": {
-    "rimraf": "^5.0.5"
+    "rimraf": "^6.1.3"
   }
 }
