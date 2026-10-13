@@ -26,15 +26,31 @@
 
      @links: @primary-lighter;
      @visited-links: @fg-color;
-     @hover-links: @secondary-lighter;
+     @hover-links: @terceary-darker;
 
      @color-title: @fg-color;
      @color-text: @fg-color;
      @grey-border: @bg-darker;
 
      @error: @secondary-darker;
+
+     // Brand-role aliases (Brand Bible - scmm.yaml: color_roles).
+     // Sea green is the brand's true "secondary"/call-to-action family;
+     // sienna is reserved for warnings; Tiger's Eye is the single sparing accent.
+     @cta: @terceary;
+     @cta-lighter: @terceary-lighter;
+     @cta-darker: @terceary-darker;
+     @warn: @secondary;
+     @warn-lighter: @secondary-lighter;
+     @warn-darker: @secondary-darker;
+     @brand-accent: @accent;
+     @brand-accent-darker: @accent-darker;
+
+     // Legible, contrast-checked neutrals for code/syntax text on @bg-lighter.
+     @code-text: #4A4A54;
+     @code-muted: #6E6E78;
     }
-  
+
   .lengths(){
     @header-height: 70px;
     @nav-padding-top: 25px;
@@ -46,14 +62,28 @@
     @padding: 5vw;
   }
 
+  // A faint circuit-trace line, tying the "technology" half of the brand to a
+  // structural edge (see Brand Bible board_review: circuit-board motif).
+  // A run with 30-45deg diagonal jaunts (not pure right angles, per real PCB
+  // least-distance routing) and a couple of branch/via stubs for variety.
+  // Tiled at its native aspect ratio (background-size: auto 100%) rather than
+  // stretched to the container width — stretching non-uniformly flattens the
+  // diagonals into a smear, which is exactly what we don't want.
+  // @tint is the stroke/fill colour, URL-encoded (e.g. ~"%230D446D" for @primary).
+  .circuit-trace(@tint) {
+    background-image: ~'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 48%27%3E%3Cpath d=%27M0 40 L16 24 L54 24 L76 8 L130 8 L152 24 L210 24 L232 38 L290 38 L312 24 L370 24 L392 8 L450 8 L472 24 L540 24 L562 40 L600 40%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M100 8 L112 20%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M255 38 L255 46%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M410 8 L398 20%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M34 24 L24 14%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M180 24 L192 34%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Ccircle cx=%27112%27 cy=%2720%27 r=%272.2%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27255%27 cy=%2746%27 r=%271.8%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27398%27 cy=%2720%27 r=%272.2%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%2776%27 cy=%278%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27312%27 cy=%2724%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%2724%27 cy=%2714%27 r=%272%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27192%27 cy=%2734%27 r=%271.8%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27540%27 cy=%2724%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3C/svg%3E")';
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+  }
+
   .fonts(){
-    @title-font: Garamond;
-    @heading-font: Garamond;
-    @body-font: Roboto;
-    @cta-font: Baskerville;
+    @title-font: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    @heading-font: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    @body-font: 'Roboto', Arial, Helvetica, sans-serif;
+    @cta-font: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
 
-    @link-font: Roboto;
+    @link-font: 'Roboto', Arial, Helvetica, sans-serif;
 
-    @code-font: 'Roboto Mono';
+    @code-font: 'Roboto Mono', 'Courier New', monospace;
   }
 }

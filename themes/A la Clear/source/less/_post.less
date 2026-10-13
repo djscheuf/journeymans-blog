@@ -29,29 +29,53 @@
       max-width: 512px;
       justify-content: center;
       display: flex;
+      margin-bottom: 0.5em;
+      img {
+        border-radius: 6px;
+        box-shadow: 0 2px 10px rgba(42, 40, 40, 0.15);
+      }
     }
-  
+
     .entry-title {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
+      font-size: clamp(1.8em, 1.4em + 1.6vw, 2.6em);
+      line-height: 1.2;
+
+      p {
+        font-family: #lib.fonts[@cta-font];
+        font-style: italic;
+        font-weight: 400;
+        font-size: 0.46em;
+        color: #lib.colors[@cta-darker];
+        margin-top: 0.5em;
+        letter-spacing: 0;
+      }
     }
   
     .nav-links {
-      padding-top: 5px;
+      padding-top: 20px;
+      margin-top: 20px;
       display: flex;
       flex-direction: row;
       border-top: solid 1px #lib.colors[@grey-border];
       width: 100%;
       a {
         text-decoration: none;
-        color: #lib.colors[@fg-color];
+        color: #lib.colors[@cta-darker];
         text-transform: uppercase;
         letter-spacing: 0.2em;
-        font-family: #lib.fonts[@link-font];
+        font-family: #lib.fonts[@cta-font];
+        font-style: italic;
         font-size: 0.75em;
+        &:hover {
+          color: #lib.colors[@cta];
+        }
       }
       .meta-arraw {
-        opacity: 0.8;
+        opacity: 0.6;
       }
       .nav-previous {
         align-self: flex-end;
@@ -65,28 +89,40 @@
   
   .posted-on {
     text-align: center;
-    font-family: #lib.fonts[@heading-font];
-    font-size: 0.688em;
+    font-family: #lib.fonts[@link-font];
+    font-size: 0.75em;
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.18em;
+    color: #lib.colors[@code-muted];
     padding-top: #lib.lengths[@half-gap];
-  
+
     .age-warning {
-      background: #lib.colors[@bg-darker];
-      color: #lib.colors[@primary];
+      display: inline-block;
+      margin-left: 10px;
+      padding: 0.2em 0.6em;
+      border-radius: 3px;
+      background: fade(#lib.colors[@warn], 12%);
+      color: #lib.colors[@warn-darker];
       font-weight: bold;
+      letter-spacing: 0.08em;
     }
   }
-  
+
   .tags-links {
     text-align: center;
-    font-family: #lib.fonts[@link-font];
-    font-size: 0.800em;
-    font-style: normal;
+    font-family: #lib.fonts[@cta-font];
+    font-size: 0.850em;
+    font-style: italic;
     margin-bottom: 30px;
     a {
-      margin: 0 5px;
-      font-style: italic;
+      margin: 0 8px;
+      color: #lib.colors[@cta-darker];
+      text-decoration: none;
+      border-bottom: 1px solid fade(#lib.colors[@cta], 45%);
+      &:hover {
+        color: #lib.colors[@cta];
+        border-bottom-color: #lib.colors[@cta];
+      }
     }
     padding-top: #lib.lengths[@gap];
   }
@@ -95,6 +131,9 @@
     font-family: #lib.fonts[@body-font];
     line-height: 1.7;
     word-wrap: break-word;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
     ol,
     ul {
       margin: 0 0 1.5em 3em;
@@ -103,11 +142,29 @@
       list-style: disc;
     }
     blockquote {
+      position: relative;
+      font-family: #lib.fonts[@title-font];
+      font-style: italic;
+      font-size: 1.3em;
+      line-height: 1.6;
       color: #lib.colors[@fg-color];
-      margin: 1em 0;
-      padding: 0 0 0 30px;
-      border-left: 4px solid #lib.colors[@grey-border];
-      background-color: #lib.colors[@bg-lighter];
+      margin: 2em 0;
+      padding: 0 2.6em;
+      &:before {
+        content: '\201C';
+        position: absolute;
+        left: 0.1em;
+        top: -0.05em;
+        font-size: 2.6em;
+        line-height: 1;
+        color: #lib.colors[@primary-lighter];
+      }
+      p {
+        margin: 0 0 0.6em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
     p img {
       display: block;
@@ -120,13 +177,11 @@
       color: #lib.colors[@visited-links];
     }
     a:active,
-    a:focus,
     a:hover {
       color: #lib.colors[@hover-links];
       font-weight: bold;
-      opacity: 0.8;
     }
-  
+
     table {
       border: 1px solid #lib.colors[@grey-border];
       td {
