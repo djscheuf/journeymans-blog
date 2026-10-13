@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orchestrating Chaos — Take-Away Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --navy:#0B2340;
+  --navy-deep:#05101C;
+  --panel-line:#1E3A56;
+  --cream:#F6F5F2;
+  --ink:#0B2340;
+  --ink-soft:#4C5C6B;
+  --muted:#7E99AE;
+  --muted-dark:#8A97A1;
+  --line:#DADFE2;
+  --deep-blue:#005596;
+  --sky:#4597D3;
+  --teal:#5BC2A7;
+  --orange:#FF9300;
+  --yellow:#F5BB41;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--navy);
+  color:var(--ink);
+  font-family:'Carlito',Arial,sans-serif;
+}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3{margin:0;text-wrap:balance;}
+p{margin:0;}
+img{max-width:100%;display:block;}
+.eyebrow{
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  background:var(--navy);
+  color:var(--cream);
+  padding:72px 24px 56px;
+  overflow:hidden;
+}
+.hero-deco{
+  position:absolute;right:-60px;top:-60px;opacity:0.9;
+  width:420px;height:420px;
+}
+.hero-inner{
+  position:relative;
+  max-width:1040px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+}
+.hero-text{
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  flex:1;
+  min-width:300px;
+}
+.hero-photo{
+  flex-shrink:0;
+  width:220px;height:220px;border-radius:50%;overflow:hidden;
+  border:8px solid #FFFFFF;outline:1px solid rgba(255,255,255,.3);
+  box-shadow:0 22px 48px rgba(0,0,0,.4);
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;}
+.hero .eyebrow{color:var(--orange);}
+.hero h1{
+  font-weight:700;
+  font-size:clamp(44px,8vw,84px);
+  line-height:1.05;
+  letter-spacing:-1px;
+}
+.hero h1 span{color:var(--orange);}
+.hero h2{
+  font-weight:400;
+  font-size:clamp(20px,3vw,32px);
+  line-height:1.3;
+  color:#C7D4DD;
+  max-width:720px;
+}
+.hero p.lede{
+  font-size:clamp(17px,2.2vw,21px);
+  color:#C7D4DD;
+  line-height:1.55;
+  max-width:680px;
+}
+.byline{
+  display:flex;align-items:center;gap:18px;margin-top:10px;flex-wrap:wrap;
+}
+.bar{width:56px;height:4px;background:var(--teal);flex-shrink:0;}
+.byline-text p:first-child{font-size:21px;font-weight:700;}
+.byline-text p:last-child{font-size:17px;color:var(--muted);margin-top:2px;}
+
+/* ---------- Sections ---------- */
+.section{
+  background:var(--cream);
+  padding:52px 24px 56px;
+}
+.section-inner{max-width:1040px;margin:0 auto;}
+.section-head{display:flex;flex-direction:column;gap:12px;margin-bottom:34px;}
+.section-head h2{font-weight:700;font-size:clamp(30px,5vw,46px);color:var(--ink);}
+.section-head p{font-size:18px;color:var(--ink-soft);max-width:660px;line-height:1.5;}
+.section-head .eyebrow.c-orange{color:var(--orange);}
+.section-head .eyebrow.c-teal{color:var(--teal);}
+.section-head .eyebrow.c-blue{color:var(--deep-blue);}
+
+.cta-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  font-weight:700;font-size:14px;
+  color:var(--deep-blue);
+}
+.cta-chip svg{width:15px;height:15px;}
+
+/* ---------- Feature frame (full-width in-talk image) ---------- */
+.feature-frame{display:flex;justify-content:center;}
+.feature-frame img{
+  width:100%;max-height:520px;object-fit:cover;
+  border-radius:16px;border:8px solid #FFFFFF;outline:1px solid var(--line);
+  box-shadow:0 18px 40px rgba(11,35,64,.18);
+}
+
+/* ---------- Code reference cards ---------- */
+.app-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:24px;
+}
+.app-card{
+  display:flex;flex-direction:column;gap:14px;
+  background:#FFFFFF;border:1px solid var(--line);border-radius:16px;
+  padding:28px;box-shadow:0 14px 30px rgba(11,35,64,.1);
+  transition:transform .15s ease, box-shadow .15s ease;
+  cursor:pointer;
+  min-width:0;
+}
+.app-card:hover,.app-card:focus-visible{
+  transform:translateY(-4px);
+  box-shadow:0 18px 38px rgba(11,35,64,.18);
+  outline:none;
+}
+.app-icon{
+  width:60px;height:60px;border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.app-icon svg{width:30px;height:30px;}
+.app-card h3{font-size:22px;font-weight:700;color:var(--ink);line-height:1.25;}
+.app-card ul{
+  list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;
+  font-size:15px;color:var(--ink-soft);line-height:1.45;flex:1;
+}
+.app-card ul li{position:relative;padding-left:20px;}
+.app-card ul li::before{content:"\2022";position:absolute;left:3px;color:var(--orange);}
+.app-card .cta-chip{margin-top:4px;}
+
+/* ---------- Bookshelf ---------- */
+.shelf{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  gap:32px;
+  align-items:start;
+}
+.book{
+  display:flex;flex-direction:column;gap:14px;
+  cursor:pointer;
+  min-width:0;
+}
+.book-cover{
+  border:8px solid #FFFFFF;outline:1px solid var(--line);border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(11,35,64,.18);
+  transition:transform .15s ease, box-shadow .15s ease;
+  aspect-ratio:2/3;
+}
+.book-cover img{width:100%;height:100%;object-fit:cover;}
+.book:hover .book-cover,.book:focus-visible .book-cover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 50px rgba(11,35,64,.24);
+}
+.book h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.3;}
+
+/* ---------- Footer / closing band ---------- */
+.closing{
+  position:relative;
+  background:var(--navy);
+  color:var(--cream);
+  padding:64px 24px 48px;
+  overflow:hidden;
+}
+.closing-deco{
+  position:absolute;right:-20px;bottom:-40px;opacity:0.9;
+  width:360px;height:360px;
+}
+.closing-inner{
+  position:relative;
+  max-width:1040px;margin:0 auto;
+  display:flex;flex-direction:column;gap:26px;
+}
+.closing .eyebrow{color:var(--orange);}
+.closing h2{
+  font-weight:700;
+  font-size:clamp(28px,4.5vw,42px);
+  line-height:1.3;max-width:800px;
+}
+.closing h2 span{color:var(--orange);}
+.closing-links{display:flex;flex-wrap:wrap;gap:16px;padding-top:4px;}
+.closing-link{
+  display:inline-flex;align-items:center;gap:14px;
+  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.22);
+  border-radius:12px;padding:16px 22px;
+  font-weight:700;font-size:17px;color:var(--cream);
+  transition:background .15s ease, transform .15s ease;
+  cursor:pointer;
+}
+.closing-link svg{width:26px;height:26px;flex-shrink:0;}
+.closing-link:hover,.closing-link:focus-visible{background:rgba(255,255,255,0.14);transform:translateY(-2px);outline:none;}
+.closing-sig{
+  display:flex;align-items:center;gap:20px;border-top:1px solid rgba(255,255,255,0.15);padding-top:24px;
+}
+.closing-sig p:first-child{font-size:19px;font-weight:700;}
+.closing-sig p:last-child{font-size:16px;color:var(--muted);}
+
+@media (max-width:640px){
+  .hero,.section,.closing{padding-left:16px;padding-right:16px;}
+  .hero-deco{width:260px;height:260px;}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="hero-deco" viewBox="0 0 420 420">
+    <line x1="60" y1="340" x2="210" y2="120" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="360" y2="200" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="150" y2="300" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="320" y2="60" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="150" y1="300" x2="300" y2="340" stroke="#1E3A56" stroke-width="4"></line>
+    <circle cx="60" cy="340" r="16" fill="#5BC2A7"></circle>
+    <circle cx="320" cy="60" r="16" fill="#5BC2A7"></circle>
+    <circle cx="360" cy="200" r="16" fill="#5BC2A7"></circle>
+    <circle cx="150" cy="300" r="16" fill="#5BC2A7"></circle>
+    <circle cx="300" cy="340" r="16" fill="#5BC2A7"></circle>
+    <circle cx="210" cy="120" r="26" fill="#FF9300"></circle>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">All Day AI &middot; Build Track &middot; Take This With You</p>
+      <h1>Orchestrating <span>Chaos</span></h1>
+      <h2>The Take-Away Kit</h2>
+      <p class="lede">Everything referenced in the talk, in one place &mdash; the code to try this week, and the acumen that built it.</p>
+      <div class="byline">
+        <div class="bar"></div>
+        <div class="byline-text">
+          <p>Daniel Scheufler</p>
+          <p>Leading Software Engineering Excellently! &middot; Improving</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo"><img src="assets/new_profile_pic.jpg" alt="Daniel Scheufler"></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow c-blue">From the Talk</p>
+      <h2>Scaling Up the Swarm</h2>
+      <p>One dev, a team of agents, and a lot of worktrees running at once.</p>
+    </div>
+    <div class="feature-frame">
+      <img src="assets/Spinning-Up.jpg" alt="Spinning up an agent swarm across multiple worktrees">
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow c-orange">Code References</p>
+      <h2>Open These While It's Fresh</h2>
+      <p>Real skill structure, real evaluation, real workflow &mdash; tap a card to go straight to the source.</p>
+    </div>
+    <div class="app-grid">
+
+      <a class="app-card" href="https://github.com/djscheuf/agentic-dev-ecosystem-template/tree/main/.agents/skills/analyze-story" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#E8F1FB">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#4597D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.2a3.6 3.6 0 0 0-4.9 4.7L4 16.5 7.5 20l5.6-5.6a3.6 3.6 0 0 0 4.7-4.9l-2.6 2.6-1.9-1.9z"/></svg>
+        </div>
+        <h3>Example of a Single Skill</h3>
+        <ul>
+          <li>Shows skill structure, schemas, and a local validation script</li>
+          <li>Includes prompt evaluation cases</li>
+        </ul>
+        <span class="cta-chip">Open repo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="app-card" href="https://www.promptfoo.dev/" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#FFFFFF;border:2px solid var(--line)">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="200 325 200 200" xml:space="preserve">
+<style type="text/css">
+	.pf0{fill-rule:evenodd;clip-rule:evenodd;}
+	.pf1{fill-rule:evenodd;clip-rule:evenodd;fill:#FE2C06;}
+	.pf2{fill-rule:evenodd;clip-rule:evenodd;fill:#8A0A1C;}
+	.pf3{clip-path:url(#pfSVGID_2_);fill:url(#pfSVGID_3_);}
+	.pf4{fill-rule:evenodd;clip-rule:evenodd;fill:#FEFEFE;}
+	.pf5{fill:none;stroke:#373435;stroke-width:0.216;stroke-miterlimit:2.6131;}
+</style>
+<path class="pf0" d="M239.76,451.97l57.68,58.89l44.32-45.25l17.14,20.19l0.82,0.39c2.91,1.39,6.46,0.18,8.92-1.59
+	c3-2.16,4.96-6.2,2.81-9.64l-0.15-0.23l-14.86-18.08l-1.73,1.26l-1.92-2.28l0.63-0.89c2.67-3.81,4.08-8.31,4.08-12.96
+	c0-1.43-0.13-2.85-0.4-4.25l-0.17-0.88l0.78-0.57c0.39-0.28,0.77-0.57,1.15-0.87c3.97-3.07,7.52-6.66,10.95-10.3l2.63-2.79
+	l-12.29-14.28l0.42-0.85c2.25-4.48,3.96-9.42,5.18-14.28l0.06-0.24c1-4.07,1.73-8.35,1.89-12.55c0.28-7.08,0.51-14.19,0.34-21.28
+	l-0.09-3.95l-3.95-0.19c-4.18-0.2-8.51,0.1-12.66,0.59c-7.88,0.93-15.96,2.91-23.04,6.55l-1.31,0.67l-6.81-14.49l-22.75-9.51
+	l-22.75,9.51l-6.81,14.49l-1.31-0.67c-7.08-3.64-15.16-5.62-23.04-6.55c-4.15-0.49-8.48-0.79-12.66-0.59l-3.95,0.19l-0.09,3.95
+	c-0.17,7.09,0.07,14.19,0.34,21.28c0.16,4.19,0.89,8.48,1.89,12.55l0.06,0.24c1.21,4.86,2.92,9.8,5.17,14.28l0.42,0.85l-12.29,14.28
+	l2.63,2.79c3.43,3.64,6.99,7.23,10.95,10.3c0.05,0.04,0.1,0.08,0.16,0.12l0.43,0.33L239.76,451.97z"/>
+<polygon class="pf1" points="297.44,342.94 317.03,351.12 325.71,369.59 297.44,369.59 "/>
+<path class="pf1" d="M297.44,378.17l30.69,0.08l21,11.3c-17.23,2.09-30.37,3.73-51.69,3.82V378.17z"/>
+<path class="pf2" d="M277.11,410.95c2.19,0,3.96,1.77,3.96,3.96c0,2.19-1.77,3.96-3.96,3.96c-2.19,0-3.96-1.77-3.96-3.96
+	C273.15,412.73,274.93,410.95,277.11,410.95 M297.44,397.9c-14.38-0.27-29.37-1.15-45.9-3.06L228.15,422
+	c10.4,11.04,15.78,14.7,31.47,20.35c14.23,5.12,31.41,11.3,37.82,11.53v-9.3h-5.45c0,0-0.76-0.22-0.95-1.78
+	c-0.19-1.56,1.02-1.74,1.02-1.74h3v-4.61c0,0-4.29-2.23-5.27-5.2c-0.49-1.5-0.39-2.52-0.03-3.22c0.91-1.78,3.18-1.92,4.9-1.92h2.77
+	V397.9z"/>
+<path class="pf2" d="M297.44,457.61v15.67l-22.67-21.83C274.76,451.46,288.06,456.87,297.44,457.61"/>
+<path class="pf2" d="M241.65,439.37c0,0,9.12,4.38,15.61,6.74c6.49,2.35,10.56,3.57,10.56,3.57l29.62,29.06v26.05l-53.75-54.88
+	L241.65,439.37z"/>
+<path class="pf1" d="M317.76,410.95c-2.19,0-3.96,1.77-3.96,3.96c0,2.19,1.77,3.96,3.96,3.96c2.19,0,3.96-1.77,3.96-3.96
+	C321.72,412.73,319.94,410.95,317.76,410.95 M297.44,397.9c14.38-0.27,29.37-1.15,45.9-3.06L366.72,422
+	c-4.34,4.61-7.81,7.93-11.52,10.65c-3.49-7.74-11.27-13.13-20.31-13.13c-12.29,0-22.26,9.96-22.26,22.26c0,2.8,0.52,5.47,1.46,7.94
+	c-7.17,2.33-13.35,4.03-16.66,4.15v-9.3h5.45c0,0,0.76-0.22,0.95-1.78c0.19-1.56-1.02-1.74-1.02-1.74h-3v-4.61
+	c0,0,4.29-2.23,5.27-5.2c0.49-1.5,0.39-2.52,0.03-3.22c-0.91-1.78-3.18-1.92-4.9-1.92h-2.77V397.9z"/>
+<path class="pf1" d="M297.44,457.61v15.67l19.32-18.6c-0.37-0.51-0.71-1.04-1.03-1.59C311.02,454.76,303.43,457.14,297.44,457.61"/>
+<path class="pf1" d="M319.1,457.47l-21.67,21.26v26.05l40.05-40.89c-0.85,0.1-1.72,0.15-2.6,0.15
+	C328.72,464.04,323.14,461.53,319.1,457.47"/>
+<polygon class="pf2" points="297.44,342.94 277.84,351.12 269.16,369.59 297.44,369.59 "/>
+<path class="pf2" d="M297.44,378.17l-30.69,0.08l-21,11.3c17.23,2.09,30.37,3.73,51.69,3.82V378.17z"/>
+<g>
+	<defs>
+		<path id="pfSVGID_1_" d="M346.03,441.82c-0.02,6.13-5,11.09-11.14,11.09c-3.7,0-6.97-1.8-9-4.58L346.03,441.82z M334.89,430.64
+			c4.77,0,8.84,3,10.43,7.22l-21.17,6.85c-0.25-0.93-0.39-1.92-0.39-2.93C323.75,435.63,328.74,430.64,334.89,430.64z"/>
+	</defs>
+	<clipPath id="pfSVGID_2_">
+		<use xlink:href="#pfSVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<linearGradient id="pfSVGID_3_" gradientUnits="userSpaceOnUse" x1="337.0281" y1="446.659" x2="332.0381" y2="435.269">
+		<stop  offset="0" style="stop-color:#FE2C06"/>
+		<stop  offset="1" style="stop-color:#8A0A1C"/>
+	</linearGradient>
+	<rect x="323.75" y="430.64" class="pf3" width="22.27" height="22.27"/>
+</g>
+<path class="pf4" d="M314.09,449.72c-7.17,2.33-13.35,4.03-16.66,4.15c-3.95-0.14-12.01-2.55-20.94-5.58
+	c-1.72-2.33-2.54-4.33-2.78-6.87c-0.76-8.31,5.39-17.33,12.16-22.37c3.91-2.91,7.73-4.22,11.56-4.31c3.84,0.09,7.65,1.4,11.56,4.31
+	c3.12,2.32,6.1,5.48,8.34,9.03c-2.95,3.78-4.71,8.53-4.71,13.69C312.63,444.58,313.15,447.25,314.09,449.72 M271.15,402.86
+	c4.04-1.01,8.4-1.47,12.06,0.83c2.52,1.58,3.78,4.34,4.73,7.05l-2.89-0.4C285.06,410.33,279.25,405.44,271.15,402.86z
+	 M323.72,402.86c-4.04-1.01-8.4-1.47-12.06,0.83c-2.52,1.58-3.78,4.34-4.73,7.05l2.89-0.4
+	C309.81,410.33,315.62,405.44,323.72,402.86z M356.26,431.85c-0.35,0.27-0.71,0.54-1.06,0.8c-3.4-7.56-10.91-12.87-19.68-13.12
+	c-3.14-8.17-9.03-13.33-9.03-13.33s14.22,2.45,21.95,10.79C353.13,422.05,355.29,427.98,356.26,431.85z M238.61,431.85
+	c5.39,4.17,11.07,6.89,20.55,10.33c-1.08-2.77-2.63-8.46-1.45-16.48c1.72-11.65,10.67-19.49,10.67-19.49s-14.22,2.45-21.95,10.79
+	C241.74,422.05,239.58,427.98,238.61,431.85z M328.74,366.24l4.8,9.69c4.26-2.45,12.24-5.72,20.42-6.19c-0.31,5.7-1,11.13-3.28,16.6
+	l8.07,4.41c-2.89,1.68-7.5,2.64-10.54,3.47l8.3,11.4c0,0,6.41-12.34,6.94-25.84c0.53-13.5,0.34-21.01,0.34-21.01
+	S343.75,357.78,328.74,366.24z M266.13,366.24l-4.8,9.69c-4.26-2.45-12.24-5.72-20.42-6.19c0.31,5.7,1,11.13,3.28,16.6l-8.07,4.41
+	c2.89,1.68,7.5,2.64,10.54,3.47l-8.3,11.4c0,0-6.41-12.34-6.94-25.84c-0.53-13.5-0.34-21.01-0.34-21.01S251.12,357.78,266.13,366.24
+	z M339.15,431.49c2.84,1.18,5.09,3.49,6.17,6.38l-7.93,2.57c0.48-1.17,0.99-2.72,1.27-4.46
+	C338.97,434.06,339.1,432.53,339.15,431.49z M334.89,427.48c7.9,0,14.3,6.4,14.3,14.3c0,7.9-6.4,14.3-14.3,14.3
+	c-7.9,0-14.3-6.4-14.3-14.3C320.59,433.88,326.99,427.48,334.89,427.48z M334.89,423.42c10.14,0,18.36,8.22,18.36,18.36
+	s-8.22,18.36-18.36,18.36c-10.14,0-18.36-8.22-18.36-18.36S324.75,423.42,334.89,423.42z M346.54,460.75l2.7,2.95
+	c0,0,0.68-1.08,1.24-1.48c0.56-0.4,1.77-0.64,1.77-0.64l-2.62-3.11C349.62,458.46,348.18,460.03,346.54,460.75z M348.89,467.45
+	l12.66,14.91c0,0,1.76,0.84,4.61-1.2c2.85-2.05,1.68-3.93,1.68-3.93l-12.14-14.76L348.89,467.45z M327.61,440.33
+	c0,0,1.02-2.31,2.81-3.92c1.18-1.06,2.18-1.33,2.85-1.71c0.71-0.4,1.17-1.48,0.84-2.21c-0.32-0.72-1.25-1.08-2.51-0.64
+	c-1.75,0.6-3.51,1.52-5.01,3.68c-1.5,2.16-1.47,4.55-1.47,4.55L327.61,440.33z M297.44,426.1h2.77c1.72,0,4,0.14,4.9,1.92
+	c0.36,0.71,0.46,1.72-0.03,3.22c-0.97,2.97-5.27,5.2-5.27,5.2v4.61h3c0,0,1.21,0.19,1.02,1.74c-0.19,1.56-0.95,1.78-0.95,1.78h-5.45
+	h-5.45c0,0-0.76-0.22-0.95-1.78c-0.19-1.56,1.02-1.74,1.02-1.74h3v-4.61c0,0-4.29-2.23-5.27-5.2c-0.49-1.5-0.39-2.52-0.03-3.22
+	c0.91-1.78,3.18-1.92,4.9-1.92H297.44z M326.45,441.21c1.01,0,1.84,0.82,1.84,1.84s-0.82,1.84-1.84,1.84s-1.84-0.82-1.84-1.84
+	S325.44,441.21,326.45,441.21z"/>
+<path class="pf0" d="M277.11,418.87c2.19,0,3.96-1.77,3.96-3.96c0-2.19-1.77-3.96-3.96-3.96c-2.19,0-3.96,1.77-3.96,3.96
+	C273.15,417.1,274.93,418.87,277.11,418.87z M299.81,436.44c0,0,4.29-2.23,5.27-5.2c0.49-1.5,0.39-2.52,0.03-3.22
+	c-0.91-1.78-3.18-1.92-4.9-1.92h-2.77h-2.77c-1.72,0-4,0.14-4.9,1.92c-0.36,0.71-0.46,1.72,0.03,3.22c0.97,2.97,5.27,5.2,5.27,5.2
+	v4.61h-3c0,0-1.21,0.19-1.02,1.74c0.19,1.56,0.95,1.78,0.95,1.78h5.45h5.45c0,0,0.76-0.22,0.95-1.78c0.19-1.56-1.02-1.74-1.02-1.74
+	h-3V436.44z M313.8,414.91c0,2.19,1.77,3.96,3.96,3.96c2.19,0,3.96-1.77,3.96-3.96c0-2.19-1.77-3.96-3.96-3.96
+	C315.57,410.95,313.8,412.73,313.8,414.91z"/>
+<path class="pf5" d="M277.11,418.87c2.19,0,3.96-1.77,3.96-3.96c0-2.19-1.77-3.96-3.96-3.96c-2.19,0-3.96,1.77-3.96,3.96
+	C273.15,417.1,274.93,418.87,277.11,418.87z M299.81,436.44c0,0,4.29-2.23,5.27-5.2c0.49-1.5,0.39-2.52,0.03-3.22
+	c-0.91-1.78-3.18-1.92-4.9-1.92h-2.77h-2.77c-1.72,0-4,0.14-4.9,1.92c-0.36,0.71-0.46,1.72,0.03,3.22c0.97,2.97,5.27,5.2,5.27,5.2
+	v4.61h-3c0,0-1.21,0.19-1.02,1.74c0.19,1.56,0.95,1.78,0.95,1.78h5.45h5.45c0,0,0.76-0.22,0.95-1.78c0.19-1.56-1.02-1.74-1.02-1.74
+	h-3V436.44z M313.8,414.91c0,2.19,1.77,3.96,3.96,3.96c2.19,0,3.96-1.77,3.96-3.96c0-2.19-1.77-3.96-3.96-3.96
+	C315.57,410.95,313.8,412.73,313.8,414.91z"/>
+</svg>
+        </div>
+        <h3>Promptfoo</h3>
+        <ul>
+          <li>Prompt evaluation tool for testing &ldquo;does the prompt do the right job?&rdquo;</li>
+        </ul>
+        <span class="cta-chip">Open promptfoo.dev <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="app-card" href="https://github.com/djscheuf/agentic-dev-ecosystem-template/pull/9" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#E6EEF5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#005596" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6.2" r="2.1"/><circle cx="12" cy="18" r="2.1"/><circle cx="19" cy="6.2" r="2.1"/><path d="M6.7 8 10.6 16"/><path d="M17.3 8 13.4 16"/></svg>
+        </div>
+        <h3>Workflow Orchestration System</h3>
+        <ul>
+          <li>Pulls together off-the-shelf plus custom agentic skills for a deterministic workflow of agentic steps</li>
+        </ul>
+        <span class="cta-chip">Open PR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="app-card" href="https://code.claude.com/docs/en/hooks" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#FFF0DA">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F5BB41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="4.3" r="1.6" fill="#F5BB41" stroke="none"/><path d="M9 5.8v8a5.2 5.2 0 0 0 10.4 0v-2.6"/></svg>
+        </div>
+        <h3>Claude Hooks</h3>
+        <ul>
+          <li>Attach side-effects for rapid feedback to the AI as soon as it does work</li>
+        </ul>
+        <span class="cta-chip">Open docs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow c-teal">External Acumen</p>
+      <h2>Read These Next</h2>
+      <p>The acumen behind good delegation, and good system design comes from existing disciplines, not AI itself &mdash; tap a cover to dig in.</p>
+    </div>
+    <div class="shelf">
+
+      <a class="book" href="https://www.amazon.com/Leadership-Strategy-Tactics-Field-Manual/dp/1250226848" target="_blank" rel="noopener">
+        <div class="book-cover"><img src="assets/Leadership_Strategy_and_Tactics_cover.jpg" alt="Leadership Strategy and Tactics book cover"></div>
+        <h3>Leadership Strategy and Tactics</h3>
+        <span class="cta-chip">Open on Amazon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="book" href="https://www.amazon.com/Great-Mental-Models-Thinking-Concepts/dp/0593719972" target="_blank" rel="noopener">
+        <div class="book-cover"><img src="assets/Great_Mental_Models_cover.jpg" alt="The Great Mental Models book cover"></div>
+        <h3>The Great Mental Models</h3>
+        <span class="cta-chip">Open on Amazon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="book" href="https://www.amazon.com/o/asin/0321200683" target="_blank" rel="noopener">
+        <div class="book-cover"><img src="assets/Enterprise_Integration_Patterns_cover.jpg" alt="Enterprise Integration Patterns book cover"></div>
+        <h3>Enterprise Integration Patterns</h3>
+        <span class="cta-chip">Open on Amazon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-inner">
+    <div class="section-head">
+      <p class="eyebrow c-teal">Industry Reading</p>
+      <h2>Read these, to get started today</h2>
+      <p>Shorter than the books, aimed squarely at what you'll hit this week.</p>
+    </div>
+    <div class="app-grid">
+
+      <a class="app-card" href="https://www.improving.com/thoughts/how-to-onboard-ai-coding-agent/" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#E6F5EF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#5BC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7"/><path d="M8.5 12h7"/><path d="M8.5 16h4"/></svg>
+        </div>
+        <h3>How to Onboard Your AI Coding Agent</h3>
+        <ul>
+          <li>Treat a new agent like a new hire, not a magic box</li>
+        </ul>
+        <span class="cta-chip">Read on Improving <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="app-card" href="https://www.improving.com/thoughts/building-prompt-evaluation-habit/" target="_blank" rel="noopener">
+        <div class="app-icon" style="background:#E6F5EF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#5BC2A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7"/><path d="M8.5 12h7"/><path d="M8.5 16h4"/></svg>
+        </div>
+        <h3>Build the Prompt Evaluation Habit</h3>
+        <ul>
+          <li>Why "it worked once" isn't the same as "it works"</li>
+        </ul>
+        <span class="cta-chip">Read on Improving <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="closing">
+  <svg class="closing-deco" viewBox="0 0 420 420">
+    <line x1="60" y1="340" x2="210" y2="120" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="360" y2="200" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="150" y2="300" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="210" y1="120" x2="320" y2="60" stroke="#1E3A56" stroke-width="4"></line>
+    <line x1="150" y1="300" x2="300" y2="340" stroke="#1E3A56" stroke-width="4"></line>
+    <circle cx="60" cy="340" r="14" fill="#5BC2A7"></circle>
+    <circle cx="320" cy="60" r="14" fill="#5BC2A7"></circle>
+    <circle cx="360" cy="200" r="14" fill="#5BC2A7"></circle>
+    <circle cx="150" cy="300" r="14" fill="#5BC2A7"></circle>
+    <circle cx="300" cy="340" r="14" fill="#5BC2A7"></circle>
+    <circle cx="210" cy="120" r="22" fill="#FF9300"></circle>
+  </svg>
+  <div class="closing-inner">
+    <p class="eyebrow">Keep Building</p>
+    <h2>You don&rsquo;t need more agents. You need better <span>orchestration.</span></h2>
+    <div class="closing-links">
+      <a class="closing-link" href="mailto:daniel@scheufler.tech">
+        <svg viewBox="0 0 40 40" fill="none" stroke="#5BC2A7" stroke-width="3"><rect x="4" y="8" width="32" height="24" rx="4"/><path d="M6 10l14 12 14-12"/></svg>
+        <span>daniel@scheufler.tech</span>
+      </a>
+      <a class="closing-link" href="https://www.linkedin.com/in/danielscheufler/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#0077B5"></rect><text x="20" y="27" font-family="Arial" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle">in</text></svg>
+        <span>linkedin.com/in/danielscheufler</span>
+      </a>
+      <a class="closing-link" href="https://daniel.scheufler.tech/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 40 40" fill="none" stroke="#5BC2A7" stroke-width="3"><circle cx="20" cy="20" r="17"/><path d="M7 28l7-12 5 7 4-6 9 11z" fill="#5BC2A7" stroke="none"/></svg>
+        <span>daniel.scheufler.tech</span>
+      </a>
+    </div>
+    <div class="closing-sig">
+      <div class="bar"></div>
+      <div>
+        <p>Daniel Scheufler</p>
+        <p>Leading Software Engineering Excellently! &middot; Improving</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
