@@ -64,14 +64,13 @@
 
   // A faint circuit-trace line, tying the "technology" half of the brand to a
   // structural edge (see Brand Bible board_review: circuit-board motif).
-  // A run with 30-45deg diagonal jaunts (not pure right angles, per real PCB
-  // least-distance routing) and a couple of branch/via stubs for variety.
-  // Tiled at its native aspect ratio (background-size: auto 100%) rather than
-  // stretched to the container width — stretching non-uniformly flattens the
-  // diagonals into a smear, which is exactly what we don't want.
-  // @tint is the stroke/fill colour, URL-encoded (e.g. ~"%230D446D" for @primary).
-  .circuit-trace(@tint) {
-    background-image: ~'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 48%27%3E%3Cpath d=%27M0 40 L16 24 L54 24 L76 8 L130 8 L152 24 L210 24 L232 38 L290 38 L312 24 L370 24 L392 8 L450 8 L472 24 L540 24 L562 40 L600 40%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M100 8 L112 20%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M255 38 L255 46%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M410 8 L398 20%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M34 24 L24 14%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Cpath d=%27M180 24 L192 34%27 stroke=%27@{tint}%27 stroke-width=%271.6%27 fill=%27none%27 opacity=%270.45%27 stroke-linejoin=%27round%27 stroke-linecap=%27round%27/%3E%3Ccircle cx=%27112%27 cy=%2720%27 r=%272.2%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27255%27 cy=%2746%27 r=%271.8%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27398%27 cy=%2720%27 r=%272.2%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%2776%27 cy=%278%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27312%27 cy=%2724%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%2724%27 cy=%2714%27 r=%272%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27192%27 cy=%2734%27 r=%271.8%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3Ccircle cx=%27540%27 cy=%2724%27 r=%271.6%27 fill=%27@{tint}%27 opacity=%270.45%27/%3E%3C/svg%3E")';
+  // Artwork lives in source/images/circuit-trace.svg (brand primary baked in
+  // at the SVG level, since this theme has no CSS mask-based asset pipeline
+  // for dynamic tinting). Tiled at its native aspect ratio
+  // (background-size: auto 100%) rather than stretched to the container
+  // width — stretching non-uniformly flattens the diagonals into a smear.
+  .circuit-trace() {
+    background-image: ~'url("../images/circuit-trace.svg")';
     background-repeat: repeat-x;
     background-size: auto 100%;
   }
