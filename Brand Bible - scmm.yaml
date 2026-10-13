@@ -1,0 +1,194 @@
+# Brand Bible: the input that presentation-theme extraction (extract-presentation-theme) reads.
+# One file per brand. Fill what the brand owns; leave a field as "" or null if the brand has no rule.
+# Stage 3 maps these values to color roles and type styles. It does not invent brand values.
+# Extracted from SCMM_BrandingBoard_2025.pdf (single page). Fields the board does not state are left empty.
+template: brand-bible
+version: 1
+naming: "Brand Bible - <brand-slug>.yaml"   # saved by the author; pass the path to Stage 3
+
+brand:
+  id: "scmm"
+  name: "SCMM"
+  owner: ""                      # not stated on the board
+  status: draft                  # extracted from a branding board; not yet approved by the owner
+  last_reviewed: ""              # not stated on the board
+  notes: "Board tagline: 'Next Iteration, We should try ...' / 'Lead Software Engineering, Excellently!'. Board body text is lorem ipsum, so it is a layout sample, not brand copy."
+
+delivery:
+  screen_ratio: ""               # not stated on the board
+  platform: ""                   # not stated on the board
+  master_file: ""
+  handout_pdf: false
+
+fonts:
+  heading:
+    family: "Roboto"             # board: 'Heading Bold - Roboto', 'Heading Italics - Roboto'
+    fallback: "Arial"            # proposed system fallback, not stated on the board
+    weights_allowed: [Bold, Italic]
+    file: ""
+  body:
+    family: "Roboto"             # board: 'Body Bold / Body Italics - Roboto'
+    fallback: "Arial"            # proposed system fallback, not stated on the board
+    weights_allowed: [Regular, Bold, Italic]
+    file: ""
+  minimum_body_pt: null
+  minimum_handout_pt: null
+
+# Two serif families the board names for titles and call-to-action text.
+type_roles:
+  title:
+    family: "Garamond"           # board: 'Title Bold / Title Italics - Garamond (Serif)', colour #FG
+    fallback: "Georgia"          # proposed, not stated on the board
+    weights_allowed: [Bold, Italic]
+    color_role: foreground
+  call_to_action:
+    family: "Baskerville"        # board: 'Call to Action - Baskerville', colour #Secondary
+    fallback: "Georgia"          # proposed, not stated on the board
+    weights_allowed: [Italic]
+    color_role: secondary
+
+# Colour families. Each family has a base, a light and a dark variant, plus the wider
+# shade steps from the board's shade panel. Source: the panel's labelled hex codes
+# (read from a rotated, low-resolution render) and the coolors.co line.
+# Verify the panel codes against the source design file before approving.
+color_families:
+  primary:                       # Indigo
+    name: "Indigo dye"
+    base: "#0D446D"              # from coolors line and swatch; panel labels this step 0D436D (see review)
+    light: "#1A5582"
+    dark: "#053459"
+    shades:                      # lightest to darkest, panel order
+      - "#34688F"
+      - "#1A5582"
+      - "#0D436D"
+      - "#053459"
+      - "#022540"
+  secondary:                     # Sea green
+    name: "Sea green"
+    base: "#088750"              # from coolors line and swatch; panel's nearest step is 077445
+    light: "#148B58"
+    dark: "#005F36"
+    shades:
+      - "#30996C"
+      - "#148B58"
+      - "#077445"
+      - "#005F36"
+      - "#004427"
+  warn:                          # Sienna
+    name: "Sienna"
+    base: "#742607"              # from coolors line and swatch
+    light: "#A9370A"
+    dark: "#631C00"
+    shades:                      # panel 'Secondary color #1' group, lightest to darkest
+      - "#DF7246"
+      - "#CB4E1C"
+      - "#A9370A"
+      - "#8A2700"
+      - "#631C00"
+  accept:                        # Tiger's Eye
+    name: "Tiger's Eye"
+    base: "#A9650A"              # from coolors line and swatch
+    light: "#CB801C"
+    dark: "#8A4F00"
+    shades:                      # panel 'Complement color' group, lightest to darkest
+      - "#DF9E46"
+      - "#CB801C"
+      - "#A9650A"
+      - "#8A4F00"
+      - "#633900"
+
+# Neutrals. Raisin black is the base foreground; the rest are surfaces and dividers.
+neutrals:
+  foreground:
+    name: "Raisin black"
+    hex: "#2A2828"               # board label #FG; coolors line
+  surface_light:
+    name: "Anti-flash white"
+    hex: "#E9E9ED"               # board page background; coolors line
+  surface_lightest:
+    name: "Off-white"
+    hex: "#FBFAFA"               # unnamed swatch on the board
+  divider:
+    name: "Grey-blue"
+    hex: "#BCBCC8"               # unnamed swatch on the board; role not stated, confirm with owner
+  surface_dark: ""               # no dark theme shown on the board
+
+# Roles map colour families to jobs. Stage 3 assigns theme colours from these, not from guesses.
+color_roles:
+  foreground: neutrals.foreground
+  background: neutrals.surface_light
+  primary: color_families.primary.base      # headings, primary chart series, key data
+  secondary: color_families.secondary.base  # call to action, secondary series
+  warn: color_families.warn.base            # warnings, error emphasis (board: 'Warn')
+  accept: color_families.accept.base        # success, confirmation (board: 'Accept')
+  accent: color_families.accept.base        # board labels Tiger's Eye 'Accent'; same colour as accept
+  tertiary: color_families.warn.base        # board labels Sienna 'Terceary' (as printed)
+
+accent:
+  primary_action: "#A9650A"                 # board labels Tiger's Eye 'Accent'; the one accent for action or key data
+  use_sparingly_rule: ""                    # not stated on the board
+
+palette:
+  # Flat list of every brand colour, for tools that read a list. Derived from color_families and neutrals above.
+  # Stage 3 assigns each colour to a role; it must not add colours.
+  - {name: "Raisin black",       hex: "#2A2828", source: "board label #FG"}
+  - {name: "Indigo dye",         hex: "#0D446D", source: "board label #Primary"}
+  - {name: "Tiger's Eye",        hex: "#A9650A", source: "board label #Accent"}
+  - {name: "Sea green",          hex: "#088750", source: "board label #Secondary"}
+  - {name: "Sienna",             hex: "#742607", source: "board label #Terceary (as printed)"}
+  - {name: "Anti-flash white",   hex: "#E9E9ED", source: "board background"}
+  - {name: "Off-white",          hex: "#FBFAFA", source: "unnamed swatch"}
+  - {name: "Grey-blue",          hex: "#BCBCC8", source: "unnamed swatch"}
+
+logo:
+  files: []                      # board shows three logo variants; source files not in the PDF
+  variants:
+    - name: "Mountain and star, black"
+      background: "#E9E9ED"
+      file: ""
+    - name: "N and I over mountains"
+      background: "#E9E9ED"
+      file: ""
+    - name: "Mountain and star, solid black"
+      background: "#E9E9ED"
+      file: ""
+  clear_space: ""
+  minimum_size: ""
+  placement: ""
+  forbidden: []
+
+imagery:
+  style: "Tech and circuit-board line motifs; indigo circle with a figure on a summit; laptop and code photography. Board shows these as 'Themeing Image' examples."
+  photo_overlay_rule: ""
+  icon_set: ""
+  # Board review: two of the three photos carry Shutterstock watermarks. Do not use them in
+  # delivered decks without a licence. Replace before any external use.
+  licence_warnings:
+    - "Watermarked Shutterstock images on the board (laptop, abstract wave). Licence status unknown."
+
+charts:
+  series_palette_order: []     # board shows shade panels but gives no series order; propose one for owner approval
+  gridlines: ""
+  label_rule: ""
+  forbidden: []
+
+accessibility:
+  stricter_than_wcag: ""
+  required_alt_text_rule: ""
+  required_contrast_pairs: []  # the board records no checked contrast ratios
+
+sources:
+  - "SCMM_BrandingBoard_2025.pdf (5 ⚙️ Systems/), single-page branding board. Extracted 2026-10-06."
+
+board_review:
+  # Items found on the board that the bible did not previously capture, or that need a decision.
+  - "Shade panel: 5 steps for Indigo, Sea green, Sienna and Tiger's Eye, plus a wider 'Secondary color #1' and 'Complement color' group."
+  - "Indigo base conflict: the coolors line and swatch say 0D446D; the shade panel labels the same step 0D436D. Confirm which is correct."
+  - "Sea green base conflict: the coolors line says 088750; the shade panel's nearest step is 077445. Confirm the base."
+  - "Panel hex codes were read from a rotated, low-resolution render. Confirm them against the source design file."
+  - "Warn and Accept roles (Sienna, Tiger's Eye) are from the brief, not from the board itself. The board names Tiger's Eye 'Accent' and Sienna 'Terceary'."
+  - "Circuit-board line art runs as a header and side-strip motif. Not captured as a brand element yet."
+  - "Header band: Garamond title with a 'Lead Software Engineering' subtitle over the circuit motif. Not captured as a layout rule."
+  - "'Themeing Image' heading is set in the Secondary colour in Roboto. The board does not state its size or weight."
+  - "Watermarked stock images, see imagery.licence_warnings."
+  - "Grey-blue #BCBCC8 has no stated role."
