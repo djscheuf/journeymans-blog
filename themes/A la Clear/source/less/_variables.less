@@ -26,15 +26,31 @@
 
      @links: @primary-lighter;
      @visited-links: @fg-color;
-     @hover-links: @secondary-lighter;
+     @hover-links: @terceary-darker;
 
      @color-title: @fg-color;
      @color-text: @fg-color;
      @grey-border: @bg-darker;
 
      @error: @secondary-darker;
+
+     // Brand-role aliases (Brand Bible - scmm.yaml: color_roles).
+     // Sea green is the brand's true "secondary"/call-to-action family;
+     // sienna is reserved for warnings; Tiger's Eye is the single sparing accent.
+     @cta: @terceary;
+     @cta-lighter: @terceary-lighter;
+     @cta-darker: @terceary-darker;
+     @warn: @secondary;
+     @warn-lighter: @secondary-lighter;
+     @warn-darker: @secondary-darker;
+     @brand-accent: @accent;
+     @brand-accent-darker: @accent-darker;
+
+     // Legible, contrast-checked neutrals for code/syntax text on @bg-lighter.
+     @code-text: #4A4A54;
+     @code-muted: #6E6E78;
     }
-  
+
   .lengths(){
     @header-height: 70px;
     @nav-padding-top: 25px;
@@ -46,14 +62,27 @@
     @padding: 5vw;
   }
 
+  // A faint circuit-trace line, tying the "technology" half of the brand to a
+  // structural edge (see Brand Bible board_review: circuit-board motif).
+  // Artwork lives in source/images/circuit-trace.svg (brand primary baked in
+  // at the SVG level, since this theme has no CSS mask-based asset pipeline
+  // for dynamic tinting). Tiled at its native aspect ratio
+  // (background-size: auto 100%) rather than stretched to the container
+  // width — stretching non-uniformly flattens the diagonals into a smear.
+  .circuit-trace() {
+    background-image: ~'url("../images/circuit-trace.svg")';
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+  }
+
   .fonts(){
-    @title-font: Garamond;
-    @heading-font: Garamond;
-    @body-font: Roboto;
-    @cta-font: Baskerville;
+    @title-font: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    @heading-font: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    @body-font: 'Roboto', Arial, Helvetica, sans-serif;
+    @cta-font: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
 
-    @link-font: Roboto;
+    @link-font: 'Roboto', Arial, Helvetica, sans-serif;
 
-    @code-font: 'Roboto Mono';
+    @code-font: 'Roboto Mono', 'Courier New', monospace;
   }
 }

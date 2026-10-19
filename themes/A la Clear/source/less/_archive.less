@@ -5,17 +5,38 @@
 		flex-direction: column;
 	}
 	h2.year {
-		color: #lib.colors[@fg-color];
+		font-family: #lib.fonts[@title-font];
+		color: #lib.colors[@primary];
+		border-bottom: 2px solid #lib.colors[@grey-border];
+		padding-bottom: 0.3em;
 	}
 	ul.list {
 		padding-left: 50px;
 		li {
 			line-height: 1.5;
 			padding: 10px 0;
+			border-bottom: 1px solid #lib.colors[@grey-border];
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		a {
+			color: #lib.colors[@fg-color];
+			text-decoration: none;
+			font-weight: 600;
+			&:hover {
+				color: #lib.colors[@primary];
+				text-decoration: underline;
+			}
 		}
 	}
 	.date {
-		color: #lib.colors[@bg-darker];
+		display: inline-block;
+		min-width: 90px;
+		font-family: #lib.fonts[@link-font];
+		font-size: 0.8em;
+		letter-spacing: 0.04em;
+		color: #lib.colors[@code-muted];
 		margin-right: 30px;
 	}
 }

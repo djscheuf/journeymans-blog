@@ -3,26 +3,40 @@
 	flex-direction: column;
 	.headline {
 		align-self: center;
+		text-align: center;
+		margin-bottom: 1.5em;
 		.mugshot {
 			display: block;
 			font-size: 12px;
-			margin: 0 auto;
+			margin: 0 auto 1em;
+			width: 112px;
+			height: 112px;
+			object-fit: cover;
+			border-radius: 50%;
+			border: 3px solid #lib.colors[@bg-lighter];
+			box-shadow: 0 0 0 1px #lib.colors[@grey-border];
 		}
 		.name {
-			font-size: 18px;
-			font-weight: bold;
+			font-family: #lib.fonts[@title-font];
+			font-size: 1.8em;
+			font-weight: 700;
+			letter-spacing: -0.01em;
 			text-align: center;
 		}
 		.slug {
 			align-self: center;
-			font-size: 14px;
+			font-family: #lib.fonts[@cta-font];
+			font-size: 1em;
 			font-style: italic;
+			color: #lib.colors[@cta-darker];
+			margin-top: 0.2em;
 		}
 	}
 	.blurb-desc {
 		align-self: center;
-		font-size: 16px;
-		max-width: 1000px;
+		font-size: 17px;
+		line-height: 1.7;
+		max-width: 640px;
 	}
 	a {
 		text-decoration: underline;

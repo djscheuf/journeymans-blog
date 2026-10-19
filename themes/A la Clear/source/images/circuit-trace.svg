@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 48">
+  <!-- Brand circuit-trace motif: see Brand Bible board_review (circuit-board
+       line art). One run with 30-45deg diagonal jaunts, not pure right
+       angles, plus branch/via terminations for variety. Tiled via
+       background-repeat: repeat-x / background-size: auto 100% so the real
+       aspect ratio (and therefore the angles) is preserved at any width. -->
+  <g stroke="#0D446D" stroke-width="1.6" fill="none" opacity="0.45"
+     stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 40 L16 24 L54 24 L76 8 L130 8 L152 24 L210 24 L232 38 L290 38
+             L312 24 L370 24 L392 8 L450 8 L472 24 L540 24 L562 40 L600 40" />
+    <path d="M100 8 L112 20" />
+    <path d="M255 38 L255 46" />
+    <path d="M410 8 L398 20" />
+    <path d="M34 24 L24 14" />
+    <path d="M180 24 L192 34" />
+  </g>
+  <g fill="#0D446D" opacity="0.45">
+    <circle cx="112" cy="20" r="2.2" />
+    <circle cx="255" cy="46" r="1.8" />
+    <circle cx="398" cy="20" r="2.2" />
+    <circle cx="76" cy="8" r="1.6" />
+    <circle cx="312" cy="24" r="1.6" />
+    <circle cx="24" cy="14" r="2" />
+    <circle cx="192" cy="34" r="1.8" />
+    <circle cx="540" cy="24" r="1.6" />
+  </g>
+</svg>
