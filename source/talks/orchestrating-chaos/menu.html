@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f3f2ec">
+<title>Daniel’s All Day AI · October 22</title>
+<style>
+:root{--paper:#f3f2ec;--ink:#183b37;--muted:#53645e;--line:#cbd2c8;--accent:#006957;--lime:#dfff8e}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 Georgia,serif}a{color:inherit;text-underline-offset:4px}button,input,.sans,nav,.meta,.time,.speaker,.action,footer{font-family:Arial,sans-serif}::selection{background:var(--lime);color:var(--ink)}:focus-visible{outline:3px solid #b84c20;outline-offset:5px}header,main,footer{max-width:1200px;margin:auto;padding:0 32px}header{padding-top:42px;padding-bottom:30px}.masthead{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--ink);padding-bottom:14px;font:700 15px Arial,sans-serif;letter-spacing:.08em}.masthead span{font-weight:400;letter-spacing:0}h1{font-size:clamp(38px,6vw,72px);font-weight:400;letter-spacing:-.035em;line-height:1.05;margin:30px 0 16px}h1 em{color:var(--accent)}.intro{max-width:70ch;color:var(--muted);margin:0;font:16px/1.6 Arial,sans-serif}.toolbar{position:sticky;top:0;z-index:5;background:var(--paper);border-block:1px solid var(--line)}nav{max-width:1200px;margin:auto;padding:14px 32px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}nav a,button{background:transparent;border:1px solid var(--line);padding:9px 14px;font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;border-radius:6px}nav a:hover,button:hover{background:#e1e8dd}nav a:first-child{background:var(--ink);color:#fff;border-color:var(--ink)}#clock{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}.spotlight{margin:30px 0 36px;background:var(--ink);color:#f8f7ed;border-radius:14px;padding:28px;display:grid;grid-template-columns:1fr 150px;gap:20px}.spotlight h2{font-size:clamp(26px,3vw,38px);font-weight:400;line-height:1.15;max-width:28ch;margin:12px 0}.spotlight .meta{color:var(--lime)}.spotlight img{width:150px;height:180px;object-fit:cover;border-radius:8px;grid-column:2;grid-row:1 / span 3}.spotlight p{margin:8px 0}.spotlight .action{background:var(--lime);color:var(--ink);display:inline-flex;padding:12px 20px;text-decoration:none;border-radius:6px;font-weight:700;margin-top:8px}.spotlight small{display:block;color:#d7e4dc;margin-top:10px;font-family:Arial,sans-serif}.agenda-head{display:flex;align-items:baseline;gap:20px;justify-content:space-between}.agenda-head h2{font-size:30px;font-weight:400;margin:0}.agenda-head p{color:var(--muted);font-size:13px}.slot{display:grid;grid-template-columns:135px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line);scroll-margin-top:100px}.time{font-weight:700;font-size:19px;font-variant-numeric:tabular-nums}.time small{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:5px}.state{display:inline-block;font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-top:10px}.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{display:flex;flex-direction:column;background:#fffef9;border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;transition:background .18s,transform .18s}.card:hover{background:#eaf0e4;transform:translateY(-2px)}.meta{font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;display:flex;flex-wrap:wrap;gap:8px;color:var(--accent)}.meta span+span{color:var(--muted)}.card h3{font-size:23px;line-height:1.25;font-weight:400;margin:18px 0 22px;text-wrap:pretty}.speaker{display:flex;gap:12px;align-items:center;margin-top:auto;font-size:14px}.portrait{width:58px;height:64px;object-fit:cover;border-radius:6px;background:#e1e8dd;flex-shrink:0}.speaker strong{display:block}.speaker small{display:block;color:var(--muted);margin-top:2px;font-size:12px}.card .action{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;margin-top:22px;border-top:1px solid var(--line);padding-top:14px}.arrow{width:18px;height:18px}.note{font:13px/1.5 Arial,sans-serif;color:var(--muted);margin:0 0 12px;grid-column:1/-1}.prep{padding:22px;background:#e4e9dc;border-radius:12px}.prep h3{margin:0 0 8px;font-size:25px;font-weight:400}.prep p{margin:0;font:14px/1.6 Arial,sans-serif}.own .card{background:var(--ink);color:#fffef9;border-color:var(--ink);grid-column:1/-1}.own .card h3{font-size:32px}.own .card .meta,.own .card .action{color:var(--lime)}.own .card small,.own .meta span+span{color:#d7e4dc}.own .card:hover{background:#245047}.live .time{color:var(--accent)}.live .card{outline:2px solid var(--accent);outline-offset:2px}.past .time{color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:24px;padding-bottom:36px;color:var(--muted);font-size:12px;line-height:1.8}noscript{display:block;padding:30px}body{scrollbar-color:var(--accent) var(--paper)}@media(min-width:1000px){.choices:has(.card:only-child) .card{display:grid;grid-template-columns:1fr 230px;column-gap:30px}.choices:has(.card:only-child) .meta{grid-column:1}.choices:has(.card:only-child) h3{grid-column:1;grid-row:2;margin-bottom:0}.choices:has(.card:only-child) .speaker{grid-column:2;grid-row:1/3;margin:auto 0}.choices:has(.card:only-child) .action{grid-column:1/-1}}@media(max-width:650px){header,main,footer{padding-left:20px;padding-right:20px}header{padding-top:24px}.masthead{font-size:12px}.masthead span{max-width:125px;text-align:right}nav{padding:10px 20px;gap:8px}nav a,button{padding:8px 10px;font-size:12px}#clock{width:100%;margin:0}.spotlight{padding:22px;grid-template-columns:1fr 74px}.spotlight img{width:74px;height:90px}.spotlight h2{grid-column:1/-1;font-size:28px}.spotlight .details{grid-column:1/-1}.spotlight .meta{max-width:22ch}.slot{grid-template-columns:1fr;gap:16px;padding:22px 0}.time small{display:inline;margin-left:8px}.state{margin:0 0 0 12px}.choices{grid-template-columns:1fr}.agenda-head{display:block}.agenda-head p{margin:5px 0 20px}.card{padding:20px}.card h3{font-size:24px}.own .card h3{font-size:29px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="masthead">ALL DAY AI <span>Thursday · October 22, 2026</span></div>
+<h1>A day of ideas.<br><em>Your own itinerary.</em></h1>
+<p class="intro">Daniel’s shortlist, from the first session to the last. All times are US Central (CDT, UTC−05:00). Choose a card to open its stage in a new tab; simultaneous options stay together.</p>
+</header>
+<div class="toolbar"><nav aria-label="Agenda navigation"><a href="#agenda">Full agenda</a><button id="jump" type="button">Now / next</button><a href="#my-talk">My talk · 3 PM</a><span id="clock" aria-live="off"></span></nav></div>
+<main>
+<section class="spotlight" aria-labelledby="spotlight-title">
+<div class="meta">Your turn · Stage 1 · 3:00–3:30 PM CDT</div>
+<img src="https://www.alldayai.com/public/images/speakers/daniel-scheufler-final-20261019.webp" alt="Daniel Scheufler" width="150" height="180">
+<h2 id="spotlight-title">Orchestrating Chaos or how I learned to love my Agentic Team</h2>
+<div class="details"><p class="sans">Daniel Scheufler · Improving</p><a class="action backstage" target="_blank" rel="noopener noreferrer">Go Backstage</a><small>Opens Stage 1. Navigate to backstage from there. Published time: 4:00 PM Eastern.</small></div>
+</section>
+<section id="agenda" aria-labelledby="agenda-title"><div class="agenda-head"><h2 id="agenda-title">The running order</h2><p>33 selected talks · alternatives included · 30-minute sessions</p></div><div id="sessions"></div></section>
+<noscript>This agenda needs JavaScript to display its cards. Please enable it, or visit <a href="https://www.alldayai.com/schedule">the official schedule</a>.</noscript>
+</main>
+<footer>Curated from your October 21 topics note and the <a href="https://www.alldayai.com/schedule" target="_blank" rel="noopener noreferrer">official All Day AI schedule</a>. Schedule snapshot: October 21, 2026; check the official page for changes. Speaker photos load from All Day AI and require internet access. Stage access may require your event login. CDT is one hour behind the published Eastern times.</footer>
+<script>
+const base='https://app.zuddl.com/anaconda/l/event/bebeaaba-847b-4621-8ee1-73d1cb0b1f71/stages/';
+const stages={1:'d4eeb3ce-6dce-4d80-841d-9e0db6ee83fa',2:'948d2a65-10fe-43be-8907-4c873f4201e3',3:'34094e8a-52cf-48df-bdcf-33bb9bd0e45a',4:'716066a2-1ebf-486b-b9a5-82e308c68fbd',K:'29ff527a-cc87-4ebd-ab45-8bca9f34ed3f'};
+const talks=[
+['0600',3,'LEAD','From AI literacy to AI adoption: Building Employee Trust in Generative AI','Praveena Thevisuthan','Excelsia University College Australia','praveena-thevisuthan'],
+['0600','K','LEAD','Your AI Coding Bill Isn’t the Problem','Emilie Schario','Anaconda','emilie-schario'],
+['0630',2,'SECURE','Legal Implications under EU Law When Deploying AI Agents','Mirela Takacs','Takacs Mirela Law Office','mirela-takacs'],
+['0700',2,'BUILD','Using Task-Specific Small Language Models to Handle Sensitive Data','Hossein Kazemi','Astorna','hossein-kazemi'],
+['0730',3,'LEAD','The Rebuilder: Reinventing AI Leadership','Peter van Sabben','Rebuilders.ai','peter-van-sabben','Your preferred pick'],
+['0730',1,'BUILD','Agents Hallucinate Your Numbers: Lessons from Shipping a Data-Analysis MCP','Jan-Willem Bobbink','11 Internet','jan-willem-bobbink'],
+['0800',3,'LEAD','The Burning Library: Why AI Should Unleash Your People, Not Replace Them','Simone Eckelt','KI.ProExperts GmbH','simone-eckelt'],
+['0800',4,'SECURE','AISecOps: Securing at Machine Speed','Sean D. Mack','ISMG','sean-mack'],
+['0830',3,'LEAD','The AI Rubber Band: Managing Speed, Risk, and Value','Marc Cluet','UBS','marc-cluet'],
+['0900',3,'LEAD','Who Owns the Agent? Five Operating-Model Decisions Before Enterprise AI Scales','Youssef Bouguerra','Newstart','youssef-bouguerra'],
+['0900',4,'SECURE',"There's No Such Thing as a Simple Chatbot: Tradeoffs in Security, Confidentiality, and Performance",'Anthony Matejczyk','Matejczyk Group Inc.','anthony-matejczyk'],
+['0930',3,'LEAD','Turning It Up To 11: Protecting People from AI-Driven Work Pressures','Kara Burgan & Deanna Stanley','MITRE','kara-burgan'],
+['0930',4,'SECURE','Testing the Human Attack Surface of AI Companions and Assistants','Chuck Tyler','Veterans Intellectual Property','chuck-tyler'],
+['1000',4,'SHIP','The Dashboard Was Trusted. The Chatbot Wasn’t: Designing Enterprise AI People Will Actually Use','Saurin Patel','Royal Cyber','saurin-patel'],
+['1030',2,'BUILD','Your Own AI On-Call Engineer: From Raw Logs to Root Cause, With Receipts?','Dmitry Orlyakov','Big Tech','dmitry-orlyakov'],
+['1100',1,'SECURE','Your AI Agent Has Permission. But Whose Permission?','Staford Titus Selvaraj','Charlemagne Labs','staford-titus-selvaraj'],
+['1100','K','LEAD','The Indispensability Trap: What If We’re Building for the Wrong AI Future?','Alan Shimel','Techstrong Group','alan-shimel'],
+['1130',4,'SECURE','Tamper-Evident ML: Chain of Custody for Field Detections','Mayur Jain','Bridgestone Americas','mayur-jain'],
+['1130','K','SECURE','Title to be announced','Tiarne Hawkins','Optica Labs','tiarne-hawkins','Tentative · title unannounced'],
+['1200','K','LEAD','Over The Hump ; Getting Everyone in an enterprise to be AI Native','Colin Wynd','Mastercard','colin-wynd'],
+['1200',2,'BUILD','Beyond PDF chat: building AI extraction with an evidence trail','Abdullah Rashid','Cleartraced','abdullah-rashid'],
+['1230',4,'SHIP','Building Amid the Buzz: A Pragmatic Take on MCP, AI, and APIs','Cristina Flaschen','Pandium','cristina-flaschen','Maybe · or take a break'],
+['1300',3,'BUILD','Observational AI Engineering','Brian Ray','Formerly Atos','brian-ray'],
+['1300',2,'SECURE','Agents Signing Contracts: Legal Authority and Liability for Autonomous AI','Sam Shaddox','Talairis','sam-shaddox'],
+['1300','K','SECURE','Title to be announced','Chris Hughes','Resilient Cyber','chris-hughes','Tentative · title unannounced'],
+['1330',4,'SHIP','Ship Agency, Not Just Algorithms: A Rapid Research Toolkit for AI Trust','Jenni Cyrek','Northwest University','jenni-cyrek'],
+['1330',3,'BUILD','Automating Competitor Analysis: Building an AI-Based Tagging Tool for Ad Funnels','Aleksandra Prygunova','NDA / ex-Tinkoff','aleksandra-prygunova'],
+['1400','K','BUILD','One of these tokens is not like the other','Chris Clark','OpenRouter','chris-clark'],
+['1430','K','Track TBC','Coding Faster Isn’t Shipping Faster: Getting AI Prototypes Past the Hidden Hurdles to Production','Anna Litvak-Hinenzon','','anna-litvak-hinenzon'],
+['1500',4,'SHIP','Your AI Does Not Have a Point of View: Build a PMM Workflow That Does','Mac Gupta','Precision GTM, LLC','mac-gupta'],
+['1600',1,'BUILD','Orchestrating Chaos or how I learned to love my Agentic Team','Daniel Scheufler','Improving','daniel-scheufler','Your talk'],
+['1630',3,'LEAD','Your AI Strategy Isn’t a Strategy Until It Changes the Work How to Turn AI Ambition Into Execution, Accountability & Measurable Results','Stephen Smith','BrightFlare Performance Solutions','stephen-smith','Only if Q&A allows'],
+['1700',1,'BUILD','Kite Flying and Plate Spinning: Orchestrating Longer-Running, and More Independent Agents','Chris Lucian','Hunter Industries','chris-lucian-1']
+];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const instant=t=>new Date(`2026-10-22T${t.slice(0,2)}:${t.slice(2)}:00-04:00`);
+const fmt=d=>new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'}).format(d);
+const arrow='<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>';
+const groups=Map.groupBy?Map.groupBy(talks,t=>t[0]):talks.reduce((m,t)=>m.set(t[0],[...(m.get(t[0])||[]),t]),new Map());
+groups.set('1530',[]);
+const container=document.getElementById('sessions');
+for(const [time,items] of [...groups].sort((a,b)=>a[0].localeCompare(b[0]))){
+ const own=time==='1600',start=instant(time),end=new Date(+start+1800000),slot=document.createElement('section');
+ slot.className='slot'+(own?' own':'');slot.id=own?'my-talk':`slot-${time}`;slot.dataset.start=start.toISOString();slot.dataset.end=end.toISOString();slot.setAttribute('aria-label',`${fmt(start)} Central${own?' · your talk':''}`);
+ slot.innerHTML=`<div class="time"><time datetime="${start.toISOString()}">${fmt(start)}</time><small>to ${fmt(end)} CDT</small><span class="state"></span></div><div class="choices">${time==='1530'?'<div class="prep"><h3>Mic check. Deep breath.</h3><p>Prep for your 3:00 PM talk. Get into Stage 1 and navigate backstage before you go live.</p><p><a target="_blank" rel="noopener noreferrer" href="'+base+stages[1]+'">Go Backstage — via Stage 1</a></p></div>':items.map(t=>`<a class="card" href="${base+stages[t[1]]}" target="_blank" rel="noopener noreferrer" aria-label="${esc(t[3])} — ${own?'Go Backstage via Stage 1':'Go To '+(t[1]==='K'?'Keynote Stage':'Stage '+t[1])} (opens in a new tab)"><div class="meta">${esc(t[2])}<span>${t[1]==='K'?'Keynote stage':'Stage '+t[1]}</span>${t[7]?'<span>'+esc(t[7])+'</span>':''}</div><h3>${esc(t[3])}</h3><div class="speaker"><img class="portrait" src="https://www.alldayai.com/public/images/speakers/${t[6]}-final-20261019.webp" alt="${esc(t[4].split(' & ')[0])}" width="58" height="64" loading="lazy"><div><strong>${esc(t[4])}</strong><small>${esc(t[5])}</small></div></div><span class="action">${own?'Go Backstage':'Go To Stage'}${arrow}</span></a>`).join('')}</div>`;
+ if(time==='1630')slot.querySelector('.choices').insertAdjacentHTML('afterbegin','<p class="note">Q&A comes first. This is an optional session if you finish in time.</p>');
+ container.append(slot);
+}
+document.querySelectorAll('.backstage').forEach(a=>a.href=base+stages[1]);
+document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;},{once:true}));
+function update(){
+ const now=new Date();document.getElementById('clock').textContent=fmt(now)+' CDT · '+new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',month:'short',day:'numeric'}).format(now);
+ const slots=[...document.querySelectorAll('.slot')],next=slots.find(s=>new Date(s.dataset.end)>now);
+ slots.forEach(s=>{const live=now>=new Date(s.dataset.start)&&now<new Date(s.dataset.end);s.classList.toggle('live',live);s.classList.toggle('past',now>=new Date(s.dataset.end));s.querySelector('.state').textContent=live?'Now':s===next?'Up next':'';});
+ document.getElementById('jump').textContent=next?'Now / next':'Day complete';document.getElementById('jump').disabled=!next;
+}
+document.getElementById('jump').addEventListener('click',()=>{const next=[...document.querySelectorAll('.slot')].find(s=>new Date(s.dataset.end)>new Date());if(next)next.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+update();setInterval(update,30000);
+</script>
+</body>
+</html>
