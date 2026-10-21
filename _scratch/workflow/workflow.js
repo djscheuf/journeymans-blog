@@ -15,8 +15,11 @@
  *   7.  validate-schema     (deterministic) — full post.json check
  *        (also runs after every agentic step, per pipeline design)
  *   8.  generate-post       (deterministic) — render source/_posts/<slug>.md
- *   9.  create-branch       (deterministic) — git branch from master
- *   10. commit-post         (deterministic) — git add + commit "post(<slug>)"
+ *   9.  verify-master       (deterministic) — git lock acquired here; HEAD must be master
+ *   10. create-branch       (deterministic) — git branch post/<slug> from master
+ *   11. commit-post         (deterministic) — git add + commit "post(<slug>)"
+ *   12. push-branch         (deterministic) — git push -u origin post/<slug>
+ *   13. restore-master      (deterministic) — git checkout master; lock released
  *
  * Agentic steps call `devin -p` headless (same as example_workflow.js) and
  * are expected to mutate workdir/post.json in place.
@@ -35,9 +38,74 @@ const DEVIN_BIN = process.env.DEVIN_BIN || 'devin';
 const WORKFLOW_DIR = __dirname;
 const REPO_ROOT = path.resolve(WORKFLOW_DIR, '../..');
 
+class WorkflowError extends Error {
+  constructor(stage, message) {
+    super(message);
+    this.stage = stage;
+  }
+}
+
 function fail(stage, message) {
-  console.error(`[${stage}] ERROR: ${message}`);
-  process.exit(1);
+  throw new WorkflowError(stage, message);
+}
+
+// ---------- git operation lock (mutex with TTL) ----------
+//
+// Serializes the create-branch → commit-post critical section across
+// concurrent workflow instances. The lock file records which zkid holds
+// it and when it expires; expired locks may be stolen, so a crashed run
+// self-heals after LOCK_TTL_MS instead of deadlocking.
+
+const GIT_LOCK_PATH = path.join(WORKFLOW_DIR, 'workdir', '.git-operation.lock');
+const LOCK_TTL_MS = 90_000;
+const LOCK_POLL_MS = 250;
+
+function gitLockIsExpired() {
+  try {
+    const { expiresAt } = JSON.parse(fs.readFileSync(GIT_LOCK_PATH, 'utf8'));
+    return Date.now() >= expiresAt;
+  } catch {
+    return true; // unreadable/corrupt lock — treat as expired
+  }
+}
+
+function acquireGitLock(zkid) {
+  const payload = JSON.stringify({ zkid, expiresAt: Date.now() + LOCK_TTL_MS });
+  for (;;) {
+    try {
+      const fd = fs.openSync(GIT_LOCK_PATH, 'wx');
+      fs.writeFileSync(fd, payload);
+      fs.closeSync(fd);
+      console.log(`[git-lock] acquired by ${zkid} (ttl ${LOCK_TTL_MS / 1000}s)`);
+      return;
+    } catch (e) {
+      if (e.code !== 'EEXIST') throw e;
+    }
+    if (gitLockIsExpired()) {
+      // Steal: rename is atomic — exactly one contender wins.
+      const claim = `${GIT_LOCK_PATH}.${zkid}.claim`;
+      try {
+        fs.renameSync(GIT_LOCK_PATH, claim);
+        fs.unlinkSync(claim);
+        continue;
+      } catch { /* another instance won the steal */ }
+    }
+    Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, LOCK_POLL_MS);
+  }
+}
+
+function releaseGitLock(zkid) {
+  try {
+    const held = JSON.parse(fs.readFileSync(GIT_LOCK_PATH, 'utf8'));
+    if (held.zkid !== zkid) {
+      console.error(`[git-lock] warning: lock held by ${held.zkid}, not releasing`);
+      return;
+    }
+    fs.unlinkSync(GIT_LOCK_PATH);
+    console.log(`[git-lock] released by ${zkid}`);
+  } catch (e) {
+    if (e.code !== 'ENOENT') throw e;
+  }
 }
 
 // ---------- deterministic helpers ----------
@@ -126,6 +194,11 @@ const steps = {
     runStep('generate-post', () => generatePost(ctx.workdir));
     return { success: true };
   },
+  'verify-master': (ctx) => {
+    const branch = gitOut(['rev-parse', '--abbrev-ref', 'HEAD'], ctx.repoRoot, 'verify-master').trim();
+    if (branch !== 'master') fail('verify-master', `expected master branch, currently on ${branch}`);
+    return { success: true };
+  },
   'create-branch': (ctx) => {
     const slug = readPostJson(ctx.workdir).slug;
     git(['checkout', '-b', `post/${slug}`, 'master'], ctx.repoRoot, 'create-branch');
@@ -138,6 +211,15 @@ const steps = {
     git(['commit', '-m', `post(${slug})`], ctx.repoRoot, 'commit-post');
     return { success: true };
   },
+  'push-branch': (ctx) => {
+    const slug = readPostJson(ctx.workdir).slug;
+    git(['push', '-u', 'origin', `post/${slug}`], ctx.repoRoot, 'push-branch');
+    return { success: true };
+  },
+  'restore-master': (ctx) => {
+    git(['checkout', 'master'], ctx.repoRoot, 'restore-master');
+    return { success: true };
+  },
 };
 
 const nextStep = {
@@ -148,9 +230,12 @@ const nextStep = {
   'select-post-tags': 'select-post-image',
   'select-post-image': 'validate-schema',
   'validate-schema': 'generate-post',
-  'generate-post': 'create-branch',
+  'generate-post': 'verify-master',
+  'verify-master': 'create-branch',
   'create-branch': 'commit-post',
-  'commit-post': null,
+  'commit-post': 'push-branch',
+  'push-branch': 'restore-master',
+  'restore-master': null,
 };
 
 function git(args, cwd, stage) {
@@ -159,27 +244,69 @@ function git(args, cwd, stage) {
   if (result.status !== 0) fail(stage, `git ${args[0]} exited with status ${result.status}`);
 }
 
+function gitOut(args, cwd, stage) {
+  const result = spawnSync('git', args, { encoding: 'utf8', cwd });
+  if (result.error) fail(stage, `failed to launch git: ${result.error.message}`);
+  if (result.status !== 0) fail(stage, `git ${args[0]} exited with status ${result.status}: ${result.stderr.trim()}`);
+  return result.stdout;
+}
+
+function makeZkid(date = new Date()) {
+  const p = (n) => String(n).padStart(2, '0');
+  return `${date.getFullYear()}${p(date.getMonth() + 1)}${p(date.getDate())}${p(date.getHours())}${p(date.getMinutes())}`;
+}
+
 function workflow(bpiPath, publishDate) {
+  const zkid = makeZkid();
   const ctx = {
     bpiPath: path.resolve(bpiPath),
     publishDate,
     repoRoot: REPO_ROOT,
-    workdir: path.join(WORKFLOW_DIR, 'workdir'),
+    zkid,
+    workdir: path.join(WORKFLOW_DIR, 'workdir', zkid),
   };
+  console.log(`[workflow] instance id (zkid): ${zkid}`);
 
   let currentStep = 'validate-bpi';
-  while (currentStep !== null) {
-    console.log(`[workflow] step: ${currentStep}`);
-    const result = steps[currentStep](ctx);
-    if (!result.success) fail('workflow', `step ${currentStep} failed`);
-    currentStep = nextStep[currentStep];
+  let lockHeld = false;
+  try {
+    while (currentStep !== null) {
+      if (currentStep === 'verify-master') {
+        acquireGitLock(zkid);
+        lockHeld = true;
+      }
+      console.log(`[workflow] step: ${currentStep}`);
+      const result = steps[currentStep](ctx);
+      if (!result.success) fail('workflow', `step ${currentStep} failed`);
+      currentStep = nextStep[currentStep];
+    }
+  } catch (e) {
+    if (e instanceof WorkflowError) {
+      console.error(`[${e.stage}] ERROR: ${e.message}`);
+      process.exitCode = 1;
+    } else {
+      throw e;
+    }
+  } finally {
+    if (lockHeld) {
+      if (process.exitCode) {
+        // failed mid-section: best-effort restore before releasing
+        spawnSync('git', ['checkout', 'master'], { stdio: 'inherit', cwd: ctx.repoRoot });
+      }
+      releaseGitLock(zkid);
+    }
   }
+  if (process.exitCode) return;
   console.log('[workflow] pipeline completed successfully.');
 }
 
-const [bpiPath, publishDate] = process.argv.slice(2);
-if (!bpiPath || !publishDate) {
-  console.error('Usage: node bpi-to-blog-post-workflow.js <path-to-bpi.md> <publish-date YYYY-MM-DD>');
-  process.exit(1);
+module.exports = { acquireGitLock, releaseGitLock, makeZkid, GIT_LOCK_PATH };
+
+if (require.main === module) {
+  const [bpiPath, publishDate] = process.argv.slice(2);
+  if (!bpiPath || !publishDate) {
+    console.error('Usage: node bpi-to-blog-post-workflow.js <path-to-bpi.md> <publish-date YYYY-MM-DD>');
+    process.exit(1);
+  }
+  workflow(bpiPath, publishDate);
 }
-workflow(bpiPath, publishDate);
