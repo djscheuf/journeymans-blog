@@ -236,6 +236,29 @@ img{max-width:100%;display:block;}
 .closing-sig p:first-child{font-size:19px;font-weight:700;}
 .closing-sig p:last-child{font-size:16px;color:var(--muted);}
 
+/* Print: portrait pages, no background color, cards kept whole, link URLs shown on paper */
+@page{size:portrait;margin:12mm;}
+@media print{
+  body,.hero,.section,.closing{background:#FFFFFF;color:var(--ink);}
+  .hero h2,.hero p.lede,.byline-text p:last-child,.closing-sig p:last-child{color:var(--ink-soft);}
+  .hero .eyebrow,.closing .eyebrow,.hero h1 span,.closing h2 span{color:var(--deep-blue);}
+  .closing-link{background:none;border-color:var(--line);color:var(--ink);}
+  .hero-deco,.closing-deco,.closing-sig{display:none;}
+  .app-card,.book,.section-head,.closing-link{break-inside:avoid;}
+  .section-head,h2,h3{break-after:avoid;}
+  .app-card,.book-cover,.feature-frame img,.hero-photo{box-shadow:none;transition:none;}
+  .app-grid{grid-template-columns:repeat(2,1fr);gap:16px;}
+  .shelf{grid-template-columns:repeat(3,1fr);gap:16px;}
+  .feature-frame img{max-height:360px;}
+  .hero,.section,.closing{padding-top:28px;padding-bottom:28px;}
+  a[href^="http"]::after{
+    content:attr(href);
+    display:block;margin-top:4px;
+    font-size:11px;font-weight:400;color:var(--ink-soft);
+    word-break:break-all;
+  }
+  .closing-link{flex-wrap:wrap;}
+}
 @media (max-width:640px){
   .hero,.section,.closing{padding-left:16px;padding-right:16px;}
   .hero-deco{width:260px;height:260px;}
