@@ -10,6 +10,7 @@ description: Create short, curiosity-driven LinkedIn posts that promote blog art
 - **Curiosity-driven** - Open with an intriguing question or surprising statement
 - **Direct and concise** - No fluff, get to the point quickly
 - **Authentic** - Share genuine insights and realizations
+- **Human punctuation** - Casual markers like "..." and "Here's the thing:" make the post read like a person talking, not a brand
 - **Value-focused** - Lead with bold claims about outcomes, not process details
 
 ### Structure Patterns
@@ -18,28 +19,36 @@ description: Create short, curiosity-driven LinkedIn posts that promote blog art
 1. **Hook** - Question or surprising statement that creates curiosity
    - "Ever heard of a [technique/concept]?"
    - "Did anyone else learn to [practice]?"
+   - "Ever wonder why [current trend/hot topic] goes sideways?"
+   - When possible, **anchor the hook to a current trend or hot topic** (e.g., AI, layoffs, a new framework). Relevance to what people are already talking about drives reach - a timely hook beats a timeless one.
    
 2. **Clarification** - Brief explanation that it's not what people might think
    - "No, it's not some obscure [misconception]..."
    - "No, I'm not making this up..."
+   - **Misconception rebuttal (strongest form):** name the *popular wrong belief* specifically. "No, it's not AI writing bad code." beats a vague "No, it's not what you think" because readers recognize and react to the named belief.
 
 3. **Personal Connection (optional)** - Share your experience or realization, OR frame the insight abstractly/systemically if no natural anecdote fits
    - Anecdote version: "I've been [doing X] for years, and I recently realized..." / "It was a practice I was taught as a [role]..."
+   - Observed-experience version: "I've watched teams [do the problematic thing]..." - something witnessed rather than done. It reads as authority and broadens relatability beyond people who share your exact history.
    - Abstract/systemic version: "The system can only tell you about itself. Naturally, a change to the system isn't part of the system yet."
 
 4. **The Insight** - The key realization or problem
    - "Sometimes that [thing] I did? It was actually the right call. But I only knew that looking back."
    - "And frequently in the middle of my explanation, I'd figure the problem out!"
+   - **Root-cause line (high value):** include one causal "X happens *because* Y" sentence that explains WHY the problem occurs - e.g., "legacy codebases are legacy because they lack tests." Giving a real mini-insight before the click builds trust and drives comments.
 
 5. **The Bridge** - Connect to the solution
    - "So how do you get better at [problem]?"
+   - "So how do you get [guardrails/safety] in place before [risky action]?"
 
 6. **The Reveal (optional)** - Name the technique (but NOT how to do it), only if there's a clean, recognizable name worth dropping
    - "Turns out, there's a technique for that - It's called [Name]."
-   - If no clean name fits, skip straight from the Bridge to the Call to Action.
+   - **Familiar-concept flip (alternative):** if no clean name exists, reference a concept readers already know and invert it - "Remember that 'acceptance criteria' idea? Usually humans create them... but you can extract it straight from your existing code." The twist does the same work as a named technique.
+   - If neither a clean name nor a flippable concept fits, skip straight from the Bridge to the Call to Action.
 
 7. **Call to Action** - Invite them to learn HOW
    - "I wrote about how to [implement/apply] this [context]: [URL]"
+   - **Mirror the hook's problem:** phrase the CTA as the direct answer to the scenario opened in line 1 - "I wrote about how to reverse-engineer your legacy system's business rules *before you rewrite it*."
 
 8. **Hashtags** - 2-4 relevant hashtags
 
@@ -133,6 +142,24 @@ I wrote about how to implement this practice with your team: [URL]
 #EngineeringLeadership #TeamDevelopment
 ```
 
+### Example 4: Reverse Before You Rewrite (15k+ impressions, ~40 comments)
+```
+Ever wonder why AI rewrites of legacy systems go sideways?
+No, it's not AI writing bad code.
+
+I've watched teams hand a legacy codebase to an agent and say "rewrite this" ... and the agent has nothing to check its work against.
+
+Here's the thing: legacy codebases are legacy because they lack tests. Without tests, there's no proof the rewrite does what the original did. You just find out later, in production.
+
+So how do you get guardrails in place before you let AI touch the code?
+Remember that 'acceptance criteria' idea? Usually humans create them... but you can extract it straight from your existing code.
+
+I wrote about how to reverse-engineer your legacy system's business rules before you rewrite it: [URL]
+
+{relevant hashtags}
+```
+**Why this worked:** trend-anchored hook (AI), specific misconception rebuttal, observed-experience anecdote, a root-cause line ("legacy because they lack tests"), a familiar-concept flip instead of a named technique, and a CTA that mirrors the hook's scenario.
+
 ## Generated Posts
 
 ### Developer as Team Lead
@@ -153,27 +180,34 @@ I wrote about how to shift from individual contributor to team lead in an agenti
 
 When asked to create a LinkedIn promotional post:
 
-1. **Read the blog article** to understand:
+1. **Run the trend check first.** Invoke the `check-topic-trends` skill on the blog post before drafting. It produces a brief at `_scratch/trend-breifs/<post-slug>.trends.md` containing active industry conversations, source links, and recommended hooks. If a brief for this post already exists and is recent (last few days), read it instead of re-running the check.
+
+2. **Read the blog article** to understand:
    - Core idea/technique
    - Target audience
    - Key insight or problem it solves
    - The "aha moment" or realization
 
-2. **Identify the hook**:
-   - What's surprising or counterintuitive?
-   - What executive/senior practice can engineers learn from?
-   - What common experience can you reference?
+3. **Identify the hook — prefer a trend-anchored one**:
+   - Start from the brief's "Recommended Hooks" — pick the strongest trend connection that genuinely fits the post
+   - Reference the live conversation specifically ("Everyone's debating X right now...") — named debates drive comments from people already arguing about them
+   - If the brief's connections are weak or stale, fall back to the evergreen angles: What's surprising or counterintuitive? What executive/senior practice can engineers learn from? What common experience can you reference?
 
-3. **Check whether a personal anecdote fits.** If it does not fit naturally, draft **two variants** per the "Handling Optional Elements" section - one with the anecdote, one with an abstract/systemic framing instead.
+4. **Leverage the trend links for engagement**:
+   - If the brief surfaced a notable article, thread, or debate the post speaks to, consider referencing it by name (e.g., "the Hacker News thread on...", "the HBR piece arguing...") — it adds credibility and invites people to compare takes
+   - A promo that joins an existing argument earns discussion; a promo that only broadcasts earns silence
+   - Put the blog post link in the post body by default; cite trend sources inline, not as footnotes
 
-4. **Draft the post(s)** following the structure pattern above
+5. **Check whether a personal anecdote fits.** If it does not fit naturally, draft **two variants** per the "Handling Optional Elements" section - one with the anecdote, one with an abstract/systemic framing instead.
 
-5. **Keep it personal where applicable**:
+6. **Draft the post(s)** following the structure pattern above
+
+7. **Keep it personal where applicable**:
    - Use "I" statements when using the anecdote version
    - Share genuine realizations
    - Make it relatable to the reader's experience
 
-6. **End with clarity**:
+8. **End with clarity**:
    - Name the technique, if one clearly applies
    - Provide the link
    - Add relevant hashtags
@@ -181,6 +215,8 @@ When asked to create a LinkedIn promotional post:
 ## Key Principles
 
 - **Curiosity over explanation** - Make them want to click, don't give away everything
+- **Timely over timeless, when possible** - Anchoring the hook to a trend people are already discussing expands reach
+- **Give one real insight before the click** - A root-cause "X because Y" line earns trust and comments; it doesn't spoil the HOW
 - **Value over process** - Show the outcome, invite them to learn the how
 - **Name the technique, not the steps (when a name exists)** - "It's called X" not "Here's how to do X"
 - **Personal over professional, when it fits** - Share discoveries, not lectures; otherwise use systemic/abstract framing rather than forcing an anecdote
