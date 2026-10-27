@@ -8,8 +8,8 @@ tags:
   - effectiveness
 date: 2026-12-08 09:30:00
 photos:
-  - img/post_img/man_think_ai.jpg
-description: Have you read 'The Effective Executive' by Drucker?
+  - img/post_img/book.jpg
+description: Have you read 'The Effective Executive' by Drucker? Written in 1967, its advise to Knowledge Workers still rings true!
 ---
 
 ~410 Words | ~2min Read
