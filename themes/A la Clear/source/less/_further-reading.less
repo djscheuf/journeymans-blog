@@ -1,0 +1,107 @@
+// Further Reading: optional end-of-post section (front matter `further_reading`).
+// Card shapes follow the Orchestrating Chaos take-away kit (cover framing, lift on hover,
+// destination chip), expressed in the theme's own tokens rather than the kit's palette.
+
+.further-reading {
+  margin-top: #lib.lengths[@gap];
+  padding-top: #lib.lengths[@half-gap];
+  border-top: 1px solid #lib.colors[@grey-border];
+
+  .further-reading-title {
+    font-family: #lib.fonts[@heading-font];
+    color: #lib.colors[@primary];
+    margin: 0 0 #lib.lengths[@half-gap];
+  }
+
+  .fr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 24px;
+    align-items: start;
+  }
+
+  .fr-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+    text-decoration: none;
+    color: #lib.colors[@color-text];
+
+    h3 {
+      margin: 0;
+      font-family: #lib.fonts[@body-font];
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #lib.colors[@color-title];
+    }
+
+    img { display: block; max-width: 100%; }
+
+    .fr-note {
+      margin: 0;
+      font-size: 0.85em;
+      line-height: 1.4;
+      color: #lib.colors[@code-muted];
+    }
+
+    .fr-chip {
+      font-family: #lib.fonts[@body-font];
+      font-size: 0.75em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #lib.colors[@cta];
+    }
+
+    .fr-cover, .fr-thumb, .fr-icon {
+      overflow: hidden;
+      transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow: 0 10px 24px rgba(5, 52, 89, .16);
+    }
+
+    .fr-cover {
+      aspect-ratio: 2 / 3;
+      border: 6px solid #lib.colors[@bg-lighter];
+      outline: 1px solid #lib.colors[@grey-border];
+      border-radius: 8px;
+      img { width: 100%; height: 100%; object-fit: cover; }
+    }
+
+    .fr-thumb {
+      aspect-ratio: 16 / 10;
+      border-radius: 8px;
+      img { width: 100%; height: 100%; object-fit: cover; }
+    }
+
+    .fr-icon {
+      width: 56px;
+      height: 56px;
+      padding: 14px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background: #lib.colors[@bg-lighter];
+      border: 1px solid #lib.colors[@grey-border];
+    }
+
+    &:hover, &:focus-visible {
+      outline: none;
+      .fr-cover, .fr-thumb, .fr-icon {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 34px rgba(5, 52, 89, .24);
+      }
+      h3 { color: #lib.colors[@hover-links]; }
+    }
+  }
+
+  @media print {
+    .fr-item { break-inside: avoid; }
+    .fr-item::after {
+      content: attr(href);
+      font-size: 0.7em;
+      word-break: break-all;
+      color: #lib.colors[@code-muted];
+    }
+  }
+}

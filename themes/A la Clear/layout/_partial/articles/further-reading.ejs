@@ -1,0 +1,37 @@
+<%
+// Optional front matter block (see docs/reqs/recommended-reading):
+//   further_reading:
+//     - { title, url, type: book|post|link, cover?, image?, note? }
+// Renders nothing when absent, like the hotpot partial.
+var items = page.further_reading;
+if (items && items.length) {
+  var hostOf = function(u) {
+    try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+  };
+%>
+<section class="further-reading" aria-labelledby="further-reading-title">
+  <h2 id="further-reading-title" class="further-reading-title">Further Reading</h2>
+  <div class="fr-grid">
+    <% items.forEach(function(item) {
+      var type = item.type || 'link';
+      var internal = type === 'post';
+      var external = !internal;
+      var href = internal ? url_for(item.url) : item.url;
+      var chip = type === 'book' ? 'Open on Amazon' : (internal ? 'Read on this blog' : ('Visit ' + (hostOf(item.url) || 'site')));
+    %>
+      <a class="fr-item fr-<%= type %>" href="<%- href %>"<% if (external) { %> target="_blank" rel="noopener"<% } %>>
+        <% if (type === 'book' && item.cover) { %>
+          <div class="fr-cover"><img src="<%- url_for('img/covers/' + item.cover) %>" alt="<%= item.title %> book cover" loading="lazy"></div>
+        <% } else if (internal && item.image) { %>
+          <div class="fr-thumb"><img src="<%- url_for(item.image) %>" alt="" loading="lazy"></div>
+        <% } else { %>
+          <div class="fr-icon"><img src="<%- url_for('images/link.svg') %>" alt="" loading="lazy"></div>
+        <% } %>
+        <h3><%= item.title %></h3>
+        <% if (item.note) { %><p class="fr-note"><%= item.note %></p><% } %>
+        <span class="fr-chip"><%= chip %> <span aria-hidden="true">&#8599;</span></span>
+      </a>
+    <% }); %>
+  </div>
+</section>
+<% } %>
