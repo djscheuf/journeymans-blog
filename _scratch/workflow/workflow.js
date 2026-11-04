@@ -14,6 +14,7 @@
  *   6.  select-post-image   (agentic skill) — sets image + confidence
  *   7.  validate-schema     (deterministic) — full post.json check
  *        (also runs after every agentic step, per pipeline design)
+ *   7b. fetch-link-assets   (deterministic) — Further Reading covers → source/img/covers; resolves link types
  *   8.  generate-post       (deterministic) — render source/_posts/<slug>.md
  *   9.  verify-master       (deterministic) — git lock acquired here; HEAD must be master
  *   10. create-branch       (deterministic) — git branch post/<slug> from master
@@ -32,6 +33,7 @@ const path = require('node:path');
 const { validateBpi } = require('./01-validate-bpi');
 const { curateInput } = require('./02-curate-input');
 const { validateSchema } = require('./07-validate-schema');
+const { fetchLinkAssets } = require('./07b-fetch-link-assets');
 const { generatePost } = require('./08-generate-post');
 
 const DEVIN_BIN = process.env.DEVIN_BIN || 'devin';
@@ -190,6 +192,12 @@ const steps = {
     checkSchema(ctx.workdir, 'validate-schema');
     return { success: true };
   },
+  'fetch-link-assets': async (ctx) => {
+    const result = await fetchLinkAssets(ctx.workdir).catch((e) => fail('fetch-link-assets', e.message));
+    for (const f of result.fetched || []) console.log(`[fetch-link-assets] cover ${f.file} ← ${f.source}`);
+    for (const w of result.warnings) console.error(`[fetch-link-assets] warning: ${w}`);
+    return { success: true };
+  },
   'generate-post': (ctx) => {
     runStep('generate-post', () => generatePost(ctx.workdir));
     return { success: true };
@@ -207,7 +215,10 @@ const steps = {
   'commit-post': (ctx) => {
     const slug = readPostJson(ctx.workdir).slug;
     const postFile = `source/_posts/${slug}.md`;
-    git(['add', postFile], ctx.repoRoot, 'commit-post');
+    const toAdd = [postFile];
+    // Further Reading covers fetched by fetch-link-assets (only if the folder exists)
+    if (fs.existsSync(path.join(ctx.repoRoot, 'source/img/covers'))) toAdd.push('source/img/covers');
+    git(['add', ...toAdd], ctx.repoRoot, 'commit-post');
     git(['commit', '-m', `post(${slug})`], ctx.repoRoot, 'commit-post');
     return { success: true };
   },
@@ -229,7 +240,8 @@ const nextStep = {
   'select-post-category': 'select-post-tags',
   'select-post-tags': 'select-post-image',
   'select-post-image': 'validate-schema',
-  'validate-schema': 'generate-post',
+  'validate-schema': 'fetch-link-assets',
+  'fetch-link-assets': 'generate-post',
   'generate-post': 'verify-master',
   'verify-master': 'create-branch',
   'create-branch': 'commit-post',
@@ -256,7 +268,7 @@ function makeZkid(date = new Date()) {
   return `${date.getFullYear()}${p(date.getMonth() + 1)}${p(date.getDate())}${p(date.getHours())}${p(date.getMinutes())}`;
 }
 
-function workflow(bpiPath, publishDate) {
+async function workflow(bpiPath, publishDate) {
   const zkid = makeZkid();
   const ctx = {
     bpiPath: path.resolve(bpiPath),
@@ -276,7 +288,7 @@ function workflow(bpiPath, publishDate) {
         lockHeld = true;
       }
       console.log(`[workflow] step: ${currentStep}`);
-      const result = steps[currentStep](ctx);
+      const result = await steps[currentStep](ctx);
       if (!result.success) fail('workflow', `step ${currentStep} failed`);
       currentStep = nextStep[currentStep];
     }

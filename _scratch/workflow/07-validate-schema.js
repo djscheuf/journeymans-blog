@@ -12,6 +12,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { validateFurtherReading } = require("./further-reading");
 
 function validateSchema(workdir = "workdir", agenticFields = null) {
   const jsonPath = path.join(path.resolve(workdir), "post.json");
@@ -62,6 +63,13 @@ if (need("image"))
   req("image", (v) => typeof v === "string" && v.startsWith("/img/post_img/"),
     `image must be a /img/post_img/ path: ${doc.image}`);
 req("hemingway_content", (v) => typeof v === "string" && v.trim().length > 0);
+
+// Optional section: Further Reading
+if ("further_reading" in doc) {
+  const fr = validateFurtherReading(doc.further_reading);
+  errors.push(...fr.errors);
+  warnings.push(...fr.warnings);
+}
 
 // Cross-checks and soft warnings
 if (typeof doc.image_confidence === "number" && doc.image_confidence < 0.5) {

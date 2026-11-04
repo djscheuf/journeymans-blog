@@ -51,6 +51,21 @@ function generatePost(workdir = "workdir", postsDir = path.join(repoRoot, "sourc
   const tagsYaml = doc.tags.map((t) => `  - ${t}`).join("\n");
   const photosYaml = `  - ${doc.image.replace(/^\//, "")}`; // strip leading slash, matches existing posts
 
+  // Optional Further Reading block (values double-quoted via JSON.stringify: valid YAML)
+  let furtherReadingYaml = "";
+  if (Array.isArray(doc.further_reading) && doc.further_reading.length) {
+    const q = JSON.stringify;
+    const items = doc.further_reading.map((it) => {
+      const lines = [`  - title: ${q(it.title)}`, `    url: ${q(it.url)}`];
+      lines.push(`    type: ${it.type || "link"}`);
+      if (it.cover) lines.push(`    cover: ${q(it.cover)}`);
+      if (it.image) lines.push(`    image: ${q(it.image)}`);
+      if (it.note) lines.push(`    note: ${q(it.note)}`);
+      return lines.join("\n");
+    });
+    furtherReadingYaml = `further_reading:\n${items.join("\n")}\n`;
+  }
+
   const post = `---
 title: ${doc.title}
 categories:
@@ -61,7 +76,7 @@ date: ${date}
 photos:
 ${photosYaml}
 description: ${description}
----
+${furtherReadingYaml}---
 
 ${statsLine}
 

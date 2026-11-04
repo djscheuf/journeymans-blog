@@ -19,6 +19,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { parseFurtherReading } = require("./further-reading");
 
 const FILENAME_RE = /^(\d{12}) - BPI - (.+)\.md$/;
 const WORDS_PER_MINUTE = 200;
@@ -80,12 +81,16 @@ function curateInput(bpiPath, publishDate, workdir = "workdir") {
     hemingway_content: hemingwayContent,
   };
 
+  // Optional "## Further Reading" section: [{ title, url, note? }]
+  const furtherReading = parseFurtherReading(content);
+  if (furtherReading.length) doc.further_reading = furtherReading;
+
   const outDir = path.resolve(workdir);
   fs.mkdirSync(outDir, { recursive: true });
   const outPath = path.join(outDir, "post.json");
   fs.writeFileSync(outPath, JSON.stringify(doc, null, 2) + "\n");
 
-  return { ok: true, output: outPath, word_count: wordCount, reading_time_min: readingTimeMin, slug };
+  return { ok: true, further_reading: furtherReading.length, output: outPath, word_count: wordCount, reading_time_min: readingTimeMin, slug };
 }
 
 if (require.main === module) {

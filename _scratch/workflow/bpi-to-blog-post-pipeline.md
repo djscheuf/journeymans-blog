@@ -86,6 +86,18 @@ appropriate order.
 - **In:** working JSON, post template
 - **Out:** markdown blog post file ready for Hexo
 
+### 8b. Fetch Further Reading assets — Deterministic (runs before step 8)
+
+Optional. If the BPI has a `## Further Reading` list (`- [Title](url) — optional note`),
+step 2 stores it as `further_reading` in the working JSON. `07b-fetch-link-assets.js`
+classifies each link (book / post / link), downloads Amazon book covers into
+`source/img/covers/` (Amazon image, falling back to Open Library by ISBN), and resolves
+internal posts to their header image. Step 8 then renders the result into front matter,
+and the commit step also adds `source/img/covers`. A missing cover is a warning only.
+
+- **In:** working JSON (`further_reading`)
+- **Out:** `type` / `cover` / `image` per item; cover files on disk
+
 ### 9. Create git branch — Deterministic
 
 Cut a new branch from `master` named after the post slug.
