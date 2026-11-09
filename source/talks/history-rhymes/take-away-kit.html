@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>History Rhymes — Take-Away Kit</title>
+<meta name="description" content="The take-away kit for History Rhymes: Why the AI wave needs the same lesson as Lean, Agile, and Personal Computing. Talk summary, applied steps, and further reading.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --desk:#2b2f36;
+  --ink:#14181F;
+  --ink-soft:#4C5663;
+  --slate:#44546A;
+  --blue:#005596;
+  --sky:#4597D3;
+  --orange:#FF9300;
+  --orange-d:#B35F00;
+  --teal:#5BC2A7;
+  --amber:#F5BB41;
+  --line:rgba(68,84,106,.35);
+  /* card stock ramp: foxed manila -> white, one step per era */
+  --stock-0:#E3D0A4;  /* 1850s Industrial Revolution */
+  --stock-1:#EADBB6;  /* 1913 Ford */
+  --stock-2:#F1E6CC;  /* 1950s Toyota */
+  --stock-3:#F7F0DF;  /* 1990s PC & Internet */
+  --stock-4:#FFFFFF;  /* 2026 AI */
+  --font-h:'Calibri Light','Calibri','Carlito',Arial,sans-serif;
+  --font-b:'Calibri','Carlito',Arial,sans-serif;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--desk);
+  color:var(--ink);
+  font-family:var(--font-b);
+  line-height:1.5;
+}
+a{color:inherit;}
+h1,h2,h3,h4,p,ul{margin:0;}
+h1,h2,h3{text-wrap:balance;}
+img{max-width:100%;display:block;}
+
+.eyebrow{
+  font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--slate);
+}
+.callno{
+  font-weight:700;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);
+}
+.callno i{font-style:normal;color:var(--slate);font-weight:400;margin-left:12px;}
+
+/* ---------- The catalog card: clipped corner + binder punches ---------- */
+.card-frame{
+  position:relative;
+  max-width:1100px;
+  margin:0 auto;
+  background:var(--stock,#fff);
+  border:1px solid var(--line);
+  /* clipped top-left corner */
+  clip-path:polygon(34px 0,100% 0,100% 100%,0 100%,0 34px);
+  padding:56px 56px 72px;
+}
+.card-frame::before{
+  content:"";position:absolute;left:0;top:0;width:34px;height:34px;
+  background:linear-gradient(135deg,var(--desk) 49%,var(--line) 50%,transparent 51%);
+}
+.punches{
+  position:absolute;bottom:18px;left:0;right:0;display:flex;justify-content:center;gap:120px;pointer-events:none;
+}
+.punches span{
+  width:16px;height:16px;border-radius:50%;background:var(--desk);
+  box-shadow:inset 0 2px 3px rgba(0,0,0,.6),0 0 0 2px rgba(68,84,106,.25);
+}
+/* drawer tab */
+.drawer-tab{
+  display:inline-block;
+  position:relative;
+  background:var(--blue);color:#fff;
+  font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;
+  padding:8px 22px 9px;
+  clip-path:polygon(8px 0,100% 0,100% 100%,0 100%,0 8px);
+  margin-bottom:-1px;
+}
+
+/* ---------- Era rail ---------- */
+.rail{position:relative;margin:0 0 8px;height:64px;}
+.rail .line{position:absolute;left:0;right:0;top:40px;border-top:2px dashed rgba(68,84,106,.45);}
+.rail .done{position:absolute;left:0;top:39px;height:4px;background:var(--blue);width:var(--fill,100%);}
+.rail .stop{
+  position:absolute;top:0;
+  display:flex;flex-direction:column;align-items:center;
+  font-size:12px;line-height:1.2;color:var(--slate);white-space:nowrap;text-align:center;
+}
+.rail .d{
+  position:absolute;top:40px;
+  width:10px;height:10px;border-radius:50%;
+  background:var(--stock,#fff);border:2px solid var(--slate);
+  transform:translate(-50%,-50%);
+}
+.rail .d.past{background:var(--blue);border-color:var(--blue);}
+.rail .d.now{width:16px;height:16px;background:var(--blue);border:3px solid var(--stock,#fff);box-shadow:0 0 0 2px var(--blue);}
+.rail .stop.now{color:var(--blue);font-weight:700;}
+.rail .s0{left:0;align-items:flex-start;text-align:left;}
+.rail .s1{left:25%;transform:translateX(-50%);}
+.rail .s2{left:50%;transform:translateX(-50%);}
+.rail .s3{left:75%;transform:translateX(-50%);}
+.rail .s4{left:100%;transform:translateX(-100%);align-items:flex-end;text-align:right;}
+.rail .d0{left:0}.rail .d1{left:25%}.rail .d2{left:50%}.rail .d3{left:75%}.rail .d4{left:100%}
+
+/* ---------- Sections ---------- */
+.page{padding:40px 20px 64px;display:flex;flex-direction:column;gap:56px;}
+.wrap{max-width:1100px;margin:0 auto;}
+section.block{display:flex;flex-direction:column;}
+.block .card-frame{padding-top:44px;}
+.block-head{display:flex;flex-direction:column;gap:10px;margin-bottom:30px;}
+.block-head h2{
+  font-family:var(--font-h);font-weight:400;
+  font-size:clamp(30px,4.5vw,44px);line-height:1.1;color:var(--blue);letter-spacing:-.5px;
+}
+.block-head p{font-size:18px;color:var(--ink-soft);max-width:680px;}
+.divider{border:0;border-top:1px dashed var(--line);margin:34px 0;}
+
+/* ---------- Hero ---------- */
+.hero-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px;margin-top:18px;}
+.hero-text{display:flex;flex-direction:column;gap:18px;flex:1;min-width:300px;}
+.hero .eyebrow{color:var(--orange-d);}
+.hero h1{
+  font-family:var(--font-h);font-weight:400;
+  font-size:clamp(46px,8vw,84px);line-height:1.02;letter-spacing:-2px;color:var(--blue);
+}
+.hero h1 span{color:var(--orange-d);}
+.hero .sub{font-family:var(--font-h);font-size:clamp(20px,3vw,28px);color:var(--slate);line-height:1.3;max-width:640px;}
+.hero .lede{font-size:18px;color:var(--ink-soft);max-width:640px;}
+.byline{display:flex;align-items:center;gap:16px;margin-top:8px;flex-wrap:wrap;}
+.bar{width:52px;height:4px;background:var(--teal);flex-shrink:0;}
+.byline-text p:first-child{font-size:19px;font-weight:700;}
+.byline-text p:last-child{font-size:15px;color:var(--slate);}
+.hero-photo{
+  flex-shrink:0;width:190px;height:190px;border-radius:50%;overflow:hidden;
+  border:6px solid #fff;outline:1px solid var(--line);
+}
+.hero-photo img{width:100%;height:100%;object-fit:cover;}
+
+/* ---------- Summary statement ---------- */
+.statement{
+  border-left:5px solid var(--blue);
+  padding:6px 0 6px 26px;
+  font-family:var(--font-h);font-size:clamp(21px,3vw,28px);line-height:1.35;color:var(--ink);
+}
+.statement b{color:var(--blue);}
+
+/* ---------- Lesson cards (2x2) ---------- */
+.lessons{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.lesson{
+  display:flex;flex-direction:column;gap:12px;
+  border:1px solid var(--line);
+  padding:24px 26px;
+}
+.lesson .num{
+  font-family:var(--font-h);font-size:44px;font-weight:400;color:var(--blue);line-height:1;
+}
+.lesson .era{
+  font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--slate);
+  border-bottom:2px solid var(--line);padding-bottom:8px;
+}
+.lesson h3{font-size:21px;font-weight:700;line-height:1.2;color:var(--blue);}
+.lesson p{font-size:15px;color:var(--ink-soft);line-height:1.5;flex:1;}
+.lesson .proof{font-size:13.5px;color:var(--slate);border-top:1px dashed var(--line);padding-top:10px;line-height:1.45;}
+.lesson .proof b{color:var(--ink);}
+.lesson.e0{background:var(--stock-0);}
+.lesson.e1{background:var(--stock-1);}
+.lesson.e3{background:var(--stock-3);}
+.lesson.bonus{background:var(--stock-2);}
+.lesson.bonus .num{font-size:15px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;padding-top:12px;}
+@media (max-width:640px){.lessons{grid-template-columns:1fr;}}
+
+/* ---------- Applied steps + worksheet ---------- */
+.steps{display:flex;flex-direction:column;gap:0;}
+.step{display:flex;gap:22px;padding:20px 0;border-bottom:1px dashed var(--line);align-items:flex-start;}
+.step:last-child{border-bottom:0;}
+.step .n{
+  flex-shrink:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  border:2px solid var(--blue);color:var(--blue);font-weight:700;font-size:20px;border-radius:50%;
+}
+.step h3{font-size:21px;color:var(--blue);font-weight:700;margin-bottom:4px;}
+.step p{font-size:15.5px;color:var(--ink-soft);line-height:1.5;max-width:760px;}
+.step .ask{display:block;margin-top:8px;font-size:14.5px;color:var(--ink);}
+.step .ask b{color:var(--blue);}
+
+.worksheet{
+  margin-top:30px;
+  border:2px dashed var(--slate);
+  background:#fff;
+  padding:26px 30px;
+  transform:rotate(-.6deg);
+}
+.worksheet .k{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--slate);}
+.worksheet h3{font-family:var(--font-h);font-size:26px;color:var(--blue);margin:8px 0 14px;}
+.fill{display:flex;flex-direction:column;gap:16px;font-size:17px;color:var(--ink);}
+.fill .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.fill .blank{flex:1;min-width:140px;border-bottom:2px dashed var(--slate);height:1.4em;}
+
+/* ---------- Link cards ---------- */
+.link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:820px){.link-grid{grid-template-columns:1fr;}}
+.link-card{
+  display:flex;flex-direction:column;gap:12px;
+  background:#fff;border:1px solid var(--line);padding:24px 26px;
+  text-decoration:none;
+  transition:border-color .15s ease,transform .15s ease;
+}
+.link-card:hover,.link-card:focus-visible{border-color:var(--blue);transform:translateY(-3px);outline:none;}
+.link-head{display:flex;align-items:center;gap:14px;}
+.link-head img{width:34px;height:34px;object-fit:contain;flex-shrink:0;}
+.link-head .tag{font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--sky);}
+.link-card h3{font-size:20px;font-weight:700;line-height:1.25;color:var(--ink);}
+.link-card p{font-size:14.5px;color:var(--ink-soft);line-height:1.5;flex:1;}
+.cta-chip{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--blue);}
+.cta-chip svg{width:14px;height:14px;}
+
+/* ---------- Bookshelf (2x2, real covers) ---------- */
+.shelf{display:grid;grid-template-columns:1fr 1fr;gap:30px 40px;align-items:start;}
+@media (max-width:640px){.shelf{grid-template-columns:1fr;}}
+.book{display:flex;gap:22px;align-items:flex-start;text-decoration:none;}
+.book-cover{
+  flex-shrink:0;width:130px;
+  border:1px solid var(--line);background:#fff;
+  overflow:hidden;
+  transition:transform .15s ease;
+}
+.book-cover img{width:100%;aspect-ratio:2/3;object-fit:cover;}
+.book:hover .book-cover,.book:focus-visible .book-cover{transform:translateY(-5px);}
+.book:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+.book-body{display:flex;flex-direction:column;gap:8px;min-width:0;padding-top:4px;}
+.book h3{font-size:20px;font-weight:700;color:var(--ink);line-height:1.25;}
+.book .author{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--slate);}
+.book .note{font-size:14.5px;color:var(--ink-soft);line-height:1.45;}
+
+/* ---------- Contact / closing ---------- */
+.contact .card-frame{background:var(--blue);color:#fff;border-color:var(--blue);}
+.contact .eyebrow{color:var(--amber);}
+.contact h2{font-family:var(--font-h);font-weight:400;font-size:clamp(28px,4.4vw,42px);line-height:1.25;max-width:820px;}
+.contact h2 span{color:var(--amber);}
+.contact-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px;}
+.contact-link{
+  display:inline-flex;align-items:center;gap:14px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);
+  padding:14px 20px;font-weight:700;font-size:16px;color:#fff;text-decoration:none;
+  transition:background .15s ease,transform .15s ease;
+}
+.contact-link svg{width:24px;height:24px;flex-shrink:0;}
+.contact-link:hover,.contact-link:focus-visible{background:rgba(255,255,255,.18);transform:translateY(-2px);outline:none;}
+.contact-sig{display:flex;align-items:center;gap:18px;border-top:1px solid rgba(255,255,255,.25);padding-top:22px;margin-top:30px;}
+.contact-sig p:first-child{font-size:18px;font-weight:700;}
+.contact-sig p:last-child{font-size:15px;color:#BFD3E4;}
+
+/* ---------- Print: one catalog card per page ---------- */
+@page{size:portrait;margin:12mm;}
+@media print{
+  body{background:#fff;}
+  .page{padding:0;gap:0;}
+  .page>.block{break-before:page;}
+  .page>.block:first-child{break-before:avoid;}
+  .card-frame{clip-path:none;border:1px solid var(--line);padding:32px 28px;}
+  .card-frame::before,.punches{display:none;}
+  .contact .card-frame{background:#fff;color:var(--ink);}
+  .contact h2,.contact .eyebrow{color:var(--blue);}
+  .contact h2 span{color:var(--orange-d);}
+  .contact-link{border-color:var(--line);color:var(--ink);background:none;}
+  .contact-sig p:last-child{color:var(--slate);}
+  .lesson,.link-card,.book,.step,.worksheet,.block-head{break-inside:avoid;}
+  .block-head,h2,h3{break-after:avoid;}
+  .worksheet{transform:none;}
+  a[href^="http"]::after{
+    content:attr(href);display:block;margin-top:4px;
+    font-size:11px;font-weight:400;color:var(--ink-soft);word-break:break-all;
+  }
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+}
+@media (max-width:640px){
+  .page{padding:24px 12px 48px;}
+  .card-frame{padding:40px 22px 64px;}
+  .punches{gap:60px;}
+  .rail .stop{font-size:10px;}
+  .hero-photo{width:140px;height:140px;}
+  .book{flex-direction:column;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero block">
+    <div class="card-frame" style="--stock:var(--stock-4);">
+      <p class="callno">HR 658.5<i>The Take-Away Kit</i></p>
+      <div class="rail" style="--fill:100%;margin-top:14px;">
+        <div class="line"></div><div class="done"></div>
+        <div class="stop s0 past">1850s &middot; Industrial<br>Revolution</div>
+        <div class="stop s1 past">1913 &middot; Ford</div>
+        <div class="stop s2 past">1950s &middot; Toyota</div>
+        <div class="stop s3 past">1990s &middot; PC &amp;<br>Internet</div>
+        <div class="stop s4 now">2026 &middot; AI</div>
+        <span class="d d0 past"></span><span class="d d1 past"></span><span class="d d2 past"></span><span class="d d3 past"></span><span class="d d4 now"></span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Design Thinking &amp; Innovation &middot; Take this with you</p>
+          <h1>History <span>Rhymes</span></h1>
+          <p class="sub">Why the AI wave needs the same lesson as Lean, Agile, and Personal Computing</p>
+          <p class="lede">Everything referenced in the talk, on one card &mdash; the three lessons, the three steps to try this week, and the reading behind them.</p>
+          <div class="byline">
+            <div class="bar"></div>
+            <div class="byline-text">
+              <p>Daniel Scheufler</p>
+              <p>Leading Software Engineering Excellently! &middot; Improving</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-photo"><img src="assets/speaker.jpg" alt="Daniel Scheufler"></div>
+      </div>
+      <div class="punches"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <!-- ============ CARD 1: THE TALK IN ONE CARD ============ -->
+  <section class="block" aria-labelledby="summary">
+    <span class="drawer-tab wrap">Card 1 &middot; The Talk in One Card</span>
+    <div class="card-frame" style="--stock:var(--stock-4);border-top:0;">
+      <div class="block-head">
+        <p class="callno">HR 658.5<i>Card 1</i></p>
+      </div>
+      <p class="statement">The AI wave is early, but it is as big as electrification, mass manufacturing, and personal computing. Every one of those waves rewarded the same move: <b>redesign the work</b>, don&rsquo;t just bolt the new machine onto the old process. Three lessons from those waves &mdash; and one warning &mdash; show you what to do about it.</p>
+
+      <hr class="divider">
+
+      <div class="block-head" style="margin-bottom:24px;">
+        <p class="eyebrow">History teaches us</p>
+        <h2 id="summary">Three lessons, one warning</h2>
+        <p>Each lesson is filed under the era that taught it. The stock darkens as you go back in the catalog.</p>
+      </div>
+      <div class="lessons">
+        <div class="lesson e0">
+          <p class="num">1</p>
+          <p class="era">1850s &middot; Industrial Revolution</p>
+          <h3>Redesign your workflows</h3>
+          <p>The way humans do the work will not be the best way for machines to do it. A sewing machine doesn&rsquo;t sew like a human &mdash; same outcome, different method.</p>
+          <p class="proof"><b>See also:</b> Toyota&rsquo;s looms stopped themselves rather than weave bad cloth faster.</p>
+        </div>
+        <div class="lesson e1">
+          <p class="num">2</p>
+          <p class="era">1913 &middot; Ford</p>
+          <h3>To do more, start by doing less</h3>
+          <p>How do you eat an elephant? One bite at a time. Small, single tasks that compose &mdash; then carry the work to the worker.</p>
+          <p class="proof"><b>See also:</b> The assembly line worked because each step was simple and the work flowed.</p>
+        </div>
+        <div class="lesson e3">
+          <p class="num">3</p>
+          <p class="era">1990s &middot; PC &amp; Internet</p>
+          <h3>Useful <em>and</em> accessible</h3>
+          <p>To be used, a technology must be more valuable than it is inconvenient &mdash; and usable by the people who benefit, not just the librarians.</p>
+          <p class="proof"><b>See also:</b> Amazon beat Barnes &amp; Noble because you could get books from home. Build tools, not just answers.</p>
+        </div>
+        <div class="lesson bonus">
+          <p class="num">Bonus</p>
+          <p class="era">Case study &middot; Nestl&eacute;&rsquo;s ERP</p>
+          <h3>Who holds the bag?</h3>
+          <p>When the workflow changes, the process shifts but the roles often don&rsquo;t. The AI rollout will be the same management change.</p>
+          <p class="proof"><b>Col. John Boyd:</b> &ldquo;People, Process, Technology &mdash; in that order!&rdquo;</p>
+        </div>
+      </div>
+      <div class="punches"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- ============ CARD 2: DO THIS WEEK ============ -->
+  <section class="block" aria-labelledby="apply">
+    <span class="drawer-tab wrap">Card 2 &middot; Do This Week</span>
+    <div class="card-frame" style="--stock:var(--stock-4);border-top:0;">
+      <div class="block-head">
+        <p class="callno">HR 658.5<i>Card 2</i></p>
+        <p class="eyebrow">Therefore</p>
+        <h2 id="apply">Put it to work on one workflow this week</h2>
+        <p>Pick one workflow you own. Then:</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <div>
+            <h3>Start with the end in mind</h3>
+            <span class="ask"><b>Ask:</b> How would I do this today if I had none of my existing process or tools? What is actually important for this outcome? What would it take for one person to do all of it?</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <div>
+            <h3>Compose simple tasks into complex jobs</h3>
+            <p>Break the outcome into small tasks, then sort each: <b>Automatable</b> (routine, repeated, consistent), <b>Augmentable</b> (numerous, varied, but clear), or <b>Must remain human</b> (nuanced or vague judgment calls).</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <div>
+            <h3>Define done, so you can check the work</h3>
+            <p>If you can&rsquo;t say what &ldquo;done&rdquo; looks like, you can&rsquo;t verify what the machine produced &mdash; and you hold the bag.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="block-head" style="margin-bottom:24px;">
+        <p class="eyebrow" style="color:var(--sky);">See also</p>
+        <h2 style="font-size:clamp(24px,3.5vw,32px);">Articles to help you get started</h2>
+        <p>Shorter than the books, aimed squarely at the decomposing and the checking.</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-card" href="https://www.improving.com/thoughts/how-to-onboard-ai-coding-agent/" target="_blank" rel="noopener">
+          <span class="link-head"><img src="assets/improving.png" alt="Improving logo"><span class="tag">Improving</span></span>
+          <h3>How to Onboard Your AI Agent</h3>
+          <p>Treat a new agent like a new hire, not a magic box.</p>
+          <span class="cta-chip">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+        </a>
+        <a class="link-card" href="https://daniel.scheufler.tech/blog/ai-workflow-decomposition-pattern/" target="_blank" rel="noopener">
+          <span class="link-head"><img src="assets/blog.png" alt="daniel.scheufler.tech logo"><span class="tag">daniel.scheufler.tech</span></span>
+          <h3>How to Decompose Work</h3>
+          <p>The workflow decomposition pattern behind Lesson 2 &mdash; breaking jobs into tasks a machine can carry.</p>
+          <span class="cta-chip">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+        </a>
+        <a class="link-card" href="https://hbr.org/2026/09/why-your-employees-override-ai" target="_blank" rel="noopener">
+          <span class="link-head"><img src="assets/hbr.ico" alt="Harvard Business Review logo"><span class="tag">Harvard Business Review</span></span>
+          <h3>Why Your Employees Override AI</h3>
+          <p>When the process shifts but the roles don&rsquo;t, people route around the tool.</p>
+          <span class="cta-chip">Read at HBR <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+
+      <div class="worksheet">
+        <p class="k">Blank card &middot; Your workflow</p>
+        <h3>Try it on one of yours</h3>
+        <div class="fill">
+          <div class="row"><span>The outcome I actually need:</span><span class="blank"></span></div>
+          <div class="row"><span>Simple tasks it breaks into:</span><span class="blank"></span></div>
+          <div class="row"><span>&ldquo;Done&rdquo; looks like:</span><span class="blank"></span></div>
+        </div>
+      </div>
+      <div class="punches"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- ============ CARD 3: FURTHER READING ============ -->
+  <section class="block" aria-labelledby="books">
+    <span class="drawer-tab wrap">Card 3 &middot; Further Reading</span>
+    <div class="card-frame" style="--stock:var(--stock-4);border-top:0;">
+      <div class="block-head">
+        <p class="callno">HR 658.5<i>Card 3</i></p>
+        <p class="eyebrow" style="color:var(--teal);">The back of the drawer</p>
+        <h2 id="books">Read these next</h2>
+        <p>The thinking behind workflow redesign comes from existing disciplines, not from AI itself.</p>
+      </div>
+      <div class="shelf">
+        <a class="book" href="https://www.amazon.com/dp/0884271951" target="_blank" rel="noopener">
+          <div class="book-cover"><img src="assets/cover-goal.jpg" alt="The Goal book cover"></div>
+          <div class="book-body">
+            <h3>The Goal</h3>
+            <p class="author">Eliyahu M. Goldratt</p>
+            <p class="note">The bottleneck is the process, not the people.</p>
+            <span class="cta-chip">Find the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+        <a class="book" href="https://www.amazon.com/Toyota-Way-Lean-Leadership-Development/dp/0071780785/" target="_blank" rel="noopener">
+          <div class="book-cover"><img src="assets/cover-toyota-way.jpg" alt="The Toyota Way to Lean Leadership book cover"></div>
+          <div class="book-body">
+            <h3>The Toyota Way to Lean Leadership</h3>
+            <p class="author">Jeffrey Liker &amp; Gary Convis</p>
+            <p class="note">The mindset that changed more than one industry.</p>
+            <span class="cta-chip">Find the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+        <a class="book" href="https://www.amazon.com/Great-Mental-Models-Thinking-Concepts/dp/0593719972" target="_blank" rel="noopener">
+          <div class="book-cover"><img src="assets/cover-mental-models.jpg" alt="The Great Mental Models book cover"></div>
+          <div class="book-body">
+            <h3>The Great Mental Models</h3>
+            <p class="author">Shane Parrish</p>
+            <p class="note">General thinking concepts for judging any new tool.</p>
+            <span class="cta-chip">Find the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+        <a class="book" href="https://itrevolution.com/product/wiring-the-winning-organization/" target="_blank" rel="noopener">
+          <div class="book-cover"><img src="assets/cover-wiring.jpg" alt="Wiring the Winning Organization book cover"></div>
+          <div class="book-body">
+            <h3>Wiring the Winning Organization</h3>
+            <p class="author">Gene Kim &amp; Steven Spear</p>
+            <p class="note">How work flows &mdash; and stalls &mdash; through a system.</p>
+            <span class="cta-chip">Find the book <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span>
+          </div>
+        </a>
+      </div>
+      <div class="punches"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- ============ LAST CARD: CONTACT ============ -->
+  <section class="block contact" aria-labelledby="contact">
+    <span class="drawer-tab wrap">Last Card &middot; Reach Out</span>
+    <div class="card-frame" style="border-top:0;">
+      <p class="callno" style="color:#fff;">HR 658.5<i style="color:#BFD3E4;">Questions welcome</i></p>
+      <div style="margin-top:16px;">
+        <p class="eyebrow">It&rsquo;s about the humans</p>
+        <h2 id="contact">People. Process. Technology &mdash; <span>in that order.</span> Questions about yours?</h2>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:daniel@scheufler.tech">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#5BC2A7" stroke-width="3"><rect x="4" y="8" width="32" height="24" rx="4"/><path d="M6 10l14 12 14-12"/></svg>
+          <span>daniel@scheufler.tech</span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/danielscheufler/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#0077B5"></rect><text x="20" y="27" font-family="Arial" font-weight="700" font-size="18" fill="#FFFFFF" text-anchor="middle">in</text></svg>
+          <span>linkedin.com/in/danielscheufler</span>
+        </a>
+        <a class="contact-link" href="https://daniel.scheufler.tech/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#5BC2A7" stroke-width="3"><circle cx="20" cy="20" r="17"/><path d="M7 28l7-12 5 7 4-6 9 11z" fill="#5BC2A7" stroke="none"/></svg>
+          <span>daniel.scheufler.tech</span>
+        </a>
+      </div>
+      <div class="contact-sig">
+        <div class="bar"></div>
+        <div>
+          <p>Daniel Scheufler</p>
+          <p>Leading Software Engineering Excellently! &middot; Improving</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
