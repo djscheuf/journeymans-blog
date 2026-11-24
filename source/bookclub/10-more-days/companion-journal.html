@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>10 More Days of Agentic Development: Companion Journal</title>
+<meta name="description" content="A three-page companion journal for 10 More Days of Agentic Development: before you start, end of the first week, and end of the second week.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap">
+<style>
+/* Tokens follow "Brand Bible - scmm.yaml" and the blog theme; the three-phase colours and the
+   sheet furniture follow the guided-reflection pattern used in the discussion guide. */
+:root{
+  color-scheme: light;
+  --ink:#2A2828;
+  --ink-soft:#4A4A54;
+  --desk:#D6D6DD;
+  --paper:#FFFFFF;
+  --indigo:#0D446D;
+  --green-deep:#005F36;
+  --tiger:#A9650A;        /* the tab on every title rule */
+  --tiger-deep:#8A4F00;
+  --rule:#BCBCC8;         /* write-in lines, dots, dividers: decorative only */
+  --font-body:'Roboto',Arial,'Helvetica Neue',Helvetica,sans-serif;
+  --font-title:'EB Garamond',Garamond,Georgia,'Times New Roman',serif;
+  --font-cta:'Libre Baskerville',Baskerville,Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--desk);color:var(--ink);font-family:var(--font-body);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  display:flex;flex-direction:column;align-items:center;gap:24px;padding:24px;
+}
+::selection{background:var(--indigo);color:#fff;}
+h1,h2,h3,p,ol,li{margin:0;padding:0;}
+ol{list-style:none;}
+h1{text-wrap:balance;}
+p{text-wrap:pretty;}
+
+/* ---------- One US Letter sheet each ---------- */
+.sheet{
+  width:8.5in;height:11in;overflow:hidden;flex:none;
+  background:var(--paper);
+  box-shadow:0 2px 6px rgba(42,40,40,.18),0 10px 28px rgba(42,40,40,.16);
+  break-after:page;page-break-after:always;
+}
+.sheet:last-child{break-after:auto;page-break-after:auto;}
+.sheet--before{--phase:var(--indigo);}
+.sheet--week1{--phase:var(--tiger-deep);}
+.sheet--week2{--phase:var(--green-deep);}
+
+.page{
+  --fs-title:34pt;--fs-lead:12pt;--fs-body:11.5pt;
+  --fs-small:10pt;      /* the smallest typed text on the page */
+  --fs-cta:15pt;
+  --gap-s:2mm;--gap-m:4mm;--gap-l:7mm;
+  --hair:1pt;--thick:2.5pt;--tab:28mm;
+  --lineh:8.6mm;        /* write-in line pitch */
+  --node:9mm;
+  width:100%;height:100%;
+  padding:13mm 15mm 12mm;   /* printer-safe: at least 12 mm */
+  display:grid;
+  grid-template-rows:auto auto minmax(0,1fr) auto;
+  row-gap:var(--gap-l);
+  font-size:var(--fs-body);line-height:1.4;
+}
+
+/* Title block: indigo rule with the tiger's-eye tab */
+.head{
+  position:relative;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:var(--gap-l);
+  padding-bottom:var(--gap-m);
+  border-bottom:var(--thick) solid var(--indigo);
+}
+.head::after{
+  content:"";position:absolute;left:0;bottom:calc(var(--thick) * -1);
+  width:var(--tab);height:var(--thick);background:var(--tiger);
+}
+.title{display:grid;gap:var(--gap-s);flex:none;}
+.head h1{
+  font-family:var(--font-title);font-weight:700;
+  font-size:var(--fs-title);line-height:1;letter-spacing:-.01em;color:var(--phase);white-space:nowrap;
+}
+.cta{font-family:var(--font-cta);font-style:italic;font-size:var(--fs-cta);line-height:1.35;color:var(--green-deep);}
+
+/* Where you are in the journal */
+.where{display:grid;gap:1.2mm;font-size:var(--fs-small);line-height:1.2;}
+.where li{display:flex;align-items:center;gap:var(--gap-s);color:var(--ink-soft);}
+.where li::before{content:"";flex:none;width:3.2mm;height:3.2mm;border-radius:50%;border:var(--hair) solid var(--ink-soft);}
+.where li[aria-current]{color:var(--ink);font-weight:700;}
+.where li[aria-current]::before{background:var(--phase);border-color:var(--phase);}
+
+.intro{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--gap-l);}
+.lead{font-size:var(--fs-lead);line-height:1.5;max-width:40em;}
+.name{display:flex;align-items:flex-end;gap:var(--gap-m);font-weight:700;white-space:nowrap;}
+.name span+span{display:block;width:52mm;height:7mm;border-bottom:var(--hair) solid var(--ink);}
+
+/* ---------- Questions: a path of numbered nodes running down the page ---------- */
+.body{display:grid;grid-template-rows:repeat(3,minmax(0,1fr));row-gap:var(--gap-l);min-height:0;counter-reset:q;}
+.body--map{grid-template-rows:1.45fr 1fr 1fr;}
+.q{
+  position:relative;min-height:0;counter-increment:q;
+  display:grid;grid-template-columns:var(--node) minmax(0,1fr);column-gap:var(--gap-m);
+  grid-template-rows:auto auto auto minmax(0,1fr);
+  align-content:start;
+}
+.q > *{grid-column:2;}
+.q-node{
+  grid-column:1;grid-row:1;
+  display:grid;place-items:center;width:var(--node);height:var(--node);border-radius:50%;
+  background:var(--phase);color:#fff;font-size:13pt;font-weight:700;line-height:1;
+}
+.q-node::before{content:counter(q);}
+/* the path: a line and arrowhead from this node down to the next */
+.q::after{
+  content:"";position:absolute;left:calc(var(--node) / 2 - var(--thick) / 2);
+  top:calc(var(--node) + 1.5mm);bottom:calc(var(--gap-l) * -1 + 4.4mm);
+  width:var(--thick);background:var(--phase);
+}
+.q::before{
+  content:"";position:absolute;left:calc(var(--node) / 2 - 2.2mm);
+  bottom:calc(var(--gap-l) * -1 + 1.2mm);
+  border-top:3.2mm solid var(--phase);border-left:2.2mm solid transparent;border-right:2.2mm solid transparent;
+}
+.q:last-child::before,.q:last-child::after{display:none;}
+.q h2{font-size:13.5pt;line-height:1.25;font-weight:700;color:var(--ink);padding-top:.4mm;}
+.q .ref{margin-top:1.2mm;font-size:var(--fs-small);line-height:1.3;color:var(--ink-soft);}
+.q .ref b{color:var(--phase);}
+.q .hint{margin:1.2mm 0 1mm;font-size:var(--fs-small);line-height:1.35;}
+.lines{display:block;overflow:hidden;min-height:0;}
+.lines i{display:block;height:var(--lineh);border-bottom:var(--hair) solid var(--rule);}
+/* an open canvas for the flow map: a faint dot grid under a hairline frame */
+.draw{
+  min-height:0;margin-top:1mm;
+  border:var(--hair) solid var(--rule);border-radius:2mm;
+  background-image:radial-gradient(circle,var(--rule) .75pt,transparent 1pt);
+  background-size:6mm 6mm;background-position:3mm 3mm;
+}
+
+/* ---------- Background scene: the climber's journey, one chapter per page ---------- */
+.scene{
+  position:absolute;right:8mm;bottom:11mm;width:80mm;height:auto;
+  color:var(--phase);opacity:.2;pointer-events:none;z-index:0;
+}
+.page{position:relative;}
+.page > :not(.scene){position:relative;z-index:1;}
+
+/* ---------- Footer ---------- */
+.foot{
+  display:flex;justify-content:space-between;gap:var(--gap-l);
+  padding-top:var(--gap-s);border-top:var(--hair) solid var(--rule);
+  font-size:var(--fs-small);line-height:1.3;
+}
+
+/* ---------- Small screens: sheets become stacked reading pages ---------- */
+@media screen and (max-width:860px){
+  body{padding:0;gap:0;background:var(--paper);}
+  .sheet{width:100%;height:auto;box-shadow:none;border-bottom:8px solid var(--desk);}
+  .page{display:block;padding:20px 16px 28px;--fs-title:26pt;--fs-body:12pt;--fs-small:10.5pt;--lineh:11mm;}
+  .head{flex-direction:column;align-items:flex-start;gap:var(--gap-m);}
+  .intro{flex-direction:column;align-items:flex-start;gap:var(--gap-m);margin-top:var(--gap-l);}
+  .body{display:block;margin-top:var(--gap-l);}
+  .q{margin-bottom:var(--gap-l);}
+  .q::before,.q::after{display:none;}
+  .lines{height:calc(var(--lineh) * 5);}
+  .draw{height:80vw;}
+  .foot{margin-top:var(--gap-l);flex-direction:column;gap:2px;}
+  .scene{right:8px;bottom:56px;width:56vw;}
+}
+
+/* ---------- Print ---------- */
+@page{size:letter portrait;margin:0;}
+@media print{
+  html,body{background:var(--paper);}
+  body{display:block;padding:0;}
+  .sheet{box-shadow:none;border:0;}
+}
+</style>
+</head>
+<body>
+
+<!-- Sheet 1: Before you start -->
+<main class="sheet sheet--before">
+  <div class="page">
+    <svg class="scene" viewBox="0 0 220 150" aria-hidden="true" focusable="false"><g opacity="0.25"><polygon points="14,140 70,70 100,104 150,40 215,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><g opacity="0.45"><polygon points="70,140 110,98 132,118 168,70 212,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><path d="M58 139 C 78 134, 70 122, 92 116 S 108 98, 126 92" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="1 6.5" opacity=".9"/><rect x="19" y="99" width="9" height="16" rx="3.5" fill="currentColor"/><circle cx="34" cy="92" r="5.5" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"><path d="M33 100 L30 118"/><path d="M30 118 L36 129 L38 140"/><path d="M30 118 L25 130 L20 140"/><path d="M33 102 L42 110"/><path d="M43 106 L50 141" stroke-width="2.6"/></g><line x1="0" y1="141.5" x2="220" y2="141.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg>
+    <header class="head">
+      <div class="title">
+        <h1>Before you start</h1>
+        <p class="cta">Set your intent.</p>
+      </div>
+      <ol class="where" aria-label="Journal sections">
+        <li aria-current="step">Before you start</li>
+        <li>End of the first week</li>
+        <li>End of the second week</li>
+      </ol>
+    </header>
+
+    <div class="intro">
+      <p class="lead">Fill this in on or before Day 1. Rough notes are plenty. You will come back to it at the end of the second week.</p>
+      <p class="name"><span>Name</span><span></span></p>
+    </div>
+
+    <div class="body">
+      <section class="q" aria-labelledby="b1">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="b1">What are you most hoping to learn?</h2>
+        <p class="ref"><b>Day 1:</b> Make Time to Learn</p>
+        <p class="hint">Look over the ten exercises. Which ones pull at you most, and why?</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section class="q" aria-labelledby="b2">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="b2">What challenge or process do you want to keep in mind for applying what you learn?</h2>
+        <p class="hint">Choose one real piece of your work to hold in view while you practice.</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section class="q" aria-labelledby="b3">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="b3">What existing documents or context for your process do you want gathered so you can make the most of these exercises?</h2>
+        <p class="ref"><b>Day 4:</b> Capture Context Artifacts</p>
+        <p class="hint">Story notes, architecture decisions, process documents: anything an agent would otherwise have to guess.</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>Daniel Scheufler &middot; <cite>10 More Days of Agentic Development</cite> &middot; Companion journal</span>
+      <span>1 of 3</span>
+    </footer>
+  </div>
+</main>
+
+<!-- Sheet 2: End of the first week. Question 1 is an open canvas for the flow map. -->
+<main class="sheet sheet--week1">
+  <div class="page">
+    <svg class="scene" viewBox="0 0 220 150" aria-hidden="true" focusable="false"><g opacity="0.25"><polygon points="30,140 84,82 116,114 160,58 215,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><g opacity="0.4"><polygon points="96,140 140,100 170,126 190,108 218,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><path d="M176 22 a11 11 0 1 0 9 17 a8.6 8.6 0 1 1 -9 -17z" fill="currentColor"/><path fill-rule="evenodd" d="M30 140 L58 98 L86 140 Z M51 140 L58 118 L65 140 Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M58 98 L58 90" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M58 90 L70 94 L58 98 Z" fill="currentColor"/><path d="M98 140 C91 131 97 127 97 119 C104 125 106 133 102 140 Z" fill="currentColor"/><path d="M112 140 Q113 123 129 121 Q146 121 150 140 Z" fill="currentColor" opacity=".75"/><circle cx="142" cy="99" r="5.5" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"><path d="M130 121 L137 105"/><path d="M130 121 L151 119 L152 139"/><path d="M137 106 L149 115 L143 105"/></g><line x1="0" y1="141.5" x2="220" y2="141.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg>
+    <header class="head">
+      <div class="title">
+        <h1>End of the first week</h1>
+        <p class="cta">Look at what you have built.</p>
+      </div>
+      <ol class="where" aria-label="Journal sections">
+        <li>Before you start</li>
+        <li aria-current="step">End of the first week</li>
+        <li>End of the second week</li>
+      </ol>
+    </header>
+
+    <div class="intro">
+      <p class="lead">Complete this after Day 5, once your map is on paper.</p>
+    </div>
+
+    <div class="body body--map">
+      <section class="q" aria-labelledby="w1">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="w1">What does your current map look like?</h2>
+        <p class="ref"><b>Day 5:</b> Map Your SDLC</p>
+        <p class="hint">Sketch the flow. Draw steps as boxes and hand-offs as arrows, and mark where a result is stored outside the chat.</p>
+        <div class="draw" role="img" aria-label="Open drawing area for your flow map"></div>
+      </section>
+      <section class="q" aria-labelledby="w2">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="w2">How would you sum up the lessons from this week in your own words?</h2>
+        <p class="ref"><b>Days 1&ndash;5</b></p>
+        <p class="hint">Two or three sentences, as if you were telling a colleague.</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section class="q" aria-labelledby="w3">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="w3">What &lsquo;roles&rsquo; do you think will be involved in your workflow?</h2>
+        <p class="ref"><b>Day 3:</b> Standardize Your Prompt</p>
+        <p class="hint">Day 3 asks what Role makes a good starting point. Which roles, human or agent, appear in the steps you mapped?</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>Daniel Scheufler &middot; <cite>10 More Days of Agentic Development</cite> &middot; Companion journal</span>
+      <span>2 of 3</span>
+    </footer>
+  </div>
+</main>
+
+<!-- Sheet 3: End of the second week -->
+<main class="sheet sheet--week2">
+  <div class="page">
+    <svg class="scene" viewBox="0 0 220 150" aria-hidden="true" focusable="false"><g opacity="0.25"><polygon points="0,140 50,84 86,118 124,66 166,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><g opacity="0.45"><polygon points="36,140 104,96 128,118 166,46 216,140" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/></g><circle cx="198" cy="31" r="8.5" fill="currentColor"/><path d="M211.0 31.0 L220.0 31.0 M210.0 36.0 L214.6 37.9 M207.2 40.2 L213.6 46.6 M203.0 43.0 L204.9 47.6 M198.0 44.0 L198.0 53.0 M193.0 43.0 L191.1 47.6 M188.8 40.2 L182.4 46.6 M186.0 36.0 L181.4 37.9 M185.0 31.0 L176.0 31.0 M186.0 26.0 L181.4 24.1 M188.8 21.8 L182.4 15.4 M193.0 19.0 L191.1 14.4 M198.0 18.0 L198.0 9.0 M203.0 19.0 L204.9 14.4 M207.2 21.8 L213.6 15.4 M210.0 26.0 L214.6 24.1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="166" cy="15" r="5" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"><path d="M166 22 L166 34"/><path d="M166 34 L161 46"/><path d="M166 34 L171 46"/><path d="M166 23 L156 11"/><path d="M166 23 L176 11"/></g><line x1="0" y1="141.5" x2="220" y2="141.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/></svg>
+    <header class="head">
+      <div class="title">
+        <h1>End of the second week</h1>
+        <p class="cta">Carry it forward.</p>
+      </div>
+      <ol class="where" aria-label="Journal sections">
+        <li>Before you start</li>
+        <li>End of the first week</li>
+        <li aria-current="step">End of the second week</li>
+      </ol>
+    </header>
+
+    <div class="intro">
+      <p class="lead">Complete this after Day 10. Turn back to your first page to see where you started.</p>
+    </div>
+
+    <div class="body">
+      <section class="q" aria-labelledby="e1">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="e1">What &lsquo;historical&rsquo; decisions for your project should you make sure are documented, so agents do not undo them?</h2>
+        <p class="ref"><b>Day 10:</b> Document Your Decisions</p>
+        <p class="hint">Choices made long ago whose reasons now live only in people&rsquo;s heads.</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section class="q" aria-labelledby="e2">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="e2">Look back at the lessons you hoped to learn. What new questions do you have after completing the challenge?</h2>
+        <p class="ref"><b>Page 1:</b> What are you most hoping to learn?</p>
+        <p class="hint">Re-read your first answer. What was settled, and what did it raise?</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+      <section class="q" aria-labelledby="e3">
+        <span class="q-node" aria-hidden="true"></span>
+        <h2 id="e3">If you were to teach just one lesson from this challenge to your team, what would it be? How would you teach it?</h2>
+        <p class="ref"><b>Days 1&ndash;10</b></p>
+        <p class="hint">Name the lesson, then sketch how you would teach it: an exercise, a story, or a demo.</p>
+        <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>Daniel Scheufler &middot; <cite>10 More Days of Agentic Development</cite> &middot; Companion journal</span>
+      <span>3 of 3</span>
+    </footer>
+  </div>
+</main>
+</body>
+</html>

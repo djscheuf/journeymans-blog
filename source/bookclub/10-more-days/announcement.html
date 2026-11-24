@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>10 More Days of Agentic Development: Reading Group Announcement</title>
+<meta name="description" content="A live reading-group discussion of 10 More Days of Agentic Development by Daniel Scheufler, with the Book Reader Society.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap">
+<style>
+/* Tokens follow "Brand Bible - scmm.yaml" and the blog theme's _variables.less */
+:root{
+  color-scheme: light;
+  --fg:#2A2828;
+  --fg-soft:#4A4A54;
+  --desk:#E9E9ED;
+  --paper:#FBFAFA;
+  --rule:#BCBCC8;
+  --indigo:#0D446D;
+  --indigo-deep:#053459;
+  --indigo-light:#34688F;
+  --green:#077445;        /* call to action */
+  --green-deep:#005F36;
+  --tiger:#8A4F00;        /* the one accent: slots the organizer fills in */
+  --font-title:'EB Garamond','Garamond',Georgia,serif;
+  --font-cta:'Libre Baskerville','Baskerville',Georgia,serif;
+  --font-body:'Roboto',Arial,sans-serif;
+  --trace:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 600 48%22%3E %3Cg stroke=%22%230D446D%22 stroke-width=%221.6%22 fill=%22none%22 opacity=%220.45%22 stroke-linejoin=%22round%22 stroke-linecap=%22round%22%3E %3Cpath d=%22M0 40 L16 24 L54 24 L76 8 L130 8 L152 24 L210 24 L232 38 L290 38 L312 24 L370 24 L392 8 L450 8 L472 24 L540 24 L562 40 L600 40%22 /%3E %3Cpath d=%22M100 8 L112 20%22 /%3E %3Cpath d=%22M255 38 L255 46%22 /%3E %3Cpath d=%22M410 8 L398 20%22 /%3E %3Cpath d=%22M34 24 L24 14%22 /%3E %3Cpath d=%22M180 24 L192 34%22 /%3E %3C/g%3E %3Cg fill=%22%230D446D%22 opacity=%220.45%22%3E %3Ccircle cx=%22112%22 cy=%2220%22 r=%222.2%22 /%3E %3Ccircle cx=%22255%22 cy=%2246%22 r=%221.8%22 /%3E %3Ccircle cx=%22398%22 cy=%2220%22 r=%222.2%22 /%3E %3Ccircle cx=%2276%22 cy=%228%22 r=%221.6%22 /%3E %3Ccircle cx=%22312%22 cy=%2224%22 r=%221.6%22 /%3E %3Ccircle cx=%2224%22 cy=%2214%22 r=%222%22 /%3E %3Ccircle cx=%22192%22 cy=%2234%22 r=%221.8%22 /%3E %3Ccircle cx=%22540%22 cy=%2224%22 r=%221.6%22 /%3E %3C/g%3E %3C/svg%3E");
+  --shadow:0 2px 4px rgba(42,40,40,.18),0 10px 22px rgba(42,40,40,.22);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--desk);
+  color:var(--fg);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.5;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+::selection{background:var(--indigo);color:#fff;}
+a{color:var(--indigo);text-underline-offset:.2em;text-decoration-thickness:1px;}
+a:hover{color:var(--green-deep);}
+a:focus-visible{outline:3px solid var(--tiger);outline-offset:3px;border-radius:2px;}
+h1,p,dl,dd,dt,figure{margin:0;}
+h1{text-wrap:balance;}
+p{text-wrap:pretty;}
+img{display:block;max-width:100%;}
+
+/* ---------- The sheet: one US Letter page ---------- */
+.sheet{
+  position:relative;
+  width:8.5in;height:11in;
+  margin:32px auto;
+  background:var(--paper);
+  box-shadow:0 1px 3px rgba(42,40,40,.2),0 18px 40px rgba(42,40,40,.18);
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+  padding:.45in .55in .5in;
+  overflow:hidden;
+}
+.trace{
+  height:30px;
+  margin:0 0 .2in;
+  background:var(--indigo);
+  -webkit-mask:var(--trace) repeat-x left center/auto 100%;
+          mask:var(--trace) repeat-x left center/auto 100%;
+  opacity:.5;
+}
+
+.main{
+  display:grid;
+  grid-template-columns:3.6in 1fr;
+  gap:.5in;
+  align-items:stretch;
+}
+
+/* Cover panel */
+.cover-panel{
+  align-self:start;
+  background:var(--indigo);
+  border-radius:6px;
+  padding:.16in;
+}
+.cover{
+  width:100%;height:auto;
+  aspect-ratio:2/3;
+  box-shadow:var(--shadow);
+}
+
+/* Copy column */
+.copy{display:flex;flex-direction:column;}
+.copy h1{
+  font-family:var(--font-title);
+  font-weight:700;
+  font-size:3rem;
+  line-height:1.02;
+  letter-spacing:-.015em;
+  color:var(--indigo);
+}
+.lede{
+  margin-top:.22in;
+  font-family:var(--font-cta);
+  font-style:italic;
+  font-size:1.12rem;
+  line-height:1.5;
+  color:var(--fg);
+}
+.lede cite{font-style:italic;font-weight:700;}
+.pitch{
+  margin-top:.16in;
+  font-size:1rem;
+  color:var(--fg-soft);
+  max-width:34em;
+}
+
+/* Event details: fill-in slots for the organizer */
+.details{
+  margin-top:auto;
+  border-top:2px solid var(--indigo);
+}
+.details > div{
+  display:grid;
+  grid-template-columns:.95in 1fr;
+  align-items:baseline;
+  gap:.12in;
+  padding:.1in 0;
+  border-bottom:1px solid var(--rule);
+}
+.details dt{
+  font-weight:700;
+  font-size:.8125rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--indigo-deep);
+}
+.details dd{font-size:1.0625rem;}
+.slot{
+  color:var(--tiger);
+  font-style:italic;
+  border-bottom:1.5px dashed var(--tiger);
+  padding:0 .15em .05em 0;
+  cursor:text;
+}
+.slot[contenteditable]:focus{outline:3px solid var(--tiger);outline-offset:3px;border-bottom-color:transparent;}
+.host-link{font-weight:500;}
+
+/* ---------- Foot: author, teaser, QR cluster ---------- */
+.foot{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:end;
+  gap:.3in;
+  margin-top:.22in;
+  padding-top:.18in;
+  border-top:1px solid var(--rule);
+}
+.foot-copy{display:grid;gap:.2in;padding-bottom:.08in;}
+.author{display:flex;align-items:center;gap:.14in;}
+.author img{width:.62in;height:.62in;}
+.author p{font-size:.9375rem;line-height:1.35;}
+.author strong{display:block;font-family:var(--font-title);font-size:1.3rem;font-weight:700;color:var(--fg);}
+
+.teaser{max-width:26em;}
+.teaser .hook{
+  font-family:var(--font-cta);font-style:italic;font-weight:400;
+  font-size:1.35rem;line-height:1.25;color:var(--green-deep);
+}
+.teaser .detail{margin-top:.08in;font-size:.9375rem;color:var(--fg);}
+.teaser em{font-family:var(--font-cta);font-size:.875rem;}
+
+.bundle{
+  position:relative;
+  width:2.9in;height:2.4in;
+}
+.bundle .sister{
+  position:absolute;left:-.12in;top:-.1in;
+  width:1.55in;height:auto;aspect-ratio:2/3;
+  transform:rotate(-15deg);
+  transform-origin:50% 100%;
+  box-shadow:var(--shadow);
+}
+.bundle .qr-card{
+  position:absolute;right:0;bottom:.04in;
+  width:1.95in;
+  background:#fff;
+  padding:.1in .1in .08in;
+  border-radius:10px;
+  transform:rotate(3.5deg);
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.bundle .qr-card img{width:100%;height:auto;aspect-ratio:1/1;}
+.bundle .qr-card span{
+  display:block;margin-top:.02in;
+  font-weight:700;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green-deep);
+}
+
+/* ---------- Small screens: the sheet becomes a page ---------- */
+@media screen and (max-width:860px){
+  .sheet{width:100%;height:auto;margin:0;box-shadow:none;padding:20px 16px 32px;display:block;}
+  .main{grid-template-columns:1fr;gap:24px;}
+  .cover-panel{max-width:360px;margin:0 auto;padding:20px;}
+  .copy h1{font-size:2.6rem;}
+  .details{margin-top:24px;}
+  .details > div{grid-template-columns:5.5rem 1fr;}
+  .foot{grid-template-columns:1fr;margin-top:32px;padding-top:24px;}
+  .bundle{margin:20px auto 12px;}
+  .bundle .sister{left:.2in;}
+}
+
+/* ---------- Print: exactly one Letter page ---------- */
+@page{size:Letter;margin:0;}
+@media print{
+  html,body{background:#fff;}
+  .sheet{margin:0;box-shadow:none;width:8.5in;height:11in;page-break-after:avoid;break-inside:avoid;}
+  a{color:inherit;}
+  .slot[contenteditable]{cursor:auto;}
+}
+@media (prefers-reduced-motion:no-preference){
+  .bundle .sister,.bundle .qr-card{transition:transform .4s cubic-bezier(.16,1,.3,1);}
+  .bundle:hover .sister{transform:rotate(-16deg) translateY(-4px);}
+  .bundle:hover .qr-card{transform:rotate(2deg);}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="trace" aria-hidden="true"></div>
+
+  <div class="main">
+    <aside class="cover-panel">
+      <img class="cover" src="assets/cover-more-agentic.png" width="800" height="1200"
+           alt="Cover of 10 More Days of Agentic Development by Daniel Scheufler: an industrial robot arm throwing sparks.">
+    </aside>
+
+    <section class="copy">
+      <h1>Practice it. Then talk it through.</h1>
+      <p class="lede">A live reading-group discussion of <cite>10 More Days of Agentic Development</cite>, with the Book Reader Society.</p>
+      <p class="pitch">Ten small exercises, 15&ndash;30 minutes a day, built to turn agentic development into a habit. Bring what you tried, what surprised you, and what you still want to ask.</p>
+
+      <!-- Organizer: edit the three slots below. They are plain text in the HTML. -->
+      <dl class="details">
+        <div>
+          <dt>Date</dt>
+          <dd><span class="slot" contenteditable="true" spellcheck="false">Date to be announced</span></dd>
+        </div>
+        <div>
+          <dt>Time</dt>
+          <dd><span class="slot" contenteditable="true" spellcheck="false">Time to be announced</span></dd>
+        </div>
+        <div>
+          <dt>Where</dt>
+          <dd><span class="slot" contenteditable="true" spellcheck="false">Place to be announced</span></dd>
+        </div>
+        <div>
+          <dt>Hosted by</dt>
+          <dd><a class="host-link" href="https://book-reader-society.lovable.app/">Book Reader Society</a><br>
+              <span style="color:var(--fg-soft);font-size:.9375rem;">book-reader-society.lovable.app</span></dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <div class="foot-copy">
+      <div class="author">
+        <img src="assets/logo.png" width="700" height="700" alt="">
+        <p><strong>Daniel Scheufler</strong>Author, <cite>10 More Days of Agentic Development</cite></p>
+      </div>
+      <div class="teaser">
+        <p class="hook">One scan, two books.</p>
+        <p class="detail">Scan the code to get <cite>10 More Days</cite> and its sister, <cite>10 Days of Agentic Development</cite>, for the price of one.</p>
+      </div>
+    </div>
+
+    <figure class="bundle">
+      <img class="sister" src="assets/cover-agentic.png" width="500" height="750"
+           alt="Cover of the sister book, 10 Days of Agentic Development: a robot gripper holding a chess knight.">
+      <div class="qr-card">
+        <img src="assets/qr-bundle.png" width="511" height="511"
+             alt="QR code that gets both books for the price of one.">
+        <span>Both books, one price</span>
+      </div>
+    </figure>
+  </footer>
+</main>
+</body>
+</html>
