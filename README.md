@@ -32,6 +32,12 @@ journeymans-blog/
 └── package.json         # Node.js dependencies
 ```
 
+### Standalone Pages (not themed)
+
+Some pages under `source/` are complete, self-styled HTML documents rather than Hexo posts: the talk handouts in `source/talks/<talk>/` and the book club kits in `source/bookclub/`. Hexo must copy them raw, or the theme layout wraps them and breaks their styling.
+
+**When you add one, add its path to `skip_render` in `_config.yml`.** The `bookclub/**` entry already covers everything under `source/bookclub/`. Each talk has its own entry. After generating, check that the file in `public/` is identical to the source. This rule is also recorded in `.devin/rules/standalone-pages.md`.
+
 ### Blog Posts
 
 All published blog posts are stored as Markdown files in `source/_posts/`. Each post includes front matter with metadata such as title, date, categories, and tags.
