@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>10 More Days of Agentic Development: Discussion Guide</title>
+<meta name="description" content="Four questions to think over before the live discussion of 10 More Days of Agentic Development by Daniel Scheufler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap">
+<style>
+/* Tokens follow "Brand Bible - scmm.yaml" and the blog theme. The guided-reflection pattern
+   (phases, numbered nodes joined by arrows, write-in lines) follows the Family Meeting scenario sheet. */
+:root{
+  color-scheme: light;
+  --ink:#2A2828;
+  --ink-soft:#4A4A54;
+  --desk:#D6D6DD;
+  --paper:#FFFFFF;
+  --indigo:#0D446D;
+  --indigo-deep:#053459;
+  --green-deep:#005F36;
+  --tiger:#A9650A;        /* the one accent: the tab on the title rule, and the slots to fill in */
+  --tiger-deep:#8A4F00;
+  --rule:#BCBCC8;         /* write-in lines and dividers: decorative only */
+  --font-body:'Roboto',Arial,'Helvetica Neue',Helvetica,sans-serif;
+  --font-title:'EB Garamond',Garamond,Georgia,'Times New Roman',serif;
+  --font-cta:'Libre Baskerville',Baskerville,Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--desk);
+  color:var(--ink);
+  font-family:var(--font-body);
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  display:flex;flex-direction:column;align-items:center;padding:24px;
+}
+::selection{background:var(--indigo);color:#fff;}
+a{color:var(--indigo);text-underline-offset:.2em;text-decoration-thickness:1px;}
+a:focus-visible{outline:3px solid var(--tiger);outline-offset:3px;border-radius:2px;}
+h1,h2,h3,p,ol,li,figure{margin:0;padding:0;}
+ol{list-style:none;}
+img{display:block;max-width:100%;}
+h1,h2{text-wrap:balance;}
+p{text-wrap:pretty;}
+
+/* ---------- One US Letter sheet ---------- */
+.sheet{
+  width:8.5in;height:11in;overflow:hidden;
+  background:var(--paper);
+  box-shadow:0 2px 6px rgba(42,40,40,.18),0 10px 28px rgba(42,40,40,.16);
+}
+.page{
+  --fs-title:34pt;
+  --fs-lead:12pt;
+  --fs-body:11.5pt;
+  --fs-small:10pt;      /* the smallest typed text on the page */
+  --fs-cta:15pt;
+  --gap-s:2mm;--gap-m:4mm;--gap-l:7mm;
+  --hair:1pt;--thick:2.5pt;--tab:28mm;
+  --lineh:8mm;        /* write-in line pitch */
+  width:100%;height:100%;
+  padding:13mm 15mm 12mm;   /* printer-safe: at least 12 mm */
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr) auto;
+  row-gap:var(--gap-l);
+  font-size:var(--fs-body);line-height:1.4;
+}
+
+/* Title block: indigo rule with the tiger's-eye tab */
+.head{
+  position:relative;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:var(--gap-l);
+  padding-bottom:var(--gap-m);
+  border-bottom:var(--thick) solid var(--indigo);
+}
+.head::after{
+  content:"";position:absolute;left:0;bottom:calc(var(--thick) * -1);
+  width:var(--tab);height:var(--thick);background:var(--tiger);
+}
+.title{display:grid;gap:var(--gap-s);flex:none;}
+.head h1{
+  font-family:var(--font-title);font-weight:700;
+  font-size:var(--fs-title);line-height:1;letter-spacing:-.01em;color:var(--indigo);white-space:nowrap;
+}
+.cta{
+  font-family:var(--font-cta);font-style:italic;
+  font-size:var(--fs-cta);line-height:1.35;color:var(--green-deep);
+}
+.by{display:flex;align-items:flex-end;gap:var(--gap-m);}
+.meta{display:grid;justify-items:end;gap:.15em;font-size:var(--fs-small);line-height:1.3;text-align:right;}
+.meta strong{font-family:var(--font-title);font-size:13pt;font-weight:700;color:var(--ink);line-height:1.1;}
+.by img{
+  width:.62in;height:auto;aspect-ratio:2/3;flex:none;
+  box-shadow:0 1px 3px rgba(42,40,40,.25),0 4px 10px rgba(42,40,40,.2);
+}
+
+/* ---------- Body ---------- */
+.body{display:flex;flex-direction:column;justify-content:space-between;gap:var(--gap-m);min-height:0;counter-reset:rf;}
+.lead{font-size:var(--fs-lead);line-height:1.5;max-width:46em;}
+.lead b{color:var(--indigo);}
+
+.rf-phase{--phase:var(--indigo);position:relative;padding-top:var(--gap-s);border-top:var(--thick) solid var(--phase);}
+.rf-phase--flow{--phase:var(--green-deep);}
+.rf-icon{position:absolute;right:1mm;bottom:1mm;width:36mm;height:36mm;color:var(--phase);opacity:.13;pointer-events:none;}
+.rf-phase-head,.rf-steps{position:relative;}
+.rf-phase-head{display:flex;align-items:baseline;gap:var(--gap-m);margin-bottom:var(--gap-s);}
+.rf-phase-head h2{font-size:16pt;line-height:1.1;color:var(--phase);}
+.rf-phase-head p{font-size:var(--fs-small);line-height:1.3;}
+/* a down arrow on the second phase rule: the path continues below */
+.rf-phase + .rf-phase::before{
+  content:"";position:absolute;top:calc(var(--thick) * -1 - 3.2mm);left:3mm;
+  border-top:3.2mm solid var(--phase);border-left:2.2mm solid transparent;border-right:2.2mm solid transparent;
+}
+
+.rf-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(5,auto);column-gap:var(--gap-l);}
+.rf-step{display:grid;grid-template-rows:subgrid;grid-row:span 5;min-width:0;counter-increment:rf;}
+.rf-track{display:flex;align-items:center;gap:var(--gap-s);margin-bottom:var(--gap-s);}
+.rf-node{
+  flex:none;display:inline-grid;place-items:center;
+  width:9mm;height:9mm;border-radius:50%;
+  background:var(--phase);color:#fff;font-size:13pt;font-weight:700;line-height:1;
+}
+.rf-node::before{content:counter(rf);}
+.rf-line{flex:1;position:relative;height:var(--thick);background:var(--phase);margin-right:calc(var(--gap-l) * -1 + 3.5mm);}
+.rf-line::after{
+  content:"";position:absolute;right:-1mm;top:50%;transform:translateY(-50%);
+  border-left:3.2mm solid var(--phase);border-top:2.2mm solid transparent;border-bottom:2.2mm solid transparent;
+}
+.rf-step:last-child .rf-line{display:none;}
+.rf-step h3{font-size:13pt;line-height:1.25;font-weight:700;color:var(--ink);}
+.rf-ref{margin-top:1.2mm;font-size:var(--fs-small);line-height:1.3;color:var(--ink-soft);}
+.rf-ref b{color:var(--phase);}
+.rf-hint{margin:1.5mm 0 1mm;font-size:var(--fs-small);line-height:1.35;}
+.lines{display:block;}
+.lines i{display:block;height:var(--lineh);border-bottom:var(--hair) solid var(--rule);}
+
+/* ---------- Footer ---------- */
+.foot{
+  display:flex;justify-content:space-between;gap:var(--gap-l);
+  padding-top:var(--gap-s);border-top:var(--hair) solid var(--rule);
+  font-size:var(--fs-small);line-height:1.3;
+}
+
+/* ---------- Small screens: the sheet becomes a reading page ---------- */
+@media screen and (max-width:860px){
+  body{padding:0;background:var(--paper);}
+  .sheet{width:100%;height:auto;box-shadow:none;}
+  .page{display:block;padding:20px 16px 28px;--fs-title:28pt;--fs-body:12pt;--fs-small:10.5pt;--lineh:11mm;}
+  .head{align-items:flex-start;flex-direction:column;gap:var(--gap-m);}
+  .by{width:100%;flex-direction:row-reverse;justify-content:space-between;align-items:flex-end;}
+  .meta{justify-items:start;text-align:left;}
+  .body{margin-top:var(--gap-l);gap:var(--gap-l);}
+  .rf-steps{grid-template-columns:1fr;grid-template-rows:none;row-gap:var(--gap-l);}
+  .rf-step{display:flex;flex-direction:column;}
+  .rf-line{display:none;}
+  .rf-icon{width:24mm;height:24mm;}
+  .rf-phase-head{flex-direction:column;gap:1mm;}
+  .foot{margin-top:var(--gap-l);flex-direction:column;gap:2px;}
+}
+
+/* ---------- Print ---------- */
+@page{size:letter portrait;margin:0;}
+@media print{
+  html,body{background:var(--paper);}
+  body{display:block;padding:0;}
+  .sheet{box-shadow:none;break-after:avoid;page-break-after:avoid;}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="page">
+
+    <header class="head">
+      <div class="title">
+        <h1>Discussion guide</h1>
+        <p class="cta">Think it over before we meet.</p>
+      </div>
+      <div class="by">
+        <img src="assets/cover-more-agentic.png" width="800" height="1200"
+             alt="Cover of 10 More Days of Agentic Development by Daniel Scheufler.">
+        <p class="meta"><strong>10 More Days of Agentic Development</strong><span>Book Reader Society live discussion</span></p>
+      </div>
+    </header>
+
+    <div class="body">
+      <p class="lead">Our live discussion runs about 20 minutes, so there are just <b>four questions</b>. Before we meet, spend a few minutes on each and jot a few lines. Rough notes are plenty. Bring them along, and we will talk through as many as time allows.</p>
+
+      <!-- Questions 1 and 2 -->
+      <section class="rf-phase" aria-labelledby="ph-prompts">
+        <svg class="rf-icon" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M12 14 H88 a6 6 0 0 1 6 6 V62 a6 6 0 0 1 -6 6 H46 L26 88 V68 H12 a6 6 0 0 1 -6 -6 V20 a6 6 0 0 1 6 -6 Z" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/><path d="M24 34 H76 M24 50 H58" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        <header class="rf-phase-head"><h2 id="ph-prompts">Prompts and context</h2><p>What goes into the prompt, and what should surround it.</p></header>
+        <ol class="rf-steps">
+          <li class="rf-step">
+            <div class="rf-track"><span class="rf-node" aria-hidden="true"></span><span class="rf-line" aria-hidden="true"></span></div>
+            <h3>How did treating prompts as part of a workflow change what you put in them?</h3>
+            <p class="rf-ref"><b>Days 2&ndash;3:</b> Before You Prompt, Standardize Your Prompt</p>
+            <p class="rf-hint">What is in your prompts now that was not there before? What did you cut?</p>
+            <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </li>
+          <li class="rf-step">
+            <div class="rf-track"><span class="rf-node" aria-hidden="true"></span><span class="rf-line" aria-hidden="true"></span></div>
+            <h3>What other context artifacts might you need, even if you have not written them yet?</h3>
+            <p class="rf-ref"><b>Day 4:</b> Capture Context Artifacts</p>
+            <p class="rf-hint">Beyond what you stored on Day 4: what would your agent have to guess without it?</p>
+            <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Questions 3 and 4 -->
+      <section class="rf-phase rf-phase--flow" aria-labelledby="ph-flow">
+        <svg class="rf-icon" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="18" cy="28" r="11" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="82" cy="28" r="11" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="50" cy="76" r="11" fill="none" stroke="currentColor" stroke-width="7"/><path d="M31 28 H69 M74 38 L58 67 M42 67 L26 38" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        <header class="rf-phase-head"><h2 id="ph-flow">Workflow and process</h2><p>How the steps connect, and where else this could apply.</p></header>
+        <ol class="rf-steps">
+          <li class="rf-step">
+            <div class="rf-track"><span class="rf-node" aria-hidden="true"></span><span class="rf-line" aria-hidden="true"></span></div>
+            <h3>How does the concept of &lsquo;intermediates&rsquo; change how you might structure your workflow?</h3>
+            <p class="rf-ref"><b>Days 4&ndash;5:</b> Capture Context Artifacts, Map Your SDLC</p>
+            <p class="rf-hint">Intermediates are the results you keep outside the chat. Which step should hand off to the next?</p>
+            <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </li>
+          <li class="rf-step">
+            <div class="rf-track"><span class="rf-node" aria-hidden="true"></span><span class="rf-line" aria-hidden="true"></span></div>
+            <h3>What other processes might you map in order to augment them with AI?</h3>
+            <p class="rf-ref"><b>Day 5:</b> Map Your SDLC</p>
+            <p class="rf-hint">Think of a process you repeat. Could you write its steps down the way you did on Day 5?</p>
+            <div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </li>
+        </ol>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>Daniel Scheufler &middot; <cite>10 More Days of Agentic Development</cite></span>
+      <span>Hosted by the <a href="https://book-reader-society.lovable.app/">Book Reader Society</a></span>
+    </footer>
+  </div>
+</main>
+</body>
+</html>
