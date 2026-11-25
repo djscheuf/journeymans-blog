@@ -1,0 +1,133 @@
+{
+  "_comment": "Expected workflow output with AMAZON_AFFILIATE_TAG=testtag-20. `items` = expected further_reading (max 5, in input order) after steps 2 + 7b. `plain_url` is the expected `url` when the tag is unset (`affiliate` then absent). Posts also get `image`. `warnings` are substrings that must each appear in some WARN. Cover rule: cut title at first ':', slugify, keep first 4 words.",
+  "tag": "testtag-20",
+  "cap": 5,
+  "202611120914 - BPI - AI Problems Are Old Problems.md": {
+    "items": [
+      {
+        "title": "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition",
+        "source_url": "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052",
+        "type": "book",
+        "asin": "0135957052",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0135957052/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0135957052",
+        "cover": "the-pragmatic-programmer.jpg"
+      },
+      {
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "source_url": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+        "type": "book",
+        "asin": "0132350882",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0132350882/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0132350882",
+        "cover": "clean-code.jpg"
+      },
+      {
+        "title": "Working Effectively with Legacy Code",
+        "source_url": "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052",
+        "type": "book",
+        "asin": "0131177052",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0131177052/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0131177052",
+        "cover": "working-effectively-with-legacy.jpg"
+      },
+      {
+        "title": "Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions",
+        "source_url": "https://www.amazon.com/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683",
+        "type": "book",
+        "asin": "0321200683",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0321200683/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0321200683",
+        "cover": "enterprise-integration-patterns.jpg"
+      },
+      {
+        "title": "Slow Productivity: The Lost Art of Accomplishment Without Burnout",
+        "source_url": "https://www.amazon.com/Slow-Productivity-Accomplishment-Without-Burnout/dp/0593544854",
+        "type": "book",
+        "asin": "0593544854",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0593544854/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0593544854",
+        "cover": "slow-productivity.jpg"
+      }
+    ],
+    "dropped": [
+      "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+      "Wiring the Winning Organization: Liberating Our Collective Greatness through Slowification, Simplification, and Amplification",
+      "Thinking, Fast and Slow"
+    ],
+    "warnings": [
+      "3 more",
+      "dropped",
+      "Phoenix Project",
+      "[[The Pragmatic Programmer]]"
+    ],
+    "note": "Body wikilinks ([[...]]) in the Hemingway draft also WARN. Step 2 currently rejects this file (see 'Hemingway section is empty')."
+  },
+  "202611251200 - BPI - Affiliate Links Test.md": {
+    "items": [
+      {
+        "title": "The Effective Executive",
+        "source_url": "https://www.amazon.com/Effective-Executive-Definitive-Guide-Effective/dp/0060833459/ref=sr_1_1?crid=ABC123&tag=someoneelse-20&th=1",
+        "note": "Drucker's case for \"what one postpones, one abandons\" starts here.",
+        "type": "book",
+        "asin": "0060833459",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0060833459",
+        "cover": "the-effective-executive.jpg"
+      },
+      {
+        "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+        "source_url": "https://www.amazon.com/gp/product/1950508943?ie=UTF8",
+        "type": "book",
+        "asin": "1950508943",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/1950508943/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/1950508943",
+        "cover": "the-phoenix-project.jpg"
+      },
+      {
+        "title": "Thinking, Fast and Slow",
+        "source_url": "https://www.amazon.co.uk/dp/0374533555",
+        "type": "book",
+        "asin": "0374533555",
+        "affiliate": true,
+        "url": "https://www.amazon.com/dp/0374533555/ref=nosim?tag=testtag-20",
+        "plain_url": "https://www.amazon.com/dp/0374533555",
+        "cover": "thinking-fast-and-slow.jpg"
+      },
+      {
+        "title": "Ratios of Your Work",
+        "source_url": "/blog/ratios-of-your-work/",
+        "type": "post",
+        "url": "/blog/ratios-of-your-work/",
+        "affiliate": false
+      },
+      {
+        "title": "Theory of Constraints",
+        "source_url": "https://en.wikipedia.org/wiki/Theory_of_constraints",
+        "type": "link",
+        "url": "https://en.wikipedia.org/wiki/Theory_of_constraints",
+        "affiliate": false
+      }
+    ],
+    "dropped": [
+      "The Pragmatic Programmer: Your Journey To Mastery, 20th Anniversary Edition",
+      "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "Slow Productivity: The Lost Art of Accomplishment Without Burnout"
+    ],
+    "warnings": [
+      "3 more",
+      "dropped",
+      "Pragmatic Programmer",
+      "[[The Pragmatic Programmer]]",
+      "[[Slow Productivity]]"
+    ],
+    "note": "Effective Executive: foreign tag and tracking params must not survive. Dropped items are trailing and counted AFTER the wikilink line is skipped. Also hits the same step 2 failure until the Hemingway extraction is fixed."
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "_comment": "Fixtures for affiliate link computation (docs/reqs/recommended-reading Part 7). Tests call affiliateUrl(input, TAG) and amazonAsin(input). `plain` is the canonical untagged URL used when the tag is unset. `error` means the workflow must reject the URL with a message containing the given text. `untouched` means the URL is returned unchanged.",
+  "tag": "testtag-20",
+  "format": "https://www.amazon.com/dp/<ASIN>/ref=nosim?tag=<tag>",
+  "cases": [
+    {
+      "name": "plain /dp/",
+      "input": "https://www.amazon.com/dp/0060833459",
+      "type": "book",
+      "asin": "0060833459",
+      "affiliate": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0060833459"
+    },
+    {
+      "name": "/dp/ with trailing slash",
+      "input": "https://www.amazon.com/dp/1942788290/",
+      "type": "book",
+      "asin": "1942788290",
+      "affiliate": "https://www.amazon.com/dp/1942788290/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1942788290"
+    },
+    {
+      "name": "slug-prefixed, ref, th/psc, and a foreign affiliate tag",
+      "input": "https://www.amazon.com/The-Effective-Executive/dp/0060833459/ref=sr_1_1?crid=ABC123&keywords=drucker&tag=someoneelse-20&th=1&psc=1",
+      "type": "book",
+      "asin": "0060833459",
+      "affiliate": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0060833459"
+    },
+    {
+      "name": "/gp/product/",
+      "input": "https://www.amazon.com/gp/product/1942788290?ie=UTF8",
+      "type": "book",
+      "asin": "1942788290",
+      "affiliate": "https://www.amazon.com/dp/1942788290/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1942788290"
+    },
+    {
+      "name": "/product/ (legacy short form)",
+      "input": "https://www.amazon.com/product/1942788398",
+      "type": "book",
+      "asin": "1942788398",
+      "affiliate": "https://www.amazon.com/dp/1942788398/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1942788398"
+    },
+    {
+      "name": "/exec/obidos/ASIN/ (uppercase path segment)",
+      "input": "https://www.amazon.com/exec/obidos/ASIN/0060833459/",
+      "type": "book",
+      "asin": "0060833459",
+      "affiliate": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0060833459"
+    },
+    {
+      "name": "/o/ASIN/ (uppercase path segment)",
+      "input": "https://www.amazon.com/o/ASIN/0060833459",
+      "type": "book",
+      "asin": "0060833459",
+      "affiliate": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0060833459"
+    },
+    {
+      "name": "no www",
+      "input": "https://amazon.com/dp/1942788398",
+      "type": "book",
+      "asin": "1942788398",
+      "affiliate": "https://www.amazon.com/dp/1942788398/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1942788398"
+    },
+    {
+      "name": "regional domain is rewritten to amazon.com (provisional decision)",
+      "input": "https://www.amazon.co.uk/dp/1942788398",
+      "type": "book",
+      "asin": "1942788398",
+      "affiliate": "https://www.amazon.com/dp/1942788398/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1942788398"
+    },
+    {
+      "name": "http scheme and fragment",
+      "input": "http://www.amazon.com/dp/0060833459#customerReviews",
+      "type": "book",
+      "asin": "0060833459",
+      "affiliate": "https://www.amazon.com/dp/0060833459/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0060833459"
+    },
+    {
+      "name": "Amazon search page has no ASIN",
+      "input": "https://www.amazon.com/s?k=drucker",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "short link amzn.to is rejected (provisional decision)",
+      "input": "https://amzn.to/3xYzAbC",
+      "error": "full product URL"
+    },
+    {
+      "name": "short link a.co is rejected (provisional decision)",
+      "input": "https://a.co/d/abc123",
+      "error": "full product URL"
+    },
+    {
+      "name": "lookalike host: amazon.<other-domain>",
+      "input": "https://amazon.evil.example/dp/0060833459",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "lookalike host: amazon.com as a subdomain of another site",
+      "input": "https://www.amazon.com.evil.example/dp/0060833459",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "lookalike host: suffix match",
+      "input": "https://notamazon.com/dp/0060833459",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "ASIN-shaped but wrong length",
+      "input": "https://www.amazon.com/dp/006083345",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "Wikipedia is never modified",
+      "input": "https://en.wikipedia.org/wiki/Theory_of_constraints",
+      "type": "link",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "internal post is never modified",
+      "input": "/blog/ratios-of-your-work/",
+      "type": "post",
+      "asin": null,
+      "untouched": true
+    },
+    {
+      "name": "seed: The Pragmatic Programmer",
+      "input": "https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052",
+      "type": "book",
+      "asin": "0135957052",
+      "affiliate": "https://www.amazon.com/dp/0135957052/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0135957052"
+    },
+    {
+      "name": "seed: Clean Code",
+      "input": "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882",
+      "type": "book",
+      "asin": "0132350882",
+      "affiliate": "https://www.amazon.com/dp/0132350882/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0132350882"
+    },
+    {
+      "name": "seed: Working Effectively with Legacy Code",
+      "input": "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052",
+      "type": "book",
+      "asin": "0131177052",
+      "affiliate": "https://www.amazon.com/dp/0131177052/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0131177052"
+    },
+    {
+      "name": "seed: Enterprise Integration Patterns",
+      "input": "https://www.amazon.com/Enterprise-Integration-Patterns-Designing-Deploying/dp/0321200683",
+      "type": "book",
+      "asin": "0321200683",
+      "affiliate": "https://www.amazon.com/dp/0321200683/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0321200683"
+    },
+    {
+      "name": "seed: Slow Productivity",
+      "input": "https://www.amazon.com/Slow-Productivity-Accomplishment-Without-Burnout/dp/0593544854",
+      "type": "book",
+      "asin": "0593544854",
+      "affiliate": "https://www.amazon.com/dp/0593544854/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0593544854"
+    },
+    {
+      "name": "seed: The Phoenix Project",
+      "input": "https://www.amazon.com/Phoenix-Project-bestselling-author-Unicorn/dp/1950508943",
+      "type": "book",
+      "asin": "1950508943",
+      "affiliate": "https://www.amazon.com/dp/1950508943/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1950508943"
+    },
+    {
+      "name": "seed: Wiring the Winning Organization",
+      "input": "https://www.amazon.com/Wiring-Winning-Organization-Slowification-Simplification/dp/1950508420",
+      "type": "book",
+      "asin": "1950508420",
+      "affiliate": "https://www.amazon.com/dp/1950508420/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/1950508420"
+    },
+    {
+      "name": "seed: Thinking, Fast and Slow",
+      "input": "https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555",
+      "type": "book",
+      "asin": "0374533555",
+      "affiliate": "https://www.amazon.com/dp/0374533555/ref=nosim?tag=testtag-20",
+      "plain": "https://www.amazon.com/dp/0374533555"
+    }
+  ],
+  "tags": {
+    "valid": [
+      "testtag-20",
+      "name-20",
+      "a1-b2-21"
+    ],
+    "invalid": [
+      "",
+      "testtag",
+      "TestTag-20",
+      "-20",
+      "test tag-20",
+      "testtag-2",
+      "testtag-200",
+      "tag=testtag-20",
+      "testtag-20&x=1"
+    ]
+  }
+}
