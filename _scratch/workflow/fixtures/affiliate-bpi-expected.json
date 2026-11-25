@@ -63,10 +63,10 @@
     "warnings": [
       "3 more",
       "dropped",
-      "Phoenix Project",
-      "[[The Pragmatic Programmer]]"
+      "Phoenix Project"
     ],
-    "note": "Body wikilinks ([[...]]) in the Hemingway draft also WARN. Step 2 currently rejects this file (see 'Hemingway section is empty')."
+    "note": "Parser-level expectations only. Step 2 correctly rejects this file: its ## Hemingway'd section is empty (the text is in the sibling ## Draft). It is a draft BPI, not yet Hemingway'd.",
+    "step2_error": "Hemingway section is empty"
   },
   "202611251200 - BPI - Affiliate Links Test.md": {
     "items": [
@@ -125,9 +125,11 @@
       "3 more",
       "dropped",
       "Pragmatic Programmer",
-      "[[The Pragmatic Programmer]]",
-      "[[Slow Productivity]]"
+      "[[The Pragmatic Programmer]]"
     ],
-    "note": "Effective Executive: foreign tag and tracking params must not survive. Dropped items are trailing and counted AFTER the wikilink line is skipped. Also hits the same step 2 failure until the Hemingway extraction is fixed."
+    "note": "Effective Executive: foreign tag and tracking params must not survive. Dropped items are counted AFTER the wikilink line is skipped. Step 2 must ignore the DRAFT-ONLY text (nested ### Draft and sibling ## Draft).",
+    "curate_warnings": [
+      "[[Slow Productivity]]"
+    ]
   }
 }

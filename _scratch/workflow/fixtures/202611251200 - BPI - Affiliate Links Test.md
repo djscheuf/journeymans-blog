@@ -2,6 +2,7 @@
 
 Test input for the Further Reading affiliate link feature
 (docs/reqs/recommended-reading, Part 7). Not for publication.
+Draft and Hemingway'd are sibling sections; a nested `### Draft` is ignored.
 
 Shaped like the real BPI `202611120914 - BPI - AI Problems Are Old Problems.md`: full
 Amazon titles (with subtitles) as link text, slug-prefixed `/<Title-Slug>/dp/<ASIN>`
@@ -15,8 +16,6 @@ deciding about it.
 
 ## Hemingway'd
 
-## Draft
-
 How deep is your backlog? Most teams keep two or three sprints of ready work.
 Enough to avoid starvation. Not so much it goes stale.
 
@@ -29,6 +28,14 @@ Drucker said it plainly: what one postpones, one abandons. A backlog is a list o
 postponed decisions. Every item you keep is a decision you have not made.
 
 Delete half of it this week. See what you miss. [[Slow Productivity]] makes the same case.
+
+### Draft
+
+DRAFT-ONLY text nested under Hemingway'd. The extractor must ignore this sub-section.
+
+## Draft
+
+DRAFT-ONLY sibling section. Never part of the post.
 
 ## Further Reading
 - [The Effective Executive](https://www.amazon.com/Effective-Executive-Definitive-Guide-Effective/dp/0060833459/ref=sr_1_1?crid=ABC123&tag=someoneelse-20&th=1) — Drucker's case for "what one postpones, one abandons" starts here.

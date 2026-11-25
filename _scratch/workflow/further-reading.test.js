@@ -62,9 +62,43 @@ for (const file of bpis) {
       assert.ok(fr.coverSlug(it.title).split('-').length <= 4);
     }
   });
-  test(`step 2 accepts: ${file}`, () => {
+  test(`step 2: ${file}`, () => {
     const { curateInput } = require('./02-curate-input');
     const wd = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'fr-'));
-    assert.doesNotThrow(() => curateInput(path.join(dir, file), '2026-11-26', wd));
+    const run = () => curateInput(path.join(dir, file), '2026-11-26', wd);
+    if (want.step2_error) return assert.throws(run, new RegExp(want.step2_error));
+    const out = run();
+    const post = JSON.parse(fs.readFileSync(path.join(wd, 'post.json'), 'utf8'));
+    assert.ok(!post.hemingway_content.includes('DRAFT-ONLY'), 'Draft content must be ignored');
+    assert.strictEqual(post.further_reading.length, expected.cap);
+    for (const w of want.curate_warnings || []) assert.ok(out.warnings.some((x) => x.includes(w)), `WARN containing: ${w}`);
+    for (const w of want.warnings) assert.ok(out.warnings.some((x) => x.includes(w)), `WARN containing: ${w}`);
+  });
+
+  // 07b with no network: covers pre-seeded under their expected short names are reused.
+  test(`07b affiliate + covers: ${file}`, async () => {
+    if (want.step2_error) return;
+    const { fetchLinkAssets } = require('./07b-fetch-link-assets');
+    const { curateInput } = require('./02-curate-input');
+    const wd = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'fr-'));
+    const covers = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'covers-'));
+    curateInput(path.join(dir, file), '2026-11-26', wd);
+    for (const it of want.items.filter((i) => i.cover)) fs.writeFileSync(path.join(covers, it.cover), 'x');
+    const posts = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'posts-'));
+    fs.writeFileSync(path.join(posts, 'ratios-of-your-work.md'), '---\ntitle: x\nphotos:\n  - img/post_img/balancing_stones.jpg\n---\n');
+
+    for (const tag of [expected.tag, null]) {
+      const res = await fetchLinkAssets(wd, covers, posts, { tag });
+      const got = JSON.parse(fs.readFileSync(path.join(wd, 'post.json'), 'utf8')).further_reading;
+      want.items.forEach((w, i) => {
+        assert.strictEqual(got[i].url, tag ? w.url : (w.plain_url || w.url), `url[${i}] tag=${tag}`);
+        assert.strictEqual(got[i].affiliate, tag ? w.affiliate : false);
+        assert.strictEqual(got[i].type, w.type);
+        assert.strictEqual(got[i].cover, w.cover);
+        if (w.type === 'book') assert.strictEqual(got[i].source_url, w.source_url);
+      });
+      assert.strictEqual(res.warnings.some((x) => x.includes('AMAZON_AFFILIATE_TAG is not set')), !tag);
+    }
+    await assert.rejects(fetchLinkAssets(wd, covers, posts, { tag: 'nope' }), /valid Associates ID/);
   });
 }
