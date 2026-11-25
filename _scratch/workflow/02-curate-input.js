@@ -55,7 +55,10 @@ function curateInput(bpiPath, publishDate, workdir = "workdir") {
   const nextHeading = rest.search(/^##\s/m);
   const sectionBody = nextHeading === -1 ? rest : rest.slice(0, nextHeading);
 
+  // Draft and Hemingway'd are sibling sections. If a Draft is nested under Hemingway'd
+  // (### Draft), it is not part of the post: drop it up to the next heading of that depth or higher.
   const hemingwayContent = sectionBody
+    .replace(/^#{3,}[ \t]+Draft[ \t]*$[\s\S]*?(?=^#{1,3}[ \t]|(?![\s\S]))/gim, "")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
   if (!hemingwayContent) throw new Error("Hemingway section is empty");
@@ -82,21 +85,29 @@ function curateInput(bpiPath, publishDate, workdir = "workdir") {
   };
 
   // Optional "## Further Reading" section: [{ title, url, note? }]
-  const furtherReading = parseFurtherReading(content);
+  const { items: furtherReading, warnings } = parseFurtherReading(content);
   if (furtherReading.length) doc.further_reading = furtherReading;
+
+  // Wikilinks in the body would publish as raw [[text]]; the author repairs them, we WARN.
+  const wikilinks = [...new Set([...hemingwayContent.matchAll(/\[\[([^\]]+)\]\]/g)].map((m) => `[[${m[1]}]]`))];
+  if (wikilinks.length) {
+    warnings.push(`Hemingway content has ${wikilinks.length} wikilink(s) that will publish as raw text: ${wikilinks.join(', ')}`);
+  }
 
   const outDir = path.resolve(workdir);
   fs.mkdirSync(outDir, { recursive: true });
   const outPath = path.join(outDir, "post.json");
   fs.writeFileSync(outPath, JSON.stringify(doc, null, 2) + "\n");
 
-  return { ok: true, further_reading: furtherReading.length, output: outPath, word_count: wordCount, reading_time_min: readingTimeMin, slug };
+  return { ok: true, warnings, further_reading: furtherReading.length, output: outPath, word_count: wordCount, reading_time_min: readingTimeMin, slug };
 }
 
 if (require.main === module) {
   try {
     const [bpiPath, publishDate, workdir] = process.argv.slice(2);
-    console.log(JSON.stringify(curateInput(bpiPath, publishDate, workdir)));
+    const out = curateInput(bpiPath, publishDate, workdir);
+    for (const w of out.warnings) console.error(`WARN: ${w}`);
+    console.log(JSON.stringify(out));
   } catch (e) {
     fail(e.message);
   }

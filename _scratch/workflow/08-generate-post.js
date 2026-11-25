@@ -58,6 +58,8 @@ function generatePost(workdir = "workdir", postsDir = path.join(repoRoot, "sourc
     const items = doc.further_reading.map((it) => {
       const lines = [`  - title: ${q(it.title)}`, `    url: ${q(it.url)}`];
       lines.push(`    type: ${it.type || "link"}`);
+      if (it.source_url) lines.push(`    source_url: ${q(it.source_url)}`);
+      if (it.affiliate === true) lines.push("    affiliate: true");
       if (it.cover) lines.push(`    cover: ${q(it.cover)}`);
       if (it.image) lines.push(`    image: ${q(it.image)}`);
       if (it.note) lines.push(`    note: ${q(it.note)}`);

@@ -1,10 +1,12 @@
 <%
 // Optional front matter block (see docs/reqs/recommended-reading):
 //   further_reading:
-//     - { title, url, type: book|post|link, cover?, image?, note? }
+//     - { title, url, type: book|post|link, cover?, image?, note?, source_url?, affiliate? }
+// `affiliate: true` marks an Amazon Associates link: rel="sponsored" plus a disclosure line.
 // Renders nothing when absent, like the hotpot partial.
 var items = page.further_reading;
 if (items && items.length) {
+  var hasAffiliate = items.some(function(i) { return i.affiliate === true; });
   var hostOf = function(u) {
     try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
   };
@@ -19,7 +21,7 @@ if (items && items.length) {
       var href = internal ? url_for(item.url) : item.url;
       var chip = type === 'book' ? 'Open on Amazon' : (internal ? 'Read on this blog' : ('Visit ' + (hostOf(item.url) || 'site')));
     %>
-      <a class="fr-item fr-<%= type %>" href="<%- href %>"<% if (external) { %> target="_blank" rel="noopener"<% } %>>
+      <a class="fr-item fr-<%= type %>" href="<%- href %>"<% if (external) { %> target="_blank" rel="<%= item.affiliate === true ? 'sponsored noopener' : 'noopener' %>"<% } %>>
         <% if (type === 'book' && item.cover) { %>
           <div class="fr-cover"><img src="<%- url_for('img/covers/' + item.cover) %>" alt="<%= item.title %> book cover" loading="lazy"></div>
         <% } else if (internal && item.image) { %>
@@ -33,5 +35,8 @@ if (items && items.length) {
       </a>
     <% }); %>
   </div>
+  <% if (hasAffiliate) { %>
+  <p class="fr-disclosure">These sponsored links help support the site.</p>
+  <% } %>
 </section>
 <% } %>

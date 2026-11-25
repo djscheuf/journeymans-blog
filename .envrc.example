@@ -7,3 +7,8 @@
 # Navigate to: Integrations → MailerLite API → Generate new token
 
 export MAILERLITE_API_KEY="Your MailerLite API token"
+
+# Amazon Associates store ID, used to build affiliate links in the Further Reading section
+# (see docs/reqs/recommended-reading, Part 7). Format: name-20 (lowercase, ends in -NN).
+# If unset, Amazon links are published as plain, untracked URLs and the workflow logs a WARN.
+export AMAZON_AFFILIATE_TAG="your-associate-id-20"

@@ -90,13 +90,17 @@ appropriate order.
 
 Optional. If the BPI has a `## Further Reading` list (`- [Title](url) — optional note`),
 step 2 stores it as `further_reading` in the working JSON. `07b-fetch-link-assets.js`
-classifies each link (book / post / link), downloads Amazon book covers into
-`source/img/covers/` (Amazon image, falling back to Open Library by ISBN), and resolves
-internal posts to their header image. Step 8 then renders the result into front matter,
-and the commit step also adds `source/img/covers`. A missing cover is a warning only.
+classifies each link (book / post / link), rewrites Amazon links to affiliate URLs
+(ASIN parsed from the author's link, tag from env `AMAZON_AFFILIATE_TAG`; original kept as
+`source_url`), downloads book covers into `source/img/covers/<short-title-slug>.jpg` (Amazon
+image, falling back to Open Library by ISBN), and resolves internal posts to their header
+image. Step 2 keeps the first 5 list entries (extras dropped with a `WARN`) and skips
+`[[wikilink]]` lines with a `WARN`. Step 8 renders the result into front matter. The commit
+step stages only the covers this post names, and fails if one is missing on disk. A missing
+cover (fetch failure) is a warning only; an unset tag is a warning; a short link is an error.
 
 - **In:** working JSON (`further_reading`)
-- **Out:** `type` / `cover` / `image` per item; cover files on disk
+- **Out:** `type` / `url` / `source_url` / `affiliate` / `cover` / `image` per item; cover files on disk
 
 ### 9. Create git branch — Deterministic
 

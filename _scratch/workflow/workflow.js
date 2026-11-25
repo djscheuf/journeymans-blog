@@ -14,7 +14,7 @@
  *   6.  select-post-image   (agentic skill) — sets image + confidence
  *   7.  validate-schema     (deterministic) — full post.json check
  *        (also runs after every agentic step, per pipeline design)
- *   7b. fetch-link-assets   (deterministic) — Further Reading covers → source/img/covers; resolves link types
+ *   7b. fetch-link-assets   (deterministic) — Amazon affiliate URLs, covers → source/img/covers, link types
  *   8.  generate-post       (deterministic) — render source/_posts/<slug>.md
  *   9.  verify-master       (deterministic) — git lock acquired here; HEAD must be master
  *   10. create-branch       (deterministic) — git branch post/<slug> from master
@@ -181,7 +181,8 @@ const steps = {
     return { success: true };
   },
   'curate-input': (ctx) => {
-    runStep('curate-input', () => curateInput(ctx.bpiPath, ctx.publishDate, ctx.workdir));
+    const result = runStep('curate-input', () => curateInput(ctx.bpiPath, ctx.publishDate, ctx.workdir));
+    for (const w of result.warnings || []) console.error(`[curate-input] WARN: ${w}`);
     return { success: true };
   },
   'derive-post-title': makeAgenticStep('derive-post-title', ['title', 'slug', 'title_changed']),
@@ -195,7 +196,7 @@ const steps = {
   'fetch-link-assets': async (ctx) => {
     const result = await fetchLinkAssets(ctx.workdir).catch((e) => fail('fetch-link-assets', e.message));
     for (const f of result.fetched || []) console.log(`[fetch-link-assets] cover ${f.file} ← ${f.source}`);
-    for (const w of result.warnings) console.error(`[fetch-link-assets] warning: ${w}`);
+    for (const w of result.warnings) console.error(`[fetch-link-assets] WARN: ${w}`);
     return { success: true };
   },
   'generate-post': (ctx) => {
@@ -216,9 +217,15 @@ const steps = {
     const slug = readPostJson(ctx.workdir).slug;
     const postFile = `source/_posts/${slug}.md`;
     const toAdd = [postFile];
-    // Further Reading covers fetched by fetch-link-assets (only if the folder exists)
-    if (fs.existsSync(path.join(ctx.repoRoot, 'source/img/covers'))) toAdd.push('source/img/covers');
-    git(['add', ...toAdd], ctx.repoRoot, 'commit-post');
+    // Only the covers this post's Further Reading names (never the whole folder, which may hold
+    // strays from other runs). A cover named in post.json but absent on disk is a hard failure.
+    for (const it of readPostJson(ctx.workdir).further_reading || []) {
+      if (!it.cover) continue;
+      const rel = `source/img/covers/${it.cover}`;
+      if (!fs.existsSync(path.join(ctx.repoRoot, rel))) fail('commit-post', `cover listed but missing on disk: ${rel}`);
+      if (!toAdd.includes(rel)) toAdd.push(rel);
+    }
+    git(['add', '--', ...toAdd], ctx.repoRoot, 'commit-post');
     git(['commit', '-m', `post(${slug})`], ctx.repoRoot, 'commit-post');
     return { success: true };
   },

@@ -10,7 +10,14 @@
  *   - post (/blog/<slug>/): copy the target post's first `photos` entry into `image` (no download).
  *   - link: nothing to fetch; the theme draws a generic link icon.
  *
- * Writes `type`, and `cover` / `image` where resolved, back into post.json.
+ * Affiliate links (docs/reqs/recommended-reading Part 7): every Amazon product link gets its
+ * ASIN extracted and `url` rewritten to https://www.amazon.com/dp/<ASIN>/ref=nosim?tag=<tag>,
+ * where <tag> is env AMAZON_AFFILIATE_TAG. The author's link is kept as `source_url`. With no
+ * tag set the item gets the plain canonical URL and a WARN. Short links (amzn.to, a.co) fail.
+ *
+ * Covers are named by a short title slug (further-reading.js coverSlug), e.g. the-phoenix-project.jpg.
+ *
+ * Writes `type`, `url`/`source_url`/`affiliate`, and `cover` / `image` where resolved, into post.json.
  * A missing cover or an unknown internal post is a warning, not a failure: the theme
  * falls back to the plain card treatment, and publishing should not hinge on a CDN.
  * Malformed items are errors (caught earlier by 07-validate-schema).
@@ -18,6 +25,7 @@
  * Usage: node 07b-fetch-link-assets.js [workdir] [covers-dir]
  *   [workdir]     directory containing post.json; default ./workdir
  *   [covers-dir]  default {repo_root}/source/img/covers
+ * Env: AMAZON_AFFILIATE_TAG  Amazon Associates store ID, e.g. name-20 (see .envrc.example)
  */
 
 const fs = require('node:fs');
@@ -25,6 +33,9 @@ const path = require('node:path');
 const {
   classify,
   amazonAsin,
+  affiliateUrl,
+  validateAffiliateTag,
+  coverSlug,
   internalSlug,
   validateFurtherReading,
 } = require('./further-reading');
@@ -87,6 +98,7 @@ async function fetchLinkAssets(
   workdir = 'workdir',
   coversDir = path.join(repoRoot, 'source/img/covers'),
   postsDir = POSTS_DIR,
+  { tag = process.env.AMAZON_AFFILIATE_TAG } = {},
 ) {
   const jsonPath = path.join(path.resolve(workdir), 'post.json');
   if (!fs.existsSync(jsonPath)) throw new Error(`file not found: ${jsonPath}`);
@@ -101,11 +113,37 @@ async function fetchLinkAssets(
   const { errors } = validateFurtherReading(doc.further_reading);
   if (errors.length) throw new Error(`further_reading invalid: ${errors.join('; ')}`);
 
+  tag = (tag || '').trim() || null;
+  if (tag && !validateAffiliateTag(tag)) {
+    throw new Error(`AMAZON_AFFILIATE_TAG is not a valid Associates ID (expected e.g. name-20): ${JSON.stringify(tag)}`);
+  }
+  let warnedNoTag = false;
+
   for (const item of doc.further_reading) {
-    item.type = classify(item.url);
+    // Re-runs start from the author's original link, not an already-rewritten one.
+    const original = item.source_url || item.url;
+    item.type = classify(original);
+
+    if (item.type !== 'post') {
+      const rewritten = affiliateUrl(original, tag); // throws on short links
+      if (rewritten !== original) {
+        item.source_url = original;
+        item.url = rewritten;
+      } else {
+        item.url = original;
+        delete item.source_url;
+      }
+      item.affiliate = Boolean(tag && amazonAsin(original));
+      if (!tag && amazonAsin(original) && !warnedNoTag) {
+        warnings.push('AMAZON_AFFILIATE_TAG is not set — Amazon links will be plain, untracked URLs');
+        warnedNoTag = true;
+      }
+    } else {
+      item.affiliate = false;
+    }
 
     if (item.type === 'book') {
-      const file = `${slugify(item.title)}.jpg`;
+      const file = `${coverSlug(item.title)}.jpg`;
       const dest = path.join(coversDir, file);
       if (fs.existsSync(dest)) {
         item.cover = file; // reuse
@@ -113,7 +151,7 @@ async function fetchLinkAssets(
       }
       fs.mkdirSync(coversDir, { recursive: true });
       try {
-        const { source } = await fetchCover(amazonAsin(item.url), dest);
+        const { source } = await fetchCover(amazonAsin(original), dest);
         item.cover = file;
         fetched.push({ title: item.title, file, source });
       } catch (e) {
